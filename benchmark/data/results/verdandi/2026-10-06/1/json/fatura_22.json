@@ -1,0 +1,793 @@
+{
+  "selected_document": {
+    "name": "Miller Inc",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued invoice with the printed labels \"Invoice Date\" and \"INVOICE ID,\" a billed buyer, an itemized charge table, and printed subtotal and total amounts.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV52959005",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.505,
+          0.001,
+          0.746,
+          0.019
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV52959005'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE ID INV52959005'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4985,
+                0.0,
+                0.7463,
+                0.02080000000000004
+              ],
+              "line_bbox": [
+                0.0118,
+                0.0,
+                0.7463,
+                0.02290000000000003
+              ],
+              "text": "Invoice Date: 17-Jun-2012 INVOICE ID INV52959005",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "17-Jun-2012",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.014,
+          0.001,
+          0.261,
+          0.019
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='17-Jun-2012'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice Date: 17-Jun-2012'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0118,
+                0.0020999999999999908,
+                0.2566,
+                0.02290000000000003
+              ],
+              "line_bbox": [
+                0.0118,
+                0.0,
+                0.7463,
+                0.02290000000000003
+              ],
+              "text": "Invoice Date: 17-Jun-2012 INVOICE ID INV52959005",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Miller Inc",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.014,
+          0.067,
+          0.106,
+          0.084
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Miller Inc'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Miller Inc Address: 5190 Perry Passage Kellyburgh, RI'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0087,
+                0.06630000000000003,
+                0.1004,
+                0.08579999999999999
+              ],
+              "line_bbox": [
+                0.0087,
+                0.06630000000000003,
+                0.6962,
+                0.08579999999999999
+              ],
+              "text": "Miller Inc Bill to: Luke Bowers",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Luke Bowers",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.505,
+          0.067,
+          0.662,
+          0.085
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Luke Bowers'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Bill to: Luke Bowers 5190 Perry Passage Kellyburgh,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5015,
+                0.06669999999999998,
+                0.6962,
+                0.08540000000000003
+              ],
+              "line_bbox": [
+                0.0087,
+                0.06630000000000003,
+                0.6962,
+                0.08579999999999999
+              ],
+              "text": "Miller Inc Bill to: Luke Bowers",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.746,
+          0.811,
+          0.863,
+          0.829
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 1146.24 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5513,
+                0.8069999999999999,
+                0.8234,
+                0.8319
+              ],
+              "line_bbox": [
+                0.0118,
+                0.8069999999999999,
+                0.8234,
+                0.8319
+              ],
+              "text": "Note: SUB_TOTAL: 1146.24 USD",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "1146.24",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.557,
+          0.811,
+          0.863,
+          0.829
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='1146.24'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 1146.24 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5513,
+                0.8069999999999999,
+                0.8234,
+                0.8319
+              ],
+              "line_bbox": [
+                0.0118,
+                0.8069999999999999,
+                0.8234,
+                0.8319
+              ],
+              "text": "Note: SUB_TOTAL: 1146.24 USD",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1162.88",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.558,
+          0.953,
+          0.768,
+          0.97
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1162.88'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 1162.88 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5516,
+                0.9479,
+                0.7699,
+                0.9688
+              ],
+              "line_bbox": [
+                0.5516,
+                0.9479,
+                0.7699,
+                0.9688
+              ],
+              "text": "TOTAL: 1162.88 USD",
+              "lineno": 16,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Particular personal travel.",
+      "quantity": "5.00",
+      "unit_price": "84.89",
+      "amount": "424.45",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.018,
+          0.536,
+          0.866,
+          0.554
+        ]
+      }
+    },
+    {
+      "description": "Out thank whose.",
+      "quantity": "5.00",
+      "unit_price": "53.61",
+      "amount": "268.05",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.018,
+          0.572,
+          0.866,
+          0.589
+        ]
+      }
+    },
+    {
+      "description": "Politics poor.",
+      "quantity": "4.00",
+      "unit_price": "24.51",
+      "amount": "98.04",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.018,
+          0.608,
+          0.866,
+          0.625
+        ]
+      }
+    },
+    {
+      "description": "Film opportunity matter.",
+      "quantity": "5.00",
+      "unit_price": "71.14",
+      "amount": "355.70",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.018,
+          0.644,
+          0.866,
+          0.661
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "This order is shipped through blue dart courier"
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1997,
+      "total_tokens": 5652,
+      "elapsed_s": 13.58
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV52959005",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV52959005'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE ID INV52959005'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4985,
+                  0.0,
+                  0.7463,
+                  0.02080000000000004
+                ],
+                "line_bbox": [
+                  0.0118,
+                  0.0,
+                  0.7463,
+                  0.02290000000000003
+                ],
+                "text": "Invoice Date: 17-Jun-2012 INVOICE ID INV52959005",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "17-Jun-2012",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='17-Jun-2012'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice Date: 17-Jun-2012'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0118,
+                  0.0020999999999999908,
+                  0.2566,
+                  0.02290000000000003
+                ],
+                "line_bbox": [
+                  0.0118,
+                  0.0,
+                  0.7463,
+                  0.02290000000000003
+                ],
+                "text": "Invoice Date: 17-Jun-2012 INVOICE ID INV52959005",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Miller Inc",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Miller Inc'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Miller Inc Address: 5190 Perry Passage Kellyburgh, RI'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0087,
+                  0.06630000000000003,
+                  0.1004,
+                  0.08579999999999999
+                ],
+                "line_bbox": [
+                  0.0087,
+                  0.06630000000000003,
+                  0.6962,
+                  0.08579999999999999
+                ],
+                "text": "Miller Inc Bill to: Luke Bowers",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Luke Bowers",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Luke Bowers'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Bill to: Luke Bowers 5190 Perry Passage Kellyburgh,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5015,
+                  0.06669999999999998,
+                  0.6962,
+                  0.08540000000000003
+                ],
+                "line_bbox": [
+                  0.0087,
+                  0.06630000000000003,
+                  0.6962,
+                  0.08579999999999999
+                ],
+                "text": "Miller Inc Bill to: Luke Bowers",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 1146.24 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5513,
+                  0.8069999999999999,
+                  0.8234,
+                  0.8319
+                ],
+                "line_bbox": [
+                  0.0118,
+                  0.8069999999999999,
+                  0.8234,
+                  0.8319
+                ],
+                "text": "Note: SUB_TOTAL: 1146.24 USD",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "1146.24",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='1146.24'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 1146.24 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5513,
+                  0.8069999999999999,
+                  0.8234,
+                  0.8319
+                ],
+                "line_bbox": [
+                  0.0118,
+                  0.8069999999999999,
+                  0.8234,
+                  0.8319
+                ],
+                "text": "Note: SUB_TOTAL: 1146.24 USD",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "1162.88",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1162.88'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 1162.88 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5516,
+                  0.9479,
+                  0.7699,
+                  0.9688
+                ],
+                "line_bbox": [
+                  0.5516,
+                  0.9479,
+                  0.7699,
+                  0.9688
+                ],
+                "text": "TOTAL: 1162.88 USD",
+                "lineno": 16,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

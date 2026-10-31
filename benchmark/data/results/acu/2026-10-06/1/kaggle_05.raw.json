@@ -1,0 +1,4356 @@
+{
+  "id": "49438815-7257-457b-8382-6d110bce9d0a",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-06T00:42:19Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "TELMARK\nTEL MARK SALES, INC.\n\n\n<table>\n<tr>\n<td>PRV-DDI-RDA<br>PRM-DOI-RDA</td>\n<td>$<br>448.00<br>448.00</td>\n</tr>\n<tr>\n<td></td>\n<td>896.00</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td colspan=\"2\">APPROVALS<br>DAGE:</td>\n<td rowspan=\"3\"></td>\n</tr>\n<tr>\n<td>HATERIMS BSCEIVEDI SERVICAS \u05eaRNDERE</td>\n<td>fluf<br>6/7/97</td>\n</tr>\n<tr>\n<td>FINANCE:</td>\n<td>ket<br>6/10</td>\n</tr>\n<tr>\n<td>CHARGS CODE</td>\n<td>S0036 See Bredadon</td>\n<td>:</td>\n</tr>\n<tr>\n<td></td>\n<td>ACCOUNTING<br>DATE</td>\n<td></td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>DUE DATE:</td>\n<td></td>\n</tr>\n<tr>\n<td>ENTERED:</td>\n<td></td>\n</tr>\n<tr>\n<td>VENDOR 21</td>\n<td></td>\n</tr>\n<tr>\n<td>VOUCTER #:</td>\n<td></td>\n</tr>\n<tr>\n<td>VOUGHER MONTH:</td>\n<td></td>\n</tr>\n<tr>\n<td>PROCESSOR:</td>\n<td></td>\n</tr>\n</table>\n\n\n# INVOICE\n\nTO: MR. TONY YENSEN\nAMERICAN TOBACCO COMPANY\nP.O. BOX 10380\nSTAMFORD, CT 06904-2380\n(203) 352-8054\n\n\n<table>\n<tr>\n<td>INVOICE:</td>\n<td>1493OVER</td>\n<td></td>\n</tr>\n<tr>\n<td>DATE:<br>TERMS :</td>\n<td>06/04/93<br>DUE UPON</td>\n<td>RECEIPT</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<th></th>\n<th>HOURS</th>\n<th>RATE</th>\n<th>TOTAL</th>\n</tr>\n<tr>\n<td colspan=\"4\">SAFIERS, INC.</td>\n</tr>\n<tr>\n<td>CALLS HOURS</td>\n<td>7.50</td>\n<td>$30.00</td>\n<td>$225.00</td>\n</tr>\n<tr>\n<td>DATA ENTRY</td>\n<td>1.00</td>\n<td>$15.00</td>\n<td>$15.00</td>\n</tr>\n<tr>\n<td>COMPUTER PROGRAMMING</td>\n<td>0.50</td>\n<td>$20.00</td>\n<td>$10.00</td>\n</tr>\n<tr>\n<td>CHARLES M. SLEDD</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>CALLS HOURS</td>\n<td>20.25</td>\n<td>$30.00</td>\n<td>$607.50</td>\n</tr>\n<tr>\n<td>DATA ENTRY</td>\n<td>1.90</td>\n<td>$15.00</td>\n<td>$28.50</td>\n</tr>\n<tr>\n<td>COMPUTER PROGRAMMING</td>\n<td>0.50</td>\n<td>$20.00</td>\n<td>$10.00</td>\n</tr>\n</table>\n\n\nTOTAL DUE THIS INVOICE\n$896.00\n\n==========\n\nPAYMENT DUE UPON RECEIPT\nTHANK YOU\n\n526 W. WISCONSIN AVENUE . APPLETON, WISCONSIN 54911 \u2022 (414) 954-2900 \u2022 Fax: (414) 954-2915\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "valueString": "1493OVER",
+            "spans": [
+              {
+                "offset": 929,
+                "length": 8
+              }
+            ],
+            "confidence": 0.989,
+            "source": "D(1,5.1972,3.1620,5.8348,3.1772,5.8348,3.2927,5.1972,3.2871)"
+          },
+          "invoice_date": {
+            "type": "date",
+            "valueDate": "1993-06-04",
+            "spans": [
+              {
+                "offset": 994,
+                "length": 8
+              }
+            ],
+            "confidence": 0.992,
+            "source": "D(1,5.1851,3.3066,5.9276,3.3085,5.9276,3.4427,5.1851,3.4414)"
+          },
+          "vendor_name": {
+            "type": "string",
+            "valueString": "TEL MARK SALES, INC.",
+            "spans": [
+              {
+                "offset": 8,
+                "length": 20
+              }
+            ],
+            "confidence": 0.948,
+            "source": "D(1,2.6591,1.3500,5.1772,1.3528,5.1770,1.4912,2.6589,1.4884)"
+          },
+          "buyer_name": {
+            "type": "string",
+            "valueString": "AMERICAN TOBACCO COMPANY",
+            "spans": [
+              {
+                "offset": 813,
+                "length": 24
+              }
+            ],
+            "confidence": 0.948,
+            "source": "D(1,1.0440,3.3017,3.2765,3.2996,3.2766,3.4458,1.0441,3.4479)"
+          },
+          "currency": {
+            "type": "string",
+            "valueString": "USD",
+            "spans": [
+              {
+                "offset": 1854,
+                "length": 9
+              }
+            ],
+            "confidence": 0.255,
+            "source": "D(1,3.3255,9.9421,3.9707,9.9435,3.9702,10.0914,3.3249,10.0894)"
+          },
+          "subtotal": {
+            "type": "number",
+            "confidence": 0.974
+          },
+          "tax_total": {
+            "type": "number",
+            "confidence": 0.974
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 896,
+            "spans": [
+              {
+                "offset": 1761,
+                "length": 7
+              }
+            ],
+            "confidence": 0.928,
+            "source": "D(1,6.0809,6.7828,6.7358,6.7883,6.7346,6.9348,6.0797,6.9292)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "CALLS HOURS",
+                    "spans": [
+                      {
+                        "offset": 1182,
+                        "length": 11
+                      }
+                    ],
+                    "confidence": 0.793,
+                    "source": "D(1,0.5689,5.1249,1.6050,5.1249,1.6050,5.2648,0.5689,5.2648)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 7.5,
+                    "spans": [
+                      {
+                        "offset": 1203,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.892,
+                    "source": "D(1,4.6202,5.1277,5.0035,5.1277,5.0035,5.2619,4.6202,5.2619)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 30,
+                    "spans": [
+                      {
+                        "offset": 1217,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.796,
+                    "source": "D(1,5.2618,5.1249,5.8267,5.1249,5.8267,5.2648,5.2618,5.2648)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 225,
+                    "spans": [
+                      {
+                        "offset": 1233,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.879,
+                    "source": "D(1,6.0890,5.1210,6.7470,5.1226,6.7467,5.2662,6.0887,5.2646)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "DATA ENTRY",
+                    "spans": [
+                      {
+                        "offset": 1261,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.797,
+                    "source": "D(1,0.5695,5.2745,1.5132,5.2760,1.5130,5.4145,0.5693,5.4130)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 1281,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,4.6202,5.2791,5.0035,5.2791,5.0035,5.4104,4.6202,5.4101)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 15,
+                    "spans": [
+                      {
+                        "offset": 1295,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.829,
+                    "source": "D(1,5.2615,5.2779,5.8186,5.2766,5.8189,5.4130,5.2618,5.4143)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 15,
+                    "spans": [
+                      {
+                        "offset": 1311,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.844,
+                    "source": "D(1,6.1818,5.2760,6.7432,5.2781,6.7427,5.4136,6.1813,5.4115)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "COMPUTER PROGRAMMING",
+                    "spans": [
+                      {
+                        "offset": 1338,
+                        "length": 20
+                      }
+                    ],
+                    "confidence": 0.732,
+                    "source": "D(1,0.5674,5.4267,2.4395,5.4307,2.4392,5.5736,0.5671,5.5696)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 0.5,
+                    "spans": [
+                      {
+                        "offset": 1368,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.84,
+                    "source": "D(1,4.6202,5.4343,5.0035,5.4263,5.0035,5.5631,4.6202,5.5714)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 20,
+                    "spans": [
+                      {
+                        "offset": 1382,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.846,
+                    "source": "D(1,5.2593,5.4317,5.8348,5.4217,5.8373,5.5646,5.2618,5.5746)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 10,
+                    "spans": [
+                      {
+                        "offset": 1398,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.814,
+                    "source": "D(1,6.1716,5.4282,6.7427,5.4202,6.7448,5.5670,6.1737,5.5750)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "CALLS HOURS",
+                    "spans": [
+                      {
+                        "offset": 1492,
+                        "length": 11
+                      }
+                    ],
+                    "confidence": 0.668,
+                    "source": "D(1,0.5625,6.0237,1.5965,6.0359,1.5948,6.1800,0.5608,6.1678)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 20.25,
+                    "spans": [
+                      {
+                        "offset": 1513,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.88,
+                    "source": "D(1,4.5233,6.0299,4.9914,6.0299,4.9914,6.1670,4.5233,6.1670)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 30,
+                    "spans": [
+                      {
+                        "offset": 1528,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.847,
+                    "source": "D(1,5.2526,6.0348,5.8146,6.0305,5.8157,6.1695,5.2537,6.1738)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 607.5,
+                    "spans": [
+                      {
+                        "offset": 1544,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.892,
+                    "source": "D(1,6.0796,6.0359,6.7346,6.0298,6.7359,6.1675,6.0809,6.1737)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "DATA ENTRY",
+                    "spans": [
+                      {
+                        "offset": 1572,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.815,
+                    "source": "D(1,0.5624,6.1787,1.5171,6.1850,1.5162,6.3272,0.5615,6.3209)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1.9,
+                    "spans": [
+                      {
+                        "offset": 1592,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.892,
+                    "source": "D(1,4.6162,6.1841,4.9914,6.1841,4.9914,6.3205,4.6162,6.3185)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 15,
+                    "spans": [
+                      {
+                        "offset": 1606,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.856,
+                    "source": "D(1,5.2527,6.1889,5.8146,6.1847,5.8156,6.3238,5.2537,6.3280)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 28.5,
+                    "spans": [
+                      {
+                        "offset": 1622,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,6.1734,6.1860,6.7346,6.1847,6.7349,6.3218,6.1737,6.3231)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "COMPUTER PROGRAMMING",
+                    "spans": [
+                      {
+                        "offset": 1649,
+                        "length": 20
+                      }
+                    ],
+                    "confidence": 0.619,
+                    "source": "D(1,0.5604,6.3190,2.4358,6.3269,2.4352,6.4819,0.5598,6.4740)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 0.5,
+                    "spans": [
+                      {
+                        "offset": 1679,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.824,
+                    "source": "D(1,4.6041,6.3385,4.9914,6.3393,4.9914,6.4763,4.6041,6.4756)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 20,
+                    "spans": [
+                      {
+                        "offset": 1693,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.848,
+                    "source": "D(1,5.2490,6.3425,5.8105,6.3399,5.8112,6.4801,5.2497,6.4827)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 10,
+                    "spans": [
+                      {
+                        "offset": 1709,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,6.1697,6.3383,6.7386,6.3383,6.7386,6.4753,6.1697,6.4753)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -0.108,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1909
+              }
+            ],
+            "words": [
+              {
+                "content": "TELMARK",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.091,
+                "source": "D(1,2.6692,0.9564,5.1851,0.9451,5.1932,1.3406,2.6652,1.3538)"
+              },
+              {
+                "content": "TEL",
+                "span": {
+                  "offset": 8,
+                  "length": 3
+                },
+                "confidence": 0.972,
+                "source": "D(1,2.6591,1.35,3.0795,1.3522,3.0795,1.4871,2.6591,1.4852)"
+              },
+              {
+                "content": "MARK",
+                "span": {
+                  "offset": 12,
+                  "length": 4
+                },
+                "confidence": 0.965,
+                "source": "D(1,3.147,1.3526,3.8192,1.3552,3.8192,1.4896,3.147,1.4874)"
+              },
+              {
+                "content": "SALES",
+                "span": {
+                  "offset": 17,
+                  "length": 5
+                },
+                "confidence": 0.882,
+                "source": "D(1,3.8889,1.3554,4.57,1.3563,4.57,1.4904,3.8889,1.4898)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 22,
+                  "length": 1
+                },
+                "confidence": 0.465,
+                "source": "D(1,4.5678,1.3563,4.633,1.3562,4.633,1.4903,4.5678,1.4904)"
+              },
+              {
+                "content": "INC",
+                "span": {
+                  "offset": 24,
+                  "length": 3
+                },
+                "confidence": 0.941,
+                "source": "D(1,4.6824,1.3562,5.1186,1.3559,5.1186,1.4899,4.6824,1.4903)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 27,
+                  "length": 1
+                },
+                "confidence": 0.949,
+                "source": "D(1,5.0849,1.3559,5.177,1.3559,5.177,1.4898,5.0849,1.4899)"
+              },
+              {
+                "content": "PRV",
+                "span": {
+                  "offset": 48,
+                  "length": 3
+                },
+                "confidence": 0.946,
+                "source": "D(1,0.69,1.7081,1.0488,1.7036,1.0504,1.9165,0.6915,1.9241)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 51,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.0488,1.7036,1.1498,1.7023,1.1515,1.9144,1.0504,1.9165)"
+              },
+              {
+                "content": "DDI",
+                "span": {
+                  "offset": 52,
+                  "length": 3
+                },
+                "confidence": 0.573,
+                "source": "D(1,1.1707,1.702,1.5365,1.6967,1.5383,1.9073,1.1724,1.9141)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 55,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.5435,1.6966,1.6445,1.6949,1.6463,1.9055,1.5453,1.9072)"
+              },
+              {
+                "content": "RDA",
+                "span": {
+                  "offset": 56,
+                  "length": 3
+                },
+                "confidence": 0.868,
+                "source": "D(1,1.6375,1.6951,2.0276,1.6885,2.0297,1.8993,1.6393,1.9056)"
+              },
+              {
+                "content": "PRM",
+                "span": {
+                  "offset": 63,
+                  "length": 3
+                },
+                "confidence": 0.839,
+                "source": "D(1,0.6628,1.9337,0.9936,1.9283,0.9969,2.1355,0.6658,2.1446)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 66,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.0203,1.9278,1.1173,1.9263,1.1206,2.1321,1.0236,2.1348)"
+              },
+              {
+                "content": "DOI",
+                "span": {
+                  "offset": 67,
+                  "length": 3
+                },
+                "confidence": 0.883,
+                "source": "D(1,1.1574,1.9255,1.4915,1.9186,1.4951,2.1209,1.1607,2.1309)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 70,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.4815,1.9188,1.5784,1.9168,1.5821,2.1183,1.4851,2.1212)"
+              },
+              {
+                "content": "RDA",
+                "span": {
+                  "offset": 71,
+                  "length": 3
+                },
+                "confidence": 0.98,
+                "source": "D(1,1.5918,1.9165,2.0529,1.905,2.0569,2.103,1.5955,2.1179)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 84,
+                  "length": 1
+                },
+                "confidence": 0.311,
+                "source": "D(1,2.1729,1.5487,2.304,1.5477,2.304,1.6814,2.1729,1.6815)"
+              },
+              {
+                "content": "448.00",
+                "span": {
+                  "offset": 89,
+                  "length": 6
+                },
+                "confidence": 0.94,
+                "source": "D(1,2.3101,1.6329,2.9456,1.6243,2.9456,1.8028,2.3141,1.8106)"
+              },
+              {
+                "content": "448.00",
+                "span": {
+                  "offset": 99,
+                  "length": 6
+                },
+                "confidence": 0.867,
+                "source": "D(1,2.2455,1.8338,2.8912,1.8211,2.8932,1.9829,2.2455,2.001)"
+              },
+              {
+                "content": "896.00",
+                "span": {
+                  "offset": 136,
+                  "length": 6
+                },
+                "confidence": 0.915,
+                "source": "D(1,2.2153,2.1172,2.8367,2.0998,2.8367,2.2749,2.2153,2.2929)"
+              },
+              {
+                "content": "APPROVALS",
+                "span": {
+                  "offset": 194,
+                  "length": 9
+                },
+                "confidence": 0.055,
+                "source": "D(1,5.6653,0.9552,6.4037,0.9201,6.4037,1.0514,5.6734,1.0859)"
+              },
+              {
+                "content": "DAGE",
+                "span": {
+                  "offset": 207,
+                  "length": 4
+                },
+                "confidence": 0.187,
+                "source": "D(1,6.9727,0.9089,7.2272,0.9028,7.2272,0.9885,6.9727,0.9942)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 211,
+                  "length": 1
+                },
+                "confidence": 0.657,
+                "source": "D(1,7.1933,0.904,7.2551,0.9019,7.2551,0.9878,7.1933,0.9893)"
+              },
+              {
+                "content": "HATERIMS",
+                "span": {
+                  "offset": 255,
+                  "length": 8
+                },
+                "confidence": 0.129,
+                "source": "D(1,5.2174,1.1626,5.6337,1.1374,5.6337,1.2212,5.2174,1.2457)"
+              },
+              {
+                "content": "BSCEIVEDI",
+                "span": {
+                  "offset": 264,
+                  "length": 9
+                },
+                "confidence": 0.114,
+                "source": "D(1,5.6557,1.136,6.0527,1.1113,6.0527,1.1953,5.6557,1.2198)"
+              },
+              {
+                "content": "SERVICAS",
+                "span": {
+                  "offset": 274,
+                  "length": 8
+                },
+                "confidence": 0.234,
+                "source": "D(1,5.2214,1.2388,5.5597,1.217,5.5598,1.2947,5.2214,1.3149)"
+              },
+              {
+                "content": "\u05ea",
+                "span": {
+                  "offset": 283,
+                  "length": 1
+                },
+                "confidence": 0.524,
+                "source": "D(1,5.5805,1.2159,5.6261,1.2134,5.6262,1.2913,5.5806,1.2936)"
+              },
+              {
+                "content": "RNDERE",
+                "span": {
+                  "offset": 284,
+                  "length": 6
+                },
+                "confidence": 0.034,
+                "source": "D(1,5.63,1.2132,5.9921,1.1975,5.9921,1.2749,5.6301,1.2911)"
+              },
+              {
+                "content": "fluf",
+                "span": {
+                  "offset": 300,
+                  "length": 4
+                },
+                "confidence": 0.046,
+                "source": "D(1,6.1293,1.0386,6.557,1.0177,6.557,1.2869,6.1293,1.3028)"
+              },
+              {
+                "content": "6/7/97",
+                "span": {
+                  "offset": 308,
+                  "length": 6
+                },
+                "confidence": 0.085,
+                "source": "D(1,6.9646,1.0167,7.4407,0.9793,7.4448,1.1872,6.9686,1.222)"
+              },
+              {
+                "content": "FINANCE",
+                "span": {
+                  "offset": 335,
+                  "length": 7
+                },
+                "confidence": 0.825,
+                "source": "D(1,5.2376,1.4411,5.6427,1.4142,5.6427,1.5028,5.2376,1.53)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 342,
+                  "length": 1
+                },
+                "confidence": 0.967,
+                "source": "D(1,5.6383,1.4145,5.6774,1.412,5.6774,1.5004,5.6383,1.503)"
+              },
+              {
+                "content": "ket",
+                "span": {
+                  "offset": 353,
+                  "length": 3
+                },
+                "confidence": 0.106,
+                "source": "D(1,6.5046,1.2974,6.8758,1.2743,6.8839,1.4714,6.5127,1.4932)"
+              },
+              {
+                "content": "6/10",
+                "span": {
+                  "offset": 360,
+                  "length": 4
+                },
+                "confidence": 0.965,
+                "source": "D(1,6.9969,1.2694,7.3358,1.2549,7.3439,1.425,6.9969,1.4464)"
+              },
+              {
+                "content": "CHARGS",
+                "span": {
+                  "offset": 385,
+                  "length": 6
+                },
+                "confidence": 0.714,
+                "source": "D(1,5.2497,1.6507,5.6244,1.6255,5.6245,1.7165,5.2497,1.7377)"
+              },
+              {
+                "content": "CODE",
+                "span": {
+                  "offset": 392,
+                  "length": 4
+                },
+                "confidence": 0.526,
+                "source": "D(1,5.6582,1.6232,5.9316,1.6058,5.9316,1.6963,5.6583,1.7144)"
+              },
+              {
+                "content": "S0036",
+                "span": {
+                  "offset": 406,
+                  "length": 5
+                },
+                "confidence": 0.856,
+                "source": "D(1,6.1737,1.5312,6.7008,1.5067,6.7061,1.6891,6.1818,1.7125)"
+              },
+              {
+                "content": "See",
+                "span": {
+                  "offset": 412,
+                  "length": 3
+                },
+                "confidence": 0.339,
+                "source": "D(1,6.7902,1.5032,7.0739,1.4919,7.0772,1.6748,6.795,1.6857)"
+              },
+              {
+                "content": "Bredadon",
+                "span": {
+                  "offset": 416,
+                  "length": 8
+                },
+                "confidence": 0.103,
+                "source": "D(1,7.0955,1.4911,7.6537,1.4721,7.6539,1.6556,7.0987,1.674)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 434,
+                  "length": 1
+                },
+                "confidence": 0.572,
+                "source": "D(1,7.6228,1.4731,7.703,1.4705,7.703,1.6541,7.6232,1.6566)"
+              },
+              {
+                "content": "ACCOUNTING",
+                "span": {
+                  "offset": 466,
+                  "length": 10
+                },
+                "confidence": 0.98,
+                "source": "D(1,5.6451,1.7647,6.5127,1.708,6.5127,1.8269,5.6532,1.8845)"
+              },
+              {
+                "content": "DATE",
+                "span": {
+                  "offset": 480,
+                  "length": 4
+                },
+                "confidence": 0.847,
+                "source": "D(1,7.0372,1.6931,7.3277,1.6787,7.3277,1.7687,7.0372,1.7813)"
+              },
+              {
+                "content": "DUE",
+                "span": {
+                  "offset": 534,
+                  "length": 3
+                },
+                "confidence": 0.971,
+                "source": "D(1,5.2739,1.9895,5.4586,1.9811,5.4586,2.0731,5.2739,2.0807)"
+              },
+              {
+                "content": "DATE",
+                "span": {
+                  "offset": 538,
+                  "length": 4
+                },
+                "confidence": 0.891,
+                "source": "D(1,5.4976,1.9791,5.7377,1.9663,5.7378,2.0574,5.4976,2.0711)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 542,
+                  "length": 1
+                },
+                "confidence": 0.639,
+                "source": "D(1,5.7317,1.9666,5.7783,1.964,5.7783,2.0549,5.7318,2.0578)"
+              },
+              {
+                "content": "ENTERED",
+                "span": {
+                  "offset": 574,
+                  "length": 7
+                },
+                "confidence": 0.523,
+                "source": "D(1,5.286,2.1922,5.7082,2.1739,5.7082,2.2628,5.286,2.2806)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 581,
+                  "length": 1
+                },
+                "confidence": 0.523,
+                "source": "D(1,5.7006,2.1742,5.746,2.1724,5.746,2.2614,5.7006,2.2631)"
+              },
+              {
+                "content": "VENDOR",
+                "span": {
+                  "offset": 613,
+                  "length": 6
+                },
+                "confidence": 0.476,
+                "source": "D(1,5.286,2.3993,5.6581,2.3792,5.6582,2.4709,5.286,2.4906)"
+              },
+              {
+                "content": "21",
+                "span": {
+                  "offset": 620,
+                  "length": 2
+                },
+                "confidence": 0.138,
+                "source": "D(1,5.6843,2.3789,5.7783,2.3779,5.7783,2.4685,5.6843,2.4704)"
+              },
+              {
+                "content": "VOUCTER",
+                "span": {
+                  "offset": 653,
+                  "length": 7
+                },
+                "confidence": 0.338,
+                "source": "D(1,5.2981,2.5998,5.7198,2.5858,5.7198,2.6744,5.2981,2.6883)"
+              },
+              {
+                "content": "#",
+                "span": {
+                  "offset": 661,
+                  "length": 1
+                },
+                "confidence": 0.476,
+                "source": "D(1,5.7433,2.5852,5.7991,2.5836,5.7991,2.6721,5.7433,2.6737)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 662,
+                  "length": 1
+                },
+                "confidence": 0.937,
+                "source": "D(1,5.783,2.5841,5.8388,2.5825,5.8388,2.671,5.783,2.6726)"
+              },
+              {
+                "content": "VOUGHER",
+                "span": {
+                  "offset": 694,
+                  "length": 7
+                },
+                "confidence": 0.395,
+                "source": "D(1,5.3021,2.8027,5.7277,2.7866,5.7277,2.8758,5.3021,2.8918)"
+              },
+              {
+                "content": "MONTH",
+                "span": {
+                  "offset": 702,
+                  "length": 5
+                },
+                "confidence": 0.369,
+                "source": "D(1,5.7607,2.7855,6.0845,2.7751,6.0845,2.8633,5.7607,2.8746)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 707,
+                  "length": 1
+                },
+                "confidence": 0.842,
+                "source": "D(1,6.0875,2.775,6.1414,2.7734,6.1414,2.8614,6.0875,2.8632)"
+              },
+              {
+                "content": "PROCESSOR",
+                "span": {
+                  "offset": 739,
+                  "length": 9
+                },
+                "confidence": 0.238,
+                "source": "D(1,5.3263,3.0139,5.8234,2.989,5.8234,3.0782,5.3263,3.0979)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 748,
+                  "length": 1
+                },
+                "confidence": 0.968,
+                "source": "D(1,5.8174,2.9892,5.8549,2.9881,5.8549,3.0768,5.8174,3.0785)"
+              },
+              {
+                "content": "INVOICE",
+                "span": {
+                  "offset": 784,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,3.448,2.8498,4.1077,2.847,4.1077,2.982,3.448,2.9809)"
+              },
+              {
+                "content": "TO",
+                "span": {
+                  "offset": 793,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,0.5846,3.1588,0.7791,3.1581,0.7782,3.3003,0.5836,3.3014)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 795,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,0.7978,3.158,0.8471,3.1578,0.8462,3.2999,0.797,3.3002)"
+              },
+              {
+                "content": "MR",
+                "span": {
+                  "offset": 797,
+                  "length": 2
+                },
+                "confidence": 0.983,
+                "source": "D(1,1.0463,3.1571,1.2431,3.1563,1.2425,3.2977,1.0455,3.2988)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 799,
+                  "length": 1
+                },
+                "confidence": 0.984,
+                "source": "D(1,1.2572,3.1563,1.2994,3.1562,1.2987,3.2974,1.2565,3.2976)"
+              },
+              {
+                "content": "TONY",
+                "span": {
+                  "offset": 801,
+                  "length": 4
+                },
+                "confidence": 0.979,
+                "source": "D(1,1.4189,3.1559,1.7915,3.1549,1.7911,3.2948,1.4183,3.2967)"
+              },
+              {
+                "content": "YENSEN",
+                "span": {
+                  "offset": 806,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,1.8805,3.1547,2.4594,3.1538,2.4594,3.2916,1.8802,3.2943)"
+              },
+              {
+                "content": "AMERICAN",
+                "span": {
+                  "offset": 813,
+                  "length": 8
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.0441,3.305,1.7906,3.3063,1.7905,3.446,1.0441,3.4412)"
+              },
+              {
+                "content": "TOBACCO",
+                "span": {
+                  "offset": 822,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.8812,3.3061,2.5254,3.3045,2.5254,3.4465,1.8812,3.4461)"
+              },
+              {
+                "content": "COMPANY",
+                "span": {
+                  "offset": 830,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.6161,3.304,3.2765,3.2996,3.2765,3.4426,2.6161,3.4461)"
+              },
+              {
+                "content": "P",
+                "span": {
+                  "offset": 838,
+                  "length": 1
+                },
+                "confidence": 0.882,
+                "source": "D(1,1.0441,3.4613,1.1352,3.4612,1.1352,3.6025,1.0441,3.6033)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 839,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.1632,3.4611,1.203,3.4611,1.203,3.6019,1.1632,3.6023)"
+              },
+              {
+                "content": "O",
+                "span": {
+                  "offset": 840,
+                  "length": 1
+                },
+                "confidence": 0.959,
+                "source": "D(1,1.2287,3.461,1.3245,3.4608,1.3244,3.6009,1.2287,3.6017)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 841,
+                  "length": 1
+                },
+                "confidence": 0.985,
+                "source": "D(1,1.3502,3.4608,1.3899,3.4607,1.3899,3.6004,1.3501,3.6007)"
+              },
+              {
+                "content": "BOX",
+                "span": {
+                  "offset": 843,
+                  "length": 3
+                },
+                "confidence": 0.971,
+                "source": "D(1,1.5067,3.4605,1.7871,3.4603,1.787,3.5982,1.5067,3.5995)"
+              },
+              {
+                "content": "10380",
+                "span": {
+                  "offset": 847,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,1.8875,3.4603,2.3525,3.4605,2.3525,3.5974,1.8875,3.5978)"
+              },
+              {
+                "content": "STAMFORD",
+                "span": {
+                  "offset": 853,
+                  "length": 8
+                },
+                "confidence": 0.985,
+                "source": "D(1,1.0451,3.6077,1.7903,3.6089,1.7896,3.7517,1.0441,3.7505)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 861,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.807,3.6089,1.8594,3.6089,1.8587,3.7516,1.8063,3.7517)"
+              },
+              {
+                "content": "CT",
+                "span": {
+                  "offset": 863,
+                  "length": 2
+                },
+                "confidence": 0.969,
+                "source": "D(1,1.9617,3.6088,2.1546,3.6086,2.1541,3.7514,1.9611,3.7515)"
+              },
+              {
+                "content": "06904-2380",
+                "span": {
+                  "offset": 866,
+                  "length": 10
+                },
+                "confidence": 0.714,
+                "source": "D(1,2.3451,3.6085,3.2926,3.6059,3.2926,3.7486,2.3446,3.7512)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 877,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.0602,3.7536,1.1248,3.754,1.1248,3.9183,1.0602,3.9183)"
+              },
+              {
+                "content": "203",
+                "span": {
+                  "offset": 878,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,1.1383,3.7541,1.4075,3.7558,1.4075,3.9185,1.1383,3.9183)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 881,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.4264,3.7559,1.4856,3.7563,1.4856,3.9185,1.4264,3.9185)"
+              },
+              {
+                "content": "352-8054",
+                "span": {
+                  "offset": 883,
+                  "length": 8
+                },
+                "confidence": 0.99,
+                "source": "D(1,1.5933,3.7561,2.3525,3.7512,2.3525,3.9043,1.5933,3.9174)"
+              },
+              {
+                "content": "INVOICE",
+                "span": {
+                  "offset": 911,
+                  "length": 7
+                },
+                "confidence": 0.979,
+                "source": "D(1,4.2691,3.1597,4.909,3.1551,4.909,3.2868,4.2691,3.2901)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 918,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.9349,3.1552,4.9955,3.1555,4.9955,3.2865,4.9349,3.2867)"
+              },
+              {
+                "content": "1493OVER",
+                "span": {
+                  "offset": 929,
+                  "length": 8
+                },
+                "confidence": 0.199,
+                "source": "D(1,5.1972,3.162,5.8348,3.1772,5.8348,3.2927,5.1972,3.2871)"
+              },
+              {
+                "content": "DATE",
+                "span": {
+                  "offset": 968,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,4.2651,3.3147,4.6312,3.3078,4.6312,3.4389,4.2651,3.4406)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 972,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,4.6549,3.3071,4.713,3.3053,4.713,3.4365,4.6549,3.4382)"
+              },
+              {
+                "content": "TERMS",
+                "span": {
+                  "offset": 977,
+                  "length": 5
+                },
+                "confidence": 0.982,
+                "source": "D(1,4.2651,3.4667,4.7217,3.465,4.7217,3.5963,4.2651,3.595)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 983,
+                  "length": 1
+                },
+                "confidence": 0.992,
+                "source": "D(1,4.7517,3.4655,4.8139,3.4666,4.8139,3.5976,4.7517,3.5967)"
+              },
+              {
+                "content": "06/04/93",
+                "span": {
+                  "offset": 994,
+                  "length": 8
+                },
+                "confidence": 0.948,
+                "source": "D(1,5.1851,3.3066,5.9276,3.3085,5.9276,3.4427,5.1851,3.4414)"
+              },
+              {
+                "content": "DUE",
+                "span": {
+                  "offset": 1006,
+                  "length": 3
+                },
+                "confidence": 0.985,
+                "source": "D(1,5.173,3.4599,5.4529,3.4606,5.4529,3.5946,5.173,3.5949)"
+              },
+              {
+                "content": "UPON",
+                "span": {
+                  "offset": 1010,
+                  "length": 4
+                },
+                "confidence": 0.707,
+                "source": "D(1,5.5351,3.4607,5.9062,3.4611,5.9062,3.5945,5.5351,3.5945)"
+              },
+              {
+                "content": "RECEIPT",
+                "span": {
+                  "offset": 1024,
+                  "length": 7
+                },
+                "confidence": 0.177,
+                "source": "D(1,5.9906,3.4611,6.666,3.46,6.666,3.5959,5.9906,3.5945)"
+              },
+              {
+                "content": "HOURS",
+                "span": {
+                  "offset": 1081,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,4.4386,4.3637,4.9148,4.3662,4.9148,4.4986,4.4386,4.4949)"
+              },
+              {
+                "content": "RATE",
+                "span": {
+                  "offset": 1096,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,5.2577,4.3653,5.6572,4.3763,5.6572,4.5042,5.2577,4.4912)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 1110,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,6.0809,4.3765,6.5732,4.3755,6.5732,4.5068,6.0809,4.5079)"
+              },
+              {
+                "content": "SAFIERS",
+                "span": {
+                  "offset": 1148,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,0.5715,4.8214,1.2217,4.8197,1.2217,4.9682,0.5715,4.97)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 1155,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.2442,4.8197,1.2865,4.8196,1.2865,4.9682,1.2442,4.9682)"
+              },
+              {
+                "content": "INC",
+                "span": {
+                  "offset": 1157,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.4211,4.8194,1.6901,4.8193,1.6901,4.9686,1.4211,4.9682)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1160,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.7101,4.8193,1.7674,4.8192,1.7674,4.9687,1.7101,4.9686)"
+              },
+              {
+                "content": "CALLS",
+                "span": {
+                  "offset": 1182,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,0.5689,5.1249,1.0361,5.1249,1.0364,5.2648,0.5695,5.2648)"
+              },
+              {
+                "content": "HOURS",
+                "span": {
+                  "offset": 1188,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,1.124,5.1249,1.605,5.1249,1.605,5.2648,1.1242,5.2648)"
+              },
+              {
+                "content": "7.50",
+                "span": {
+                  "offset": 1203,
+                  "length": 4
+                },
+                "confidence": 0.77,
+                "source": "D(1,4.6202,5.1277,5.0035,5.1277,5.0035,5.2619,4.6202,5.2619)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1217,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.2618,5.1249,5.3442,5.1249,5.3442,5.2648,5.2618,5.2648)"
+              },
+              {
+                "content": "30.00",
+                "span": {
+                  "offset": 1218,
+                  "length": 5
+                },
+                "confidence": 0.952,
+                "source": "D(1,5.3606,5.1249,5.8267,5.1249,5.8267,5.2648,5.3606,5.2648)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1233,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,6.089,5.1244,6.1712,5.1247,6.1712,5.2647,6.089,5.2646)"
+              },
+              {
+                "content": "225.00",
+                "span": {
+                  "offset": 1234,
+                  "length": 6
+                },
+                "confidence": 0.692,
+                "source": "D(1,6.1833,5.1248,6.7467,5.1226,6.7467,5.2659,6.1833,5.2647)"
+              },
+              {
+                "content": "DATA",
+                "span": {
+                  "offset": 1261,
+                  "length": 4
+                },
+                "confidence": 0.987,
+                "source": "D(1,0.5695,5.276,0.9483,5.2766,0.9479,5.4136,0.5695,5.413)"
+              },
+              {
+                "content": "ENTRY",
+                "span": {
+                  "offset": 1266,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,1.0322,5.2766,1.5132,5.276,1.5122,5.413,1.0317,5.4136)"
+              },
+              {
+                "content": "1.00",
+                "span": {
+                  "offset": 1281,
+                  "length": 4
+                },
+                "confidence": 0.877,
+                "source": "D(1,4.6202,5.2791,5.0035,5.2791,5.0035,5.4104,4.6202,5.4101)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1295,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.2618,5.2785,5.343,5.2781,5.343,5.4138,5.2618,5.414)"
+              },
+              {
+                "content": "15.00",
+                "span": {
+                  "offset": 1296,
+                  "length": 5
+                },
+                "confidence": 0.928,
+                "source": "D(1,5.3639,5.278,5.8186,5.2766,5.8186,5.413,5.3639,5.4138)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1311,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,6.1818,5.279,6.2607,5.2792,6.2607,5.4105,6.1818,5.4101)"
+              },
+              {
+                "content": "15.00",
+                "span": {
+                  "offset": 1312,
+                  "length": 5
+                },
+                "confidence": 0.906,
+                "source": "D(1,6.2826,5.2792,6.7427,5.2781,6.7427,5.4136,6.2826,5.4107)"
+              },
+              {
+                "content": "COMPUTER",
+                "span": {
+                  "offset": 1338,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.5674,5.4337,1.3175,5.4296,1.3175,5.5683,0.5674,5.5696)"
+              },
+              {
+                "content": "PROGRAMMING",
+                "span": {
+                  "offset": 1347,
+                  "length": 11
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.4001,5.4295,2.4392,5.4307,2.4392,5.5716,1.4001,5.5684)"
+              },
+              {
+                "content": "0.50",
+                "span": {
+                  "offset": 1368,
+                  "length": 4
+                },
+                "confidence": 0.934,
+                "source": "D(1,4.6202,5.4343,5.0035,5.4263,5.0035,5.5631,4.6202,5.5714)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1382,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,5.2618,5.4325,5.3453,5.4309,5.3453,5.5731,5.2618,5.5744)"
+              },
+              {
+                "content": "20.00",
+                "span": {
+                  "offset": 1383,
+                  "length": 5
+                },
+                "confidence": 0.716,
+                "source": "D(1,5.3597,5.4307,5.8348,5.4217,5.8348,5.5632,5.3597,5.5729)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1398,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,6.1737,5.432,6.2591,5.4309,6.2591,5.5737,6.1737,5.575)"
+              },
+              {
+                "content": "10.00",
+                "span": {
+                  "offset": 1399,
+                  "length": 5
+                },
+                "confidence": 0.716,
+                "source": "D(1,6.2804,5.4306,6.7427,5.4202,6.7427,5.5629,6.2804,5.5734)"
+              },
+              {
+                "content": "CHARLES",
+                "span": {
+                  "offset": 1425,
+                  "length": 7
+                },
+                "confidence": 0.982,
+                "source": "D(1,0.5654,5.7274,1.2156,5.7303,1.2156,5.876,0.5654,5.8703)"
+              },
+              {
+                "content": "M",
+                "span": {
+                  "offset": 1433,
+                  "length": 1
+                },
+                "confidence": 0.976,
+                "source": "D(1,1.3047,5.7303,1.4058,5.7303,1.4058,5.876,1.3047,5.876)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1434,
+                  "length": 1
+                },
+                "confidence": 0.986,
+                "source": "D(1,1.4275,5.7303,1.4684,5.7303,1.4684,5.876,1.4275,5.876)"
+              },
+              {
+                "content": "SLEDD",
+                "span": {
+                  "offset": 1436,
+                  "length": 5
+                },
+                "confidence": 0.984,
+                "source": "D(1,1.5888,5.7301,2.068,5.7274,2.068,5.8702,1.5888,5.8757)"
+              },
+              {
+                "content": "CALLS",
+                "span": {
+                  "offset": 1492,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,0.5624,6.0308,1.0256,6.0298,1.0256,6.1669,0.5624,6.1678)"
+              },
+              {
+                "content": "HOURS",
+                "span": {
+                  "offset": 1498,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,1.1178,6.0303,1.5949,6.0359,1.5949,6.173,1.1178,6.1673)"
+              },
+              {
+                "content": "20.25",
+                "span": {
+                  "offset": 1513,
+                  "length": 5
+                },
+                "confidence": 0.885,
+                "source": "D(1,4.5233,6.0299,4.9914,6.0299,4.9914,6.167,4.5233,6.167)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1528,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,5.2537,6.0368,5.3355,6.0345,5.3355,6.1715,5.2537,6.1738)"
+              },
+              {
+                "content": "30.00",
+                "span": {
+                  "offset": 1529,
+                  "length": 5
+                },
+                "confidence": 0.857,
+                "source": "D(1,5.3518,6.034,5.8146,6.0305,5.8146,6.1675,5.3518,6.1711)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1544,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,6.0809,6.0367,6.1603,6.0353,6.1603,6.1724,6.0809,6.1737)"
+              },
+              {
+                "content": "607.50",
+                "span": {
+                  "offset": 1545,
+                  "length": 6
+                },
+                "confidence": 0.657,
+                "source": "D(1,6.1762,6.035,6.7346,6.0298,6.7346,6.1668,6.1762,6.1721)"
+              },
+              {
+                "content": "DATA",
+                "span": {
+                  "offset": 1572,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.5624,6.1839,0.9384,6.1817,0.9384,6.3187,0.5624,6.3209)"
+              },
+              {
+                "content": "ENTRY",
+                "span": {
+                  "offset": 1577,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.0278,6.1818,1.5162,6.185,1.5162,6.3221,1.0278,6.3188)"
+              },
+              {
+                "content": "1.90",
+                "span": {
+                  "offset": 1592,
+                  "length": 4
+                },
+                "confidence": 0.878,
+                "source": "D(1,4.6162,6.1841,4.9914,6.1841,4.9914,6.3205,4.6162,6.3185)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1606,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.2537,6.1909,5.3378,6.1886,5.3378,6.3256,5.2537,6.328)"
+              },
+              {
+                "content": "15.00",
+                "span": {
+                  "offset": 1607,
+                  "length": 5
+                },
+                "confidence": 0.823,
+                "source": "D(1,5.3565,6.1881,5.8146,6.1847,5.8146,6.3217,5.3565,6.3251)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1622,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,6.1737,6.1909,6.2526,6.1887,6.2526,6.3207,6.1737,6.3227)"
+              },
+              {
+                "content": "28.50",
+                "span": {
+                  "offset": 1623,
+                  "length": 5
+                },
+                "confidence": 0.716,
+                "source": "D(1,6.2679,6.1883,6.7346,6.1847,6.7346,6.3218,6.2679,6.3204)"
+              },
+              {
+                "content": "COMPUTER",
+                "span": {
+                  "offset": 1649,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,0.5604,6.3255,1.3058,6.3287,1.3055,6.4771,0.5599,6.474)"
+              },
+              {
+                "content": "PROGRAMMING",
+                "span": {
+                  "offset": 1658,
+                  "length": 11
+                },
+                "confidence": 0.991,
+                "source": "D(1,1.3931,6.3287,2.4352,6.3269,2.4352,6.4754,1.3928,6.4772)"
+              },
+              {
+                "content": "0.50",
+                "span": {
+                  "offset": 1679,
+                  "length": 4
+                },
+                "confidence": 0.896,
+                "source": "D(1,4.6041,6.3385,4.9914,6.3393,4.9914,6.4763,4.6041,6.4756)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1693,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.2497,6.3456,5.3361,6.3425,5.3361,6.4796,5.2497,6.4827)"
+              },
+              {
+                "content": "20.00",
+                "span": {
+                  "offset": 1694,
+                  "length": 5
+                },
+                "confidence": 0.722,
+                "source": "D(1,5.3501,6.342,5.8105,6.3399,5.8105,6.4769,5.3501,6.4791)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1709,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,6.1697,6.3383,6.2541,6.3383,6.2541,6.4753,6.1697,6.4753)"
+              },
+              {
+                "content": "10.00",
+                "span": {
+                  "offset": 1710,
+                  "length": 5
+                },
+                "confidence": 0.789,
+                "source": "D(1,6.2741,6.3383,6.7386,6.3383,6.7386,6.4753,6.2741,6.4753)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 1738,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.4056,6.7837,3.8762,6.7837,3.8762,6.9322,3.4056,6.9322)"
+              },
+              {
+                "content": "DUE",
+                "span": {
+                  "offset": 1744,
+                  "length": 3
+                },
+                "confidence": 0.989,
+                "source": "D(1,3.9624,6.7837,4.2433,6.7837,4.2433,6.9322,3.9624,6.9322)"
+              },
+              {
+                "content": "THIS",
+                "span": {
+                  "offset": 1748,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,4.3345,6.7837,4.6991,6.7837,4.6991,6.9322,4.3345,6.9322)"
+              },
+              {
+                "content": "INVOICE",
+                "span": {
+                  "offset": 1753,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,4.8075,6.7837,5.4555,6.7837,5.4555,6.9322,4.8075,6.9322)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1761,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,6.0809,6.7861,6.1578,6.7861,6.1578,6.9298,6.0809,6.9285)"
+              },
+              {
+                "content": "896.00",
+                "span": {
+                  "offset": 1762,
+                  "length": 6
+                },
+                "confidence": 0.751,
+                "source": "D(1,6.1698,6.7861,6.7346,6.7883,6.7346,6.931,6.1698,6.93)"
+              },
+              {
+                "content": "==========",
+                "span": {
+                  "offset": 1770,
+                  "length": 10
+                },
+                "confidence": 0.696,
+                "source": "D(1,5.8872,6.9778,6.8234,6.9778,6.8234,7.0527,5.8872,7.0547)"
+              },
+              {
+                "content": "PAYMENT",
+                "span": {
+                  "offset": 1782,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,3.4036,7.6976,4.0555,7.6972,4.0527,7.8457,3.3996,7.8461)"
+              },
+              {
+                "content": "DUE",
+                "span": {
+                  "offset": 1790,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.1451,7.6972,4.4188,7.6979,4.4166,7.8463,4.1424,7.8456)"
+              },
+              {
+                "content": "UPON",
+                "span": {
+                  "offset": 1794,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,4.5084,7.6981,4.8766,7.699,4.8752,7.8475,4.5063,7.8466)"
+              },
+              {
+                "content": "RECEIPT",
+                "span": {
+                  "offset": 1799,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,4.9687,7.6995,5.633,7.7033,5.633,7.8518,4.9675,7.848)"
+              },
+              {
+                "content": "THANK",
+                "span": {
+                  "offset": 1807,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.1319,8.0057,4.6062,8.0057,4.6062,8.1427,4.1319,8.1427)"
+              },
+              {
+                "content": "YOU",
+                "span": {
+                  "offset": 1813,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.6875,8.0057,4.9874,8.0057,4.9874,8.1427,4.6875,8.1427)"
+              },
+              {
+                "content": "526",
+                "span": {
+                  "offset": 1818,
+                  "length": 3
+                },
+                "confidence": 0.946,
+                "source": "D(1,0.6814,9.9392,0.8818,9.9394,0.8808,10.0816,0.6804,10.0809)"
+              },
+              {
+                "content": "W",
+                "span": {
+                  "offset": 1822,
+                  "length": 1
+                },
+                "confidence": 0.841,
+                "source": "D(1,0.8989,9.9394,1.0187,9.9395,1.0177,10.082,0.8979,10.0816)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1823,
+                  "length": 1
+                },
+                "confidence": 0.838,
+                "source": "D(1,1.0089,9.9395,1.0431,9.9395,1.0421,10.0821,1.0079,10.082)"
+              },
+              {
+                "content": "WISCONSIN",
+                "span": {
+                  "offset": 1825,
+                  "length": 9
+                },
+                "confidence": 0.809,
+                "source": "D(1,1.0626,9.9396,1.6956,9.9401,1.6947,10.0842,1.0617,10.0822)"
+              },
+              {
+                "content": "AVENUE",
+                "span": {
+                  "offset": 1835,
+                  "length": 6
+                },
+                "confidence": 0.99,
+                "source": "D(1,1.7273,9.9401,2.1892,9.9405,2.1884,10.0858,1.7265,10.0843)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1842,
+                  "length": 1
+                },
+                "confidence": 0.935,
+                "source": "D(1,2.4116,9.9407,2.4873,9.9408,2.4866,10.0868,2.4108,10.0866)"
+              },
+              {
+                "content": "APPLETON",
+                "span": {
+                  "offset": 1844,
+                  "length": 8
+                },
+                "confidence": 0.985,
+                "source": "D(1,2.6755,9.9409,3.2742,9.942,3.2736,10.0893,2.6748,10.0874)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 1852,
+                  "length": 1
+                },
+                "confidence": 0.946,
+                "source": "D(1,3.2742,9.942,3.306,9.9421,3.3054,10.0894,3.2736,10.0893)"
+              },
+              {
+                "content": "WISCONSIN",
+                "span": {
+                  "offset": 1854,
+                  "length": 9
+                },
+                "confidence": 0.984,
+                "source": "D(1,3.3255,9.9421,3.9707,9.9435,3.9702,10.0914,3.3249,10.0894)"
+              },
+              {
+                "content": "54911",
+                "span": {
+                  "offset": 1864,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,4.0073,9.9435,4.3299,9.9442,4.3294,10.0925,4.0068,10.0915)"
+              },
+              {
+                "content": "\u2022",
+                "span": {
+                  "offset": 1870,
+                  "length": 1
+                },
+                "confidence": 0.522,
+                "source": "D(1,4.5376,9.9446,4.606,9.9448,4.6056,10.0934,4.5372,10.0932)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 1872,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.7942,9.9452,4.8431,9.9453,4.8427,10.0941,4.7938,10.0939)"
+              },
+              {
+                "content": "414",
+                "span": {
+                  "offset": 1873,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,4.8186,9.9452,5.0166,9.9457,5.0162,10.0946,4.8183,10.094)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 1876,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.0068,9.9457,5.0508,9.9458,5.0504,10.0947,5.0065,10.0946)"
+              },
+              {
+                "content": "954-2900",
+                "span": {
+                  "offset": 1878,
+                  "length": 8
+                },
+                "confidence": 0.959,
+                "source": "D(1,5.0679,9.9459,5.5664,9.9475,5.5662,10.0962,5.0676,10.0948)"
+              },
+              {
+                "content": "\u2022",
+                "span": {
+                  "offset": 1887,
+                  "length": 1
+                },
+                "confidence": 0.503,
+                "source": "D(1,5.7814,9.9483,5.8523,9.9485,5.8521,10.097,5.7812,10.0968)"
+              },
+              {
+                "content": "Fax",
+                "span": {
+                  "offset": 1889,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,6.06,9.9492,6.2506,9.9498,6.2505,10.0982,6.0599,10.0976)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 1892,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,6.2213,9.9497,6.2629,9.9499,6.2627,10.0982,6.2212,10.0981)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 1894,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,6.2873,9.95,6.3288,9.9501,6.3287,10.0984,6.2872,10.0983)"
+              },
+              {
+                "content": "414",
+                "span": {
+                  "offset": 1895,
+                  "length": 3
+                },
+                "confidence": 0.991,
+                "source": "D(1,6.3142,9.95,6.5072,9.9507,6.5071,10.0989,6.314,10.0983)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 1898,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,6.4975,9.9507,6.5439,9.9508,6.5438,10.099,6.4974,10.0989)"
+              },
+              {
+                "content": "954-2915",
+                "span": {
+                  "offset": 1900,
+                  "length": 8
+                },
+                "confidence": 0.978,
+                "source": "D(1,6.5781,9.9509,7.0937,9.9526,7.0937,10.1006,6.578,10.0991)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "TELMARK",
+                "source": "D(1,2.6631,0.9564,5.1911,0.9432,5.1932,1.3406,2.6652,1.3538)",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                }
+              },
+              {
+                "content": "TEL MARK SALES, INC.",
+                "source": "D(1,2.6591,1.35,5.1774,1.3559,5.177,1.493,2.6588,1.4871)",
+                "span": {
+                  "offset": 8,
+                  "length": 20
+                }
+              },
+              {
+                "content": "PRV-DDI-RDA",
+                "source": "D(1,0.6884,1.7081,2.0276,1.6885,2.0308,1.9045,0.6915,1.9241)",
+                "span": {
+                  "offset": 48,
+                  "length": 11
+                }
+              },
+              {
+                "content": "PRM-DOI-RDA",
+                "source": "D(1,0.6625,1.9337,2.0529,1.905,2.0572,2.1158,0.6658,2.1446)",
+                "span": {
+                  "offset": 63,
+                  "length": 11
+                }
+              },
+              {
+                "content": "$",
+                "source": "D(1,2.1729,1.547,2.304,1.547,2.304,1.6815,2.1729,1.6815)",
+                "span": {
+                  "offset": 84,
+                  "length": 1
+                }
+              },
+              {
+                "content": "448.00",
+                "source": "D(1,2.31,1.6274,2.9456,1.6217,2.9469,1.8028,2.3123,1.8106)",
+                "span": {
+                  "offset": 89,
+                  "length": 6
+                }
+              },
+              {
+                "content": "448.00",
+                "source": "D(1,2.2444,1.8339,2.8912,1.8211,2.8944,1.9883,2.2455,2.001)",
+                "span": {
+                  "offset": 99,
+                  "length": 6
+                }
+              },
+              {
+                "content": "896.00",
+                "source": "D(1,2.2102,2.1154,2.8366,2.0973,2.8384,2.2748,2.2153,2.2929)",
+                "span": {
+                  "offset": 136,
+                  "length": 6
+                }
+              },
+              {
+                "content": "APPROVALS",
+                "source": "D(1,5.6653,0.9552,6.4037,0.9201,6.4078,1.0514,5.6715,1.0865)",
+                "span": {
+                  "offset": 194,
+                  "length": 9
+                }
+              },
+              {
+                "content": "DAGE:",
+                "source": "D(1,6.9706,0.9087,7.2551,0.9019,7.2572,0.9877,6.9727,0.9945)",
+                "span": {
+                  "offset": 207,
+                  "length": 5
+                }
+              },
+              {
+                "content": "HATERIMS BSCEIVEDI",
+                "source": "D(1,5.2142,1.1629,6.0527,1.1113,6.0537,1.1952,5.2175,1.2469)",
+                "span": {
+                  "offset": 255,
+                  "length": 18
+                }
+              },
+              {
+                "content": "SERVICAS \u05eaRNDERE",
+                "source": "D(1,5.2199,1.2345,5.992,1.1943,5.9961,1.2747,5.2214,1.3149)",
+                "span": {
+                  "offset": 274,
+                  "length": 16
+                }
+              },
+              {
+                "content": "fluf",
+                "source": "D(1,6.128,1.034,6.557,1.0177,6.562,1.287,6.1293,1.3032)",
+                "span": {
+                  "offset": 300,
+                  "length": 4
+                }
+              },
+              {
+                "content": "6/7/97",
+                "source": "D(1,6.9618,1.0149,7.4407,0.9793,7.4472,1.1863,6.9686,1.222)",
+                "span": {
+                  "offset": 308,
+                  "length": 6
+                }
+              },
+              {
+                "content": "FINANCE:",
+                "source": "D(1,5.237,1.4413,5.6773,1.4113,5.6825,1.5,5.2376,1.53)",
+                "span": {
+                  "offset": 335,
+                  "length": 8
+                }
+              },
+              {
+                "content": "ket",
+                "source": "D(1,6.501,1.2955,6.8758,1.2734,6.8874,1.4712,6.5127,1.4932)",
+                "span": {
+                  "offset": 353,
+                  "length": 3
+                }
+              },
+              {
+                "content": "6/10",
+                "source": "D(1,6.996,1.2698,7.3357,1.2533,7.3441,1.4299,6.9969,1.4464)",
+                "span": {
+                  "offset": 360,
+                  "length": 4
+                }
+              },
+              {
+                "content": "CHARGS CODE",
+                "source": "D(1,5.2485,1.6494,5.9316,1.6058,5.9338,1.6969,5.2498,1.7405)",
+                "span": {
+                  "offset": 385,
+                  "length": 11
+                }
+              },
+              {
+                "content": "S0036 See Bredadon:",
+                "source": "D(1,6.1736,1.5263,7.7029,1.4676,7.7042,1.6538,6.1807,1.7125)",
+                "span": {
+                  "offset": 406,
+                  "length": 29
+                }
+              },
+              {
+                "content": "ACCOUNTING",
+                "source": "D(1,5.645,1.7634,6.5125,1.7073,6.5163,1.8264,5.6531,1.8845)",
+                "span": {
+                  "offset": 466,
+                  "length": 10
+                }
+              },
+              {
+                "content": "DATE",
+                "source": "D(1,7.036,1.689,7.3276,1.6762,7.3317,1.7685,7.0372,1.7813)",
+                "span": {
+                  "offset": 480,
+                  "length": 4
+                }
+              },
+              {
+                "content": "DUE DATE:",
+                "source": "D(1,5.2713,1.9898,5.7783,1.964,5.7796,2.0567,5.274,2.0824)",
+                "span": {
+                  "offset": 534,
+                  "length": 9
+                }
+              },
+              {
+                "content": "ENTERED:",
+                "source": "D(1,5.2827,2.1915,5.746,2.1721,5.7497,2.2612,5.286,2.2806)",
+                "span": {
+                  "offset": 574,
+                  "length": 8
+                }
+              },
+              {
+                "content": "VENDOR 21",
+                "source": "D(1,5.2827,2.3943,5.778,2.3754,5.7796,2.4683,5.286,2.4906)",
+                "span": {
+                  "offset": 613,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VOUCTER #:",
+                "source": "D(1,5.2952,2.5992,5.8388,2.5818,5.8416,2.6709,5.2981,2.6883)",
+                "span": {
+                  "offset": 653,
+                  "length": 10
+                }
+              },
+              {
+                "content": "VOUGHER MONTH:",
+                "source": "D(1,5.2999,2.802,6.1414,2.7714,6.1446,2.8613,5.3021,2.8918)",
+                "span": {
+                  "offset": 694,
+                  "length": 14
+                }
+              },
+              {
+                "content": "PROCESSOR:",
+                "source": "D(1,5.3227,3.0074,5.8549,2.9864,5.8585,3.0775,5.3264,3.0987)",
+                "span": {
+                  "offset": 739,
+                  "length": 10
+                }
+              },
+              {
+                "content": "INVOICE",
+                "source": "D(1,3.448,2.847,4.1077,2.847,4.1077,2.982,3.448,2.982)",
+                "span": {
+                  "offset": 784,
+                  "length": 7
+                }
+              },
+              {
+                "content": "TO: MR. TONY YENSEN",
+                "source": "D(1,0.583,3.1588,2.4594,3.152,2.4599,3.2942,0.5836,3.3014)",
+                "span": {
+                  "offset": 793,
+                  "length": 19
+                }
+              },
+              {
+                "content": "AMERICAN TOBACCO COMPANY",
+                "source": "D(1,1.0438,3.305,3.2765,3.2996,3.2769,3.4447,1.0441,3.4489)",
+                "span": {
+                  "offset": 813,
+                  "length": 24
+                }
+              },
+              {
+                "content": "P.O. BOX 10380",
+                "source": "D(1,1.0438,3.4614,2.3525,3.4589,2.3527,3.6008,1.0441,3.6033)",
+                "span": {
+                  "offset": 838,
+                  "length": 14
+                }
+              },
+              {
+                "content": "STAMFORD, CT 06904-2380",
+                "source": "D(1,1.044,3.6077,3.2926,3.6059,3.2928,3.7504,1.0441,3.7523)",
+                "span": {
+                  "offset": 853,
+                  "length": 23
+                }
+              },
+              {
+                "content": "(203) 352-8054",
+                "source": "D(1,1.0599,3.7536,2.3525,3.7512,2.3528,3.9169,1.0602,3.9193)",
+                "span": {
+                  "offset": 877,
+                  "length": 14
+                }
+              },
+              {
+                "content": "INVOICE:",
+                "source": "D(1,4.2685,3.1568,4.9954,3.1532,4.9961,3.2865,4.2691,3.2901)",
+                "span": {
+                  "offset": 911,
+                  "length": 8
+                }
+              },
+              {
+                "content": "1493OVER",
+                "source": "D(1,5.1972,3.1608,5.8359,3.1665,5.8348,3.2929,5.1971,3.2872)",
+                "span": {
+                  "offset": 929,
+                  "length": 8
+                }
+              },
+              {
+                "content": "DATE:",
+                "source": "D(1,4.2625,3.3148,4.713,3.3053,4.7158,3.4377,4.2652,3.4432)",
+                "span": {
+                  "offset": 968,
+                  "length": 5
+                }
+              },
+              {
+                "content": "TERMS :",
+                "source": "D(1,4.2651,3.4617,4.8144,3.4643,4.8139,3.5976,4.2645,3.595)",
+                "span": {
+                  "offset": 977,
+                  "length": 7
+                }
+              },
+              {
+                "content": "06/04/93",
+                "source": "D(1,5.1851,3.3054,5.9278,3.3067,5.9276,3.4427,5.1849,3.4414)",
+                "span": {
+                  "offset": 994,
+                  "length": 8
+                }
+              },
+              {
+                "content": "DUE UPON RECEIPT",
+                "source": "D(1,5.173,3.4599,6.666,3.46,6.666,3.5959,5.173,3.5958)",
+                "span": {
+                  "offset": 1006,
+                  "length": 25
+                }
+              },
+              {
+                "content": "HOURS",
+                "source": "D(1,4.4386,4.3637,4.9154,4.3662,4.9147,4.5032,4.4379,4.5007)",
+                "span": {
+                  "offset": 1081,
+                  "length": 5
+                }
+              },
+              {
+                "content": "RATE",
+                "source": "D(1,5.2577,4.3653,5.6597,4.3764,5.6571,4.5099,5.2542,4.4989)",
+                "span": {
+                  "offset": 1096,
+                  "length": 4
+                }
+              },
+              {
+                "content": "TOTAL",
+                "source": "D(1,6.0806,4.3765,6.5732,4.3755,6.5734,4.5078,6.0809,4.5088)",
+                "span": {
+                  "offset": 1110,
+                  "length": 5
+                }
+              },
+              {
+                "content": "SAFIERS, INC.",
+                "source": "D(1,0.5713,4.8203,1.7674,4.819,1.7675,4.9687,0.5715,4.97)",
+                "span": {
+                  "offset": 1148,
+                  "length": 13
+                }
+              },
+              {
+                "content": "CALLS HOURS",
+                "source": "D(1,0.5689,5.1249,1.605,5.1249,1.605,5.2648,0.5689,5.2648)",
+                "span": {
+                  "offset": 1182,
+                  "length": 11
+                }
+              },
+              {
+                "content": "7.50",
+                "source": "D(1,4.6202,5.1277,5.0035,5.1277,5.0035,5.2619,4.6202,5.2619)",
+                "span": {
+                  "offset": 1203,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$30.00",
+                "source": "D(1,5.2618,5.1249,5.8267,5.1249,5.8267,5.2648,5.2618,5.2648)",
+                "span": {
+                  "offset": 1217,
+                  "length": 6
+                }
+              },
+              {
+                "content": "$225.00",
+                "source": "D(1,6.089,5.1226,6.7467,5.1226,6.7467,5.2659,6.089,5.2659)",
+                "span": {
+                  "offset": 1233,
+                  "length": 7
+                }
+              },
+              {
+                "content": "DATA ENTRY",
+                "source": "D(1,0.5695,5.276,1.5132,5.276,1.5132,5.4136,0.5695,5.4136)",
+                "span": {
+                  "offset": 1261,
+                  "length": 10
+                }
+              },
+              {
+                "content": "1.00",
+                "source": "D(1,4.6202,5.2791,5.0035,5.2791,5.0035,5.4108,4.6202,5.4108)",
+                "span": {
+                  "offset": 1281,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$15.00",
+                "source": "D(1,5.2615,5.2776,5.8186,5.2766,5.8189,5.413,5.2618,5.414)",
+                "span": {
+                  "offset": 1295,
+                  "length": 6
+                }
+              },
+              {
+                "content": "$15.00",
+                "source": "D(1,6.1818,5.2781,6.7427,5.2781,6.7427,5.4136,6.1818,5.4136)",
+                "span": {
+                  "offset": 1311,
+                  "length": 6
+                }
+              },
+              {
+                "content": "COMPUTER PROGRAMMING",
+                "source": "D(1,0.5674,5.4275,2.4394,5.4295,2.4392,5.5716,0.5673,5.5696)",
+                "span": {
+                  "offset": 1338,
+                  "length": 20
+                }
+              },
+              {
+                "content": "0.50",
+                "source": "D(1,4.6171,5.4289,5.0034,5.4205,5.0065,5.563,4.6202,5.5714)",
+                "span": {
+                  "offset": 1368,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$20.00",
+                "source": "D(1,5.2599,5.4325,5.8348,5.4217,5.8367,5.5642,5.2618,5.575)",
+                "span": {
+                  "offset": 1382,
+                  "length": 6
+                }
+              },
+              {
+                "content": "$10.00",
+                "source": "D(1,6.1736,5.432,6.7427,5.4202,6.7448,5.5642,6.1737,5.576)",
+                "span": {
+                  "offset": 1398,
+                  "length": 6
+                }
+              },
+              {
+                "content": "CHARLES M. SLEDD",
+                "source": "D(1,0.5654,5.7274,2.068,5.7274,2.068,5.876,0.5654,5.876)",
+                "span": {
+                  "offset": 1425,
+                  "length": 16
+                }
+              },
+              {
+                "content": "CALLS HOURS",
+                "source": "D(1,0.5624,6.0275,1.5956,6.0327,1.5949,6.173,0.5617,6.1678)",
+                "span": {
+                  "offset": 1492,
+                  "length": 11
+                }
+              },
+              {
+                "content": "20.25",
+                "source": "D(1,4.5233,6.0299,4.9914,6.0299,4.9914,6.167,4.5233,6.167)",
+                "span": {
+                  "offset": 1513,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$30.00",
+                "source": "D(1,5.2521,6.0337,5.8145,6.0274,5.8161,6.1675,5.2537,6.1738)",
+                "span": {
+                  "offset": 1528,
+                  "length": 6
+                }
+              },
+              {
+                "content": "$607.50",
+                "source": "D(1,6.0794,6.0353,6.7346,6.0284,6.736,6.1668,6.0809,6.1737)",
+                "span": {
+                  "offset": 1544,
+                  "length": 7
+                }
+              },
+              {
+                "content": "DATA ENTRY",
+                "source": "D(1,0.5624,6.1812,1.5164,6.1824,1.5162,6.3221,0.5622,6.3209)",
+                "span": {
+                  "offset": 1572,
+                  "length": 10
+                }
+              },
+              {
+                "content": "1.90",
+                "source": "D(1,4.6162,6.1841,4.9914,6.1841,4.9914,6.3217,4.6162,6.3217)",
+                "span": {
+                  "offset": 1592,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$15.00",
+                "source": "D(1,5.2521,6.1878,5.8145,6.1816,5.8161,6.3217,5.2537,6.328)",
+                "span": {
+                  "offset": 1606,
+                  "length": 6
+                }
+              },
+              {
+                "content": "$28.50",
+                "source": "D(1,6.1736,6.1842,6.7346,6.1833,6.7348,6.3218,6.1737,6.3227)",
+                "span": {
+                  "offset": 1622,
+                  "length": 6
+                }
+              },
+              {
+                "content": "COMPUTER PROGRAMMING",
+                "source": "D(1,0.56,6.3255,2.4353,6.3269,2.4352,6.478,0.5599,6.4766)",
+                "span": {
+                  "offset": 1649,
+                  "length": 20
+                }
+              },
+              {
+                "content": "0.50",
+                "source": "D(1,4.6041,6.3366,4.9915,6.3373,4.9914,6.4763,4.6038,6.4756)",
+                "span": {
+                  "offset": 1679,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$20.00",
+                "source": "D(1,5.2485,6.3409,5.8105,6.3352,5.812,6.4769,5.2497,6.4827)",
+                "span": {
+                  "offset": 1693,
+                  "length": 6
+                }
+              },
+              {
+                "content": "$10.00",
+                "source": "D(1,6.1697,6.3383,6.7386,6.3383,6.7386,6.4753,6.1697,6.4753)",
+                "span": {
+                  "offset": 1709,
+                  "length": 6
+                }
+              },
+              {
+                "content": "TOTAL DUE THIS INVOICE",
+                "source": "D(1,3.4056,6.7837,5.4555,6.7837,5.4555,6.9322,3.4056,6.9322)",
+                "span": {
+                  "offset": 1738,
+                  "length": 22
+                }
+              },
+              {
+                "content": "$896.00",
+                "source": "D(1,6.0809,6.7854,6.7351,6.7876,6.7346,6.9338,6.0804,6.9316)",
+                "span": {
+                  "offset": 1761,
+                  "length": 7
+                }
+              },
+              {
+                "content": "==========",
+                "source": "D(1,5.8872,6.9778,6.8234,6.9778,6.8234,7.0547,5.8872,7.0547)",
+                "span": {
+                  "offset": 1770,
+                  "length": 10
+                }
+              },
+              {
+                "content": "PAYMENT DUE UPON RECEIPT",
+                "source": "D(1,3.4,7.6953,5.6334,7.701,5.633,7.8518,3.3996,7.8461)",
+                "span": {
+                  "offset": 1782,
+                  "length": 24
+                }
+              },
+              {
+                "content": "THANK YOU",
+                "source": "D(1,4.1319,8.0057,4.9874,8.0057,4.9874,8.1427,4.1319,8.1427)",
+                "span": {
+                  "offset": 1807,
+                  "length": 9
+                }
+              },
+              {
+                "content": "526 W. WISCONSIN AVENUE . APPLETON, WISCONSIN 54911 \u2022 (414) 954-2900 \u2022 Fax: (414) 954-2915",
+                "source": "D(1,0.6809,9.9357,7.0942,9.9521,7.0937,10.101,0.6804,10.0813)",
+                "span": {
+                  "offset": 1818,
+                  "length": 90
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "TELMARK TEL MARK SALES, INC.",
+            "source": "D(1,2.6601,0.9372,5.1941,0.9432,5.1928,1.493,2.6588,1.4871)",
+            "span": {
+              "offset": 0,
+              "length": 28
+            }
+          },
+          {
+            "content": "PRV-DDI-RDA",
+            "source": "D(1,0.6879,1.7081,2.0276,1.6859,2.0312,1.9019,0.6915,1.9241)",
+            "span": {
+              "offset": 48,
+              "length": 11
+            }
+          },
+          {
+            "content": "PRM-DOI-RDA",
+            "source": "D(1,0.6605,1.9337,2.0527,1.8986,2.058,2.1094,0.6658,2.1446)",
+            "span": {
+              "offset": 63,
+              "length": 11
+            }
+          },
+          {
+            "content": "$",
+            "source": "D(1,2.1723,1.5482,2.304,1.5477,2.3046,1.6814,2.1729,1.682)",
+            "span": {
+              "offset": 84,
+              "length": 1
+            }
+          },
+          {
+            "content": "448.00",
+            "source": "D(1,2.3101,1.6325,2.9456,1.6243,2.9479,1.8028,2.3124,1.811)",
+            "span": {
+              "offset": 89,
+              "length": 6
+            }
+          },
+          {
+            "content": "448.00",
+            "source": "D(1,2.2416,1.8339,2.8911,1.8184,2.8951,1.9855,2.2455,2.001)",
+            "span": {
+              "offset": 99,
+              "length": 6
+            }
+          },
+          {
+            "content": "896.00",
+            "source": "D(1,2.2103,2.1174,2.8367,2.0995,2.8417,2.2751,2.2153,2.2929)",
+            "span": {
+              "offset": 136,
+              "length": 6
+            }
+          },
+          {
+            "content": "APPROVALS",
+            "source": "D(1,5.6653,0.9551,6.4037,0.9201,6.4099,1.0511,5.6715,1.0861)",
+            "span": {
+              "offset": 194,
+              "length": 9
+            }
+          },
+          {
+            "content": "DAGE:",
+            "source": "D(1,6.9707,0.9085,7.2551,0.9019,7.2571,0.9878,6.9727,0.9944)",
+            "span": {
+              "offset": 207,
+              "length": 5
+            }
+          },
+          {
+            "content": "HATERIMS BSCEIVEDI SERVICAS \u05eaRNDERE",
+            "source": "D(1,5.2123,1.1615,6.0527,1.1113,6.0622,1.2707,5.2218,1.3209)",
+            "span": {
+              "offset": 255,
+              "length": 35
+            }
+          },
+          {
+            "content": "fluf",
+            "source": "D(1,6.1179,1.0366,6.557,1.0177,6.5686,1.2864,6.1294,1.3052)",
+            "span": {
+              "offset": 300,
+              "length": 4
+            }
+          },
+          {
+            "content": "6/7/97",
+            "source": "D(1,6.953,1.0163,7.4407,0.9793,7.4564,1.1863,6.9687,1.2232)",
+            "span": {
+              "offset": 308,
+              "length": 6
+            }
+          },
+          {
+            "content": "FINANCE:",
+            "source": "D(1,5.2318,1.4409,5.6774,1.4119,5.6832,1.501,5.2376,1.53)",
+            "span": {
+              "offset": 335,
+              "length": 8
+            }
+          },
+          {
+            "content": "ket",
+            "source": "D(1,6.5008,1.297,6.8758,1.2743,6.8877,1.4711,6.5127,1.4938)",
+            "span": {
+              "offset": 353,
+              "length": 3
+            }
+          },
+          {
+            "content": "6/10",
+            "source": "D(1,6.9876,1.2699,7.3356,1.2516,7.3449,1.4282,6.9969,1.4464)",
+            "span": {
+              "offset": 360,
+              "length": 4
+            }
+          },
+          {
+            "content": "CHARGS CODE",
+            "source": "D(1,5.2441,1.6483,5.9316,1.6058,5.9373,1.6972,5.2498,1.7397)",
+            "span": {
+              "offset": 385,
+              "length": 11
+            }
+          },
+          {
+            "content": "S0036 See Bredadon",
+            "source": "D(1,6.1735,1.527,7.6536,1.4693,7.6608,1.6554,6.1808,1.7131)",
+            "span": {
+              "offset": 406,
+              "length": 18
+            }
+          },
+          {
+            "content": ":",
+            "source": "D(1,7.6173,1.4733,7.703,1.4705,7.7089,1.6539,7.6232,1.6567)",
+            "span": {
+              "offset": 434,
+              "length": 1
+            }
+          },
+          {
+            "content": "ACCOUNTING",
+            "source": "D(1,5.6451,1.7647,6.5126,1.7073,6.5205,1.827,5.653,1.8845)",
+            "span": {
+              "offset": 466,
+              "length": 10
+            }
+          },
+          {
+            "content": "DATE",
+            "source": "D(1,7.0331,1.6924,7.3277,1.6787,7.3319,1.7685,7.0373,1.7821)",
+            "span": {
+              "offset": 480,
+              "length": 4
+            }
+          },
+          {
+            "content": "DUE DATE:",
+            "source": "D(1,5.2689,1.9898,5.7781,1.9617,5.7833,2.0553,5.274,2.0834)",
+            "span": {
+              "offset": 534,
+              "length": 9
+            }
+          },
+          {
+            "content": "ENTERED:",
+            "source": "D(1,5.2825,2.1906,5.746,2.1724,5.7495,2.2625,5.286,2.2806)",
+            "span": {
+              "offset": 574,
+              "length": 8
+            }
+          },
+          {
+            "content": "VENDOR 21",
+            "source": "D(1,5.2844,2.3849,5.7783,2.3773,5.7799,2.483,5.286,2.4906)",
+            "span": {
+              "offset": 613,
+              "length": 9
+            }
+          },
+          {
+            "content": "VOUCTER #:",
+            "source": "D(1,5.2956,2.5977,5.8388,2.5825,5.8413,2.6732,5.2981,2.6883)",
+            "span": {
+              "offset": 653,
+              "length": 10
+            }
+          },
+          {
+            "content": "VOUGHER MONTH:",
+            "source": "D(1,5.2991,2.8009,6.1414,2.7728,6.1444,2.8637,5.3021,2.8918)",
+            "span": {
+              "offset": 694,
+              "length": 14
+            }
+          },
+          {
+            "content": "PROCESSOR:",
+            "source": "D(1,5.323,3.0074,5.8549,2.9878,5.8583,3.0782,5.3263,3.0979)",
+            "span": {
+              "offset": 739,
+              "length": 10
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "INVOICE",
+            "source": "D(1,3.448,2.847,4.1077,2.847,4.1077,2.982,3.448,2.982)",
+            "span": {
+              "offset": 782,
+              "length": 9
+            }
+          },
+          {
+            "content": "TO: MR. TONY YENSEN AMERICAN TOBACCO COMPANY P.O. BOX 10380 STAMFORD, CT 06904-2380 (203) 352-8054",
+            "source": "D(1,0.583,3.1588,3.291,3.149,3.2938,3.9135,0.5858,3.9233)",
+            "span": {
+              "offset": 793,
+              "length": 98
+            }
+          },
+          {
+            "content": "INVOICE:",
+            "source": "D(1,4.2691,3.1549,4.9955,3.1551,4.9955,3.2903,4.2691,3.2901)",
+            "span": {
+              "offset": 911,
+              "length": 8
+            }
+          },
+          {
+            "content": "1493OVER",
+            "source": "D(1,5.1972,3.162,5.8367,3.1725,5.8347,3.2975,5.1952,3.2871)",
+            "span": {
+              "offset": 929,
+              "length": 8
+            }
+          },
+          {
+            "content": "DATE:",
+            "source": "D(1,4.2636,3.3106,4.713,3.3053,4.7146,3.4379,4.2651,3.4432)",
+            "span": {
+              "offset": 968,
+              "length": 5
+            }
+          },
+          {
+            "content": "TERMS :",
+            "source": "D(1,4.2652,3.4579,4.8159,3.4665,4.8138,3.6036,4.2631,3.5949)",
+            "span": {
+              "offset": 977,
+              "length": 7
+            }
+          },
+          {
+            "content": "06/04/93",
+            "source": "D(1,5.1851,3.3066,5.9279,3.3082,5.9276,3.443,5.1848,3.4414)",
+            "span": {
+              "offset": 994,
+              "length": 8
+            }
+          },
+          {
+            "content": "DUE UPON",
+            "source": "D(1,5.173,3.4599,5.9062,3.4603,5.9062,3.5953,5.1729,3.5949)",
+            "span": {
+              "offset": 1006,
+              "length": 8
+            }
+          },
+          {
+            "content": "RECEIPT",
+            "source": "D(1,5.9906,3.4599,6.666,3.46,6.666,3.5959,5.9906,3.5957)",
+            "span": {
+              "offset": 1024,
+              "length": 7
+            }
+          },
+          {
+            "content": "HOURS",
+            "source": "D(1,4.4386,4.3631,4.9156,4.3662,4.9148,4.4986,4.4378,4.4955)",
+            "span": {
+              "offset": 1081,
+              "length": 5
+            }
+          },
+          {
+            "content": "RATE",
+            "source": "D(1,5.2578,4.3643,5.6611,4.3764,5.6572,4.5042,5.2539,4.4921)",
+            "span": {
+              "offset": 1096,
+              "length": 4
+            }
+          },
+          {
+            "content": "TOTAL",
+            "source": "D(1,6.0806,4.3765,6.5732,4.3755,6.5734,4.5068,6.0809,4.5079)",
+            "span": {
+              "offset": 1110,
+              "length": 5
+            }
+          },
+          {
+            "content": "SAFIERS, INC.",
+            "source": "D(1,0.5715,4.8186,1.7675,4.8192,1.7674,4.9706,0.5714,4.97)",
+            "span": {
+              "offset": 1148,
+              "length": 13
+            }
+          },
+          {
+            "content": "CALLS HOURS",
+            "source": "D(1,0.5689,5.1249,1.605,5.1249,1.605,5.2648,0.5689,5.2648)",
+            "span": {
+              "offset": 1182,
+              "length": 11
+            }
+          },
+          {
+            "content": "7.50",
+            "source": "D(1,4.6202,5.1277,5.0035,5.1277,5.0035,5.2619,4.6202,5.2619)",
+            "span": {
+              "offset": 1203,
+              "length": 4
+            }
+          },
+          {
+            "content": "$30.00",
+            "source": "D(1,5.2618,5.1249,5.8267,5.1249,5.8267,5.2648,5.2618,5.2648)",
+            "span": {
+              "offset": 1217,
+              "length": 6
+            }
+          },
+          {
+            "content": "$225.00",
+            "source": "D(1,6.089,5.1209,6.7471,5.1226,6.7467,5.2663,6.0886,5.2646)",
+            "span": {
+              "offset": 1233,
+              "length": 7
+            }
+          },
+          {
+            "content": "DATA ENTRY",
+            "source": "D(1,0.5695,5.2746,1.5132,5.276,1.513,5.4145,0.5692,5.413)",
+            "span": {
+              "offset": 1261,
+              "length": 10
+            }
+          },
+          {
+            "content": "1.00",
+            "source": "D(1,4.6202,5.2789,5.0036,5.2791,5.0035,5.4104,4.6201,5.4103)",
+            "span": {
+              "offset": 1281,
+              "length": 4
+            }
+          },
+          {
+            "content": "$15.00",
+            "source": "D(1,5.2615,5.2779,5.8186,5.2766,5.8189,5.413,5.2618,5.4143)",
+            "span": {
+              "offset": 1295,
+              "length": 6
+            }
+          },
+          {
+            "content": "$15.00",
+            "source": "D(1,6.1818,5.276,6.7432,5.2781,6.7427,5.4136,6.1813,5.4114)",
+            "span": {
+              "offset": 1311,
+              "length": 6
+            }
+          },
+          {
+            "content": "COMPUTER PROGRAMMING",
+            "source": "D(1,0.5675,5.4267,2.4395,5.4307,2.4392,5.5736,0.5671,5.5696)",
+            "span": {
+              "offset": 1338,
+              "length": 20
+            }
+          },
+          {
+            "content": "0.50",
+            "source": "D(1,4.6173,5.4344,5.0035,5.4262,5.0064,5.5632,4.6202,5.5714)",
+            "span": {
+              "offset": 1368,
+              "length": 4
+            }
+          },
+          {
+            "content": "$20.00",
+            "source": "D(1,5.2593,5.4315,5.8348,5.4217,5.8372,5.5647,5.2618,5.5745)",
+            "span": {
+              "offset": 1382,
+              "length": 6
+            }
+          },
+          {
+            "content": "$10.00",
+            "source": "D(1,6.1717,5.428,6.7427,5.4202,6.7447,5.5671,6.1737,5.575)",
+            "span": {
+              "offset": 1398,
+              "length": 6
+            }
+          },
+          {
+            "content": "CHARLES M. SLEDD",
+            "source": "D(1,0.5654,5.7274,2.068,5.7274,2.068,5.876,0.5654,5.876)",
+            "span": {
+              "offset": 1425,
+              "length": 16
+            }
+          },
+          {
+            "content": "CALLS HOURS",
+            "source": "D(1,0.5625,6.0237,1.5965,6.0359,1.5948,6.18,0.5608,6.1678)",
+            "span": {
+              "offset": 1492,
+              "length": 11
+            }
+          },
+          {
+            "content": "20.25",
+            "source": "D(1,4.5233,6.0299,4.9914,6.0299,4.9914,6.167,4.5233,6.167)",
+            "span": {
+              "offset": 1513,
+              "length": 5
+            }
+          },
+          {
+            "content": "$30.00",
+            "source": "D(1,5.2526,6.0348,5.8146,6.0305,5.8156,6.1695,5.2537,6.1738)",
+            "span": {
+              "offset": 1528,
+              "length": 6
+            }
+          },
+          {
+            "content": "$607.50",
+            "source": "D(1,6.0796,6.0359,6.7346,6.0298,6.7359,6.1676,6.0809,6.1737)",
+            "span": {
+              "offset": 1544,
+              "length": 7
+            }
+          },
+          {
+            "content": "DATA ENTRY",
+            "source": "D(1,0.5624,6.1786,1.5171,6.185,1.5162,6.3273,0.5615,6.3209)",
+            "span": {
+              "offset": 1572,
+              "length": 10
+            }
+          },
+          {
+            "content": "1.90",
+            "source": "D(1,4.6162,6.1831,4.9918,6.1841,4.9914,6.3205,4.6158,6.3195)",
+            "span": {
+              "offset": 1592,
+              "length": 4
+            }
+          },
+          {
+            "content": "$15.00",
+            "source": "D(1,5.2527,6.1888,5.8146,6.1847,5.8156,6.3238,5.2537,6.328)",
+            "span": {
+              "offset": 1606,
+              "length": 6
+            }
+          },
+          {
+            "content": "$28.50",
+            "source": "D(1,6.1734,6.186,6.7346,6.1847,6.7349,6.3218,6.1737,6.3231)",
+            "span": {
+              "offset": 1622,
+              "length": 6
+            }
+          },
+          {
+            "content": "COMPUTER PROGRAMMING",
+            "source": "D(1,0.5604,6.319,2.4358,6.3269,2.4352,6.4819,0.5597,6.474)",
+            "span": {
+              "offset": 1649,
+              "length": 20
+            }
+          },
+          {
+            "content": "0.50",
+            "source": "D(1,4.6041,6.3385,4.9917,6.3393,4.9914,6.4763,4.6038,6.4756)",
+            "span": {
+              "offset": 1679,
+              "length": 4
+            }
+          },
+          {
+            "content": "$20.00",
+            "source": "D(1,5.249,6.3425,5.8105,6.3399,5.8112,6.48,5.2497,6.4827)",
+            "span": {
+              "offset": 1693,
+              "length": 6
+            }
+          },
+          {
+            "content": "$10.00",
+            "source": "D(1,6.1697,6.3383,6.7386,6.3383,6.7386,6.4753,6.1697,6.4753)",
+            "span": {
+              "offset": 1709,
+              "length": 6
+            }
+          },
+          {
+            "content": "TOTAL DUE THIS INVOICE $896.00",
+            "source": "D(1,3.4056,6.7827,6.7351,6.7843,6.735,6.9338,3.4056,6.9322)",
+            "span": {
+              "offset": 1738,
+              "length": 30
+            }
+          },
+          {
+            "content": "==========",
+            "source": "D(1,5.8872,6.9778,6.8234,6.9778,6.8234,7.0547,5.8872,7.0547)",
+            "span": {
+              "offset": 1770,
+              "length": 10
+            }
+          },
+          {
+            "content": "PAYMENT DUE UPON RECEIPT THANK YOU",
+            "source": "D(1,3.4,7.6953,5.6334,7.701,5.6323,8.1465,3.3988,8.1408)",
+            "span": {
+              "offset": 1782,
+              "length": 34
+            }
+          },
+          {
+            "content": "526 W. WISCONSIN AVENUE . APPLETON, WISCONSIN 54911 \u2022 (414) 954-2900 \u2022 Fax: (414) 954-2915",
+            "source": "D(1,0.6809,9.9324,7.0942,9.9521,7.0937,10.101,0.6804,10.0814)",
+            "span": {
+              "offset": 1818,
+              "length": 90
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1908
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 779
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/tables/0",
+              "/tables/1",
+              "/tables/2"
+            ]
+          },
+          {
+            "span": {
+              "offset": 782,
+              "length": 1126
+            },
+            "elements": [
+              "/paragraphs/26",
+              "/paragraphs/27",
+              "/tables/3",
+              "/tables/4",
+              "/paragraphs/64",
+              "/paragraphs/65",
+              "/paragraphs/66",
+              "/paragraphs/67"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 2,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "PRV-DDI-RDA\nPRM-DOI-RDA",
+                "source": "D(1,0.6673,1.5233,2.0692,1.5195,2.0837,2.0432,0.6604,2.089)",
+                "span": {
+                  "offset": 48,
+                  "length": 26
+                },
+                "elements": [
+                  "/paragraphs/1",
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$\n448.00\n448.00",
+                "source": "D(1,2.0692,1.5195,2.9215,1.5174,2.9215,2.016,2.0837,2.0432)",
+                "span": {
+                  "offset": 84,
+                  "length": 21
+                },
+                "elements": [
+                  "/paragraphs/3",
+                  "/paragraphs/4",
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,0.6604,2.089,2.0837,2.0432,2.0815,2.3083,0.6567,2.3534)",
+                "span": {
+                  "offset": 126,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "896.00",
+                "source": "D(1,2.0837,2.0432,2.9215,2.016,2.9194,2.2797,2.0815,2.3083)",
+                "span": {
+                  "offset": 136,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              }
+            ],
+            "source": "D(1,0.6315,1.5375,2.9577,1.5346,2.9597,2.4325,0.6315,2.4454)",
+            "span": {
+              "offset": 31,
+              "length": 131
+            }
+          },
+          {
+            "rowCount": 5,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 2,
+                "content": "APPROVALS\nDAGE:",
+                "source": "D(1,5.1474,0.9957,7.3208,0.8486,7.3385,0.9853,5.1644,1.1426)",
+                "span": {
+                  "offset": 194,
+                  "length": 18
+                },
+                "elements": [
+                  "/paragraphs/7",
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 3,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,7.3208,0.8486,7.6558,0.8465,7.7188,1.4253,7.3847,1.4425)",
+                "span": {
+                  "offset": 234,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "HATERIMS BSCEIVEDI SERVICAS \u05eaRNDERE",
+                "source": "D(1,5.1644,1.1426,6.0428,1.0787,6.0573,1.3162,5.1899,1.382)",
+                "span": {
+                  "offset": 255,
+                  "length": 35
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "fluf\n6/7/97",
+                "source": "D(1,6.0428,1.0787,7.3385,0.9853,7.3623,1.2273,6.0573,1.3162)",
+                "span": {
+                  "offset": 300,
+                  "length": 14
+                },
+                "elements": [
+                  "/paragraphs/10",
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "FINANCE:",
+                "source": "D(1,5.1899,1.382,6.0573,1.3162,6.0717,1.5315,5.2128,1.592)",
+                "span": {
+                  "offset": 335,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "ket\n6/10",
+                "source": "D(1,6.0573,1.3162,7.3623,1.2273,7.3847,1.4425,6.0717,1.5315)",
+                "span": {
+                  "offset": 353,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/13",
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CHARGS CODE",
+                "source": "D(1,5.2128,1.592,6.0717,1.5315,6.0799,1.7272,5.2335,1.7869)",
+                "span": {
+                  "offset": 385,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "S0036 See Bredadon",
+                "source": "D(1,6.0717,1.5315,7.3847,1.4425,7.3993,1.6334,6.0799,1.7272)",
+                "span": {
+                  "offset": 406,
+                  "length": 18
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": ":",
+                "source": "D(1,7.3847,1.4425,7.7188,1.4253,7.7385,1.615,7.3993,1.6334)",
+                "span": {
+                  "offset": 434,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.2335,1.7869,6.0799,1.7272,6.0933,1.8732,5.249,1.9267)",
+                "span": {
+                  "offset": 456,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "ACCOUNTING\nDATE",
+                "source": "D(1,6.0799,1.7272,7.3993,1.6334,7.4164,1.7914,6.0933,1.8732)",
+                "span": {
+                  "offset": 466,
+                  "length": 18
+                },
+                "elements": [
+                  "/paragraphs/18",
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,7.3993,1.6334,7.7385,1.615,7.7575,1.774,7.4164,1.7914)",
+                "span": {
+                  "offset": 494,
+                  "length": 0
+                }
+              }
+            ],
+            "source": "D(1,5.1891,0.8886,7.6627,0.8465,7.6667,1.7073,5.2053,1.7787)",
+            "span": {
+              "offset": 165,
+              "length": 349
+            }
+          },
+          {
+            "rowCount": 6,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DUE DATE:",
+                "source": "D(1,5.2167,1.9134,6.0819,1.86,6.098,2.0711,5.2346,2.1241)",
+                "span": {
+                  "offset": 534,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,6.0819,1.86,7.3963,1.7818,7.4063,1.987,6.098,2.0711)",
+                "span": {
+                  "offset": 553,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "ENTERED:",
+                "source": "D(1,5.2346,2.1241,6.098,2.0711,6.1121,2.2718,5.2504,2.3218)",
+                "span": {
+                  "offset": 574,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,6.098,2.0711,7.4063,1.987,7.416,2.1927,6.1121,2.2718)",
+                "span": {
+                  "offset": 592,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VENDOR 21",
+                "source": "D(1,5.2504,2.3218,6.1121,2.2718,6.1262,2.4822,5.2654,2.5307)",
+                "span": {
+                  "offset": 613,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,6.1121,2.2718,7.416,2.1927,7.4266,2.4052,6.1262,2.4822)",
+                "span": {
+                  "offset": 632,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VOUCTER #:",
+                "source": "D(1,5.2654,2.5307,6.1262,2.4822,6.1403,2.6887,5.2814,2.7382)",
+                "span": {
+                  "offset": 653,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,6.1262,2.4822,7.4266,2.4052,7.4365,2.611,6.1403,2.6887)",
+                "span": {
+                  "offset": 673,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VOUGHER MONTH:",
+                "source": "D(1,5.2814,2.7382,6.1403,2.6887,6.1528,2.8814,5.2946,2.9245)",
+                "span": {
+                  "offset": 694,
+                  "length": 14
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,6.1403,2.6887,7.4365,2.611,7.4479,2.8111,6.1528,2.8814)",
+                "span": {
+                  "offset": 718,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "PROCESSOR:",
+                "source": "D(1,5.2946,2.9245,6.1528,2.8814,6.1676,3.1036,5.3159,3.1454)",
+                "span": {
+                  "offset": 739,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,6.1528,2.8814,7.4479,2.8111,7.4581,3.0384,6.1676,3.1036)",
+                "span": {
+                  "offset": 759,
+                  "length": 0
+                }
+              }
+            ],
+            "source": "D(1,5.2295,1.7173,7.473,1.6845,7.477,3.0492,5.2174,3.0949)",
+            "span": {
+              "offset": 517,
+              "length": 262
+            }
+          },
+          {
+            "rowCount": 2,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "INVOICE:",
+                "source": "D(1,4.2307,3.1446,5.0861,3.1198,5.0891,3.3049,4.231,3.3236)",
+                "span": {
+                  "offset": 911,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1493OVER",
+                "source": "D(1,5.0861,3.1198,6.1553,3.0813,6.1621,3.2773,5.0891,3.3049)",
+                "span": {
+                  "offset": 929,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,6.1553,3.0813,7.4717,3.0446,7.477,3.2444,6.1621,3.2773)",
+                "span": {
+                  "offset": 947,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DATE:\nTERMS :",
+                "source": "D(1,4.231,3.3236,5.0891,3.3049,5.0924,3.6334,4.2334,3.6457)",
+                "span": {
+                  "offset": 968,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/30",
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "06/04/93\nDUE UPON",
+                "source": "D(1,5.0891,3.3049,6.1621,3.2773,6.176,3.607,5.0924,3.6334)",
+                "span": {
+                  "offset": 994,
+                  "length": 20
+                },
+                "elements": [
+                  "/paragraphs/32",
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "RECEIPT",
+                "source": "D(1,6.1621,3.2773,7.477,3.2444,7.4918,3.581,6.176,3.607)",
+                "span": {
+                  "offset": 1024,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              }
+            ],
+            "source": "D(1,4.2126,3.1463,7.4811,3.0835,7.4892,3.5546,4.2409,3.6088)",
+            "span": {
+              "offset": 894,
+              "length": 157
+            }
+          },
+          {
+            "rowCount": 9,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,0.5039,4.2775,4.1343,4.2814,4.1114,4.5834,0.5044,4.5838)",
+                "span": {
+                  "offset": 1071,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "HOURS",
+                "source": "D(1,4.1343,4.2814,5.1167,4.2827,5.1144,4.5838,4.1114,4.5834)",
+                "span": {
+                  "offset": 1081,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "RATE",
+                "source": "D(1,5.1167,4.2827,5.9458,4.2835,5.9416,4.584,5.1144,4.5838)",
+                "span": {
+                  "offset": 1096,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "TOTAL",
+                "source": "D(1,5.9458,4.2835,6.8402,4.2848,6.8396,4.5847,5.9416,4.584)",
+                "span": {
+                  "offset": 1110,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 4,
+                "content": "SAFIERS, INC.",
+                "source": "D(1,0.5044,4.5838,6.8396,4.5847,6.8404,5.0382,0.5024,5.038)",
+                "span": {
+                  "offset": 1148,
+                  "length": 13
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CALLS HOURS",
+                "source": "D(1,0.5024,5.038,4.1212,5.0375,4.1274,5.267,0.5019,5.2625)",
+                "span": {
+                  "offset": 1182,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "7.50",
+                "source": "D(1,4.1212,5.0375,5.1153,5.0373,5.1158,5.2681,4.1274,5.267)",
+                "span": {
+                  "offset": 1203,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$30.00",
+                "source": "D(1,5.1153,5.0373,5.9427,5.0374,5.9427,5.2691,5.1158,5.2681)",
+                "span": {
+                  "offset": 1217,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$225.00",
+                "source": "D(1,5.9427,5.0374,6.8404,5.0382,6.8406,5.2707,5.9427,5.2691)",
+                "span": {
+                  "offset": 1233,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DATA ENTRY",
+                "source": "D(1,0.5019,5.2625,4.1274,5.267,4.1283,5.4176,0.5017,5.4162)",
+                "span": {
+                  "offset": 1261,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.00",
+                "source": "D(1,4.1274,5.267,5.1158,5.2681,5.1155,5.4178,4.1283,5.4176)",
+                "span": {
+                  "offset": 1281,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$15.00",
+                "source": "D(1,5.1158,5.2681,5.9427,5.2691,5.9433,5.4181,5.1155,5.4178)",
+                "span": {
+                  "offset": 1295,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$15.00",
+                "source": "D(1,5.9427,5.2691,6.8406,5.2707,6.8407,5.419,5.9433,5.4181)",
+                "span": {
+                  "offset": 1311,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "COMPUTER PROGRAMMING",
+                "source": "D(1,0.5017,5.4162,4.1283,5.4176,4.1113,5.6322,0.5014,5.6346)",
+                "span": {
+                  "offset": 1338,
+                  "length": 20
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "0.50",
+                "source": "D(1,4.1283,5.4176,5.1155,5.4178,5.1144,5.6311,4.1113,5.6322)",
+                "span": {
+                  "offset": 1368,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$20.00",
+                "source": "D(1,5.1155,5.4178,5.9433,5.4181,5.9397,5.6308,5.1144,5.6311)",
+                "span": {
+                  "offset": 1382,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$10.00",
+                "source": "D(1,5.9433,5.4181,6.8407,5.419,6.8409,5.6308,5.9397,5.6308)",
+                "span": {
+                  "offset": 1398,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CHARLES M. SLEDD",
+                "source": "D(1,0.5014,5.6346,4.1113,5.6322,4.1296,5.9539,0.5007,5.9525)",
+                "span": {
+                  "offset": 1425,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.1113,5.6322,5.1144,5.6311,5.1154,5.954,4.1296,5.9539)",
+                "span": {
+                  "offset": 1451,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.1144,5.6311,5.9397,5.6308,5.9438,5.9545,5.1154,5.954)",
+                "span": {
+                  "offset": 1461,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.9397,5.6308,6.8409,5.6308,6.8411,5.9557,5.9438,5.9545)",
+                "span": {
+                  "offset": 1471,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 6,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CALLS HOURS",
+                "source": "D(1,0.5007,5.9525,4.1296,5.9539,4.1284,6.1722,0.5006,6.1707)",
+                "span": {
+                  "offset": 1492,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "20.25",
+                "source": "D(1,4.1296,5.9539,5.1154,5.954,5.1165,6.1727,4.1284,6.1722)",
+                "span": {
+                  "offset": 1513,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$30.00",
+                "source": "D(1,5.1154,5.954,5.9438,5.9545,5.946,6.173,5.1165,6.1727)",
+                "span": {
+                  "offset": 1528,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$607.50",
+                "source": "D(1,5.9438,5.9545,6.8411,5.9557,6.8406,6.174,5.946,6.173)",
+                "span": {
+                  "offset": 1544,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 7,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DATA ENTRY",
+                "source": "D(1,0.5006,6.1707,4.1284,6.1722,4.134,6.326,0.5008,6.3265)",
+                "span": {
+                  "offset": 1572,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.90",
+                "source": "D(1,4.1284,6.1722,5.1165,6.1727,5.1181,6.3255,4.134,6.326)",
+                "span": {
+                  "offset": 1592,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/57"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$15.00",
+                "source": "D(1,5.1165,6.1727,5.946,6.173,5.9461,6.3254,5.1181,6.3255)",
+                "span": {
+                  "offset": 1606,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$28.50",
+                "source": "D(1,5.946,6.173,6.8406,6.174,6.841,6.3257,5.9461,6.3254)",
+                "span": {
+                  "offset": 1622,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 8,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "COMPUTER PROGRAMMING",
+                "source": "D(1,0.5008,6.3265,4.134,6.326,4.1249,6.4843,0.502,6.4856)",
+                "span": {
+                  "offset": 1649,
+                  "length": 20
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "0.50",
+                "source": "D(1,4.134,6.326,5.1181,6.3255,5.1143,6.4843,4.1249,6.4843)",
+                "span": {
+                  "offset": 1679,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$20.00",
+                "source": "D(1,5.1181,6.3255,5.9461,6.3254,5.9423,6.4841,5.1143,6.4843)",
+                "span": {
+                  "offset": 1693,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$10.00",
+                "source": "D(1,5.9461,6.3254,6.841,6.3257,6.8413,6.4851,5.9423,6.4841)",
+                "span": {
+                  "offset": 1709,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              }
+            ],
+            "source": "D(1,0.5236,4.2855,6.8234,4.2941,6.8314,6.5267,0.5296,6.5324)",
+            "span": {
+              "offset": 1054,
+              "length": 681
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5.5-input": 4914,
+      "gpt-5.5-cached-input": 3328,
+      "gpt-5.5-output": 585
+    }
+  }
+}

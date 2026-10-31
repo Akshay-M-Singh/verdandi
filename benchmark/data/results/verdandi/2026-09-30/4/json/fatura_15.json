@@ -1,0 +1,777 @@
+{
+  "selected_document": {
+    "name": "Graham, Carrillo and Stark",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the issuer name 'Graham, Carrillo and Stark', an invoice number, invoice date, buyer details, an items table, subtotal, and total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/83-35/489",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.405,
+          0.156,
+          0.69,
+          0.176
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/83-35/489'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Email:ghodges@example.org Invoice number INV/83-35/489'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3953,
+                0.1521,
+                0.6844,
+                0.17500000000000004
+              ],
+              "line_bbox": [
+                0.3953,
+                0.1521,
+                0.9823,
+                0.17500000000000004
+              ],
+              "text": "Invoice number INV/83-35/489 Invoice Date: 22-Sep-2010",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "22-Sep-2010",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.738,
+          0.156,
+          0.99,
+          0.176
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='22-Sep-2010'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Email:ghodges@example.org Invoice Date: 22-Sep-2010'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7316,
+                0.1521,
+                0.9823,
+                0.17290000000000005
+              ],
+              "line_bbox": [
+                0.3953,
+                0.1521,
+                0.9823,
+                0.17500000000000004
+              ],
+              "text": "Invoice number INV/83-35/489 Invoice Date: 22-Sep-2010",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Graham, Carrillo and Stark",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.024,
+          0.27,
+          0.042
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Graham, Carrillo and Stark'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Graham, Carrillo and Stark Address:8110 Lee Haven'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                -0.0003,
+                0.022700000000000053,
+                0.2658,
+                0.04749999999999999
+              ],
+              "line_bbox": [
+                -0.0003,
+                0.022700000000000053,
+                0.2658,
+                0.04749999999999999
+              ],
+              "text": "Graham, Carrillo and Stark",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Kathryn Bates",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.045,
+          0.235,
+          0.18,
+          0.254
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Kathryn Bates'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'GSTIN : 24HDE7487RESRT4 Buyer : Kathryn Bates 8110'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                -0.0,
+                0.17079999999999995,
+                0.2094,
+                0.1896
+              ],
+              "line_bbox": [
+                -0.0,
+                0.17079999999999995,
+                0.2094,
+                0.1896
+              ],
+              "text": "Buyer : Kathryn Bates",
+              "lineno": 8,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.85,
+          0.594,
+          0.932,
+          0.616
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'PRICE $81.84 $45.26 $15.03' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "202.42",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.726,
+          0.667,
+          0.953,
+          0.687
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='202.42'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '$15.03 SUB_TOTAL: 202.42 $ TOTAL: 208.39 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7224,
+                0.6686000000000001,
+                0.9561,
+                0.6923
+              ],
+              "line_bbox": [
+                0.7224,
+                0.6686000000000001,
+                0.9561,
+                0.6923
+              ],
+              "text": "SUB_TOTAL: 202.42 $",
+              "lineno": 25,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "208.39",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.595,
+          0.709,
+          0.952,
+          0.73
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='208.39'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 202.42 $ TOTAL: 208.39 $ Total in'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5959,
+                0.7082999999999999,
+                0.764,
+                0.7229
+              ],
+              "line_bbox": [
+                0.5959,
+                0.7082999999999999,
+                0.764,
+                0.7229
+              ],
+              "text": "TOTAL: 208.39 $",
+              "lineno": 26,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Difference floor.",
+      "quantity": "1.00",
+      "unit_price": "81.84",
+      "amount": null,
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.002,
+          0.592,
+          0.925,
+          0.619
+        ]
+      }
+    },
+    {
+      "description": "Environment success.",
+      "quantity": "2.00",
+      "unit_price": "45.26",
+      "amount": null,
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.002,
+          0.619,
+          0.925,
+          0.647
+        ]
+      }
+    },
+    {
+      "description": "Last national read.",
+      "quantity": "2.00",
+      "unit_price": "15.03",
+      "amount": null,
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.002,
+          0.647,
+          0.925,
+          0.676
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The document prints a PRICE column but does not print a separate line-item amount column or row total."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1563,
+      "total_tokens": 5218,
+      "elapsed_s": 15.94
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/83-35/489",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/83-35/489'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Email:ghodges@example.org Invoice number INV/83-35/489'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3953,
+                  0.1521,
+                  0.6844,
+                  0.17500000000000004
+                ],
+                "line_bbox": [
+                  0.3953,
+                  0.1521,
+                  0.9823,
+                  0.17500000000000004
+                ],
+                "text": "Invoice number INV/83-35/489 Invoice Date: 22-Sep-2010",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "22-Sep-2010",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='22-Sep-2010'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Email:ghodges@example.org Invoice Date: 22-Sep-2010'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7316,
+                  0.1521,
+                  0.9823,
+                  0.17290000000000005
+                ],
+                "line_bbox": [
+                  0.3953,
+                  0.1521,
+                  0.9823,
+                  0.17500000000000004
+                ],
+                "text": "Invoice number INV/83-35/489 Invoice Date: 22-Sep-2010",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Graham, Carrillo and Stark",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Graham, Carrillo and Stark'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Graham, Carrillo and Stark Address:8110 Lee Haven'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  -0.0003,
+                  0.022700000000000053,
+                  0.2658,
+                  0.04749999999999999
+                ],
+                "line_bbox": [
+                  -0.0003,
+                  0.022700000000000053,
+                  0.2658,
+                  0.04749999999999999
+                ],
+                "text": "Graham, Carrillo and Stark",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Kathryn Bates",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Kathryn Bates'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'GSTIN : 24HDE7487RESRT4 Buyer : Kathryn Bates 8110'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  -0.0,
+                  0.17079999999999995,
+                  0.2094,
+                  0.1896
+                ],
+                "line_bbox": [
+                  -0.0,
+                  0.17079999999999995,
+                  0.2094,
+                  0.1896
+                ],
+                "text": "Buyer : Kathryn Bates",
+                "lineno": 8,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'PRICE $81.84 $45.26 $15.03' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "202.42",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='202.42'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '$15.03 SUB_TOTAL: 202.42 $ TOTAL: 208.39 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7224,
+                  0.6686000000000001,
+                  0.9561,
+                  0.6923
+                ],
+                "line_bbox": [
+                  0.7224,
+                  0.6686000000000001,
+                  0.9561,
+                  0.6923
+                ],
+                "text": "SUB_TOTAL: 202.42 $",
+                "lineno": 25,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "208.39",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='208.39'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 202.42 $ TOTAL: 208.39 $ Total in'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5959,
+                  0.7082999999999999,
+                  0.764,
+                  0.7229
+                ],
+                "line_bbox": [
+                  0.5959,
+                  0.7082999999999999,
+                  0.764,
+                  0.7229
+                ],
+                "text": "TOTAL: 208.39 $",
+                "lineno": 26,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 5
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "buyer_name": {
+            "primary": "Kathryn Bates",
+            "secondary": "Kathryn Bates",
+            "agree": true
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "b982be34b8a512618c2f3a26a3a16683970efe2967c27dc2db09b44d14711a0f"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2475,
+          "completion_tokens": 407,
+          "total_tokens": 2882,
+          "elapsed_s": 6.02
+        }
+      }
+    }
+  }
+}

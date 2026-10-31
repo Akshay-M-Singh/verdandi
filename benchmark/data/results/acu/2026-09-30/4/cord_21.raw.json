@@ -1,0 +1,1100 @@
+{
+  "id": "1920ebca-5a89-41c6-a41d-93a3fdd44ed1",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T14:03:50Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "![](figures/1.1)\n\n\n<table>\n<tr>\n<td>1</td>\n<td>GRILLED BABY POTATO (R</td>\n<td>50,500</td>\n</tr>\n<tr>\n<td>1</td>\n<td>HOT TUNA</td>\n<td>67,000</td>\n</tr>\n<tr>\n<td>1</td>\n<td>HOT TUNA</td>\n<td>67,000<br>-67,000</td>\n</tr>\n</table>\n\n\nDisc -100%(ITM06)\n\nSUBTTL\n\n117,500\n\nSVC CHG 6%\n\n11,070\n\nPB1 10%\n\n19,557\n\nTOTAL\n\n148,127\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 117500,
+            "spans": [
+              {
+                "offset": 258,
+                "length": 7
+              }
+            ],
+            "confidence": 0.486,
+            "source": "D(1,5.5281,9.8467,6.5611,9.8321,6.5611,10.1752,5.5281,10.1900)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 11070,
+            "spans": [
+              {
+                "offset": 279,
+                "length": 6
+              }
+            ],
+            "confidence": 0.534,
+            "source": "D(1,5.6774,10.2154,6.5732,10.2083,6.5732,10.5331,5.6774,10.5362)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 148127,
+            "spans": [
+              {
+                "offset": 311,
+                "length": 7
+              }
+            ],
+            "confidence": 0.498,
+            "source": "D(1,4.5516,11.3004,6.5490,11.2978,6.5490,11.6145,4.5516,11.6145)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "GRILLED BABY POTATO (R",
+                    "spans": [
+                      {
+                        "offset": 47,
+                        "length": 22
+                      }
+                    ],
+                    "confidence": 0.56,
+                    "source": "D(1,1.9409,8.3987,5.2062,8.3700,5.2093,8.7259,1.9441,8.7547)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 36,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.571,
+                    "source": "D(1,0.9588,8.4511,1.0693,8.4511,1.0693,8.7594,0.9578,8.7594)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 50500,
+                    "spans": [
+                      {
+                        "offset": 79,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.679,
+                    "source": "D(1,5.6209,8.3711,6.5288,8.3626,6.5288,8.6963,5.6209,8.7023)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 50500,
+                    "spans": [
+                      {
+                        "offset": 79,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.679,
+                    "source": "D(1,5.6209,8.3711,6.5288,8.3626,6.5288,8.6963,5.6209,8.7023)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "HOT TUNA",
+                    "spans": [
+                      {
+                        "offset": 117,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.55,
+                    "source": "D(1,1.9389,8.7640,3.1481,8.7740,3.1453,9.1058,1.9362,9.0959)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 106,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.556,
+                    "source": "D(1,0.9649,8.8051,1.0804,8.8051,1.0804,9.1020,0.9649,9.1020)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 67000,
+                    "spans": [
+                      {
+                        "offset": 135,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.668,
+                    "source": "D(1,5.6169,8.7399,6.5328,8.7410,6.5328,9.0722,5.6169,9.0710)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 67000,
+                    "spans": [
+                      {
+                        "offset": 135,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.668,
+                    "source": "D(1,5.6169,8.7399,6.5328,8.7410,6.5328,9.0722,5.6169,9.0710)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "HOT TUNA",
+                    "spans": [
+                      {
+                        "offset": 173,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.55,
+                    "source": "D(1,1.9491,9.1167,3.1584,9.1356,3.1533,9.4655,1.9439,9.4466)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 162,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.556,
+                    "source": "D(1,0.9735,9.1578,1.0955,9.1644,1.0955,9.4614,0.9730,9.4548)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 67000,
+                    "spans": [
+                      {
+                        "offset": 191,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.668,
+                    "source": "D(1,5.6209,9.0976,6.5409,9.0902,6.5409,9.4214,5.6209,9.4288)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": -67000,
+                    "spans": [
+                      {
+                        "offset": 201,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.573,
+                    "source": "D(1,5.5135,9.4678,6.5490,9.4602,6.5515,9.7948,5.5160,9.8024)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 319
+              }
+            ],
+            "words": [
+              {
+                "content": "1",
+                "span": {
+                  "offset": 36,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,0.9588,8.4511,1.0693,8.4511,1.0693,8.7594,0.9578,8.7594)"
+              },
+              {
+                "content": "GRILLED",
+                "span": {
+                  "offset": 47,
+                  "length": 7
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.9419,8.3987,2.9676,8.3925,2.9702,8.7389,1.9439,8.7358)"
+              },
+              {
+                "content": "BABY",
+                "span": {
+                  "offset": 55,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.1191,8.3914,3.7076,8.3864,3.7108,8.737,3.1218,8.7388)"
+              },
+              {
+                "content": "POTATO",
+                "span": {
+                  "offset": 60,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,3.8533,8.3851,4.7449,8.376,4.7487,8.73,3.8565,8.7366)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 67,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.9081,8.3742,5.0188,8.373,5.0227,8.7275,4.9119,8.7285)"
+              },
+              {
+                "content": "R",
+                "span": {
+                  "offset": 68,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.0305,8.3729,5.2053,8.371,5.2093,8.7258,5.0344,8.7274)"
+              },
+              {
+                "content": "50,500",
+                "span": {
+                  "offset": 79,
+                  "length": 6
+                },
+                "confidence": 0.929,
+                "source": "D(1,5.6209,8.3711,6.5288,8.3626,6.5288,8.6963,5.6209,8.7023)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 106,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,0.9649,8.8051,1.0804,8.8051,1.0804,9.102,0.9649,9.102)"
+              },
+              {
+                "content": "HOT",
+                "span": {
+                  "offset": 117,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.9389,8.7664,2.3898,8.7677,2.3926,9.0968,1.9409,9.0959)"
+              },
+              {
+                "content": "TUNA",
+                "span": {
+                  "offset": 121,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.5294,8.7692,3.1413,8.7795,3.1454,9.0967,2.5324,9.0969)"
+              },
+              {
+                "content": "67,000",
+                "span": {
+                  "offset": 135,
+                  "length": 6
+                },
+                "confidence": 0.964,
+                "source": "D(1,5.6169,8.7399,6.5328,8.741,6.5328,9.0722,5.6169,9.071)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 162,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.9735,9.1578,1.0955,9.1644,1.0955,9.4614,0.973,9.4548)"
+              },
+              {
+                "content": "HOT",
+                "span": {
+                  "offset": 173,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,1.949,9.1203,2.3991,9.1293,2.4019,9.4518,1.951,9.4467)"
+              },
+              {
+                "content": "TUNA",
+                "span": {
+                  "offset": 177,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.5331,9.131,3.1494,9.1355,3.1534,9.4567,2.5361,9.4529)"
+              },
+              {
+                "content": "67,000",
+                "span": {
+                  "offset": 191,
+                  "length": 6
+                },
+                "confidence": 0.664,
+                "source": "D(1,5.6209,9.0976,6.5409,9.0902,6.5409,9.4214,5.6209,9.4288)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 201,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.516,9.4679,5.6344,9.4676,5.6343,9.8008,5.516,9.8024)"
+              },
+              {
+                "content": "67,000",
+                "span": {
+                  "offset": 202,
+                  "length": 6
+                },
+                "confidence": 0.98,
+                "source": "D(1,5.6344,9.4676,6.549,9.4602,6.549,9.7947,5.6343,9.8008)"
+              },
+              {
+                "content": "Disc",
+                "span": {
+                  "offset": 231,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.5293,9.4891,2.1267,9.4871,2.1288,9.8218,1.5313,9.8215)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 236,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.2646,9.4866,2.4025,9.4861,2.4045,9.8222,2.2666,9.8219)"
+              },
+              {
+                "content": "100",
+                "span": {
+                  "offset": 237,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.4427,9.4859,2.8505,9.4841,2.8526,9.8243,2.4447,9.8223)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 240,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.8448,9.4841,2.9941,9.4835,2.9962,9.8249,2.8468,9.8242)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 241,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.0171,9.4834,3.1205,9.4829,3.1225,9.8255,3.0191,9.8251)"
+              },
+              {
+                "content": "ITM06",
+                "span": {
+                  "offset": 242,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,3.155,9.4828,3.873,9.479,3.875,9.832,3.157,9.8257)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 247,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.8903,9.4789,4.0109,9.4782,4.0129,9.8332,3.8923,9.8321)"
+              },
+              {
+                "content": "SUBTTL",
+                "span": {
+                  "offset": 250,
+                  "length": 6
+                },
+                "confidence": 0.971,
+                "source": "D(1,1.5434,9.8599,2.4291,9.8639,2.4311,10.1798,1.5454,10.1869)"
+              },
+              {
+                "content": "117,500",
+                "span": {
+                  "offset": 258,
+                  "length": 7
+                },
+                "confidence": 0.954,
+                "source": "D(1,5.5281,9.8467,6.5611,9.8321,6.5611,10.1752,5.5281,10.19)"
+              },
+              {
+                "content": "SVC",
+                "span": {
+                  "offset": 267,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.5545,10.2203,1.9994,10.2218,2.0002,10.5419,1.5555,10.5417)"
+              },
+              {
+                "content": "CHG",
+                "span": {
+                  "offset": 271,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.1351,10.2217,2.58,10.2204,2.5803,10.544,2.1357,10.5422)"
+              },
+              {
+                "content": "6",
+                "span": {
+                  "offset": 275,
+                  "length": 1
+                },
+                "confidence": 0.947,
+                "source": "D(1,2.7157,10.2192,2.8622,10.218,2.8623,10.5459,2.7159,10.5449)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 276,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.8676,10.218,3.0304,10.2166,3.0304,10.5471,2.8677,10.546)"
+              },
+              {
+                "content": "11,070",
+                "span": {
+                  "offset": 279,
+                  "length": 6
+                },
+                "confidence": 0.974,
+                "source": "D(1,5.6774,10.2154,6.5732,10.2083,6.5732,10.5331,5.6774,10.5362)"
+              },
+              {
+                "content": "PB1",
+                "span": {
+                  "offset": 287,
+                  "length": 3
+                },
+                "confidence": 0.989,
+                "source": "D(1,1.5515,10.5853,1.9777,10.5891,1.9777,10.9089,1.5515,10.9071)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 291,
+                  "length": 2
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.1471,10.5904,2.4312,10.5923,2.4312,10.9135,2.1471,10.9103)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 293,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.4258,10.5923,2.6006,10.5933,2.6006,10.9157,2.4258,10.9134)"
+              },
+              {
+                "content": "19,557",
+                "span": {
+                  "offset": 296,
+                  "length": 6
+                },
+                "confidence": 0.945,
+                "source": "D(1,5.6935,10.5814,6.5651,10.5737,6.5651,10.9049,5.6935,10.9126)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 304,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,1.5797,11.3062,3.0283,11.3062,3.0283,11.6273,1.5818,11.6259)"
+              },
+              {
+                "content": "148,127",
+                "span": {
+                  "offset": 311,
+                  "length": 7
+                },
+                "confidence": 0.732,
+                "source": "D(1,4.5516,11.3004,6.549,11.2978,6.549,11.6145,4.5516,11.6145)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "1",
+                "source": "D(1,0.9578,8.4511,1.0693,8.4511,1.0693,8.7594,0.9578,8.7594)",
+                "span": {
+                  "offset": 36,
+                  "length": 1
+                }
+              },
+              {
+                "content": "GRILLED BABY POTATO (R",
+                "source": "D(1,1.9418,8.3987,5.2063,8.371,5.2093,8.7265,1.9441,8.7423)",
+                "span": {
+                  "offset": 47,
+                  "length": 22
+                }
+              },
+              {
+                "content": "50,500",
+                "source": "D(1,5.6197,8.3711,6.5288,8.3626,6.532,8.6992,5.6209,8.7078)",
+                "span": {
+                  "offset": 79,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,0.9649,8.8051,1.0804,8.8051,1.0804,9.102,0.9649,9.102)",
+                "span": {
+                  "offset": 106,
+                  "length": 1
+                }
+              },
+              {
+                "content": "HOT TUNA",
+                "source": "D(1,1.9389,8.7664,3.146,8.7687,3.1454,9.0983,1.9382,9.096)",
+                "span": {
+                  "offset": 117,
+                  "length": 8
+                }
+              },
+              {
+                "content": "67,000",
+                "source": "D(1,5.6169,8.7321,6.5333,8.7333,6.5328,9.0722,5.6165,9.071)",
+                "span": {
+                  "offset": 135,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,0.9735,9.1578,1.096,9.1581,1.0955,9.4622,0.973,9.462)",
+                "span": {
+                  "offset": 162,
+                  "length": 1
+                }
+              },
+              {
+                "content": "HOT TUNA",
+                "source": "D(1,1.949,9.1203,3.1572,9.1342,3.1534,9.4606,1.9475,9.4467)",
+                "span": {
+                  "offset": 173,
+                  "length": 8
+                }
+              },
+              {
+                "content": "67,000",
+                "source": "D(1,5.6197,9.0962,6.5409,9.0887,6.5436,9.4213,5.6209,9.4288)",
+                "span": {
+                  "offset": 191,
+                  "length": 6
+                }
+              },
+              {
+                "content": "-67,000",
+                "source": "D(1,5.5135,9.4679,6.549,9.4602,6.5506,9.7947,5.516,9.8024)",
+                "span": {
+                  "offset": 201,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Disc -100%(ITM06)",
+                "source": "D(1,1.5293,9.4891,4.0114,9.4782,4.0129,9.8332,1.5309,9.8386)",
+                "span": {
+                  "offset": 231,
+                  "length": 17
+                }
+              },
+              {
+                "content": "SUBTTL",
+                "source": "D(1,1.5434,9.8586,2.4291,9.8558,2.4312,10.1834,1.5455,10.1888)",
+                "span": {
+                  "offset": 250,
+                  "length": 6
+                }
+              },
+              {
+                "content": "117,500",
+                "source": "D(1,5.5231,9.8446,6.561,9.8297,6.562,10.1751,5.5281,10.19)",
+                "span": {
+                  "offset": 258,
+                  "length": 7
+                }
+              },
+              {
+                "content": "SVC CHG 6%",
+                "source": "D(1,1.5545,10.2166,3.0304,10.2166,3.0304,10.5471,1.5545,10.5471)",
+                "span": {
+                  "offset": 267,
+                  "length": 10
+                }
+              },
+              {
+                "content": "11,070",
+                "source": "D(1,5.6768,10.2125,6.5732,10.2083,6.5734,10.5331,5.6774,10.5373)",
+                "span": {
+                  "offset": 279,
+                  "length": 6
+                }
+              },
+              {
+                "content": "PB1 10%",
+                "source": "D(1,1.5515,10.5853,2.6031,10.5933,2.6006,10.9157,1.549,10.9077)",
+                "span": {
+                  "offset": 287,
+                  "length": 7
+                }
+              },
+              {
+                "content": "19,557",
+                "source": "D(1,5.6906,10.5814,6.5651,10.5737,6.5677,10.9065,5.6935,10.9142)",
+                "span": {
+                  "offset": 296,
+                  "length": 6
+                }
+              },
+              {
+                "content": "TOTAL",
+                "source": "D(1,1.5797,11.3062,3.0283,11.3062,3.0283,11.6273,1.5797,11.6273)",
+                "span": {
+                  "offset": 304,
+                  "length": 5
+                }
+              },
+              {
+                "content": "148,127",
+                "source": "D(1,4.5516,11.2946,6.549,11.2946,6.549,11.6145,4.5516,11.6145)",
+                "span": {
+                  "offset": 311,
+                  "length": 7
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "1",
+            "source": "D(1,0.9578,8.4511,1.0693,8.4511,1.0693,8.7594,0.9578,8.7594)",
+            "span": {
+              "offset": 36,
+              "length": 1
+            }
+          },
+          {
+            "content": "GRILLED BABY POTATO (R",
+            "source": "D(1,1.9409,8.3987,5.2062,8.37,5.2093,8.7259,1.9441,8.7547)",
+            "span": {
+              "offset": 47,
+              "length": 22
+            }
+          },
+          {
+            "content": "50,500",
+            "source": "D(1,5.6182,8.3699,6.5288,8.3626,6.5315,8.6963,5.6209,8.7036)",
+            "span": {
+              "offset": 79,
+              "length": 6
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,0.9649,8.8051,1.0804,8.8051,1.0804,9.102,0.9649,9.102)",
+            "span": {
+              "offset": 106,
+              "length": 1
+            }
+          },
+          {
+            "content": "HOT TUNA",
+            "source": "D(1,1.9389,8.764,3.148,8.7739,3.1453,9.1058,1.9361,9.0958)",
+            "span": {
+              "offset": 117,
+              "length": 8
+            }
+          },
+          {
+            "content": "67,000",
+            "source": "D(1,5.6169,8.7399,6.5332,8.741,6.5328,9.0722,5.6165,9.071)",
+            "span": {
+              "offset": 135,
+              "length": 6
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,0.9735,9.1578,1.1115,9.1653,1.0955,9.4614,0.9575,9.4539)",
+            "span": {
+              "offset": 162,
+              "length": 1
+            }
+          },
+          {
+            "content": "HOT TUNA",
+            "source": "D(1,1.949,9.1168,3.1584,9.1356,3.1533,9.4654,1.9439,9.4466)",
+            "span": {
+              "offset": 173,
+              "length": 8
+            }
+          },
+          {
+            "content": "67,000",
+            "source": "D(1,5.6182,9.0977,6.5409,9.0902,6.5436,9.4213,5.6209,9.4288)",
+            "span": {
+              "offset": 191,
+              "length": 6
+            }
+          },
+          {
+            "content": "-67,000",
+            "source": "D(1,5.5135,9.4679,6.549,9.4602,6.5514,9.7948,5.516,9.8024)",
+            "span": {
+              "offset": 201,
+              "length": 7
+            }
+          },
+          {
+            "content": "Disc -100%(ITM06)",
+            "source": "D(1,1.5293,9.4891,4.0114,9.4782,4.0129,9.8332,1.5309,9.8441)",
+            "span": {
+              "offset": 231,
+              "length": 17
+            }
+          },
+          {
+            "content": "SUBTTL",
+            "source": "D(1,1.5434,9.8586,2.4291,9.8532,2.4312,10.1834,1.5455,10.1888)",
+            "span": {
+              "offset": 250,
+              "length": 6
+            }
+          },
+          {
+            "content": "117,500",
+            "source": "D(1,5.5231,9.8446,6.561,9.8297,6.566,10.1751,5.5281,10.19)",
+            "span": {
+              "offset": 258,
+              "length": 7
+            }
+          },
+          {
+            "content": "SVC CHG 6%",
+            "source": "D(1,1.5545,10.2166,3.0304,10.2166,3.0304,10.5471,1.5545,10.5471)",
+            "span": {
+              "offset": 267,
+              "length": 10
+            }
+          },
+          {
+            "content": "11,070",
+            "source": "D(1,5.6758,10.2126,6.5732,10.2083,6.5747,10.5331,5.6774,10.5373)",
+            "span": {
+              "offset": 279,
+              "length": 6
+            }
+          },
+          {
+            "content": "PB1 10%",
+            "source": "D(1,1.5515,10.5853,2.6031,10.5933,2.6006,10.9157,1.549,10.9077)",
+            "span": {
+              "offset": 287,
+              "length": 7
+            }
+          },
+          {
+            "content": "19,557",
+            "source": "D(1,5.6906,10.5814,6.5651,10.5737,6.568,10.9065,5.6935,10.9142)",
+            "span": {
+              "offset": 296,
+              "length": 6
+            }
+          },
+          {
+            "content": "TOTAL",
+            "source": "D(1,1.5797,11.3062,3.0283,11.3062,3.0283,11.6273,1.5797,11.6273)",
+            "span": {
+              "offset": 304,
+              "length": 5
+            }
+          },
+          {
+            "content": "148,127",
+            "source": "D(1,4.5516,11.2946,6.549,11.2946,6.549,11.6145,4.5516,11.6145)",
+            "span": {
+              "offset": 311,
+              "length": 7
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 318
+            },
+            "elements": [
+              "/figures/0",
+              "/tables/0",
+              "/paragraphs/10",
+              "/paragraphs/11",
+              "/paragraphs/12",
+              "/paragraphs/13",
+              "/paragraphs/14",
+              "/paragraphs/15",
+              "/paragraphs/16",
+              "/paragraphs/17",
+              "/paragraphs/18"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 3,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,0.8512,8.2033,1.8532,8.2015,1.847,8.771,0.8531,8.7791)",
+                "span": {
+                  "offset": 36,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/0"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "GRILLED BABY POTATO (R",
+                "source": "D(1,1.8532,8.2015,5.3914,8.1947,5.3955,8.7451,1.847,8.771)",
+                "span": {
+                  "offset": 47,
+                  "length": 22
+                },
+                "elements": [
+                  "/paragraphs/1"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "50,500",
+                "source": "D(1,5.3914,8.1947,6.6086,8.1905,6.6094,8.7349,5.3955,8.7451)",
+                "span": {
+                  "offset": 79,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,0.8531,8.7791,1.847,8.771,1.8502,9.0934,0.8527,9.0983)",
+                "span": {
+                  "offset": 106,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "HOT TUNA",
+                "source": "D(1,1.847,8.771,5.3955,8.7451,5.3922,9.0758,1.8502,9.0934)",
+                "span": {
+                  "offset": 117,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "67,000",
+                "source": "D(1,5.3955,8.7451,6.6094,8.7349,6.6098,9.069,5.3922,9.0758)",
+                "span": {
+                  "offset": 135,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,0.8527,9.0983,1.8502,9.0934,1.8431,9.6298,0.8537,9.6299)",
+                "span": {
+                  "offset": 162,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "HOT TUNA",
+                "source": "D(1,1.8502,9.0934,5.3922,9.0758,5.3948,9.6294,1.8431,9.6298)",
+                "span": {
+                  "offset": 173,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "67,000\n-67,000",
+                "source": "D(1,5.3922,9.0758,6.6098,9.069,6.6111,9.6293,5.3948,9.6294)",
+                "span": {
+                  "offset": 191,
+                  "length": 17
+                },
+                "elements": [
+                  "/paragraphs/8",
+                  "/paragraphs/9"
+                ]
+              }
+            ],
+            "source": "D(1,0.8958,8.3711,6.5651,8.3312,6.5691,9.4561,0.9099,9.4903)",
+            "span": {
+              "offset": 19,
+              "length": 209
+            }
+          }
+        ],
+        "figures": [
+          {
+            "source": "D(1,0.8262,6.167,6.3634,6.0985,6.3916,8.0742,0.8454,8.137)",
+            "span": {
+              "offset": 0,
+              "length": 16
+            },
+            "id": "1.1"
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 3984,
+      "gpt-5-mini-cached-input": 3712,
+      "gpt-5-mini-output": 283
+    }
+  }
+}

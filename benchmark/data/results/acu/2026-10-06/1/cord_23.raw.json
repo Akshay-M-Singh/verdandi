@@ -1,0 +1,679 @@
+{
+  "id": "90790a8f-7de6-4f79-8ae9-24d63354550f",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-06T00:37:00Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "# TRIPPLE CHEESE\n\n1\n\nx 17,000\n17,000\n\n\n<table>\n<tr>\n<td>SUB TOTAL<br>GRAND TOTAL</td>\n<td>17,000<br>17,000</td>\n</tr>\n<tr>\n<td>CASH IDR</td>\n<td>22,000</td>\n</tr>\n<tr>\n<td>CHANGE DUE</td>\n<td>5,000</td>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "valueString": "IDR",
+            "spans": [
+              {
+                "offset": 132,
+                "length": 3
+              }
+            ],
+            "confidence": 0.873,
+            "source": "D(1,1.8511,6.5020,2.3504,6.4971,2.3545,6.7604,1.8551,6.7642)"
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 17000,
+            "spans": [
+              {
+                "offset": 90,
+                "length": 6
+              }
+            ],
+            "confidence": 0.856,
+            "source": "D(1,6.4198,4.9587,7.3277,4.9436,7.3358,5.2329,6.4198,5.2422)"
+          },
+          "tax_total": {
+            "type": "number",
+            "confidence": 0.974
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 17000,
+            "spans": [
+              {
+                "offset": 100,
+                "length": 6
+              }
+            ],
+            "confidence": 0.856,
+            "source": "D(1,6.4198,5.8415,7.3237,5.8327,7.3237,6.1280,6.4198,6.1280)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "TRIPPLE CHEESE",
+                    "spans": [
+                      {
+                        "offset": 2,
+                        "length": 14
+                      }
+                    ],
+                    "confidence": 0.856,
+                    "source": "D(1,1.2690,4.0502,3.6480,4.0171,3.6518,4.2914,1.2728,4.3245)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 18,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.874,
+                    "source": "D(1,1.3225,4.4750,1.4425,4.4867,1.4446,4.7196,1.3245,4.7023)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 17000,
+                    "spans": [
+                      {
+                        "offset": 23,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.857,
+                    "source": "D(1,2.3456,4.4625,3.1938,4.4504,3.1978,4.7216,2.3499,4.7299)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 17000,
+                    "spans": [
+                      {
+                        "offset": 30,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.888,
+                    "source": "D(1,6.4158,4.3393,7.3358,4.3131,7.3439,4.6256,6.4239,4.6449)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -0.6922,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 282
+              }
+            ],
+            "words": [
+              {
+                "content": "TRIPPLE",
+                "span": {
+                  "offset": 2,
+                  "length": 7
+                },
+                "confidence": 0.989,
+                "source": "D(1,1.269,4.0528,2.4133,4.0344,2.4174,4.3081,1.2731,4.3245)"
+              },
+              {
+                "content": "CHEESE",
+                "span": {
+                  "offset": 10,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.4854,4.0333,3.6477,4.0171,3.6518,4.291,2.4894,4.3071)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 18,
+                  "length": 1
+                },
+                "confidence": 0.988,
+                "source": "D(1,1.3225,4.475,1.4425,4.4867,1.4446,4.7196,1.3245,4.7023)"
+              },
+              {
+                "content": "x",
+                "span": {
+                  "offset": 21,
+                  "length": 1
+                },
+                "confidence": 0.531,
+                "source": "D(1,1.9479,4.483,2.0949,4.4754,2.099,4.7352,1.952,4.7384)"
+              },
+              {
+                "content": "17,000",
+                "span": {
+                  "offset": 23,
+                  "length": 6
+                },
+                "confidence": 0.981,
+                "source": "D(1,2.3456,4.4625,3.1938,4.4504,3.1978,4.7216,2.3499,4.7299)"
+              },
+              {
+                "content": "17,000",
+                "span": {
+                  "offset": 30,
+                  "length": 6
+                },
+                "confidence": 0.99,
+                "source": "D(1,6.4158,4.3393,7.3358,4.3131,7.3439,4.6256,6.4239,4.6449)"
+              },
+              {
+                "content": "SUB",
+                "span": {
+                  "offset": 56,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1.0027,5.066,1.5654,5.0558,1.5691,5.3187,1.0063,5.3257)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 60,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,1.6401,5.0549,2.5502,5.0474,2.5542,5.307,1.6439,5.3178)"
+              },
+              {
+                "content": "GRAND",
+                "span": {
+                  "offset": 69,
+                  "length": 5
+                },
+                "confidence": 0.715,
+                "source": "D(1,0.9967,5.8938,2.0282,5.8843,2.032,6.1582,1.0002,6.167)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 75,
+                  "length": 5
+                },
+                "confidence": 0.708,
+                "source": "D(1,2.0696,5.884,2.986,5.8775,2.99,6.1457,2.0734,6.1577)"
+              },
+              {
+                "content": "17,000",
+                "span": {
+                  "offset": 90,
+                  "length": 6
+                },
+                "confidence": 0.984,
+                "source": "D(1,6.4198,4.9587,7.3277,4.9436,7.3358,5.2329,6.4198,5.2422)"
+              },
+              {
+                "content": "17,000",
+                "span": {
+                  "offset": 100,
+                  "length": 6
+                },
+                "confidence": 0.973,
+                "source": "D(1,6.4198,5.8415,7.3237,5.8327,7.3237,6.128,6.4198,6.128)"
+              },
+              {
+                "content": "CASH",
+                "span": {
+                  "offset": 127,
+                  "length": 4
+                },
+                "confidence": 0.948,
+                "source": "D(1,0.9831,6.5171,1.7567,6.5034,1.7607,6.7657,0.9871,6.7824)"
+              },
+              {
+                "content": "IDR",
+                "span": {
+                  "offset": 132,
+                  "length": 3
+                },
+                "confidence": 0.878,
+                "source": "D(1,1.8511,6.502,2.3504,6.4971,2.3545,6.7604,1.8551,6.7642)"
+              },
+              {
+                "content": "22,000",
+                "span": {
+                  "offset": 145,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,6.3835,6.487,7.3156,6.4873,7.3156,6.7754,6.3835,6.7731)"
+              },
+              {
+                "content": "CHANGE",
+                "span": {
+                  "offset": 172,
+                  "length": 6
+                },
+                "confidence": 0.99,
+                "source": "D(1,1.0007,7.136,2.2123,7.1016,2.2171,7.3645,1.0068,7.3967)"
+              },
+              {
+                "content": "DUE",
+                "span": {
+                  "offset": 179,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.2914,7.0994,2.8972,7.0826,2.9012,7.3451,2.2961,7.3624)"
+              },
+              {
+                "content": "5,000",
+                "span": {
+                  "offset": 192,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,6.5369,7.1212,7.2995,7.1274,7.2995,7.4174,6.5369,7.4076)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "TRIPPLE CHEESE",
+                "source": "D(1,1.269,4.0501,3.6479,4.0166,3.6518,4.291,1.2729,4.3245)",
+                "span": {
+                  "offset": 2,
+                  "length": 14
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,1.3225,4.475,1.4424,4.474,1.4446,4.7196,1.3246,4.7206)",
+                "span": {
+                  "offset": 18,
+                  "length": 1
+                }
+              },
+              {
+                "content": "x 17,000",
+                "source": "D(1,1.9477,4.4619,3.1941,4.4482,3.1978,4.7216,1.9514,4.7384)",
+                "span": {
+                  "offset": 21,
+                  "length": 8
+                }
+              },
+              {
+                "content": "17,000",
+                "source": "D(1,6.4157,4.3369,7.3358,4.3131,7.3439,4.6256,6.4238,4.6481)",
+                "span": {
+                  "offset": 30,
+                  "length": 6
+                }
+              },
+              {
+                "content": "SUB TOTAL",
+                "source": "D(1,1.0027,5.0626,2.551,5.0438,2.5542,5.307,1.0059,5.3257)",
+                "span": {
+                  "offset": 56,
+                  "length": 9
+                }
+              },
+              {
+                "content": "GRAND TOTAL",
+                "source": "D(1,0.9967,5.8938,2.9874,5.8758,2.99,6.1492,0.9993,6.1686)",
+                "span": {
+                  "offset": 69,
+                  "length": 11
+                }
+              },
+              {
+                "content": "17,000",
+                "source": "D(1,6.4192,4.9588,7.331,4.9435,7.3359,5.2375,6.42,5.2477)",
+                "span": {
+                  "offset": 90,
+                  "length": 6
+                }
+              },
+              {
+                "content": "17,000",
+                "source": "D(1,6.4198,5.8327,7.3237,5.8327,7.3237,6.128,6.4198,6.128)",
+                "span": {
+                  "offset": 100,
+                  "length": 6
+                }
+              },
+              {
+                "content": "CASH IDR",
+                "source": "D(1,0.9828,6.5154,2.3504,6.4934,2.3547,6.7604,0.9871,6.7824)",
+                "span": {
+                  "offset": 127,
+                  "length": 8
+                }
+              },
+              {
+                "content": "22,000",
+                "source": "D(1,6.3835,6.4846,7.3159,6.4869,7.3156,6.7754,6.3828,6.7731)",
+                "span": {
+                  "offset": 145,
+                  "length": 6
+                }
+              },
+              {
+                "content": "CHANGE DUE",
+                "source": "D(1,0.9995,7.1352,2.8972,7.0826,2.9045,7.3455,1.0068,7.3981)",
+                "span": {
+                  "offset": 172,
+                  "length": 10
+                }
+              },
+              {
+                "content": "5,000",
+                "source": "D(1,6.5369,7.1156,7.3033,7.1255,7.2995,7.4174,6.5334,7.4075)",
+                "span": {
+                  "offset": 192,
+                  "length": 5
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "role": "title",
+            "content": "TRIPPLE CHEESE",
+            "source": "D(1,1.269,4.0501,3.6479,4.0166,3.6518,4.291,1.2729,4.3245)",
+            "span": {
+              "offset": 0,
+              "length": 16
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,1.3225,4.475,1.4424,4.474,1.4446,4.7196,1.3246,4.7206)",
+            "span": {
+              "offset": 18,
+              "length": 1
+            }
+          },
+          {
+            "content": "x 17,000 17,000",
+            "source": "D(1,1.944,4.4522,7.3358,4.3131,7.3439,4.6256,1.9521,4.7647)",
+            "span": {
+              "offset": 21,
+              "length": 15
+            }
+          },
+          {
+            "content": "SUB TOTAL",
+            "source": "D(1,1.0027,5.0613,2.5516,5.0457,2.5543,5.3101,1.0053,5.3257)",
+            "span": {
+              "offset": 56,
+              "length": 9
+            }
+          },
+          {
+            "content": "GRAND TOTAL",
+            "source": "D(1,0.9967,5.8935,2.9876,5.8758,2.99,6.1496,0.9991,6.1673)",
+            "span": {
+              "offset": 69,
+              "length": 11
+            }
+          },
+          {
+            "content": "17,000",
+            "source": "D(1,6.416,4.9557,7.332,4.9435,7.3358,5.2329,6.4199,5.2451)",
+            "span": {
+              "offset": 90,
+              "length": 6
+            }
+          },
+          {
+            "content": "17,000",
+            "source": "D(1,6.4184,5.8371,7.3237,5.8327,7.3251,6.128,6.4199,6.1324)",
+            "span": {
+              "offset": 100,
+              "length": 6
+            }
+          },
+          {
+            "content": "CASH IDR",
+            "source": "D(1,0.983,6.509,2.3522,6.4971,2.3546,6.7704,0.9854,6.7824)",
+            "span": {
+              "offset": 127,
+              "length": 8
+            }
+          },
+          {
+            "content": "22,000",
+            "source": "D(1,6.3835,6.486,7.316,6.4873,7.3156,6.7754,6.3831,6.7741)",
+            "span": {
+              "offset": 145,
+              "length": 6
+            }
+          },
+          {
+            "content": "CHANGE DUE",
+            "source": "D(1,0.9996,7.1347,2.8972,7.0826,2.9044,7.3457,1.0068,7.3978)",
+            "span": {
+              "offset": 172,
+              "length": 10
+            }
+          },
+          {
+            "content": "5,000",
+            "source": "D(1,6.5369,7.1193,7.3026,7.1274,7.2995,7.4174,6.5338,7.4094)",
+            "span": {
+              "offset": 192,
+              "length": 5
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 281
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/tables/0"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 5,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SUB TOTAL\nGRAND TOTAL",
+                "source": "D(1,0.8398,4.9699,6.2908,4.8849,6.2894,6.2934,0.8395,6.3711)",
+                "span": {
+                  "offset": 56,
+                  "length": 24
+                },
+                "elements": [
+                  "/paragraphs/3",
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "17,000\n17,000",
+                "source": "D(1,6.2908,4.8849,7.443,4.8834,7.4397,6.2809,6.2894,6.2934)",
+                "span": {
+                  "offset": 90,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/5",
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CASH IDR",
+                "source": "D(1,0.8395,6.3711,6.2894,6.2934,6.2911,6.9232,0.8404,6.9411)",
+                "span": {
+                  "offset": 127,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22,000",
+                "source": "D(1,6.2894,6.2934,7.4397,6.2809,7.4436,6.9307,6.2911,6.9232)",
+                "span": {
+                  "offset": 145,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CHANGE DUE",
+                "source": "D(1,0.8404,6.9411,6.2911,6.9232,6.2776,7.4712,0.8383,7.5177)",
+                "span": {
+                  "offset": 172,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,000",
+                "source": "D(1,6.2911,6.9232,7.4436,6.9307,7.4436,7.4611,6.2776,7.4712)",
+                "span": {
+                  "offset": 192,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 2,
+                "content": "",
+                "source": "D(1,0.8383,7.5177,7.4436,7.4611,7.4407,10.036,0.8371,9.8394)",
+                "span": {
+                  "offset": 230,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,0.8371,9.8394,6.2785,10.0025,6.3025,11.6944,0.833,11.6843)",
+                "span": {
+                  "offset": 251,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,6.2785,10.0025,7.4407,10.036,7.441,11.6944,6.3025,11.6944)",
+                "span": {
+                  "offset": 261,
+                  "length": 0
+                }
+              }
+            ],
+            "source": "D(1,0.8191,4.9193,7.4125,4.905,7.4448,11.6316,0.8544,11.6659)",
+            "span": {
+              "offset": 39,
+              "length": 242
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5.5-input": 3923,
+      "gpt-5.5-cached-input": 3328,
+      "gpt-5.5-output": 163
+    }
+  }
+}

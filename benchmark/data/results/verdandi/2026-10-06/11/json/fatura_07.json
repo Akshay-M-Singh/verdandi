@@ -1,0 +1,848 @@
+{
+  "selected_document": {
+    "name": "Montgomery, Harrison and Vaughan",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 is headed \u201cTAX INVOICE,\u201d shows \u201cINVOICE ID 9203-553,\u201d identifies Montgomery, Harrison and Vaughan, and includes billed item prices, tax, and a total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "9203-553",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.622,
+          0.051,
+          0.83,
+          0.066
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='9203-553'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX INVOICE INVOICE ID 9203-553 Date: 12-Oct-1995'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6195,
+                0.050000000000000044,
+                0.826,
+                0.06669999999999998
+              ],
+              "line_bbox": [
+                0.6195,
+                0.050000000000000044,
+                0.826,
+                0.06669999999999998
+              ],
+              "text": "INVOICE ID 9203-553",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "12-Oct-1995",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.622,
+          0.085,
+          0.793,
+          0.099
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='12-Oct-1995' \u2014 format 'date'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE ID 9203-553 Date: 12-Oct-1995 Due Date :'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6195,
+                0.08130000000000004,
+                0.7935,
+                0.09999999999999998
+              ],
+              "line_bbox": [
+                0.6195,
+                0.08130000000000004,
+                0.7935,
+                0.09999999999999998
+              ],
+              "text": "Date: 12-Oct-1995",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Montgomery, Harrison and Vaughan",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.152,
+          0.134,
+          0.519,
+          0.15
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Montgomery, Harrison and Vaughan'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SIMPDEHY Montgomery, Harrison and Vaughan Address: 840 Anderson'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1502,
+                0.13029999999999997,
+                0.5018,
+                0.1532
+              ],
+              "line_bbox": [
+                0.1502,
+                0.13029999999999997,
+                0.5018,
+                0.1532
+              ],
+              "text": "Montgomery, Harrison and Vaughan",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Brandi Sosa",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.568,
+          0.327,
+          0.678,
+          0.34
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Brandi Sosa'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SHIP_TO: Brandi Sosa 1426 Jennifer Freeway Davenportfurt, NH'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5664,
+                0.3208,
+                0.6785,
+                0.3396
+              ],
+              "line_bbox": [
+                0.5664,
+                0.3208,
+                0.6785,
+                0.3396
+              ],
+              "text": "Brandi Sosa",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.465,
+          0.742,
+          0.634,
+          0.759
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'TOTAL : 481.84 $' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "483.62",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.638,
+          0.627,
+          0.863,
+          0.644
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='483.62'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 483.62 $ DISCOUNT(2.47%): (-) 11.95 TAX:VAT (3.00%):'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6372,
+                0.6188,
+                0.8643,
+                0.6396
+              ],
+              "line_bbox": [
+                0.6372,
+                0.6188,
+                0.8643,
+                0.6396
+              ],
+              "text": "SUB_TOTAL: 483.62 $",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "14.52",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.464,
+          0.662,
+          0.713,
+          0.679
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='14.52'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 483.62 $ DISCOUNT(2.47%): (-) 11.95 TAX:VAT (3.00%):'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4602,
+                0.6562,
+                0.7139,
+                0.675
+              ],
+              "line_bbox": [
+                0.4602,
+                0.6562,
+                0.7139,
+                0.675
+              ],
+              "text": "TAX:VAT (3.00%): 14.52 $",
+              "lineno": 23,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "481.84",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.466,
+          0.742,
+          0.634,
+          0.759
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='481.84'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL : 481.84 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4602,
+                0.7333000000000001,
+                0.6313,
+                0.75
+              ],
+              "line_bbox": [
+                0.4602,
+                0.7333000000000001,
+                0.6313,
+                0.75
+              ],
+              "text": "TOTAL : 481.84 $",
+              "lineno": 24,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Teacher figure above.",
+      "quantity": "6.00",
+      "unit_price": "34.98",
+      "amount": null,
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.524,
+          0.931,
+          0.545
+        ]
+      }
+    },
+    {
+      "description": "Great sit.",
+      "quantity": "2.00",
+      "unit_price": "50.60",
+      "amount": null,
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.545,
+          0.931,
+          0.566
+        ]
+      }
+    },
+    {
+      "description": "Box town age.",
+      "quantity": "2.00",
+      "unit_price": "86.27",
+      "amount": null,
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.566,
+          0.931,
+          0.588
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 2343,
+      "total_tokens": 9587,
+      "elapsed_s": 19.77
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "9203-553",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='9203-553'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX INVOICE INVOICE ID 9203-553 Date: 12-Oct-1995'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6195,
+                  0.050000000000000044,
+                  0.826,
+                  0.06669999999999998
+                ],
+                "line_bbox": [
+                  0.6195,
+                  0.050000000000000044,
+                  0.826,
+                  0.06669999999999998
+                ],
+                "text": "INVOICE ID 9203-553",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "12-Oct-1995",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='12-Oct-1995' \u2014 format 'date'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE ID 9203-553 Date: 12-Oct-1995 Due Date :'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6195,
+                  0.08130000000000004,
+                  0.7935,
+                  0.09999999999999998
+                ],
+                "line_bbox": [
+                  0.6195,
+                  0.08130000000000004,
+                  0.7935,
+                  0.09999999999999998
+                ],
+                "text": "Date: 12-Oct-1995",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Montgomery, Harrison and Vaughan",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Montgomery, Harrison and Vaughan'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SIMPDEHY Montgomery, Harrison and Vaughan Address: 840 Anderson'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1502,
+                  0.13029999999999997,
+                  0.5018,
+                  0.1532
+                ],
+                "line_bbox": [
+                  0.1502,
+                  0.13029999999999997,
+                  0.5018,
+                  0.1532
+                ],
+                "text": "Montgomery, Harrison and Vaughan",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Brandi Sosa",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Brandi Sosa'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SHIP_TO: Brandi Sosa 1426 Jennifer Freeway Davenportfurt, NH'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5664,
+                  0.3208,
+                  0.6785,
+                  0.3396
+                ],
+                "line_bbox": [
+                  0.5664,
+                  0.3208,
+                  0.6785,
+                  0.3396
+                ],
+                "text": "Brandi Sosa",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'TOTAL : 481.84 $' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "483.62",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='483.62'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 483.62 $ DISCOUNT(2.47%): (-) 11.95 TAX:VAT (3.00%):'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6372,
+                  0.6188,
+                  0.8643,
+                  0.6396
+                ],
+                "line_bbox": [
+                  0.6372,
+                  0.6188,
+                  0.8643,
+                  0.6396
+                ],
+                "text": "SUB_TOTAL: 483.62 $",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "14.52",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='14.52'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 483.62 $ DISCOUNT(2.47%): (-) 11.95 TAX:VAT (3.00%):'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4602,
+                  0.6562,
+                  0.7139,
+                  0.675
+                ],
+                "line_bbox": [
+                  0.4602,
+                  0.6562,
+                  0.7139,
+                  0.675
+                ],
+                "text": "TAX:VAT (3.00%): 14.52 $",
+                "lineno": 23,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "481.84",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='481.84'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL : 481.84 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4602,
+                  0.7333000000000001,
+                  0.6313,
+                  0.75
+                ],
+                "line_bbox": [
+                  0.4602,
+                  0.7333000000000001,
+                  0.6313,
+                  0.75
+                ],
+                "text": "TOTAL : 481.84 $",
+                "lineno": 24,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 1
+        },
+        "flag_rows": 6
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "12-Oct-1995",
+            "secondary": "12-Oct-1995",
+            "agree": true
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "a59f3aca661c850a92c29e6e7a8d40ef2a7f193e17f42dbf194a80a6b935c781"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5847,
+          "completion_tokens": 455,
+          "total_tokens": 6302,
+          "elapsed_s": 5.6
+        }
+      }
+    }
+  }
+}

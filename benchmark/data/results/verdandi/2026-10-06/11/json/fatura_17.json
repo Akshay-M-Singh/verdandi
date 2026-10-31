@@ -1,0 +1,784 @@
+{
+  "selected_document": {
+    "name": "Woods-Gibbs",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cCOMMERCIAL INVOICE,\u201d shows an invoice ID and date, a \u201cBill to\u201d customer, billed line items, and a final total. \u201cWoods-Gibbs\u201d is printed as the issuer at the top left.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/27-92/824",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.658,
+          0.062,
+          0.907,
+          0.078
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/27-92/824'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'COMMERCIAL INVOICE INVOICE ID INV/27-92/824 Date: 12-Mar-2012'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6549,
+                0.06040000000000001,
+                0.9086,
+                0.07920000000000005
+              ],
+              "line_bbox": [
+                0.0796,
+                0.06040000000000001,
+                0.9086,
+                0.08540000000000003
+              ],
+              "text": "Address:696 Thompson Forest INVOICE ID INV/27-92/824",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "12-Mar-2012",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.658,
+          0.083,
+          0.829,
+          0.097
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='12-Mar-2012'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE ID INV/27-92/824 Date: 12-Mar-2012'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6549,
+                0.08130000000000004,
+                0.8319,
+                0.09999999999999998
+              ],
+              "line_bbox": [
+                0.0794,
+                0.07499999999999996,
+                0.8319,
+                0.12080000000000002
+              ],
+              "text": "Ashleybury, AR 73994 US LAD Date: 12-Mar-2012",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Woods-Gibbs",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.076,
+          0.036,
+          0.205,
+          0.05
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Woods-Gibbs'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Woods-Gibbs Address:696 Thompson Forest Ashleybury, AR 73994 US'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0767,
+                0.03749999999999998,
+                0.2065,
+                0.050000000000000044
+              ],
+              "line_bbox": [
+                0.0767,
+                0.027100000000000013,
+                0.5664,
+                0.07289999999999996
+              ],
+              "text": "Woods-Gibbs DSD",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Susan Carpenter",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.497,
+          0.206,
+          0.723,
+          0.221
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Susan Carpenter'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Bill to: Susan Carpenter 696 Thompson Forest Ashleybury,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4926,
+                0.20420000000000005,
+                0.7286,
+                0.2229
+              ],
+              "line_bbox": [
+                0.4926,
+                0.20420000000000005,
+                0.7286,
+                0.2229
+              ],
+              "text": "Bill to: Susan Carpenter",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.653,
+          0.756,
+          0.861,
+          0.874
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'TOTAL: 937.51 $' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "921.57",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.655,
+          0.756,
+          0.87,
+          0.778
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='921.57'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): '$93.43 $467.15 SUB_TOTAL: 921.57 $ TOTAL: 937.51 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6519,
+                0.675,
+                0.882,
+                0.7
+              ],
+              "line_bbox": [
+                0.6519,
+                0.675,
+                0.882,
+                0.7
+              ],
+              "text": "SUB_TOTAL: 921.57 $",
+              "lineno": 17,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "937.51",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.657,
+          0.836,
+          0.826,
+          0.858
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='937.51'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'TOTAL: 937.51 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6549,
+                0.7562,
+                0.826,
+                0.775
+              ],
+              "line_bbox": [
+                0.6549,
+                0.7562,
+                0.826,
+                0.775
+              ],
+              "text": "TOTAL: 937.51 $",
+              "lineno": 18,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Evidence generation charge.",
+      "quantity": "6.00",
+      "unit_price": "12.19",
+      "amount": "73.14",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.017,
+          0.647,
+          0.817,
+          0.667
+        ]
+      }
+    },
+    {
+      "description": "Source begin bar.",
+      "quantity": "4.00",
+      "unit_price": "95.32",
+      "amount": "381.28",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.017,
+          0.669,
+          0.817,
+          0.689
+        ]
+      }
+    },
+    {
+      "description": "Enter trip.",
+      "quantity": "5.00",
+      "unit_price": "93.43",
+      "amount": "467.15",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.017,
+          0.691,
+          0.817,
+          0.712
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1369,
+      "total_tokens": 8613,
+      "elapsed_s": 11.57
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/27-92/824",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/27-92/824'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'COMMERCIAL INVOICE INVOICE ID INV/27-92/824 Date: 12-Mar-2012'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6549,
+                  0.06040000000000001,
+                  0.9086,
+                  0.07920000000000005
+                ],
+                "line_bbox": [
+                  0.0796,
+                  0.06040000000000001,
+                  0.9086,
+                  0.08540000000000003
+                ],
+                "text": "Address:696 Thompson Forest INVOICE ID INV/27-92/824",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "12-Mar-2012",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='12-Mar-2012'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE ID INV/27-92/824 Date: 12-Mar-2012'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6549,
+                  0.08130000000000004,
+                  0.8319,
+                  0.09999999999999998
+                ],
+                "line_bbox": [
+                  0.0794,
+                  0.07499999999999996,
+                  0.8319,
+                  0.12080000000000002
+                ],
+                "text": "Ashleybury, AR 73994 US LAD Date: 12-Mar-2012",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Woods-Gibbs",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Woods-Gibbs'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Woods-Gibbs Address:696 Thompson Forest Ashleybury, AR 73994 US'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0767,
+                  0.03749999999999998,
+                  0.2065,
+                  0.050000000000000044
+                ],
+                "line_bbox": [
+                  0.0767,
+                  0.027100000000000013,
+                  0.5664,
+                  0.07289999999999996
+                ],
+                "text": "Woods-Gibbs DSD",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Susan Carpenter",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Susan Carpenter'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Bill to: Susan Carpenter 696 Thompson Forest Ashleybury,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4926,
+                  0.20420000000000005,
+                  0.7286,
+                  0.2229
+                ],
+                "line_bbox": [
+                  0.4926,
+                  0.20420000000000005,
+                  0.7286,
+                  0.2229
+                ],
+                "text": "Bill to: Susan Carpenter",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'TOTAL: 937.51 $' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "921.57",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='921.57'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): '$93.43 $467.15 SUB_TOTAL: 921.57 $ TOTAL: 937.51 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6519,
+                  0.675,
+                  0.882,
+                  0.7
+                ],
+                "line_bbox": [
+                  0.6519,
+                  0.675,
+                  0.882,
+                  0.7
+                ],
+                "text": "SUB_TOTAL: 921.57 $",
+                "lineno": 17,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "937.51",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='937.51'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'TOTAL: 937.51 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6549,
+                  0.7562,
+                  0.826,
+                  0.775
+                ],
+                "line_bbox": [
+                  0.6549,
+                  0.7562,
+                  0.826,
+                  0.775
+                ],
+                "text": "TOTAL: 937.51 $",
+                "lineno": 18,
+                "band": "loose"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          },
+          "subtotal": {
+            "primary": "921.57",
+            "secondary": "921.57",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "937.51",
+            "secondary": "937.51",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "f5085459511a0e10e9e88b6696a3f8ea34cd75659106f142f3bd49c1864f7210"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5868,
+          "completion_tokens": 463,
+          "total_tokens": 6331,
+          "elapsed_s": 8.41
+        }
+      }
+    }
+  }
+}

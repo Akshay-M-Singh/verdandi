@@ -1,0 +1,815 @@
+{
+  "selected_document": {
+    "name": "NOVA FREIGHT SOLUTIONS PVT.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 is headed \u201cINVOICE\u201d and identifies NOVA FREIGHT SOLUTIONS PVT. as the issuer. It bills GREENFIELD ENERGY EQUIPMENT LIMITED and includes charge rows with subtotal, tax, and total amounts.",
+    "confidence": 1
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "NF-2025-1684",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.077,
+          0.252,
+          0.087
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='NF-2025-1684'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE NOVA FREIGHT SOLUTIONS PVT. Invoice #: NF-2025-1684'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.08919999999999995,
+                0.2505,
+                0.0998
+              ],
+              "line_bbox": [
+                0.084,
+                0.08919999999999995,
+                0.2505,
+                0.0998
+              ],
+              "text": "Invoice #: NF-2025-1684",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "28.06.2025",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.091,
+          0.204,
+          0.101
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='28.06.2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice #: NF-2025-1684 Dated 28.06.2025 To: GREENFIELD ENERGY'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.10460000000000003,
+                0.2043,
+                0.11529999999999996
+              ],
+              "line_bbox": [
+                0.084,
+                0.10460000000000003,
+                0.2043,
+                0.11529999999999996
+              ],
+              "text": "Dated 28.06.2025",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "NOVA FREIGHT SOLUTIONS PVT.",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.722,
+          0.035,
+          0.994,
+          0.046
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='NOVA FREIGHT SOLUTIONS PVT.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE NOVA FREIGHT SOLUTIONS PVT. 42 Transport Nagar,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.03520000000000001,
+                0.9944,
+                0.054300000000000015
+              ],
+              "line_bbox": [
+                0.084,
+                0.03520000000000001,
+                0.9944,
+                0.054300000000000015
+              ],
+              "text": "INVOICE NOVA FREIGHT SOLUTIONS PVT.",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.11,
+          0.117,
+          0.435,
+          0.127
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='GREENFIELD ENERGY EQUIPMENT LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice #: NF-2025-1684 Dated 28.06.2025 To: GREENFIELD ENERGY'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.13429999999999997,
+                0.4328,
+                0.14500000000000002
+              ],
+              "line_bbox": [
+                0.084,
+                0.13429999999999997,
+                0.4328,
+                0.14500000000000002
+              ],
+              "text": "To: GREENFIELD ENERGY EQUIPMENT LIMITED",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "62564.77",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.852,
+          0.3,
+          0.933,
+          0.31
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='62564.77'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Warehouse storage charges 1 9,449.92 9,449.92 Freight forwarding'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6501,
+                0.34109999999999996,
+                0.9328,
+                0.3518
+              ],
+              "line_bbox": [
+                0.6501,
+                0.34109999999999996,
+                0.9328,
+                0.3518
+              ],
+              "text": "Subtotal 62,564.77",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "11261.66",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.852,
+          0.314,
+          0.933,
+          0.324
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='11261.66'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Warehouse storage charges 1 9,449.92 9,449.92 Freight forwarding'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6955,
+                0.3577,
+                0.9328,
+                0.36839999999999995
+              ],
+              "line_bbox": [
+                0.6955,
+                0.3577,
+                0.9328,
+                0.36839999999999995
+              ],
+              "text": "Tax 11,261.66",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "73826.43",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.843,
+          0.335,
+          0.933,
+          0.345
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='73826.43'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'Terminal handling charges 10 4,180.78 41,807.80 Agency commission'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6807,
+                0.38280000000000003,
+                0.9328,
+                0.39480000000000004
+              ],
+              "line_bbox": [
+                0.6807,
+                0.38280000000000003,
+                0.9328,
+                0.39480000000000004
+              ],
+              "text": "Total 73,826.43",
+              "lineno": 14,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Terminal handling charges",
+      "quantity": "10",
+      "unit_price": "4180.78",
+      "amount": "41807.80",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.197,
+          0.933,
+          0.206
+        ]
+      }
+    },
+    {
+      "description": "Agency commission",
+      "quantity": "1",
+      "unit_price": "7342.84",
+      "amount": "7342.84",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.22,
+          0.933,
+          0.229
+        ]
+      }
+    },
+    {
+      "description": "Warehouse storage charges",
+      "quantity": "1",
+      "unit_price": "9449.92",
+      "amount": "9449.92",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.243,
+          0.933,
+          0.252
+        ]
+      }
+    },
+    {
+      "description": "Freight forwarding charges",
+      "quantity": "1",
+      "unit_price": "3964.21",
+      "amount": "3964.21",
+      "confidence": 1,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.266,
+          0.933,
+          0.275
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1542,
+      "total_tokens": 8786,
+      "elapsed_s": 11.01
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "NF-2025-1684",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='NF-2025-1684'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE NOVA FREIGHT SOLUTIONS PVT. Invoice #: NF-2025-1684'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.08919999999999995,
+                  0.2505,
+                  0.0998
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.08919999999999995,
+                  0.2505,
+                  0.0998
+                ],
+                "text": "Invoice #: NF-2025-1684",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "28.06.2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='28.06.2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice #: NF-2025-1684 Dated 28.06.2025 To: GREENFIELD ENERGY'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.10460000000000003,
+                  0.2043,
+                  0.11529999999999996
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.10460000000000003,
+                  0.2043,
+                  0.11529999999999996
+                ],
+                "text": "Dated 28.06.2025",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "NOVA FREIGHT SOLUTIONS PVT.",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='NOVA FREIGHT SOLUTIONS PVT.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE NOVA FREIGHT SOLUTIONS PVT. 42 Transport Nagar,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.03520000000000001,
+                  0.9944,
+                  0.054300000000000015
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.03520000000000001,
+                  0.9944,
+                  0.054300000000000015
+                ],
+                "text": "INVOICE NOVA FREIGHT SOLUTIONS PVT.",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='GREENFIELD ENERGY EQUIPMENT LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice #: NF-2025-1684 Dated 28.06.2025 To: GREENFIELD ENERGY'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.13429999999999997,
+                  0.4328,
+                  0.14500000000000002
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.13429999999999997,
+                  0.4328,
+                  0.14500000000000002
+                ],
+                "text": "To: GREENFIELD ENERGY EQUIPMENT LIMITED",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "62564.77",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='62564.77'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Warehouse storage charges 1 9,449.92 9,449.92 Freight forwarding'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6501,
+                  0.34109999999999996,
+                  0.9328,
+                  0.3518
+                ],
+                "line_bbox": [
+                  0.6501,
+                  0.34109999999999996,
+                  0.9328,
+                  0.3518
+                ],
+                "text": "Subtotal 62,564.77",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "11261.66",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='11261.66'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Warehouse storage charges 1 9,449.92 9,449.92 Freight forwarding'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6955,
+                  0.3577,
+                  0.9328,
+                  0.36839999999999995
+                ],
+                "line_bbox": [
+                  0.6955,
+                  0.3577,
+                  0.9328,
+                  0.36839999999999995
+                ],
+                "text": "Tax 11,261.66",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "73826.43",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='73826.43'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'Terminal handling charges 10 4,180.78 41,807.80 Agency commission'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6807,
+                  0.38280000000000003,
+                  0.9328,
+                  0.39480000000000004
+                ],
+                "line_bbox": [
+                  0.6807,
+                  0.38280000000000003,
+                  0.9328,
+                  0.39480000000000004
+                ],
+                "text": "Total 73,826.43",
+                "lineno": 14,
+                "band": "loose"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "total_amount": {
+            "primary": "73826.43",
+            "secondary": "73826.43",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "bbc318392ebc54c52bcecce5d2f2bbf88f34c99c770c57a7b60baf8d33fff43a"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5789,
+          "completion_tokens": 261,
+          "total_tokens": 6050,
+          "elapsed_s": 4.21
+        }
+      }
+    }
+  }
+}

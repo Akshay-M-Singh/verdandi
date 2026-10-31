@@ -1,0 +1,704 @@
+{
+  "selected_document": {
+    "name": "Navarro, Ford and Bryan",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the vendor name 'Navarro, Ford and Bryan', an invoice number and invoice date, a billed party, a charge table with quantities and amounts, and a printed total marked 'TOTAL: 778.46 USD'.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV45196529",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.497,
+          0.051,
+          0.766,
+          0.066
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV45196529'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number INV45196529 Invoice Date: 01-Feb-2022'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4956,
+                0.050000000000000044,
+                0.767,
+                0.06459999999999999
+              ],
+              "line_bbox": [
+                0.147,
+                0.048900000000000055,
+                0.767,
+                0.0736
+              ],
+              "text": "Navarro, Ford and Bryan Invoice number INV45196529",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "01-Feb-2022",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.712,
+          0.098,
+          0.912,
+          0.112
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='01-Feb-2022'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number INV45196529 Invoice Date: 01-Feb-2022'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7109,
+                0.09789999999999999,
+                0.9528,
+                0.11040000000000005
+              ],
+              "line_bbox": [
+                0.7109,
+                0.09789999999999999,
+                0.9528,
+                0.11040000000000005
+              ],
+              "text": "Invoice Date: 01-Feb-2022",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Navarro, Ford and Bryan",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.151,
+          0.053,
+          0.391,
+          0.069
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Navarro, Ford and Bryan'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Navarro, Ford and Bryan'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.147,
+                0.048900000000000055,
+                0.3928,
+                0.0736
+              ],
+              "line_bbox": [
+                0.147,
+                0.048900000000000055,
+                0.767,
+                0.0736
+              ],
+              "text": "Navarro, Ford and Bryan Invoice number INV45196529",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Laura Riggs",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.044,
+          0.168,
+          0.144,
+          0.183
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Laura Riggs'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Email:rclark@example.org Bill to: Laura Riggs 057 Fox Key'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                -0.0005,
+                0.16310000000000002,
+                0.1865,
+                0.18389999999999995
+              ],
+              "line_bbox": [
+                -0.0005,
+                0.16310000000000002,
+                0.1865,
+                0.18389999999999995
+              ],
+              "text": "Bill to: Laura Riggs",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.782,
+          0.742,
+          0.977,
+          0.759
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL : 778.46 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7788,
+                0.7417,
+                0.9764,
+                0.7562
+              ],
+              "line_bbox": [
+                0.7788,
+                0.7417,
+                0.9764,
+                0.7562
+              ],
+              "text": "TOTAL : 778.46 USD",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "778.46",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.782,
+          0.742,
+          0.977,
+          0.759
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='778.46'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL : 778.46 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7788,
+                0.7417,
+                0.9764,
+                0.7562
+              ],
+              "line_bbox": [
+                0.7788,
+                0.7417,
+                0.9764,
+                0.7562
+              ],
+              "text": "TOTAL : 778.46 USD",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Worry fire.",
+      "quantity": "4.00",
+      "unit_price": "56.65",
+      "amount": "226.60",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.548,
+          0.911,
+          0.571
+        ]
+      }
+    },
+    {
+      "description": "Age letter wall.",
+      "quantity": "6.00",
+      "unit_price": "58.89",
+      "amount": "353.34",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.571,
+          0.911,
+          0.594
+        ]
+      }
+    },
+    {
+      "description": "Around into.",
+      "quantity": "3.00",
+      "unit_price": "54.82",
+      "amount": "164.46",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.594,
+          0.911,
+          0.615
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "No printed subtotal or tax amount is visible on page 1."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1468,
+      "total_tokens": 5123,
+      "elapsed_s": 20.13
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV45196529",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV45196529'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number INV45196529 Invoice Date: 01-Feb-2022'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4956,
+                  0.050000000000000044,
+                  0.767,
+                  0.06459999999999999
+                ],
+                "line_bbox": [
+                  0.147,
+                  0.048900000000000055,
+                  0.767,
+                  0.0736
+                ],
+                "text": "Navarro, Ford and Bryan Invoice number INV45196529",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "01-Feb-2022",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='01-Feb-2022'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number INV45196529 Invoice Date: 01-Feb-2022'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7109,
+                  0.09789999999999999,
+                  0.9528,
+                  0.11040000000000005
+                ],
+                "line_bbox": [
+                  0.7109,
+                  0.09789999999999999,
+                  0.9528,
+                  0.11040000000000005
+                ],
+                "text": "Invoice Date: 01-Feb-2022",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Navarro, Ford and Bryan",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Navarro, Ford and Bryan'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Navarro, Ford and Bryan'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.147,
+                  0.048900000000000055,
+                  0.3928,
+                  0.0736
+                ],
+                "line_bbox": [
+                  0.147,
+                  0.048900000000000055,
+                  0.767,
+                  0.0736
+                ],
+                "text": "Navarro, Ford and Bryan Invoice number INV45196529",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Laura Riggs",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Laura Riggs'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Email:rclark@example.org Bill to: Laura Riggs 057 Fox Key'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  -0.0005,
+                  0.16310000000000002,
+                  0.1865,
+                  0.18389999999999995
+                ],
+                "line_bbox": [
+                  -0.0005,
+                  0.16310000000000002,
+                  0.1865,
+                  0.18389999999999995
+                ],
+                "text": "Bill to: Laura Riggs",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL : 778.46 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7788,
+                  0.7417,
+                  0.9764,
+                  0.7562
+                ],
+                "line_bbox": [
+                  0.7788,
+                  0.7417,
+                  0.9764,
+                  0.7562
+                ],
+                "text": "TOTAL : 778.46 USD",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "778.46",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='778.46'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL : 778.46 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7788,
+                  0.7417,
+                  0.9764,
+                  0.7562
+                ],
+                "line_bbox": [
+                  0.7788,
+                  0.7417,
+                  0.9764,
+                  0.7562
+                ],
+                "text": "TOTAL : 778.46 USD",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

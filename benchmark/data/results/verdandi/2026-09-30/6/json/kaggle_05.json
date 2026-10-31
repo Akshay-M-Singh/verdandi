@@ -1,0 +1,673 @@
+{
+  "selected_document": {
+    "name": "TELMARK SALES, INC.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the TELMARK SALES, INC. issuer, the heading INVOICE, billed line items with hours/rates/totals, and TOTAL DUE THIS INVOICE of $896.00.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "1493",
+      "confidence": 0.65,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.513,
+          0.299,
+          0.654,
+          0.323
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='1493'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '1493' NOT found near region (page 1); nearest text 'NOCESSOR INVOICE: 149 30VER DATE: 7041 TERMS: 155959' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "06/07/93",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.512,
+          0.316,
+          0.655,
+          0.338
+        ]
+      },
+      "verification": {
+        "score": 0.0,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='06/07/93'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '06/07/93' NOT found near region (page 1); nearest text 'INVOICE: 149 30VER DATE: 7041 TERMS: 155959' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "TELMARK SALES, INC.",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.323,
+          0.119,
+          0.631,
+          0.145
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='TELMARK SALES, INC.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TELMARK SEARCH TEL MARK SALES, INC. PINANCE 148.00'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3214,
+                0.11250000000000004,
+                0.6875,
+                0.13380000000000003
+              ],
+              "line_bbox": [
+                0.3214,
+                0.11040000000000005,
+                0.8909,
+                0.13380000000000003
+              ],
+              "text": "TEL MARK SALES, INC. PINANCE fet 61\u0119\u015a\u0142",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "MR. TONY YENSEN / AMERICAN TOBACCO COMPANY",
+      "confidence": 0.93,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.123,
+          0.302,
+          0.417,
+          0.354
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='MR. TONY YENSEN / AMERICAN TOBACCO COMPANY'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TO : MR. TONY YENSEN AMERICAN TOBACCO COMPANY'",
+            "match": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.56,
+          0.493,
+          0.821,
+          0.62
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text '1.00 $15.00 $15.00 0.50 $20.00 $10.00 20.25\u00ee\u017a\u0161 $30.00' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "896.00",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.715,
+          0.649,
+          0.83,
+          0.676
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='896.00'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): '20.25\u00ee\u017a\u0161 $30.00 \u1ea0\u1ecai$607.50 1.90\u0142 $15.00 $28.50 0.50 $20.00'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7345,
+                0.5812999999999999,
+                0.8171,
+                0.5917
+              ],
+              "line_bbox": [
+                0.41,
+                0.5812999999999999,
+                0.8171,
+                0.5938
+              ],
+              "text": "TOTAL DUE THIS INVOICE $896.00",
+              "lineno": 30,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "CALLS HOURS",
+      "quantity": "7.50",
+      "unit_price": "30.00",
+      "amount": "225.00",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.068,
+          0.488,
+          0.824,
+          0.509
+        ]
+      }
+    },
+    {
+      "description": "DATA ENTRY",
+      "quantity": "1.00",
+      "unit_price": "15.00",
+      "amount": "15.00",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.068,
+          0.502,
+          0.824,
+          0.523
+        ]
+      }
+    },
+    {
+      "description": "COMPUTER PROGRAMMING",
+      "quantity": "0.50",
+      "unit_price": "20.00",
+      "amount": "10.00",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.068,
+          0.516,
+          0.824,
+          0.537
+        ]
+      }
+    },
+    {
+      "description": "CALLS HOURS",
+      "quantity": "20.25",
+      "unit_price": "30.00",
+      "amount": "607.50",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.068,
+          0.574,
+          0.824,
+          0.595
+        ]
+      }
+    },
+    {
+      "description": "DATA ENTRY",
+      "quantity": "1.90",
+      "unit_price": "15.00",
+      "amount": "28.50",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.068,
+          0.589,
+          0.824,
+          0.609
+        ]
+      }
+    },
+    {
+      "description": "COMPUTER PROGRAMMING",
+      "quantity": "0.50",
+      "unit_price": "20.00",
+      "amount": "10.00",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.068,
+          0.603,
+          0.824,
+          0.623
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "No separately printed subtotal or tax total is visible."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1836,
+      "total_tokens": 5491,
+      "elapsed_s": 18.8
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "1493",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='1493'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '1493' NOT found near region (page 1); nearest text 'NOCESSOR INVOICE: 149 30VER DATE: 7041 TERMS: 155959' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "06/07/93",
+          "score": 0.0,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='06/07/93'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '06/07/93' NOT found near region (page 1); nearest text 'INVOICE: 149 30VER DATE: 7041 TERMS: 155959' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "TELMARK SALES, INC.",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='TELMARK SALES, INC.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TELMARK SEARCH TEL MARK SALES, INC. PINANCE 148.00'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3214,
+                  0.11250000000000004,
+                  0.6875,
+                  0.13380000000000003
+                ],
+                "line_bbox": [
+                  0.3214,
+                  0.11040000000000005,
+                  0.8909,
+                  0.13380000000000003
+                ],
+                "text": "TEL MARK SALES, INC. PINANCE fet 61\u0119\u015a\u0142",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "MR. TONY YENSEN / AMERICAN TOBACCO COMPANY",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='MR. TONY YENSEN / AMERICAN TOBACCO COMPANY'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TO : MR. TONY YENSEN AMERICAN TOBACCO COMPANY'",
+              "match": null
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text '1.00 $15.00 $15.00 0.50 $20.00 $10.00 20.25\u00ee\u017a\u0161 $30.00' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "896.00",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='896.00'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): '20.25\u00ee\u017a\u0161 $30.00 \u1ea0\u1ecai$607.50 1.90\u0142 $15.00 $28.50 0.50 $20.00'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7345,
+                  0.5812999999999999,
+                  0.8171,
+                  0.5917
+                ],
+                "line_bbox": [
+                  0.41,
+                  0.5812999999999999,
+                  0.8171,
+                  0.5938
+                ],
+                "text": "TOTAL DUE THIS INVOICE $896.00",
+                "lineno": 30,
+                "band": "loose"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 3,
+          "format": 1
+        },
+        "flag_rows": 8
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_number": {
+            "primary": "1493",
+            "secondary": "1493",
+            "agree": true
+          },
+          "invoice_date": {
+            "primary": "06/07/93",
+            "secondary": "06/07/93",
+            "agree": true
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "896.00",
+            "secondary": "$896.00",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "929daf1c82109d61c10a3860397b69c8a75795ec397806435f841f1700b8379a"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2533,
+          "completion_tokens": 711,
+          "total_tokens": 3244,
+          "elapsed_s": 8.79
+        }
+      }
+    }
+  }
+}

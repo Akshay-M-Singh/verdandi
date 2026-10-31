@@ -1,0 +1,498 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Selected because the page shows an itemized charge list, discount, subtotal, additional charges, and a printed TOTAL, consistent with a vendor-issued receipt. The issuer name and upper receipt text are too blurred to read.",
+    "confidence": 0.91
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "117500",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.185,
+          0.831,
+          0.797,
+          0.856
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='117500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'HOT TUNA 67,000 Disc -100%(ITM06) -67,000 SUBTTL 117,500'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6666,
+                0.8436,
+                0.7966,
+                0.8773
+              ],
+              "line_bbox": [
+                0.1858,
+                0.8436,
+                0.7966,
+                0.8773
+              ],
+              "text": "SUBTTL 117,500",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "19557",
+      "confidence": 0.86,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.19,
+          0.878,
+          0.796,
+          0.905
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='19557'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '-67,000 SUBTTL 117,500 SVC CHG 6% 11,070 PB1'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6867,
+                0.9049,
+                0.8003,
+                0.9379
+              ],
+              "line_bbox": [
+                0.1888,
+                0.9049,
+                0.8003,
+                0.9379
+              ],
+              "text": "PB1 10% 19,557",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "148127",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.19,
+          0.964,
+          0.798,
+          0.998
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='148127'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '148127' NOT found near region (page 1); nearest text 'PB1 10% 19,557 TOTAL 148.127' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "GRILLED BABY POTATO (R",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "50500",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.115,
+          0.722,
+          0.797,
+          0.748
+        ]
+      }
+    },
+    {
+      "description": "HOT TUNA",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "67000",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.115,
+          0.751,
+          0.797,
+          0.774
+        ]
+      }
+    },
+    {
+      "description": "HOT TUNA",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "67000",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.115,
+          0.78,
+          0.797,
+          0.803
+        ]
+      }
+    },
+    {
+      "description": "Disc -100%(ITM06)",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "-67000",
+      "confidence": 0.88,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.185,
+          0.808,
+          0.797,
+          0.831
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The receipt's upper section is too blurred to read the issuer, buyer, date, or receipt number.",
+    "No currency code or symbol is legible in the render."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 2230,
+      "total_tokens": 9235,
+      "elapsed_s": 22.19
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "117500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='117500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'HOT TUNA 67,000 Disc -100%(ITM06) -67,000 SUBTTL 117,500'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6666,
+                  0.8436,
+                  0.7966,
+                  0.8773
+                ],
+                "line_bbox": [
+                  0.1858,
+                  0.8436,
+                  0.7966,
+                  0.8773
+                ],
+                "text": "SUBTTL 117,500",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "19557",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='19557'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '-67,000 SUBTTL 117,500 SVC CHG 6% 11,070 PB1'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6867,
+                  0.9049,
+                  0.8003,
+                  0.9379
+                ],
+                "line_bbox": [
+                  0.1888,
+                  0.9049,
+                  0.8003,
+                  0.9379
+                ],
+                "text": "PB1 10% 19,557",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "148127",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='148127'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '148127' NOT found near region (page 1); nearest text 'PB1 10% 19,557 TOTAL 148.127' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 5
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "total_amount": {
+            "primary": "148127",
+            "secondary": "148,127",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "165eb17842d89996eb98c5b69082c52fb72d3a9fb59a491baa2ddb14bafd5d17"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5789,
+          "completion_tokens": 260,
+          "total_tokens": 6049,
+          "elapsed_s": 6.3
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a receipt-style charge with a menu item, quantity, subtotal, restaurant tax, and grand total. The issuer name and any document heading are not legible in the render.",
+    "confidence": 0.95
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": "IDR",
+      "confidence": 0.76,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.184,
+          0.624,
+          0.8,
+          0.746
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='IDR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'IDR' NOT found near region (page 1); nearest text '16,363 Jumlah Item 1 Sub Total 16,363 Pajak' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "16363",
+      "confidence": 0.84,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.7,
+          0.658,
+          0.8,
+          0.683
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='16363'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '16,363 1,836 17,999'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6962,
+                0.6478999999999999,
+                0.7935,
+                0.6771
+              ],
+              "line_bbox": [
+                0.1822,
+                0.6478999999999999,
+                0.7935,
+                0.6853
+              ],
+              "text": "Sub Total 16,363",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "1636",
+      "confidence": 0.84,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.7,
+          0.69,
+          0.8,
+          0.714
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='1636'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '1636' NOT found near region (page 1); nearest text '16,363 1,836 17,999' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "17999",
+      "confidence": 0.86,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.7,
+          0.722,
+          0.8,
+          0.746
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='17999'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '1,836 17,999'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6991,
+                0.7103999999999999,
+                0.7994,
+                0.7417
+              ],
+              "line_bbox": [
+                0.1822,
+                0.7103999999999999,
+                0.7994,
+                0.7468
+              ],
+              "text": "Grand Total 17,999",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "THAI ICED TEA (L)",
+      "quantity": "1",
+      "unit_price": "16363",
+      "amount": "16363",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.184,
+          0.537,
+          0.79,
+          0.588
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1613,
+      "total_tokens": 8857,
+      "elapsed_s": 15.43
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": "IDR",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='IDR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'IDR' NOT found near region (page 1); nearest text '16,363 Jumlah Item 1 Sub Total 16,363 Pajak' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "16363",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='16363'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '16,363 1,836 17,999'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6962,
+                  0.6478999999999999,
+                  0.7935,
+                  0.6771
+                ],
+                "line_bbox": [
+                  0.1822,
+                  0.6478999999999999,
+                  0.7935,
+                  0.6853
+                ],
+                "text": "Sub Total 16,363",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "1636",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='1636'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '1636' NOT found near region (page 1); nearest text '16,363 1,836 17,999' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "17999",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='17999'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '1,836 17,999'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6991,
+                  0.7103999999999999,
+                  0.7994,
+                  0.7417
+                ],
+                "line_bbox": [
+                  0.1822,
+                  0.7103999999999999,
+                  0.7994,
+                  0.7468
+                ],
+                "text": "Grand Total 17,999",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 2
+        },
+        "flag_rows": 7
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "currency": {
+            "primary": "IDR",
+            "secondary": "IDR",
+            "agree": true
+          },
+          "tax_total": {
+            "primary": "1636",
+            "secondary": "1,636",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "921387ab297e360590ceac065fe67f732536db96b2976a47c361ca0271e6e93e"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5855,
+          "completion_tokens": 542,
+          "total_tokens": 6397,
+          "elapsed_s": 6.91
+        }
+      }
+    }
+  }
+}

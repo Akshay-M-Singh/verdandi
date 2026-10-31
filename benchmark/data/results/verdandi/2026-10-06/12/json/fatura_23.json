@@ -1,0 +1,829 @@
+{
+  "selected_document": {
+    "name": "Duran, Morgan and Lopez",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cTAX INVOICE,\u201d names Duran, Morgan and Lopez at the top, and shows an invoice ID, billed items, GST, and a balance due.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/86-91/351",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.699,
+          0.129,
+          0.95,
+          0.143
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/86-91/351'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE ID INV/86-91/351'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6962,
+                0.13749999999999996,
+                0.944,
+                0.15000000000000002
+              ],
+              "line_bbox": [
+                0.6962,
+                0.13749999999999996,
+                0.944,
+                0.15000000000000002
+              ],
+              "text": "INVOICE ID INV/86-91/351",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "07-Nov-2019",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.047,
+          0.403,
+          0.221,
+          0.415
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='07-Nov-2019'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'GSTIN 22AAAAAD000A125, Date: 07-Nov-2019'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0442,
+                0.42079999999999995,
+                0.2242,
+                0.4438
+              ],
+              "line_bbox": [
+                0.0442,
+                0.42079999999999995,
+                0.885,
+                0.4438
+              ],
+              "text": "Date: 07-Nov-2019 Due Date: 23-Jun-2014",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Duran, Morgan and Lopez",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.034,
+          0.034,
+          0.279,
+          0.047
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Duran, Morgan and Lopez'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Duran, Morgan and Lopez Address:4901 Long Wall Apt.'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0295,
+                0.033299999999999996,
+                0.2802,
+                0.05620000000000003
+              ],
+              "line_bbox": [
+                0.0295,
+                0.033299999999999996,
+                0.7316,
+                0.0625
+              ],
+              "text": "Duran, Morgan and Lopez TAX INVOICE",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Eric Ayers",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.034,
+          0.23,
+          0.196,
+          0.244
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Eric Ayers'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Bill to: Eric Ayers 4901 Long Wall Apt.'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0324,
+                0.24139999999999995,
+                0.2007,
+                0.26280000000000003
+              ],
+              "line_bbox": [
+                0.0324,
+                0.24139999999999995,
+                0.2007,
+                0.26280000000000003
+              ],
+              "text": "Bill to: Eric Ayers",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.622,
+          0.82,
+          0.943,
+          0.834
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'GST(18%) : 107.39 BALANCE DUE : 626.80 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6224,
+                0.8646,
+                0.941,
+                0.8813
+              ],
+              "line_bbox": [
+                0.6224,
+                0.8646,
+                0.941,
+                0.8813
+              ],
+              "text": "BALANCE DUE : 626.80 USD",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "596.62",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.675,
+          0.716,
+          0.927,
+          0.729
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='596.62'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 596.62 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6755,
+                0.7583,
+                0.9292,
+                0.775
+              ],
+              "line_bbox": [
+                0.6755,
+                0.7583,
+                0.9292,
+                0.775
+              ],
+              "text": "SUB_TOTAL : 596.62 USD",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "107.39",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.672,
+          0.77,
+          0.849,
+          0.783
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='107.39'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 596.62 USD GST(18%) : 107.39'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6726,
+                0.8125,
+                0.8496,
+                0.8271
+              ],
+              "line_bbox": [
+                0.6726,
+                0.8125,
+                0.8496,
+                0.8271
+              ],
+              "text": "GST(18%) : 107.39",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "626.80",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.622,
+          0.82,
+          0.943,
+          0.834
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='626.80'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'GST(18%) : 107.39 BALANCE DUE : 626.80 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6224,
+                0.8646,
+                0.941,
+                0.8813
+              ],
+              "line_bbox": [
+                0.6224,
+                0.8646,
+                0.941,
+                0.8813
+              ],
+              "text": "BALANCE DUE : 626.80 USD",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Professional feel machine.",
+      "quantity": "6.00",
+      "unit_price": null,
+      "amount": "56.93",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.583,
+          0.963,
+          0.603
+        ]
+      }
+    },
+    {
+      "description": "Factor tough each.",
+      "quantity": "4.00",
+      "unit_price": null,
+      "amount": "63.76",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.603,
+          0.963,
+          0.624
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1633,
+      "total_tokens": 8877,
+      "elapsed_s": 15.42
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/86-91/351",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/86-91/351'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE ID INV/86-91/351'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6962,
+                  0.13749999999999996,
+                  0.944,
+                  0.15000000000000002
+                ],
+                "line_bbox": [
+                  0.6962,
+                  0.13749999999999996,
+                  0.944,
+                  0.15000000000000002
+                ],
+                "text": "INVOICE ID INV/86-91/351",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "07-Nov-2019",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='07-Nov-2019'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'GSTIN 22AAAAAD000A125, Date: 07-Nov-2019'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0442,
+                  0.42079999999999995,
+                  0.2242,
+                  0.4438
+                ],
+                "line_bbox": [
+                  0.0442,
+                  0.42079999999999995,
+                  0.885,
+                  0.4438
+                ],
+                "text": "Date: 07-Nov-2019 Due Date: 23-Jun-2014",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Duran, Morgan and Lopez",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Duran, Morgan and Lopez'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Duran, Morgan and Lopez Address:4901 Long Wall Apt.'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0295,
+                  0.033299999999999996,
+                  0.2802,
+                  0.05620000000000003
+                ],
+                "line_bbox": [
+                  0.0295,
+                  0.033299999999999996,
+                  0.7316,
+                  0.0625
+                ],
+                "text": "Duran, Morgan and Lopez TAX INVOICE",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Eric Ayers",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Eric Ayers'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Bill to: Eric Ayers 4901 Long Wall Apt.'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0324,
+                  0.24139999999999995,
+                  0.2007,
+                  0.26280000000000003
+                ],
+                "line_bbox": [
+                  0.0324,
+                  0.24139999999999995,
+                  0.2007,
+                  0.26280000000000003
+                ],
+                "text": "Bill to: Eric Ayers",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'GST(18%) : 107.39 BALANCE DUE : 626.80 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6224,
+                  0.8646,
+                  0.941,
+                  0.8813
+                ],
+                "line_bbox": [
+                  0.6224,
+                  0.8646,
+                  0.941,
+                  0.8813
+                ],
+                "text": "BALANCE DUE : 626.80 USD",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "596.62",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='596.62'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 596.62 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6755,
+                  0.7583,
+                  0.9292,
+                  0.775
+                ],
+                "line_bbox": [
+                  0.6755,
+                  0.7583,
+                  0.9292,
+                  0.775
+                ],
+                "text": "SUB_TOTAL : 596.62 USD",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "107.39",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='107.39'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 596.62 USD GST(18%) : 107.39'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6726,
+                  0.8125,
+                  0.8496,
+                  0.8271
+                ],
+                "line_bbox": [
+                  0.6726,
+                  0.8125,
+                  0.8496,
+                  0.8271
+                ],
+                "text": "GST(18%) : 107.39",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "626.80",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='626.80'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'GST(18%) : 107.39 BALANCE DUE : 626.80 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6224,
+                  0.8646,
+                  0.941,
+                  0.8813
+                ],
+                "line_bbox": [
+                  0.6224,
+                  0.8646,
+                  0.941,
+                  0.8813
+                ],
+                "text": "BALANCE DUE : 626.80 USD",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

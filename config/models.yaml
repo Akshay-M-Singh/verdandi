@@ -1,0 +1,129 @@
+# Model names + endpoint for the vision-primary extraction pipeline (architecture.md D4/D24).
+# NEVER hardcode model names in code — always read them from this file.
+# Provider: opencode GO subscription (owner decision, 2026-08-02, D4 note) —
+# endpoint = the GO gateway (opencode.ai/zen/go/v1). Model IDs are the GO
+# catalog IDs. The catalog is fetched live at https://opencode.ai/zen/go/v1/models.
+#
+# Primary model: gpt-5.6-luna (2026-09-21, owner — back as primary after the
+#   muse-spark free-tier experiment; RESTORED via the Responses API). Luna's
+#   chat/completions route is provider-broken since 2026-08-24 (HTTP 500),
+#   but /responses works — see api_style.
+#   History: luna (08-04 pick) -> qwen3.8-max (08-26, corpus 100%, 378k
+#   tokens; "too expensive") -> deepseek-v4-flash-vision-exp (08-28, 61% of
+#   qwen's tokens but invoice-number digit drift, 91.9% corpus) -> luna again
+#   (08-29) -> muse-spark-1.3-contributor-free (09-08, free-tier experiment
+#   on https://opencode.ai/zen/v1; the first corpus file failed HTTP 429
+#   rate_limit_exceeded) -> luna again (09-21, back on the GO endpoint).
+#   VISION PRIMARY (D24, 2026-08-19 owner decision): the single extraction pass
+#   reads the page RENDERS (pageNNN.image.png / render-ocr-input.png), never
+#   text — the text channel feeds only the deterministic rules validator.
+#   SWAPPING MODELS: use the UI picker or edit primary_model here (any
+#   vision-capable GO model); corpus run + `make eval` before promoting —
+#   verification-first. `make models` prints the live catalog status.
+# vision_verified: models PROBED live with an image through this gateway
+#   (model_catalog.probe_vision — one tiny call; the UI "Verify" action).
+#   The UI offers ONLY these as selectable; models.dev hints say which
+#   non-probed models are worth verifying (it has disagreed with live
+#   behaviour before: mimo-v2-omni, kimi-k3, glm-5.3, grok-4.5, minimax-m3
+#   were rejected live while models.dev claimed image input).
+# image_url_form: chat/completions-only knob (flat = luna/qwen; nested =
+#   deepseek REQUIRED). Ignored when api_style = responses.
+# api_style: per-model gateway API — "responses" (gpt-5.6-luna REQUIRED —
+#   its chat/completions route 500s provider-side; /responses verified live
+#   2026-08-29 incl. vision + json mode) | "chat_completions" (deepseek,
+#   qwen, others). SWAP TRAP: moving primary to luna needs api_style
+#   "responses" AND (for chat-style models) the right image_url_form.
+# primary_mode: only "vision" is supported by the pipeline (D24).
+#
+# Verification stack (2026-09-02): the gated Check 4 (disagreement) runs a
+# cheap second opinion on suspicion only (any field whose aggregate level is
+# not accept; recheck_max_calls in config/thresholds.yaml verification:).
+# verification_model
+# "" disables the recheck entirely (offline mode — the other three checks still
+# run). Note (2026-09-02, unchanged 2026-09-21): deepseek-v4-flash-vision-exp
+# is provider-down (400 invalid_request_error even text-only) and qwen3.8-max
+# lost its chat/completions route (401 "not supported for format openai") —
+# luna is the only healthy model, so the recheck uses luna with a DIFFERENT
+# PROMPT FRAMING (spec-sanctioned; extract_v4.RECHECK_NOTE). Flip this back to
+# a second cheap model when the catalog has one. model_overrides: per-model
+# api_style/image_url_form when the model differs from the primary's transport
+# (deepseek REQUIRES image_url_form "nested"; luna uses the Responses API —
+# the SWAP TRAP documented above).
+endpoint: "https://opencode.ai/zen/go/v1"
+primary_model: "gpt-5.6-luna"
+primary_mode: "vision"
+image_url_form: "flat"
+api_style: "responses"
+verification_model: "gpt-5.6-luna"
+vision_verified:
+- gpt-5.6-luna
+- deepseek-v4-flash-vision-exp
+- qwen3.8-max
+- grok-4.7
+- deepseek-flash
+- deepseek-v4.1-flash
+- glm-5.3-flash
+- grok-4.6
+- minimax-m3
+- muse-spark-1.2-contributor
+- muse-spark-1.3-contributor
+- qwen3.6-plus
+- qwen3.7-plus
+- qwen3.8-flash
+- gpt-6-luna
+- kimi-k3
+# model_notes: short MEASURED hints shown beside the model in the UI picker
+#   (D43). Documentation only — routing and validation never read them. One
+#   line each; the date marks when the number was measured.
+model_notes:
+  gpt-5.6-luna: "fastest + reliable — 5 files in 28s (3 workers, 1 attempt each, 2026-09-25)"
+  qwen3.8-flash: "slow — 35 min for 12 files sequential, 3-attempt schema loops (2026-09-25)"
+  deepseek-flash: "slow — 108s/file (bench 2026-09-25)"
+  deepseek-v4.1-flash: "fails schema on one bench file (bench 2026-09-25)"
+  qwen3.8-max: "accurate benchmark, but slow + expensive (corpus 2026-08-26)"
+model_overrides:
+  deepseek-v4-flash-vision-exp:
+    api_style: "chat_completions"
+    image_url_form: "nested"
+  grok-4.7:
+    api_style: "responses"
+    image_url_form: "flat"
+  deepseek-flash:
+    api_style: "chat_completions"
+    image_url_form: "nested"
+  deepseek-v4.1-flash:
+    api_style: "chat_completions"
+    image_url_form: "flat"
+  glm-5.3-flash:
+    api_style: "chat_completions"
+    image_url_form: "nested"
+  grok-4.6:
+    api_style: "responses"
+    image_url_form: "flat"
+  minimax-m3:
+    api_style: "chat_completions"
+    image_url_form: "nested"
+  muse-spark-1.2-contributor:
+    api_style: "responses"
+    image_url_form: "flat"
+  muse-spark-1.3-contributor:
+    api_style: "responses"
+    image_url_form: "flat"
+  qwen3.6-plus:
+    api_style: "chat_completions"
+    image_url_form: "flat"
+  qwen3.7-plus:
+    api_style: "chat_completions"
+    image_url_form: "flat"
+  qwen3.8-flash:
+    api_style: "chat_completions"
+    image_url_form: "flat"
+  gpt-6-luna:
+    api_style: "responses"
+    image_url_form: "flat"
+  space-bunny-free:
+    api_style: "chat_completions"
+    image_url_form: "nested"
+  kimi-k3:
+    api_style: "chat_completions"
+    image_url_form: "flat"

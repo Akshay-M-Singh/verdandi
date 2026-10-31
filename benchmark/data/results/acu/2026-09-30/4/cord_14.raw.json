@@ -1,0 +1,585 @@
+{
+  "id": "e76ab3d6-386f-46f8-8ef6-0add6d70e0e5",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T14:02:53Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "<table>\n<tr>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>1 APPLE CINNAMON PASTRY</td>\n<td>22,000</td>\n</tr>\n<tr>\n<td>2 ROYAL CHEESE TART</td>\n<td>32,000</td>\n</tr>\n</table>\n\n\nTOTAL\n\n54,000\n\nCARD\n\n54,000\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 54000,
+            "spans": [
+              {
+                "offset": 173,
+                "length": 6
+              }
+            ],
+            "confidence": 0.314,
+            "source": "D(1,5.0479,5.7294,6.6216,5.7432,6.6216,6.2319,5.0560,6.2362)"
+          },
+          "tax_total": {
+            "type": "number",
+            "confidence": 0.974
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 54000,
+            "spans": [
+              {
+                "offset": 187,
+                "length": 6
+              }
+            ],
+            "confidence": 0.312,
+            "source": "D(1,5.0721,6.2410,6.6700,6.2553,6.6741,6.8034,5.0721,6.7907)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "1 APPLE CINNAMON PASTRY",
+                    "spans": [
+                      {
+                        "offset": 48,
+                        "length": 23
+                      }
+                    ],
+                    "confidence": 0.707,
+                    "source": "D(1,2.0580,4.8244,4.9212,4.8497,4.9188,5.1272,2.0555,5.1020)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 48,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.597,
+                    "source": "D(1,2.0579,4.8335,2.1384,4.8335,2.1384,5.1015,2.0579,5.1012)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 22000,
+                    "spans": [
+                      {
+                        "offset": 81,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.721,
+                    "source": "D(1,5.7621,4.8712,6.5288,4.8724,6.5288,5.1382,5.7621,5.1342)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 22000,
+                    "spans": [
+                      {
+                        "offset": 81,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.721,
+                    "source": "D(1,5.7621,4.8712,6.5288,4.8724,6.5288,5.1382,5.7621,5.1342)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "2 ROYAL CHEESE TART",
+                    "spans": [
+                      {
+                        "offset": 108,
+                        "length": 19
+                      }
+                    ],
+                    "confidence": 0.708,
+                    "source": "D(1,2.0318,5.1140,4.4290,5.1367,4.4264,5.4104,2.0292,5.3877)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 108,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.609,
+                    "source": "D(1,2.0317,5.1193,2.1593,5.1205,2.1584,5.3886,2.0307,5.3872)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 16000,
+                    "spans": [
+                      {
+                        "offset": 187,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.309,
+                    "source": "D(1,5.0721,6.2410,6.6700,6.2553,6.6741,6.8034,5.0721,6.7907)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 32000,
+                    "spans": [
+                      {
+                        "offset": 137,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.732,
+                    "source": "D(1,5.7823,5.1567,6.5611,5.1532,6.5611,5.4156,5.7823,5.4139)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0.1331646,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 194
+              }
+            ],
+            "words": [
+              {
+                "content": "1",
+                "span": {
+                  "offset": 48,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.0579,4.8335,2.1384,4.8335,2.1384,5.1015,2.0579,5.1012)"
+              },
+              {
+                "content": "APPLE",
+                "span": {
+                  "offset": 50,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.2814,4.8335,2.9162,4.8335,2.9162,5.1041,2.2814,5.102)"
+              },
+              {
+                "content": "CINNAMON",
+                "span": {
+                  "offset": 56,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,3.0369,4.8337,4.0293,4.8418,4.0293,5.1141,3.0369,5.1047)"
+              },
+              {
+                "content": "PASTRY",
+                "span": {
+                  "offset": 65,
+                  "length": 6
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.1589,4.8438,4.9188,4.8554,4.9188,5.1272,4.1589,5.116)"
+              },
+              {
+                "content": "22,000",
+                "span": {
+                  "offset": 81,
+                  "length": 6
+                },
+                "confidence": 0.967,
+                "source": "D(1,5.7621,4.8712,6.5288,4.8724,6.5288,5.1382,5.7621,5.1342)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 108,
+                  "length": 1
+                },
+                "confidence": 0.993,
+                "source": "D(1,2.0317,5.1193,2.1593,5.1205,2.1584,5.3886,2.0307,5.3872)"
+              },
+              {
+                "content": "ROYAL",
+                "span": {
+                  "offset": 110,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.2826,5.1217,2.9209,5.1276,2.9203,5.3961,2.2817,5.3899)"
+              },
+              {
+                "content": "CHEESE",
+                "span": {
+                  "offset": 116,
+                  "length": 6
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.0398,5.1284,3.8014,5.1336,3.8011,5.3996,3.0392,5.3967)"
+              },
+              {
+                "content": "TART",
+                "span": {
+                  "offset": 123,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.9202,5.1342,4.4265,5.1367,4.4265,5.3992,3.92,5.3995)"
+              },
+              {
+                "content": "32,000",
+                "span": {
+                  "offset": 137,
+                  "length": 6
+                },
+                "confidence": 0.959,
+                "source": "D(1,5.7823,5.1567,6.5611,5.1532,6.5611,5.4156,5.7823,5.4139)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 166,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,2.2516,5.7176,3.5206,5.7182,3.5206,6.2074,2.2516,6.2128)"
+              },
+              {
+                "content": "54,000",
+                "span": {
+                  "offset": 173,
+                  "length": 6
+                },
+                "confidence": 0.043,
+                "source": "D(1,5.0479,5.7294,6.6216,5.7432,6.6216,6.2319,5.056,6.2362)"
+              },
+              {
+                "content": "CARD",
+                "span": {
+                  "offset": 181,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.1931,6.2278,3.2543,6.2272,3.2543,6.7269,2.1931,6.729)"
+              },
+              {
+                "content": "54,000",
+                "span": {
+                  "offset": 187,
+                  "length": 6
+                },
+                "confidence": 0.025,
+                "source": "D(1,5.0721,6.241,6.67,6.2553,6.6741,6.8034,5.0721,6.7907)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "1 APPLE CINNAMON PASTRY",
+                "source": "D(1,2.058,4.8308,4.9213,4.8495,4.9188,5.1272,2.056,5.1012)",
+                "span": {
+                  "offset": 48,
+                  "length": 23
+                }
+              },
+              {
+                "content": "22,000",
+                "source": "D(1,5.7621,4.8712,6.5292,4.8724,6.5288,5.1382,5.7617,5.1371)",
+                "span": {
+                  "offset": 81,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2 ROYAL CHEESE TART",
+                "source": "D(1,2.0317,5.1193,4.4284,5.1367,4.4264,5.4018,2.0297,5.3898)",
+                "span": {
+                  "offset": 108,
+                  "length": 19
+                }
+              },
+              {
+                "content": "32,000",
+                "source": "D(1,5.7812,5.1567,6.5611,5.1532,6.562,5.4164,5.7823,5.419)",
+                "span": {
+                  "offset": 137,
+                  "length": 6
+                }
+              },
+              {
+                "content": "TOTAL",
+                "source": "D(1,2.2502,5.7176,3.5206,5.7159,3.5222,6.2087,2.2516,6.2128)",
+                "span": {
+                  "offset": 166,
+                  "length": 5
+                }
+              },
+              {
+                "content": "54,000",
+                "source": "D(1,5.0479,5.7294,6.6228,5.733,6.6216,6.2398,5.0467,6.2362)",
+                "span": {
+                  "offset": 173,
+                  "length": 6
+                }
+              },
+              {
+                "content": "CARD",
+                "source": "D(1,2.193,6.2212,3.2543,6.2192,3.2553,6.7269,2.1931,6.729)",
+                "span": {
+                  "offset": 181,
+                  "length": 4
+                }
+              },
+              {
+                "content": "54,000",
+                "source": "D(1,5.0721,6.241,6.6762,6.2536,6.6741,6.8034,5.0714,6.7906)",
+                "span": {
+                  "offset": 187,
+                  "length": 6
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "1 APPLE CINNAMON PASTRY",
+            "source": "D(1,2.058,4.8245,4.9212,4.8497,4.9188,5.1272,2.0555,5.102)",
+            "span": {
+              "offset": 48,
+              "length": 23
+            }
+          },
+          {
+            "content": "22,000",
+            "source": "D(1,5.7621,4.8698,6.5297,4.8724,6.5288,5.1382,5.7612,5.1356)",
+            "span": {
+              "offset": 81,
+              "length": 6
+            }
+          },
+          {
+            "content": "2 ROYAL CHEESE TART",
+            "source": "D(1,2.0317,5.114,4.429,5.1367,4.4264,5.4104,2.0291,5.3876)",
+            "span": {
+              "offset": 108,
+              "length": 19
+            }
+          },
+          {
+            "content": "32,000",
+            "source": "D(1,5.782,5.1541,6.5611,5.1532,6.5614,5.4156,5.7823,5.4165)",
+            "span": {
+              "offset": 137,
+              "length": 6
+            }
+          },
+          {
+            "content": "TOTAL",
+            "source": "D(1,2.25,5.7176,3.5206,5.7136,3.5222,6.2087,2.2516,6.2128)",
+            "span": {
+              "offset": 166,
+              "length": 5
+            }
+          },
+          {
+            "content": "54,000",
+            "source": "D(1,5.0479,5.7294,6.6228,5.733,6.6216,6.2398,5.0467,6.2362)",
+            "span": {
+              "offset": 173,
+              "length": 6
+            }
+          },
+          {
+            "content": "CARD",
+            "source": "D(1,2.1921,6.2212,3.2543,6.2192,3.2553,6.7269,2.1931,6.729)",
+            "span": {
+              "offset": 181,
+              "length": 4
+            }
+          },
+          {
+            "content": "54,000",
+            "source": "D(1,5.0721,6.241,6.6784,6.2537,6.6741,6.8034,5.0678,6.7906)",
+            "span": {
+              "offset": 187,
+              "length": 6
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 193
+            },
+            "elements": [
+              "/tables/0",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 3,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,1.7895,4.6111,5.5315,4.6097,5.5358,4.8297,1.7893,4.8288)",
+                "span": {
+                  "offset": 17,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.5315,4.6097,6.6467,4.6086,6.6468,4.8305,5.5358,4.8297)",
+                "span": {
+                  "offset": 27,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1 APPLE CINNAMON PASTRY",
+                "source": "D(1,1.7893,4.8288,5.5358,4.8297,5.536,5.1223,1.7893,5.1186)",
+                "span": {
+                  "offset": 48,
+                  "length": 23
+                },
+                "elements": [
+                  "/paragraphs/0"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22,000",
+                "source": "D(1,5.5358,4.8297,6.6468,4.8305,6.6474,5.1238,5.536,5.1223)",
+                "span": {
+                  "offset": 81,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/1"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2 ROYAL CHEESE TART",
+                "source": "D(1,1.7893,5.1186,5.536,5.1223,5.5351,5.5852,1.7903,5.5864)",
+                "span": {
+                  "offset": 108,
+                  "length": 19
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "32,000",
+                "source": "D(1,5.536,5.1223,6.6474,5.1238,6.6484,5.5851,5.5351,5.5852)",
+                "span": {
+                  "offset": 137,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              }
+            ],
+            "source": "D(1,1.8713,4.7166,6.5813,4.7166,6.5853,5.4447,1.8743,5.4504)",
+            "span": {
+              "offset": 0,
+              "length": 163
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 3872,
+      "gpt-5-mini-cached-input": 3840,
+      "gpt-5-mini-output": 210
+    }
+  }
+}

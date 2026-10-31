@@ -1,0 +1,35 @@
+# Secrets — never commit
+.env
+
+# Runtime artifacts — everything under out/ and inbox/ is generated, not source
+out/
+inbox/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node (npx wrangler leaves a local cache; desktop/ has its own .gitignore)
+node_modules/
+
+# Compiled OCR harness (built on demand by swiftc, see swift/ocr.swift)
+swift/.build/
+
+# macOS
+.DS_Store
+
+# Original broker invoices — NEVER commit or push (owner rule, 2026-09-30).
+# The working copy stays local for corpus runs and eval.
+invoices/
+
+# Original-invoice-DERIVED data — never committed either (owner rule
+# 2026-10-01): these truth files, fixtures and case values quote the local
+# invoices. They stay on disk for local runs; tests self-skip without them.
+tests/ground_truth.json
+tests/line_item_truth.json
+tests/verification_truth.json
+tests/fixtures/verification/
+
+# Local agent operating notes (internal engineering journal) — never public.
+AGENTS.md

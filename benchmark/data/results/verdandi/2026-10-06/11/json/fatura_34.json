@@ -1,0 +1,711 @@
+{
+  "selected_document": {
+    "name": "Patel-Reid",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 is headed \u201cINVOICE,\u201d shows the issuer name Patel-Reid, an invoice number and date, and a billed-items table with amounts and a printed subtotal.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/79-73/541",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.512,
+          0.032,
+          0.757,
+          0.047
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/79-73/541'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE INVOICE # INV/79-73/541 Note: Total payment due'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5103,
+                0.031200000000000006,
+                0.7522,
+                0.050000000000000044
+              ],
+              "line_bbox": [
+                0.0146,
+                0.031200000000000006,
+                0.7522,
+                0.05049999999999999
+              ],
+              "text": "Patel-Reid INVOICE # INV/79-73/541",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "17-Sep-1993",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.746,
+          0.137,
+          0.994,
+          0.154
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='17-Sep-1993' \u2014 format 'date'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice Date: 17-Sep-1993'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.746,
+                0.13560000000000005,
+                0.9914,
+                0.15490000000000004
+              ],
+              "line_bbox": [
+                0.746,
+                0.13560000000000005,
+                0.9914,
+                0.15490000000000004
+              ],
+              "text": "Invoice Date: 17-Sep-1993",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Patel-Reid",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.019,
+          0.033,
+          0.122,
+          0.048
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Patel-Reid'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Patel-Reid Address:223 Kristen Mission Suite 986 Hernandezport, DE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0146,
+                0.03280000000000005,
+                0.1241,
+                0.05049999999999999
+              ],
+              "line_bbox": [
+                0.0146,
+                0.031200000000000006,
+                0.7522,
+                0.05049999999999999
+              ],
+              "text": "Patel-Reid INVOICE # INV/79-73/541",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Megan Phillips",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.017,
+          0.216,
+          0.225,
+          0.231
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Megan Phillips'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Email:rivassarah@example.org Buyer :Megan Phillips 223 Kristen Mission Suite'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0147,
+                0.2146,
+                0.233,
+                0.23329999999999995
+              ],
+              "line_bbox": [
+                0.0147,
+                0.2146,
+                0.233,
+                0.23329999999999995
+              ],
+              "text": "Buyer :Megan Phillips",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.731,
+          0.96,
+          0.794,
+          0.975
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 655.98 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5162,
+                0.9542,
+                0.7788,
+                0.9792
+              ],
+              "line_bbox": [
+                0.5162,
+                0.9542,
+                0.7788,
+                0.9792
+              ],
+              "text": "SUB_TOTAL: 655.98 USD",
+              "lineno": 16,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "655.98",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.657,
+          0.96,
+          0.73,
+          0.975
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='655.98'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 655.98 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5162,
+                0.9542,
+                0.7788,
+                0.9792
+              ],
+              "line_bbox": [
+                0.5162,
+                0.9542,
+                0.7788,
+                0.9792
+              ],
+              "text": "SUB_TOTAL: 655.98 USD",
+              "lineno": 16,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Test white alone investment.",
+      "quantity": "6.00",
+      "unit_price": "46.13",
+      "amount": "276.78",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.082,
+          0.658,
+          0.952,
+          0.696
+        ]
+      }
+    },
+    {
+      "description": "Billion.",
+      "quantity": "5.00",
+      "unit_price": "75.84",
+      "amount": "379.20",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.082,
+          0.696,
+          0.952,
+          0.733
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1610,
+      "total_tokens": 8854,
+      "elapsed_s": 13.49
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/79-73/541",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/79-73/541'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE INVOICE # INV/79-73/541 Note: Total payment due'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5103,
+                  0.031200000000000006,
+                  0.7522,
+                  0.050000000000000044
+                ],
+                "line_bbox": [
+                  0.0146,
+                  0.031200000000000006,
+                  0.7522,
+                  0.05049999999999999
+                ],
+                "text": "Patel-Reid INVOICE # INV/79-73/541",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "17-Sep-1993",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='17-Sep-1993' \u2014 format 'date'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice Date: 17-Sep-1993'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.746,
+                  0.13560000000000005,
+                  0.9914,
+                  0.15490000000000004
+                ],
+                "line_bbox": [
+                  0.746,
+                  0.13560000000000005,
+                  0.9914,
+                  0.15490000000000004
+                ],
+                "text": "Invoice Date: 17-Sep-1993",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Patel-Reid",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Patel-Reid'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Patel-Reid Address:223 Kristen Mission Suite 986 Hernandezport, DE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0146,
+                  0.03280000000000005,
+                  0.1241,
+                  0.05049999999999999
+                ],
+                "line_bbox": [
+                  0.0146,
+                  0.031200000000000006,
+                  0.7522,
+                  0.05049999999999999
+                ],
+                "text": "Patel-Reid INVOICE # INV/79-73/541",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Megan Phillips",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Megan Phillips'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Email:rivassarah@example.org Buyer :Megan Phillips 223 Kristen Mission Suite'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0147,
+                  0.2146,
+                  0.233,
+                  0.23329999999999995
+                ],
+                "line_bbox": [
+                  0.0147,
+                  0.2146,
+                  0.233,
+                  0.23329999999999995
+                ],
+                "text": "Buyer :Megan Phillips",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 655.98 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5162,
+                  0.9542,
+                  0.7788,
+                  0.9792
+                ],
+                "line_bbox": [
+                  0.5162,
+                  0.9542,
+                  0.7788,
+                  0.9792
+                ],
+                "text": "SUB_TOTAL: 655.98 USD",
+                "lineno": 16,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "655.98",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='655.98'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 655.98 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5162,
+                  0.9542,
+                  0.7788,
+                  0.9792
+                ],
+                "line_bbox": [
+                  0.5162,
+                  0.9542,
+                  0.7788,
+                  0.9792
+                ],
+                "text": "SUB_TOTAL: 655.98 USD",
+                "lineno": 16,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1
+        },
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "17-Sep-1993",
+            "secondary": "17-Sep-1993",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "cd8c3f1e6368cdfa1155f4a50eeebabbaae9f41437424bc6b503916e268827e1"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5789,
+          "completion_tokens": 268,
+          "total_tokens": 6057,
+          "elapsed_s": 9.4
+        }
+      }
+    }
+  }
+}

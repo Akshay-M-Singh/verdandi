@@ -1,0 +1,808 @@
+{
+  "selected_document": {
+    "name": "ORION GLOBAL LOGISTICS PVT. LTD.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows ORION GLOBAL LOGISTICS PVT. LTD. and the heading \u201cTAX INVOICE,\u201d with an invoice number, bill-to party, billed charge rows, subtotal, tax, and total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/25-26/541",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.064,
+          0.162,
+          0.412,
+          0.178
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/25-26/541'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX INVOICE Invoice No: INV/25-26/541 Date: 25-06-2025'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0619,
+                0.1583,
+                0.4189,
+                0.18330000000000002
+              ],
+              "line_bbox": [
+                0.0619,
+                0.1583,
+                0.4189,
+                0.18330000000000002
+              ],
+              "text": "Invoice No: INV/25-26/541",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "25-06-2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.065,
+          0.196,
+          0.294,
+          0.211
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='25-06-2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: INV/25-26/541 Date: 25-06-2025 Bill To: COASTAL'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0619,
+                0.1896,
+                0.2979,
+                0.2146
+              ],
+              "line_bbox": [
+                0.0619,
+                0.1896,
+                0.2979,
+                0.2146
+              ],
+              "text": "Date: 25-06-2025",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "ORION GLOBAL LOGISTICS PVT. LTD.",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.064,
+          0.07,
+          0.79,
+          0.091
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='ORION GLOBAL LOGISTICS PVT. LTD.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'ORION GLOBAL LOGISTICS PVT. LTD. TAX INVOICE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0588,
+                0.0625,
+                0.7941,
+                0.10829999999999995
+              ],
+              "line_bbox": [
+                0.0588,
+                0.0625,
+                0.7941,
+                0.10829999999999995
+              ],
+              "text": "ORION GLOBAL LOGISTICS PVT. LTD.",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "COASTAL POWER PROJECTS LIMITED",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.062,
+          0.223,
+          0.678,
+          0.244
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='COASTAL POWER PROJECTS LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 25-06-2025 Bill To: COASTAL POWER PROJECTS LIMITED'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0588,
+                0.21850000000000003,
+                0.6816,
+                0.24880000000000002
+              ],
+              "line_bbox": [
+                0.0588,
+                0.21850000000000003,
+                0.6816,
+                0.24880000000000002
+              ],
+              "text": "Bill To: COASTAL POWER PROJECTS LIMITED",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "167257.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.77,
+          0.478,
+          0.94,
+          0.495
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='167257.38'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '1,683.87 1,67,257.38 30,106.33'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.767,
+                0.475,
+                0.941,
+                0.5
+              ],
+              "line_bbox": [
+                0.5397,
+                0.47250000000000003,
+                0.941,
+                0.5004
+              ],
+              "text": "Subtotal: 1,67,257.38",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "30106.33",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.802,
+          0.514,
+          0.936,
+          0.531
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='30106.33'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '1,67,257.38 30,106.33 1,97,363.71'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.8023,
+                0.5145,
+                0.9381,
+                0.5334
+              ],
+              "line_bbox": [
+                0.5428,
+                0.5145,
+                0.9381,
+                0.5334
+              ],
+              "text": "\u0442\u0430\u0445: 30,106.33",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "197363.71",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.772,
+          0.547,
+          0.938,
+          0.565
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='197363.71'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '30,106.33 1,97,363.71'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7729,
+                0.5479,
+                0.9381,
+                0.5687
+              ],
+              "line_bbox": [
+                0.5426,
+                0.5455,
+                0.9381,
+                0.5687
+              ],
+              "text": "Total: 1,97,363.71",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Cargo insurance",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "10867.86",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.064,
+          0.286,
+          0.937,
+          0.307
+        ]
+      }
+    },
+    {
+      "description": "Local transportation",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "119352.10",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.064,
+          0.32,
+          0.937,
+          0.338
+        ]
+      }
+    },
+    {
+      "description": "Agency commission",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "5199.68",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.351,
+          0.937,
+          0.371
+        ]
+      }
+    },
+    {
+      "description": "Bill of entry charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "30153.87",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.062,
+          0.385,
+          0.937,
+          0.406
+        ]
+      }
+    },
+    {
+      "description": "Warehouse storage charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "1683.87",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.063,
+          0.419,
+          0.937,
+          0.44
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1682,
+      "total_tokens": 8926,
+      "elapsed_s": 13.16
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/25-26/541",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/25-26/541'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX INVOICE Invoice No: INV/25-26/541 Date: 25-06-2025'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0619,
+                  0.1583,
+                  0.4189,
+                  0.18330000000000002
+                ],
+                "line_bbox": [
+                  0.0619,
+                  0.1583,
+                  0.4189,
+                  0.18330000000000002
+                ],
+                "text": "Invoice No: INV/25-26/541",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "25-06-2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='25-06-2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: INV/25-26/541 Date: 25-06-2025 Bill To: COASTAL'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0619,
+                  0.1896,
+                  0.2979,
+                  0.2146
+                ],
+                "line_bbox": [
+                  0.0619,
+                  0.1896,
+                  0.2979,
+                  0.2146
+                ],
+                "text": "Date: 25-06-2025",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "ORION GLOBAL LOGISTICS PVT. LTD.",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='ORION GLOBAL LOGISTICS PVT. LTD.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'ORION GLOBAL LOGISTICS PVT. LTD. TAX INVOICE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0588,
+                  0.0625,
+                  0.7941,
+                  0.10829999999999995
+                ],
+                "line_bbox": [
+                  0.0588,
+                  0.0625,
+                  0.7941,
+                  0.10829999999999995
+                ],
+                "text": "ORION GLOBAL LOGISTICS PVT. LTD.",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "COASTAL POWER PROJECTS LIMITED",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='COASTAL POWER PROJECTS LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 25-06-2025 Bill To: COASTAL POWER PROJECTS LIMITED'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0588,
+                  0.21850000000000003,
+                  0.6816,
+                  0.24880000000000002
+                ],
+                "line_bbox": [
+                  0.0588,
+                  0.21850000000000003,
+                  0.6816,
+                  0.24880000000000002
+                ],
+                "text": "Bill To: COASTAL POWER PROJECTS LIMITED",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "167257.38",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='167257.38'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '1,683.87 1,67,257.38 30,106.33'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.767,
+                  0.475,
+                  0.941,
+                  0.5
+                ],
+                "line_bbox": [
+                  0.5397,
+                  0.47250000000000003,
+                  0.941,
+                  0.5004
+                ],
+                "text": "Subtotal: 1,67,257.38",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "30106.33",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='30106.33'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '1,67,257.38 30,106.33 1,97,363.71'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.8023,
+                  0.5145,
+                  0.9381,
+                  0.5334
+                ],
+                "line_bbox": [
+                  0.5428,
+                  0.5145,
+                  0.9381,
+                  0.5334
+                ],
+                "text": "\u0442\u0430\u0445: 30,106.33",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "197363.71",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='197363.71'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '30,106.33 1,97,363.71'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7729,
+                  0.5479,
+                  0.9381,
+                  0.5687
+                ],
+                "line_bbox": [
+                  0.5426,
+                  0.5455,
+                  0.9381,
+                  0.5687
+                ],
+                "text": "Total: 1,97,363.71",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

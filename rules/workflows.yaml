@@ -1,0 +1,66 @@
+# Bulk-run workflows (2026-09-05) - named document bundles, data not code (D10).
+# `documents` = profiles extracted per file (one call, order = prompt order);
+# `expected` = completeness contract (may exceed documents - extract 3, expect 4).
+# D52: an id that no longer exists in rules/documents.yaml is a WARNING (the
+# member is skipped at run time; expected members are flagged missing) - it
+# never blocks the app. Edit in the UI (Workflows tab) or here.
+workflows:
+- id: forwarder_chain
+  label: Forwarder Primary
+  description: 'per-shipment approval set: broker invoice + indian Bill of entry (BOE) + movement document
+    (HAWB/BL)'
+  documents:
+  - broker_invoice
+  - bill_of_entry
+  expected: []
+  cross_checks:
+  - label: BOE check
+    left:
+      template: broker_invoice
+      field: boe_number
+    right:
+      template: bill_of_entry
+      field: boe_number
+    id: broker_invoice.boe_number__bill_of_entry.boe_number
+- id: broker_chain
+  label: Broker chain
+  description: 'per-shipment chain: broker invoice + BOE + HAWB + commercial invoice, cross-validated'
+  documents:
+  - broker_invoice
+  - bill_of_entry
+  - air_waybill
+  - commercial_invoice
+  expected: []
+  cross_checks:
+  - id: broker_invoice.boe_number__bill_of_entry.boe_number
+    label: BE number on invoice = BE number on BOE
+    left:
+      template: broker_invoice
+      field: boe_number
+    right:
+      template: bill_of_entry
+      field: boe_number
+  - id: broker_invoice.hawb_number__bill_of_entry.hawb_number
+    label: HAWB number on invoice = HAWB number on BOE
+    left:
+      template: broker_invoice
+      field: hawb_number
+    right:
+      template: bill_of_entry
+      field: hawb_number
+  - id: bill_of_entry.hawb_number__air_waybill.hawb_number
+    label: HAWB number on BOE = HAWB number on HAWB document
+    left:
+      template: bill_of_entry
+      field: hawb_number
+    right:
+      template: air_waybill
+      field: hawb_number
+  - id: bill_of_entry.invoice_number__commercial_invoice.invoice_number
+    label: Invoice number on BOE = Invoice number on commercial invoice
+    left:
+      template: bill_of_entry
+      field: invoice_number
+    right:
+      template: commercial_invoice
+      field: invoice_number

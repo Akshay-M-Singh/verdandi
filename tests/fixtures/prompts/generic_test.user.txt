@@ -1,0 +1,37 @@
+TARGET DOCUMENT PROFILE (rules/documents.yaml, hot-loaded):
+
+- id: generic_test — Generic Test Document
+  description: a synthetic fieldless profile used only by prompt fixture tests
+  allow_no_match: False (below selector min_score 0.5 -> flag_no_document_match, never guess)
+  identification keywords (user-defined HINTS — a target document of this kind typically contains at least one; a document that matches the description but NO keyword is STILL the target — keywords never disqualify): ['TEST DOCUMENT']
+  extraction schema: generic
+
+The images below are the pages of one PDF attachment, in order. Extract per the instructions and output ONLY a single JSON object matching this schema:
+
+{
+  "selected_document": {
+    "name": string|null,
+    "document_pages": [int],
+    "reason": string,
+    "confidence": number
+  },
+  "header_fields": [
+    {
+      "name": "document_title" | "document_date" | "document_reference" | "document_amount",
+      "value": string|object|null,
+      "confidence": number,
+      "source": "page N (render image)" | null,
+      "source_region": { "page": int, "bbox": [x0, y0, x1, y1] } | null
+    }
+  ],
+  "line_items": [],
+  "notes": [string],
+  "status": "extracted" | "flag_no_document_match" | "flagged"
+}
+
+Field notes:
+- document_title: the document's OWN heading/name as printed (e.g. the vendor name in the letterhead, or "COMMERCIAL INVOICE").
+- document_date: the document's own date as printed.
+- document_reference: the document's key reference number as printed (invoice/bill/challan number).
+- document_amount: the document's main total amount (plain number per rule 4, taxes included when the document prints one).
+- If a field is not visible, use value null, confidence 0, source null, source_region null.

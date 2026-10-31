@@ -1,0 +1,563 @@
+{
+  "selected_document": {
+    "name": "Ted Bates & Company, Inc./Advertising",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page identifies Ted Bates & Company, Inc./Advertising and is headed \u201cPRODUCTION BILL.\u201d It prints a bill number, a client, and billed amounts in a table with NET AMOUNT and TOTAL columns, matching the vendor-issued billing document profile.",
+    "confidence": 0.95
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "P-06-0933",
+      "confidence": 0.88,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.529,
+          0.277,
+          0.769,
+          0.288
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='P-06-0933'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'P-06-0933' NOT found near region (page 1); nearest text 'ILL NUMEER P-08-0933 PAGE ATE DUL AUG23/75 40201' (n-gram proximity 0.40)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Ted Bates & Company, Inc./Advertising",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.139,
+          0.238,
+          0.482,
+          0.253
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Ted Bates & Company, Inc./Advertising'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Ted Bates & Company, Inc./Advertising' NOT found near region (page 1); nearest text 'Ted Bates a company. inc. /advertising YOrk New' (n-gram proximity 0.93)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Brown & Williamson Tobacco Corp.",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.223,
+          0.311,
+          0.494,
+          0.324
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Brown & Williamson Tobacco Corp.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Brown & Williamson Tobacco Corp.' NOT found near region (page 1); nearest text 'RUN ON AUG09/79 AT 19.39 PRODUCTION BILL BROWN' (n-gram proximity 0.83)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.58,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.238,
+          0.254,
+          0.485,
+          0.271
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'Ted Bates a company. inc. /advertising YOrk New' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "122176 PO NO 3935",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "1500.00",
+      "confidence": 0.84,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.102,
+          0.42,
+          0.759,
+          0.435
+        ]
+      }
+    },
+    {
+      "description": "781011 PO NO 3760",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "1000.00",
+      "confidence": 0.85,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.102,
+          0.44,
+          0.759,
+          0.455
+        ]
+      }
+    },
+    {
+      "description": "010479 PO NO 4042 W/C04- INCLUDES EXPENSES FOR $396.04",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "1146.04",
+      "confidence": 0.64,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.102,
+          0.46,
+          0.759,
+          0.502
+        ]
+      }
+    },
+    {
+      "description": "112078 PO NO 3758 W/C04- INCLUDES EXPENSES FOR $1140.65",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "2640.65",
+      "confidence": 0.66,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.102,
+          0.507,
+          0.759,
+          0.547
+        ]
+      }
+    },
+    {
+      "description": "78914 AJ NO 6432",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "1900.00",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.102,
+          0.6,
+          0.759,
+          0.616
+        ]
+      }
+    },
+    {
+      "description": "26228 PO NO 4030",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "1625.00",
+      "confidence": 0.84,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.102,
+          0.63,
+          0.759,
+          0.652
+        ]
+      }
+    },
+    {
+      "description": "2526 PO 3326",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "250.00",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.102,
+          0.704,
+          0.759,
+          0.722
+        ]
+      }
+    },
+    {
+      "description": "010479 PO NO 4043",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "810.00",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.102,
+          0.779,
+          0.759,
+          0.797
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The page prints \u201cDATE DUE AUG23/79,\u201d which is a due date; no issue date is clearly visible.",
+    "No final grand total or tax amount is visible; the printed work-code totals are section summaries."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 3894,
+      "completion_tokens": 3499,
+      "total_tokens": 7393,
+      "elapsed_s": 16.89
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "P-06-0933",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='P-06-0933'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'P-06-0933' NOT found near region (page 1); nearest text 'ILL NUMEER P-08-0933 PAGE ATE DUL AUG23/75 40201' (n-gram proximity 0.40)",
+              "match": null
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": "Ted Bates & Company, Inc./Advertising",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Ted Bates & Company, Inc./Advertising'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Ted Bates & Company, Inc./Advertising' NOT found near region (page 1); nearest text 'Ted Bates a company. inc. /advertising YOrk New' (n-gram proximity 0.93)",
+              "match": null
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Brown & Williamson Tobacco Corp.",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Brown & Williamson Tobacco Corp.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Brown & Williamson Tobacco Corp.' NOT found near region (page 1); nearest text 'RUN ON AUG09/79 AT 19.39 PRODUCTION BILL BROWN' (n-gram proximity 0.83)",
+              "match": null
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'Ted Bates a company. inc. /advertising YOrk New' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 4
+        },
+        "flag_rows": 13
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_number": {
+            "primary": "P-06-0933",
+            "secondary": "P-08-0933",
+            "agree": false
+          },
+          "vendor_name": {
+            "primary": "Ted Bates & Company, Inc./Advertising",
+            "secondary": "Ted Bates & Company, Inc./advertising",
+            "agree": true
+          },
+          "buyer_name": {
+            "primary": "Brown & Williamson Tobacco Corp.",
+            "secondary": "Brown & Williamson Tobacco Corp",
+            "agree": true
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "4886345dd20b0b15c7b2014ff8497fda1deb5802f88809e04da6caa17278fedd"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2550,
+          "completion_tokens": 852,
+          "total_tokens": 3402,
+          "elapsed_s": 10.58
+        }
+      }
+    }
+  }
+}

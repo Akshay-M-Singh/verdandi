@@ -1,0 +1,813 @@
+{
+  "selected_document": {
+    "name": "Barnes, Garcia and Martin",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cINVOICE\u201d and shows an invoice number and date, a billed customer, itemized charges, subtotal, GST, and total. The issuer name \u201cBarnes, Garcia and Martin\u201d is printed on the page.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV17967327",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.606,
+          0.076,
+          0.839,
+          0.091
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV17967327'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # INV17967327 Invoice Date: 23-Feb-2014'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6077,
+                0.07920000000000005,
+                0.8407,
+                0.0917
+              ],
+              "line_bbox": [
+                0.6077,
+                0.07920000000000005,
+                0.8407,
+                0.0917
+              ],
+              "text": "INVOICE # INV17967327",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "23-Feb-2014",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.607,
+          0.103,
+          0.846,
+          0.117
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='23-Feb-2014'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # INV17967327 Invoice Date: 23-Feb-2014'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6047,
+                0.10419999999999996,
+                0.8496,
+                0.11870000000000003
+              ],
+              "line_bbox": [
+                0.6047,
+                0.10419999999999996,
+                0.8496,
+                0.11870000000000003
+              ],
+              "text": "Invoice Date: 23-Feb-2014",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Barnes, Garcia and Martin",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.031,
+          0.251,
+          0.285,
+          0.267
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Barnes, Garcia and Martin'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Barnes, Garcia and Martin Address: 13868 Michael Wall'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0319,
+                0.25,
+                0.2866,
+                0.27480000000000004
+              ],
+              "line_bbox": [
+                0.0319,
+                0.25,
+                0.2866,
+                0.27480000000000004
+              ],
+              "text": "Barnes, Garcia and Martin",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Suzanne Sandoval",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.031,
+          0.414,
+          0.242,
+          0.428
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Suzanne Sandoval'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Bill to: Suzanne Sandoval 13868 Michael Wall North'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0295,
+                0.41869999999999996,
+                0.2773,
+                0.4333
+              ],
+              "line_bbox": [
+                0.0295,
+                0.41869999999999996,
+                0.2773,
+                0.4333
+              ],
+              "text": "Bill to: Suzanne Sandoval",
+              "lineno": 8,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.84,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.659,
+          0.9,
+          0.828,
+          0.914
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'TOTAL: 653.95 $' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "645.92",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.658,
+          0.704,
+          0.887,
+          0.719
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='645.92'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 645.92 $ GST(7%) : 45.2\u0142\u0105'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6549,
+                0.7103999999999999,
+                0.8879,
+                0.7333000000000001
+              ],
+              "line_bbox": [
+                0.6549,
+                0.7103999999999999,
+                0.8879,
+                0.7333000000000001
+              ],
+              "text": "SUB_TOTAL : 645.92 $",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "45.21",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.656,
+          0.742,
+          0.81,
+          0.756
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='45.21'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '45.21' NOT found near region (page 1); nearest text 'SUB_TOTAL : 645.92 $ GST(7%) : 45.2\u0142\u0105' (n-gram proximity 0.50)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "653.95",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.66,
+          0.9,
+          0.83,
+          0.915
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='653.95'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 653.95 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6578,
+                0.9188000000000001,
+                0.8319,
+                0.9375
+              ],
+              "line_bbox": [
+                0.6578,
+                0.9188000000000001,
+                0.8319,
+                0.9375
+              ],
+              "text": "TOTAL: 653.95 $",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Resource above real.",
+      "quantity": "5.00",
+      "unit_price": null,
+      "amount": "87.40",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.032,
+          0.594,
+          0.958,
+          0.615
+        ]
+      }
+    },
+    {
+      "description": "Manage.",
+      "quantity": "3.00",
+      "unit_price": null,
+      "amount": "66.60",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.032,
+          0.615,
+          0.958,
+          0.635
+        ]
+      }
+    },
+    {
+      "description": "Necessary newspaper.",
+      "quantity": "3.00",
+      "unit_price": null,
+      "amount": "3.04",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.032,
+          0.635,
+          0.958,
+          0.656
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1484,
+      "total_tokens": 8728,
+      "elapsed_s": 12.02
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV17967327",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV17967327'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # INV17967327 Invoice Date: 23-Feb-2014'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6077,
+                  0.07920000000000005,
+                  0.8407,
+                  0.0917
+                ],
+                "line_bbox": [
+                  0.6077,
+                  0.07920000000000005,
+                  0.8407,
+                  0.0917
+                ],
+                "text": "INVOICE # INV17967327",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "23-Feb-2014",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='23-Feb-2014'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # INV17967327 Invoice Date: 23-Feb-2014'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6047,
+                  0.10419999999999996,
+                  0.8496,
+                  0.11870000000000003
+                ],
+                "line_bbox": [
+                  0.6047,
+                  0.10419999999999996,
+                  0.8496,
+                  0.11870000000000003
+                ],
+                "text": "Invoice Date: 23-Feb-2014",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Barnes, Garcia and Martin",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Barnes, Garcia and Martin'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Barnes, Garcia and Martin Address: 13868 Michael Wall'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0319,
+                  0.25,
+                  0.2866,
+                  0.27480000000000004
+                ],
+                "line_bbox": [
+                  0.0319,
+                  0.25,
+                  0.2866,
+                  0.27480000000000004
+                ],
+                "text": "Barnes, Garcia and Martin",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Suzanne Sandoval",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Suzanne Sandoval'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Bill to: Suzanne Sandoval 13868 Michael Wall North'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0295,
+                  0.41869999999999996,
+                  0.2773,
+                  0.4333
+                ],
+                "line_bbox": [
+                  0.0295,
+                  0.41869999999999996,
+                  0.2773,
+                  0.4333
+                ],
+                "text": "Bill to: Suzanne Sandoval",
+                "lineno": 8,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'TOTAL: 653.95 $' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "645.92",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='645.92'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 645.92 $ GST(7%) : 45.2\u0142\u0105'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6549,
+                  0.7103999999999999,
+                  0.8879,
+                  0.7333000000000001
+                ],
+                "line_bbox": [
+                  0.6549,
+                  0.7103999999999999,
+                  0.8879,
+                  0.7333000000000001
+                ],
+                "text": "SUB_TOTAL : 645.92 $",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "45.21",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='45.21'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '45.21' NOT found near region (page 1); nearest text 'SUB_TOTAL : 645.92 $ GST(7%) : 45.2\u0142\u0105' (n-gram proximity 0.50)",
+              "match": null
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "653.95",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='653.95'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 653.95 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6578,
+                  0.9188000000000001,
+                  0.8319,
+                  0.9375
+                ],
+                "line_bbox": [
+                  0.6578,
+                  0.9188000000000001,
+                  0.8319,
+                  0.9375
+                ],
+                "text": "TOTAL: 653.95 $",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 2
+        },
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          },
+          "tax_total": {
+            "primary": "45.21",
+            "secondary": "45.21",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "921387ab297e360590ceac065fe67f732536db96b2976a47c361ca0271e6e93e"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5855,
+          "completion_tokens": 339,
+          "total_tokens": 6194,
+          "elapsed_s": 5.2
+        }
+      }
+    }
+  }
+}

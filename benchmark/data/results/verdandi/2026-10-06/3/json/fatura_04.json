@@ -1,0 +1,922 @@
+{
+  "selected_document": {
+    "name": "Phillips, Thomas and Malone",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cINVOICE,\u201d names Phillips, Thomas and Malone, and shows billed line items with subtotal, VAT, and total amounts.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV36598508",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.658,
+          0.329,
+          0.902,
+          0.345
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV36598508'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE ID INV36598508 Date: 16-Feb-2002 PO Number :41'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6608,
+                0.30000000000000004,
+                0.9027,
+                0.3146
+              ],
+              "line_bbox": [
+                0.0381,
+                0.29500000000000004,
+                0.9027,
+                0.3187
+              ],
+              "text": "187 Laurie Throughway Suite 418 INVOICE ID INV36598508",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "16-Feb-2002",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.658,
+          0.356,
+          0.832,
+          0.372
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='16-Feb-2002'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 16-Feb-2002 PO Number :41'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6608,
+                0.32499999999999996,
+                0.8319,
+                0.3396
+              ],
+              "line_bbox": [
+                0.6608,
+                0.32499999999999996,
+                0.8319,
+                0.3396
+              ],
+              "text": "Date: 16-Feb-2002",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Phillips, Thomas and Malone",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.309,
+          0.043,
+          0.581,
+          0.06
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Phillips, Thomas and Malone'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE Phillips, Thomas and Malone'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3068,
+                0.03959999999999997,
+                0.5811,
+                0.05830000000000002
+              ],
+              "line_bbox": [
+                0.3068,
+                0.03959999999999997,
+                0.5811,
+                0.05830000000000002
+              ],
+              "text": "Phillips, Thomas and Malone",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Andrew White",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.128,
+          0.308,
+          0.254,
+          0.325
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Andrew White'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Buyer: Andrew White 187 Laurie Throughway Suite 418'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0413,
+                0.2812,
+                0.2507,
+                0.29790000000000005
+              ],
+              "line_bbox": [
+                0.0413,
+                0.2812,
+                0.2507,
+                0.29790000000000005
+              ],
+              "text": "Buyer: Andrew White",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.79,
+          0.798,
+          0.856,
+          0.814
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX:VAT (5.36%): 54.55 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5811,
+                0.7625,
+                0.8673,
+                0.7792
+              ],
+              "line_bbox": [
+                0.5811,
+                0.7625,
+                0.8673,
+                0.7792
+              ],
+              "text": "TAX:VAT (5.36%): 54.55 EUR",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "1016.78",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.724,
+          0.798,
+          0.856,
+          0.814
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='1016.78'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): '24.08 120.40 SUB_TOTAL: 1016.78 EUR TAX:VAT (5.36%): 54.55'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5811,
+                0.725,
+                0.8525,
+                0.7458
+              ],
+              "line_bbox": [
+                0.5811,
+                0.725,
+                0.8525,
+                0.7458
+              ],
+              "text": "SUB_TOTAL: 1016.78 EUR",
+              "lineno": 16,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "54.55",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.766,
+          0.839,
+          0.867,
+          0.855
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='54.55'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 1016.78 EUR TAX:VAT (5.36%): 54.55 EUR TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5811,
+                0.7625,
+                0.8673,
+                0.7792
+              ],
+              "line_bbox": [
+                0.5811,
+                0.7625,
+                0.8673,
+                0.7792
+              ],
+              "text": "TAX:VAT (5.36%): 54.55 EUR",
+              "lineno": 17,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1028.12",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.724,
+          0.958,
+          0.796,
+          0.974
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1028.12'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'TOTAL: 1028.12 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5811,
+                0.8688,
+                0.7935,
+                0.8875
+              ],
+              "line_bbox": [
+                0.5811,
+                0.8688,
+                0.7935,
+                0.8875
+              ],
+              "text": "TOTAL: 1028.12 EUR",
+              "lineno": 18,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Answer campaign,",
+      "quantity": "1.00",
+      "unit_price": "44.18",
+      "amount": "44.18",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.046,
+          0.636,
+          0.914,
+          0.656
+        ]
+      }
+    },
+    {
+      "description": "Strong street smile,",
+      "quantity": "6.00",
+      "unit_price": "88.00",
+      "amount": "528.00",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.046,
+          0.656,
+          0.914,
+          0.68
+        ]
+      }
+    },
+    {
+      "description": "Moment consumer agree space,",
+      "quantity": "1.00",
+      "unit_price": "14.50",
+      "amount": "14.50",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.046,
+          0.68,
+          0.914,
+          0.704
+        ]
+      }
+    },
+    {
+      "description": "Require everyone hope also,",
+      "quantity": "5.00",
+      "unit_price": "61.94",
+      "amount": "309.70",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.046,
+          0.704,
+          0.914,
+          0.728
+        ]
+      }
+    },
+    {
+      "description": "This.",
+      "quantity": "5.00",
+      "unit_price": "24.08",
+      "amount": "120.40",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.046,
+          0.728,
+          0.914,
+          0.752
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 1566,
+      "total_tokens": 8571,
+      "elapsed_s": 14.31
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV36598508",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV36598508'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE ID INV36598508 Date: 16-Feb-2002 PO Number :41'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6608,
+                  0.30000000000000004,
+                  0.9027,
+                  0.3146
+                ],
+                "line_bbox": [
+                  0.0381,
+                  0.29500000000000004,
+                  0.9027,
+                  0.3187
+                ],
+                "text": "187 Laurie Throughway Suite 418 INVOICE ID INV36598508",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "16-Feb-2002",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='16-Feb-2002'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 16-Feb-2002 PO Number :41'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6608,
+                  0.32499999999999996,
+                  0.8319,
+                  0.3396
+                ],
+                "line_bbox": [
+                  0.6608,
+                  0.32499999999999996,
+                  0.8319,
+                  0.3396
+                ],
+                "text": "Date: 16-Feb-2002",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Phillips, Thomas and Malone",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Phillips, Thomas and Malone'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE Phillips, Thomas and Malone'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3068,
+                  0.03959999999999997,
+                  0.5811,
+                  0.05830000000000002
+                ],
+                "line_bbox": [
+                  0.3068,
+                  0.03959999999999997,
+                  0.5811,
+                  0.05830000000000002
+                ],
+                "text": "Phillips, Thomas and Malone",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Andrew White",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Andrew White'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Buyer: Andrew White 187 Laurie Throughway Suite 418'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0413,
+                  0.2812,
+                  0.2507,
+                  0.29790000000000005
+                ],
+                "line_bbox": [
+                  0.0413,
+                  0.2812,
+                  0.2507,
+                  0.29790000000000005
+                ],
+                "text": "Buyer: Andrew White",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX:VAT (5.36%): 54.55 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5811,
+                  0.7625,
+                  0.8673,
+                  0.7792
+                ],
+                "line_bbox": [
+                  0.5811,
+                  0.7625,
+                  0.8673,
+                  0.7792
+                ],
+                "text": "TAX:VAT (5.36%): 54.55 EUR",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "1016.78",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='1016.78'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): '24.08 120.40 SUB_TOTAL: 1016.78 EUR TAX:VAT (5.36%): 54.55'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5811,
+                  0.725,
+                  0.8525,
+                  0.7458
+                ],
+                "line_bbox": [
+                  0.5811,
+                  0.725,
+                  0.8525,
+                  0.7458
+                ],
+                "text": "SUB_TOTAL: 1016.78 EUR",
+                "lineno": 16,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "54.55",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='54.55'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 1016.78 EUR TAX:VAT (5.36%): 54.55 EUR TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5811,
+                  0.7625,
+                  0.8673,
+                  0.7792
+                ],
+                "line_bbox": [
+                  0.5811,
+                  0.7625,
+                  0.8673,
+                  0.7792
+                ],
+                "text": "TAX:VAT (5.36%): 54.55 EUR",
+                "lineno": 17,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "1028.12",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1028.12'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'TOTAL: 1028.12 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5811,
+                  0.8688,
+                  0.7935,
+                  0.8875
+                ],
+                "line_bbox": [
+                  0.5811,
+                  0.8688,
+                  0.7935,
+                  0.8875
+                ],
+                "text": "TOTAL: 1028.12 EUR",
+                "lineno": 18,
+                "band": "loose"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "subtotal": {
+            "primary": "1016.78",
+            "secondary": "1016.78 EUR",
+            "agree": true
+          },
+          "tax_total": {
+            "primary": "54.55",
+            "secondary": "54.55 EUR",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "1028.12",
+            "secondary": "1028.12 EUR",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "73f514d0ad200ed956338c11146880f25b20a2126340718b866462a27eecdb85"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5846,
+          "completion_tokens": 453,
+          "total_tokens": 6299,
+          "elapsed_s": 6.28
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,728 @@
+{
+  "selected_document": {
+    "name": "King, Richards and Roy",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a commercial invoice headed \"COMMERCIAL INVOICE,\" issued by \"King, Richards and Roy,\" with invoice ID, date, billed item rows, and a final total of 759.65 EUR.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "2601-460",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.493,
+          0.039,
+          0.698,
+          0.056
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='2601-460'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'COMMERCIAL INVOICE INVOICE ID 2601-460 Note: Total payment'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4926,
+                0.03959999999999997,
+                0.7021,
+                0.054200000000000026
+              ],
+              "line_bbox": [
+                0.0174,
+                0.03959999999999997,
+                0.7021,
+                0.06030000000000002
+              ],
+              "text": "King, Richards and Roy INVOICE ID 2601-460",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "27-Oct-1999",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.731,
+          0.156,
+          0.904,
+          0.171
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='27-Oct-1999'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 27-Oct-1999'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7316,
+                0.1562,
+                0.9027,
+                0.17079999999999995
+              ],
+              "line_bbox": [
+                0.0118,
+                0.15000000000000002,
+                0.9027,
+                0.17079999999999995
+              ],
+              "text": "Tel: +(717)532-7768 Date: 27-Oct-1999",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "King, Richards and Roy",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.017,
+          0.042,
+          0.243,
+          0.057
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='King, Richards and Roy'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'King, Richards and Roy Email:smithjeffrey@example.net'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0174,
+                0.04149999999999998,
+                0.2451,
+                0.06030000000000002
+              ],
+              "line_bbox": [
+                0.0174,
+                0.03959999999999997,
+                0.7021,
+                0.06030000000000002
+              ],
+              "text": "King, Richards and Roy INVOICE ID 2601-460",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Christopher Calhoun",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.018,
+          0.099,
+          0.266,
+          0.116
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Christopher Calhoun'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Email:smithjeffrey@example.net Buyer : Christopher Calhoun 0600 Cook Corner'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0177,
+                0.09999999999999998,
+                0.292,
+                0.11670000000000003
+              ],
+              "line_bbox": [
+                0.0177,
+                0.09999999999999998,
+                0.292,
+                0.11670000000000003
+              ],
+              "text": "Buyer : Christopher Calhoun",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.745,
+          0.856,
+          0.771,
+          0.87
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 759.65 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5339,
+                0.8479,
+                0.7404,
+                0.8729
+              ],
+              "line_bbox": [
+                0.5339,
+                0.8479,
+                0.7404,
+                0.8729
+              ],
+              "text": "TOTAL: 759.65 EUR",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "759.65",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.539,
+          0.855,
+          0.771,
+          0.871
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='759.65'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 759.65 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5339,
+                0.8479,
+                0.7404,
+                0.8729
+              ],
+              "line_bbox": [
+                0.5339,
+                0.8479,
+                0.7404,
+                0.8729
+              ],
+              "text": "TOTAL: 759.65 EUR",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Leg information.",
+      "quantity": "6.00",
+      "unit_price": "77.82",
+      "amount": "466.92",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.023,
+          0.519,
+          0.868,
+          0.542
+        ]
+      }
+    },
+    {
+      "description": "Involve.",
+      "quantity": "6.00",
+      "unit_price": "36.50",
+      "amount": "219.00",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.023,
+          0.541,
+          0.868,
+          0.564
+        ]
+      }
+    },
+    {
+      "description": "Blood teacher front.",
+      "quantity": "2.00",
+      "unit_price": "15.88",
+      "amount": "31.76",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.023,
+          0.563,
+          0.868,
+          0.586
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1298,
+      "total_tokens": 4953,
+      "elapsed_s": 11.88
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "2601-460",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='2601-460'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'COMMERCIAL INVOICE INVOICE ID 2601-460 Note: Total payment'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4926,
+                  0.03959999999999997,
+                  0.7021,
+                  0.054200000000000026
+                ],
+                "line_bbox": [
+                  0.0174,
+                  0.03959999999999997,
+                  0.7021,
+                  0.06030000000000002
+                ],
+                "text": "King, Richards and Roy INVOICE ID 2601-460",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "27-Oct-1999",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='27-Oct-1999'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 27-Oct-1999'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7316,
+                  0.1562,
+                  0.9027,
+                  0.17079999999999995
+                ],
+                "line_bbox": [
+                  0.0118,
+                  0.15000000000000002,
+                  0.9027,
+                  0.17079999999999995
+                ],
+                "text": "Tel: +(717)532-7768 Date: 27-Oct-1999",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "King, Richards and Roy",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='King, Richards and Roy'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'King, Richards and Roy Email:smithjeffrey@example.net'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0174,
+                  0.04149999999999998,
+                  0.2451,
+                  0.06030000000000002
+                ],
+                "line_bbox": [
+                  0.0174,
+                  0.03959999999999997,
+                  0.7021,
+                  0.06030000000000002
+                ],
+                "text": "King, Richards and Roy INVOICE ID 2601-460",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Christopher Calhoun",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Christopher Calhoun'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Email:smithjeffrey@example.net Buyer : Christopher Calhoun 0600 Cook Corner'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0177,
+                  0.09999999999999998,
+                  0.292,
+                  0.11670000000000003
+                ],
+                "line_bbox": [
+                  0.0177,
+                  0.09999999999999998,
+                  0.292,
+                  0.11670000000000003
+                ],
+                "text": "Buyer : Christopher Calhoun",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 759.65 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5339,
+                  0.8479,
+                  0.7404,
+                  0.8729
+                ],
+                "line_bbox": [
+                  0.5339,
+                  0.8479,
+                  0.7404,
+                  0.8729
+                ],
+                "text": "TOTAL: 759.65 EUR",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "759.65",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='759.65'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 759.65 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5339,
+                  0.8479,
+                  0.7404,
+                  0.8729
+                ],
+                "line_bbox": [
+                  0.5339,
+                  0.8479,
+                  0.7404,
+                  0.8729
+                ],
+                "text": "TOTAL: 759.65 EUR",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1
+        },
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "27-Oct-1999",
+            "secondary": "27-Oct-1999",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "cd8c3f1e6368cdfa1155f4a50eeebabbaae9f41437424bc6b503916e268827e1"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2439,
+          "completion_tokens": 266,
+          "total_tokens": 2705,
+          "elapsed_s": 5.36
+        }
+      }
+    }
+  }
+}

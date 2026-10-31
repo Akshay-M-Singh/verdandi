@@ -1,0 +1,574 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a receipt-like vendor charge document with menu items and printed subtotal, service charge, tax, and final total. The issuer name and heading in the upper portion are obscured and unreadable.",
+    "confidence": 0.94
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "1343000",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.49,
+          0.783,
+          0.617,
+          0.801
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='1343000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '1,213,000 60,000 70,000 1,343,000 SERVICE CHARGE 80, 580\u015a\u0161'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4865,
+                0.7974,
+                0.6167,
+                0.8213
+              ],
+              "line_bbox": [
+                0.2594,
+                0.7974,
+                0.6167,
+                0.8213
+              ],
+              "text": "SUBTOTAL 1,343,000",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "142358",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.516,
+          0.826,
+          0.617,
+          0.844
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='142358'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '70,000 1,343,000 80, 580\u015a\u0161 142,358 DU 1,565,938'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5131,
+                0.8432999999999999,
+                0.6167,
+                0.865
+              ],
+              "line_bbox": [
+                0.2595,
+                0.8414,
+                0.6167,
+                0.865
+              ],
+              "text": "Tax 10% 142,358",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1565938",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.263,
+          0.851,
+          0.601,
+          0.886
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1565938'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUBTOTAL 1,343,000 SERVICE CHARGE 80, 580\u015a\u0161 Tax 10%'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.2596,
+                0.8646,
+                0.6018,
+                0.9083
+              ],
+              "line_bbox": [
+                0.2596,
+                0.8646,
+                0.6018,
+                0.9083
+              ],
+              "text": "DU 1,565,938",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "UDANG RE \u2014 LARGE",
+      "quantity": "2",
+      "unit_price": "216000",
+      "amount": "432000",
+      "confidence": 0.93,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.228,
+          0.396,
+          0.617,
+          0.438
+        ]
+      }
+    },
+    {
+      "description": "AYM GR JUN NJAN \u2014 MEDIUM",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "108000",
+      "confidence": 0.88,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.228,
+          0.44,
+          0.617,
+          0.479
+        ]
+      }
+    },
+    {
+      "description": "SAPO TH SEAFOOD \u2014 LARGE",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "172000",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.228,
+          0.484,
+          0.617,
+          0.521
+        ]
+      }
+    },
+    {
+      "description": "POCAI 3 \u2014 MEDIUM",
+      "quantity": "2",
+      "unit_price": "111000",
+      "amount": "222000",
+      "confidence": 0.93,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.228,
+          0.526,
+          0.617,
+          0.563
+        ]
+      }
+    },
+    {
+      "description": "GURAME FILLET M ASAM MANIS",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "163000",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.228,
+          0.566,
+          0.617,
+          0.607
+        ]
+      }
+    },
+    {
+      "description": "BIHUN GORENG JJ \u2014 LARGE",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "116000",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.228,
+          0.61,
+          0.617,
+          0.652
+        ]
+      }
+    },
+    {
+      "description": "ICED TEA",
+      "quantity": "5",
+      "unit_price": "12000",
+      "amount": "60000",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.228,
+          0.656,
+          0.617,
+          0.675
+        ]
+      }
+    },
+    {
+      "description": "NASI PUTIH",
+      "quantity": "7",
+      "unit_price": "10000",
+      "amount": "70000",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.228,
+          0.677,
+          0.617,
+          0.695
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The issuer details in the upper portion of the receipt are obscured.",
+    "No currency mark or currency name is legible in the visible receipt content."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 2679,
+      "total_tokens": 9923,
+      "elapsed_s": 24.43
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "1343000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='1343000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '1,213,000 60,000 70,000 1,343,000 SERVICE CHARGE 80, 580\u015a\u0161'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4865,
+                  0.7974,
+                  0.6167,
+                  0.8213
+                ],
+                "line_bbox": [
+                  0.2594,
+                  0.7974,
+                  0.6167,
+                  0.8213
+                ],
+                "text": "SUBTOTAL 1,343,000",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "142358",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='142358'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '70,000 1,343,000 80, 580\u015a\u0161 142,358 DU 1,565,938'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5131,
+                  0.8432999999999999,
+                  0.6167,
+                  0.865
+                ],
+                "line_bbox": [
+                  0.2595,
+                  0.8414,
+                  0.6167,
+                  0.865
+                ],
+                "text": "Tax 10% 142,358",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "1565938",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1565938'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUBTOTAL 1,343,000 SERVICE CHARGE 80, 580\u015a\u0161 Tax 10%'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.2596,
+                  0.8646,
+                  0.6018,
+                  0.9083
+                ],
+                "line_bbox": [
+                  0.2596,
+                  0.8646,
+                  0.6018,
+                  0.9083
+                ],
+                "text": "DU 1,565,938",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

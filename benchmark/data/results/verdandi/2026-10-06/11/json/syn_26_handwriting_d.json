@@ -1,0 +1,791 @@
+{
+  "selected_document": {
+    "name": "BLUE HORIZON CARGO SERVICES",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page identifies BLUE HORIZON CARGO SERVICES and is headed \u201cTAX INVOICE\u201d; it shows an invoice number, billed cargo service charges, subtotal, tax, and total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/25-26/114",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.206,
+          0.171,
+          0.409,
+          0.185
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/25-26/114'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX INVOICE Invoice No: INV/25-26/114 Date: 05-08-2025'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.059,
+                0.16459999999999997,
+                0.413,
+                0.1896
+              ],
+              "line_bbox": [
+                0.059,
+                0.16459999999999997,
+                0.413,
+                0.1896
+              ],
+              "text": "Invoice No: INV/25-26/114",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "05-08-2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.133,
+          0.201,
+          0.29,
+          0.215
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='05-08-2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: INV/25-26/114 Date: 05-08-2025 BilL TO: STERLING'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.059,
+                0.19379999999999997,
+                0.295,
+                0.2188
+              ],
+              "line_bbox": [
+                0.059,
+                0.19379999999999997,
+                0.295,
+                0.2188
+              ],
+              "text": "Date: 05-08-2025",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "BLUE HORIZON CARGO SERVICES",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.062,
+          0.077,
+          0.75,
+          0.096
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='BLUE HORIZON CARGO SERVICES'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BLUE HORIZON CARGO SERVICES TAX INVOICE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.059,
+                0.07079999999999997,
+                0.7493,
+                0.10419999999999996
+              ],
+              "line_bbox": [
+                0.059,
+                0.07079999999999997,
+                0.7493,
+                0.10419999999999996
+              ],
+              "text": "BLUE HORIZON CARGO SERVICES",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "STERLING MARKETING COMPANY",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.16,
+          0.233,
+          0.64,
+          0.251
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='STERLING MARKETING COMPANY'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 05-08-2025 BilL TO: STERLING MARKETING COMPANY'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0588,
+                0.2248,
+                0.6462,
+                0.25560000000000005
+              ],
+              "line_bbox": [
+                0.0588,
+                0.2248,
+                0.6462,
+                0.25560000000000005
+              ],
+              "text": "BilL TO: STERLING MARKETING COMPANY",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "21163.22",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.8,
+          0.453,
+          0.936,
+          0.467
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='21163.22'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '21,163.22 3,809.38'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7964,
+                0.4498,
+                0.9381,
+                0.471
+              ],
+              "line_bbox": [
+                0.5398,
+                0.4478,
+                0.9381,
+                0.47309999999999997
+              ],
+              "text": "subtotal: 21,163.22",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "3809.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.819,
+          0.488,
+          0.936,
+          0.502
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='3809.38'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '21,163.22 3,809.38 24.972.60'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.8171,
+                0.48329999999999995,
+                0.9381,
+                0.5062
+              ],
+              "line_bbox": [
+                0.5369,
+                0.48329999999999995,
+                0.9381,
+                0.5062
+              ],
+              "text": "\u0442\u0430\u0445: 3,809.38",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "24972.60",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.796,
+          0.523,
+          0.936,
+          0.537
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='24972.60'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '3,809.38 24.972.60'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7935,
+                0.5206999999999999,
+                0.9351,
+                0.5398000000000001
+              ],
+              "line_bbox": [
+                0.5398,
+                0.5166999999999999,
+                0.9351,
+                0.5398000000000001
+              ],
+              "text": "Total: 24.972.60",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Cargo insurance",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "9127.00",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.289,
+          0.936,
+          0.312
+        ]
+      }
+    },
+    {
+      "description": "Terminal handling charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "4017.99",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.325,
+          0.936,
+          0.348
+        ]
+      }
+    },
+    {
+      "description": "Warehouse storage charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "4300.25",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.361,
+          0.936,
+          0.384
+        ]
+      }
+    },
+    {
+      "description": "Freight forwarding charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "3717.98",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.393,
+          0.936,
+          0.416
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1639,
+      "total_tokens": 8883,
+      "elapsed_s": 13.36
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/25-26/114",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/25-26/114'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX INVOICE Invoice No: INV/25-26/114 Date: 05-08-2025'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.059,
+                  0.16459999999999997,
+                  0.413,
+                  0.1896
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.16459999999999997,
+                  0.413,
+                  0.1896
+                ],
+                "text": "Invoice No: INV/25-26/114",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "05-08-2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='05-08-2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: INV/25-26/114 Date: 05-08-2025 BilL TO: STERLING'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.059,
+                  0.19379999999999997,
+                  0.295,
+                  0.2188
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.19379999999999997,
+                  0.295,
+                  0.2188
+                ],
+                "text": "Date: 05-08-2025",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "BLUE HORIZON CARGO SERVICES",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='BLUE HORIZON CARGO SERVICES'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BLUE HORIZON CARGO SERVICES TAX INVOICE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.059,
+                  0.07079999999999997,
+                  0.7493,
+                  0.10419999999999996
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.07079999999999997,
+                  0.7493,
+                  0.10419999999999996
+                ],
+                "text": "BLUE HORIZON CARGO SERVICES",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "STERLING MARKETING COMPANY",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='STERLING MARKETING COMPANY'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 05-08-2025 BilL TO: STERLING MARKETING COMPANY'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0588,
+                  0.2248,
+                  0.6462,
+                  0.25560000000000005
+                ],
+                "line_bbox": [
+                  0.0588,
+                  0.2248,
+                  0.6462,
+                  0.25560000000000005
+                ],
+                "text": "BilL TO: STERLING MARKETING COMPANY",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "21163.22",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='21163.22'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '21,163.22 3,809.38'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7964,
+                  0.4498,
+                  0.9381,
+                  0.471
+                ],
+                "line_bbox": [
+                  0.5398,
+                  0.4478,
+                  0.9381,
+                  0.47309999999999997
+                ],
+                "text": "subtotal: 21,163.22",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "3809.38",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='3809.38'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '21,163.22 3,809.38 24.972.60'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.8171,
+                  0.48329999999999995,
+                  0.9381,
+                  0.5062
+                ],
+                "line_bbox": [
+                  0.5369,
+                  0.48329999999999995,
+                  0.9381,
+                  0.5062
+                ],
+                "text": "\u0442\u0430\u0445: 3,809.38",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "24972.60",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='24972.60'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '3,809.38 24.972.60'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7935,
+                  0.5206999999999999,
+                  0.9351,
+                  0.5398000000000001
+                ],
+                "line_bbox": [
+                  0.5398,
+                  0.5166999999999999,
+                  0.9351,
+                  0.5398000000000001
+                ],
+                "text": "Total: 24.972.60",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

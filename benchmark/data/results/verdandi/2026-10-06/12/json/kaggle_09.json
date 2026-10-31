@@ -1,0 +1,620 @@
+{
+  "selected_document": {
+    "name": "LANDOR ASSOCIATES",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed by LANDOR ASSOCIATES and labeled \u201cInvoice\u201d; it shows an invoice number and date, charges for professional services and out-of-pocket expenses, and a total amount this invoice of $839.00.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "332676",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.242,
+          0.207,
+          0.314,
+          0.22
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='332676'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '332676 22 Jun 1990'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.2418,
+                0.20609999999999995,
+                0.3157,
+                0.22099999999999997
+              ],
+              "line_bbox": [
+                0.1091,
+                0.20420000000000005,
+                0.3157,
+                0.22099999999999997
+              ],
+              "text": "Invoice No.: 332676",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "22 Jun 1990",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.241,
+          0.233,
+          0.372,
+          0.247
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='22 Jun 1990' \u2014 format 'date'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '332676 22 Jun 1990 100015-34'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.2419,
+                0.23540000000000005,
+                0.3717,
+                0.2479
+              ],
+              "line_bbox": [
+                0.1121,
+                0.23329999999999995,
+                0.3717,
+                0.2479
+              ],
+              "text": "Date: 22 Jun 1990",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "LANDOR ASSOCIATES",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.511,
+          0.144,
+          0.88,
+          0.159
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='LANDOR ASSOCIATES'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'LANDOR ASSOCIATES Strategic Design Consultants'",
+            "match": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "PHILIP MORRIS USA",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.241,
+          0.289,
+          0.441,
+          0.305
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='PHILIP MORRIS USA'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '100015-34 PHILIP MORRIS USA 120 PARK AVENUE NEW'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.2389,
+                0.28959999999999997,
+                0.4425,
+                0.30210000000000004
+              ],
+              "line_bbox": [
+                0.1091,
+                0.2875,
+                0.4425,
+                0.30210000000000004
+              ],
+              "text": "To: PHILIP MORRIS USA",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.411,
+          0.579,
+          0.576,
+          0.591
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'PLUS OR MINUS 20 * PLUS OUT-OF-POCKETS TO' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "839.00",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.652,
+          0.809,
+          0.738,
+          0.822
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='839.00'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '$839.00 NOTE: OUT OF POCKET EXPENSES TO BE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.649,
+                0.8104,
+                0.7375,
+                0.8229
+              ],
+              "line_bbox": [
+                0.1119,
+                0.8057,
+                0.7375,
+                0.8229
+              ],
+              "text": "TOTAL AMOUNT THIS INVOICE $839.00",
+              "lineno": 29,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [],
+  "notes": [
+    "No distinct charge-table header and body rows are visible; the page presents billing amounts as summary lines."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1389,
+      "total_tokens": 8633,
+      "elapsed_s": 13.61
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "332676",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='332676'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '332676 22 Jun 1990'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.2418,
+                  0.20609999999999995,
+                  0.3157,
+                  0.22099999999999997
+                ],
+                "line_bbox": [
+                  0.1091,
+                  0.20420000000000005,
+                  0.3157,
+                  0.22099999999999997
+                ],
+                "text": "Invoice No.: 332676",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "22 Jun 1990",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='22 Jun 1990' \u2014 format 'date'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '332676 22 Jun 1990 100015-34'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.2419,
+                  0.23540000000000005,
+                  0.3717,
+                  0.2479
+                ],
+                "line_bbox": [
+                  0.1121,
+                  0.23329999999999995,
+                  0.3717,
+                  0.2479
+                ],
+                "text": "Date: 22 Jun 1990",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "LANDOR ASSOCIATES",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='LANDOR ASSOCIATES'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'LANDOR ASSOCIATES Strategic Design Consultants'",
+              "match": null
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "PHILIP MORRIS USA",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='PHILIP MORRIS USA'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '100015-34 PHILIP MORRIS USA 120 PARK AVENUE NEW'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.2389,
+                  0.28959999999999997,
+                  0.4425,
+                  0.30210000000000004
+                ],
+                "line_bbox": [
+                  0.1091,
+                  0.2875,
+                  0.4425,
+                  0.30210000000000004
+                ],
+                "text": "To: PHILIP MORRIS USA",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'PLUS OR MINUS 20 * PLUS OUT-OF-POCKETS TO' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "839.00",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='839.00'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '$839.00 NOTE: OUT OF POCKET EXPENSES TO BE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.649,
+                  0.8104,
+                  0.7375,
+                  0.8229
+                ],
+                "line_bbox": [
+                  0.1119,
+                  0.8057,
+                  0.7375,
+                  0.8229
+                ],
+                "text": "TOTAL AMOUNT THIS INVOICE $839.00",
+                "lineno": 29,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 1
+        },
+        "flag_rows": 4
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "22 Jun 1990",
+            "secondary": "22 Jun 1990",
+            "agree": true
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "a59f3aca661c850a92c29e6e7a8d40ef2a7f193e17f42dbf194a80a6b935c781"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5847,
+          "completion_tokens": 462,
+          "total_tokens": 6309,
+          "elapsed_s": 10.06
+        }
+      }
+    }
+  }
+}

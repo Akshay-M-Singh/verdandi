@@ -1,0 +1,468 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued receipt with multiple charge rows, item count, SUBTOTAL, TOTAL, and CARD payment amount.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "24500",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.61,
+          0.75,
+          0.71,
+          0.78
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='24500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '24,500 24,500 24,50U'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.7354,
+                0.6991,
+                0.7625
+              ],
+              "line_bbox": [
+                0.2714,
+                0.7333000000000001,
+                0.6991,
+                0.7625
+              ],
+              "text": "SUBTOTAL 24,500",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "24500",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.61,
+          0.78,
+          0.71,
+          0.81
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='24500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '24,500 24,500 24,50U'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.7354,
+                0.6991,
+                0.7625
+              ],
+              "line_bbox": [
+                0.2714,
+                0.7333000000000001,
+                0.6991,
+                0.7625
+              ],
+              "text": "SUBTOTAL 24,500",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "TALAH UNGU",
+      "quantity": "1",
+      "unit_price": "6500",
+      "amount": "6500",
+      "confidence": 0.78,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.34,
+          0.71,
+          0.43
+        ]
+      }
+    },
+    {
+      "description": "AREH - AREH",
+      "quantity": "1",
+      "unit_price": "8000",
+      "amount": "8000",
+      "confidence": 0.78,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.43,
+          0.71,
+          0.52
+        ]
+      }
+    },
+    {
+      "description": "LEMPER",
+      "quantity": "2",
+      "unit_price": "9000",
+      "amount": "18000",
+      "confidence": 0.75,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.52,
+          0.71,
+          0.61
+        ]
+      }
+    },
+    {
+      "description": "MIKA SEDANG",
+      "quantity": "1",
+      "unit_price": "0",
+      "amount": "0",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.61,
+          0.71,
+          0.66
+        ]
+      }
+    },
+    {
+      "description": "PLASTIK KECIL",
+      "quantity": "1",
+      "unit_price": "0",
+      "amount": "0",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.66,
+          0.71,
+          0.71
+        ]
+      }
+    },
+    {
+      "description": "TEH KOTAK",
+      "quantity": "1",
+      "unit_price": "5000",
+      "amount": "5000",
+      "confidence": 0.88,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.71,
+          0.71,
+          0.76
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The issuer name, receipt number, date, buyer, and currency are not legible or explicitly visible.",
+    "The receipt visibly includes discount lines for some items; the extracted line items represent the printed charge rows."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2176,
+      "total_tokens": 5831,
+      "elapsed_s": 15.53
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "24500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='24500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '24,500 24,500 24,50U'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.7354,
+                  0.6991,
+                  0.7625
+                ],
+                "line_bbox": [
+                  0.2714,
+                  0.7333000000000001,
+                  0.6991,
+                  0.7625
+                ],
+                "text": "SUBTOTAL 24,500",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "24500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='24500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '24,500 24,500 24,50U'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.7354,
+                  0.6991,
+                  0.7625
+                ],
+                "line_bbox": [
+                  0.2714,
+                  0.7333000000000001,
+                  0.6991,
+                  0.7625
+                ],
+                "text": "SUBTOTAL 24,500",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 5
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

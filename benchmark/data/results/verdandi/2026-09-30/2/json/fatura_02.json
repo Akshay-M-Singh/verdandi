@@ -1,0 +1,867 @@
+{
+  "selected_document": {
+    "name": "Berg, Ward and Wright",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly contains a TAX INVOICE issued by Berg, Ward and Wright, with an invoice number, buyer details, billed line items, subtotal, VAT, and total.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV18097255",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.428,
+          0.367,
+          0.659,
+          0.384
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV18097255'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # INV18097255'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4248,
+                0.3667,
+                0.6608,
+                0.38539999999999996
+              ],
+              "line_bbox": [
+                0.4248,
+                0.3667,
+                0.6608,
+                0.38539999999999996
+              ],
+              "text": "INVOICE # INV18097255",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "02-Apr-1997",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.431,
+          0.313,
+          0.604,
+          0.33
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='02-Apr-1997'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Due Date : 27-Jul-1994 Date: 02-Apr-1997'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4277,
+                0.3125,
+                0.6018,
+                0.33130000000000004
+              ],
+              "line_bbox": [
+                0.4277,
+                0.3125,
+                0.6018,
+                0.33130000000000004
+              ],
+              "text": "Date: 02-Apr-1997",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Berg, Ward and Wright",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.16,
+          0.235,
+          0.18
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Berg, Ward and Wright'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Berg, Ward and Wright Address: 5776 Whitney Meadow'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                -0.0,
+                0.1604,
+                0.2271,
+                0.18120000000000003
+              ],
+              "line_bbox": [
+                -0.0,
+                0.1542,
+                0.7876,
+                0.18120000000000003
+              ],
+              "text": "Berg, Ward and Wright Buyer : Joshua Jimenez",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Joshua Jimenez",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.557,
+          0.155,
+          0.785,
+          0.176
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Joshua Jimenez'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Buyer : Joshua Jimenez 5776 Whitney Meadow West'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5546,
+                0.1542,
+                0.7876,
+                0.17290000000000005
+              ],
+              "line_bbox": [
+                -0.0,
+                0.1542,
+                0.7876,
+                0.18120000000000003
+              ],
+              "text": "Berg, Ward and Wright Buyer : Joshua Jimenez",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.86,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.828,
+          0.826,
+          0.856,
+          0.843
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'TAX: VAT (6.25%): 23.95 $ TOTAL: 392.61 $' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "383.26",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.68,
+          0.666,
+          0.93,
+          0.685
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='383.26'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 383.26 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6755,
+                0.6646000000000001,
+                0.9086,
+                0.6875
+              ],
+              "line_bbox": [
+                0.6755,
+                0.6646000000000001,
+                0.9086,
+                0.6875
+              ],
+              "text": "SUB_TOTAL : 383.26 $",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "23.95",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.68,
+          0.773,
+          0.932,
+          0.792
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='23.95'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX: VAT (6.25%): 23.95 $ TOTAL: 392.61 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6755,
+                0.7708,
+                0.9322,
+                0.7917
+              ],
+              "line_bbox": [
+                0.6755,
+                0.7708,
+                0.9322,
+                0.7917
+              ],
+              "text": "TAX: VAT (6.25%): 23.95 $",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "392.61",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.68,
+          0.827,
+          0.932,
+          0.846
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='392.61'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 392.61 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6755,
+                0.8229,
+                0.8496,
+                0.8438
+              ],
+              "line_bbox": [
+                0.6755,
+                0.8229,
+                0.8496,
+                0.8438
+              ],
+              "text": "TOTAL: 392.61 $",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Cell guy church.",
+      "quantity": "2.00",
+      "unit_price": "97.38",
+      "amount": null,
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.012,
+          0.529,
+          0.933,
+          0.548
+        ]
+      }
+    },
+    {
+      "description": "Consider loss TV.",
+      "quantity": "4.00",
+      "unit_price": "34.59",
+      "amount": null,
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.012,
+          0.549,
+          0.933,
+          0.568
+        ]
+      }
+    },
+    {
+      "description": "Team lay could.",
+      "quantity": "2.00",
+      "unit_price": "12.41",
+      "amount": null,
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.012,
+          0.569,
+          0.933,
+          0.588
+        ]
+      }
+    },
+    {
+      "description": "Usually.",
+      "quantity": "3.00",
+      "unit_price": "8.44",
+      "amount": null,
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.012,
+          0.589,
+          0.933,
+          0.608
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The table prints Description, Quantity, and Price; no separate row-total amount is printed for the line items."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 2,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7339,
+      "completion_tokens": 3259,
+      "total_tokens": 10598,
+      "elapsed_s": 37.25
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV18097255",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV18097255'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # INV18097255'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4248,
+                  0.3667,
+                  0.6608,
+                  0.38539999999999996
+                ],
+                "line_bbox": [
+                  0.4248,
+                  0.3667,
+                  0.6608,
+                  0.38539999999999996
+                ],
+                "text": "INVOICE # INV18097255",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "02-Apr-1997",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='02-Apr-1997'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Due Date : 27-Jul-1994 Date: 02-Apr-1997'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4277,
+                  0.3125,
+                  0.6018,
+                  0.33130000000000004
+                ],
+                "line_bbox": [
+                  0.4277,
+                  0.3125,
+                  0.6018,
+                  0.33130000000000004
+                ],
+                "text": "Date: 02-Apr-1997",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Berg, Ward and Wright",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Berg, Ward and Wright'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Berg, Ward and Wright Address: 5776 Whitney Meadow'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  -0.0,
+                  0.1604,
+                  0.2271,
+                  0.18120000000000003
+                ],
+                "line_bbox": [
+                  -0.0,
+                  0.1542,
+                  0.7876,
+                  0.18120000000000003
+                ],
+                "text": "Berg, Ward and Wright Buyer : Joshua Jimenez",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Joshua Jimenez",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Joshua Jimenez'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Buyer : Joshua Jimenez 5776 Whitney Meadow West'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5546,
+                  0.1542,
+                  0.7876,
+                  0.17290000000000005
+                ],
+                "line_bbox": [
+                  -0.0,
+                  0.1542,
+                  0.7876,
+                  0.18120000000000003
+                ],
+                "text": "Berg, Ward and Wright Buyer : Joshua Jimenez",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'TAX: VAT (6.25%): 23.95 $ TOTAL: 392.61 $' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "383.26",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='383.26'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 383.26 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6755,
+                  0.6646000000000001,
+                  0.9086,
+                  0.6875
+                ],
+                "line_bbox": [
+                  0.6755,
+                  0.6646000000000001,
+                  0.9086,
+                  0.6875
+                ],
+                "text": "SUB_TOTAL : 383.26 $",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "23.95",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='23.95'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX: VAT (6.25%): 23.95 $ TOTAL: 392.61 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6755,
+                  0.7708,
+                  0.9322,
+                  0.7917
+                ],
+                "line_bbox": [
+                  0.6755,
+                  0.7708,
+                  0.9322,
+                  0.7917
+                ],
+                "text": "TAX: VAT (6.25%): 23.95 $",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "392.61",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='392.61'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 392.61 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6755,
+                  0.8229,
+                  0.8496,
+                  0.8438
+                ],
+                "line_bbox": [
+                  0.6755,
+                  0.8229,
+                  0.8496,
+                  0.8438
+                ],
+                "text": "TOTAL: 392.61 $",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 1
+        },
+        "flag_rows": 7
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "02-Apr-1997",
+            "secondary": "02-Apr-1997",
+            "agree": true
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "106367c348aeb2aedfb299cdbcadcee81e3e2fd9797ea4ae26b4cddb2f084df1"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2478,
+          "completion_tokens": 392,
+          "total_tokens": 2870,
+          "elapsed_s": 5.95
+        }
+      }
+    }
+  }
+}

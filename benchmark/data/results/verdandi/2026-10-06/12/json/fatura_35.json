@@ -1,0 +1,770 @@
+{
+  "selected_document": {
+    "name": "COMMERCIAL INVOICE",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cCOMMERCIAL INVOICE\u201d and shows a buyer, a dated charge table with quantities and prices, and subtotal, tax, and total amounts.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "31-Jul-2004",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.094,
+          0.202,
+          0.111
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='31-Jul-2004'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 31-Jul-2004'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0324,
+                0.08130000000000004,
+                0.2006,
+                0.09999999999999998
+              ],
+              "line_bbox": [
+                0.0324,
+                0.08130000000000004,
+                0.7227,
+                0.10209999999999997
+              ],
+              "text": "Date: 31-Jul-2004 Buyer :James Thompson",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "James Thompson",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.476,
+          0.094,
+          0.722,
+          0.112
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='James Thompson'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Buyer :James Thompson 86143 Ruth Isle Apt. 608'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.472,
+                0.08330000000000004,
+                0.7227,
+                0.10209999999999997
+              ],
+              "line_bbox": [
+                0.0324,
+                0.08130000000000004,
+                0.7227,
+                0.10209999999999997
+              ],
+              "text": "Date: 31-Jul-2004 Buyer :James Thompson",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.171,
+          0.831,
+          0.366,
+          0.848
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'TOTAL: 959.48 EUR Address: 86143 Ruth Isle Apt.'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1652,
+                0.7312000000000001,
+                0.3717,
+                0.7562
+              ],
+              "line_bbox": [
+                0.1652,
+                0.7312000000000001,
+                0.3717,
+                0.7562
+              ],
+              "text": "TOTAL: 959.48 EUR",
+              "lineno": 20,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "940.30",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.174,
+          0.738,
+          0.377,
+          0.756
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='940.30'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 940.30 EUR TAX:VAT (5.13%): 48.24 EUR TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1711,
+                0.6478999999999999,
+                0.4336,
+                0.6771
+              ],
+              "line_bbox": [
+                0.1711,
+                0.6478999999999999,
+                0.4336,
+                0.6771
+              ],
+              "text": "SUB_TOTAL: 940.30 EUR",
+              "lineno": 18,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "48.24",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.174,
+          0.764,
+          0.456,
+          0.781
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='48.24'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 940.30 EUR TAX:VAT (5.13%): 48.24 EUR TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1711,
+                0.6708000000000001,
+                0.4602,
+                0.6958
+              ],
+              "line_bbox": [
+                0.1711,
+                0.6708000000000001,
+                0.4602,
+                0.6958
+              ],
+              "text": "TAX:VAT (5.13%): 48.24 EUR",
+              "lineno": 19,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "959.48",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.171,
+          0.831,
+          0.366,
+          0.848
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='959.48'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'TOTAL: 959.48 EUR Address: 86143 Ruth Isle Apt.'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1652,
+                0.7312000000000001,
+                0.3717,
+                0.7562
+              ],
+              "line_bbox": [
+                0.1652,
+                0.7312000000000001,
+                0.3717,
+                0.7562
+              ],
+              "text": "TOTAL: 959.48 EUR",
+              "lineno": 20,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Hope fund boy:",
+      "quantity": "3.00",
+      "unit_price": null,
+      "amount": "78.55",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.044,
+          0.594,
+          0.971,
+          0.618
+        ]
+      }
+    },
+    {
+      "description": "Something.",
+      "quantity": "1.00",
+      "unit_price": null,
+      "amount": "12.37",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.044,
+          0.618,
+          0.971,
+          0.642
+        ]
+      }
+    },
+    {
+      "description": "Oil different.",
+      "quantity": "6.00",
+      "unit_price": null,
+      "amount": "85.06",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.044,
+          0.642,
+          0.971,
+          0.666
+        ]
+      }
+    },
+    {
+      "description": "Produce south themselves.",
+      "quantity": "6.00",
+      "unit_price": null,
+      "amount": "30.32",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.044,
+          0.666,
+          0.971,
+          0.689
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1680,
+      "total_tokens": 8924,
+      "elapsed_s": 14.86
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": "31-Jul-2004",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='31-Jul-2004'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 31-Jul-2004'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0324,
+                  0.08130000000000004,
+                  0.2006,
+                  0.09999999999999998
+                ],
+                "line_bbox": [
+                  0.0324,
+                  0.08130000000000004,
+                  0.7227,
+                  0.10209999999999997
+                ],
+                "text": "Date: 31-Jul-2004 Buyer :James Thompson",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": "James Thompson",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='James Thompson'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Buyer :James Thompson 86143 Ruth Isle Apt. 608'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.472,
+                  0.08330000000000004,
+                  0.7227,
+                  0.10209999999999997
+                ],
+                "line_bbox": [
+                  0.0324,
+                  0.08130000000000004,
+                  0.7227,
+                  0.10209999999999997
+                ],
+                "text": "Date: 31-Jul-2004 Buyer :James Thompson",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'TOTAL: 959.48 EUR Address: 86143 Ruth Isle Apt.'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1652,
+                  0.7312000000000001,
+                  0.3717,
+                  0.7562
+                ],
+                "line_bbox": [
+                  0.1652,
+                  0.7312000000000001,
+                  0.3717,
+                  0.7562
+                ],
+                "text": "TOTAL: 959.48 EUR",
+                "lineno": 20,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "940.30",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='940.30'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 940.30 EUR TAX:VAT (5.13%): 48.24 EUR TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1711,
+                  0.6478999999999999,
+                  0.4336,
+                  0.6771
+                ],
+                "line_bbox": [
+                  0.1711,
+                  0.6478999999999999,
+                  0.4336,
+                  0.6771
+                ],
+                "text": "SUB_TOTAL: 940.30 EUR",
+                "lineno": 18,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "48.24",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='48.24'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 940.30 EUR TAX:VAT (5.13%): 48.24 EUR TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1711,
+                  0.6708000000000001,
+                  0.4602,
+                  0.6958
+                ],
+                "line_bbox": [
+                  0.1711,
+                  0.6708000000000001,
+                  0.4602,
+                  0.6958
+                ],
+                "text": "TAX:VAT (5.13%): 48.24 EUR",
+                "lineno": 19,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "959.48",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='959.48'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'TOTAL: 959.48 EUR Address: 86143 Ruth Isle Apt.'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1652,
+                  0.7312000000000001,
+                  0.3717,
+                  0.7562
+                ],
+                "line_bbox": [
+                  0.1652,
+                  0.7312000000000001,
+                  0.3717,
+                  0.7562
+                ],
+                "text": "TOTAL: 959.48 EUR",
+                "lineno": 20,
+                "band": "loose"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "currency": {
+            "primary": "EUR",
+            "secondary": "EUR",
+            "agree": true
+          },
+          "subtotal": {
+            "primary": "940.30",
+            "secondary": "940.30",
+            "agree": true
+          },
+          "tax_total": {
+            "primary": "48.24",
+            "secondary": "48.24",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "959.48",
+            "secondary": "959.48",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "c73893359fe8d91ae134e80cf37efc1635befcd0cdf0398fac74025333205fe3"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5904,
+          "completion_tokens": 525,
+          "total_tokens": 6429,
+          "elapsed_s": 6.13
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,774 @@
+{
+  "selected_document": {
+    "name": "Knight, Huffman and Moore",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cINVOICE,\u201d identifies Knight, Huffman and Moore, shows an invoice number and date, and includes a charge table with quantities, prices, amounts, and printed totals.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/31-86/458",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.785,
+          0.154,
+          0.938,
+          0.17
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/31-86/458'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number INV/31-86/458 Date: 23-Nov-2008'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6519,
+                0.14790000000000003,
+                0.941,
+                0.17079999999999995
+              ],
+              "line_bbox": [
+                0.0796,
+                0.14790000000000003,
+                0.941,
+                0.17710000000000004
+              ],
+              "text": "Email:andrewcowan@example.com Invoice number INV/31-86/458",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "23-Nov-2008",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.769,
+          0.202,
+          0.886,
+          0.218
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='23-Nov-2008'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number INV/31-86/458 Date: 23-Nov-2008'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.708,
+                0.19379999999999997,
+                0.8909,
+                0.2167
+              ],
+              "line_bbox": [
+                0.708,
+                0.19379999999999997,
+                0.8909,
+                0.2167
+              ],
+              "text": "Date: 23-Nov-2008",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Knight, Huffman and Moore",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.09,
+          0.084,
+          0.354,
+          0.099
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Knight, Huffman and Moore'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Knight, Huffman and Moore'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0819,
+                0.07669999999999999,
+                0.3605,
+                0.10640000000000005
+              ],
+              "line_bbox": [
+                0.0819,
+                0.07669999999999999,
+                0.5044,
+                0.10640000000000005
+              ],
+              "text": "Knight, Huffman and Moore IV\u20b4",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.701,
+          0.651,
+          0.747,
+          0.668
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 330.61 USD TAX:VAT (3.62%): 11.98 USD TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5422,
+                0.5895,
+                0.806,
+                0.6202
+              ],
+              "line_bbox": [
+                0.5422,
+                0.5895,
+                0.806,
+                0.6202
+              ],
+              "text": "SUB_TOTAL: 330.61 USD",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "330.61",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.684,
+          0.602,
+          0.761,
+          0.619
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='330.61'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 330.61 USD TAX:VAT (3.62%): 11.98 USD TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5422,
+                0.5895,
+                0.806,
+                0.6202
+              ],
+              "line_bbox": [
+                0.5422,
+                0.5895,
+                0.806,
+                0.6202
+              ],
+              "text": "SUB_TOTAL: 330.61 USD",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "11.98",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.731,
+          0.627,
+          0.78,
+          0.644
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='11.98'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 330.61 USD TAX:VAT (3.62%): 11.98 USD TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5428,
+                0.6188,
+                0.8319,
+                0.6396
+              ],
+              "line_bbox": [
+                0.5428,
+                0.6188,
+                0.8319,
+                0.6396
+              ],
+              "text": "TAX:VAT (3.62%): 11.98 USD",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "331.05",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.633,
+          0.651,
+          0.705,
+          0.668
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='331.05'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 330.61 USD TAX:VAT (3.62%): 11.98 USD TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5457,
+                0.6416999999999999,
+                0.7463,
+                0.6625
+              ],
+              "line_bbox": [
+                0.5457,
+                0.6416999999999999,
+                0.7463,
+                0.6625
+              ],
+              "text": "TOTAL: 331.05 USD",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Woman exactly.",
+      "quantity": "6.00",
+      "unit_price": "1.15",
+      "amount": "6.90",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.457,
+          0.868,
+          0.475
+        ]
+      }
+    },
+    {
+      "description": "Heart majority guess..",
+      "quantity": "4.00",
+      "unit_price": "47.17",
+      "amount": "188.68",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.48,
+          0.868,
+          0.499
+        ]
+      }
+    },
+    {
+      "description": "Describe hundred.",
+      "quantity": "3.00",
+      "unit_price": "45.01",
+      "amount": "135.03",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.502,
+          0.868,
+          0.521
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1691,
+      "total_tokens": 8935,
+      "elapsed_s": 14.07
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/31-86/458",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/31-86/458'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number INV/31-86/458 Date: 23-Nov-2008'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6519,
+                  0.14790000000000003,
+                  0.941,
+                  0.17079999999999995
+                ],
+                "line_bbox": [
+                  0.0796,
+                  0.14790000000000003,
+                  0.941,
+                  0.17710000000000004
+                ],
+                "text": "Email:andrewcowan@example.com Invoice number INV/31-86/458",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "23-Nov-2008",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='23-Nov-2008'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number INV/31-86/458 Date: 23-Nov-2008'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.708,
+                  0.19379999999999997,
+                  0.8909,
+                  0.2167
+                ],
+                "line_bbox": [
+                  0.708,
+                  0.19379999999999997,
+                  0.8909,
+                  0.2167
+                ],
+                "text": "Date: 23-Nov-2008",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Knight, Huffman and Moore",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Knight, Huffman and Moore'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Knight, Huffman and Moore'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0819,
+                  0.07669999999999999,
+                  0.3605,
+                  0.10640000000000005
+                ],
+                "line_bbox": [
+                  0.0819,
+                  0.07669999999999999,
+                  0.5044,
+                  0.10640000000000005
+                ],
+                "text": "Knight, Huffman and Moore IV\u20b4",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 330.61 USD TAX:VAT (3.62%): 11.98 USD TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5422,
+                  0.5895,
+                  0.806,
+                  0.6202
+                ],
+                "line_bbox": [
+                  0.5422,
+                  0.5895,
+                  0.806,
+                  0.6202
+                ],
+                "text": "SUB_TOTAL: 330.61 USD",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "330.61",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='330.61'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 330.61 USD TAX:VAT (3.62%): 11.98 USD TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5422,
+                  0.5895,
+                  0.806,
+                  0.6202
+                ],
+                "line_bbox": [
+                  0.5422,
+                  0.5895,
+                  0.806,
+                  0.6202
+                ],
+                "text": "SUB_TOTAL: 330.61 USD",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "11.98",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='11.98'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 330.61 USD TAX:VAT (3.62%): 11.98 USD TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5428,
+                  0.6188,
+                  0.8319,
+                  0.6396
+                ],
+                "line_bbox": [
+                  0.5428,
+                  0.6188,
+                  0.8319,
+                  0.6396
+                ],
+                "text": "TAX:VAT (3.62%): 11.98 USD",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "331.05",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='331.05'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 330.61 USD TAX:VAT (3.62%): 11.98 USD TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5457,
+                  0.6416999999999999,
+                  0.7463,
+                  0.6625
+                ],
+                "line_bbox": [
+                  0.5457,
+                  0.6416999999999999,
+                  0.7463,
+                  0.6625
+                ],
+                "text": "TOTAL: 331.05 USD",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

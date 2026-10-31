@@ -1,0 +1,910 @@
+{
+  "id": "30b132ca-ed44-4340-bc6b-a4dfeaaa3343",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T12:50:51Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "Kroket\n\n\n<table>\n<tr>\n<td>1x</td>\n<td>@12.000</td>\n<td>12.000</td>\n</tr>\n<tr>\n<td>Arem</td>\n<td>Arem</td>\n<td></td>\n</tr>\n<tr>\n<td>2x</td>\n<td>@12.000</td>\n<td>24.000</td>\n</tr>\n</table>\n\n\nSubtotal\n\nRp 36.000\n\nTax (10.0%)\n\nRp 3.600\n\nTotal\n\nRp 39.600\n\nOther\n\nRp 39.600\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "valueString": "Kroket",
+            "spans": [
+              {
+                "offset": 0,
+                "length": 6
+              }
+            ],
+            "confidence": 0.892,
+            "source": "D(1,2.9517,5.0950,3.5126,5.0960,3.5126,5.2699,2.9517,5.2705)"
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "valueString": "IDR",
+            "spans": [
+              {
+                "offset": 258,
+                "length": 2
+              }
+            ],
+            "confidence": 0.315,
+            "source": "D(1,5.0277,7.2975,5.2206,7.2976,5.2206,7.5032,5.0277,7.5031)"
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 36000,
+            "spans": [
+              {
+                "offset": 199,
+                "length": 9
+              }
+            ],
+            "confidence": 0.849,
+            "source": "D(1,5.0076,6.3383,5.8348,6.3383,5.8348,6.5324,5.0076,6.5324)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 3600,
+            "spans": [
+              {
+                "offset": 223,
+                "length": 8
+              }
+            ],
+            "confidence": 0.848,
+            "source": "D(1,5.1004,6.5781,5.8428,6.5781,5.8428,6.7723,5.1004,6.7723)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 39600,
+            "spans": [
+              {
+                "offset": 240,
+                "length": 9
+              }
+            ],
+            "confidence": 0.856,
+            "source": "D(1,5.0212,7.0558,5.8711,7.0458,5.8736,7.2568,5.0237,7.2668)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Arem",
+                    "spans": [
+                      {
+                        "offset": 82,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.857,
+                    "source": "D(1,2.9577,5.6464,3.3200,5.6473,3.3200,5.8240,2.9577,5.8217)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 26,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.856,
+                    "source": "D(1,2.9698,5.3314,3.1353,5.3433,3.1353,5.5092,2.9698,5.4908)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 12000,
+                    "spans": [
+                      {
+                        "offset": 38,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.853,
+                    "source": "D(1,3.3976,5.3198,4.0332,5.3202,4.0331,5.5078,3.3975,5.5074)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 12000,
+                    "spans": [
+                      {
+                        "offset": 55,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.856,
+                    "source": "D(1,5.2739,5.3210,5.8105,5.3173,5.8105,5.5022,5.2739,5.5054)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Arem",
+                    "spans": [
+                      {
+                        "offset": 96,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.655,
+                    "source": "D(1,3.3985,5.6474,3.7789,5.6484,3.7789,5.8253,3.3985,5.8244)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 131,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.848,
+                    "source": "D(1,2.9497,5.8795,3.1347,5.8782,3.1347,6.0624,2.9497,6.0629)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 12000,
+                    "spans": [
+                      {
+                        "offset": 143,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.846,
+                    "source": "D(1,3.3895,5.8758,4.0351,5.8720,4.0362,6.0578,3.3906,6.0616)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 24000,
+                    "spans": [
+                      {
+                        "offset": 160,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.857,
+                    "source": "D(1,5.2577,5.8701,5.8146,5.8701,5.8146,6.0528,5.2577,6.0528)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 268
+              }
+            ],
+            "words": [
+              {
+                "content": "Kroket",
+                "span": {
+                  "offset": 0,
+                  "length": 6
+                },
+                "confidence": 0.988,
+                "source": "D(1,2.9517,5.095,3.5126,5.096,3.5126,5.2699,2.9517,5.2705)"
+              },
+              {
+                "content": "1x",
+                "span": {
+                  "offset": 26,
+                  "length": 2
+                },
+                "confidence": 0.714,
+                "source": "D(1,2.9698,5.3314,3.1353,5.3433,3.1353,5.5092,2.9698,5.4908)"
+              },
+              {
+                "content": "@",
+                "span": {
+                  "offset": 38,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,3.3976,5.3218,3.4862,5.3219,3.4862,5.5054,3.3976,5.5058)"
+              },
+              {
+                "content": "12.000",
+                "span": {
+                  "offset": 39,
+                  "length": 6
+                },
+                "confidence": 0.972,
+                "source": "D(1,3.5045,5.3219,4.0331,5.3202,4.0331,5.5078,3.5045,5.5054)"
+              },
+              {
+                "content": "12.000",
+                "span": {
+                  "offset": 55,
+                  "length": 6
+                },
+                "confidence": 0.987,
+                "source": "D(1,5.2739,5.321,5.8105,5.3173,5.8105,5.5022,5.2739,5.5054)"
+              },
+              {
+                "content": "Arem",
+                "span": {
+                  "offset": 82,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.9577,5.6464,3.32,5.6473,3.32,5.824,2.9577,5.8217)"
+              },
+              {
+                "content": "Arem",
+                "span": {
+                  "offset": 96,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.3985,5.6474,3.7789,5.6484,3.7789,5.8253,3.3985,5.8244)"
+              },
+              {
+                "content": "2x",
+                "span": {
+                  "offset": 131,
+                  "length": 2
+                },
+                "confidence": 0.927,
+                "source": "D(1,2.9497,5.8795,3.1347,5.8782,3.1347,6.0624,2.9497,6.0629)"
+              },
+              {
+                "content": "@",
+                "span": {
+                  "offset": 143,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.3906,5.8765,3.4831,5.8758,3.4831,6.0611,3.3906,6.0615)"
+              },
+              {
+                "content": "12.000",
+                "span": {
+                  "offset": 144,
+                  "length": 6
+                },
+                "confidence": 0.973,
+                "source": "D(1,3.4985,5.8757,4.0351,5.872,4.0351,6.0575,3.4986,6.061)"
+              },
+              {
+                "content": "24.000",
+                "span": {
+                  "offset": 160,
+                  "length": 6
+                },
+                "confidence": 0.953,
+                "source": "D(1,5.2577,5.8701,5.8146,5.8701,5.8146,6.0528,5.2577,6.0528)"
+              },
+              {
+                "content": "Subtotal",
+                "span": {
+                  "offset": 189,
+                  "length": 8
+                },
+                "confidence": 0.966,
+                "source": "D(1,2.9335,6.3463,3.6578,6.344,3.6578,6.532,2.9335,6.5288)"
+              },
+              {
+                "content": "Rp",
+                "span": {
+                  "offset": 199,
+                  "length": 2
+                },
+                "confidence": 0.985,
+                "source": "D(1,5.0076,6.3383,5.1917,6.3383,5.1917,6.5324,5.0076,6.5324)"
+              },
+              {
+                "content": "36.000",
+                "span": {
+                  "offset": 202,
+                  "length": 6
+                },
+                "confidence": 0.936,
+                "source": "D(1,5.279,6.3383,5.8348,6.3383,5.8348,6.5324,5.279,6.5324)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 210,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.9355,6.5759,3.2022,6.5768,3.2021,6.778,2.9355,6.7709)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 214,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.3184,6.5771,3.3834,6.5773,3.3833,6.7811,3.3184,6.7803)"
+              },
+              {
+                "content": "10.0",
+                "span": {
+                  "offset": 215,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.4039,6.5774,3.7458,6.5782,3.7457,6.7834,3.4038,6.7814)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 219,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.7458,6.5782,3.8483,6.5784,3.8483,6.7831,3.7457,6.7834)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 220,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.8517,6.5784,3.9201,6.5785,3.9201,6.783,3.8517,6.7831)"
+              },
+              {
+                "content": "Rp",
+                "span": {
+                  "offset": 223,
+                  "length": 2
+                },
+                "confidence": 0.991,
+                "source": "D(1,5.1004,6.5781,5.2893,6.5781,5.2893,6.7723,5.1004,6.7723)"
+              },
+              {
+                "content": "3.600",
+                "span": {
+                  "offset": 226,
+                  "length": 5
+                },
+                "confidence": 0.984,
+                "source": "D(1,5.3722,6.5781,5.8428,6.5781,5.8428,6.7723,5.3722,6.7723)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 233,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.9234,7.0623,3.3915,7.0587,3.3915,7.2543,2.9275,7.257)"
+              },
+              {
+                "content": "Rp",
+                "span": {
+                  "offset": 240,
+                  "length": 2
+                },
+                "confidence": 0.99,
+                "source": "D(1,5.0237,7.0566,5.2144,7.0539,5.2143,7.2613,5.0237,7.2668)"
+              },
+              {
+                "content": "39.600",
+                "span": {
+                  "offset": 243,
+                  "length": 6
+                },
+                "confidence": 0.983,
+                "source": "D(1,5.3026,7.0527,5.8711,7.0458,5.8711,7.2523,5.3026,7.2588)"
+              },
+              {
+                "content": "Other",
+                "span": {
+                  "offset": 251,
+                  "length": 5
+                },
+                "confidence": 0.783,
+                "source": "D(1,2.9154,7.3154,3.3855,7.306,3.3855,7.4993,2.9154,7.5)"
+              },
+              {
+                "content": "Rp",
+                "span": {
+                  "offset": 258,
+                  "length": 2
+                },
+                "confidence": 0.985,
+                "source": "D(1,5.0277,7.2975,5.2206,7.2976,5.2206,7.5032,5.0277,7.5031)"
+              },
+              {
+                "content": "39.600",
+                "span": {
+                  "offset": 261,
+                  "length": 6
+                },
+                "confidence": 0.97,
+                "source": "D(1,5.3071,7.2977,5.8791,7.2904,5.8791,7.4959,5.3071,7.5032)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Kroket",
+                "source": "D(1,2.9517,5.095,3.5129,5.096,3.5126,5.2722,2.9514,5.2712)",
+                "span": {
+                  "offset": 0,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1x",
+                "source": "D(1,2.9698,5.3314,3.1354,5.3442,3.1353,5.5092,2.9697,5.4964)",
+                "span": {
+                  "offset": 26,
+                  "length": 2
+                }
+              },
+              {
+                "content": "@12.000",
+                "source": "D(1,3.3976,5.3202,4.0331,5.3202,4.0331,5.5078,3.3976,5.5078)",
+                "span": {
+                  "offset": 38,
+                  "length": 7
+                }
+              },
+              {
+                "content": "12.000",
+                "source": "D(1,5.2728,5.3205,5.8105,5.3173,5.8116,5.5022,5.2739,5.5054)",
+                "span": {
+                  "offset": 55,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Arem Arem",
+                "source": "D(1,2.9577,5.6464,3.7793,5.6484,3.7789,5.8255,2.9573,5.8235)",
+                "span": {
+                  "offset": 82,
+                  "length": 18
+                }
+              },
+              {
+                "content": "2x @12.000",
+                "source": "D(1,2.9484,5.8795,4.0351,5.872,4.0364,6.0576,2.9497,6.0642)",
+                "span": {
+                  "offset": 131,
+                  "length": 19
+                }
+              },
+              {
+                "content": "24.000",
+                "source": "D(1,5.2577,5.8701,5.8146,5.8701,5.8146,6.0528,5.2577,6.0528)",
+                "span": {
+                  "offset": 160,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Subtotal",
+                "source": "D(1,2.9336,6.3361,3.6587,6.3393,3.6578,6.532,2.9327,6.5288)",
+                "span": {
+                  "offset": 189,
+                  "length": 8
+                }
+              },
+              {
+                "content": "Rp 36.000",
+                "source": "D(1,5.0076,6.3383,5.8348,6.3383,5.8348,6.5324,5.0076,6.5324)",
+                "span": {
+                  "offset": 199,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Tax (10.0%)",
+                "source": "D(1,2.9355,6.5759,3.9206,6.5785,3.9201,6.7837,2.9355,6.782)",
+                "span": {
+                  "offset": 210,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Rp 3.600",
+                "source": "D(1,5.1004,6.5781,5.8428,6.5781,5.8428,6.7723,5.1004,6.7723)",
+                "span": {
+                  "offset": 223,
+                  "length": 8
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,2.9234,7.0589,3.3915,7.0562,3.3924,7.2543,2.9246,7.257)",
+                "span": {
+                  "offset": 233,
+                  "length": 5
+                }
+              },
+              {
+                "content": "Rp 39.600",
+                "source": "D(1,5.0207,7.0566,5.8711,7.0447,5.874,7.2548,5.0237,7.2668)",
+                "span": {
+                  "offset": 240,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Other",
+                "source": "D(1,2.9151,7.3066,3.3855,7.306,3.3857,7.4993,2.9154,7.5)",
+                "span": {
+                  "offset": 251,
+                  "length": 5
+                }
+              },
+              {
+                "content": "Rp 39.600",
+                "source": "D(1,5.026,7.2975,5.8791,7.2904,5.8809,7.4984,5.0278,7.5056)",
+                "span": {
+                  "offset": 258,
+                  "length": 9
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Kroket",
+            "source": "D(1,2.9517,5.095,3.5129,5.096,3.5126,5.2722,2.9514,5.2712)",
+            "span": {
+              "offset": 0,
+              "length": 6
+            }
+          },
+          {
+            "content": "1x",
+            "source": "D(1,2.9701,5.3282,3.1503,5.3447,3.1353,5.5092,2.9551,5.4927)",
+            "span": {
+              "offset": 26,
+              "length": 2
+            }
+          },
+          {
+            "content": "@12.000",
+            "source": "D(1,3.3976,5.3198,4.0332,5.3202,4.0331,5.5078,3.3974,5.5073)",
+            "span": {
+              "offset": 38,
+              "length": 7
+            }
+          },
+          {
+            "content": "12.000",
+            "source": "D(1,5.2727,5.3207,5.8105,5.3173,5.8117,5.5022,5.2739,5.5056)",
+            "span": {
+              "offset": 55,
+              "length": 6
+            }
+          },
+          {
+            "content": "Arem",
+            "source": "D(1,2.9577,5.6457,3.3208,5.6473,3.32,5.824,2.957,5.8224)",
+            "span": {
+              "offset": 82,
+              "length": 4
+            }
+          },
+          {
+            "content": "Arem",
+            "source": "D(1,3.3985,5.6474,3.7793,5.6484,3.7789,5.8253,3.3981,5.8244)",
+            "span": {
+              "offset": 96,
+              "length": 4
+            }
+          },
+          {
+            "content": "2x",
+            "source": "D(1,2.9488,5.8791,3.1347,5.8782,3.1356,6.0624,2.9497,6.0633)",
+            "span": {
+              "offset": 131,
+              "length": 2
+            }
+          },
+          {
+            "content": "@12.000",
+            "source": "D(1,3.3895,5.8758,4.0351,5.872,4.0362,6.0578,3.3906,6.0616)",
+            "span": {
+              "offset": 143,
+              "length": 7
+            }
+          },
+          {
+            "content": "24.000",
+            "source": "D(1,5.2577,5.8701,5.8146,5.8701,5.8146,6.0528,5.2577,6.0528)",
+            "span": {
+              "offset": 160,
+              "length": 6
+            }
+          },
+          {
+            "content": "Subtotal",
+            "source": "D(1,2.9336,6.3361,3.6587,6.3393,3.6578,6.532,2.9327,6.5288)",
+            "span": {
+              "offset": 189,
+              "length": 8
+            }
+          },
+          {
+            "content": "Rp 36.000",
+            "source": "D(1,5.0076,6.3383,5.8348,6.3383,5.8348,6.5324,5.0076,6.5324)",
+            "span": {
+              "offset": 199,
+              "length": 9
+            }
+          },
+          {
+            "content": "Tax (10.0%)",
+            "source": "D(1,2.9355,6.5759,3.9206,6.5785,3.9201,6.7845,2.935,6.782)",
+            "span": {
+              "offset": 210,
+              "length": 11
+            }
+          },
+          {
+            "content": "Rp 3.600",
+            "source": "D(1,5.1004,6.5781,5.8428,6.5781,5.8428,6.7723,5.1004,6.7723)",
+            "span": {
+              "offset": 223,
+              "length": 8
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,2.9234,7.0589,3.3915,7.0562,3.3926,7.2543,2.9246,7.257)",
+            "span": {
+              "offset": 233,
+              "length": 5
+            }
+          },
+          {
+            "content": "Rp 39.600",
+            "source": "D(1,5.0207,7.0566,5.8711,7.0447,5.874,7.2548,5.0237,7.2668)",
+            "span": {
+              "offset": 240,
+              "length": 9
+            }
+          },
+          {
+            "content": "Other",
+            "source": "D(1,2.9151,7.3066,3.3855,7.306,3.3857,7.4993,2.9154,7.5)",
+            "span": {
+              "offset": 251,
+              "length": 5
+            }
+          },
+          {
+            "content": "Rp 39.600",
+            "source": "D(1,5.026,7.2975,5.8791,7.2904,5.8809,7.4984,5.0278,7.5056)",
+            "span": {
+              "offset": 258,
+              "length": 9
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 267
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/tables/0",
+              "/paragraphs/9",
+              "/paragraphs/10",
+              "/paragraphs/11",
+              "/paragraphs/12",
+              "/paragraphs/13",
+              "/paragraphs/14",
+              "/paragraphs/15",
+              "/paragraphs/16"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 3,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1x",
+                "source": "D(1,2.8482,5.2897,3.342,5.2892,3.342,5.562,2.8466,5.5632)",
+                "span": {
+                  "offset": 26,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/1"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "@12.000",
+                "source": "D(1,3.342,5.2892,5.0631,5.2865,5.0635,5.5576,3.342,5.562)",
+                "span": {
+                  "offset": 38,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "12.000",
+                "source": "D(1,5.0631,5.2865,5.8512,5.2859,5.8505,5.5561,5.0635,5.5576)",
+                "span": {
+                  "offset": 55,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Arem",
+                "source": "D(1,2.8466,5.5632,3.342,5.562,3.3442,5.8634,2.8444,5.8641)",
+                "span": {
+                  "offset": 82,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Arem",
+                "source": "D(1,3.342,5.562,5.0635,5.5576,5.0625,5.8627,3.3442,5.8634)",
+                "span": {
+                  "offset": 96,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.0635,5.5576,5.8505,5.5561,5.8497,5.8622,5.0625,5.8627)",
+                "span": {
+                  "offset": 110,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2x",
+                "source": "D(1,2.8444,5.8641,3.3442,5.8634,3.3436,6.2145,2.8458,6.2147)",
+                "span": {
+                  "offset": 131,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "@12.000",
+                "source": "D(1,3.3442,5.8634,5.0625,5.8627,5.0639,6.2137,3.3436,6.2145)",
+                "span": {
+                  "offset": 143,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24.000",
+                "source": "D(1,5.0625,5.8627,5.8497,5.8622,5.8505,6.2139,5.0639,6.2137)",
+                "span": {
+                  "offset": 160,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              }
+            ],
+            "source": "D(1,2.8912,5.1335,5.8146,5.1106,5.8267,6.0985,2.9254,6.1213)",
+            "span": {
+              "offset": 9,
+              "length": 177
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 3950,
+      "gpt-5-mini-cached-input": 3840,
+      "gpt-5-mini-output": 302
+    }
+  }
+}

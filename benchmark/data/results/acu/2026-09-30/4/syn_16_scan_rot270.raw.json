@@ -1,0 +1,2322 @@
+{
+  "id": "a744788c-dc0b-4fe9-b454-dd5ddb3da2c7",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T14:13:25Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "# BLUE HORIZON CARGO SERVICES 18 Harbor Road, Kochi 682003, India\n\nInvoice No: INV/25-26/668\n\nInvoice Date: 19-05-2025\n\nBill To: GREENFIELD ENERGY EQUIPMENT LIMITED\n\n\n## TAX INVOICE\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>Qty</th>\n<th>Rate</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td>Local transportation</td>\n<td>2</td>\n<td>7,879.36</td>\n<td>15,758.72</td>\n</tr>\n<tr>\n<td>Customs documentation fee</td>\n<td>3</td>\n<td>7,752.29</td>\n<td>23,256.87</td>\n</tr>\n<tr>\n<td>Terminal handling charges</td>\n<td>1</td>\n<td>9,880.12</td>\n<td>9,880.12</td>\n</tr>\n<tr>\n<td>Bill of entry charges</td>\n<td>3</td>\n<td>10,118.52</td>\n<td>30,355.56</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>Subtotal:</td>\n<td>79,251.27</td>\n</tr>\n<tr>\n<td>CGST @9%:</td>\n<td>7,132.62</td>\n</tr>\n<tr>\n<td>SGST @9%:</td>\n<td>7,132.62</td>\n</tr>\n<tr>\n<td>Tax Total:</td>\n<td>14,265.23</td>\n</tr>\n<tr>\n<td>Total:</td>\n<td>93,516.50</td>\n</tr>\n</table>\n\n\n<!-- PageFooter: Payment terms: 30 days. Bank: Example Bank, Mumbai. -->\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "valueString": "INV/25-26/668",
+            "spans": [
+              {
+                "offset": 79,
+                "length": 13
+              }
+            ],
+            "confidence": 0.42,
+            "source": "D(1,1.1806,7.8479,1.1777,7.0007,1.3166,7.0002,1.3195,7.8474)"
+          },
+          "invoice_date": {
+            "type": "date",
+            "valueDate": "2025-05-19",
+            "spans": [
+              {
+                "offset": 108,
+                "length": 10
+              }
+            ],
+            "confidence": 0.536,
+            "source": "D(1,1.3799,7.7352,1.3792,7.0692,1.5180,7.0692,1.5195,7.7352)"
+          },
+          "vendor_name": {
+            "type": "string",
+            "valueString": "BLUE HORIZON CARGO SERVICES",
+            "spans": [
+              {
+                "offset": 2,
+                "length": 27
+              }
+            ],
+            "confidence": 0.414,
+            "source": "D(1,0.3580,8.5508,0.3545,5.1392,0.5568,5.1390,0.5603,8.5506)"
+          },
+          "buyer_name": {
+            "type": "string",
+            "valueString": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+            "spans": [
+              {
+                "offset": 129,
+                "length": 35
+              }
+            ],
+            "confidence": 0.414,
+            "source": "D(1,1.5741,8.1102,1.5691,5.3276,1.7158,5.3273,1.7208,8.1099)"
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 79251.27,
+            "spans": [
+              {
+                "offset": 681,
+                "length": 9
+              }
+            ],
+            "confidence": 0.418,
+            "source": "D(1,3.2460,3.7123,3.2452,3.1492,3.3746,3.1492,3.3750,3.7123)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 14265.23,
+            "spans": [
+              {
+                "offset": 827,
+                "length": 9
+              }
+            ],
+            "confidence": 0.416,
+            "source": "D(1,3.7670,3.7067,3.7623,3.1435,3.8883,3.1435,3.8923,3.7067)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 93516.5,
+            "spans": [
+              {
+                "offset": 873,
+                "length": 9
+              }
+            ],
+            "confidence": 0.414,
+            "source": "D(1,4.1141,3.7408,4.1086,3.1492,4.2398,3.1492,4.2452,3.7408)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Local transportation",
+                    "spans": [
+                      {
+                        "offset": 276,
+                        "length": 20
+                      }
+                    ],
+                    "confidence": 0.468,
+                    "source": "D(1,2.1722,8.5574,2.1772,7.4569,2.3104,7.4575,2.3053,8.5580)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 306,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.603,
+                    "source": "D(1,2.1780,4.7064,2.1768,4.6281,2.2888,4.6281,2.2908,4.7064)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 7879.36,
+                    "spans": [
+                      {
+                        "offset": 317,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.614,
+                    "source": "D(1,2.1762,4.2920,2.1748,3.8058,2.2939,3.8058,2.2988,4.2920)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 15758.72,
+                    "spans": [
+                      {
+                        "offset": 335,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.608,
+                    "source": "D(1,2.1756,3.7009,2.1752,3.1463,2.3001,3.1463,2.3056,3.7009)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Customs documentation fee",
+                    "spans": [
+                      {
+                        "offset": 365,
+                        "length": 25
+                      }
+                    ],
+                    "confidence": 0.426,
+                    "source": "D(1,2.4095,8.5518,2.4078,7.0064,2.5378,7.0063,2.5395,8.5517)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 400,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.644,
+                    "source": "D(1,2.4113,4.7001,2.4115,4.6310,2.5225,4.6310,2.5223,4.7001)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 7752.29,
+                    "spans": [
+                      {
+                        "offset": 411,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.614,
+                    "source": "D(1,2.4101,4.2920,2.4084,3.8058,2.5320,3.8058,2.5368,4.2920)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 23256.87,
+                    "spans": [
+                      {
+                        "offset": 429,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.608,
+                    "source": "D(1,2.4088,3.7067,2.4094,3.1520,2.5348,3.1520,2.5372,3.7067)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Terminal handling charges",
+                    "spans": [
+                      {
+                        "offset": 459,
+                        "length": 25
+                      }
+                    ],
+                    "confidence": 0.426,
+                    "source": "D(1,2.6389,8.5516,2.6501,7.0910,2.7866,7.0920,2.7754,8.5526)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 494,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.644,
+                    "source": "D(1,2.6468,4.6919,2.6469,4.6338,2.7576,4.6338,2.7599,4.6919)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 9880.12,
+                    "spans": [
+                      {
+                        "offset": 505,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.614,
+                    "source": "D(1,2.6476,4.2920,2.6470,3.7973,2.7708,3.7973,2.7735,4.2920)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 9880.12,
+                    "spans": [
+                      {
+                        "offset": 523,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.702,
+                    "source": "D(1,2.6442,3.6439,2.6475,3.1492,2.7721,3.1492,2.7748,3.6439)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Bill of entry charges",
+                    "spans": [
+                      {
+                        "offset": 552,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.498,
+                    "source": "D(1,2.8690,8.5573,2.8785,7.4563,3.0199,7.4576,3.0104,8.5585)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 583,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.685,
+                    "source": "D(1,2.8818,4.7064,2.8821,4.6281,2.9931,4.6281,2.9927,4.7064)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 10118.52,
+                    "spans": [
+                      {
+                        "offset": 594,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.668,
+                    "source": "D(1,2.8826,4.3491,2.8847,3.8030,3.0058,3.8030,3.0086,4.3491)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 30355.56,
+                    "spans": [
+                      {
+                        "offset": 613,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.635,
+                    "source": "D(1,2.8760,3.7095,2.8796,3.1463,3.0013,3.1463,3.0013,3.7095)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -90.0347,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 978
+              }
+            ],
+            "words": [
+              {
+                "content": "BLUE",
+                "span": {
+                  "offset": 2,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.3639,8.5506,0.361,8.0121,0.5575,8.0121,0.5577,8.5506)"
+              },
+              {
+                "content": "HORIZON",
+                "span": {
+                  "offset": 7,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,0.3606,7.9333,0.357,7.0369,0.5572,7.0369,0.5575,7.9333)"
+              },
+              {
+                "content": "CARGO",
+                "span": {
+                  "offset": 15,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,0.3569,6.9581,0.3556,6.226,0.557,6.2259,0.5572,6.9581)"
+              },
+              {
+                "content": "SERVICES",
+                "span": {
+                  "offset": 21,
+                  "length": 8
+                },
+                "confidence": 0.991,
+                "source": "D(1,0.3557,6.1603,0.3574,5.1392,0.5568,5.1392,0.557,6.1603)"
+              },
+              {
+                "content": "18",
+                "span": {
+                  "offset": 30,
+                  "length": 2
+                },
+                "confidence": 0.947,
+                "source": "D(1,0.6064,8.5516,0.6063,8.4277,0.7413,8.4277,0.7414,8.5516)"
+              },
+              {
+                "content": "Harbor",
+                "span": {
+                  "offset": 33,
+                  "length": 6
+                },
+                "confidence": 0.846,
+                "source": "D(1,0.6063,8.3871,0.6061,8.0446,0.7411,8.0446,0.7413,8.3871)"
+              },
+              {
+                "content": "Road",
+                "span": {
+                  "offset": 40,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,0.6061,8.0131,0.6057,7.7584,0.7408,7.7584,0.7411,8.0131)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 44,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,0.6057,7.7517,0.6056,7.7291,0.7408,7.7291,0.7408,7.7517)"
+              },
+              {
+                "content": "Kochi",
+                "span": {
+                  "offset": 46,
+                  "length": 5
+                },
+                "confidence": 0.939,
+                "source": "D(1,0.6056,7.6908,0.6051,7.4204,0.7405,7.4204,0.7408,7.6908)"
+              },
+              {
+                "content": "682003",
+                "span": {
+                  "offset": 52,
+                  "length": 6
+                },
+                "confidence": 0.931,
+                "source": "D(1,0.6051,7.3821,0.6041,7.0149,0.7399,7.0149,0.7404,7.3821)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 58,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,0.6041,7.0126,0.6041,6.9901,0.7398,6.9901,0.7399,7.0126)"
+              },
+              {
+                "content": "India",
+                "span": {
+                  "offset": 60,
+                  "length": 5
+                },
+                "confidence": 0.96,
+                "source": "D(1,0.604,6.9473,0.6033,6.7152,0.7394,6.7152,0.7398,6.9473)"
+              },
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 67,
+                  "length": 7
+                },
+                "confidence": 0.966,
+                "source": "D(1,1.1849,8.5572,1.1819,8.135,1.3209,8.1351,1.3243,8.5572)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 75,
+                  "length": 2
+                },
+                "confidence": 0.984,
+                "source": "D(1,1.1816,8.0933,1.1809,7.9309,1.3195,7.9309,1.3205,8.0933)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 77,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.1809,7.9216,1.1808,7.8961,1.3194,7.8961,1.3195,7.9216)"
+              },
+              {
+                "content": "INV",
+                "span": {
+                  "offset": 79,
+                  "length": 3
+                },
+                "confidence": 0.966,
+                "source": "D(1,1.1806,7.8474,1.1799,7.6409,1.3181,7.6409,1.3191,7.8474)"
+              },
+              {
+                "content": "/",
+                "span": {
+                  "offset": 82,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.1799,7.6456,1.1798,7.6015,1.3179,7.6015,1.3181,7.6456)"
+              },
+              {
+                "content": "25-26/668",
+                "span": {
+                  "offset": 83,
+                  "length": 9
+                },
+                "confidence": 0.986,
+                "source": "D(1,1.1798,7.6061,1.1796,7.0007,1.3166,7.0007,1.3179,7.6061)"
+              },
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 94,
+                  "length": 7
+                },
+                "confidence": 0.948,
+                "source": "D(1,1.3801,8.5572,1.3801,8.1357,1.5204,8.1357,1.5215,8.5572)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 102,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,1.3801,8.0915,1.38,7.819,1.5197,7.819,1.5203,8.0915)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 106,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.38,7.8097,1.38,7.7818,1.5196,7.7818,1.5197,7.8097)"
+              },
+              {
+                "content": "19-05-2025",
+                "span": {
+                  "offset": 108,
+                  "length": 10
+                },
+                "confidence": 0.993,
+                "source": "D(1,1.3799,7.7352,1.3792,7.0692,1.518,7.0692,1.5195,7.7352)"
+              },
+              {
+                "content": "Bill",
+                "span": {
+                  "offset": 120,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,1.5775,8.5572,1.5768,8.3744,1.7185,8.3744,1.7183,8.5572)"
+              },
+              {
+                "content": "To",
+                "span": {
+                  "offset": 125,
+                  "length": 2
+                },
+                "confidence": 0.99,
+                "source": "D(1,1.5766,8.3383,1.5761,8.1868,1.7186,8.1868,1.7185,8.3383)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 127,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.5761,8.182,1.576,8.1556,1.7187,8.1556,1.7186,8.182)"
+              },
+              {
+                "content": "GREENFIELD",
+                "span": {
+                  "offset": 129,
+                  "length": 10
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.5758,8.1099,1.573,7.2826,1.719,7.2826,1.7187,8.1099)"
+              },
+              {
+                "content": "ENERGY",
+                "span": {
+                  "offset": 140,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,1.5729,7.2394,1.5716,6.6839,1.7182,6.6839,1.7189,7.2394)"
+              },
+              {
+                "content": "EQUIPMENT",
+                "span": {
+                  "offset": 147,
+                  "length": 9
+                },
+                "confidence": 0.986,
+                "source": "D(1,1.5715,6.6454,1.5705,5.8735,1.7162,5.8735,1.7182,6.6454)"
+              },
+              {
+                "content": "LIMITED",
+                "span": {
+                  "offset": 157,
+                  "length": 7
+                },
+                "confidence": 0.98,
+                "source": "D(1,1.5705,5.8374,1.5701,5.3276,1.7144,5.3276,1.716,5.8374)"
+              },
+              {
+                "content": "TAX",
+                "span": {
+                  "offset": 170,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.8871,4.4421,0.8825,4.0335,1.0775,4.0335,1.0806,4.4421)"
+              },
+              {
+                "content": "INVOICE",
+                "span": {
+                  "offset": 174,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,0.8819,3.9714,0.8772,3.1377,1.0772,3.1377,1.0773,3.9714)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 201,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.912,8.5573,1.9131,7.8287,2.0498,7.8287,2.0501,8.5573)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 222,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,1.9168,4.8487,1.9265,4.6195,2.0595,4.6195,2.0497,4.8487)"
+              },
+              {
+                "content": "Rate",
+                "span": {
+                  "offset": 235,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.9225,4.0978,1.9207,3.8001,2.0415,3.8001,2.0453,4.0978)"
+              },
+              {
+                "content": "Amount",
+                "span": {
+                  "offset": 249,
+                  "length": 6
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.9211,3.6495,1.9143,3.1377,2.0464,3.1377,2.0575,3.6495)"
+              },
+              {
+                "content": "Local",
+                "span": {
+                  "offset": 276,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.1762,8.5574,2.1776,8.2518,2.3067,8.2518,2.3053,8.5574)"
+              },
+              {
+                "content": "transportation",
+                "span": {
+                  "offset": 282,
+                  "length": 14
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.1777,8.2173,2.1772,7.4575,2.3063,7.4575,2.3069,8.2173)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 306,
+                  "length": 1
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.178,4.7064,2.1768,4.6281,2.2888,4.6281,2.2908,4.7064)"
+              },
+              {
+                "content": "7,879.36",
+                "span": {
+                  "offset": 317,
+                  "length": 8
+                },
+                "confidence": 0.945,
+                "source": "D(1,2.1762,4.292,2.1748,3.8058,2.2939,3.8058,2.2988,4.292)"
+              },
+              {
+                "content": "15,758.72",
+                "span": {
+                  "offset": 335,
+                  "length": 9
+                },
+                "confidence": 0.963,
+                "source": "D(1,2.1756,3.7009,2.1752,3.1463,2.3001,3.1463,2.3056,3.7009)"
+              },
+              {
+                "content": "Customs",
+                "span": {
+                  "offset": 365,
+                  "length": 7
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.4095,8.5517,2.4105,8.0724,2.5386,8.0724,2.5346,8.5517)"
+              },
+              {
+                "content": "documentation",
+                "span": {
+                  "offset": 373,
+                  "length": 13
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.4105,8.0366,2.4109,7.2272,2.5367,7.2271,2.5389,8.0366)"
+              },
+              {
+                "content": "fee",
+                "span": {
+                  "offset": 387,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.4109,7.1893,2.4108,7.0064,2.535,7.0064,2.5364,7.1893)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 400,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.4113,4.7001,2.4115,4.631,2.5225,4.631,2.5223,4.7001)"
+              },
+              {
+                "content": "7,752.29",
+                "span": {
+                  "offset": 411,
+                  "length": 8
+                },
+                "confidence": 0.966,
+                "source": "D(1,2.4101,4.292,2.4084,3.8058,2.532,3.8058,2.5368,4.292)"
+              },
+              {
+                "content": "23,256.87",
+                "span": {
+                  "offset": 429,
+                  "length": 9
+                },
+                "confidence": 0.942,
+                "source": "D(1,2.4088,3.7067,2.4094,3.152,2.5348,3.152,2.5372,3.7067)"
+              },
+              {
+                "content": "Terminal",
+                "span": {
+                  "offset": 459,
+                  "length": 8
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.6426,8.5516,2.6427,8.0725,2.7762,8.0725,2.7754,8.5516)"
+              },
+              {
+                "content": "handling",
+                "span": {
+                  "offset": 468,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.6429,8.0324,2.6464,7.5711,2.7801,7.5711,2.7765,8.0324)"
+              },
+              {
+                "content": "charges",
+                "span": {
+                  "offset": 477,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.6469,7.5332,2.6533,7.092,2.7865,7.092,2.7806,7.5332)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 494,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.6468,4.6919,2.6469,4.6338,2.7576,4.6338,2.7599,4.6919)"
+              },
+              {
+                "content": "9,880.12",
+                "span": {
+                  "offset": 505,
+                  "length": 8
+                },
+                "confidence": 0.953,
+                "source": "D(1,2.6476,4.292,2.647,3.7973,2.7708,3.7973,2.7735,4.292)"
+              },
+              {
+                "content": "9,880.12",
+                "span": {
+                  "offset": 523,
+                  "length": 8
+                },
+                "confidence": 0.938,
+                "source": "D(1,2.6442,3.6439,2.6475,3.1492,2.7721,3.1492,2.7748,3.6439)"
+              },
+              {
+                "content": "Bill",
+                "span": {
+                  "offset": 552,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.8746,8.5573,2.8758,8.384,3.0116,8.384,3.0098,8.5573)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 557,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.8761,8.3485,2.8769,8.2352,3.0132,8.2352,3.012,8.3485)"
+              },
+              {
+                "content": "entry",
+                "span": {
+                  "offset": 560,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.877,8.2129,2.8781,7.9308,3.0141,7.9308,3.0134,8.2129)"
+              },
+              {
+                "content": "charges",
+                "span": {
+                  "offset": 566,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.8782,7.9041,2.8785,7.4575,3.0117,7.4575,3.0142,7.9041)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 583,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.8818,4.7064,2.8821,4.6281,2.9931,4.6281,2.9927,4.7064)"
+              },
+              {
+                "content": "10,118.52",
+                "span": {
+                  "offset": 594,
+                  "length": 9
+                },
+                "confidence": 0.876,
+                "source": "D(1,2.8826,4.3491,2.8847,3.803,3.0058,3.803,3.0086,4.3491)"
+              },
+              {
+                "content": "30,355.56",
+                "span": {
+                  "offset": 613,
+                  "length": 9
+                },
+                "confidence": 0.953,
+                "source": "D(1,2.876,3.7095,2.8796,3.1463,3.0013,3.1463,3.0013,3.7095)"
+              },
+              {
+                "content": "Subtotal",
+                "span": {
+                  "offset": 662,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,3.2496,4.5517,3.2467,4.0538,3.3719,4.0538,3.3753,4.5517)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 670,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.2467,4.0432,3.2467,4.0114,3.3719,4.0114,3.3719,4.0432)"
+              },
+              {
+                "content": "79,251.27",
+                "span": {
+                  "offset": 681,
+                  "length": 9
+                },
+                "confidence": 0.955,
+                "source": "D(1,3.246,3.7123,3.2452,3.1492,3.3746,3.1492,3.375,3.7123)"
+              },
+              {
+                "content": "CGST",
+                "span": {
+                  "offset": 711,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,3.4147,4.5432,3.4125,4.1963,3.5439,4.1963,3.5446,4.5432)"
+              },
+              {
+                "content": "@",
+                "span": {
+                  "offset": 716,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.4124,4.1599,3.4122,4.0507,3.5438,4.0507,3.5439,4.1599)"
+              },
+              {
+                "content": "9",
+                "span": {
+                  "offset": 717,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,3.4122,4.0485,3.4125,3.9779,3.5439,3.9779,3.5438,4.0485)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 718,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.4125,3.9779,3.4129,3.8708,3.5441,3.8708,3.5439,3.9779)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 719,
+                  "length": 1
+                },
+                "confidence": 0.982,
+                "source": "D(1,3.4129,3.8708,3.4131,3.8258,3.5441,3.8258,3.5441,3.8708)"
+              },
+              {
+                "content": "7,132.62",
+                "span": {
+                  "offset": 730,
+                  "length": 8
+                },
+                "confidence": 0.917,
+                "source": "D(1,3.4169,3.641,3.4162,3.1463,3.5412,3.1463,3.5457,3.641)"
+              },
+              {
+                "content": "SGST",
+                "span": {
+                  "offset": 759,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,3.5888,4.5488,3.5895,4.2017,3.7215,4.2017,3.719,4.5488)"
+              },
+              {
+                "content": "@",
+                "span": {
+                  "offset": 764,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.5895,4.1681,3.5894,4.0561,3.7222,4.0561,3.7217,4.1681)"
+              },
+              {
+                "content": "9",
+                "span": {
+                  "offset": 765,
+                  "length": 1
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.5893,4.0539,3.5891,3.9867,3.7223,3.9867,3.7222,4.0539)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 766,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.589,3.9822,3.5886,3.8769,3.7224,3.8769,3.7223,3.9822)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 767,
+                  "length": 1
+                },
+                "confidence": 0.987,
+                "source": "D(1,3.5886,3.8769,3.5884,3.8344,3.7225,3.8344,3.7224,3.8769)"
+              },
+              {
+                "content": "7,132.62",
+                "span": {
+                  "offset": 778,
+                  "length": 8
+                },
+                "confidence": 0.929,
+                "source": "D(1,3.5959,3.6439,3.5938,3.1492,3.7189,3.1492,3.721,3.6439)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 807,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.7627,4.5518,3.7632,4.3353,3.8872,4.3353,3.8876,4.5518)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 811,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,3.7632,4.3002,3.7627,4.0074,3.8879,4.0074,3.8872,4.3002)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 816,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.7627,3.9951,3.7626,3.96,3.8881,3.96,3.8879,3.9951)"
+              },
+              {
+                "content": "14,265.23",
+                "span": {
+                  "offset": 827,
+                  "length": 9
+                },
+                "confidence": 0.938,
+                "source": "D(1,3.767,3.7067,3.7623,3.1435,3.8883,3.1435,3.8923,3.7067)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 857,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,4.1137,4.5518,4.1093,4.2253,4.2423,4.2253,4.2461,4.5518)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 862,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.1092,4.2211,4.1087,4.1856,4.2431,4.1856,4.2424,4.2211)"
+              },
+              {
+                "content": "93,516.50",
+                "span": {
+                  "offset": 873,
+                  "length": 9
+                },
+                "confidence": 0.947,
+                "source": "D(1,4.1141,3.7408,4.1086,3.1492,4.2398,3.1492,4.2452,3.7408)"
+              },
+              {
+                "content": "Payment",
+                "span": {
+                  "offset": 922,
+                  "length": 7
+                },
+                "confidence": 0.988,
+                "source": "D(1,7.7395,8.5575,7.7386,8.1338,7.8596,8.1338,7.8606,8.5575)"
+              },
+              {
+                "content": "terms",
+                "span": {
+                  "offset": 930,
+                  "length": 5
+                },
+                "confidence": 0.968,
+                "source": "D(1,7.7385,8.1075,7.738,7.8472,7.859,7.8472,7.8596,8.1075)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 935,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,7.738,7.8432,7.7379,7.821,7.859,7.821,7.859,7.8432)"
+              },
+              {
+                "content": "30",
+                "span": {
+                  "offset": 937,
+                  "length": 2
+                },
+                "confidence": 0.843,
+                "source": "D(1,7.7378,7.7847,7.7376,7.6757,7.8587,7.6757,7.8589,7.7847)"
+              },
+              {
+                "content": "days",
+                "span": {
+                  "offset": 940,
+                  "length": 4
+                },
+                "confidence": 0.465,
+                "source": "D(1,7.7376,7.6434,7.7376,7.4275,7.8587,7.4275,7.8587,7.6434)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 944,
+                  "length": 1
+                },
+                "confidence": 0.98,
+                "source": "D(1,7.7376,7.4214,7.7376,7.4013,7.8587,7.4013,7.8587,7.4214)"
+              },
+              {
+                "content": "Bank",
+                "span": {
+                  "offset": 946,
+                  "length": 4
+                },
+                "confidence": 0.877,
+                "source": "D(1,7.7376,7.3589,7.7377,7.1208,7.8587,7.1208,7.8587,7.3589)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 950,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,7.7377,7.1228,7.7377,7.1006,7.8587,7.1006,7.8587,7.1228)"
+              },
+              {
+                "content": "Example",
+                "span": {
+                  "offset": 952,
+                  "length": 7
+                },
+                "confidence": 0.983,
+                "source": "D(1,7.7377,7.0602,7.738,6.6667,7.8591,6.6667,7.8587,7.0602)"
+              },
+              {
+                "content": "Bank",
+                "span": {
+                  "offset": 960,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,7.7381,6.6324,7.7387,6.3963,7.8597,6.3963,7.8592,6.6324)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 964,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,7.7387,6.3983,7.7387,6.3761,7.8598,6.3761,7.8597,6.3983)"
+              },
+              {
+                "content": "Mumbai",
+                "span": {
+                  "offset": 966,
+                  "length": 6
+                },
+                "confidence": 0.976,
+                "source": "D(1,7.7388,6.3378,7.7396,5.9766,7.8607,5.9766,7.8599,6.3378)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 972,
+                  "length": 1
+                },
+                "confidence": 0.985,
+                "source": "D(1,7.7397,5.9665,7.7397,5.9443,7.8608,5.9443,7.8607,5.9665)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "BLUE HORIZON CARGO SERVICES",
+                "source": "D(1,0.3561,8.5538,0.3553,5.1392,0.5568,5.1392,0.5577,8.5538)",
+                "span": {
+                  "offset": 2,
+                  "length": 27
+                }
+              },
+              {
+                "content": "18 Harbor Road, Kochi 682003, India",
+                "source": "D(1,0.6062,8.5538,0.6033,6.7152,0.7394,6.7152,0.7423,8.5538)",
+                "span": {
+                  "offset": 30,
+                  "length": 35
+                }
+              },
+              {
+                "content": "Invoice No: INV/25-26/668",
+                "source": "D(1,1.1839,8.5596,1.1765,7.0007,1.3166,7.0007,1.3243,8.5596)",
+                "span": {
+                  "offset": 67,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Invoice Date: 19-05-2025",
+                "source": "D(1,1.3801,8.5596,1.3792,7.0692,1.5206,7.0692,1.5215,8.5596)",
+                "span": {
+                  "offset": 94,
+                  "length": 24
+                }
+              },
+              {
+                "content": "Bill To: GREENFIELD ENERGY EQUIPMENT LIMITED",
+                "source": "D(1,1.5736,8.5596,1.5696,5.3276,1.7166,5.3276,1.7205,8.5596)",
+                "span": {
+                  "offset": 120,
+                  "length": 44
+                }
+              },
+              {
+                "content": "TAX INVOICE",
+                "source": "D(1,0.8806,4.4459,0.8772,3.1377,1.0772,3.1372,1.0807,4.4454)",
+                "span": {
+                  "offset": 170,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,1.912,8.5596,1.912,7.8287,2.0501,7.8287,2.0501,8.5596)",
+                "span": {
+                  "offset": 201,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,1.9167,4.8508,1.9267,4.6195,2.0603,4.6196,2.0503,4.8537)",
+                "span": {
+                  "offset": 222,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Rate",
+                "source": "D(1,1.9215,4.0999,1.9189,3.8002,2.0415,3.7985,2.0454,4.0999)",
+                "span": {
+                  "offset": 235,
+                  "length": 4
+                }
+              },
+              {
+                "content": "Amount",
+                "source": "D(1,1.9212,3.6535,1.9143,3.1377,2.0506,3.1359,2.0575,3.6517)",
+                "span": {
+                  "offset": 249,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Local transportation",
+                "source": "D(1,2.1762,8.5596,2.1772,7.4575,2.3076,7.4575,2.3066,8.5596)",
+                "span": {
+                  "offset": 276,
+                  "length": 20
+                }
+              },
+              {
+                "content": "2",
+                "source": "D(1,2.1768,4.708,2.1768,4.6281,2.2932,4.6281,2.2932,4.708)",
+                "span": {
+                  "offset": 306,
+                  "length": 1
+                }
+              },
+              {
+                "content": "7,879.36",
+                "source": "D(1,2.1762,4.2941,2.1748,3.8058,2.2974,3.8055,2.2988,4.2941)",
+                "span": {
+                  "offset": 317,
+                  "length": 8
+                }
+              },
+              {
+                "content": "15,758.72",
+                "source": "D(1,2.1755,3.7043,2.1702,3.1464,2.3001,3.1463,2.3056,3.7031)",
+                "span": {
+                  "offset": 335,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Customs documentation fee",
+                "source": "D(1,2.4095,8.5538,2.4108,7.0064,2.5397,7.0064,2.5384,8.5538)",
+                "span": {
+                  "offset": 365,
+                  "length": 25
+                }
+              },
+              {
+                "content": "3",
+                "source": "D(1,2.4111,4.7023,2.4111,4.631,2.5225,4.631,2.5225,4.7023)",
+                "span": {
+                  "offset": 400,
+                  "length": 1
+                }
+              },
+              {
+                "content": "7,752.29",
+                "source": "D(1,2.4101,4.2941,2.4084,3.8058,2.535,3.8054,2.5367,4.2941)",
+                "span": {
+                  "offset": 411,
+                  "length": 8
+                }
+              },
+              {
+                "content": "23,256.87",
+                "source": "D(1,2.4088,3.7088,2.4088,3.152,2.5372,3.152,2.5372,3.7088)",
+                "span": {
+                  "offset": 429,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Terminal handling charges",
+                "source": "D(1,2.6388,8.5538,2.65,7.092,2.7865,7.092,2.7754,8.5538)",
+                "span": {
+                  "offset": 459,
+                  "length": 25
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,2.6466,4.6938,2.6466,4.6338,2.7615,4.6338,2.7615,4.6938)",
+                "span": {
+                  "offset": 494,
+                  "length": 1
+                }
+              },
+              {
+                "content": "9,880.12",
+                "source": "D(1,2.6476,4.2941,2.647,3.7973,2.7729,3.7973,2.7735,4.2941)",
+                "span": {
+                  "offset": 505,
+                  "length": 8
+                }
+              },
+              {
+                "content": "9,880.12",
+                "source": "D(1,2.6442,3.6459,2.6442,3.1492,2.7748,3.1492,2.7748,3.6459)",
+                "span": {
+                  "offset": 523,
+                  "length": 8
+                }
+              },
+              {
+                "content": "Bill of entry charges",
+                "source": "D(1,2.8746,8.5596,2.8785,7.4575,3.0154,7.4575,3.0124,8.5596)",
+                "span": {
+                  "offset": 552,
+                  "length": 21
+                }
+              },
+              {
+                "content": "3",
+                "source": "D(1,2.8816,4.708,2.8816,4.6281,2.9931,4.6281,2.9931,4.708)",
+                "span": {
+                  "offset": 583,
+                  "length": 1
+                }
+              },
+              {
+                "content": "10,118.52",
+                "source": "D(1,2.8826,4.3512,2.8826,3.803,3.0086,3.803,3.0086,4.3512)",
+                "span": {
+                  "offset": 594,
+                  "length": 9
+                }
+              },
+              {
+                "content": "30,355.56",
+                "source": "D(1,2.876,3.7116,2.8796,3.1463,3.004,3.1463,3.0026,3.7116)",
+                "span": {
+                  "offset": 613,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Subtotal:",
+                "source": "D(1,3.2488,4.5547,3.2453,4.0114,3.3719,4.0106,3.3754,4.5539)",
+                "span": {
+                  "offset": 662,
+                  "length": 9
+                }
+              },
+              {
+                "content": "79,251.27",
+                "source": "D(1,3.246,3.7146,3.2452,3.1492,3.3749,3.149,3.3757,3.7145)",
+                "span": {
+                  "offset": 681,
+                  "length": 9
+                }
+              },
+              {
+                "content": "CGST @9%:",
+                "source": "D(1,3.4125,4.5453,3.412,3.8258,3.5441,3.8258,3.5446,4.5453)",
+                "span": {
+                  "offset": 711,
+                  "length": 9
+                }
+              },
+              {
+                "content": "7,132.62",
+                "source": "D(1,3.4166,3.6431,3.4152,3.1463,3.543,3.1463,3.5458,3.6431)",
+                "span": {
+                  "offset": 730,
+                  "length": 8
+                }
+              },
+              {
+                "content": "SGST @9%:",
+                "source": "D(1,3.5884,4.551,3.5884,3.8344,3.7225,3.8344,3.7225,4.551)",
+                "span": {
+                  "offset": 759,
+                  "length": 9
+                }
+              },
+              {
+                "content": "7,132.62",
+                "source": "D(1,3.5942,3.6465,3.5923,3.1492,3.7189,3.1486,3.721,3.6459)",
+                "span": {
+                  "offset": 778,
+                  "length": 8
+                }
+              },
+              {
+                "content": "Tax Total:",
+                "source": "D(1,3.7626,4.5539,3.7626,3.96,3.8881,3.96,3.8881,4.5539)",
+                "span": {
+                  "offset": 807,
+                  "length": 10
+                }
+              },
+              {
+                "content": "14,265.23",
+                "source": "D(1,3.7649,3.7097,3.7609,3.1435,3.8883,3.1426,3.8923,3.7088)",
+                "span": {
+                  "offset": 827,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Total:",
+                "source": "D(1,4.1118,4.555,4.1087,4.1856,4.2431,4.1856,4.2462,4.5539)",
+                "span": {
+                  "offset": 857,
+                  "length": 6
+                }
+              },
+              {
+                "content": "93,516.50",
+                "source": "D(1,4.1141,3.7442,4.1086,3.1492,4.2409,3.1479,4.2464,3.743)",
+                "span": {
+                  "offset": 873,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Payment terms: 30 days. Bank: Example Bank, Mumbai.",
+                "source": "D(1,7.7375,8.5596,7.7378,5.9443,7.8608,5.9443,7.8606,8.5596)",
+                "span": {
+                  "offset": 922,
+                  "length": 51
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "role": "title",
+            "content": "BLUE HORIZON CARGO SERVICES 18 Harbor Road, Kochi 682003, India",
+            "source": "D(1,0.3561,8.5539,0.3553,5.1392,0.7414,5.1391,0.7423,8.5538)",
+            "span": {
+              "offset": 0,
+              "length": 65
+            }
+          },
+          {
+            "content": "Invoice No: INV/25-26/668",
+            "source": "D(1,1.1839,8.5602,1.1765,7.0007,1.3169,7,1.3243,8.5596)",
+            "span": {
+              "offset": 67,
+              "length": 25
+            }
+          },
+          {
+            "content": "Invoice Date: 19-05-2025",
+            "source": "D(1,1.3801,8.5596,1.3792,7.0692,1.5206,7.0691,1.5215,8.5596)",
+            "span": {
+              "offset": 94,
+              "length": 24
+            }
+          },
+          {
+            "content": "Bill To: GREENFIELD ENERGY EQUIPMENT LIMITED",
+            "source": "D(1,1.5736,8.5597,1.5696,5.3276,1.7166,5.3274,1.7205,8.5596)",
+            "span": {
+              "offset": 120,
+              "length": 44
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "TAX INVOICE",
+            "source": "D(1,0.8806,4.4459,0.8772,3.1377,1.0772,3.1372,1.0807,4.4454)",
+            "span": {
+              "offset": 167,
+              "length": 14
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,1.912,8.5573,1.9124,7.8286,2.0505,7.8287,2.0501,8.5573)",
+            "span": {
+              "offset": 201,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,1.9168,4.8487,1.9267,4.6139,2.0595,4.6195,2.0495,4.8544)",
+            "span": {
+              "offset": 222,
+              "length": 3
+            }
+          },
+          {
+            "content": "Rate",
+            "source": "D(1,1.9226,4.099,1.9197,3.8001,2.0425,3.799,2.0453,4.0978)",
+            "span": {
+              "offset": 235,
+              "length": 4
+            }
+          },
+          {
+            "content": "Amount",
+            "source": "D(1,1.9212,3.6519,1.9122,3.1378,2.0485,3.1354,2.0575,3.6495)",
+            "span": {
+              "offset": 249,
+              "length": 6
+            }
+          },
+          {
+            "content": "Local transportation",
+            "source": "D(1,2.1721,8.5574,2.1772,7.4569,2.3104,7.4575,2.3053,8.558)",
+            "span": {
+              "offset": 276,
+              "length": 20
+            }
+          },
+          {
+            "content": "2",
+            "source": "D(1,2.178,4.7087,2.1764,4.6281,2.2892,4.6258,2.2908,4.7064)",
+            "span": {
+              "offset": 306,
+              "length": 1
+            }
+          },
+          {
+            "content": "7,879.36",
+            "source": "D(1,2.1762,4.2928,2.1731,3.8058,2.2957,3.805,2.2988,4.292)",
+            "span": {
+              "offset": 317,
+              "length": 8
+            }
+          },
+          {
+            "content": "15,758.72",
+            "source": "D(1,2.1756,3.7016,2.1727,3.1463,2.3026,3.1456,2.3056,3.7009)",
+            "span": {
+              "offset": 335,
+              "length": 9
+            }
+          },
+          {
+            "content": "Customs documentation fee",
+            "source": "D(1,2.4095,8.5519,2.4078,7.0064,2.5377,7.0062,2.5394,8.5517)",
+            "span": {
+              "offset": 365,
+              "length": 25
+            }
+          },
+          {
+            "content": "3",
+            "source": "D(1,2.4113,4.7001,2.4115,4.6306,2.5225,4.631,2.5223,4.7004)",
+            "span": {
+              "offset": 400,
+              "length": 1
+            }
+          },
+          {
+            "content": "7,752.29",
+            "source": "D(1,2.4101,4.2929,2.4069,3.8058,2.5335,3.805,2.5368,4.292)",
+            "span": {
+              "offset": 411,
+              "length": 8
+            }
+          },
+          {
+            "content": "23,256.87",
+            "source": "D(1,2.4088,3.7069,2.4079,3.152,2.5363,3.1518,2.5372,3.7067)",
+            "span": {
+              "offset": 429,
+              "length": 9
+            }
+          },
+          {
+            "content": "Terminal handling charges",
+            "source": "D(1,2.6389,8.5516,2.65,7.091,2.7865,7.092,2.7754,8.5526)",
+            "span": {
+              "offset": 459,
+              "length": 25
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,2.6469,4.694,2.6458,4.6338,2.7588,4.6317,2.7599,4.6919)",
+            "span": {
+              "offset": 494,
+              "length": 1
+            }
+          },
+          {
+            "content": "9,880.12",
+            "source": "D(1,2.6476,4.2924,2.646,3.7973,2.7719,3.7969,2.7735,4.292)",
+            "span": {
+              "offset": 505,
+              "length": 8
+            }
+          },
+          {
+            "content": "9,880.12",
+            "source": "D(1,2.6442,3.6439,2.6445,3.1491,2.7751,3.1492,2.7748,3.644)",
+            "span": {
+              "offset": 523,
+              "length": 8
+            }
+          },
+          {
+            "content": "Bill of entry charges",
+            "source": "D(1,2.8689,8.5573,2.8786,7.4563,3.0201,7.4576,3.0104,8.5585)",
+            "span": {
+              "offset": 552,
+              "length": 21
+            }
+          },
+          {
+            "content": "3",
+            "source": "D(1,2.8818,4.7064,2.8821,4.6276,2.9931,4.6281,2.9927,4.7068)",
+            "span": {
+              "offset": 583,
+              "length": 1
+            }
+          },
+          {
+            "content": "10,118.52",
+            "source": "D(1,2.8826,4.3492,2.8822,3.803,3.0083,3.8029,3.0086,4.3491)",
+            "span": {
+              "offset": 594,
+              "length": 9
+            }
+          },
+          {
+            "content": "30,355.56",
+            "source": "D(1,2.876,3.7095,2.8778,3.1459,3.0031,3.1463,3.0013,3.7099)",
+            "span": {
+              "offset": 613,
+              "length": 9
+            }
+          },
+          {
+            "content": "Subtotal:",
+            "source": "D(1,3.2463,4.5517,3.2467,4.0113,3.3758,4.0114,3.3753,4.5518)",
+            "span": {
+              "offset": 662,
+              "length": 9
+            }
+          },
+          {
+            "content": "79,251.27",
+            "source": "D(1,3.2458,3.7124,3.2452,3.1492,3.3746,3.149,3.3752,3.7123)",
+            "span": {
+              "offset": 681,
+              "length": 9
+            }
+          },
+          {
+            "content": "CGST @9%:",
+            "source": "D(1,3.4109,4.5432,3.4128,3.8255,3.5464,3.8258,3.5446,4.5435)",
+            "span": {
+              "offset": 711,
+              "length": 9
+            }
+          },
+          {
+            "content": "7,132.62",
+            "source": "D(1,3.4169,3.6417,3.4143,3.1463,3.5431,3.1456,3.5457,3.641)",
+            "span": {
+              "offset": 730,
+              "length": 8
+            }
+          },
+          {
+            "content": "SGST @9%:",
+            "source": "D(1,3.5888,4.5489,3.5879,3.8344,3.7225,3.8342,3.7234,4.5488)",
+            "span": {
+              "offset": 759,
+              "length": 9
+            }
+          },
+          {
+            "content": "7,132.62",
+            "source": "D(1,3.5959,3.6444,3.5938,3.1492,3.7189,3.1486,3.721,3.6439)",
+            "span": {
+              "offset": 778,
+              "length": 8
+            }
+          },
+          {
+            "content": "Tax Total:",
+            "source": "D(1,3.7624,4.5518,3.7626,3.96,3.8881,3.96,3.8878,4.5519)",
+            "span": {
+              "offset": 807,
+              "length": 10
+            }
+          },
+          {
+            "content": "14,265.23",
+            "source": "D(1,3.7666,3.7076,3.7623,3.1435,3.8883,3.1425,3.8926,3.7067)",
+            "span": {
+              "offset": 827,
+              "length": 9
+            }
+          },
+          {
+            "content": "Total:",
+            "source": "D(1,4.108,4.5518,4.1087,4.1853,4.2468,4.1856,4.2461,4.552)",
+            "span": {
+              "offset": 857,
+              "length": 6
+            }
+          },
+          {
+            "content": "93,516.50",
+            "source": "D(1,4.1141,3.742,4.1086,3.1492,4.2398,3.148,4.2452,3.7408)",
+            "span": {
+              "offset": 873,
+              "length": 9
+            }
+          },
+          {
+            "role": "pageFooter",
+            "content": "Payment terms: 30 days. Bank: Example Bank, Mumbai.",
+            "source": "D(1,7.7375,8.5596,7.7378,5.9443,7.8608,5.9443,7.8606,8.5596)",
+            "span": {
+              "offset": 905,
+              "length": 72
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 902
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/sections/1"
+            ]
+          },
+          {
+            "span": {
+              "offset": 167,
+              "length": 735
+            },
+            "elements": [
+              "/paragraphs/4",
+              "/tables/0",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 5,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,1.859,8.6343,1.8569,4.9719,2.0989,4.9709,2.1015,8.6343)",
+                "span": {
+                  "offset": 201,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,1.8569,4.9719,1.8564,4.4111,2.0987,4.4106,2.0989,4.9709)",
+                "span": {
+                  "offset": 222,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Rate",
+                "source": "D(1,1.8564,4.4111,1.8559,3.747,2.0982,3.7466,2.0987,4.4106)",
+                "span": {
+                  "offset": 235,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Amount",
+                "source": "D(1,1.8559,3.747,1.8556,3.0527,2.098,3.0527,2.0982,3.7466)",
+                "span": {
+                  "offset": 249,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Local transportation",
+                "source": "D(1,2.1015,8.6343,2.0989,4.9709,2.3499,4.9715,2.352,8.6348)",
+                "span": {
+                  "offset": 276,
+                  "length": 20
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2",
+                "source": "D(1,2.0989,4.9709,2.0987,4.4106,2.3495,4.4104,2.3499,4.9715)",
+                "span": {
+                  "offset": 306,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "7,879.36",
+                "source": "D(1,2.0987,4.4106,2.0982,3.7466,2.3491,3.7465,2.3495,4.4104)",
+                "span": {
+                  "offset": 317,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "15,758.72",
+                "source": "D(1,2.0982,3.7466,2.098,3.0527,2.349,3.0523,2.3491,3.7465)",
+                "span": {
+                  "offset": 335,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Customs documentation fee",
+                "source": "D(1,2.352,8.6348,2.3499,4.9715,2.5868,4.9706,2.5896,8.6349)",
+                "span": {
+                  "offset": 365,
+                  "length": 25
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3",
+                "source": "D(1,2.3499,4.9715,2.3495,4.4104,2.5864,4.41,2.5868,4.9706)",
+                "span": {
+                  "offset": 400,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "7,752.29",
+                "source": "D(1,2.3495,4.4104,2.3491,3.7465,2.5859,3.7462,2.5864,4.41)",
+                "span": {
+                  "offset": 411,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "23,256.87",
+                "source": "D(1,2.3491,3.7465,2.349,3.0523,2.5857,3.0519,2.5859,3.7462)",
+                "span": {
+                  "offset": 429,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Terminal handling charges",
+                "source": "D(1,2.5896,8.6349,2.5868,4.9706,2.8186,4.9706,2.821,8.6352)",
+                "span": {
+                  "offset": 459,
+                  "length": 25
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,2.5868,4.9706,2.5864,4.41,2.8183,4.4102,2.8186,4.9706)",
+                "span": {
+                  "offset": 494,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "9,880.12",
+                "source": "D(1,2.5864,4.41,2.5859,3.7462,2.8179,3.7459,2.8183,4.4102)",
+                "span": {
+                  "offset": 505,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "9,880.12",
+                "source": "D(1,2.5859,3.7462,2.5857,3.0519,2.8178,3.0515,2.8179,3.7459)",
+                "span": {
+                  "offset": 523,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Bill of entry charges",
+                "source": "D(1,2.821,8.6352,2.8186,4.9706,3.0554,4.9707,3.0572,8.6348)",
+                "span": {
+                  "offset": 552,
+                  "length": 21
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3",
+                "source": "D(1,2.8186,4.9706,2.8183,4.4102,3.055,4.4094,3.0554,4.9707)",
+                "span": {
+                  "offset": 583,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10,118.52",
+                "source": "D(1,2.8183,4.4102,2.8179,3.7459,3.0547,3.7456,3.055,4.4094)",
+                "span": {
+                  "offset": 594,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "30,355.56",
+                "source": "D(1,2.8179,3.7459,2.8178,3.0515,3.0547,3.0511,3.0547,3.7456)",
+                "span": {
+                  "offset": 613,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              }
+            ],
+            "source": "D(1,1.8526,8.6476,1.8411,3.0432,3.0393,3.0425,3.0569,8.6497)",
+            "span": {
+              "offset": 184,
+              "length": 458
+            }
+          },
+          {
+            "rowCount": 5,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Subtotal:",
+                "source": "D(1,3.2102,4.758,3.2093,3.7742,3.3894,3.7737,3.3901,4.7584)",
+                "span": {
+                  "offset": 662,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "79,251.27",
+                "source": "D(1,3.2093,3.7742,3.2088,3.122,3.389,3.1215,3.3894,3.7737)",
+                "span": {
+                  "offset": 681,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CGST @9%:",
+                "source": "D(1,3.3901,4.7584,3.3894,3.7737,3.5643,3.7736,3.5653,4.7583)",
+                "span": {
+                  "offset": 711,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "7,132.62",
+                "source": "D(1,3.3894,3.7737,3.389,3.1215,3.5637,3.1214,3.5643,3.7736)",
+                "span": {
+                  "offset": 730,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SGST @9%:",
+                "source": "D(1,3.5653,4.7583,3.5643,3.7736,3.7365,3.7745,3.7375,4.7579)",
+                "span": {
+                  "offset": 759,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "7,132.62",
+                "source": "D(1,3.5643,3.7736,3.5637,3.1214,3.736,3.1211,3.7365,3.7745)",
+                "span": {
+                  "offset": 778,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Tax Total:",
+                "source": "D(1,3.7375,4.7579,3.7365,3.7745,4.022,3.7725,4.0226,4.7579)",
+                "span": {
+                  "offset": 807,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "14,265.23",
+                "source": "D(1,3.7365,3.7745,3.736,3.1211,4.0215,3.1209,4.022,3.7725)",
+                "span": {
+                  "offset": 827,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total:",
+                "source": "D(1,4.0226,4.7579,4.022,3.7725,4.2704,3.7736,4.2712,4.7568)",
+                "span": {
+                  "offset": 857,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "93,516.50",
+                "source": "D(1,4.022,3.7725,4.0215,3.1209,4.2699,3.1208,4.2704,3.7736)",
+                "span": {
+                  "offset": 873,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              }
+            ],
+            "source": "D(1,3.214,4.7391,3.211,3.1109,4.2588,3.1103,4.2679,4.7213)",
+            "span": {
+              "offset": 645,
+              "length": 257
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 4292,
+      "gpt-5-mini-cached-input": 3712,
+      "gpt-5-mini-output": 466
+    }
+  }
+}

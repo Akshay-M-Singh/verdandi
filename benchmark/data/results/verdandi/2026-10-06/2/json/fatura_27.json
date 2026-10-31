@@ -1,0 +1,803 @@
+{
+  "selected_document": {
+    "name": "Thompson and Sons",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows a TAX INVOICE, vendor contact details including www.ThompsonandSons.org, a Bill to section, charge rows, subtotal, tax, and total.",
+    "confidence": 0.95
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "20-Mar-2008",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.55,
+          0.061,
+          0.72,
+          0.079
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='20-Mar-2008'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX INVOICE Date: 20-Mar-2008 Due Date : 16-Oct-2016'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5487,
+                0.0625,
+                0.7227,
+                0.08130000000000004
+              ],
+              "line_bbox": [
+                0.5487,
+                0.0625,
+                0.7227,
+                0.08130000000000004
+              ],
+              "text": "Date: 20-Mar-2008",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Thompson and Sons",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.047,
+          0.248,
+          0.292,
+          0.267
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Thompson and Sons'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Thompson and Sons' NOT found near region (page 1); nearest text 'Email:melvin40@example.net www.ThompsonandSons.org (GSTIN: 12345670 00070007' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Denise Perez",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.556,
+          0.172,
+          0.687,
+          0.19
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Denise Perez'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Bill to: Denise Perez 16424 Timothy Mission Markville,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5546,
+                0.16869999999999996,
+                0.7493,
+                0.1875
+              ],
+              "line_bbox": [
+                0.0472,
+                0.16869999999999996,
+                0.7493,
+                0.1875
+              ],
+              "text": "Address: 16424 Timothy Mission Bill to: Denise Perez",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.778,
+          0.788,
+          0.865,
+          0.804
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 725.30 EUR DISCOUNT(1.85%): (-) 13.42 TAX: VAT'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.649,
+                0.7896,
+                0.9086,
+                0.8125
+              ],
+              "line_bbox": [
+                0.0116,
+                0.7896,
+                0.9086,
+                0.8126
+              ],
+              "text": "y-four point three three SUB_TOTAL: 725.30 EUR",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "725.30",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.65,
+          0.788,
+          0.902,
+          0.804
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='725.30'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 725.30 EUR DISCOUNT(1.85%): (-) 13.42 TAX: VAT'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.649,
+                0.7896,
+                0.9086,
+                0.8125
+              ],
+              "line_bbox": [
+                0.0116,
+                0.7896,
+                0.9086,
+                0.8126
+              ],
+              "text": "y-four point three three SUB_TOTAL: 725.30 EUR",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "28.18",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.65,
+          0.826,
+          0.887,
+          0.843
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='28.18'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 725.30 EUR DISCOUNT(1.85%): (-) 13.42 TAX: VAT'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.649,
+                0.825,
+                0.9322,
+                0.8417
+              ],
+              "line_bbox": [
+                0.0147,
+                0.825,
+                0.9322,
+                0.8424
+              ],
+              "text": "Branch Name Raf CAMP TAX: VAT (3.88%): 28.18 EUR",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "734.33",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.65,
+          0.879,
+          0.847,
+          0.896
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='734.33'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 734.33 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.649,
+                0.8771,
+                0.8466,
+                0.8917
+              ],
+              "line_bbox": [
+                0.649,
+                0.8771,
+                0.8466,
+                0.8917
+              ],
+              "text": "TOTAL: 734.33 EUR",
+              "lineno": 25,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Data score fire.",
+      "quantity": "6.00",
+      "unit_price": "57.80",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.016,
+          0.631,
+          0.941,
+          0.653
+        ]
+      }
+    },
+    {
+      "description": "Determine half.",
+      "quantity": "2.00",
+      "unit_price": "24.70",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.016,
+          0.653,
+          0.941,
+          0.675
+        ]
+      }
+    },
+    {
+      "description": "Model read.",
+      "quantity": "1.00",
+      "unit_price": "86.14",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.016,
+          0.675,
+          0.941,
+          0.697
+        ]
+      }
+    },
+    {
+      "description": "Mother consider.",
+      "quantity": "1.00",
+      "unit_price": "81.84",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.016,
+          0.697,
+          0.941,
+          0.719
+        ]
+      }
+    },
+    {
+      "description": "Tv focus.",
+      "quantity": "4.00",
+      "unit_price": "40.28",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.016,
+          0.719,
+          0.941,
+          0.741
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "No invoice number is visibly printed.",
+    "The charge table visibly contains ITEMS, QUANTITY, and PRICE columns but no separate amount column."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2143,
+      "total_tokens": 5798,
+      "elapsed_s": 13.06
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": "20-Mar-2008",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='20-Mar-2008'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX INVOICE Date: 20-Mar-2008 Due Date : 16-Oct-2016'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5487,
+                  0.0625,
+                  0.7227,
+                  0.08130000000000004
+                ],
+                "line_bbox": [
+                  0.5487,
+                  0.0625,
+                  0.7227,
+                  0.08130000000000004
+                ],
+                "text": "Date: 20-Mar-2008",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Thompson and Sons",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Thompson and Sons'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Thompson and Sons' NOT found near region (page 1); nearest text 'Email:melvin40@example.net www.ThompsonandSons.org (GSTIN: 12345670 00070007' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Denise Perez",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Denise Perez'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Bill to: Denise Perez 16424 Timothy Mission Markville,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5546,
+                  0.16869999999999996,
+                  0.7493,
+                  0.1875
+                ],
+                "line_bbox": [
+                  0.0472,
+                  0.16869999999999996,
+                  0.7493,
+                  0.1875
+                ],
+                "text": "Address: 16424 Timothy Mission Bill to: Denise Perez",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 725.30 EUR DISCOUNT(1.85%): (-) 13.42 TAX: VAT'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.649,
+                  0.7896,
+                  0.9086,
+                  0.8125
+                ],
+                "line_bbox": [
+                  0.0116,
+                  0.7896,
+                  0.9086,
+                  0.8126
+                ],
+                "text": "y-four point three three SUB_TOTAL: 725.30 EUR",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "725.30",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='725.30'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 725.30 EUR DISCOUNT(1.85%): (-) 13.42 TAX: VAT'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.649,
+                  0.7896,
+                  0.9086,
+                  0.8125
+                ],
+                "line_bbox": [
+                  0.0116,
+                  0.7896,
+                  0.9086,
+                  0.8126
+                ],
+                "text": "y-four point three three SUB_TOTAL: 725.30 EUR",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "28.18",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='28.18'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 725.30 EUR DISCOUNT(1.85%): (-) 13.42 TAX: VAT'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.649,
+                  0.825,
+                  0.9322,
+                  0.8417
+                ],
+                "line_bbox": [
+                  0.0147,
+                  0.825,
+                  0.9322,
+                  0.8424
+                ],
+                "text": "Branch Name Raf CAMP TAX: VAT (3.88%): 28.18 EUR",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "734.33",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='734.33'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 734.33 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.649,
+                  0.8771,
+                  0.8466,
+                  0.8917
+                ],
+                "line_bbox": [
+                  0.649,
+                  0.8771,
+                  0.8466,
+                  0.8917
+                ],
+                "text": "TOTAL: 734.33 EUR",
+                "lineno": 25,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 8
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "vendor_name": {
+            "primary": "Thompson and Sons",
+            "secondary": "Thompson and Sons",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "4205db4500eb468c4896e48d48156d8971a330a33418105c03a0c67fbf5bf5fd"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2440,
+          "completion_tokens": 472,
+          "total_tokens": 2912,
+          "elapsed_s": 5.7
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows an itemized vendor charge document with two billed rows and printed summary lines for NET SALES, TAX, and AMOUNT DUE. No issuing organization name or document heading is legible in the image.",
+    "confidence": 0.72
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "160000",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.59,
+          0.605,
+          0.76,
+          0.635
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='160000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '10 AMBUSH CHS BUR 100000 160000 16000'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5749,
+                0.6093999999999999,
+                0.7378,
+                0.6432
+              ],
+              "line_bbox": [
+                0.2137,
+                0.5939,
+                0.7378,
+                0.6432
+              ],
+              "text": "NET SALES 160000",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "16000",
+      "confidence": 0.68,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.59,
+          0.65,
+          0.76,
+          0.68
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='16000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '160000 16000 27600\u00db\u00cd\u0161'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5929,
+                0.6583,
+                0.7286,
+                0.6917
+              ],
+              "line_bbox": [
+                0.2153,
+                0.6416999999999999,
+                0.7286,
+                0.6917
+              ],
+              "text": "TAX 16000",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "176000",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.59,
+          0.695,
+          0.77,
+          0.73
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='176000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '176000' NOT found near region (page 1); nearest text '16000 27600\u00db\u00cd\u0161' (n-gram proximity 0.75)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "AMBUSH OBL CAS",
+      "quantity": "4",
+      "unit_price": null,
+      "amount": "63000",
+      "confidence": 0.36,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.16,
+          0.495,
+          0.79,
+          0.54
+        ]
+      }
+    },
+    {
+      "description": "AMBUSH OHS",
+      "quantity": "10",
+      "unit_price": null,
+      "amount": "100000",
+      "confidence": 0.48,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.15,
+          0.545,
+          0.79,
+          0.59
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The image is heavily blurred and partially obscured; the line-item descriptions and first line amount are low-confidence transcriptions."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 2,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7348,
+      "completion_tokens": 3333,
+      "total_tokens": 10681,
+      "elapsed_s": 35.93
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "160000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='160000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '10 AMBUSH CHS BUR 100000 160000 16000'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5749,
+                  0.6093999999999999,
+                  0.7378,
+                  0.6432
+                ],
+                "line_bbox": [
+                  0.2137,
+                  0.5939,
+                  0.7378,
+                  0.6432
+                ],
+                "text": "NET SALES 160000",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "16000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='16000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '160000 16000 27600\u00db\u00cd\u0161'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5929,
+                  0.6583,
+                  0.7286,
+                  0.6917
+                ],
+                "line_bbox": [
+                  0.2153,
+                  0.6416999999999999,
+                  0.7286,
+                  0.6917
+                ],
+                "text": "TAX 16000",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "176000",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='176000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '176000' NOT found near region (page 1); nearest text '16000 27600\u00db\u00cd\u0161' (n-gram proximity 0.75)",
+              "match": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 5
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "total_amount": {
+            "primary": "176000",
+            "secondary": "176000",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "165eb17842d89996eb98c5b69082c52fb72d3a9fb59a491baa2ddb14bafd5d17"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2439,
+          "completion_tokens": 506,
+          "total_tokens": 2945,
+          "elapsed_s": 8.52
+        }
+      }
+    }
+  }
+}

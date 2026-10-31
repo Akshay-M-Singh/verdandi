@@ -1,0 +1,793 @@
+{
+  "selected_document": {
+    "name": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the issuer name, the heading INVOICE, an invoice number and date, a Bill To party, itemized billed charges, subtotal, tax, and total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "NF-2025-3439",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.057,
+          0.158,
+          0.314,
+          0.175
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='NF-2025-3439'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: NF-2025-3439 Invoice Date: 07-09-2025 Bill To:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0531,
+                0.1583,
+                0.3127,
+                0.17710000000000004
+              ],
+              "line_bbox": [
+                0.0531,
+                0.1583,
+                0.3127,
+                0.17710000000000004
+              ],
+              "text": "Invoice No: NF-2025-3439",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "07-09-2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.057,
+          0.182,
+          0.228,
+          0.198
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='07-09-2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: NF-2025-3439 Invoice Date: 07-09-2025 Bill To:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0531,
+                0.18120000000000003,
+                0.3038,
+                0.19999999999999996
+              ],
+              "line_bbox": [
+                0.0531,
+                0.18120000000000003,
+                0.3038,
+                0.19999999999999996
+              ],
+              "text": "Invoice Date: 07-09-2025",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.058,
+          0.064,
+          0.672,
+          0.085
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='NOVA FREIGHT SOLUTIONS PVT. LTD.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'NOVA FREIGHT SOLUTIONS PVT. LTD. 42 Transport Nagar,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.056,
+                0.05830000000000002,
+                0.6814,
+                0.08960000000000001
+              ],
+              "line_bbox": [
+                0.056,
+                0.05830000000000002,
+                0.6814,
+                0.08960000000000001
+              ],
+              "text": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "COASTAL POWER PROJECTS LIMITED",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.057,
+          0.205,
+          0.528,
+          0.221
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='COASTAL POWER PROJECTS LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: NF-2025-3439 Invoice Date: 07-09-2025 Bill To:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0531,
+                0.19999999999999996,
+                0.528,
+                0.2229
+              ],
+              "line_bbox": [
+                0.0531,
+                0.19999999999999996,
+                0.528,
+                0.2229
+              ],
+              "text": "Bill To: COASTAL POWER PROJECTS LIMITED",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "82145.01",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.715,
+          0.398,
+          0.946,
+          0.413
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='82145.01'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '1 8,842.71 8,842.7 Subtotal: 82,145.01 Tax: 14,786.10'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.8465,
+                0.39570000000000005,
+                0.947,
+                0.41479999999999995
+              ],
+              "line_bbox": [
+                0.7079,
+                0.39549999999999996,
+                0.947,
+                0.41479999999999995
+              ],
+              "text": "Subtotal: 82,145.01",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "14786.10",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.715,
+          0.42,
+          0.946,
+          0.435
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='14786.10'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal: 82,145.01 Tax: 14,786.10 Total: 96,931.11'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.8464,
+                0.4141,
+                0.9471,
+                0.43589999999999995
+              ],
+              "line_bbox": [
+                0.7109,
+                0.4125,
+                0.9471,
+                0.43589999999999995
+              ],
+              "text": "Tax: 14,786.10",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "96931.11",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.715,
+          0.458,
+          0.946,
+          0.475
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='96931.11'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Tax: 14,786.10 Total: 96,931.11'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.8406,
+                0.4518,
+                0.95,
+                0.47729999999999995
+              ],
+              "line_bbox": [
+                0.708,
+                0.4518,
+                0.95,
+                0.47729999999999995
+              ],
+              "text": "Total: 96,931.11",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Agency commission",
+      "quantity": "10",
+      "unit_price": "3572.45",
+      "amount": null,
+      "confidence": 0.78,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.272,
+          1.0,
+          0.289
+        ]
+      }
+    },
+    {
+      "description": "Warehouse storage charges",
+      "quantity": "10",
+      "unit_price": "2172.46",
+      "amount": null,
+      "confidence": 0.78,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.3,
+          1.0,
+          0.316
+        ]
+      }
+    },
+    {
+      "description": "Terminal handling charges",
+      "quantity": "3",
+      "unit_price": "5284.40",
+      "amount": null,
+      "confidence": 0.78,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.328,
+          1.0,
+          0.344
+        ]
+      }
+    },
+    {
+      "description": "Bill of entry charges",
+      "quantity": "1",
+      "unit_price": "8842.71",
+      "amount": null,
+      "confidence": 0.78,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.356,
+          1.0,
+          0.372
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The right edge of the rendered page cuts off the line-item amount column, so individual row amounts are not fully readable and are reported as null."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1684,
+      "total_tokens": 5339,
+      "elapsed_s": 13.32
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "NF-2025-3439",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='NF-2025-3439'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: NF-2025-3439 Invoice Date: 07-09-2025 Bill To:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0531,
+                  0.1583,
+                  0.3127,
+                  0.17710000000000004
+                ],
+                "line_bbox": [
+                  0.0531,
+                  0.1583,
+                  0.3127,
+                  0.17710000000000004
+                ],
+                "text": "Invoice No: NF-2025-3439",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "07-09-2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='07-09-2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: NF-2025-3439 Invoice Date: 07-09-2025 Bill To:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0531,
+                  0.18120000000000003,
+                  0.3038,
+                  0.19999999999999996
+                ],
+                "line_bbox": [
+                  0.0531,
+                  0.18120000000000003,
+                  0.3038,
+                  0.19999999999999996
+                ],
+                "text": "Invoice Date: 07-09-2025",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='NOVA FREIGHT SOLUTIONS PVT. LTD.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'NOVA FREIGHT SOLUTIONS PVT. LTD. 42 Transport Nagar,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.056,
+                  0.05830000000000002,
+                  0.6814,
+                  0.08960000000000001
+                ],
+                "line_bbox": [
+                  0.056,
+                  0.05830000000000002,
+                  0.6814,
+                  0.08960000000000001
+                ],
+                "text": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "COASTAL POWER PROJECTS LIMITED",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='COASTAL POWER PROJECTS LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: NF-2025-3439 Invoice Date: 07-09-2025 Bill To:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0531,
+                  0.19999999999999996,
+                  0.528,
+                  0.2229
+                ],
+                "line_bbox": [
+                  0.0531,
+                  0.19999999999999996,
+                  0.528,
+                  0.2229
+                ],
+                "text": "Bill To: COASTAL POWER PROJECTS LIMITED",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "82145.01",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='82145.01'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '1 8,842.71 8,842.7 Subtotal: 82,145.01 Tax: 14,786.10'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.8465,
+                  0.39570000000000005,
+                  0.947,
+                  0.41479999999999995
+                ],
+                "line_bbox": [
+                  0.7079,
+                  0.39549999999999996,
+                  0.947,
+                  0.41479999999999995
+                ],
+                "text": "Subtotal: 82,145.01",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "14786.10",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='14786.10'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal: 82,145.01 Tax: 14,786.10 Total: 96,931.11'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.8464,
+                  0.4141,
+                  0.9471,
+                  0.43589999999999995
+                ],
+                "line_bbox": [
+                  0.7109,
+                  0.4125,
+                  0.9471,
+                  0.43589999999999995
+                ],
+                "text": "Tax: 14,786.10",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "96931.11",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='96931.11'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Tax: 14,786.10 Total: 96,931.11'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.8406,
+                  0.4518,
+                  0.95,
+                  0.47729999999999995
+                ],
+                "line_bbox": [
+                  0.708,
+                  0.4518,
+                  0.95,
+                  0.47729999999999995
+                ],
+                "text": "Total: 96,931.11",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 6
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

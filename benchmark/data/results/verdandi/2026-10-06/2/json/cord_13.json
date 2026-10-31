@@ -1,0 +1,536 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued receipt-like billing document with an itemized charge list, Subtotal, Service Charge, and TOTAL. No issuer name or readable document heading is visible.",
+    "confidence": 0.93
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "316017.00",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.57,
+          0.615,
+          0.686,
+          0.636
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='316017.00'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '316017.00 48982.6\u0142 365000.00'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5714,
+                0.5799000000000001,
+                0.6735,
+                0.6007
+              ],
+              "line_bbox": [
+                0.2498,
+                0.5799000000000001,
+                0.6735,
+                0.6093
+              ],
+              "text": "Subtotal 316017.00",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "365000.00",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.574,
+          0.684,
+          0.704,
+          0.719
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='365000.00'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '365000.00'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5752,
+                0.6292,
+                0.6844,
+                0.6583
+              ],
+              "line_bbox": [
+                0.5752,
+                0.6292,
+                0.6844,
+                0.6583
+              ],
+              "text": "365000.00",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Chicken Maryland",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "47619.00",
+      "confidence": 0.93,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.416,
+          0.659,
+          0.437
+        ]
+      }
+    },
+    {
+      "description": "Cappucino (Hot/Iced)",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "30303.00",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.436,
+          0.659,
+          0.456
+        ]
+      }
+    },
+    {
+      "description": "Naga Lychee Juice",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "34632.00",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.456,
+          0.659,
+          0.475
+        ]
+      }
+    },
+    {
+      "description": "Cafe Latte",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "30303.00",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.475,
+          0.659,
+          0.494
+        ]
+      }
+    },
+    {
+      "description": "Hot Chocolate Marshmallo",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "30303.00",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.494,
+          0.659,
+          0.514
+        ]
+      }
+    },
+    {
+      "description": "Chicken Cesar Salad",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "43290.00",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.514,
+          0.659,
+          0.534
+        ]
+      }
+    },
+    {
+      "description": "Mineral Water",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "12987.00",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.534,
+          0.659,
+          0.554
+        ]
+      }
+    },
+    {
+      "description": "Mineral Water",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "12987.00",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.554,
+          0.659,
+          0.573
+        ]
+      }
+    },
+    {
+      "description": "Lychee/Peach/Lemon/Mango",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "25974.00",
+      "confidence": 0.89,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.573,
+          0.659,
+          0.594
+        ]
+      }
+    },
+    {
+      "description": "Chicken Maryland",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "47619.00",
+      "confidence": 0.93,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.594,
+          0.659,
+          0.612
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The receipt visibly prints a Service Charge 5% + amount of 48982.66; this was not classified as tax_total.",
+    "Currency, invoice number, issue date, vendor name, and buyer name are not legible or not printed."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2046,
+      "total_tokens": 5701,
+      "elapsed_s": 11.37
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "316017.00",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='316017.00'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '316017.00 48982.6\u0142 365000.00'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5714,
+                  0.5799000000000001,
+                  0.6735,
+                  0.6007
+                ],
+                "line_bbox": [
+                  0.2498,
+                  0.5799000000000001,
+                  0.6735,
+                  0.6093
+                ],
+                "text": "Subtotal 316017.00",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "365000.00",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='365000.00'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '365000.00'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5752,
+                  0.6292,
+                  0.6844,
+                  0.6583
+                ],
+                "line_bbox": [
+                  0.5752,
+                  0.6292,
+                  0.6844,
+                  0.6583
+                ],
+                "text": "365000.00",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "alpha_doc",
+    "label": "Alpha Document",
+    "description": "a synthetic first document kind used only by prompt fixture tests",
+    "signals": {"keywords": ["ALPHA"], "min_score": 0.5},
+    "extraction": {
+      "fields": [
+        {"name": "alpha_ref", "type": "str", "description": "the alpha reference as printed"},
+        {"name": "alpha_date", "type": "date", "description": "the alpha date as printed"}
+      ],
+      "line_items": true,
+      "line_items_note": "one line item = one printed alpha row; the amount goes in the amount column",
+      "line_items_columns": [
+        {"name": "description", "description": "the row's full printed text", "type": "str", "role": "description"},
+        {"name": "amount", "description": "the row's own amount as printed", "type": "amount", "role": "amount"}
+      ]
+    },
+    "allow_no_match": false
+  },
+  {
+    "id": "beta_doc",
+    "label": "Beta Document",
+    "description": "a synthetic second document kind used only by prompt fixture tests",
+    "signals": {"keywords": ["BETA"], "min_score": 0.5},
+    "extraction": {
+      "fields": [
+        {"name": "beta_ref", "type": "str", "description": "the beta reference as printed"}
+      ],
+      "line_items": false
+    },
+    "allow_no_match": true
+  }
+]

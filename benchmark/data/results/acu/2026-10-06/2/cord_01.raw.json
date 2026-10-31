@@ -1,0 +1,673 @@
+{
+  "id": "6ed051b4-31d0-4461-98d9-3a012b4f4532",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-06T00:58:01Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "D\n\ntohory & doto\n\nNATURAL\n\n1X\n@11000\n\nDONAT GULA\n\n11,000\n\n\n<table>\n<tr>\n<td>1.00xITEMs<br>SUBTOTAL</td>\n<td>11,000</td>\n</tr>\n<tr>\n<td>TOTAL</td>\n<td>11,000</td>\n</tr>\n<tr>\n<td>CASH</td>\n<td>11,000</td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "valueString": "tohory & doto",
+            "spans": [
+              {
+                "offset": 3,
+                "length": 13
+              }
+            ],
+            "confidence": 0.897,
+            "source": "D(1,2.7237,2.4059,4.4749,2.3950,4.4760,2.5833,2.7249,2.5942)"
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 11000,
+            "spans": [
+              {
+                "offset": 108,
+                "length": 6
+              }
+            ],
+            "confidence": 0.734,
+            "source": "D(1,5.4756,6.8778,6.3755,6.8354,6.3916,7.1806,5.4918,7.2165)"
+          },
+          "tax_total": {
+            "type": "number",
+            "confidence": 0.974
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 11000,
+            "spans": [
+              {
+                "offset": 150,
+                "length": 6
+              }
+            ],
+            "confidence": 0.734,
+            "source": "D(1,5.5079,7.2472,6.4037,7.2014,6.4198,7.5399,5.5241,7.5828)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "DONAT GULA",
+                    "spans": [
+                      {
+                        "offset": 38,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.745,
+                    "source": "D(1,1.5734,6.3485,3.0517,6.2878,3.0647,6.6036,1.5864,6.6643)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 27,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.705,
+                    "source": "D(1,1.5717,6.0261,1.8481,6.0084,1.8541,6.3053,1.5797,6.3135)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 11000,
+                    "spans": [
+                      {
+                        "offset": 30,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.827,
+                    "source": "D(1,3.7463,5.8791,4.6482,5.8446,4.6605,6.1654,3.7586,6.2000)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 11000,
+                    "spans": [
+                      {
+                        "offset": 50,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.835,
+                    "source": "D(1,5.4191,6.1352,6.3190,6.1033,6.3432,6.4346,5.4353,6.4665)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -2.03,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 218
+              }
+            ],
+            "words": [
+              {
+                "content": "D",
+                "span": {
+                  "offset": 0,
+                  "length": 1
+                },
+                "confidence": 0.92,
+                "source": "D(1,1.6806,2.3839,2.6712,2.3202,2.7015,3.4917,1.6877,3.491)"
+              },
+              {
+                "content": "tohory",
+                "span": {
+                  "offset": 3,
+                  "length": 6
+                },
+                "confidence": 0.14,
+                "source": "D(1,2.7237,2.4059,3.5142,2.4034,3.5164,2.5885,2.7277,2.5942)"
+              },
+              {
+                "content": "&",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.904,
+                "source": "D(1,3.6328,2.403,3.7696,2.4025,3.7712,2.5863,3.6347,2.5875)"
+              },
+              {
+                "content": "doto",
+                "span": {
+                  "offset": 12,
+                  "length": 4
+                },
+                "confidence": 0.239,
+                "source": "D(1,3.8942,2.4021,4.4749,2.3999,4.4749,2.5793,3.8956,2.5853)"
+              },
+              {
+                "content": "NATURAL",
+                "span": {
+                  "offset": 18,
+                  "length": 7
+                },
+                "confidence": 0.188,
+                "source": "D(1,2.8286,3.66,4.7453,3.5983,4.7534,3.7861,2.8326,3.8514)"
+              },
+              {
+                "content": "1X",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.772,
+                "source": "D(1,1.5717,6.0261,1.8481,6.0084,1.8541,6.3053,1.5797,6.3135)"
+              },
+              {
+                "content": "@",
+                "span": {
+                  "offset": 30,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.7466,5.8861,3.8894,5.8785,3.9056,6.1896,3.7627,6.1941)"
+              },
+              {
+                "content": "11000",
+                "span": {
+                  "offset": 31,
+                  "length": 5
+                },
+                "confidence": 0.984,
+                "source": "D(1,3.92,5.8769,4.6444,5.8447,4.6605,6.1654,3.9362,6.1887)"
+              },
+              {
+                "content": "DONAT",
+                "span": {
+                  "offset": 38,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,1.5737,6.3549,2.2784,6.3228,2.2975,6.6323,1.5918,6.6633)"
+              },
+              {
+                "content": "GULA",
+                "span": {
+                  "offset": 44,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.4163,6.3166,3.0445,6.2881,3.0647,6.6036,2.4355,6.6267)"
+              },
+              {
+                "content": "11,000",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.959,
+                "source": "D(1,5.4191,6.1352,6.319,6.1033,6.3432,6.4346,5.4353,6.4665)"
+              },
+              {
+                "content": "1.00xITEMs",
+                "span": {
+                  "offset": 76,
+                  "length": 10
+                },
+                "confidence": 0.797,
+                "source": "D(1,3.216,6.6396,4.6928,6.5645,4.709,6.8838,3.2321,6.9481)"
+              },
+              {
+                "content": "SUBTOTAL",
+                "span": {
+                  "offset": 90,
+                  "length": 8
+                },
+                "confidence": 0.983,
+                "source": "D(1,1.6302,7.0611,2.7842,7.0329,2.7963,7.34,1.6443,7.3694)"
+              },
+              {
+                "content": "11,000",
+                "span": {
+                  "offset": 108,
+                  "length": 6
+                },
+                "confidence": 0.944,
+                "source": "D(1,5.4756,6.8778,6.3755,6.8354,6.3916,7.1806,5.4918,7.2165)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 135,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,1.6655,7.417,3.0727,7.3952,3.0889,7.7006,1.6796,7.7363)"
+              },
+              {
+                "content": "11,000",
+                "span": {
+                  "offset": 150,
+                  "length": 6
+                },
+                "confidence": 0.906,
+                "source": "D(1,5.5079,7.2472,6.4037,7.2014,6.4198,7.5399,5.5241,7.5828)"
+              },
+              {
+                "content": "CASH",
+                "span": {
+                  "offset": 177,
+                  "length": 4
+                },
+                "confidence": 0.986,
+                "source": "D(1,1.6615,7.7886,2.8165,7.7357,2.8286,8.0573,1.6695,8.1087)"
+              },
+              {
+                "content": "11,000",
+                "span": {
+                  "offset": 191,
+                  "length": 6
+                },
+                "confidence": 0.939,
+                "source": "D(1,5.5321,7.6226,6.436,7.5742,6.4562,7.9216,5.5483,7.9641)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "D",
+                "source": "D(1,1.679,2.3463,2.6712,2.3202,2.7015,3.4917,1.6884,3.4946)",
+                "span": {
+                  "offset": 0,
+                  "length": 1
+                }
+              },
+              {
+                "content": "tohory & doto",
+                "source": "D(1,2.7237,2.4059,4.4749,2.3999,4.4756,2.5883,2.7243,2.5942)",
+                "span": {
+                  "offset": 3,
+                  "length": 13
+                }
+              },
+              {
+                "content": "NATURAL",
+                "source": "D(1,2.827,3.6601,4.7473,3.5982,4.7536,3.7944,2.8328,3.8544)",
+                "span": {
+                  "offset": 18,
+                  "length": 7
+                }
+              },
+              {
+                "content": "1X",
+                "source": "D(1,1.5714,6.0147,1.848,6.0071,1.8561,6.3057,1.5797,6.3135)",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                }
+              },
+              {
+                "content": "@11000",
+                "source": "D(1,3.7464,5.8797,4.648,5.8446,4.6605,6.1654,3.7588,6.1955)",
+                "span": {
+                  "offset": 30,
+                  "length": 6
+                }
+              },
+              {
+                "content": "DONAT GULA",
+                "source": "D(1,1.5737,6.3548,3.0503,6.2878,3.0647,6.6036,1.588,6.6638)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "11,000",
+                "source": "D(1,5.4191,6.1352,6.3314,6.1029,6.3433,6.4373,5.431,6.4696)",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1.00xITEMs",
+                "source": "D(1,3.2156,6.6306,4.6945,6.5639,4.709,6.8838,3.23,6.9493)",
+                "span": {
+                  "offset": 76,
+                  "length": 10
+                }
+              },
+              {
+                "content": "SUBTOTAL",
+                "source": "D(1,1.63,7.0557,2.7883,7.0292,2.7963,7.34,1.6381,7.3696)",
+                "span": {
+                  "offset": 90,
+                  "length": 8
+                }
+              },
+              {
+                "content": "11,000",
+                "source": "D(1,5.4756,6.8775,6.3755,6.8354,6.3916,7.1806,5.4918,7.2177)",
+                "span": {
+                  "offset": 108,
+                  "length": 6
+                }
+              },
+              {
+                "content": "TOTAL",
+                "source": "D(1,1.6654,7.4146,3.0807,7.3947,3.0889,7.7006,1.6736,7.7365)",
+                "span": {
+                  "offset": 135,
+                  "length": 5
+                }
+              },
+              {
+                "content": "11,000",
+                "source": "D(1,5.5069,7.2472,6.4037,7.2014,6.4212,7.5436,5.5244,7.5831)",
+                "span": {
+                  "offset": 150,
+                  "length": 6
+                }
+              },
+              {
+                "content": "CASH",
+                "source": "D(1,1.6562,7.7859,2.8164,7.7345,2.8307,8.0572,1.6695,8.1087)",
+                "span": {
+                  "offset": 177,
+                  "length": 4
+                }
+              },
+              {
+                "content": "11,000",
+                "source": "D(1,5.5319,7.6169,6.4397,7.574,6.4562,7.9216,5.5483,7.9645)",
+                "span": {
+                  "offset": 191,
+                  "length": 6
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "D",
+            "source": "D(1,1.6587,2.3463,2.6712,2.3202,2.7015,3.4917,1.689,3.5178)",
+            "span": {
+              "offset": 0,
+              "length": 1
+            }
+          },
+          {
+            "content": "tohory & doto",
+            "source": "D(1,2.7237,2.4059,4.4749,2.3999,4.4756,2.5883,2.7243,2.5942)",
+            "span": {
+              "offset": 3,
+              "length": 13
+            }
+          },
+          {
+            "content": "NATURAL",
+            "source": "D(1,2.8265,3.66,4.7473,3.5982,4.7536,3.7944,2.8329,3.8562)",
+            "span": {
+              "offset": 18,
+              "length": 7
+            }
+          },
+          {
+            "content": "1X @11000",
+            "source": "D(1,1.5635,5.9889,4.6475,5.8346,4.6641,6.1652,1.58,6.3196)",
+            "span": {
+              "offset": 27,
+              "length": 9
+            }
+          },
+          {
+            "content": "DONAT GULA",
+            "source": "D(1,1.5737,6.3547,3.0503,6.2878,3.0647,6.6036,1.588,6.6705)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "11,000",
+            "source": "D(1,5.4191,6.1352,6.3314,6.1029,6.3433,6.4373,5.431,6.4696)",
+            "span": {
+              "offset": 50,
+              "length": 6
+            }
+          },
+          {
+            "content": "1.00xITEMs",
+            "source": "D(1,3.2157,6.6342,4.6939,6.5645,4.709,6.8838,3.2308,6.9536)",
+            "span": {
+              "offset": 76,
+              "length": 10
+            }
+          },
+          {
+            "content": "SUBTOTAL",
+            "source": "D(1,1.6302,7.0611,2.7886,7.0321,2.7963,7.3406,1.6379,7.3696)",
+            "span": {
+              "offset": 90,
+              "length": 8
+            }
+          },
+          {
+            "content": "11,000",
+            "source": "D(1,5.4755,6.8746,6.3766,6.8354,6.3916,7.1806,5.4905,7.2198)",
+            "span": {
+              "offset": 108,
+              "length": 6
+            }
+          },
+          {
+            "content": "TOTAL",
+            "source": "D(1,1.6655,7.417,3.0825,7.388,3.089,7.7075,1.672,7.7365)",
+            "span": {
+              "offset": 135,
+              "length": 5
+            }
+          },
+          {
+            "content": "11,000",
+            "source": "D(1,5.5074,7.2457,6.4037,7.2014,6.4205,7.5399,5.5241,7.5843)",
+            "span": {
+              "offset": 150,
+              "length": 6
+            }
+          },
+          {
+            "content": "CASH",
+            "source": "D(1,1.6551,7.788,2.8165,7.7357,2.831,8.0572,1.6696,8.1095)",
+            "span": {
+              "offset": 177,
+              "length": 4
+            }
+          },
+          {
+            "content": "11,000",
+            "source": "D(1,5.531,7.6196,6.4387,7.5741,6.4562,7.9216,5.5484,7.9671)",
+            "span": {
+              "offset": 191,
+              "length": 6
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 217
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/tables/0"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 3,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.00xITEMs\nSUBTOTAL",
+                "source": "D(1,1.5617,6.6566,5.2536,6.6543,5.2531,7.2043,1.5628,7.2277)",
+                "span": {
+                  "offset": 76,
+                  "length": 22
+                },
+                "elements": [
+                  "/paragraphs/6",
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "11,000",
+                "source": "D(1,5.2536,6.6543,6.539,6.652,6.5394,7.1951,5.2531,7.2043)",
+                "span": {
+                  "offset": 108,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "TOTAL",
+                "source": "D(1,1.5628,7.2277,5.2531,7.2043,5.253,7.5882,1.5605,7.6221)",
+                "span": {
+                  "offset": 135,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "11,000",
+                "source": "D(1,5.2531,7.2043,6.5394,7.1951,6.5419,7.5754,5.253,7.5882)",
+                "span": {
+                  "offset": 150,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CASH",
+                "source": "D(1,1.5605,7.6221,5.253,7.5882,5.2524,8.018,1.5625,8.0756)",
+                "span": {
+                  "offset": 177,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "11,000",
+                "source": "D(1,5.253,7.5882,6.5419,7.5754,6.5433,7.9979,5.2524,8.018)",
+                "span": {
+                  "offset": 191,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              }
+            ],
+            "source": "D(1,1.5646,7.0464,6.436,6.8065,6.4965,7.8572,1.6181,8.1484)",
+            "span": {
+              "offset": 59,
+              "length": 158
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5.5-input": 3909,
+      "gpt-5.5-cached-input": 3328,
+      "gpt-5.5-output": 176
+    }
+  }
+}

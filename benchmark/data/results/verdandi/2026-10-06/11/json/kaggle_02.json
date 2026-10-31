@@ -1,0 +1,557 @@
+{
+  "selected_document": {
+    "name": "Analytic Insight, Inc.",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cINVOICE,\u201d identifies Analytic Insight, Inc. as the sender, and prints an amount due of $11,780.63.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "August 14, 1995",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.429,
+          0.219,
+          0.564,
+          0.232
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='August 14, 1995' \u2014 format 'date'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE August 14, 1995 Ms. Vicki Clark Brown'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4277,
+                0.2208,
+                0.5664,
+                0.23960000000000004
+              ],
+              "line_bbox": [
+                0.1652,
+                0.2188,
+                0.5664,
+                0.23960000000000004
+              ],
+              "text": "DATE: August 14, 1995",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Analytic Insight, Inc.",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.427,
+          0.298,
+          0.606,
+          0.312
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Analytic Insight, Inc.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Ms. Vicki Clark Brown & Williamson Tobacco Corp.'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4248,
+                0.30000000000000004,
+                0.6106,
+                0.3188
+              ],
+              "line_bbox": [
+                0.1593,
+                0.29579999999999995,
+                0.6106,
+                0.3188
+              ],
+              "text": "FROM: Analytic Insight, Inc.",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Ms. Vicki Clark; Brown & Williamson Tobacco Corp.",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.427,
+          0.251,
+          0.747,
+          0.28
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Ms. Vicki Clark; Brown & Williamson Tobacco Corp.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Ms. Vicki Clark; Brown & Williamson Tobacco Corp.' NOT found near region (page 1); nearest text 'August 14, 1995 Ms. Vicki Clark CC: Mr.' (n-gram proximity 0.94)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.424,
+          0.328,
+          0.521,
+          0.341
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'Analytic Insight, Inc. $11,780.63 Lucky Strike Competitive Research' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "11780.63",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.424,
+          0.328,
+          0.521,
+          0.341
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='11780.63'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Analytic Insight, Inc. $11,780.63 Lucky Strike Competitive Research'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4218,
+                0.33130000000000004,
+                0.5251,
+                0.3479
+              ],
+              "line_bbox": [
+                0.1593,
+                0.32920000000000005,
+                0.5251,
+                0.3479
+              ],
+              "text": "AMOUNT DUE: $11,780.63",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [],
+  "notes": [
+    "No charge table or printed line-item rows are visible on the invoice page."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1458,
+      "total_tokens": 8702,
+      "elapsed_s": 15.47
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": "August 14, 1995",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='August 14, 1995' \u2014 format 'date'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE August 14, 1995 Ms. Vicki Clark Brown'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4277,
+                  0.2208,
+                  0.5664,
+                  0.23960000000000004
+                ],
+                "line_bbox": [
+                  0.1652,
+                  0.2188,
+                  0.5664,
+                  0.23960000000000004
+                ],
+                "text": "DATE: August 14, 1995",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Analytic Insight, Inc.",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Analytic Insight, Inc.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Ms. Vicki Clark Brown & Williamson Tobacco Corp.'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4248,
+                  0.30000000000000004,
+                  0.6106,
+                  0.3188
+                ],
+                "line_bbox": [
+                  0.1593,
+                  0.29579999999999995,
+                  0.6106,
+                  0.3188
+                ],
+                "text": "FROM: Analytic Insight, Inc.",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Ms. Vicki Clark; Brown & Williamson Tobacco Corp.",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Ms. Vicki Clark; Brown & Williamson Tobacco Corp.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Ms. Vicki Clark; Brown & Williamson Tobacco Corp.' NOT found near region (page 1); nearest text 'August 14, 1995 Ms. Vicki Clark CC: Mr.' (n-gram proximity 0.94)",
+              "match": null
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'Analytic Insight, Inc. $11,780.63 Lucky Strike Competitive Research' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "11780.63",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='11780.63'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Analytic Insight, Inc. $11,780.63 Lucky Strike Competitive Research'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4218,
+                  0.33130000000000004,
+                  0.5251,
+                  0.3479
+                ],
+                "line_bbox": [
+                  0.1593,
+                  0.32920000000000005,
+                  0.5251,
+                  0.3479
+                ],
+                "text": "AMOUNT DUE: $11,780.63",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 2
+        },
+        "flag_rows": 6
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "August 14, 1995",
+            "secondary": "August 14, 1995",
+            "agree": false
+          },
+          "buyer_name": {
+            "primary": "Ms. Vicki Clark; Brown & Williamson Tobacco Corp.",
+            "secondary": "Brown & Williamson Tobacco Corp.",
+            "agree": false
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "80f5229f353380a184ba75cc7cd9578daa271a74676cfb026312687b25529a3c"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5872,
+          "completion_tokens": 460,
+          "total_tokens": 6332,
+          "elapsed_s": 6.02
+        }
+      }
+    }
+  }
+}

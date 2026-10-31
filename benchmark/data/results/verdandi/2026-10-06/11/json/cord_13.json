@@ -1,0 +1,537 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Selected as a vendor-issued restaurant receipt: the page shows itemized food and drink charges, followed by a subtotal, service charge, and TOTAL. The issuer name or heading is not legible in the render.",
+    "confidence": 0.96
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "316017.00",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.251,
+          0.579,
+          0.677,
+          0.602
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='316017.00'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Lychee/Peach/ Lemon/Mango Chicken Maryland 47619.00 Subtotal 316017.00 Service'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5714,
+                0.5799000000000001,
+                0.6735,
+                0.6007
+              ],
+              "line_bbox": [
+                0.2498,
+                0.5799000000000001,
+                0.6735,
+                0.6093
+              ],
+              "text": "Subtotal 316017.00",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "365000.00",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.339,
+          0.641,
+          0.684,
+          0.666
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='365000.00'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal Service Charge 5% + 48982.6\u0142 365000.00 TOTAL'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5752,
+                0.6292,
+                0.6844,
+                0.6583
+              ],
+              "line_bbox": [
+                0.5752,
+                0.6292,
+                0.6844,
+                0.6583
+              ],
+              "text": "365000.00",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Chicken Maryland",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "47619.00",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.396,
+          0.66,
+          0.411
+        ]
+      }
+    },
+    {
+      "description": "Cappuccino (Hot/Iced)",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "30303.00",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.413,
+          0.66,
+          0.428
+        ]
+      }
+    },
+    {
+      "description": "Naga Lychee Juice",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "34632.00",
+      "confidence": 0.88,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.43,
+          0.66,
+          0.445
+        ]
+      }
+    },
+    {
+      "description": "Cafe Latte",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "30303.00",
+      "confidence": 0.92,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.447,
+          0.66,
+          0.462
+        ]
+      }
+    },
+    {
+      "description": "Hot Chocolate Marshmallow",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "30303.00",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.464,
+          0.66,
+          0.479
+        ]
+      }
+    },
+    {
+      "description": "Chicken Cesar Salad",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "43290.00",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.481,
+          0.66,
+          0.496
+        ]
+      }
+    },
+    {
+      "description": "Mineral Water",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "12987.00",
+      "confidence": 0.92,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.498,
+          0.66,
+          0.513
+        ]
+      }
+    },
+    {
+      "description": "Mineral Water",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "12987.00",
+      "confidence": 0.92,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.515,
+          0.66,
+          0.53
+        ]
+      }
+    },
+    {
+      "description": "Lychee/Peach/Lemon/Mango",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "25974.00",
+      "confidence": 0.89,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.532,
+          0.66,
+          0.547
+        ]
+      }
+    },
+    {
+      "description": "Chicken Maryland",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "47619.00",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.253,
+          0.55,
+          0.66,
+          0.565
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "No legible vendor name, receipt number, or issue date is visible.",
+    "No currency symbol or currency code is visible.",
+    "A service charge is printed, but no tax amount is identified."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 2857,
+      "total_tokens": 10101,
+      "elapsed_s": 22.94
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "316017.00",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='316017.00'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Lychee/Peach/ Lemon/Mango Chicken Maryland 47619.00 Subtotal 316017.00 Service'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5714,
+                  0.5799000000000001,
+                  0.6735,
+                  0.6007
+                ],
+                "line_bbox": [
+                  0.2498,
+                  0.5799000000000001,
+                  0.6735,
+                  0.6093
+                ],
+                "text": "Subtotal 316017.00",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "365000.00",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='365000.00'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal Service Charge 5% + 48982.6\u0142 365000.00 TOTAL'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5752,
+                  0.6292,
+                  0.6844,
+                  0.6583
+                ],
+                "line_bbox": [
+                  0.5752,
+                  0.6292,
+                  0.6844,
+                  0.6583
+                ],
+                "text": "365000.00",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

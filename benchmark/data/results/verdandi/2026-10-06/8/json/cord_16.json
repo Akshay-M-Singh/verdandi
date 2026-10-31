@@ -1,0 +1,550 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued receipt-style charge document with menu items and printed SUBTTL, Service Charge, TAX, and TOTAL amounts. The issuer name and heading in the upper portion are not legible.",
+    "confidence": 0.96
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "278000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.63,
+          0.75,
+          0.73,
+          0.77
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='278000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): '214,000 278,000 22,240 30,024 330\u201e26\u0105\u0142'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6307,
+                0.6487,
+                0.7202,
+                0.6712
+              ],
+              "line_bbox": [
+                0.3185,
+                0.6487,
+                0.7202,
+                0.6712
+              ],
+              "text": "SUBTTL 278,000",
+              "lineno": 9,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "30024",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.64,
+          0.81,
+          0.73,
+          0.83
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='30024'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): '22,240 30,024 330\u201e26\u0105\u0142'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6417,
+                0.6890000000000001,
+                0.7209,
+                0.7142999999999999
+              ],
+              "line_bbox": [
+                0.3215,
+                0.6890000000000001,
+                0.7209,
+                0.7142999999999999
+              ],
+              "text": "TAX 30,024",
+              "lineno": 11,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "330264",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.56,
+          0.86,
+          0.74,
+          0.89
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='330264'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '330264' NOT found near region (page 1); nearest text 'no text found near the claimed region' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "BLACKCURRANT",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "32000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.48,
+          0.73,
+          0.51
+        ]
+      }
+    },
+    {
+      "description": "SPRITE",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "32000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.51,
+          0.73,
+          0.54
+        ]
+      }
+    },
+    {
+      "description": "GRILLED CALAMARI",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "85000",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.57,
+          0.73,
+          0.6
+        ]
+      }
+    },
+    {
+      "description": "DINE FOR 2",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "129000",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.6,
+          0.73,
+          0.63
+        ]
+      }
+    },
+    {
+      "description": "DANISH FISH & CHIPS DF",
+      "quantity": null,
+      "unit_price": null,
+      "amount": null,
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.33,
+          0.63,
+          0.73,
+          0.66
+        ]
+      }
+    },
+    {
+      "description": "NEW YORK FISH & CHIPS",
+      "quantity": null,
+      "unit_price": null,
+      "amount": null,
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.33,
+          0.66,
+          0.73,
+          0.69
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The receipt's upper identifying text is heavily blurred and cannot be transcribed.",
+    "No legible currency code or symbol is visible."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 15047,
+      "completion_tokens": 2190,
+      "total_tokens": 17237,
+      "elapsed_s": 22.1
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "278000",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='278000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): '214,000 278,000 22,240 30,024 330\u201e26\u0105\u0142'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6307,
+                  0.6487,
+                  0.7202,
+                  0.6712
+                ],
+                "line_bbox": [
+                  0.3185,
+                  0.6487,
+                  0.7202,
+                  0.6712
+                ],
+                "text": "SUBTTL 278,000",
+                "lineno": 9,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "30024",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='30024'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): '22,240 30,024 330\u201e26\u0105\u0142'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6417,
+                  0.6890000000000001,
+                  0.7209,
+                  0.7142999999999999
+                ],
+                "line_bbox": [
+                  0.3215,
+                  0.6890000000000001,
+                  0.7209,
+                  0.7142999999999999
+                ],
+                "text": "TAX 30,024",
+                "lineno": 11,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "330264",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='330264'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '330264' NOT found near region (page 1); nearest text 'no text found near the claimed region' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "subtotal": {
+            "primary": "278000",
+            "secondary": "278,000",
+            "agree": true
+          },
+          "tax_total": {
+            "primary": "30024",
+            "secondary": "30,024",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "330264",
+            "secondary": "330,264",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "73f514d0ad200ed956338c11146880f25b20a2126340718b866462a27eecdb85"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 13888,
+          "completion_tokens": 765,
+          "total_tokens": 14653,
+          "elapsed_s": 13.01
+        }
+      }
+    }
+  }
+}

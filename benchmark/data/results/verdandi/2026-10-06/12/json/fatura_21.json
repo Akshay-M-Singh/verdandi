@@ -1,0 +1,779 @@
+{
+  "selected_document": {
+    "name": "COMMERCIAL INVOICE",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 is headed \u201cCOMMERCIAL INVOICE\u201d and shows an invoice number, issue date, billed line items, and subtotal, tax, and total amounts.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV73642396",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.643,
+          0.066,
+          0.768,
+          0.081
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV73642396'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'COMMERCIAL INVOICE Invoice number INV73642396 Date: 26~Jun-2022'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4956,
+                0.06459999999999999,
+                0.7699,
+                0.08330000000000004
+              ],
+              "line_bbox": [
+                0.4956,
+                0.06459999999999999,
+                0.7699,
+                0.08330000000000004
+              ],
+              "text": "Invoice number INV73642396",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "26-Jun-2022",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.5,
+          0.086,
+          0.672,
+          0.101
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='26-Jun-2022'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '26-Jun-2022' NOT found near region (page 1); nearest text 'Invoice number INV73642396 Date: 26~Jun-2022' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Courtney Jones",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.479,
+          0.18,
+          0.697,
+          0.198
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Courtney Jones'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Bill to: Courtney Jones 785 Kaiser Circles Suite'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4749,
+                0.17920000000000003,
+                0.6962,
+                0.19789999999999996
+              ],
+              "line_bbox": [
+                0.4749,
+                0.17920000000000003,
+                0.6962,
+                0.19789999999999996
+              ],
+              "text": "Bill to: Courtney Jones",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.843,
+          0.693,
+          0.899,
+          0.708
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX:VAT (3.95%): 9.89 EUR TOTAL: 248.12 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.649,
+                0.6521,
+                0.9204,
+                0.6667000000000001
+              ],
+              "line_bbox": [
+                0.649,
+                0.6521,
+                0.9204,
+                0.6667000000000001
+              ],
+              "text": "TAX:VAT (3.95%): 9.89 EUR",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "250.16",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.743,
+          0.693,
+          0.849,
+          0.708
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='250.16'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 250.16 EUR TAX:VAT (3.95%): 9.89 EUR TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.646,
+                0.6229,
+                0.9056,
+                0.6416999999999999
+              ],
+              "line_bbox": [
+                0.646,
+                0.6229,
+                0.9056,
+                0.6416999999999999
+              ],
+              "text": "SUB_TOTAL: 250.16 EUR",
+              "lineno": 13,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "9.89",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.833,
+          0.727,
+          0.921,
+          0.744
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='9.89'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 250.16 EUR TAX:VAT (3.95%): 9.89 EUR TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.649,
+                0.6521,
+                0.9204,
+                0.6667000000000001
+              ],
+              "line_bbox": [
+                0.649,
+                0.6521,
+                0.9204,
+                0.6667000000000001
+              ],
+              "text": "TAX:VAT (3.95%): 9.89 EUR",
+              "lineno": 14,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "248.12",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.761,
+          0.775,
+          0.843,
+          0.791
+        ]
+      },
+      "verification": {
+        "score": 0.75,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='248.12'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 0.6,
+            "detail": "value found near region (loose/row band) (page 1): 'TAX:VAT (3.95%): 9.89 EUR TOTAL: 248.12 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.646,
+                0.6958,
+                0.8466,
+                0.7125
+              ],
+              "line_bbox": [
+                0.646,
+                0.6958,
+                0.8466,
+                0.7125
+              ],
+              "text": "TOTAL: 248.12 EUR",
+              "lineno": 15,
+              "band": "loose"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "accept"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Leave might feel old.",
+      "quantity": "5.00",
+      "unit_price": "44.26",
+      "amount": "221.30",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.032,
+          0.522,
+          0.941,
+          0.544
+        ]
+      }
+    },
+    {
+      "description": "Poor admit plan discuss.",
+      "quantity": "3.00",
+      "unit_price": "9.62",
+      "amount": "28.86",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.032,
+          0.544,
+          0.941,
+          0.565
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The issuing firm's name is not printed; the document heading is used as selected_document.name.",
+    "The printed subtotal and tax do not arithmetically match the printed total; all amounts are transcribed as shown."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1477,
+      "total_tokens": 8721,
+      "elapsed_s": 13.76
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV73642396",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV73642396'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'COMMERCIAL INVOICE Invoice number INV73642396 Date: 26~Jun-2022'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4956,
+                  0.06459999999999999,
+                  0.7699,
+                  0.08330000000000004
+                ],
+                "line_bbox": [
+                  0.4956,
+                  0.06459999999999999,
+                  0.7699,
+                  0.08330000000000004
+                ],
+                "text": "Invoice number INV73642396",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "26-Jun-2022",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='26-Jun-2022'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '26-Jun-2022' NOT found near region (page 1); nearest text 'Invoice number INV73642396 Date: 26~Jun-2022' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": "Courtney Jones",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Courtney Jones'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Bill to: Courtney Jones 785 Kaiser Circles Suite'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4749,
+                  0.17920000000000003,
+                  0.6962,
+                  0.19789999999999996
+                ],
+                "line_bbox": [
+                  0.4749,
+                  0.17920000000000003,
+                  0.6962,
+                  0.19789999999999996
+                ],
+                "text": "Bill to: Courtney Jones",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX:VAT (3.95%): 9.89 EUR TOTAL: 248.12 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.649,
+                  0.6521,
+                  0.9204,
+                  0.6667000000000001
+                ],
+                "line_bbox": [
+                  0.649,
+                  0.6521,
+                  0.9204,
+                  0.6667000000000001
+                ],
+                "text": "TAX:VAT (3.95%): 9.89 EUR",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "250.16",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='250.16'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 250.16 EUR TAX:VAT (3.95%): 9.89 EUR TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.646,
+                  0.6229,
+                  0.9056,
+                  0.6416999999999999
+                ],
+                "line_bbox": [
+                  0.646,
+                  0.6229,
+                  0.9056,
+                  0.6416999999999999
+                ],
+                "text": "SUB_TOTAL: 250.16 EUR",
+                "lineno": 13,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "9.89",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='9.89'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'SUB_TOTAL: 250.16 EUR TAX:VAT (3.95%): 9.89 EUR TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.649,
+                  0.6521,
+                  0.9204,
+                  0.6667000000000001
+                ],
+                "line_bbox": [
+                  0.649,
+                  0.6521,
+                  0.9204,
+                  0.6667000000000001
+                ],
+                "text": "TAX:VAT (3.95%): 9.89 EUR",
+                "lineno": 14,
+                "band": "loose"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "248.12",
+          "score": 0.75,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='248.12'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 0.6,
+              "detail": "value found near region (loose/row band) (page 1): 'TAX:VAT (3.95%): 9.89 EUR TOTAL: 248.12 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.646,
+                  0.6958,
+                  0.8466,
+                  0.7125
+                ],
+                "line_bbox": [
+                  0.646,
+                  0.6958,
+                  0.8466,
+                  0.7125
+                ],
+                "text": "TOTAL: 248.12 EUR",
+                "lineno": 15,
+                "band": "loose"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "26-Jun-2022",
+            "secondary": "26-Jun-2022",
+            "agree": true
+          },
+          "subtotal": {
+            "primary": "250.16",
+            "secondary": "250.16 EUR",
+            "agree": true
+          },
+          "tax_total": {
+            "primary": "9.89",
+            "secondary": "9.89 EUR",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "248.12",
+            "secondary": "248.12 EUR",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "40403444a39cab1e4f6fd735b19c8449812b5ae701ef8e6dfca2d1b773260024"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5874,
+          "completion_tokens": 735,
+          "total_tokens": 6609,
+          "elapsed_s": 7.11
+        }
+      }
+    }
+  }
+}

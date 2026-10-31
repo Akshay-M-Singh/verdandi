@@ -1,0 +1,438 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows sales line entries followed by printed 'NET SALES', 'TAX', and 'AMOUNT DUE' amounts, consistent with a vendor-billed receipt or similar charge document. No issuer name or document heading is visible.",
+    "confidence": 0.67
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "260000",
+      "confidence": 0.38,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.22,
+          0.6,
+          0.73,
+          0.66
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='260000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '260000' NOT found near region (page 1); nearest text '10 AMBUSH CHS BUR 100000 NET SALES 160000' (n-gram proximity 0.67)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "16000",
+      "confidence": 0.38,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.22,
+          0.65,
+          0.73,
+          0.7
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='16000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'NET SALES 160000 TAX 16000 ANDUNT DUE 27600\u00db\u00cd\u0161'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5929,
+                0.6583,
+                0.7286,
+                0.6917
+              ],
+              "line_bbox": [
+                0.2153,
+                0.6416999999999999,
+                0.7286,
+                0.6917
+              ],
+              "text": "TAX 16000",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "276000",
+      "confidence": 0.4,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.22,
+          0.69,
+          0.73,
+          0.75
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='276000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '276000' NOT found near region (page 1); nearest text 'TAX 16000 ANDUNT DUE 27600\u00db\u00cd\u0161' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "[partially unreadable]",
+      "quantity": "4",
+      "unit_price": null,
+      "amount": "68000",
+      "confidence": 0.24,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.17,
+          0.49,
+          0.74,
+          0.55
+        ]
+      }
+    },
+    {
+      "description": "[partially unreadable]",
+      "quantity": "10",
+      "unit_price": null,
+      "amount": "100000",
+      "confidence": 0.23,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.17,
+          0.54,
+          0.75,
+          0.6
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The image is heavily obscured and blurred; line descriptions and several amounts are difficult to read."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 2418,
+      "total_tokens": 9423,
+      "elapsed_s": 32.12
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "260000",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='260000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '260000' NOT found near region (page 1); nearest text '10 AMBUSH CHS BUR 100000 NET SALES 160000' (n-gram proximity 0.67)",
+              "match": null
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "16000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='16000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'NET SALES 160000 TAX 16000 ANDUNT DUE 27600\u00db\u00cd\u0161'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5929,
+                  0.6583,
+                  0.7286,
+                  0.6917
+                ],
+                "line_bbox": [
+                  0.2153,
+                  0.6416999999999999,
+                  0.7286,
+                  0.6917
+                ],
+                "text": "TAX 16000",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "276000",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='276000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '276000' NOT found near region (page 1); nearest text 'TAX 16000 ANDUNT DUE 27600\u00db\u00cd\u0161' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 2
+        },
+        "flag_rows": 7
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "subtotal": {
+            "primary": "260000",
+            "secondary": null,
+            "agree": false
+          },
+          "total_amount": {
+            "primary": "276000",
+            "secondary": null,
+            "agree": false
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "ee8ba1e5bee264df9995b2dc12a692a2eb45d6e6a7c7bebea160eb90df38b393"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5810,
+          "completion_tokens": 704,
+          "total_tokens": 6514,
+          "elapsed_s": 12.29
+        }
+      }
+    }
+  }
+}

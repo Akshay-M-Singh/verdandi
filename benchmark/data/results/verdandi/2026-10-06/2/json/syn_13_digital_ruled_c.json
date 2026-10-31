@@ -1,0 +1,808 @@
+{
+  "selected_document": {
+    "name": "MERIDIAN SUPPLY CHAIN PVT. LTD.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows a TAX INVOICE issued by MERIDIAN SUPPLY CHAIN PVT. LTD., with invoice details, vendor-billed charge rows, taxes, and a total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/25-26/414",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.102,
+          0.279,
+          0.115
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/25-26/414'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '7th Floor, Trade Centre, Ahmedabad 380015, India Invoice'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.10340000000000005,
+                0.2614,
+                0.11409999999999998
+              ],
+              "line_bbox": [
+                0.084,
+                0.10340000000000005,
+                0.2614,
+                0.11409999999999998
+              ],
+              "text": "Invoice No: INV/25-26/414",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "15-07-2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.119,
+          0.219,
+          0.132
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='15-07-2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: INV/25-26/414 Invoice Date: 15-07-2025 Bill To:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.11880000000000002,
+                0.2539,
+                0.12949999999999995
+              ],
+              "line_bbox": [
+                0.084,
+                0.11880000000000002,
+                0.2539,
+                0.12949999999999995
+              ],
+              "text": "Invoice Date: 15-07-2025",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "MERIDIAN SUPPLY CHAIN PVT. LTD.",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.041,
+          0.529,
+          0.059
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='MERIDIAN SUPPLY CHAIN PVT. LTD.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'MERIDIAN SUPPLY CHAIN PVT. LTD. 7th Floor, Trade'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.042100000000000026,
+                0.5294,
+                0.05989999999999995
+              ],
+              "line_bbox": [
+                0.084,
+                0.042100000000000026,
+                0.5294,
+                0.05989999999999995
+              ],
+              "text": "MERIDIAN SUPPLY CHAIN PVT. LTD.",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.135,
+          0.461,
+          0.148
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='GREENFIELD ENERGY EQUIPMENT LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: INV/25-26/414 Invoice Date: 15-07-2025 Bill To:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.13429999999999997,
+                0.4572,
+                0.14500000000000002
+              ],
+              "line_bbox": [
+                0.084,
+                0.13429999999999997,
+                0.4572,
+                0.14500000000000002
+              ],
+              "text": "Bill To: GREENFIELD ENERGY EQUIPMENT LIMITED",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "47639.63",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.851,
+          0.378,
+          0.934,
+          0.389
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='47639.63'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Agency commission 2 8,400.98 16,801.96 Subtotal: 47,639.63 CGST'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.641,
+                0.3779,
+                0.9328,
+                0.38859999999999995
+              ],
+              "line_bbox": [
+                0.641,
+                0.3779,
+                0.9328,
+                0.38859999999999995
+              ],
+              "text": "Subtotal: 47,639.63",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "8575.13",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.856,
+          0.429,
+          0.934,
+          0.44
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='8575.13'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'CGST @9%: 4,287.56 SGST @9%: 4,287.56 Tax Total:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6319,
+                0.42779999999999996,
+                0.9328,
+                0.4385
+              ],
+              "line_bbox": [
+                0.6319,
+                0.42779999999999996,
+                0.9328,
+                0.4385
+              ],
+              "text": "Tax Total: 8,575.13",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "56214.76",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.84,
+          0.455,
+          0.934,
+          0.467
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='56214.76'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SGST @9%: 4,287.56 Tax Total: 8,575.13 Total: 56,214.76'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6723,
+                0.45520000000000005,
+                0.9328,
+                0.46730000000000005
+              ],
+              "line_bbox": [
+                0.6723,
+                0.45520000000000005,
+                0.9328,
+                0.46730000000000005
+              ],
+              "text": "Total: 56,214.76",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Cargo insurance",
+      "quantity": "2",
+      "unit_price": "3586.02",
+      "amount": "7172.04",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.075,
+          0.222,
+          0.934,
+          0.243
+        ]
+      }
+    },
+    {
+      "description": "Terminal handling charges",
+      "quantity": "1",
+      "unit_price": "10145.00",
+      "amount": "10145.00",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.075,
+          0.249,
+          0.934,
+          0.272
+        ]
+      }
+    },
+    {
+      "description": "Bill of entry charges",
+      "quantity": "1",
+      "unit_price": "2104.11",
+      "amount": "2104.11",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.075,
+          0.277,
+          0.934,
+          0.3
+        ]
+      }
+    },
+    {
+      "description": "Local transportation",
+      "quantity": "2",
+      "unit_price": "5708.26",
+      "amount": "11416.52",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.075,
+          0.306,
+          0.934,
+          0.328
+        ]
+      }
+    },
+    {
+      "description": "Agency commission",
+      "quantity": "2",
+      "unit_price": "8400.98",
+      "amount": "16801.96",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.075,
+          0.333,
+          0.934,
+          0.356
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1584,
+      "total_tokens": 5239,
+      "elapsed_s": 9.28
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/25-26/414",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/25-26/414'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '7th Floor, Trade Centre, Ahmedabad 380015, India Invoice'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.10340000000000005,
+                  0.2614,
+                  0.11409999999999998
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.10340000000000005,
+                  0.2614,
+                  0.11409999999999998
+                ],
+                "text": "Invoice No: INV/25-26/414",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "15-07-2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='15-07-2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: INV/25-26/414 Invoice Date: 15-07-2025 Bill To:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.11880000000000002,
+                  0.2539,
+                  0.12949999999999995
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.11880000000000002,
+                  0.2539,
+                  0.12949999999999995
+                ],
+                "text": "Invoice Date: 15-07-2025",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "MERIDIAN SUPPLY CHAIN PVT. LTD.",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='MERIDIAN SUPPLY CHAIN PVT. LTD.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'MERIDIAN SUPPLY CHAIN PVT. LTD. 7th Floor, Trade'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.042100000000000026,
+                  0.5294,
+                  0.05989999999999995
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.042100000000000026,
+                  0.5294,
+                  0.05989999999999995
+                ],
+                "text": "MERIDIAN SUPPLY CHAIN PVT. LTD.",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='GREENFIELD ENERGY EQUIPMENT LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: INV/25-26/414 Invoice Date: 15-07-2025 Bill To:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.13429999999999997,
+                  0.4572,
+                  0.14500000000000002
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.13429999999999997,
+                  0.4572,
+                  0.14500000000000002
+                ],
+                "text": "Bill To: GREENFIELD ENERGY EQUIPMENT LIMITED",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "47639.63",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='47639.63'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Agency commission 2 8,400.98 16,801.96 Subtotal: 47,639.63 CGST'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.641,
+                  0.3779,
+                  0.9328,
+                  0.38859999999999995
+                ],
+                "line_bbox": [
+                  0.641,
+                  0.3779,
+                  0.9328,
+                  0.38859999999999995
+                ],
+                "text": "Subtotal: 47,639.63",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "8575.13",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='8575.13'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'CGST @9%: 4,287.56 SGST @9%: 4,287.56 Tax Total:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6319,
+                  0.42779999999999996,
+                  0.9328,
+                  0.4385
+                ],
+                "line_bbox": [
+                  0.6319,
+                  0.42779999999999996,
+                  0.9328,
+                  0.4385
+                ],
+                "text": "Tax Total: 8,575.13",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "56214.76",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='56214.76'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SGST @9%: 4,287.56 Tax Total: 8,575.13 Total: 56,214.76'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6723,
+                  0.45520000000000005,
+                  0.9328,
+                  0.46730000000000005
+                ],
+                "line_bbox": [
+                  0.6723,
+                  0.45520000000000005,
+                  0.9328,
+                  0.46730000000000005
+                ],
+                "text": "Total: 56,214.76",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

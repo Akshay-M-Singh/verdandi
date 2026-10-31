@@ -1,0 +1,93 @@
+name: desktop
+
+# Packaging gate (D66): proves the hard chain on BOTH target systems — Python
+# engine -> PyInstaller sidecar -> Tauri app bundle (updater-signed).
+#
+# Runs on pushes to main (trusted secrets) and on demand; pull requests run
+# the offline desktop tests in check.yml instead:
+#   gh workflow run desktop -R Akshay-M-Singh/verdandi
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-14          # Apple Silicon
+            artifact: verdandi-macos-arm64
+          - os: windows-latest
+            artifact: verdandi-windows-x64
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: "1"
+      # createUpdaterArtifacts requires the updater signing key at build time.
+      TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+      TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            desktop/requirements-desktop.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: desktop/package-lock.json
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt -r desktop/requirements-desktop.txt
+
+      - name: Updater signing is optional for CI builds
+        shell: bash
+        run: |
+          # NONE of the upstream secrets reach a fork. `createUpdaterArtifacts`
+          # makes `tauri build` fail without the key, so build unsigned when
+          # it is absent — these artifacts prove the packaging chain, they are
+          # not the ones served by the update feed.
+          if [ -z "$TAURI_SIGNING_PRIVATE_KEY" ]; then
+            python -c "import json,pathlib;p=pathlib.Path('desktop/src-tauri/tauri.conf.json');c=json.loads(p.read_text());c['bundle']['createUpdaterArtifacts']=False;p.write_text(json.dumps(c,indent=2)+'\n')"
+            echo "::warning::TAURI_SIGNING_PRIVATE_KEY is not set - building without updater signatures"
+          fi
+
+      - name: Desktop service tests (offline)
+        run: python -m unittest tests.test_desktop_service -v
+
+      - name: Build engine sidecar (PyInstaller)
+        working-directory: desktop
+        run: python build_sidecar.py
+
+      - name: Build UI
+        working-directory: desktop
+        run: |
+          npm ci
+          npm run build
+
+      - name: Build app (Tauri)
+        working-directory: desktop
+        run: npx tauri build
+
+      - name: Upload installers
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          if-no-files-found: warn
+          path: |
+            desktop/src-tauri/target/release/bundle/**/*.dmg
+            desktop/src-tauri/target/release/bundle/**/*.msi
+            desktop/src-tauri/target/release/bundle/**/*.exe

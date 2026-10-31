@@ -1,0 +1,785 @@
+{
+  "selected_document": {
+    "name": "TAX INVOICE",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the heading \"TAX INVOICE\", an invoice number and invoice date, a charge table with item amounts, tax, subtotal, and total payable. No issuing organization name is printed, so the document heading is used.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/72-06/714",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.378,
+          0.138,
+          0.654,
+          0.153
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/72-06/714'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number INV/72-06/714 Invoice Date: 20-Apr-2010 Due Date:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3776,
+                0.13539999999999996,
+                0.6549,
+                0.1521
+              ],
+              "line_bbox": [
+                0.3776,
+                0.13539999999999996,
+                0.6549,
+                0.1521
+              ],
+              "text": "Invoice number INV/72-06/714",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "20-Apr-2010",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.378,
+          0.158,
+          0.616,
+          0.173
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='20-Apr-2010'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number INV/72-06/714 Invoice Date: 20-Apr-2010 Due Date:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3776,
+                0.1583,
+                0.6165,
+                0.17290000000000005
+              ],
+              "line_bbox": [
+                0.3776,
+                0.1583,
+                0.6165,
+                0.17290000000000005
+              ],
+              "text": "Invoice Date: 20-Apr-2010",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "TAX INVOICE",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.157,
+          0.057,
+          0.354,
+          0.078
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='TAX INVOICE'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX INVOICE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1534,
+                0.06040000000000001,
+                0.351,
+                0.07920000000000005
+              ],
+              "line_bbox": [
+                0.1534,
+                0.06040000000000001,
+                0.351,
+                0.07920000000000005
+              ],
+              "text": "TAX INVOICE",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.8,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.445,
+          0.518,
+          0.817,
+          0.755
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'Price Amount $17.53 5.00 $87.65 $45.24 2.00 $90.48' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "266.80",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.481,
+          0.656,
+          0.64,
+          0.674
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='266.80'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'DISCOUNT(4.62%): (-) 12.33 SUB_TOTAL: 266.80 $ TAX:VAT (3.85%):'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4808,
+                0.6478999999999999,
+                0.7139,
+                0.675
+              ],
+              "line_bbox": [
+                0.4808,
+                0.6478999999999999,
+                0.7139,
+                0.675
+              ],
+              "text": "SUB_TOTAL: 266.80 $",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "10.26",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.481,
+          0.681,
+          0.742,
+          0.699
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='10.26'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'DISCOUNT(4.62%): (-) 12.33 SUB_TOTAL: 266.80 $ TAX:VAT (3.85%):'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4749,
+                0.6708000000000001,
+                0.7375,
+                0.6937
+              ],
+              "line_bbox": [
+                0.4749,
+                0.6708000000000001,
+                0.7375,
+                0.6937
+              ],
+              "text": "TAX:VAT (3.85%): 10.26 $",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "264.25",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.48,
+          0.734,
+          0.651,
+          0.753
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='264.25'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL : 264.25 $ will be charged if'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4779,
+                0.7292000000000001,
+                0.6549,
+                0.7521
+              ],
+              "line_bbox": [
+                0.4779,
+                0.7292000000000001,
+                0.6549,
+                0.7521
+              ],
+              "text": "TOTAL : 264.25 $",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Property range.",
+      "quantity": "5.00",
+      "unit_price": "17.53",
+      "amount": "87.65",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.014,
+          0.514,
+          0.817,
+          0.538
+        ]
+      }
+    },
+    {
+      "description": "Accept drug.",
+      "quantity": "2.00",
+      "unit_price": "45.24",
+      "amount": "90.48",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.014,
+          0.538,
+          0.817,
+          0.561
+        ]
+      }
+    },
+    {
+      "description": "Guess western scientist.",
+      "quantity": "1.00",
+      "unit_price": "31.55",
+      "amount": "31.55",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.014,
+          0.561,
+          0.817,
+          0.585
+        ]
+      }
+    },
+    {
+      "description": "Home join reach him.",
+      "quantity": "2.00",
+      "unit_price": "28.56",
+      "amount": "57.12",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.014,
+          0.585,
+          0.817,
+          0.609
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The document visibly shows a 4-row item table, a discount of 12.33, subtotal, VAT tax, and final total."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 1650,
+      "total_tokens": 8655,
+      "elapsed_s": 12.12
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/72-06/714",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/72-06/714'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number INV/72-06/714 Invoice Date: 20-Apr-2010 Due Date:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3776,
+                  0.13539999999999996,
+                  0.6549,
+                  0.1521
+                ],
+                "line_bbox": [
+                  0.3776,
+                  0.13539999999999996,
+                  0.6549,
+                  0.1521
+                ],
+                "text": "Invoice number INV/72-06/714",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "20-Apr-2010",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='20-Apr-2010'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number INV/72-06/714 Invoice Date: 20-Apr-2010 Due Date:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3776,
+                  0.1583,
+                  0.6165,
+                  0.17290000000000005
+                ],
+                "line_bbox": [
+                  0.3776,
+                  0.1583,
+                  0.6165,
+                  0.17290000000000005
+                ],
+                "text": "Invoice Date: 20-Apr-2010",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "TAX INVOICE",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='TAX INVOICE'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX INVOICE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1534,
+                  0.06040000000000001,
+                  0.351,
+                  0.07920000000000005
+                ],
+                "line_bbox": [
+                  0.1534,
+                  0.06040000000000001,
+                  0.351,
+                  0.07920000000000005
+                ],
+                "text": "TAX INVOICE",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'Price Amount $17.53 5.00 $87.65 $45.24 2.00 $90.48' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "266.80",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='266.80'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'DISCOUNT(4.62%): (-) 12.33 SUB_TOTAL: 266.80 $ TAX:VAT (3.85%):'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4808,
+                  0.6478999999999999,
+                  0.7139,
+                  0.675
+                ],
+                "line_bbox": [
+                  0.4808,
+                  0.6478999999999999,
+                  0.7139,
+                  0.675
+                ],
+                "text": "SUB_TOTAL: 266.80 $",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "10.26",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='10.26'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'DISCOUNT(4.62%): (-) 12.33 SUB_TOTAL: 266.80 $ TAX:VAT (3.85%):'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4749,
+                  0.6708000000000001,
+                  0.7375,
+                  0.6937
+                ],
+                "line_bbox": [
+                  0.4749,
+                  0.6708000000000001,
+                  0.7375,
+                  0.6937
+                ],
+                "text": "TAX:VAT (3.85%): 10.26 $",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "264.25",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='264.25'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL : 264.25 $ will be charged if'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4779,
+                  0.7292000000000001,
+                  0.6549,
+                  0.7521
+                ],
+                "line_bbox": [
+                  0.4779,
+                  0.7292000000000001,
+                  0.6549,
+                  0.7521
+                ],
+                "text": "TOTAL : 264.25 $",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "314f72eeef1f513ee168d31fa285ca5d11a985f7e63362408bbcb225527d27d7"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5800,
+          "completion_tokens": 331,
+          "total_tokens": 6131,
+          "elapsed_s": 13.56
+        }
+      }
+    }
+  }
+}

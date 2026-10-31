@@ -1,0 +1,50 @@
+TARGET DOCUMENT PROFILE (rules/documents.yaml, hot-loaded — the identification reference):
+
+- id: broker_invoice — Broker Tax Invoice
+  description: the freight forwarder/broker firm's OWN tax invoice for the shipment's logistics services (brokerage/agency, freight handling, warehousing, demurrage — the firm's own charges), NOT supplier bills, packing lists, bills of entry, commercial invoices, third-party terminal/port bills, or other supporting documents
+  allow_no_match: False (below selector min_score 0.5 -> flag_no_document_match, never guess)
+  identification keywords (user-defined HINTS — a target document of this kind typically contains at least one; a document that matches the description but NO keyword is STILL the target — keywords never disqualify): ['BROKERAGE', 'AGENCY CHARGES', 'FREIGHT & FORWARDING']
+  extraction schema: profile
+
+The images below are the pages of one PDF attachment, in order. Extract per the instructions and output ONLY a single JSON object matching this schema:
+
+{
+  "selected_document": {
+    "name": string|null,
+    "document_pages": [int],
+    "reason": string,
+    "confidence": number
+  },
+  "header_fields": [
+    {{
+      "name": "invoice_number" | "invoice_date" | "boe_number" | "boe_date" | "hawb_number" | "total_invoice_amount" | "pan",
+      "value": string|object|null,
+      "confidence": number,
+      "source": "page N (render image)" | null,
+      "source_region": {{ "page": int, "bbox": [x0, y0, x1, y1] }} | null
+    }}
+  ],
+  "line_items": [
+    {{ "description": string, "hsn_sac": string|null, "taxable": string|null, "tax": string|null, "total": string|null, "confidence": number, "source": "page N (render image)", "source_region": {{ "page": int, "bbox": [x0, y0, x1, y1] }} | null }}
+  ],
+
+  "notes": [string],
+  "status": "extracted" | "flag_no_document_match" | "flagged"
+}
+
+Field notes:
+- invoice_number: the broker invoice's OWN number as printed
+- invoice_date: the broker invoice's OWN date as printed
+- boe_number: the Bill of Entry number on the broker invoice — BOE and BE are the same document (Bill of Entry)
+- boe_date: the Bill of Entry (BOE / BE) date as printed on the broker invoice
+- hawb_number: the HAWB / air waybill number as printed on the broker invoice
+- total_invoice_amount: the broker invoice's TOTAL amount (plain number, taxes included)
+- pan: the pan number of the broker invoice as printed
+Line items:
+- description: the charge's full printed description
+- hsn_sac: the row's SAC/HSN code as printed
+- taxable: the row's taxable value (plain number)
+- tax: the row's tax AMOUNT (plain number) — the money value only, never the rate/percentage (CGST/SGST components stay in this cell)
+- total: the row's own TOTAL amount (taxes included)
+the broker invoice's charge table (the rows of charges below the header); one line item = one printed charge row, in printed order. Copy the row's full description; the row's own TOTAL amount goes in 'total' (mandatory); taxable and tax as plain numbers from the row (split tax cells like CGST/SGST stay as printed). Do not include the table header, subtotal or total rows; do not merge or invent rows.
+- If a field is not visible in the images, use value null, confidence 0, source null, source_region null — never fill from other documents or prior knowledge.

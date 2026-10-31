@@ -1,0 +1,454 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued receipt-like billing document with a charge row ('TRIPPLE CHEESE'), 'SUB TOTAL', 'GRAND TOTAL', and 'CASH IDR'. The issuer name is not legible in the image.",
+    "confidence": 0.97
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": "IDR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.123,
+          0.589,
+          0.278,
+          0.621
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='IDR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'CASH IDR CHANGE DUE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1177,
+                0.5582,
+                0.2835,
+                0.5807
+              ],
+              "line_bbox": [
+                0.1177,
+                0.5539000000000001,
+                0.888,
+                0.5857
+              ],
+              "text": "CASH IDR 22,000",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "17000",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.774,
+          0.443,
+          0.898,
+          0.477
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='17000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '17,000 17,000'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7727,
+                0.42579999999999996,
+                0.8886,
+                0.45430000000000004
+              ],
+              "line_bbox": [
+                0.1205,
+                0.42579999999999996,
+                0.8886,
+                0.45640000000000003
+              ],
+              "text": "SUB TOTAL 17,000",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "17000",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.774,
+          0.562,
+          0.898,
+          0.597
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='17000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '17,000 22,000 5,000'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7727,
+                0.5018,
+                0.8851,
+                0.5295000000000001
+              ],
+              "line_bbox": [
+                0.1209,
+                0.5018,
+                0.8851,
+                0.5295000000000001
+              ],
+              "text": "GRAND TOTAL 17,000",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "TRIPPLE CHEESE",
+      "quantity": "1",
+      "unit_price": "17000",
+      "amount": "17000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.119,
+          0.388,
+          0.898,
+          0.453
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The issuer name, receipt number, and date are obscured or unreadable."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1082,
+      "total_tokens": 4737,
+      "elapsed_s": 13.04
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": "IDR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='IDR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'CASH IDR CHANGE DUE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1177,
+                  0.5582,
+                  0.2835,
+                  0.5807
+                ],
+                "line_bbox": [
+                  0.1177,
+                  0.5539000000000001,
+                  0.888,
+                  0.5857
+                ],
+                "text": "CASH IDR 22,000",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "17000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='17000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '17,000 17,000'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7727,
+                  0.42579999999999996,
+                  0.8886,
+                  0.45430000000000004
+                ],
+                "line_bbox": [
+                  0.1205,
+                  0.42579999999999996,
+                  0.8886,
+                  0.45640000000000003
+                ],
+                "text": "SUB TOTAL 17,000",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "17000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='17000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '17,000 22,000 5,000'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7727,
+                  0.5018,
+                  0.8851,
+                  0.5295000000000001
+                ],
+                "line_bbox": [
+                  0.1209,
+                  0.5018,
+                  0.8851,
+                  0.5295000000000001
+                ],
+                "text": "GRAND TOTAL 17,000",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

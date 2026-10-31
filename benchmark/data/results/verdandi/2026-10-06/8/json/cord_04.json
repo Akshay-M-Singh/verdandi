@@ -1,0 +1,532 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 is a vendor-issued receipt, identified by the visible itemized charge list, SUBTOTAL, TOTAL, and CARD payment lines. The issuer name at the top is too blurred to read.",
+    "confidence": 0.96
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": "IDR",
+      "confidence": 0.65,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.33,
+          0.7,
+          0.73
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='IDR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'IDR' NOT found near region (page 1); nearest text '1\u00d7 5500 TALAM UNGU 6,500 DISC ITEM -40.000' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "24500",
+      "confidence": 0.87,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.746,
+          0.695,
+          0.769
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='24500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '5,00g 7.00 ITEMS SUBTOTAL 24,500 TOTAL 24,500 CARD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.7354,
+                0.6991,
+                0.7625
+              ],
+              "line_bbox": [
+                0.2714,
+                0.7333000000000001,
+                0.6991,
+                0.7625
+              ],
+              "text": "SUBTOTAL 24,500",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "24500",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.77,
+          0.695,
+          0.793
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='24500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUBTOTAL 24,500 TOTAL 24,500 CARD 24,50U'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.7354,
+                0.6991,
+                0.7625
+              ],
+              "line_bbox": [
+                0.2714,
+                0.7333000000000001,
+                0.6991,
+                0.7625
+              ],
+              "text": "SUBTOTAL 24,500",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "TALAH UNGU",
+      "quantity": "1",
+      "unit_price": "5500",
+      "amount": "6500",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.332,
+          0.696,
+          0.418
+        ]
+      }
+    },
+    {
+      "description": "AREH - AREH",
+      "quantity": "1",
+      "unit_price": "3000",
+      "amount": "8000",
+      "confidence": 0.7,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.421,
+          0.696,
+          0.496
+        ]
+      }
+    },
+    {
+      "description": "LEMPER",
+      "quantity": "2",
+      "unit_price": "3000",
+      "amount": "10000",
+      "confidence": 0.73,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.5,
+          0.696,
+          0.577
+        ]
+      }
+    },
+    {
+      "description": "MIKA SEDANG",
+      "quantity": "1",
+      "unit_price": "0",
+      "amount": "0",
+      "confidence": 0.83,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.581,
+          0.696,
+          0.624
+        ]
+      }
+    },
+    {
+      "description": "PLASTIK KECIL",
+      "quantity": "1",
+      "unit_price": "0",
+      "amount": "0",
+      "confidence": 0.84,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.628,
+          0.696,
+          0.672
+        ]
+      }
+    },
+    {
+      "description": "TEH KOTAK",
+      "quantity": "1",
+      "unit_price": "5000",
+      "amount": "5000",
+      "confidence": 0.78,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.677,
+          0.696,
+          0.721
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The issuer name, receipt number, and date are present only in heavily blurred areas and cannot be read reliably.",
+    "The receipt shows item discount lines, but no separate discount field exists in the schema."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 2761,
+      "total_tokens": 9766,
+      "elapsed_s": 22.27
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": "IDR",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='IDR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'IDR' NOT found near region (page 1); nearest text '1\u00d7 5500 TALAM UNGU 6,500 DISC ITEM -40.000' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "24500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='24500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '5,00g 7.00 ITEMS SUBTOTAL 24,500 TOTAL 24,500 CARD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.7354,
+                  0.6991,
+                  0.7625
+                ],
+                "line_bbox": [
+                  0.2714,
+                  0.7333000000000001,
+                  0.6991,
+                  0.7625
+                ],
+                "text": "SUBTOTAL 24,500",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "24500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='24500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUBTOTAL 24,500 TOTAL 24,500 CARD 24,50U'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.7354,
+                  0.6991,
+                  0.7625
+                ],
+                "line_bbox": [
+                  0.2714,
+                  0.7333000000000001,
+                  0.6991,
+                  0.7625
+                ],
+                "text": "SUBTOTAL 24,500",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 8
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "currency": {
+            "primary": "IDR",
+            "secondary": "IDR",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "314f72eeef1f513ee168d31fa285ca5d11a985f7e63362408bbcb225527d27d7"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5800,
+          "completion_tokens": 361,
+          "total_tokens": 6161,
+          "elapsed_s": 7.01
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,802 @@
+{
+  "selected_document": {
+    "name": "Kelly-Moss",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the issuer name \"Kelly-Moss\", the heading \"INVOICE # 0160-748\", a billed-items table with prices, quantities, and amounts, and printed subtotal, GST entries, and total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "0160-748",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.225,
+          0.255,
+          0.243
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='0160-748'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # 0160-748 Date: 10-Jan-2003'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.056,
+                0.22499999999999998,
+                0.2566,
+                0.24170000000000003
+              ],
+              "line_bbox": [
+                0.056,
+                0.2229,
+                0.7316,
+                0.2479
+              ],
+              "text": "INVOICE # 0160-748 Due Date: 07-Oct-2022",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "10-Jan-2003",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.248,
+          0.215,
+          0.266
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='10-Jan-2003'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # 0160-748 Date: 10-Jan-2003'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.056,
+                0.2479,
+                0.233,
+                0.26459999999999995
+              ],
+              "line_bbox": [
+                0.056,
+                0.2479,
+                0.233,
+                0.26459999999999995
+              ],
+              "text": "Date: 10-Jan-2003",
+              "lineno": 8,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Kelly-Moss",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.106,
+          0.18,
+          0.124
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Kelly-Moss'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Kelly-Moss Address:6030 Willie Shores Suite 354 Guerraton, TX'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0553,
+                0.1069,
+                0.1717,
+                0.12649999999999995
+              ],
+              "line_bbox": [
+                0.0553,
+                0.10209999999999997,
+                0.7611,
+                0.12649999999999995
+              ],
+              "text": "Kelly-Moss Guerraton, TX 60058 US",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Ian Elliott",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.53,
+          0.069,
+          0.72,
+          0.087
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Ian Elliott'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Ian Elliott' NOT found near region (page 1); nearest text 'Buyer :lan Elliott 6030 Willie Shores Suite 354' (n-gram proximity 0.88)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.764,
+          0.647,
+          0.824,
+          0.662
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 463.19 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5369,
+                0.6416999999999999,
+                0.8024,
+                0.6667000000000001
+              ],
+              "line_bbox": [
+                0.5369,
+                0.6416999999999999,
+                0.8024,
+                0.6667000000000001
+              ],
+              "text": "SUB_TOTAL : 463.19 EUR",
+              "lineno": 15,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "463.19",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.542,
+          0.647,
+          0.825,
+          0.662
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='463.19'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 463.19 EUR GST(5%) : 23.16'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5369,
+                0.6416999999999999,
+                0.8024,
+                0.6667000000000001
+              ],
+              "line_bbox": [
+                0.5369,
+                0.6416999999999999,
+                0.8024,
+                0.6667000000000001
+              ],
+              "text": "SUB_TOTAL : 463.19 EUR",
+              "lineno": 15,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "476.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.542,
+          0.928,
+          0.825,
+          0.944
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='476.38'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'GST(1%) : 4.63 TOTAL: 476.38 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5366,
+                0.9203,
+                0.7438,
+                0.948
+              ],
+              "line_bbox": [
+                0.5366,
+                0.9203,
+                0.7438,
+                0.948
+              ],
+              "text": "TOTAL: 476.38 EUR",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Second really will.",
+      "quantity": "2.00",
+      "unit_price": "16.96",
+      "amount": "33.92",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.054,
+          0.439,
+          0.866,
+          0.459
+        ]
+      }
+    },
+    {
+      "description": "Year alone everybody.",
+      "quantity": "4.00",
+      "unit_price": "21.31",
+      "amount": "85.24",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.054,
+          0.462,
+          0.866,
+          0.481
+        ]
+      }
+    },
+    {
+      "description": "Thus keep.",
+      "quantity": "6.00",
+      "unit_price": "44.05",
+      "amount": "264.30",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.054,
+          0.484,
+          0.866,
+          0.503
+        ]
+      }
+    },
+    {
+      "description": "Growth knowledge describe.",
+      "quantity": "6.00",
+      "unit_price": "2.01",
+      "amount": "12.06",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.054,
+          0.507,
+          0.866,
+          0.525
+        ]
+      }
+    },
+    {
+      "description": "Director everyone company.",
+      "quantity": "1.00",
+      "unit_price": "67.67",
+      "amount": "67.67",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.054,
+          0.529,
+          0.866,
+          0.547
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The document prints separate GST amounts at 5%, 12%, 18%, 20%, and 1%, but does not print a single aggregate tax total; therefore tax_total is null."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1604,
+      "total_tokens": 5259,
+      "elapsed_s": 9.21
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "0160-748",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='0160-748'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # 0160-748 Date: 10-Jan-2003'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.056,
+                  0.22499999999999998,
+                  0.2566,
+                  0.24170000000000003
+                ],
+                "line_bbox": [
+                  0.056,
+                  0.2229,
+                  0.7316,
+                  0.2479
+                ],
+                "text": "INVOICE # 0160-748 Due Date: 07-Oct-2022",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "10-Jan-2003",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='10-Jan-2003'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # 0160-748 Date: 10-Jan-2003'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.056,
+                  0.2479,
+                  0.233,
+                  0.26459999999999995
+                ],
+                "line_bbox": [
+                  0.056,
+                  0.2479,
+                  0.233,
+                  0.26459999999999995
+                ],
+                "text": "Date: 10-Jan-2003",
+                "lineno": 8,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Kelly-Moss",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Kelly-Moss'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Kelly-Moss Address:6030 Willie Shores Suite 354 Guerraton, TX'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0553,
+                  0.1069,
+                  0.1717,
+                  0.12649999999999995
+                ],
+                "line_bbox": [
+                  0.0553,
+                  0.10209999999999997,
+                  0.7611,
+                  0.12649999999999995
+                ],
+                "text": "Kelly-Moss Guerraton, TX 60058 US",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Ian Elliott",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Ian Elliott'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Ian Elliott' NOT found near region (page 1); nearest text 'Buyer :lan Elliott 6030 Willie Shores Suite 354' (n-gram proximity 0.88)",
+              "match": null
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 463.19 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5369,
+                  0.6416999999999999,
+                  0.8024,
+                  0.6667000000000001
+                ],
+                "line_bbox": [
+                  0.5369,
+                  0.6416999999999999,
+                  0.8024,
+                  0.6667000000000001
+                ],
+                "text": "SUB_TOTAL : 463.19 EUR",
+                "lineno": 15,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "463.19",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='463.19'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 463.19 EUR GST(5%) : 23.16'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5369,
+                  0.6416999999999999,
+                  0.8024,
+                  0.6667000000000001
+                ],
+                "line_bbox": [
+                  0.5369,
+                  0.6416999999999999,
+                  0.8024,
+                  0.6667000000000001
+                ],
+                "text": "SUB_TOTAL : 463.19 EUR",
+                "lineno": 15,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "476.38",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='476.38'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'GST(1%) : 4.63 TOTAL: 476.38 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5366,
+                  0.9203,
+                  0.7438,
+                  0.948
+                ],
+                "line_bbox": [
+                  0.5366,
+                  0.9203,
+                  0.7438,
+                  0.948
+                ],
+                "text": "TOTAL: 476.38 EUR",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "buyer_name": {
+            "primary": "Ian Elliott",
+            "secondary": "Ian Elliott",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "1ea7a80ea137e4477bd8f55de96366371c4dff75536a923d4c9d78c5d797de1e"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2436,
+          "completion_tokens": 305,
+          "total_tokens": 2741,
+          "elapsed_s": 4.85
+        }
+      }
+    }
+  }
+}

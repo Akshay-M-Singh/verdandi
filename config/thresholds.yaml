@@ -1,0 +1,58 @@
+# Per-field confidence thresholds (architecture.md D7).
+# Below threshold -> field lands in <run>/flags.csv for human review (D24:
+# the vision pass is primary; thresholds trigger review flags, not escalation).
+# Values are 0-1. Editable by the owner at any time.
+# Amount/reference fields are stricter than ref fields (owner decision, D7).
+thresholds: {}
+  # D49: per-field bars are profile-declared (D28 inline `threshold` in
+  # rules/documents.yaml). This map is an OPTIONAL fallback: add any
+  # profile-declared field name (or a generic-schema field) here to override
+  # it globally; unknown keys warn. Resolution chain: profile field ->
+  # this map -> type default (config.FIELD_TYPE_DEFAULTS), never silent.
+  # Selection uses the profile's signals.min_score; line items are checked by
+  # verify.check_line_items (row rules), not by a confidence bar.
+
+# Verification stack (2026-09-02 — replaces the rules-locator crosscheck):
+# grounding/arithmetic/format (offline) + gated disagreement (a second model
+# call) aggregated per field into accept | review_secondary | review_human.
+# Weights and floors are STARTING POINTS — tune against
+# tests/verification_truth.json (make eval-verify), never by hand-waving.
+# check_weights must sum to ~1.0. hard_fail_checks: a failing check here
+# forces review_human regardless of the weighted score (arithmetic: a failed
+# identity implicates all rule fields; disagreement: a second model actively
+# differs). The gated recheck triggers on any field whose aggregate level is
+# not `accept` (i.e. score < accept_score, or a hard-fail check);
+# `recheck_max_calls` caps rechecks per file (cost discipline, D24 economics).
+verification:
+  grounding_margin_rel: 0.035     # tight band (strong confirmation)
+  grounding_search_rel: 0.12      # loose band (region imprecision tolerance)
+  grounding_loose_score: 0.6      # loose-band confirmation score (0.6 = flagged
+                                  # at review_secondary; 0.7 = accepts — see the
+                                  # measured swap-vs-x-offset tradeoff in
+                                  # eval_verification.py/grounding.py)
+  containment_ngram: 3            # character n-gram for the evidence detail
+  check_weights:
+    grounding: 0.25
+    arithmetic: 0.25
+    format: 0.15
+    disagreement: 0.35
+  accept_score: 0.8
+  review_score: 0.5
+  hard_fail_checks: [arithmetic, disagreement]
+  recheck_max_calls: 1            # per-file cap on gated recheck calls
+
+# Document-quality gate floors (architecture.md D16) — per-page verdicts
+# good|poor|blank|ignored. A floor of 0 disables that check. Tuned by
+# `make gate-tune` (corpus sweep, 2026-08-01): zero false positives on the
+# hand-labeled page set; recall 8/9 — one handwritten page is floor-invisible
+# (7 lines / 96 words / 89% latin), matching D16's documented metric limit.
+# Embedded-text pages are exempt (D15 already certifies them).
+quality:
+  min_lines_per_page: 7        # OCR lines below this -> poor
+  min_words_per_page: 45       # words below this -> poor (keeps one sparse page at 46)
+  min_latin_ratio: 0.5         # Latin script purity (guard vs fully non-Latin OCR)
+  min_text_area_ratio: 0.02    # line-bbox area / page area below this -> poor (0 = off)
+  max_pixel_std_dev: 12.0      # grayscale std-dev below this confirms a blank page (pixels)
+  max_dark_pixel_ratio: 0.05   # ink coverage below this confirms a blank page (pixels)
+  review_band: 0.15            # borderline band = review_band x floor; pages inside are probe candidates
+  quality_probe: false         # LLM readability probe (one flash call per borderline page) — off by default

@@ -1,0 +1,10 @@
+# Document-orientation correction (D64) — OPTIONAL but recommended.
+# Adds the local PP-LCNet_x1_0_doc_ori classifier pass (0/90/180/270) that
+# replaces the unreliable Vision-geometry A/B; without these deps the capture
+# keeps the D61 "never rotate" behavior. Model committed at
+# engines/models/PP-LCNet_x1_0_doc_ori.onnx (7 MB, SHA256 pinned in
+# engines/orientation.py).
+#
+# Install with: .venv/bin/python -m pip install -r requirements-orientation.txt
+onnxruntime>=1.17
+pillow>=10.0

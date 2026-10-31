@@ -1,0 +1,17 @@
+# Cross-platform capture engine (D63) — OPTIONAL.
+# Apple installs need only pyyaml (requirements.txt); this file adds the
+# pypdfium2 + RapidOCR (PaddleOCR models on ONNX) fallback used on Windows/
+# Linux and on macOS without Xcode. Imported lazily: nothing here is needed
+# for the Apple Vision path.
+#
+# Install with: .venv/bin/python -m pip install -r requirements-crossplatform.txt
+pypdfium2>=4        # PDF render + per-character text geometry (Apache-2.0/BSD)
+rapidocr>=3         # PaddleOCR PP-OCRv4/v5 models via ONNX (Apache-2.0)
+onnxruntime>=1.17   # CPU inference runtime for RapidOCR + the D64 orientation model
+numpy>=1.24
+pypdf>=4            # content-stream/XObject probe (routing signals)
+pillow>=10.0        # image stats + PNG dumps
+
+# Orientation correction (D64) — same deps, listed once:
+# onnxruntime + pillow above; install requirements-orientation.txt on Apple
+# hosts that only use the Swift engine.

@@ -1,0 +1,752 @@
+{
+  "selected_document": {
+    "name": "kim.org",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly contains an invoice number and date, a charge table with quantities and prices, VAT tax, and a final total of 571.99 EUR. The printed site identifies the issuer as kim.org.",
+    "confidence": 0.78
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV92471762",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.637,
+          0.057,
+          0.884,
+          0.074
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV92471762'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number INV92471762 Date: 12-Mar-2017 Due Date: 25-Jun-2016'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6313,
+                0.05830000000000002,
+                0.9086,
+                0.07709999999999995
+              ],
+              "line_bbox": [
+                0.6313,
+                0.05830000000000002,
+                0.9086,
+                0.07709999999999995
+              ],
+              "text": "Invoice number INV92471762",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "12-Mar-2017",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.638,
+          0.078,
+          0.785,
+          0.095
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='12-Mar-2017'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number INV92471762 Date: 12-Mar-2017 Due Date: 25-Jun-2016'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6372,
+                0.07920000000000005,
+                0.8112,
+                0.09789999999999999
+              ],
+              "line_bbox": [
+                0.6372,
+                0.07920000000000005,
+                0.8112,
+                0.09789999999999999
+              ],
+              "text": "Date: 12-Mar-2017",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "kim.org",
+      "confidence": 0.68,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.468,
+          0.324,
+          0.694,
+          0.341
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='kim.org'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'kim.org' NOT found near region (page 1); nearest text 'West Daniel, NJ 39295 US Tel: +(942)077-9303 Email:dedwards@example.com' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Krystal Bowman",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.468,
+          0.248,
+          0.628,
+          0.264
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Krystal Bowman'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Krystal Bowman 8170 Frederick Manors Suite 24\u043f West'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4659,
+                0.2268,
+                0.6167,
+                0.26280000000000003
+              ],
+              "line_bbox": [
+                0.4659,
+                0.2268,
+                0.6167,
+                0.26280000000000003
+              ],
+              "text": "Krystal Bowman",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.468,
+          0.656,
+          0.76,
+          0.675
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'DISCOUNT(2.56%): (-) 14.8 TAX:VAT (3.70%): 21.38 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4631,
+                0.65,
+                0.7522,
+                0.6708000000000001
+              ],
+              "line_bbox": [
+                0.4631,
+                0.65,
+                0.7522,
+                0.6708000000000001
+              ],
+              "text": "TAX:VAT (3.70%): 21.38 EUR",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "21.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.468,
+          0.654,
+          0.762,
+          0.675
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='21.38'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'DISCOUNT(2.56%): (-) 14.8 TAX:VAT (3.70%): 21.38 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4631,
+                0.65,
+                0.7522,
+                0.6708000000000001
+              ],
+              "line_bbox": [
+                0.4631,
+                0.65,
+                0.7522,
+                0.6708000000000001
+              ],
+              "text": "TAX:VAT (3.70%): 21.38 EUR",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "571.99",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.468,
+          0.724,
+          0.721,
+          0.743
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='571.99'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 571.99 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4602,
+                0.7188,
+                0.6667,
+                0.7396
+              ],
+              "line_bbox": [
+                0.4602,
+                0.7188,
+                0.6667,
+                0.7396
+              ],
+              "text": "TOTAL: 571.99 EUR",
+              "lineno": 15,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Beyond need other:",
+      "quantity": "6.00",
+      "unit_price": "34.96",
+      "amount": null,
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.025,
+          0.531,
+          0.95,
+          0.55
+        ]
+      }
+    },
+    {
+      "description": "Write.",
+      "quantity": "5.00",
+      "unit_price": "73.71",
+      "amount": null,
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.025,
+          0.55,
+          0.95,
+          0.572
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The document prints a PRICE column but no separate line-item amount column, so line-item amounts are null.",
+    "No subtotal is visibly printed."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1987,
+      "total_tokens": 5642,
+      "elapsed_s": 24.86
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV92471762",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV92471762'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number INV92471762 Date: 12-Mar-2017 Due Date: 25-Jun-2016'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6313,
+                  0.05830000000000002,
+                  0.9086,
+                  0.07709999999999995
+                ],
+                "line_bbox": [
+                  0.6313,
+                  0.05830000000000002,
+                  0.9086,
+                  0.07709999999999995
+                ],
+                "text": "Invoice number INV92471762",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "12-Mar-2017",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='12-Mar-2017'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number INV92471762 Date: 12-Mar-2017 Due Date: 25-Jun-2016'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6372,
+                  0.07920000000000005,
+                  0.8112,
+                  0.09789999999999999
+                ],
+                "line_bbox": [
+                  0.6372,
+                  0.07920000000000005,
+                  0.8112,
+                  0.09789999999999999
+                ],
+                "text": "Date: 12-Mar-2017",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "kim.org",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='kim.org'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'kim.org' NOT found near region (page 1); nearest text 'West Daniel, NJ 39295 US Tel: +(942)077-9303 Email:dedwards@example.com' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Krystal Bowman",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Krystal Bowman'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Krystal Bowman 8170 Frederick Manors Suite 24\u043f West'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4659,
+                  0.2268,
+                  0.6167,
+                  0.26280000000000003
+                ],
+                "line_bbox": [
+                  0.4659,
+                  0.2268,
+                  0.6167,
+                  0.26280000000000003
+                ],
+                "text": "Krystal Bowman",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'DISCOUNT(2.56%): (-) 14.8 TAX:VAT (3.70%): 21.38 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4631,
+                  0.65,
+                  0.7522,
+                  0.6708000000000001
+                ],
+                "line_bbox": [
+                  0.4631,
+                  0.65,
+                  0.7522,
+                  0.6708000000000001
+                ],
+                "text": "TAX:VAT (3.70%): 21.38 EUR",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": "21.38",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='21.38'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'DISCOUNT(2.56%): (-) 14.8 TAX:VAT (3.70%): 21.38 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4631,
+                  0.65,
+                  0.7522,
+                  0.6708000000000001
+                ],
+                "line_bbox": [
+                  0.4631,
+                  0.65,
+                  0.7522,
+                  0.6708000000000001
+                ],
+                "text": "TAX:VAT (3.70%): 21.38 EUR",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "571.99",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='571.99'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 571.99 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4602,
+                  0.7188,
+                  0.6667,
+                  0.7396
+                ],
+                "line_bbox": [
+                  0.4602,
+                  0.7188,
+                  0.6667,
+                  0.7396
+                ],
+                "text": "TOTAL: 571.99 EUR",
+                "lineno": 15,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 5
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "vendor_name": {
+            "primary": "kim.org",
+            "secondary": null,
+            "agree": false
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "4205db4500eb468c4896e48d48156d8971a330a33418105c03a0c67fbf5bf5fd"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2440,
+          "completion_tokens": 277,
+          "total_tokens": 2717,
+          "elapsed_s": 15.8
+        }
+      }
+    }
+  }
+}

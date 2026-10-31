@@ -1,0 +1,472 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued receipt-like charge document with printed item rows and the labels \"SUBTOTAL\", \"PPN 10%\", \"TOTAL\", \"CASH\", and \"CHANGE\". The issuer text at the top is too blurred to read.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "36,364",
+      "confidence": 0.68,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.63,
+          0.55,
+          0.78,
+          0.58
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='36,364'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '36:364 10.000%'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6218,
+                0.5486,
+                0.7643,
+                0.5860000000000001
+              ],
+              "line_bbox": [
+                0.1852,
+                0.5464,
+                0.7643,
+                0.587
+              ],
+              "text": "SUBTOTAL 36:364",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "3,636",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.63,
+          0.63,
+          0.78,
+          0.66
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='3,636'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '10.000% 3,636'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6427,
+                0.6307,
+                0.7644,
+                0.6693
+              ],
+              "line_bbox": [
+                0.1858,
+                0.6292,
+                0.7644,
+                0.6693
+              ],
+              "text": "AMOUNT 3,636",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "40,000",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.63,
+          0.72,
+          0.78,
+          0.75
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='40,000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '40,000 50,000'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6223,
+                0.7122999999999999,
+                0.7612,
+                0.7481
+              ],
+              "line_bbox": [
+                0.1852,
+                0.7093,
+                0.7612,
+                0.7481
+              ],
+              "text": "TOTAL 40,000",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "PILLOW BUNTA",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "36,364",
+      "confidence": 0.68,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.18,
+          0.46,
+          0.78,
+          0.5
+        ]
+      }
+    },
+    {
+      "description": "PLASTIK 25",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "0",
+      "confidence": 0.86,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.18,
+          0.5,
+          0.78,
+          0.54
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The receipt issuer, document number, date, buyer, and currency are not legible or not visibly printed.",
+    "The printed tax label is \"PPN 10%\"; the extracted tax amount is the printed amount shown below it."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2499,
+      "total_tokens": 6154,
+      "elapsed_s": 20.92
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "36,364",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='36,364'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '36:364 10.000%'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6218,
+                  0.5486,
+                  0.7643,
+                  0.5860000000000001
+                ],
+                "line_bbox": [
+                  0.1852,
+                  0.5464,
+                  0.7643,
+                  0.587
+                ],
+                "text": "SUBTOTAL 36:364",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "3,636",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='3,636'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '10.000% 3,636'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6427,
+                  0.6307,
+                  0.7644,
+                  0.6693
+                ],
+                "line_bbox": [
+                  0.1858,
+                  0.6292,
+                  0.7644,
+                  0.6693
+                ],
+                "text": "AMOUNT 3,636",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "40,000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='40,000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '40,000 50,000'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6223,
+                  0.7122999999999999,
+                  0.7612,
+                  0.7481
+                ],
+                "line_bbox": [
+                  0.1852,
+                  0.7093,
+                  0.7612,
+                  0.7481
+                ],
+                "text": "TOTAL 40,000",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 4
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

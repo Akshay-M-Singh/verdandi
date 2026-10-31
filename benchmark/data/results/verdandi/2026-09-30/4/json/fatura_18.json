@@ -1,0 +1,795 @@
+{
+  "selected_document": {
+    "name": "Murphy-Gallegos",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows a COMMERCIAL INVOICE issued by Murphy-Gallegos, with an invoice number, invoice date, itemized charges, VAT, and a final total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "1Y5M9d-616",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.562,
+          0.053,
+          0.792,
+          0.067
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='1Y5M9d-616'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'COMMERCIAL INVOICE INVOICE # 1Y5M9d-616'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5575,
+                0.052100000000000035,
+                0.7876,
+                0.07079999999999997
+              ],
+              "line_bbox": [
+                0.5575,
+                0.052100000000000035,
+                0.7876,
+                0.07079999999999997
+              ],
+              "text": "INVOICE # 1Y5M9d-616",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "31-May-1999",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.704,
+          0.374,
+          0.91,
+          0.39
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='31-May-1999'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Site:http://www.thomas.com/ Invoice Date: 31-May-1999'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7021,
+                0.375,
+                0.9528,
+                0.39580000000000004
+              ],
+              "line_bbox": [
+                0.059,
+                0.3729,
+                0.9528,
+                0.39580000000000004
+              ],
+              "text": "Due Date: 03-Mar-2010 Invoice Date: 31-May-1999",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Murphy-Gallegos",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.063,
+          0.118,
+          0.23,
+          0.135
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Murphy-Gallegos'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Murphy-Gallegos Address:045 David Walk Suite 362 East Robert,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.059,
+                0.11870000000000003,
+                0.2301,
+                0.13749999999999996
+              ],
+              "line_bbox": [
+                0.059,
+                0.11870000000000003,
+                0.2301,
+                0.13749999999999996
+              ],
+              "text": "Murphy-Gallegos",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Ashley Moody",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.62,
+          0.254,
+          0.746,
+          0.27
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Ashley Moody'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SHIP_TO: Ashley Moody 958 Amy Inlet Suite 079'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6223,
+                0.25570000000000004,
+                0.7435,
+                0.27349999999999997
+              ],
+              "line_bbox": [
+                0.6223,
+                0.25570000000000004,
+                0.7435,
+                0.27349999999999997
+              ],
+              "text": "Ashley Moody",
+              "lineno": 8,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.855,
+          0.643,
+          0.895,
+          0.658
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'PRICE $0.55 $13.77 $12.84' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "7.69",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.598,
+          0.843,
+          0.841,
+          0.86
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='7.69'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX:VAT (4.34%): 7.69 $ TOTAL: 176.26 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5925,
+                0.8368,
+                0.8381,
+                0.8622
+              ],
+              "line_bbox": [
+                0.059,
+                0.8368,
+                0.8381,
+                0.8622
+              ],
+              "text": "Total in words: one hundred and seve- TAX:VAT (4.34%): 7.69 $",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "176.26",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.735,
+          0.86,
+          0.896,
+          0.877
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='176.26'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX:VAT (4.34%): 7.69 $ TOTAL: 176.26 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7286,
+                0.8604,
+                0.8997,
+                0.8792
+              ],
+              "line_bbox": [
+                0.059,
+                0.8583000000000001,
+                0.8997,
+                0.8792
+              ],
+              "text": "nty-six point two six TOTAL: 176.26 $",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Capital job indicate.",
+      "quantity": "5.00",
+      "unit_price": "0.55",
+      "amount": null,
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.636,
+          0.986,
+          0.657
+        ]
+      }
+    },
+    {
+      "description": "Lay town charge.",
+      "quantity": "1.00",
+      "unit_price": "13.77",
+      "amount": null,
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.657,
+          0.986,
+          0.68
+        ]
+      }
+    },
+    {
+      "description": "Letter environment.",
+      "quantity": "3.00",
+      "unit_price": "12.84",
+      "amount": null,
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.68,
+          0.986,
+          0.702
+        ]
+      }
+    },
+    {
+      "description": "Others dark fine.",
+      "quantity": "3.00",
+      "unit_price": "40.74",
+      "amount": null,
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.061,
+          0.702,
+          0.986,
+          0.722
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The invoice prints a PRICE column rather than a separate amount or extended-total column; the printed prices were recorded as unit_price, with amount left null."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1754,
+      "total_tokens": 5409,
+      "elapsed_s": 17.37
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "1Y5M9d-616",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='1Y5M9d-616'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'COMMERCIAL INVOICE INVOICE # 1Y5M9d-616'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5575,
+                  0.052100000000000035,
+                  0.7876,
+                  0.07079999999999997
+                ],
+                "line_bbox": [
+                  0.5575,
+                  0.052100000000000035,
+                  0.7876,
+                  0.07079999999999997
+                ],
+                "text": "INVOICE # 1Y5M9d-616",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "31-May-1999",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='31-May-1999'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Site:http://www.thomas.com/ Invoice Date: 31-May-1999'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7021,
+                  0.375,
+                  0.9528,
+                  0.39580000000000004
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.3729,
+                  0.9528,
+                  0.39580000000000004
+                ],
+                "text": "Due Date: 03-Mar-2010 Invoice Date: 31-May-1999",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Murphy-Gallegos",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Murphy-Gallegos'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Murphy-Gallegos Address:045 David Walk Suite 362 East Robert,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.059,
+                  0.11870000000000003,
+                  0.2301,
+                  0.13749999999999996
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.11870000000000003,
+                  0.2301,
+                  0.13749999999999996
+                ],
+                "text": "Murphy-Gallegos",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Ashley Moody",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Ashley Moody'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SHIP_TO: Ashley Moody 958 Amy Inlet Suite 079'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6223,
+                  0.25570000000000004,
+                  0.7435,
+                  0.27349999999999997
+                ],
+                "line_bbox": [
+                  0.6223,
+                  0.25570000000000004,
+                  0.7435,
+                  0.27349999999999997
+                ],
+                "text": "Ashley Moody",
+                "lineno": 8,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'PRICE $0.55 $13.77 $12.84' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": "7.69",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='7.69'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX:VAT (4.34%): 7.69 $ TOTAL: 176.26 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5925,
+                  0.8368,
+                  0.8381,
+                  0.8622
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.8368,
+                  0.8381,
+                  0.8622
+                ],
+                "text": "Total in words: one hundred and seve- TAX:VAT (4.34%): 7.69 $",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "176.26",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='176.26'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX:VAT (4.34%): 7.69 $ TOTAL: 176.26 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7286,
+                  0.8604,
+                  0.8997,
+                  0.8792
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.8583000000000001,
+                  0.8997,
+                  0.8792
+                ],
+                "text": "nty-six point two six TOTAL: 176.26 $",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 1
+        },
+        "flag_rows": 7
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "31-May-1999",
+            "secondary": "31-May-1999",
+            "agree": true
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "106367c348aeb2aedfb299cdbcadcee81e3e2fd9797ea4ae26b4cddb2f084df1"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2478,
+          "completion_tokens": 398,
+          "total_tokens": 2876,
+          "elapsed_s": 8.34
+        }
+      }
+    }
+  }
+}

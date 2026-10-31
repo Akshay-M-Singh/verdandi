@@ -1,0 +1,574 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a restaurant receipt with itemized food and drink charges, a restaurant tax, and a grand total. The top issuer text is too blurred to read.",
+    "confidence": 0.94
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "132636",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.77,
+          0.86,
+          0.8
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='132636'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB. TOTAL 132,636 RESTAURANT TAX 13,264'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.702,
+                0.7767999999999999,
+                0.8408,
+                0.8065
+              ],
+              "line_bbox": [
+                0.3156,
+                0.7767999999999999,
+                0.8408,
+                0.8065
+              ],
+              "text": "SUB. TOTAL 132,636",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "13264",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.21,
+          0.81,
+          0.86,
+          0.84
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='13264'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB. TOTAL 132,636 RESTAURANT TAX 13,264'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7227,
+                0.8103,
+                0.8408,
+                0.8376
+              ],
+              "line_bbox": [
+                0.2153,
+                0.8083,
+                0.8408,
+                0.8376
+              ],
+              "text": "RESTAURANT TAX 13,264",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "145900",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.13,
+          0.9,
+          0.85,
+          0.94
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='145900'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'GRAND TOTAL ~BCA EDC . [145,900] 145,900'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1386,
+                0.9125,
+                0.5516,
+                0.9438
+              ],
+              "line_bbox": [
+                0.1386,
+                0.9042,
+                0.8407,
+                0.95
+              ],
+              "text": "~BCA EDC . [145,900] 145,900",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "COLD OCHA",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "10909",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.47,
+          0.87,
+          0.49
+        ]
+      }
+    },
+    {
+      "description": "BCA PROMO",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "54545",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.5,
+          0.87,
+          0.52
+        ]
+      }
+    },
+    {
+      "description": "- ABURA UDON SPICY",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "0",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.1,
+          0.53,
+          0.87,
+          0.55
+        ]
+      }
+    },
+    {
+      "description": "- KAKE UDON",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "0",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.1,
+          0.56,
+          0.87,
+          0.58
+        ]
+      }
+    },
+    {
+      "description": "SKEWERED SHUMAI",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "12727",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.58,
+          0.87,
+          0.6
+        ]
+      }
+    },
+    {
+      "description": "SKEWERED TOFU ROLL",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "12727",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.61,
+          0.87,
+          0.63
+        ]
+      }
+    },
+    {
+      "description": "EBI TEMPURA",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "13636",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.64,
+          0.87,
+          0.66
+        ]
+      }
+    },
+    {
+      "description": "KITSUNE UDON (KIDS)",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "28182",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.06,
+          0.67,
+          0.87,
+          0.69
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The issuer text at the top is blurred and unreadable.",
+    "No currency symbol or code is legible in the receipt."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 2181,
+      "total_tokens": 9425,
+      "elapsed_s": 18.07
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "132636",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='132636'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB. TOTAL 132,636 RESTAURANT TAX 13,264'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.702,
+                  0.7767999999999999,
+                  0.8408,
+                  0.8065
+                ],
+                "line_bbox": [
+                  0.3156,
+                  0.7767999999999999,
+                  0.8408,
+                  0.8065
+                ],
+                "text": "SUB. TOTAL 132,636",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "13264",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='13264'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB. TOTAL 132,636 RESTAURANT TAX 13,264'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7227,
+                  0.8103,
+                  0.8408,
+                  0.8376
+                ],
+                "line_bbox": [
+                  0.2153,
+                  0.8083,
+                  0.8408,
+                  0.8376
+                ],
+                "text": "RESTAURANT TAX 13,264",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "145900",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='145900'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'GRAND TOTAL ~BCA EDC . [145,900] 145,900'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1386,
+                  0.9125,
+                  0.5516,
+                  0.9438
+                ],
+                "line_bbox": [
+                  0.1386,
+                  0.9042,
+                  0.8407,
+                  0.95
+                ],
+                "text": "~BCA EDC . [145,900] 145,900",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

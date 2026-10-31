@@ -1,0 +1,639 @@
+{
+  "selected_document": {
+    "name": "CRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows the vendor letterhead 'CRC CONTRACT RESEARCH CENTER', the heading 'PRO FORMA-RECHNUNG NR. 66/92', a charge table with prices in BF, and a printed TOTAL of 40.482,-.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "66/92",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.083,
+          0.302,
+          0.286,
+          0.331
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='66/92'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'PAQ FORMA - (BY031) RECHNUNG NR. 66/92 EFD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0855,
+                0.3083,
+                0.2861,
+                0.3208
+              ],
+              "line_bbox": [
+                0.0855,
+                0.3083,
+                0.2861,
+                0.3208
+              ],
+              "text": "RECHNUNG NR. 66/92",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "20.Nov.92",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.644,
+          0.302,
+          0.843,
+          0.326
+        ]
+      },
+      "verification": {
+        "score": 0.0,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='20.Nov.92'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '20.Nov.92' NOT found near region (page 1); nearest text 'JGB/MJV Zaventem, 20.Nov. 92 PREIS (BF)' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "CRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.064,
+          0.101,
+          0.846,
+          0.143
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='CRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'CRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.' NOT found near region (page 1); nearest text 'CRC CONTRACT RESEARCH CENTER VS\u00c4/SRA B-1932 Zavenfem 3440' (n-gram proximity 0.74)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "INBIFO Institut f\u00fcr biologische Forschung",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.083,
+          0.195,
+          0.369,
+          0.274
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='INBIFO Institut f\u00fcr biologische Forschung'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INBIFO Institut f\u00fcr biologische Forschung Fuggerstra\u00dfe 3. D-5000'",
+            "match": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "BEF",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.731,
+          0.348,
+          0.815,
+          0.377
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='BEF'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'BEF' NOT found near region (page 1); nearest text 'PREIS (BF)' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "40482",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.648,
+          0.684,
+          0.824,
+          0.709
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='40482'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '40482' NOT found near region (page 1); nearest text '3.000.- TOTAL: 40.482,- aker' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Glasgef\u00e4\u00dfe mit nicht-lebendem biologischem Probenmaterial in Ethanol",
+      "quantity": "3",
+      "unit_price": null,
+      "amount": "60",
+      "confidence": 0.87,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.083,
+          0.486,
+          0.812,
+          0.519
+        ]
+      }
+    },
+    {
+      "description": "Glasgef\u00e4\u00dfe mit nicht-lebendem biologischem Probenmaterial in Formaldehydl\u00f6sung",
+      "quantity": "3",
+      "unit_price": null,
+      "amount": "60",
+      "confidence": 0.86,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.083,
+          0.521,
+          0.812,
+          0.552
+        ]
+      }
+    },
+    {
+      "description": "Plastikgef\u00e4\u00dfe mit Rattenblut",
+      "quantity": "8",
+      "unit_price": null,
+      "amount": "160",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.083,
+          0.551,
+          0.812,
+          0.575
+        ]
+      }
+    },
+    {
+      "description": "Filterkarton mit 180 'Wistar-WU' Ratten",
+      "quantity": "11",
+      "unit_price": null,
+      "amount": "37152",
+      "confidence": 0.87,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.083,
+          0.572,
+          0.812,
+          0.598
+        ]
+      }
+    },
+    {
+      "description": "Leere Einstreusack",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "50",
+      "confidence": 0.83,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.083,
+          0.642,
+          0.812,
+          0.664
+        ]
+      }
+    },
+    {
+      "description": "Leere Edelstahltonnen",
+      "quantity": "3",
+      "unit_price": null,
+      "amount": "3000",
+      "confidence": 0.86,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.083,
+          0.661,
+          0.812,
+          0.683
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The document is marked 'PRO FORMA' and states that it is intended only for customs purposes."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2612,
+      "total_tokens": 6267,
+      "elapsed_s": 18.5
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "66/92",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='66/92'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'PAQ FORMA - (BY031) RECHNUNG NR. 66/92 EFD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0855,
+                  0.3083,
+                  0.2861,
+                  0.3208
+                ],
+                "line_bbox": [
+                  0.0855,
+                  0.3083,
+                  0.2861,
+                  0.3208
+                ],
+                "text": "RECHNUNG NR. 66/92",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "20.Nov.92",
+          "score": 0.0,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='20.Nov.92'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '20.Nov.92' NOT found near region (page 1); nearest text 'JGB/MJV Zaventem, 20.Nov. 92 PREIS (BF)' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "CRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='CRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'CRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.' NOT found near region (page 1); nearest text 'CRC CONTRACT RESEARCH CENTER VS\u00c4/SRA B-1932 Zavenfem 3440' (n-gram proximity 0.74)",
+              "match": null
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "INBIFO Institut f\u00fcr biologische Forschung",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='INBIFO Institut f\u00fcr biologische Forschung'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INBIFO Institut f\u00fcr biologische Forschung Fuggerstra\u00dfe 3. D-5000'",
+              "match": null
+            }
+          ]
+        },
+        "currency": {
+          "value": "BEF",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='BEF'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'BEF' NOT found near region (page 1); nearest text 'PREIS (BF)' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "40482",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='40482'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '40482' NOT found near region (page 1); nearest text '3.000.- TOTAL: 40.482,- aker' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 4
+        },
+        "flag_rows": 11
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "20.Nov.92",
+            "secondary": "20.Nov.92",
+            "agree": false
+          },
+          "vendor_name": {
+            "primary": "CRC CONTRACT RESEARCH CENTER B.V.B.A./S.P.R.L.",
+            "secondary": "CRC Contract Research Center BVBA/SPRL",
+            "agree": true
+          },
+          "currency": {
+            "primary": "BEF",
+            "secondary": "BEF",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "40482",
+            "secondary": "40.482,-",
+            "agree": false
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "da44c500e4c3f01def7839d4fb93ecca4ecc0b1754e784d4a607b7478d9ef680"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2535,
+          "completion_tokens": 735,
+          "total_tokens": 3270,
+          "elapsed_s": 7.05
+        }
+      }
+    }
+  }
+}

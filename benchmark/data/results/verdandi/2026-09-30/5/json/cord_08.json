@@ -1,0 +1,638 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows a vendor-issued restaurant receipt with itemized food and beverage charges, a subtotal, service charge, tax, and final amount due ('DU 1,565,938'). The issuing name at the top is not legible.",
+    "confidence": 0.96
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": "IDR",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.412,
+          0.67,
+          0.921
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='IDR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'IDR' NOT found near region (page 1); nearest text 'UDANG RE 216,000 432,000 2 =*LARGE*== 1 AYM' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "1343000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.489,
+          0.819,
+          0.65,
+          0.842
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='1343000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '70,000 1,343,000 SERVICE CHARGE 80, 580\u015a\u0161 142,358 DU'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4865,
+                0.7974,
+                0.6167,
+                0.8213
+              ],
+              "line_bbox": [
+                0.2594,
+                0.7974,
+                0.6167,
+                0.8213
+              ],
+              "text": "SUBTOTAL 1,343,000",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "142358",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.524,
+          0.866,
+          0.653,
+          0.886
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='142358'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '80, 580\u015a\u0161 142,358 DU 1,565,938'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5131,
+                0.8432999999999999,
+                0.6167,
+                0.865
+              ],
+              "line_bbox": [
+                0.2595,
+                0.8414,
+                0.6167,
+                0.865
+              ],
+              "text": "Tax 10% 142,358",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1565938",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.262,
+          0.889,
+          0.646,
+          0.925
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1565938'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Tax 10% 142,358 DU 1,565,938'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.2596,
+                0.8646,
+                0.6018,
+                0.9083
+              ],
+              "line_bbox": [
+                0.2596,
+                0.8646,
+                0.6018,
+                0.9083
+              ],
+              "text": "DU 1,565,938",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "UDANG RE",
+      "quantity": "2",
+      "unit_price": "216000",
+      "amount": "432000",
+      "confidence": 0.87,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.413,
+          0.627,
+          0.453
+        ]
+      }
+    },
+    {
+      "description": "AYM GR JIN NJAN",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "108000",
+      "confidence": 0.84,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.457,
+          0.625,
+          0.491
+        ]
+      }
+    },
+    {
+      "description": "SAPO TH SEAFOOD",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "172000",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.505,
+          0.63,
+          0.545
+        ]
+      }
+    },
+    {
+      "description": "POCAI 3",
+      "quantity": "2",
+      "unit_price": "111000",
+      "amount": "222000",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.546,
+          0.64,
+          0.589
+        ]
+      }
+    },
+    {
+      "description": "GURAME FILLET M ASAM MANIS",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "163000",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.589,
+          0.627,
+          0.637
+        ]
+      }
+    },
+    {
+      "description": "BIHUN GORENG JJ",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "116000",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.64,
+          0.625,
+          0.668
+        ]
+      }
+    },
+    {
+      "description": "ICED TEA",
+      "quantity": "5",
+      "unit_price": "12000",
+      "amount": "60000",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.685,
+          0.64,
+          0.711
+        ]
+      }
+    },
+    {
+      "description": "NASI PUTIH",
+      "quantity": "7",
+      "unit_price": "10000",
+      "amount": "70000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.225,
+          0.71,
+          0.642,
+          0.735
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The receipt's issuing organization, invoice/receipt number, date, and buyer name are not legible or not visibly printed.",
+    "Currency is reported as IDR based on the Indonesian-language receipt and printed numeric format; no currency code or symbol is clearly visible."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2847,
+      "total_tokens": 6502,
+      "elapsed_s": 31.18
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": "IDR",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='IDR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'IDR' NOT found near region (page 1); nearest text 'UDANG RE 216,000 432,000 2 =*LARGE*== 1 AYM' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "1343000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='1343000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '70,000 1,343,000 SERVICE CHARGE 80, 580\u015a\u0161 142,358 DU'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4865,
+                  0.7974,
+                  0.6167,
+                  0.8213
+                ],
+                "line_bbox": [
+                  0.2594,
+                  0.7974,
+                  0.6167,
+                  0.8213
+                ],
+                "text": "SUBTOTAL 1,343,000",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "142358",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='142358'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '80, 580\u015a\u0161 142,358 DU 1,565,938'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5131,
+                  0.8432999999999999,
+                  0.6167,
+                  0.865
+                ],
+                "line_bbox": [
+                  0.2595,
+                  0.8414,
+                  0.6167,
+                  0.865
+                ],
+                "text": "Tax 10% 142,358",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "1565938",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1565938'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Tax 10% 142,358 DU 1,565,938'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.2596,
+                  0.8646,
+                  0.6018,
+                  0.9083
+                ],
+                "line_bbox": [
+                  0.2596,
+                  0.8646,
+                  0.6018,
+                  0.9083
+                ],
+                "text": "DU 1,565,938",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 4
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "currency": {
+            "primary": "IDR",
+            "secondary": "IDR",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "314f72eeef1f513ee168d31fa285ca5d11a985f7e63362408bbcb225527d27d7"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2450,
+          "completion_tokens": 303,
+          "total_tokens": 2753,
+          "elapsed_s": 6.83
+        }
+      }
+    }
+  }
+}

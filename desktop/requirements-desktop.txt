@@ -1,0 +1,25 @@
+# Desktop engine service — dependencies (D66, Phase 0).
+#
+# This is the LOCAL HELPER the desktop app starts; it is not part of the
+# core pipeline (which stays pyyaml + stdlib). Install alongside the core:
+#
+#   .venv/bin/python -m pip install -r requirements.txt -r desktop/requirements-desktop.txt
+#
+# PyInstaller is the release bundler (CI) and is only needed for builds.
+fastapi>=0.115
+uvicorn>=0.30
+httpx2>=2          # starlette.testclient (offline API tests); httpx is deprecated there
+pyinstaller>=6.10
+
+# Capture stack — the sidecar must bundle these to read PDFs at all
+# (same set as requirements-crossplatform.txt, D63).
+pypdfium2>=4
+rapidocr>=3
+onnxruntime>=1.17
+numpy>=1.24
+pypdf>=4
+pillow>=10.0
+
+# Phase 1: keychain + workbook export (engine imports both lazily).
+keyring>=24
+openpyxl>=3.1

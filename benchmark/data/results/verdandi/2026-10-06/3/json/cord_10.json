@@ -1,0 +1,413 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows item-like charge rows followed by \u201cNET SALES,\u201d \u201cTAX,\u201d and \u201cAMOUNT DUE,\u201d identifying it as a vendor-billed receipt or similar charge document. The issuer name and any document heading are obscured or not visible.",
+    "confidence": 0.68
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "20.000",
+      "confidence": 0.48,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.59,
+          0.595,
+          0.74,
+          0.633
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='20.000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '20.000' NOT found near region (page 1); nearest text '10 AMBUSH CHS BUR 100000 160000 16000' (n-gram proximity 0.50)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "1.600",
+      "confidence": 0.43,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.59,
+          0.642,
+          0.74,
+          0.681
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='1.600'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '1.600' NOT found near region (page 1); nearest text '160000 16000 27600\u00db\u00cd\u0161' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "21.600",
+      "confidence": 0.45,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.59,
+          0.694,
+          0.75,
+          0.734
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='21.600'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '21.600' NOT found near region (page 1); nearest text '16000 27600\u00db\u00cd\u0161' (n-gram proximity 0.67)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "AMBUSH DEL CRS [remaining text unreadable]",
+      "quantity": "4",
+      "unit_price": null,
+      "amount": "6.000",
+      "confidence": 0.28,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.16,
+          0.498,
+          0.75,
+          0.534
+        ]
+      }
+    },
+    {
+      "description": "AMBUSH CRS BLK [remaining text unreadable]",
+      "quantity": "10",
+      "unit_price": null,
+      "amount": "10.000",
+      "confidence": 0.26,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.16,
+          0.543,
+          0.75,
+          0.579
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The photographed page is heavily obscured and low contrast; item descriptions and some digits are uncertain."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 2134,
+      "total_tokens": 9139,
+      "elapsed_s": 25.19
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "20.000",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='20.000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '20.000' NOT found near region (page 1); nearest text '10 AMBUSH CHS BUR 100000 160000 16000' (n-gram proximity 0.50)",
+              "match": null
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "1.600",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='1.600'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '1.600' NOT found near region (page 1); nearest text '160000 16000 27600\u00db\u00cd\u0161' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "21.600",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='21.600'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '21.600' NOT found near region (page 1); nearest text '16000 27600\u00db\u00cd\u0161' (n-gram proximity 0.67)",
+              "match": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 3
+        },
+        "flag_rows": 8
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "subtotal": {
+            "primary": "20.000",
+            "secondary": "1,600.00",
+            "agree": false
+          },
+          "tax_total": {
+            "primary": "1.600",
+            "secondary": "192.00",
+            "agree": false
+          },
+          "total_amount": {
+            "primary": "21.600",
+            "secondary": "1,792.00",
+            "agree": false
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "73f514d0ad200ed956338c11146880f25b20a2126340718b866462a27eecdb85"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5846,
+          "completion_tokens": 860,
+          "total_tokens": 6706,
+          "elapsed_s": 9.22
+        }
+      }
+    }
+  }
+}

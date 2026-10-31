@@ -1,0 +1,737 @@
+{
+  "id": "e317b533-1e2b-4f16-abc1-73065d025e60",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T12:50:59Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "# THAI ICED TEA (L)\n\n1 X\n16,363\n16,363\n\n\n<table>\n<tr>\n<td>Jumlah Item</td>\n<td>1</td>\n<td></td>\n</tr>\n<tr>\n<td>Sub Total</td>\n<td></td>\n<td>16,363</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>Pajak Resto<br>Grand Total</td>\n<td></td>\n<td>1,636<br>17,999</td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 16363,
+            "spans": [
+              {
+                "offset": 140,
+                "length": 6
+              }
+            ],
+            "confidence": 0.808,
+            "source": "D(1,5.7702,7.5733,6.5530,7.5439,6.5611,7.8457,5.7783,7.8699)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 1636,
+            "spans": [
+              {
+                "offset": 254,
+                "length": 5
+              }
+            ],
+            "confidence": 0.817,
+            "source": "D(1,5.9074,7.9427,6.5570,7.9071,6.5651,8.1990,5.9155,8.2324)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 17999,
+            "spans": [
+              {
+                "offset": 263,
+                "length": 6
+              }
+            ],
+            "confidence": 0.81,
+            "source": "D(1,5.8105,8.2992,6.5893,8.2672,6.5974,8.5745,5.8146,8.6013)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "THAI ICED TEA (L)",
+                    "spans": [
+                      {
+                        "offset": 2,
+                        "length": 17
+                      }
+                    ],
+                    "confidence": 0.813,
+                    "source": "D(1,1.5140,6.2590,3.7486,6.2040,3.7558,6.4976,1.5212,6.5526)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 21,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.874,
+                    "source": "D(1,2.4503,6.5989,2.9900,6.5882,2.9951,6.8475,2.4554,6.8582)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 16363,
+                    "spans": [
+                      {
+                        "offset": 32,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.846,
+                    "source": "D(1,5.6935,6.4984,6.4884,6.4795,6.4884,6.7756,5.7016,6.7907)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -1.8232,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 290
+              }
+            ],
+            "words": [
+              {
+                "content": "THAI",
+                "span": {
+                  "offset": 2,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,1.5172,6.2687,2.0413,6.251,2.0454,6.5391,1.5212,6.5526)"
+              },
+              {
+                "content": "ICED",
+                "span": {
+                  "offset": 7,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.2,6.2456,2.7242,6.2302,2.7283,6.5217,2.2041,6.535)"
+              },
+              {
+                "content": "TEA",
+                "span": {
+                  "offset": 12,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.8492,6.2266,3.2484,6.2163,3.2525,6.5085,2.8533,6.5185)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 16,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.3927,6.2129,3.4841,6.2107,3.4881,6.5026,3.3968,6.5049)"
+              },
+              {
+                "content": "L",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,3.5033,6.2103,3.6332,6.2072,3.6372,6.4989,3.5074,6.5021)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 18,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.6428,6.207,3.7486,6.2044,3.7526,6.496,3.6468,6.4986)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 21,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.4513,6.6069,2.565,6.6047,2.569,6.8559,2.4554,6.8582)"
+              },
+              {
+                "content": "X",
+                "span": {
+                  "offset": 23,
+                  "length": 1
+                },
+                "confidence": 0.839,
+                "source": "D(1,2.8176,6.5968,2.99,6.5882,2.994,6.8394,2.8216,6.848)"
+              },
+              {
+                "content": "16,363",
+                "span": {
+                  "offset": 25,
+                  "length": 6
+                },
+                "confidence": 0.989,
+                "source": "D(1,3.8878,6.5499,4.6686,6.5347,4.6767,6.8349,3.8919,6.842)"
+              },
+              {
+                "content": "16,363",
+                "span": {
+                  "offset": 32,
+                  "length": 6
+                },
+                "confidence": 0.987,
+                "source": "D(1,5.6935,6.4984,6.4884,6.4795,6.4884,6.7756,5.7016,6.7907)"
+              },
+              {
+                "content": "Jumlah",
+                "span": {
+                  "offset": 58,
+                  "length": 6
+                },
+                "confidence": 0.805,
+                "source": "D(1,1.496,7.3553,2.3053,7.3301,2.3095,7.6036,1.5,7.6242)"
+              },
+              {
+                "content": "Item",
+                "span": {
+                  "offset": 65,
+                  "length": 4
+                },
+                "confidence": 0.958,
+                "source": "D(1,2.4565,7.3252,2.99,7.307,2.994,7.5733,2.4607,7.5985)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 79,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.826,7.253,4.939,7.2467,4.939,7.4865,4.826,7.4929)"
+              },
+              {
+                "content": "Sub",
+                "span": {
+                  "offset": 111,
+                  "length": 3
+                },
+                "confidence": 0.991,
+                "source": "D(1,1.5101,7.7277,1.9166,7.708,1.9235,7.9829,1.5162,7.9979)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 115,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,2.0551,7.7033,2.7257,7.6869,2.7338,7.9538,2.0623,7.9778)"
+              },
+              {
+                "content": "16,363",
+                "span": {
+                  "offset": 140,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,5.7702,7.5733,6.553,7.5439,6.5611,7.8457,5.7783,7.8699)"
+              },
+              {
+                "content": "Pajak",
+                "span": {
+                  "offset": 208,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,1.4879,8.0867,2.1776,8.0614,2.1841,8.3632,1.493,8.3876)"
+              },
+              {
+                "content": "Resto",
+                "span": {
+                  "offset": 214,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.3016,8.0567,2.9961,8.029,3.0041,8.3259,2.3084,8.3581)"
+              },
+              {
+                "content": "Grand",
+                "span": {
+                  "offset": 223,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,1.5122,8.4517,2.1837,8.4307,2.1907,8.7119,1.5182,8.732)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 229,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.3189,8.4259,3.0041,8.398,3.0122,8.6744,2.3261,8.7067)"
+              },
+              {
+                "content": "1,636",
+                "span": {
+                  "offset": 254,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,5.9074,7.9427,6.557,7.9071,6.5651,8.199,5.9155,8.2324)"
+              },
+              {
+                "content": "17,999",
+                "span": {
+                  "offset": 263,
+                  "length": 6
+                },
+                "confidence": 0.988,
+                "source": "D(1,5.8105,8.2992,6.5893,8.2672,6.5974,8.5745,5.8146,8.6013)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "THAI ICED TEA (L)",
+                "source": "D(1,1.5138,6.26,3.7486,6.2033,3.756,6.4959,1.5212,6.5526)",
+                "span": {
+                  "offset": 2,
+                  "length": 17
+                }
+              },
+              {
+                "content": "1 X",
+                "source": "D(1,2.45,6.6071,2.99,6.5882,2.9983,6.842,2.4555,6.8609)",
+                "span": {
+                  "offset": 21,
+                  "length": 3
+                }
+              },
+              {
+                "content": "16,363",
+                "source": "D(1,3.8877,6.5353,4.6739,6.5281,4.6767,6.8349,3.8905,6.842)",
+                "span": {
+                  "offset": 25,
+                  "length": 6
+                }
+              },
+              {
+                "content": "16,363",
+                "source": "D(1,5.6935,6.4973,6.4884,6.4784,6.4935,6.7761,5.7006,6.795)",
+                "span": {
+                  "offset": 32,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Jumlah Item",
+                "source": "D(1,1.4914,7.3554,2.99,7.307,2.9983,7.5819,1.5002,7.6288)",
+                "span": {
+                  "offset": 58,
+                  "length": 11
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,4.826,7.2458,4.939,7.2458,4.939,7.4929,4.826,7.4929)",
+                "span": {
+                  "offset": 79,
+                  "length": 1
+                }
+              },
+              {
+                "content": "Sub Total",
+                "source": "D(1,1.5077,7.7229,2.7254,7.6859,2.7354,7.9537,1.5162,7.9979)",
+                "span": {
+                  "offset": 111,
+                  "length": 9
+                }
+              },
+              {
+                "content": "16,363",
+                "source": "D(1,5.7687,7.5619,6.5528,7.5431,6.562,7.8457,5.7783,7.8699)",
+                "span": {
+                  "offset": 140,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Pajak Resto",
+                "source": "D(1,1.4849,8.087,2.9961,8.029,3.0077,8.3321,1.4931,8.3883)",
+                "span": {
+                  "offset": 208,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Grand Total",
+                "source": "D(1,1.5081,8.4518,3.0041,8.398,3.0144,8.6827,1.5184,8.7365)",
+                "span": {
+                  "offset": 223,
+                  "length": 11
+                }
+              },
+              {
+                "content": "1,636",
+                "source": "D(1,5.9052,7.9408,6.557,7.9071,6.5677,8.1987,5.9155,8.2324)",
+                "span": {
+                  "offset": 254,
+                  "length": 5
+                }
+              },
+              {
+                "content": "17,999",
+                "source": "D(1,5.8081,8.2926,6.5893,8.2657,6.5998,8.5745,5.8146,8.6013)",
+                "span": {
+                  "offset": 263,
+                  "length": 6
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "role": "title",
+            "content": "THAI ICED TEA (L)",
+            "source": "D(1,1.5138,6.26,3.7486,6.2033,3.756,6.4959,1.5212,6.5526)",
+            "span": {
+              "offset": 0,
+              "length": 19
+            }
+          },
+          {
+            "content": "1 X 16,363 16,363",
+            "source": "D(1,2.449,6.5667,6.4884,6.4784,6.4953,6.7951,2.4559,6.8834)",
+            "span": {
+              "offset": 21,
+              "length": 17
+            }
+          },
+          {
+            "content": "Jumlah Item",
+            "source": "D(1,1.4923,7.3493,2.99,7.307,2.9978,7.5841,1.5001,7.6265)",
+            "span": {
+              "offset": 58,
+              "length": 11
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,4.8125,7.2538,4.939,7.2467,4.9524,7.4858,4.826,7.4929)",
+            "span": {
+              "offset": 79,
+              "length": 1
+            }
+          },
+          {
+            "content": "Sub Total",
+            "source": "D(1,1.5078,7.7198,2.7256,7.6831,2.734,7.9612,1.5162,7.9979)",
+            "span": {
+              "offset": 111,
+              "length": 9
+            }
+          },
+          {
+            "content": "16,363",
+            "source": "D(1,5.768,7.5708,6.553,7.5439,6.5633,7.8457,5.7784,7.8725)",
+            "span": {
+              "offset": 140,
+              "length": 6
+            }
+          },
+          {
+            "content": "Pajak Resto",
+            "source": "D(1,1.482,8.0835,2.9961,8.029,3.007,8.3335,1.493,8.3881)",
+            "span": {
+              "offset": 208,
+              "length": 11
+            }
+          },
+          {
+            "content": "Grand Total",
+            "source": "D(1,1.5094,8.4437,3.0041,8.398,3.013,8.6868,1.5182,8.7325)",
+            "span": {
+              "offset": 223,
+              "length": 11
+            }
+          },
+          {
+            "content": "1,636",
+            "source": "D(1,5.9,7.942,6.557,7.9071,6.5725,8.1986,5.9155,8.2335)",
+            "span": {
+              "offset": 254,
+              "length": 5
+            }
+          },
+          {
+            "content": "17,999",
+            "source": "D(1,5.8031,8.2968,6.5893,8.2672,6.6009,8.5744,5.8147,8.604)",
+            "span": {
+              "offset": 263,
+              "length": 6
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 289
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/tables/0"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 4,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Jumlah Item",
+                "source": "D(1,1.3496,7.0092,4.7511,6.9928,4.7628,7.6386,1.3509,7.6614)",
+                "span": {
+                  "offset": 58,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,4.7511,6.9928,5.5977,6.9895,5.5883,7.6327,4.7628,7.6386)",
+                "span": {
+                  "offset": 79,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.5977,6.9895,6.6692,6.9846,6.6687,7.6266,5.5883,7.6327)",
+                "span": {
+                  "offset": 90,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Sub Total",
+                "source": "D(1,1.3509,7.6614,4.7628,7.6386,4.7573,7.898,1.3477,7.9631)",
+                "span": {
+                  "offset": 111,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7628,7.6386,5.5883,7.6327,5.5879,7.882,4.7573,7.898)",
+                "span": {
+                  "offset": 130,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "16,363",
+                "source": "D(1,5.5883,7.6327,6.6687,7.6266,6.6691,7.8625,5.5879,7.882)",
+                "span": {
+                  "offset": 140,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,1.3477,7.9631,4.7573,7.898,4.7601,7.9906,1.3482,8.0355)",
+                "span": {
+                  "offset": 167,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7573,7.898,5.5879,7.882,5.5861,7.9797,4.7601,7.9906)",
+                "span": {
+                  "offset": 177,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.5879,7.882,6.6691,7.8625,6.6708,7.9661,5.5861,7.9797)",
+                "span": {
+                  "offset": 187,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Pajak Resto\nGrand Total",
+                "source": "D(1,1.3482,8.0355,4.7601,7.9906,4.7682,8.8576,1.3474,8.8632)",
+                "span": {
+                  "offset": 208,
+                  "length": 26
+                },
+                "elements": [
+                  "/paragraphs/6",
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7601,7.9906,5.5861,7.9797,5.6077,8.8566,4.7682,8.8576)",
+                "span": {
+                  "offset": 244,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,636\n17,999",
+                "source": "D(1,5.5861,7.9797,6.6708,7.9661,6.6717,8.8554,5.6077,8.8566)",
+                "span": {
+                  "offset": 254,
+                  "length": 15
+                },
+                "elements": [
+                  "/paragraphs/8",
+                  "/paragraphs/9"
+                ]
+              }
+            ],
+            "source": "D(1,1.3901,7.2862,6.6055,7.1092,6.6498,8.5824,1.4254,8.7765)",
+            "span": {
+              "offset": 41,
+              "length": 248
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 3925,
+      "gpt-5-mini-cached-input": 3840,
+      "gpt-5-mini-output": 264
+    }
+  }
+}

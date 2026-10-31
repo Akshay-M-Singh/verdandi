@@ -1,0 +1,1102 @@
+{
+  "id": "dd3434f3-72a8-4ad5-afd1-384df9fe95a8",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T14:17:52Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "<table>\n<tr>\n<td>3002-Kyoto Choco</td>\n<td>Mochi</td>\n<td></td>\n</tr>\n<tr>\n<td>14.000</td>\n<td>x2</td>\n<td>28.000</td>\n</tr>\n<tr>\n<td>1001-Choco Bun</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>22.000</td>\n<td>x1</td>\n<td>22.000</td>\n</tr>\n<tr>\n<td>6001-Plastic Bag</td>\n<td>Small</td>\n<td></td>\n</tr>\n<tr>\n<td>0</td>\n<td>x1</td>\n<td>0</td>\n</tr>\n</table>\n\n\nTotal Item:\n4\n\nTotal.\n50.000\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 50,
+            "spans": [
+              {
+                "offset": 375,
+                "length": 6
+              }
+            ],
+            "confidence": 0.496,
+            "source": "D(1,5.3546,8.6680,6.0890,8.6680,6.0890,8.9079,5.3546,8.9079)"
+          },
+          "tax_total": {
+            "type": "number",
+            "confidence": 0.974
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 50,
+            "spans": [
+              {
+                "offset": 375,
+                "length": 6
+              }
+            ],
+            "confidence": 0.496,
+            "source": "D(1,5.3546,8.6680,6.0890,8.6680,6.0890,8.9079,5.3546,8.9079)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "3002-Kyoto Choco Mochi",
+                    "spans": [
+                      {
+                        "offset": 17,
+                        "length": 16
+                      },
+                      {
+                        "offset": 43,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.813,
+                    "source": "D(1,1.8909,5.8468,3.7105,5.9036,3.7023,6.1650,1.8827,6.1081);D(1,3.8102,5.9044,4.3741,5.9092,4.3741,6.1423,3.8093,6.1452)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 95,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.26,
+                    "source": "D(1,4.1521,6.2129,4.3741,6.2123,4.3741,6.4139,4.1521,6.4119)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 14,
+                    "spans": [
+                      {
+                        "offset": 79,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.609,
+                    "source": "D(1,3.0344,6.2143,3.7083,6.2108,3.7083,6.4187,3.0344,6.4173)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 28,
+                    "spans": [
+                      {
+                        "offset": 107,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.558,
+                    "source": "D(1,5.4958,6.1630,6.2060,6.1508,6.2141,6.3672,5.5039,6.3801)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "1001-Choco Bun",
+                    "spans": [
+                      {
+                        "offset": 134,
+                        "length": 14
+                      }
+                    ],
+                    "confidence": 0.707,
+                    "source": "D(1,1.8915,6.4816,3.4897,6.4916,3.4882,6.7258,1.8901,6.7158)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 317,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.254,
+                    "source": "D(1,4.1602,7.4289,4.3781,7.4289,4.3781,7.6231,4.1683,7.6231)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 22,
+                    "spans": [
+                      {
+                        "offset": 189,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.608,
+                    "source": "D(1,3.0162,6.8126,3.7123,6.8140,3.7123,7.0276,3.0183,7.0294)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 22,
+                    "spans": [
+                      {
+                        "offset": 217,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.552,
+                    "source": "D(1,5.5241,6.7780,6.2463,6.7509,6.2463,6.9718,5.5241,6.9949)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "6001-Plastic Bag Small",
+                    "spans": [
+                      {
+                        "offset": 244,
+                        "length": 16
+                      },
+                      {
+                        "offset": 270,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.82,
+                    "source": "D(1,1.8572,7.1045,3.7073,7.1063,3.7071,7.3566,1.8570,7.3548);D(1,3.8097,7.1059,4.3902,7.1034,4.3942,7.3396,3.8128,7.3478)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 317,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.254,
+                    "source": "D(1,4.1602,7.4289,4.3781,7.4289,4.3781,7.6231,4.1683,7.6231)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 0,
+                    "spans": [
+                      {
+                        "offset": 306,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.513,
+                    "source": "D(1,3.5852,7.4232,3.7062,7.4232,3.7062,7.6288,3.5852,7.6288)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 0,
+                    "spans": [
+                      {
+                        "offset": 329,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.589,
+                    "source": "D(1,6.1455,7.3947,6.2746,7.3947,6.2746,7.5888,6.1455,7.5888)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 382
+              }
+            ],
+            "words": [
+              {
+                "content": "3002",
+                "span": {
+                  "offset": 17,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.8904,5.8627,2.3479,5.8759,2.3445,6.1223,1.8864,6.1069)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 21,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.3601,5.8762,2.4581,5.8791,2.4549,6.126,2.3568,6.1227)"
+              },
+              {
+                "content": "Kyoto",
+                "span": {
+                  "offset": 22,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,2.4704,5.8794,3.0218,5.8923,3.0195,6.1391,2.4672,6.1264)"
+              },
+              {
+                "content": "Choco",
+                "span": {
+                  "offset": 28,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,3.1362,5.8944,3.704,5.9034,3.7029,6.1457,3.1341,6.1407)"
+              },
+              {
+                "content": "Mochi",
+                "span": {
+                  "offset": 43,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.8102,5.9044,4.3741,5.9092,4.3741,6.1423,3.8093,6.1452)"
+              },
+              {
+                "content": "14.000",
+                "span": {
+                  "offset": 79,
+                  "length": 6
+                },
+                "confidence": 0.95,
+                "source": "D(1,3.0344,6.2143,3.7083,6.2108,3.7083,6.4187,3.0344,6.4173)"
+              },
+              {
+                "content": "x2",
+                "span": {
+                  "offset": 95,
+                  "length": 2
+                },
+                "confidence": 0.523,
+                "source": "D(1,4.1521,6.2129,4.3741,6.2123,4.3741,6.4139,4.1521,6.4119)"
+              },
+              {
+                "content": "28.000",
+                "span": {
+                  "offset": 107,
+                  "length": 6
+                },
+                "confidence": 0.95,
+                "source": "D(1,5.4958,6.163,6.206,6.1508,6.2141,6.3672,5.5039,6.3801)"
+              },
+              {
+                "content": "1001",
+                "span": {
+                  "offset": 134,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.8915,6.4879,2.3387,6.4913,2.3387,6.7184,1.8915,6.714)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 138,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.3572,6.4915,2.4533,6.492,2.4533,6.7193,2.3572,6.7186)"
+              },
+              {
+                "content": "Choco",
+                "span": {
+                  "offset": 139,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,2.4607,6.492,3.0263,6.493,3.0263,6.7182,2.4607,6.7193)"
+              },
+              {
+                "content": "Bun",
+                "span": {
+                  "offset": 145,
+                  "length": 3
+                },
+                "confidence": 0.984,
+                "source": "D(1,3.1409,6.4926,3.4883,6.4916,3.4883,6.7131,3.1409,6.717)"
+              },
+              {
+                "content": "22.000",
+                "span": {
+                  "offset": 189,
+                  "length": 6
+                },
+                "confidence": 0.972,
+                "source": "D(1,3.0162,6.8126,3.7123,6.814,3.7123,7.0276,3.0183,7.0294)"
+              },
+              {
+                "content": "x1",
+                "span": {
+                  "offset": 205,
+                  "length": 2
+                },
+                "confidence": 0.523,
+                "source": "D(1,4.1562,6.818,4.3741,6.818,4.3741,7.0178,4.1562,7.0178)"
+              },
+              {
+                "content": "22.000",
+                "span": {
+                  "offset": 217,
+                  "length": 6
+                },
+                "confidence": 0.953,
+                "source": "D(1,5.5241,6.778,6.2463,6.7509,6.2463,6.9718,5.5241,6.9949)"
+              },
+              {
+                "content": "6001",
+                "span": {
+                  "offset": 244,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,1.8572,7.1099,2.3199,7.1095,2.3207,7.355,1.8572,7.3536)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 248,
+                  "length": 1
+                },
+                "confidence": 0.99,
+                "source": "D(1,2.3402,7.1095,2.4417,7.1094,2.4427,7.3554,2.341,7.3551)"
+              },
+              {
+                "content": "Plastic",
+                "span": {
+                  "offset": 249,
+                  "length": 7
+                },
+                "confidence": 0.947,
+                "source": "D(1,2.4458,7.1094,3.2576,7.1077,3.2599,7.3531,2.4467,7.3554)"
+              },
+              {
+                "content": "Bag",
+                "span": {
+                  "offset": 257,
+                  "length": 3
+                },
+                "confidence": 0.979,
+                "source": "D(1,3.3632,7.1075,3.7042,7.1063,3.7071,7.3493,3.3656,7.3525)"
+              },
+              {
+                "content": "Small",
+                "span": {
+                  "offset": 270,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,3.8097,7.1059,4.3902,7.1034,4.3942,7.3396,3.8128,7.3478)"
+              },
+              {
+                "content": "0",
+                "span": {
+                  "offset": 306,
+                  "length": 1
+                },
+                "confidence": 0.92,
+                "source": "D(1,3.5852,7.4232,3.7062,7.4232,3.7062,7.6288,3.5852,7.6288)"
+              },
+              {
+                "content": "x1",
+                "span": {
+                  "offset": 317,
+                  "length": 2
+                },
+                "confidence": 0.523,
+                "source": "D(1,4.1602,7.4289,4.3781,7.4289,4.3781,7.6231,4.1683,7.6231)"
+              },
+              {
+                "content": "0",
+                "span": {
+                  "offset": 329,
+                  "length": 1
+                },
+                "confidence": 0.946,
+                "source": "D(1,6.1455,7.3947,6.2746,7.3947,6.2746,7.5888,6.1455,7.5888)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 353,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,1.8279,8.0585,2.4121,8.0549,2.413,8.2775,1.8279,8.2815)"
+              },
+              {
+                "content": "Item",
+                "span": {
+                  "offset": 359,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.5472,8.0555,3.0145,8.0625,3.0164,8.2783,2.5483,8.2772)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 363,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.0401,8.063,3.1131,8.0645,3.1151,8.2787,3.042,8.2784)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 365,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.2853,8.0456,4.4023,8.0456,4.4023,8.2398,4.2853,8.2398)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 368,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.834,8.6909,2.418,8.6909,2.4219,8.9195,1.837,8.9253)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 373,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.4295,8.6909,2.5058,8.6909,2.5098,8.9201,2.4334,8.9196)"
+              },
+              {
+                "content": "50.000",
+                "span": {
+                  "offset": 375,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,5.3546,8.668,6.089,8.668,6.089,8.9079,5.3546,8.9079)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "3002-Kyoto Choco Mochi",
+                "source": "D(1,1.8904,5.8627,4.3747,5.9093,4.3736,6.1499,1.8856,6.1192)",
+                "span": {
+                  "offset": 17,
+                  "length": 31
+                }
+              },
+              {
+                "content": "14.000",
+                "source": "D(1,3.0344,6.2094,3.7083,6.2094,3.7083,6.4197,3.0344,6.4197)",
+                "span": {
+                  "offset": 79,
+                  "length": 6
+                }
+              },
+              {
+                "content": "x2",
+                "source": "D(1,4.1521,6.2123,4.3741,6.2123,4.3741,6.4139,4.1521,6.4139)",
+                "span": {
+                  "offset": 95,
+                  "length": 2
+                }
+              },
+              {
+                "content": "28.000",
+                "source": "D(1,5.4957,6.1575,6.21,6.1446,6.2141,6.3672,5.4997,6.3801)",
+                "span": {
+                  "offset": 107,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1001-Choco Bun",
+                "source": "D(1,1.8915,6.4879,3.4889,6.4916,3.4883,6.7209,1.8909,6.7181)",
+                "span": {
+                  "offset": 134,
+                  "length": 14
+                }
+              },
+              {
+                "content": "22.000",
+                "source": "D(1,3.0162,6.8084,3.7123,6.8066,3.7129,7.0276,3.0168,7.0294)",
+                "span": {
+                  "offset": 189,
+                  "length": 6
+                }
+              },
+              {
+                "content": "x1",
+                "source": "D(1,4.1562,6.818,4.3741,6.818,4.3741,7.0178,4.1562,7.0178)",
+                "span": {
+                  "offset": 205,
+                  "length": 2
+                }
+              },
+              {
+                "content": "22.000",
+                "source": "D(1,5.5226,6.7723,6.2463,6.7494,6.2479,6.9716,5.5241,6.9949)",
+                "span": {
+                  "offset": 217,
+                  "length": 6
+                }
+              },
+              {
+                "content": "6001-Plastic Bag Small",
+                "source": "D(1,1.8565,7.1099,4.3936,7.1033,4.3943,7.3518,1.8572,7.3584)",
+                "span": {
+                  "offset": 244,
+                  "length": 31
+                }
+              },
+              {
+                "content": "0",
+                "source": "D(1,3.5852,7.4232,3.7062,7.4232,3.7062,7.6288,3.5852,7.6288)",
+                "span": {
+                  "offset": 306,
+                  "length": 1
+                }
+              },
+              {
+                "content": "x1",
+                "source": "D(1,4.1602,7.4289,4.3781,7.4289,4.3781,7.6231,4.1602,7.6231)",
+                "span": {
+                  "offset": 317,
+                  "length": 2
+                }
+              },
+              {
+                "content": "0",
+                "source": "D(1,6.1455,7.3947,6.2746,7.3947,6.2746,7.5888,6.1455,7.5888)",
+                "span": {
+                  "offset": 329,
+                  "length": 1
+                }
+              },
+              {
+                "content": "Total Item:",
+                "source": "D(1,1.8275,8.0551,3.1146,8.0522,3.1151,8.2787,1.8279,8.2815)",
+                "span": {
+                  "offset": 353,
+                  "length": 11
+                }
+              },
+              {
+                "content": "4",
+                "source": "D(1,4.2853,8.0456,4.4023,8.0456,4.4023,8.2398,4.2853,8.2398)",
+                "span": {
+                  "offset": 365,
+                  "length": 1
+                }
+              },
+              {
+                "content": "Total.",
+                "source": "D(1,1.834,8.6909,2.508,8.6909,2.5098,8.9201,1.8358,8.9253)",
+                "span": {
+                  "offset": 368,
+                  "length": 6
+                }
+              },
+              {
+                "content": "50.000",
+                "source": "D(1,5.3546,8.668,6.089,8.668,6.089,8.9079,5.3546,8.9079)",
+                "span": {
+                  "offset": 375,
+                  "length": 6
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "3002-Kyoto Choco",
+            "source": "D(1,1.8909,5.8469,3.7104,5.9036,3.7023,6.1649,1.8828,6.1082)",
+            "span": {
+              "offset": 17,
+              "length": 16
+            }
+          },
+          {
+            "content": "Mochi",
+            "source": "D(1,3.8097,5.9044,4.3745,5.9054,4.374,6.1462,3.8093,6.1452)",
+            "span": {
+              "offset": 43,
+              "length": 5
+            }
+          },
+          {
+            "content": "14.000",
+            "source": "D(1,3.0341,6.2118,3.7083,6.2108,3.7086,6.4187,3.0344,6.4197)",
+            "span": {
+              "offset": 79,
+              "length": 6
+            }
+          },
+          {
+            "content": "x2",
+            "source": "D(1,4.1521,6.2116,4.3747,6.2123,4.3741,6.4139,4.1515,6.4132)",
+            "span": {
+              "offset": 95,
+              "length": 2
+            }
+          },
+          {
+            "content": "28.000",
+            "source": "D(1,5.4958,6.163,6.2102,6.1504,6.2141,6.3675,5.4996,6.3801)",
+            "span": {
+              "offset": 107,
+              "length": 6
+            }
+          },
+          {
+            "content": "1001-Choco Bun",
+            "source": "D(1,1.8915,6.4813,3.4898,6.4916,3.4883,6.7259,1.89,6.7157)",
+            "span": {
+              "offset": 134,
+              "length": 14
+            }
+          },
+          {
+            "content": "22.000",
+            "source": "D(1,3.0162,6.8126,3.7123,6.8124,3.7124,7.0292,3.0163,7.0294)",
+            "span": {
+              "offset": 189,
+              "length": 6
+            }
+          },
+          {
+            "content": "x1",
+            "source": "D(1,4.1562,6.818,4.3741,6.818,4.3741,7.0178,4.1562,7.0178)",
+            "span": {
+              "offset": 205,
+              "length": 2
+            }
+          },
+          {
+            "content": "22.000",
+            "source": "D(1,5.5165,6.7763,6.2463,6.7509,6.254,6.9716,5.5241,6.9969)",
+            "span": {
+              "offset": 217,
+              "length": 6
+            }
+          },
+          {
+            "content": "6001-Plastic Bag",
+            "source": "D(1,1.8572,7.1044,3.7074,7.1063,3.7071,7.3567,1.8569,7.3548)",
+            "span": {
+              "offset": 244,
+              "length": 16
+            }
+          },
+          {
+            "content": "Small",
+            "source": "D(1,3.8097,7.1059,4.392,7.1005,4.3943,7.3425,3.8119,7.3478)",
+            "span": {
+              "offset": 270,
+              "length": 5
+            }
+          },
+          {
+            "content": "0",
+            "source": "D(1,3.5852,7.4232,3.7062,7.4232,3.7062,7.6288,3.5852,7.6288)",
+            "span": {
+              "offset": 306,
+              "length": 1
+            }
+          },
+          {
+            "content": "x1",
+            "source": "D(1,4.1602,7.4289,4.3781,7.4289,4.3781,7.6231,4.1602,7.6231)",
+            "span": {
+              "offset": 317,
+              "length": 2
+            }
+          },
+          {
+            "content": "0",
+            "source": "D(1,6.1455,7.3947,6.2746,7.3947,6.2746,7.5888,6.1455,7.5888)",
+            "span": {
+              "offset": 329,
+              "length": 1
+            }
+          },
+          {
+            "content": "Total Item: 4",
+            "source": "D(1,1.827,8.0551,4.4023,8.0452,4.4032,8.2737,1.8279,8.2836)",
+            "span": {
+              "offset": 353,
+              "length": 13
+            }
+          },
+          {
+            "content": "Total. 50.000",
+            "source": "D(1,1.8339,8.6825,6.089,8.665,6.0899,8.9079,1.8349,8.9253)",
+            "span": {
+              "offset": 368,
+              "length": 13
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 381
+            },
+            "elements": [
+              "/tables/0",
+              "/paragraphs/14",
+              "/paragraphs/15"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 6,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3002-Kyoto Choco",
+                "source": "D(1,1.725,5.6858,3.7876,5.6776,3.7865,6.1509,1.7216,6.1606)",
+                "span": {
+                  "offset": 17,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/0"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Mochi",
+                "source": "D(1,3.7876,5.6776,5.0786,5.6732,5.0771,6.1458,3.7865,6.1509)",
+                "span": {
+                  "offset": 43,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/1"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.0786,5.6732,6.4099,5.6676,6.41,6.1392,5.0771,6.1458)",
+                "span": {
+                  "offset": 58,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "14.000",
+                "source": "D(1,1.7216,6.1606,3.7865,6.1509,3.7861,6.4309,1.7193,6.4333)",
+                "span": {
+                  "offset": 79,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "x2",
+                "source": "D(1,3.7865,6.1509,5.0771,6.1458,5.0745,6.4291,3.7861,6.4309)",
+                "span": {
+                  "offset": 95,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "28.000",
+                "source": "D(1,5.0771,6.1458,6.41,6.1392,6.4108,6.4268,5.0745,6.4291)",
+                "span": {
+                  "offset": 107,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1001-Choco Bun",
+                "source": "D(1,1.7193,6.4333,3.7861,6.4309,3.7868,6.7728,1.7204,6.7787)",
+                "span": {
+                  "offset": 134,
+                  "length": 14
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.7861,6.4309,5.0745,6.4291,5.0758,6.7693,3.7868,6.7728)",
+                "span": {
+                  "offset": 158,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.0745,6.4291,6.4108,6.4268,6.4123,6.7645,5.0758,6.7693)",
+                "span": {
+                  "offset": 168,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22.000",
+                "source": "D(1,1.7204,6.7787,3.7868,6.7728,3.7874,7.0545,1.719,7.0573)",
+                "span": {
+                  "offset": 189,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "x1",
+                "source": "D(1,3.7868,6.7728,5.0758,6.7693,5.0744,7.0528,3.7874,7.0545)",
+                "span": {
+                  "offset": 205,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22.000",
+                "source": "D(1,5.0758,6.7693,6.4123,6.7645,6.4122,7.0489,5.0744,7.0528)",
+                "span": {
+                  "offset": 217,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "6001-Plastic Bag",
+                "source": "D(1,1.719,7.0573,3.7874,7.0545,3.7838,7.3695,1.7195,7.3783)",
+                "span": {
+                  "offset": 244,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Small",
+                "source": "D(1,3.7874,7.0545,5.0744,7.0528,5.0814,7.3639,3.7838,7.3695)",
+                "span": {
+                  "offset": 270,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.0744,7.0528,6.4122,7.0489,6.4133,7.357,5.0814,7.3639)",
+                "span": {
+                  "offset": 285,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "0",
+                "source": "D(1,1.7195,7.3783,3.7838,7.3695,3.7852,7.8353,1.723,7.8434)",
+                "span": {
+                  "offset": 306,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "x1",
+                "source": "D(1,3.7838,7.3695,5.0814,7.3639,5.0836,7.8289,3.7852,7.8353)",
+                "span": {
+                  "offset": 317,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "0",
+                "source": "D(1,5.0814,7.3639,6.4133,7.357,6.4154,7.824,5.0836,7.8289)",
+                "span": {
+                  "offset": 329,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              }
+            ],
+            "source": "D(1,1.7976,5.8329,6.319,5.7816,6.3351,7.6688,1.8087,7.7087)",
+            "span": {
+              "offset": 0,
+              "length": 350
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 3995,
+      "gpt-5-mini-cached-input": 3968,
+      "gpt-5-mini-output": 273
+    }
+  }
+}

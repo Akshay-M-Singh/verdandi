@@ -1,0 +1,1927 @@
+{
+  "id": "3589579e-5fcb-41e9-93d9-59b46b943d32",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T12:39:51Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "![5](figures/1.1)\n\n\nFoster, Wells and Martin\nAddress:80626 Gates Plains Suite 320\nNancymouth, LA 58369 US\nINVOICE # INV/24-52/636\n\n\n<table>\n<tr>\n<th>Qty</th>\n<th>ID</th>\n<th>Description</th>\n<th>Unit price</th>\n<th>Amount</th>\n</tr>\n<tr>\n<td>2.00</td>\n<td>982996</td>\n<td>Kind nice example.</td>\n<td>52.52</td>\n<td>105.04</td>\n</tr>\n<tr>\n<td>2.00</td>\n<td>941664</td>\n<td>Then gun,</td>\n<td>16.39</td>\n<td>32.78</td>\n</tr>\n<tr>\n<td>1.00</td>\n<td>911003</td>\n<td>Also.</td>\n<td>44.33</td>\n<td>44.33</td>\n</tr>\n<tr>\n<td>2.00</td>\n<td>335409</td>\n<td>Indicate Democrat beyond eat.</td>\n<td>52.83</td>\n<td>105.66</td>\n</tr>\n</table>\n\n\nSUB_TOTAL : 287.81 $\n\nTOTAL : 299.40 $\nBALANCE_DUE : 299.40 $\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "valueString": "INV/24-52/636",
+            "spans": [
+              {
+                "offset": 116,
+                "length": 13
+              }
+            ],
+            "confidence": 0.791,
+            "source": "D(1,1.4589,3.2747,2.5503,3.2751,2.5502,3.4706,1.4588,3.4702)"
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "valueString": "Foster, Wells and Martin",
+            "spans": [
+              {
+                "offset": 20,
+                "length": 24
+              }
+            ],
+            "confidence": 0.892,
+            "source": "D(1,0.6168,2.3737,2.5603,2.3724,2.5604,2.5670,0.6169,2.5683)"
+          },
+          "buyer_name": {
+            "type": "string",
+            "valueString": "Nancymouth, LA 58369 US",
+            "spans": [
+              {
+                "offset": 82,
+                "length": 23
+              }
+            ],
+            "confidence": 0.481,
+            "source": "D(1,0.6158,2.9104,2.7580,2.8981,2.7591,3.0970,0.6169,3.1092)"
+          },
+          "currency": {
+            "type": "string",
+            "valueString": "$",
+            "spans": [
+              {
+                "offset": 650,
+                "length": 1
+              }
+            ],
+            "confidence": 0.789,
+            "source": "D(1,6.1207,6.2526,6.2383,6.2525,6.2383,6.4469,6.1207,6.4469)"
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 287.81,
+            "spans": [
+              {
+                "offset": 643,
+                "length": 8
+              }
+            ],
+            "confidence": 0.778,
+            "source": "D(1,5.5167,6.2528,6.2383,6.2525,6.2384,6.4469,5.5168,6.4472)"
+          },
+          "tax_total": {
+            "type": "number",
+            "confidence": 0.974
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 299.4,
+            "spans": [
+              {
+                "offset": 661,
+                "length": 8
+              }
+            ],
+            "confidence": 0.716,
+            "source": "D(1,5.0433,7.2513,5.7177,7.2511,5.7178,7.4464,5.0434,7.4466)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Kind nice example.",
+                    "spans": [
+                      {
+                        "offset": 272,
+                        "length": 18
+                      }
+                    ],
+                    "confidence": 0.821,
+                    "source": "D(1,2.2879,4.8185,3.4740,4.8312,3.4722,5.0041,2.2861,4.9914)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 242,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.876,
+                    "source": "D(1,0.5362,4.8214,0.8307,4.8266,0.8307,4.9844,0.5362,4.9764)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 52.52,
+                    "spans": [
+                      {
+                        "offset": 300,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.83,
+                    "source": "D(1,5.7742,4.8233,6.1495,4.8345,6.1495,4.9887,5.7742,4.9775)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 105.04,
+                    "spans": [
+                      {
+                        "offset": 315,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.892,
+                    "source": "D(1,6.8556,4.8238,7.2955,4.8330,7.2955,4.9870,6.8556,4.9785)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Then gun,",
+                    "spans": [
+                      {
+                        "offset": 372,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,2.2859,5.0761,2.9256,5.0768,2.9254,5.2461,2.2857,5.2454)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 342,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.876,
+                    "source": "D(1,0.5362,5.0736,0.8322,5.0752,0.8322,5.2330,0.5362,5.2276)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 16.39,
+                    "spans": [
+                      {
+                        "offset": 391,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.841,
+                    "source": "D(1,5.7863,5.0733,6.1495,5.0733,6.1495,5.2275,5.7863,5.2275)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 32.78,
+                    "spans": [
+                      {
+                        "offset": 406,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.892,
+                    "source": "D(1,6.8799,5.0746,7.2592,5.0736,7.2592,5.2275,6.8799,5.2275)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Also.",
+                    "spans": [
+                      {
+                        "offset": 462,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.892,
+                    "source": "D(1,2.2839,5.3271,2.6137,5.3294,2.6127,5.4762,2.2829,5.4739)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 432,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.711,
+                    "source": "D(1,0.5463,5.3274,0.8338,5.3228,0.8338,5.4738,0.5463,5.4743)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 44.33,
+                    "spans": [
+                      {
+                        "offset": 477,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.857,
+                    "source": "D(1,5.7702,5.3303,6.1495,5.3271,6.1495,5.4768,5.7702,5.4732)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 44.33,
+                    "spans": [
+                      {
+                        "offset": 492,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.885,
+                    "source": "D(1,6.8799,5.3259,7.2592,5.3259,7.2592,5.4744,6.8799,5.4744)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Indicate Democrat beyond eat.",
+                    "spans": [
+                      {
+                        "offset": 548,
+                        "length": 29
+                      }
+                    ],
+                    "confidence": 0.793,
+                    "source": "D(1,2.2819,5.5671,4.1925,5.5676,4.1925,5.7393,2.2819,5.7388)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 518,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.876,
+                    "source": "D(1,0.5341,5.5755,0.8307,5.5737,0.8307,5.7274,0.5341,5.7274)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 52.83,
+                    "spans": [
+                      {
+                        "offset": 587,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.841,
+                    "source": "D(1,5.7742,5.5755,6.1495,5.5736,6.1495,5.7279,5.7742,5.7257)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 105.66,
+                    "spans": [
+                      {
+                        "offset": 602,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.892,
+                    "source": "D(1,6.8597,5.5715,7.2955,5.5706,7.2955,5.7248,6.8597,5.7257)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 693
+              }
+            ],
+            "words": [
+              {
+                "content": "5",
+                "span": {
+                  "offset": 2,
+                  "length": 1
+                },
+                "confidence": 0.983,
+                "source": "D(1,1.0693,1.2856,1.5939,1.293,1.5808,1.9544,1.0582,1.9579)"
+              },
+              {
+                "content": "Foster",
+                "span": {
+                  "offset": 20,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.6169,2.3739,1.1507,2.3753,1.1507,2.5678,0.6169,2.5669)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 26,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.1475,2.3753,1.1922,2.3754,1.1922,2.5679,1.1475,2.5678)"
+              },
+              {
+                "content": "Wells",
+                "span": {
+                  "offset": 28,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.2178,2.3755,1.6525,2.3753,1.6525,2.5675,1.2178,2.5679)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 34,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.6972,2.3752,1.9913,2.3748,1.9913,2.5667,1.6973,2.5674)"
+              },
+              {
+                "content": "Martin",
+                "span": {
+                  "offset": 38,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.0361,2.3746,2.5603,2.3724,2.5603,2.564,2.0361,2.5665)"
+              },
+              {
+                "content": "Address",
+                "span": {
+                  "offset": 45,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,0.6189,2.7042,1.288,2.7033,1.288,2.8948,0.6189,2.8952)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 52,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.2977,2.7033,1.3427,2.7032,1.3427,2.8948,1.2977,2.8948)"
+              },
+              {
+                "content": "80626",
+                "span": {
+                  "offset": 53,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,1.3427,2.7032,1.8124,2.7026,1.8124,2.8946,1.3427,2.8948)"
+              },
+              {
+                "content": "Gates",
+                "span": {
+                  "offset": 59,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,1.8607,2.7026,2.3207,2.7021,2.3207,2.8946,1.8607,2.8946)"
+              },
+              {
+                "content": "Plains",
+                "span": {
+                  "offset": 65,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.3722,2.702,2.8548,2.7015,2.8548,2.8945,2.3722,2.8945)"
+              },
+              {
+                "content": "Suite",
+                "span": {
+                  "offset": 72,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.9094,2.7015,3.318,2.7011,3.318,2.8946,2.9094,2.8945)"
+              },
+              {
+                "content": "320",
+                "span": {
+                  "offset": 78,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,3.363,2.7011,3.6558,2.7009,3.6558,2.8947,3.363,2.8946)"
+              },
+              {
+                "content": "Nancymouth",
+                "span": {
+                  "offset": 82,
+                  "length": 10
+                },
+                "confidence": 0.989,
+                "source": "D(1,0.6169,2.9112,1.6319,2.9046,1.6319,3.1019,0.6169,3.1092)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 92,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.6287,2.9046,1.6711,2.9044,1.6711,3.1016,1.6287,3.1019)"
+              },
+              {
+                "content": "LA",
+                "span": {
+                  "offset": 94,
+                  "length": 2
+                },
+                "confidence": 0.992,
+                "source": "D(1,1.7299,2.9041,1.9485,2.9031,1.9485,3.0997,1.7299,3.1012)"
+              },
+              {
+                "content": "58369",
+                "span": {
+                  "offset": 97,
+                  "length": 5
+                },
+                "confidence": 0.95,
+                "source": "D(1,1.9877,2.9029,2.4708,2.9018,2.4708,3.0962,1.9877,3.0994)"
+              },
+              {
+                "content": "US",
+                "span": {
+                  "offset": 103,
+                  "length": 2
+                },
+                "confidence": 0.988,
+                "source": "D(1,2.5197,2.9017,2.758,2.9012,2.758,3.0942,2.5197,3.0958)"
+              },
+              {
+                "content": "INVOICE",
+                "span": {
+                  "offset": 106,
+                  "length": 7
+                },
+                "confidence": 0.985,
+                "source": "D(1,0.5755,3.2753,1.264,3.2747,1.264,3.4693,0.5755,3.4704)"
+              },
+              {
+                "content": "#",
+                "span": {
+                  "offset": 114,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.316,3.2747,1.4102,3.2747,1.4102,3.4693,1.316,3.4693)"
+              },
+              {
+                "content": "INV",
+                "span": {
+                  "offset": 116,
+                  "length": 3
+                },
+                "confidence": 0.975,
+                "source": "D(1,1.4589,3.2747,1.7317,3.2748,1.7317,3.4694,1.4589,3.4693)"
+              },
+              {
+                "content": "/",
+                "span": {
+                  "offset": 119,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.722,3.2748,1.7837,3.2748,1.7837,3.4694,1.722,3.4694)"
+              },
+              {
+                "content": "24-52/636",
+                "span": {
+                  "offset": 120,
+                  "length": 9
+                },
+                "confidence": 0.981,
+                "source": "D(1,1.774,3.2748,2.5502,3.2757,2.5502,3.4706,1.774,3.4694)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 149,
+                  "length": 3
+                },
+                "confidence": 0.981,
+                "source": "D(1,0.5387,4.5777,0.7929,4.5804,0.7914,4.7417,0.5377,4.7379)"
+              },
+              {
+                "content": "ID",
+                "span": {
+                  "offset": 162,
+                  "length": 2
+                },
+                "confidence": 0.924,
+                "source": "D(1,1.3729,4.578,1.5313,4.5763,1.5313,4.7252,1.3729,4.7193)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 174,
+                  "length": 11
+                },
+                "confidence": 0.99,
+                "source": "D(1,2.2859,4.5752,3.0727,4.5742,3.0727,4.7398,2.2859,4.7408)"
+              },
+              {
+                "content": "Unit",
+                "span": {
+                  "offset": 195,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,5.629,4.5745,5.9102,4.5735,5.9102,4.7391,5.629,4.7401)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 200,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,5.9433,4.5736,6.2907,4.5764,6.2907,4.742,5.9433,4.7392)"
+              },
+              {
+                "content": "Amount",
+                "span": {
+                  "offset": 215,
+                  "length": 6
+                },
+                "confidence": 0.943,
+                "source": "D(1,6.7951,4.5809,7.3479,4.5799,7.3479,4.7322,6.7951,4.7312)"
+              },
+              {
+                "content": "2.00",
+                "span": {
+                  "offset": 242,
+                  "length": 4
+                },
+                "confidence": 0.975,
+                "source": "D(1,0.5362,4.8214,0.8307,4.8266,0.8307,4.9844,0.5362,4.9764)"
+              },
+              {
+                "content": "982996",
+                "span": {
+                  "offset": 256,
+                  "length": 6
+                },
+                "confidence": 0.955,
+                "source": "D(1,1.3699,4.8202,1.8602,4.826,1.8602,4.9889,1.3699,4.9805)"
+              },
+              {
+                "content": "Kind",
+                "span": {
+                  "offset": 272,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.2879,4.8228,2.5669,4.8234,2.5669,4.9932,2.2879,4.9914)"
+              },
+              {
+                "content": "nice",
+                "span": {
+                  "offset": 277,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.6125,4.8235,2.863,4.825,2.863,4.9956,2.6125,4.9935)"
+              },
+              {
+                "content": "example",
+                "span": {
+                  "offset": 282,
+                  "length": 7
+                },
+                "confidence": 0.972,
+                "source": "D(1,2.9028,4.8252,3.4295,4.8308,3.4295,5.0016,2.9028,4.9959)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 289,
+                  "length": 1
+                },
+                "confidence": 0.774,
+                "source": "D(1,3.4324,4.8308,3.4722,4.8313,3.4722,5.0021,3.4324,5.0016)"
+              },
+              {
+                "content": "52.52",
+                "span": {
+                  "offset": 300,
+                  "length": 5
+                },
+                "confidence": 0.973,
+                "source": "D(1,5.7742,4.8233,6.1495,4.8345,6.1495,4.9887,5.7742,4.9775)"
+              },
+              {
+                "content": "105.04",
+                "span": {
+                  "offset": 315,
+                  "length": 6
+                },
+                "confidence": 0.89,
+                "source": "D(1,6.8556,4.8238,7.2955,4.833,7.2955,4.987,6.8556,4.9785)"
+              },
+              {
+                "content": "2.00",
+                "span": {
+                  "offset": 342,
+                  "length": 4
+                },
+                "confidence": 0.982,
+                "source": "D(1,0.5362,5.0736,0.8322,5.0752,0.8322,5.233,0.5362,5.2276)"
+              },
+              {
+                "content": "941664",
+                "span": {
+                  "offset": 356,
+                  "length": 6
+                },
+                "confidence": 0.931,
+                "source": "D(1,1.3729,5.0718,1.8642,5.0718,1.8642,5.2273,1.3729,5.2263)"
+              },
+              {
+                "content": "Then",
+                "span": {
+                  "offset": 372,
+                  "length": 4
+                },
+                "confidence": 0.985,
+                "source": "D(1,2.2859,5.0764,2.6114,5.0765,2.6114,5.2457,2.2859,5.2445)"
+              },
+              {
+                "content": "gun",
+                "span": {
+                  "offset": 377,
+                  "length": 3
+                },
+                "confidence": 0.98,
+                "source": "D(1,2.6456,5.0765,2.8798,5.0768,2.8798,5.246,2.6456,5.2458)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 380,
+                  "length": 1
+                },
+                "confidence": 0.531,
+                "source": "D(1,2.8826,5.0768,2.9254,5.0768,2.9254,5.246,2.8826,5.246)"
+              },
+              {
+                "content": "16.39",
+                "span": {
+                  "offset": 391,
+                  "length": 5
+                },
+                "confidence": 0.969,
+                "source": "D(1,5.7863,5.0733,6.1495,5.0733,6.1495,5.2275,5.7863,5.2275)"
+              },
+              {
+                "content": "32.78",
+                "span": {
+                  "offset": 406,
+                  "length": 5
+                },
+                "confidence": 0.597,
+                "source": "D(1,6.8799,5.0746,7.2592,5.0736,7.2592,5.2275,6.8799,5.2275)"
+              },
+              {
+                "content": "1.00",
+                "span": {
+                  "offset": 432,
+                  "length": 4
+                },
+                "confidence": 0.98,
+                "source": "D(1,0.5463,5.3274,0.8338,5.3228,0.8338,5.4738,0.5463,5.4743)"
+              },
+              {
+                "content": "911003",
+                "span": {
+                  "offset": 446,
+                  "length": 6
+                },
+                "confidence": 0.912,
+                "source": "D(1,1.3699,5.3214,1.8602,5.3221,1.8602,5.4816,1.3699,5.4785)"
+              },
+              {
+                "content": "Also",
+                "span": {
+                  "offset": 462,
+                  "length": 4
+                },
+                "confidence": 0.958,
+                "source": "D(1,2.2839,5.3303,2.5671,5.3298,2.5671,5.4752,2.2839,5.4736)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 466,
+                  "length": 1
+                },
+                "confidence": 0.988,
+                "source": "D(1,2.5693,5.3298,2.6127,5.3294,2.6127,5.4762,2.5693,5.4752)"
+              },
+              {
+                "content": "44.33",
+                "span": {
+                  "offset": 477,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,5.7702,5.3303,6.1495,5.3271,6.1495,5.4768,5.7702,5.4732)"
+              },
+              {
+                "content": "44.33",
+                "span": {
+                  "offset": 492,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,6.8799,5.3259,7.2592,5.3259,7.2592,5.4744,6.8799,5.4744)"
+              },
+              {
+                "content": "2.00",
+                "span": {
+                  "offset": 518,
+                  "length": 4
+                },
+                "confidence": 0.985,
+                "source": "D(1,0.5341,5.5755,0.8307,5.5737,0.8307,5.7274,0.5341,5.7274)"
+              },
+              {
+                "content": "335409",
+                "span": {
+                  "offset": 532,
+                  "length": 6
+                },
+                "confidence": 0.99,
+                "source": "D(1,1.3689,5.573,1.8612,5.5712,1.8612,5.7267,1.3689,5.7275)"
+              },
+              {
+                "content": "Indicate",
+                "span": {
+                  "offset": 548,
+                  "length": 8
+                },
+                "confidence": 0.861,
+                "source": "D(1,2.2819,5.5678,2.7794,5.5673,2.7794,5.738,2.2819,5.7361)"
+              },
+              {
+                "content": "Democrat",
+                "span": {
+                  "offset": 557,
+                  "length": 8
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.8221,5.5673,3.4277,5.5674,3.4277,5.7391,2.8221,5.7382)"
+              },
+              {
+                "content": "beyond",
+                "span": {
+                  "offset": 566,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,3.4589,5.5675,3.9167,5.5682,3.9167,5.7386,3.4589,5.7391)"
+              },
+              {
+                "content": "eat",
+                "span": {
+                  "offset": 573,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,3.9565,5.5683,4.1527,5.5687,4.1527,5.7381,3.9565,5.7385)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 576,
+                  "length": 1
+                },
+                "confidence": 0.958,
+                "source": "D(1,4.1527,5.5687,4.1925,5.5687,4.1925,5.7381,4.1527,5.7381)"
+              },
+              {
+                "content": "52.83",
+                "span": {
+                  "offset": 587,
+                  "length": 5
+                },
+                "confidence": 0.806,
+                "source": "D(1,5.7742,5.5755,6.1495,5.5736,6.1495,5.7279,5.7742,5.7257)"
+              },
+              {
+                "content": "105.66",
+                "span": {
+                  "offset": 602,
+                  "length": 6
+                },
+                "confidence": 0.965,
+                "source": "D(1,6.8597,5.5715,7.2955,5.5706,7.2955,5.7248,6.8597,5.7257)"
+              },
+              {
+                "content": "SUB_TOTAL",
+                "span": {
+                  "offset": 631,
+                  "length": 9
+                },
+                "confidence": 0.94,
+                "source": "D(1,4.3579,6.2565,5.3699,6.2533,5.3699,6.4474,4.3579,6.4526)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 641,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.4189,6.2532,5.4678,6.2531,5.4678,6.4472,5.4189,6.4473)"
+              },
+              {
+                "content": "287.81",
+                "span": {
+                  "offset": 643,
+                  "length": 6
+                },
+                "confidence": 0.977,
+                "source": "D(1,5.5168,6.253,6.0195,6.2526,6.0195,6.4469,5.5168,6.447)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 650,
+                  "length": 1
+                },
+                "confidence": 0.954,
+                "source": "D(1,6.1207,6.2526,6.2383,6.2525,6.2383,6.4469,6.1207,6.4469)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 653,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,4.3256,7.2528,4.8974,7.2576,4.8974,7.4401,4.3256,7.4412)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 659,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.9471,7.2575,4.9937,7.2574,4.9937,7.4404,4.9471,7.4402)"
+              },
+              {
+                "content": "299.40",
+                "span": {
+                  "offset": 661,
+                  "length": 6
+                },
+                "confidence": 0.952,
+                "source": "D(1,5.0434,7.2574,5.5655,7.253,5.5655,7.4447,5.0434,7.4406)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 668,
+                  "length": 1
+                },
+                "confidence": 0.983,
+                "source": "D(1,5.6059,7.2525,5.7177,7.2511,5.7177,7.4464,5.6059,7.4452)"
+              },
+              {
+                "content": "BALANCE_DUE",
+                "span": {
+                  "offset": 670,
+                  "length": 11
+                },
+                "confidence": 0.94,
+                "source": "D(1,4.3458,7.5596,5.9224,7.5571,5.9224,7.7942,4.3458,7.7893)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 682,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.9937,7.5569,6.0492,7.5567,6.0492,7.7943,5.9937,7.7942)"
+              },
+              {
+                "content": "299.40",
+                "span": {
+                  "offset": 684,
+                  "length": 6
+                },
+                "confidence": 0.935,
+                "source": "D(1,6.1125,7.5564,6.7582,7.5529,6.7582,7.792,6.1125,7.7942)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 691,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,6.8097,7.5526,6.9444,7.5519,6.9444,7.7913,6.8097,7.7918)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "5",
+                "source": "D(1,1.0693,1.2848,1.5939,1.293,1.5827,1.9586,1.0582,1.9579)",
+                "span": {
+                  "offset": 2,
+                  "length": 1
+                }
+              },
+              {
+                "content": "Foster, Wells and Martin",
+                "source": "D(1,0.6168,2.3739,2.5603,2.3724,2.5604,2.567,0.6169,2.5685)",
+                "span": {
+                  "offset": 20,
+                  "length": 24
+                }
+              },
+              {
+                "content": "Address:80626 Gates Plains Suite 320",
+                "source": "D(1,0.6189,2.7014,3.6558,2.7009,3.6558,2.8947,0.6189,2.8952)",
+                "span": {
+                  "offset": 45,
+                  "length": 36
+                }
+              },
+              {
+                "content": "Nancymouth, LA 58369 US",
+                "source": "D(1,0.6168,2.911,2.758,2.9008,2.7584,3.0942,0.6169,3.1092)",
+                "span": {
+                  "offset": 82,
+                  "length": 23
+                }
+              },
+              {
+                "content": "INVOICE # INV/24-52/636",
+                "source": "D(1,0.5755,3.2746,2.5502,3.2748,2.5502,3.4706,0.5755,3.4704)",
+                "span": {
+                  "offset": 106,
+                  "length": 23
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,0.5387,4.576,0.7931,4.5787,0.7914,4.7417,0.537,4.7389)",
+                "span": {
+                  "offset": 149,
+                  "length": 3
+                }
+              },
+              {
+                "content": "ID",
+                "source": "D(1,1.3729,4.5763,1.5313,4.5763,1.5313,4.7252,1.3729,4.7252)",
+                "span": {
+                  "offset": 162,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,2.2857,4.5743,3.0727,4.5733,3.0729,4.7398,2.2859,4.7408)",
+                "span": {
+                  "offset": 174,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Unit price",
+                "source": "D(1,5.629,4.5727,6.2912,4.5746,6.2907,4.742,5.6285,4.7401)",
+                "span": {
+                  "offset": 195,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Amount",
+                "source": "D(1,6.7951,4.5786,7.3482,4.5796,7.3479,4.7322,6.7948,4.7312)",
+                "span": {
+                  "offset": 215,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2.00",
+                "source": "D(1,0.5363,4.8194,0.8338,4.8262,0.8307,4.9844,0.532,4.9763)",
+                "span": {
+                  "offset": 242,
+                  "length": 4
+                }
+              },
+              {
+                "content": "982996",
+                "source": "D(1,1.37,4.815,1.8618,4.8235,1.8602,4.9889,1.3672,4.9804)",
+                "span": {
+                  "offset": 256,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Kind nice example.",
+                "source": "D(1,2.2879,4.8194,3.4723,4.8301,3.4722,5.0021,2.2864,4.9914)",
+                "span": {
+                  "offset": 272,
+                  "length": 18
+                }
+              },
+              {
+                "content": "52.52",
+                "source": "D(1,5.7744,4.8194,6.1508,4.8289,6.1495,4.9887,5.7739,4.9773)",
+                "span": {
+                  "offset": 300,
+                  "length": 5
+                }
+              },
+              {
+                "content": "105.04",
+                "source": "D(1,6.8558,4.8194,7.2986,4.8267,7.2955,4.987,6.8533,4.9785)",
+                "span": {
+                  "offset": 315,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2.00",
+                "source": "D(1,0.5362,5.0714,0.8338,5.0752,0.8322,5.233,0.5342,5.2292)",
+                "span": {
+                  "offset": 342,
+                  "length": 4
+                }
+              },
+              {
+                "content": "941664",
+                "source": "D(1,1.3729,5.0718,1.8642,5.0718,1.8642,5.2279,1.3729,5.2279)",
+                "span": {
+                  "offset": 356,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Then gun,",
+                "source": "D(1,2.2859,5.0763,2.9256,5.0767,2.9254,5.2461,2.2858,5.2456)",
+                "span": {
+                  "offset": 372,
+                  "length": 9
+                }
+              },
+              {
+                "content": "16.39",
+                "source": "D(1,5.7863,5.0733,6.1495,5.0733,6.1495,5.228,5.7863,5.228)",
+                "span": {
+                  "offset": 391,
+                  "length": 5
+                }
+              },
+              {
+                "content": "32.78",
+                "source": "D(1,6.8799,5.0736,7.2592,5.0736,7.2592,5.228,6.8799,5.228)",
+                "span": {
+                  "offset": 406,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.00",
+                "source": "D(1,0.5439,5.3275,0.8338,5.3228,0.8338,5.4761,0.5464,5.4807)",
+                "span": {
+                  "offset": 432,
+                  "length": 4
+                }
+              },
+              {
+                "content": "911003",
+                "source": "D(1,1.3699,5.3214,1.8604,5.3221,1.8602,5.4816,1.3697,5.4809)",
+                "span": {
+                  "offset": 446,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Also.",
+                "source": "D(1,2.2839,5.3294,2.6127,5.3294,2.6127,5.4762,2.2839,5.4762)",
+                "span": {
+                  "offset": 462,
+                  "length": 5
+                }
+              },
+              {
+                "content": "44.33",
+                "source": "D(1,5.7702,5.3271,6.1495,5.3271,6.1495,5.4768,5.7702,5.4768)",
+                "span": {
+                  "offset": 477,
+                  "length": 5
+                }
+              },
+              {
+                "content": "44.33",
+                "source": "D(1,6.8798,5.3259,7.2592,5.3259,7.2592,5.4762,6.8799,5.4762)",
+                "span": {
+                  "offset": 492,
+                  "length": 5
+                }
+              },
+              {
+                "content": "2.00",
+                "source": "D(1,0.5332,5.5755,0.8307,5.5737,0.8317,5.7296,0.5342,5.7315)",
+                "span": {
+                  "offset": 518,
+                  "length": 4
+                }
+              },
+              {
+                "content": "335409",
+                "source": "D(1,1.3684,5.573,1.8612,5.5712,1.8617,5.7294,1.3689,5.7312)",
+                "span": {
+                  "offset": 532,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Indicate Democrat beyond eat.",
+                "source": "D(1,2.2819,5.5668,4.1926,5.5678,4.1925,5.7396,2.2818,5.7386)",
+                "span": {
+                  "offset": 548,
+                  "length": 29
+                }
+              },
+              {
+                "content": "52.83",
+                "source": "D(1,5.7739,5.5755,6.1495,5.5736,6.1503,5.7281,5.7743,5.73)",
+                "span": {
+                  "offset": 587,
+                  "length": 5
+                }
+              },
+              {
+                "content": "105.66",
+                "source": "D(1,6.8594,5.5715,7.2955,5.5706,7.2958,5.73,6.8597,5.7309)",
+                "span": {
+                  "offset": 602,
+                  "length": 6
+                }
+              },
+              {
+                "content": "SUB_TOTAL : 287.81 $",
+                "source": "D(1,4.3575,6.256,6.2383,6.2503,6.2389,6.4469,4.3579,6.4526)",
+                "span": {
+                  "offset": 631,
+                  "length": 20
+                }
+              },
+              {
+                "content": "TOTAL : 299.40 $",
+                "source": "D(1,4.3256,7.2511,5.7177,7.2511,5.7177,7.4464,4.3256,7.4464)",
+                "span": {
+                  "offset": 653,
+                  "length": 16
+                }
+              },
+              {
+                "content": "BALANCE_DUE : 299.40 $",
+                "source": "D(1,4.3451,7.5596,6.9444,7.5519,6.9446,7.7917,4.3458,7.7944)",
+                "span": {
+                  "offset": 670,
+                  "length": 22
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "5",
+            "source": "D(1,1.0693,1.2844,1.5939,1.293,1.5827,1.9665,1.0582,1.9579)",
+            "span": {
+              "offset": 2,
+              "length": 1
+            }
+          },
+          {
+            "content": "Foster, Wells and Martin Address:80626 Gates Plains Suite 320 Nancymouth, LA 58369 US INVOICE # INV/24-52/636",
+            "source": "D(1,0.5756,2.3723,3.6559,2.3725,3.6558,3.4707,0.5755,3.4704)",
+            "span": {
+              "offset": 20,
+              "length": 109
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,0.5387,4.5772,0.7934,4.5805,0.7914,4.7417,0.5366,4.7384)",
+            "span": {
+              "offset": 149,
+              "length": 3
+            }
+          },
+          {
+            "content": "ID",
+            "source": "D(1,1.373,4.5742,1.5333,4.5763,1.5313,4.7252,1.371,4.7231)",
+            "span": {
+              "offset": 162,
+              "length": 2
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,2.2857,4.5752,3.0727,4.5742,3.0729,4.7398,2.2859,4.7408)",
+            "span": {
+              "offset": 174,
+              "length": 11
+            }
+          },
+          {
+            "content": "Unit price",
+            "source": "D(1,5.629,4.5711,6.292,4.5764,6.2907,4.7453,5.6277,4.7401)",
+            "span": {
+              "offset": 195,
+              "length": 10
+            }
+          },
+          {
+            "content": "Amount",
+            "source": "D(1,6.7951,4.5799,7.3479,4.5799,7.3479,4.7322,6.7951,4.7322)",
+            "span": {
+              "offset": 215,
+              "length": 6
+            }
+          },
+          {
+            "content": "2.00",
+            "source": "D(1,0.5362,4.82,0.8342,4.8266,0.8307,4.9844,0.5327,4.9778)",
+            "span": {
+              "offset": 242,
+              "length": 4
+            }
+          },
+          {
+            "content": "982996",
+            "source": "D(1,1.3699,4.8189,1.8626,4.8261,1.8602,4.9889,1.3676,4.9817)",
+            "span": {
+              "offset": 256,
+              "length": 6
+            }
+          },
+          {
+            "content": "Kind nice example.",
+            "source": "D(1,2.2879,4.8186,3.474,4.8313,3.4722,5.004,2.2861,4.9914)",
+            "span": {
+              "offset": 272,
+              "length": 18
+            }
+          },
+          {
+            "content": "52.52",
+            "source": "D(1,5.7742,4.8233,6.1541,4.8347,6.1495,4.9887,5.7696,4.9773)",
+            "span": {
+              "offset": 300,
+              "length": 5
+            }
+          },
+          {
+            "content": "105.04",
+            "source": "D(1,6.8556,4.8238,7.2986,4.8327,7.2955,4.9874,6.8525,4.9784)",
+            "span": {
+              "offset": 315,
+              "length": 6
+            }
+          },
+          {
+            "content": "2.00",
+            "source": "D(1,0.5362,5.0717,0.8341,5.0752,0.8322,5.233,0.5343,5.2295)",
+            "span": {
+              "offset": 342,
+              "length": 4
+            }
+          },
+          {
+            "content": "941664",
+            "source": "D(1,1.3729,5.0713,1.8644,5.0718,1.8642,5.2273,1.3728,5.2268)",
+            "span": {
+              "offset": 356,
+              "length": 6
+            }
+          },
+          {
+            "content": "Then gun,",
+            "source": "D(1,2.2859,5.0762,2.9256,5.0768,2.9254,5.246,2.2857,5.2455)",
+            "span": {
+              "offset": 372,
+              "length": 9
+            }
+          },
+          {
+            "content": "16.39",
+            "source": "D(1,5.7863,5.0733,6.1495,5.0733,6.1495,5.2275,5.7863,5.2275)",
+            "span": {
+              "offset": 391,
+              "length": 5
+            }
+          },
+          {
+            "content": "32.78",
+            "source": "D(1,6.8796,5.0741,7.2591,5.0736,7.2594,5.2275,6.8799,5.228)",
+            "span": {
+              "offset": 406,
+              "length": 5
+            }
+          },
+          {
+            "content": "1.00",
+            "source": "D(1,0.5449,5.3254,0.8338,5.3228,0.8351,5.4738,0.5463,5.4763)",
+            "span": {
+              "offset": 432,
+              "length": 4
+            }
+          },
+          {
+            "content": "911003",
+            "source": "D(1,1.3699,5.3202,1.8608,5.3221,1.8602,5.4816,1.3693,5.4797)",
+            "span": {
+              "offset": 446,
+              "length": 6
+            }
+          },
+          {
+            "content": "Also.",
+            "source": "D(1,2.2839,5.327,2.6138,5.3295,2.6127,5.4762,2.2828,5.4737)",
+            "span": {
+              "offset": 462,
+              "length": 5
+            }
+          },
+          {
+            "content": "44.33",
+            "source": "D(1,5.7702,5.3269,6.1496,5.3271,6.1495,5.4768,5.7701,5.4766)",
+            "span": {
+              "offset": 477,
+              "length": 5
+            }
+          },
+          {
+            "content": "44.33",
+            "source": "D(1,6.8798,5.3259,7.2592,5.3259,7.2592,5.4744,6.8799,5.4744)",
+            "span": {
+              "offset": 492,
+              "length": 5
+            }
+          },
+          {
+            "content": "2.00",
+            "source": "D(1,0.5337,5.5746,0.8307,5.5737,0.8312,5.7274,0.5341,5.7283)",
+            "span": {
+              "offset": 518,
+              "length": 4
+            }
+          },
+          {
+            "content": "335409",
+            "source": "D(1,1.3685,5.5725,1.8612,5.5712,1.8616,5.7267,1.3689,5.728)",
+            "span": {
+              "offset": 532,
+              "length": 6
+            }
+          },
+          {
+            "content": "Indicate Democrat beyond eat.",
+            "source": "D(1,2.2819,5.5671,4.1925,5.5676,4.1925,5.7393,2.2818,5.7389)",
+            "span": {
+              "offset": 548,
+              "length": 29
+            }
+          },
+          {
+            "content": "52.83",
+            "source": "D(1,5.7742,5.5735,6.1496,5.5736,6.1495,5.7279,5.7742,5.7278)",
+            "span": {
+              "offset": 587,
+              "length": 5
+            }
+          },
+          {
+            "content": "105.66",
+            "source": "D(1,6.8594,5.5715,7.2955,5.5706,7.2958,5.7248,6.8597,5.7257)",
+            "span": {
+              "offset": 602,
+              "length": 6
+            }
+          },
+          {
+            "content": "SUB_TOTAL : 287.81 $",
+            "source": "D(1,4.3573,6.256,6.2383,6.2503,6.2389,6.4469,4.3579,6.4526)",
+            "span": {
+              "offset": 631,
+              "length": 20
+            }
+          },
+          {
+            "content": "TOTAL : 299.40 $ BALANCE_DUE : 299.40 $",
+            "source": "D(1,4.3254,7.2511,6.9441,7.2484,6.9447,7.7917,4.326,7.7944)",
+            "span": {
+              "offset": 653,
+              "length": 39
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 692
+            },
+            "elements": [
+              "/figures/0",
+              "/paragraphs/1",
+              "/tables/0",
+              "/paragraphs/27",
+              "/paragraphs/28"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 5,
+            "columnCount": 5,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,0.4644,4.5263,1.3082,4.5262,1.3081,4.7746,0.4644,4.775)",
+                "span": {
+                  "offset": 149,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "ID",
+                "source": "D(1,1.3082,4.5262,2.2178,4.5264,2.2176,4.7744,1.3081,4.7746)",
+                "span": {
+                  "offset": 162,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,2.2178,4.5264,5.4125,4.5268,5.4124,4.7749,2.2176,4.7744)",
+                "span": {
+                  "offset": 174,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Unit price",
+                "source": "D(1,5.4125,4.5268,6.5226,4.5268,6.5226,4.7749,5.4124,4.7749)",
+                "span": {
+                  "offset": 195,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Amount",
+                "source": "D(1,6.5226,4.5268,7.6263,4.5267,7.6264,4.7753,6.5226,4.7749)",
+                "span": {
+                  "offset": 215,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.00",
+                "source": "D(1,0.4644,4.775,1.3081,4.7746,1.3078,5.0232,0.464,5.0237)",
+                "span": {
+                  "offset": 242,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "982996",
+                "source": "D(1,1.3081,4.7746,2.2176,4.7744,2.2173,5.023,1.3078,5.0232)",
+                "span": {
+                  "offset": 256,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Kind nice example.",
+                "source": "D(1,2.2176,4.7744,5.4124,4.7749,5.4121,5.0231,2.2173,5.023)",
+                "span": {
+                  "offset": 272,
+                  "length": 18
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "52.52",
+                "source": "D(1,5.4124,4.7749,6.5226,4.7749,6.5225,5.023,5.4121,5.0231)",
+                "span": {
+                  "offset": 300,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "105.04",
+                "source": "D(1,6.5226,4.7749,7.6264,4.7753,7.6265,5.0232,6.5225,5.023)",
+                "span": {
+                  "offset": 315,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.00",
+                "source": "D(1,0.464,5.0237,1.3078,5.0232,1.3076,5.2748,0.4638,5.2752)",
+                "span": {
+                  "offset": 342,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "941664",
+                "source": "D(1,1.3078,5.0232,2.2173,5.023,2.2172,5.2746,1.3076,5.2748)",
+                "span": {
+                  "offset": 356,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Then gun,",
+                "source": "D(1,2.2173,5.023,5.4121,5.0231,5.4123,5.275,2.2172,5.2746)",
+                "span": {
+                  "offset": 372,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "16.39",
+                "source": "D(1,5.4121,5.0231,6.5225,5.023,6.5228,5.2749,5.4123,5.275)",
+                "span": {
+                  "offset": 391,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "32.78",
+                "source": "D(1,6.5225,5.023,7.6265,5.0232,7.6267,5.2751,6.5228,5.2749)",
+                "span": {
+                  "offset": 406,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.00",
+                "source": "D(1,0.4638,5.2752,1.3076,5.2748,1.3077,5.5257,0.4635,5.526)",
+                "span": {
+                  "offset": 432,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "911003",
+                "source": "D(1,1.3076,5.2748,2.2172,5.2746,2.2172,5.5256,1.3077,5.5257)",
+                "span": {
+                  "offset": 446,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Also.",
+                "source": "D(1,2.2172,5.2746,5.4123,5.275,5.4124,5.5259,2.2172,5.5256)",
+                "span": {
+                  "offset": 462,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "44.33",
+                "source": "D(1,5.4123,5.275,6.5228,5.2749,6.523,5.5259,5.4124,5.5259)",
+                "span": {
+                  "offset": 477,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "44.33",
+                "source": "D(1,6.5228,5.2749,7.6267,5.2751,7.6272,5.5262,6.523,5.5259)",
+                "span": {
+                  "offset": 492,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.00",
+                "source": "D(1,0.4635,5.526,1.3077,5.5257,1.3076,5.7746,0.4635,5.7746)",
+                "span": {
+                  "offset": 518,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "335409",
+                "source": "D(1,1.3077,5.5257,2.2172,5.5256,2.2174,5.7744,1.3076,5.7746)",
+                "span": {
+                  "offset": 532,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Indicate Democrat beyond eat.",
+                "source": "D(1,2.2172,5.5256,5.4124,5.5259,5.4129,5.7748,2.2174,5.7744)",
+                "span": {
+                  "offset": 548,
+                  "length": 29
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "52.83",
+                "source": "D(1,5.4124,5.5259,6.523,5.5259,6.5235,5.775,5.4129,5.7748)",
+                "span": {
+                  "offset": 587,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "105.66",
+                "source": "D(1,6.523,5.5259,7.6272,5.5262,7.6274,5.7751,6.5235,5.775)",
+                "span": {
+                  "offset": 602,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              }
+            ],
+            "source": "D(1,0.4504,4.5082,7.6304,4.5025,7.6304,5.7787,0.4522,5.7873)",
+            "span": {
+              "offset": 132,
+              "length": 496
+            }
+          }
+        ],
+        "figures": [
+          {
+            "source": "D(1,0.6819,0.965,1.9116,0.96,1.9116,2.1856,0.6845,2.1913)",
+            "span": {
+              "offset": 0,
+              "length": 17
+            },
+            "elements": [
+              "/paragraphs/0"
+            ],
+            "id": "1.1"
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 4184,
+      "gpt-5-mini-cached-input": 3712,
+      "gpt-5-mini-output": 450
+    }
+  }
+}

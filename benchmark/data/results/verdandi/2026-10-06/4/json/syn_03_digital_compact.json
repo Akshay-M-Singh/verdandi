@@ -1,0 +1,880 @@
+{
+  "selected_document": {
+    "name": "ORION GLOBAL LOGISTICS PVT. LTD.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 is headed \u201cRECEIPT,\u201d shows a receipt number and customer, and lists vendor-billed charges with subtotal, tax, and total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "RCPT-99916",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.168,
+          0.125,
+          0.255,
+          0.135
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='RCPT-99916'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-99916 Date: 25/08/2025 Customer: GREENFIELD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.12480000000000002,
+                0.2555,
+                0.13549999999999995
+              ],
+              "line_bbox": [
+                0.084,
+                0.12480000000000002,
+                0.2555,
+                0.13549999999999995
+              ],
+              "text": "Receipt No: RCPT-99916",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "25/08/2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.124,
+          0.14,
+          0.2,
+          0.15
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='25/08/2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-99916 Date: 25/08/2025 Customer: GREENFIELD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.1402,
+                0.2001,
+                0.15090000000000003
+              ],
+              "line_bbox": [
+                0.084,
+                0.1402,
+                0.2001,
+                0.15090000000000003
+              ],
+              "text": "Date: 25/08/2025",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "ORION GLOBAL LOGISTICS PVT. LTD.",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.044,
+          0.488,
+          0.057
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='ORION GLOBAL LOGISTICS PVT. LTD.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'ORION GLOBAL LOGISTICS PVT. LTD. Plot 12, Sector'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.04390000000000005,
+                0.4871,
+                0.05940000000000001
+              ],
+              "line_bbox": [
+                0.084,
+                0.04390000000000005,
+                0.4871,
+                0.05940000000000001
+              ],
+              "text": "ORION GLOBAL LOGISTICS PVT. LTD.",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.159,
+          0.156,
+          0.48,
+          0.166
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='GREENFIELD ENERGY EQUIPMENT LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Receipt No: RCPT-99916 Date: 25/08/2025 Customer: GREENFIELD ENERGY'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.15569999999999995,
+                0.4807,
+                0.1664
+              ],
+              "line_bbox": [
+                0.084,
+                0.15569999999999995,
+                0.4807,
+                0.1664
+              ],
+              "text": "Customer: GREENFIELD ENERGY EQUIPMENT LIMITED",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.812,
+          0.233,
+          0.842,
+          0.243
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Warehouse storage charges USD 110,768.90 Freight forwarding charges'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.20840000000000003,
+                0.9328,
+                0.21860000000000002
+              ],
+              "line_bbox": [
+                0.084,
+                0.20840000000000003,
+                0.9328,
+                0.21860000000000002
+              ],
+              "text": "Warehouse storage charges USD 110,768.90",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "195623.78",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.804,
+          0.347,
+          0.934,
+          0.357
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='195623.78'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Terminal handling charges USD 22,668.74 Subtotal USD 195,623.78'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6501,
+                0.3459,
+                0.9328,
+                0.35650000000000004
+              ],
+              "line_bbox": [
+                0.6501,
+                0.3459,
+                0.9328,
+                0.35650000000000004
+              ],
+              "text": "Subtotal USD 195,623.78",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "9781.19",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.823,
+          0.364,
+          0.934,
+          0.374
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='9781.19'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal USD 195,623.78 Tax 5% USD 9,781.19 Total'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6682,
+                0.36250000000000004,
+                0.9328,
+                0.3732
+              ],
+              "line_bbox": [
+                0.6682,
+                0.36250000000000004,
+                0.9328,
+                0.3732
+              ],
+              "text": "Tax 5% USD 9,781.19",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "205404.97",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.791,
+          0.381,
+          0.934,
+          0.391
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='205404.97'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal USD 195,623.78 Tax 5% USD 9,781.19 Total'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6807,
+                0.38039999999999996,
+                0.9328,
+                0.39249999999999996
+              ],
+              "line_bbox": [
+                0.6807,
+                0.38039999999999996,
+                0.9328,
+                0.39249999999999996
+              ],
+              "text": "Total USD 205,404.97",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Warehouse storage charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "110768.90",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.209,
+          0.934,
+          0.219
+        ]
+      }
+    },
+    {
+      "description": "Freight forwarding charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "10671.60",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.235,
+          0.934,
+          0.245
+        ]
+      }
+    },
+    {
+      "description": "Local transportation",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "30499.44",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.261,
+          0.934,
+          0.271
+        ]
+      }
+    },
+    {
+      "description": "Cargo insurance",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "21015.10",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.287,
+          0.934,
+          0.297
+        ]
+      }
+    },
+    {
+      "description": "Terminal handling charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "22668.74",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.313,
+          0.934,
+          0.323
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 1773,
+      "total_tokens": 8778,
+      "elapsed_s": 16.11
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "RCPT-99916",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='RCPT-99916'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-99916 Date: 25/08/2025 Customer: GREENFIELD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.12480000000000002,
+                  0.2555,
+                  0.13549999999999995
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.12480000000000002,
+                  0.2555,
+                  0.13549999999999995
+                ],
+                "text": "Receipt No: RCPT-99916",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "25/08/2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='25/08/2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-99916 Date: 25/08/2025 Customer: GREENFIELD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.1402,
+                  0.2001,
+                  0.15090000000000003
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.1402,
+                  0.2001,
+                  0.15090000000000003
+                ],
+                "text": "Date: 25/08/2025",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "ORION GLOBAL LOGISTICS PVT. LTD.",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='ORION GLOBAL LOGISTICS PVT. LTD.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'ORION GLOBAL LOGISTICS PVT. LTD. Plot 12, Sector'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.04390000000000005,
+                  0.4871,
+                  0.05940000000000001
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.04390000000000005,
+                  0.4871,
+                  0.05940000000000001
+                ],
+                "text": "ORION GLOBAL LOGISTICS PVT. LTD.",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='GREENFIELD ENERGY EQUIPMENT LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Receipt No: RCPT-99916 Date: 25/08/2025 Customer: GREENFIELD ENERGY'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.15569999999999995,
+                  0.4807,
+                  0.1664
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.15569999999999995,
+                  0.4807,
+                  0.1664
+                ],
+                "text": "Customer: GREENFIELD ENERGY EQUIPMENT LIMITED",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Warehouse storage charges USD 110,768.90 Freight forwarding charges'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.20840000000000003,
+                  0.9328,
+                  0.21860000000000002
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.20840000000000003,
+                  0.9328,
+                  0.21860000000000002
+                ],
+                "text": "Warehouse storage charges USD 110,768.90",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "195623.78",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='195623.78'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Terminal handling charges USD 22,668.74 Subtotal USD 195,623.78'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6501,
+                  0.3459,
+                  0.9328,
+                  0.35650000000000004
+                ],
+                "line_bbox": [
+                  0.6501,
+                  0.3459,
+                  0.9328,
+                  0.35650000000000004
+                ],
+                "text": "Subtotal USD 195,623.78",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "9781.19",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='9781.19'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal USD 195,623.78 Tax 5% USD 9,781.19 Total'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6682,
+                  0.36250000000000004,
+                  0.9328,
+                  0.3732
+                ],
+                "line_bbox": [
+                  0.6682,
+                  0.36250000000000004,
+                  0.9328,
+                  0.3732
+                ],
+                "text": "Tax 5% USD 9,781.19",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "205404.97",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='205404.97'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal USD 195,623.78 Tax 5% USD 9,781.19 Total'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6807,
+                  0.38039999999999996,
+                  0.9328,
+                  0.39249999999999996
+                ],
+                "line_bbox": [
+                  0.6807,
+                  0.38039999999999996,
+                  0.9328,
+                  0.39249999999999996
+                ],
+                "text": "Total USD 205,404.97",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

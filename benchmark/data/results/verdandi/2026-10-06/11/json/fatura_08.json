@@ -1,0 +1,774 @@
+{
+  "selected_document": {
+    "name": "TAX INVOICE",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 is headed \u201cTAX INVOICE\u201d and shows an invoice ID, bill-to details, a charge table, and subtotal, tax, and total amounts.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "0380-762",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.448,
+          0.313,
+          0.672,
+          0.33
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='0380-762'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE ID 0380-762'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4366,
+                0.3042,
+                0.6578,
+                0.32920000000000005
+              ],
+              "line_bbox": [
+                0.0114,
+                0.3042,
+                0.6578,
+                0.3338
+              ],
+              "text": "Lake Angelicaside, ND 80800 US INVOICE ID 0380-762",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "09-Apr-2005",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.445,
+          0.375,
+          0.687,
+          0.392
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='09-Apr-2005'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice Date: 09-Apr-2005 Due Date: 31-Jul-2015'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4366,
+                0.3667,
+                0.6903,
+                0.38959999999999995
+              ],
+              "line_bbox": [
+                0.4366,
+                0.3667,
+                0.6903,
+                0.38959999999999995
+              ],
+              "text": "Invoice Date: 09-Apr-2005",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Rebecca Barajas",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.011,
+          0.285,
+          0.151,
+          0.3
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Rebecca Barajas'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BILL_TO: Rebecca Barajas 1335 Martin Summit Lake Angelicaside,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0144,
+                0.27969999999999995,
+                0.1567,
+                0.2983
+              ],
+              "line_bbox": [
+                0.0144,
+                0.27969999999999995,
+                0.1567,
+                0.2983
+              ],
+              "text": "Rebecca Barajas",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.529,
+          0.873,
+          0.728,
+          0.892
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX:VAT (5.51%): 48.10 USD TOTAL: 904.70 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5251,
+                0.8271,
+                0.8083,
+                0.8417
+              ],
+              "line_bbox": [
+                0.5251,
+                0.8271,
+                0.8083,
+                0.8417
+              ],
+              "text": "TAX:VAT (5.51%): 48.10 USD",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "873.10",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.529,
+          0.746,
+          0.801,
+          0.762
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='873.10'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 873.10 USD DISCOUNT(4.64%): (-) 40.51'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5251,
+                0.7375,
+                0.7847,
+                0.7583
+              ],
+              "line_bbox": [
+                0.5251,
+                0.7375,
+                0.7847,
+                0.7583
+              ],
+              "text": "SUB_TOTAL: 873.10 USD",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "48.10",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.529,
+          0.826,
+          0.818,
+          0.844
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='48.10'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'DISCOUNT(4.64%): (-) 40.51 TAX:VAT (5.51%): 48.10 USD TOTAL:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5251,
+                0.8271,
+                0.8083,
+                0.8417
+              ],
+              "line_bbox": [
+                0.5251,
+                0.8271,
+                0.8083,
+                0.8417
+              ],
+              "text": "TAX:VAT (5.51%): 48.10 USD",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "904.70",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.529,
+          0.873,
+          0.728,
+          0.892
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='904.70'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX:VAT (5.51%): 48.10 USD TOTAL: 904.70 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5251,
+                0.8708,
+                0.7227,
+                0.8854
+              ],
+              "line_bbox": [
+                0.5251,
+                0.8708,
+                0.7227,
+                0.8854
+              ],
+              "text": "TOTAL: 904.70 USD",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Space newspaper often.",
+      "quantity": "2.00",
+      "unit_price": "42.69",
+      "amount": "85.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.039,
+          0.612,
+          0.899,
+          0.634
+        ]
+      }
+    },
+    {
+      "description": "Interesting store feeling.",
+      "quantity": "4.00",
+      "unit_price": "90.43",
+      "amount": "361.72",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.039,
+          0.634,
+          0.899,
+          0.656
+        ]
+      }
+    },
+    {
+      "description": "Movement agree site.",
+      "quantity": "5.00",
+      "unit_price": "85.20",
+      "amount": "426.00",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.039,
+          0.656,
+          0.899,
+          0.676
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1744,
+      "total_tokens": 8988,
+      "elapsed_s": 15.05
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "0380-762",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='0380-762'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE ID 0380-762'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4366,
+                  0.3042,
+                  0.6578,
+                  0.32920000000000005
+                ],
+                "line_bbox": [
+                  0.0114,
+                  0.3042,
+                  0.6578,
+                  0.3338
+                ],
+                "text": "Lake Angelicaside, ND 80800 US INVOICE ID 0380-762",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "09-Apr-2005",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='09-Apr-2005'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice Date: 09-Apr-2005 Due Date: 31-Jul-2015'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4366,
+                  0.3667,
+                  0.6903,
+                  0.38959999999999995
+                ],
+                "line_bbox": [
+                  0.4366,
+                  0.3667,
+                  0.6903,
+                  0.38959999999999995
+                ],
+                "text": "Invoice Date: 09-Apr-2005",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": "Rebecca Barajas",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Rebecca Barajas'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BILL_TO: Rebecca Barajas 1335 Martin Summit Lake Angelicaside,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0144,
+                  0.27969999999999995,
+                  0.1567,
+                  0.2983
+                ],
+                "line_bbox": [
+                  0.0144,
+                  0.27969999999999995,
+                  0.1567,
+                  0.2983
+                ],
+                "text": "Rebecca Barajas",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX:VAT (5.51%): 48.10 USD TOTAL: 904.70 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5251,
+                  0.8271,
+                  0.8083,
+                  0.8417
+                ],
+                "line_bbox": [
+                  0.5251,
+                  0.8271,
+                  0.8083,
+                  0.8417
+                ],
+                "text": "TAX:VAT (5.51%): 48.10 USD",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "873.10",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='873.10'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 873.10 USD DISCOUNT(4.64%): (-) 40.51'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5251,
+                  0.7375,
+                  0.7847,
+                  0.7583
+                ],
+                "line_bbox": [
+                  0.5251,
+                  0.7375,
+                  0.7847,
+                  0.7583
+                ],
+                "text": "SUB_TOTAL: 873.10 USD",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "48.10",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='48.10'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'DISCOUNT(4.64%): (-) 40.51 TAX:VAT (5.51%): 48.10 USD TOTAL:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5251,
+                  0.8271,
+                  0.8083,
+                  0.8417
+                ],
+                "line_bbox": [
+                  0.5251,
+                  0.8271,
+                  0.8083,
+                  0.8417
+                ],
+                "text": "TAX:VAT (5.51%): 48.10 USD",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "904.70",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='904.70'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX:VAT (5.51%): 48.10 USD TOTAL: 904.70 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5251,
+                  0.8708,
+                  0.7227,
+                  0.8854
+                ],
+                "line_bbox": [
+                  0.5251,
+                  0.8708,
+                  0.7227,
+                  0.8854
+                ],
+                "text": "TOTAL: 904.70 USD",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

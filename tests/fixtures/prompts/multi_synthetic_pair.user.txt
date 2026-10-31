@@ -1,0 +1,63 @@
+Report every matching document in the exact JSON schema below. Profiles to find in this file (find ALL matching documents):
+
+== Profile 1: alpha_doc — Alpha Document ==
+- id: alpha_doc — Alpha Document
+  description: a synthetic first document kind used only by prompt fixture tests
+  allow_no_match: False (below selector min_score 0.5 -> flag_no_document_match, never guess)
+  identification keywords (user-defined HINTS — a target document of this kind typically contains at least one; a document that matches the description but NO keyword is STILL the target — keywords never disqualify): ['ALPHA']
+  extraction schema: profile
+Schema for this document's fields:
+  "header_fields": [
+    {{
+      "name": "alpha_ref" | "alpha_date",
+      "value": string|object|null,
+      "confidence": number,
+      "source": "page N (render image)" | null,
+      "source_region": {{ "page": int, "bbox": [x0, y0, x1, y1] }} | null
+    }}
+  ],
+  "line_items": [
+    {{ "description": string, "amount": string|null, "confidence": number, "source": "page N (render image)", "source_region": {{ "page": int, "bbox": [x0, y0, x1, y1] }} | null }}
+  ],
+
+Field notes:
+- alpha_ref: the alpha reference as printed
+- alpha_date: the alpha date as printed
+Line items:
+- description: the row's full printed text
+- amount: the row's own amount as printed
+one line item = one printed alpha row; the amount goes in the amount column
+
+== Profile 2: beta_doc — Beta Document ==
+- id: beta_doc — Beta Document
+  description: a synthetic second document kind used only by prompt fixture tests
+  allow_no_match: True (below selector min_score 0.5 -> flag_no_document_match, never guess)
+  identification keywords (user-defined HINTS — a target document of this kind typically contains at least one; a document that matches the description but NO keyword is STILL the target — keywords never disqualify): ['BETA']
+  extraction schema: profile
+Schema for this document's fields:
+  "header_fields": [
+    {{
+      "name": "beta_ref",
+      "value": string|object|null,
+      "confidence": number,
+      "source": "page N (render image)" | null,
+      "source_region": {{ "page": int, "bbox": [x0, y0, x1, y1] }} | null
+    }}
+  ],
+  "line_items": [],
+
+Field notes:
+- beta_ref: the beta reference as printed
+
+== Output array schema ==
+  "documents": [
+    {{
+      "template_id": "<one of the listed profile ids>",
+      "found": true,
+      "selected_document": {{ "name": string|null, "document_pages": [int], "reason": string|null, "confidence": number }},
+      "header_fields": [ {{ "name": "a field name of THIS template", "value": string|object|null, "confidence": number, "source": "page N (render image)"|null, "source_region": {{ "page": int, "bbox": [x0, y0, x1, y1] }}|null }} ],
+      "line_items": [ {{ "<a declared line-item column of THIS template>": value, "confidence": number, "source": "page N (render image)", "source_region": {{ "page": int, "bbox": [x0, y0, x1, y1] }}|null }} ] | [],
+      "notes": [string],
+      "uncertain_duplicate": false
+    }}
+  ],

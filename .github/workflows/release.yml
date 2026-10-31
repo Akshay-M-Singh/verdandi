@@ -1,0 +1,231 @@
+name: release
+
+# Tag-driven release (D66): builds the app on both platforms WITH updater
+# signing artifacts, then publishes installers + latest.json to the PUBLIC
+# releases repo (Akshay-M-Singh/verdandi-app). Source: Akshay-M-Singh/verdandi
+#
+# No Actions artifacts are used (2026-10-06): the account's artifact storage
+# quota blocked a release once, and the installers are large — each build job
+# publishes its own platform assets straight to the release, and the final
+# job composes latest.json from the release itself (gh release download).
+#
+# Secrets (source repo): TAURI_SIGNING_PRIVATE_KEY + _PASSWORD (updater
+# signing keypair) and RELEASES_TOKEN (fine-grained PAT with contents:write
+# on the releases repo). Certificate secrets for OS signing slot in here
+# later without rework (tauri-action / tauri build read them from env).
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "release tag (vX.Y.Z), already pushed"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-14
+          - os: windows-latest
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: "1"
+      TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+      TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            desktop/requirements-desktop.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: desktop/package-lock.json
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt -r desktop/requirements-desktop.txt
+
+      - name: Desktop service tests (offline)
+        run: python -m unittest tests.test_desktop_service -v
+
+      - name: Check release secrets
+        shell: bash
+        run: |
+          if [ -z "$TAURI_SIGNING_PRIVATE_KEY" ]; then
+            echo "::error::TAURI_SIGNING_PRIVATE_KEY is not set — the updater artifacts (and latest.json) cannot be signed; add the repository secrets before tagging a release (desktop/RELEASING.md)."
+            exit 1
+          fi
+
+      - name: Build engine sidecar (PyInstaller)
+        working-directory: desktop
+        run: python build_sidecar.py
+
+      - name: Build UI
+        working-directory: desktop
+        run: |
+          npm ci
+          npm run build
+
+      - name: Signing environment (activates when certificate secrets exist)
+        shell: bash
+        run: |
+          add() { if [ -n "${2}" ]; then echo "${1}=${2}" >> "$GITHUB_ENV"; fi; }
+          add APPLE_CERTIFICATE "${{ secrets.APPLE_CERTIFICATE }}"
+          add APPLE_CERTIFICATE_PASSWORD "${{ secrets.APPLE_CERTIFICATE_PASSWORD }}"
+          add APPLE_SIGNING_IDENTITY "${{ secrets.APPLE_SIGNING_IDENTITY }}"
+          add APPLE_ID "${{ secrets.APPLE_ID }}"
+          add APPLE_PASSWORD "${{ secrets.APPLE_PASSWORD }}"
+          add APPLE_TEAM_ID "${{ secrets.APPLE_TEAM_ID }}"
+          add WINDOWS_CERTIFICATE "${{ secrets.WINDOWS_CERTIFICATE }}"
+          add WINDOWS_CERTIFICATE_PASSWORD "${{ secrets.WINDOWS_CERTIFICATE_PASSWORD }}"
+
+      - name: Build app (Tauri, updater artifacts signed)
+        working-directory: desktop
+        run: npx tauri build
+
+      # v0.1.3 shipped with a dead engine that every signature check passed:
+      # Tauri's hardened runtime + PyInstaller = "different Team IDs". The
+      # packaged engine must actually BOOT before we publish anything.
+      - name: Smoke the packaged engine (macOS)
+        if: matrix.os == 'macos-14'
+        shell: bash
+        run: |
+          APP="desktop/src-tauri/target/release/bundle/macos/Verdandi.app"
+          codesign --verify --deep --strict "$APP"
+          "$APP/Contents/MacOS/engine" &
+          ENGINE_PID=$!
+          HEALTH=""
+          for _ in $(seq 1 40); do
+            HEALTH=$(curl -s --max-time 2 http://127.0.0.1:8787/health || true)
+            echo "$HEALTH" | grep -q '"status":"ok"' && break
+            sleep 1
+          done
+          # keychain: the packaged app must resolve a real keyring backend
+          # (entry-point discovery needs the bundled dist-info) — otherwise
+          # the gateway key silently never persists.
+          SETTINGS=$(curl -s --max-time 2 http://127.0.0.1:8787/settings || true)
+          python3 -c "import json,sys; b=json.load(sys.stdin).get('keychain_backend'); print('keychain:', b); sys.exit(0 if b else 1)" <<< "$SETTINGS" \
+            || { echo "::error::packaged engine has no keychain backend (the key would never persist)"; exit 1; }
+          kill "$ENGINE_PID" 2>/dev/null || true
+          echo "health: $HEALTH"
+          echo "$HEALTH" | grep -q '"status":"ok"' \
+            || { echo "::error::packaged engine did not start (see above)"; exit 1; }
+          VERSION="$(node desktop/scripts/version.mjs show)"
+          echo "$HEALTH" | grep -q "\"version\":\"$VERSION\"" \
+            || { echo "::error::engine version mismatch (want $VERSION)"; exit 1; }
+
+      - name: Smoke the packaged engine (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: pwsh
+        run: |
+          $engine = "desktop/src-tauri/target/release/engine.exe"
+          if (-not (Test-Path $engine)) { Write-Error "engine.exe not found: $engine"; exit 1 }
+          # GUI subsystem check (v0.1.4 bug): a console-subsystem engine.exe
+          # pops a console window showing /health access logs on every launch.
+          $bytes = [System.IO.File]::ReadAllBytes((Resolve-Path $engine).Path)
+          $peOffset = [System.BitConverter]::ToInt32($bytes, 0x3C)
+          $subsystem = [System.BitConverter]::ToUInt16($bytes, $peOffset + 0x5C)
+          if ($subsystem -ne 2) {
+            Write-Error "engine.exe is a console app (PE subsystem $subsystem, want 2=GUI) - it will pop a console window"
+            exit 1
+          }
+          Write-Host "engine.exe subsystem: GUI (2)"
+          $proc = Start-Process -FilePath $engine -PassThru -NoNewWindow
+          $health = $null
+          for ($i = 0; $i -lt 40; $i++) {
+            try {
+              $health = Invoke-RestMethod -Uri "http://127.0.0.1:8787/health" -TimeoutSec 2
+              if ($health.status -eq "ok") { break }
+            } catch { Start-Sleep -Seconds 1 }
+          }
+          # keychain: the packaged app must resolve a real keyring backend
+          # (entry-point discovery needs the bundled dist-info) — otherwise
+          # the gateway key silently never persists.
+          $settings = $null
+          try {
+            $settings = Invoke-RestMethod -Uri "http://127.0.0.1:8787/settings" -TimeoutSec 2
+          } catch {}
+          Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+          if ($null -eq $settings -or -not $settings.keychain_backend) {
+            Write-Error "packaged engine has no keychain backend (the key would never persist)"; exit 1
+          }
+          Write-Host "keychain: $($settings.keychain_backend)"
+          if ($null -eq $health -or $health.status -ne "ok") {
+            Write-Error "packaged engine did not start"; exit 1
+          }
+          $version = (Get-Content "desktop/package.json" | ConvertFrom-Json).version
+          if ($health.version -ne $version) {
+            Write-Error "engine version $($health.version) != $version"; exit 1
+          }
+          Write-Host "engine ok: $($health | ConvertTo-Json -Compress)"
+
+      - name: Collect release assets
+        shell: bash
+        run: |
+          mkdir -p release-assets
+          # Windows ships NSIS only (tauri.windows.conf.json) — the in-app
+          # updater always installs NSIS, so publishing the MSI too would
+          # leave MSI users with a second, duplicate install.
+          find desktop/src-tauri/target/release/bundle -type f \
+            \( -name '*.dmg' -o -name '*-setup.exe' \
+               -o -name '*.nsis.zip' -o -name '*.app.tar.gz' -o -name '*.sig' \) \
+            -exec cp {} release-assets/ \;
+          ls -la release-assets
+
+      - name: Publish platform assets to the releases repo
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
+        run: |
+          TAG="${{ github.event.inputs.tag || github.ref_name }}"
+          REPO="Akshay-M-Singh/verdandi-app"
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::RELEASES_TOKEN is not set — create a fine-grained PAT (contents:write on $REPO) and add it as a repository secret"
+            exit 1
+          fi
+          gh release view "$TAG" -R "$REPO" >/dev/null 2>&1 \
+            || gh release create "$TAG" -R "$REPO" \
+                 --title "Verdandi ${TAG#v}" --notes "Verdandi ${TAG#v}" \
+            || gh release view "$TAG" -R "$REPO" >/dev/null 2>&1
+          gh release upload "$TAG" -R "$REPO" --clobber release-assets/*
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+
+      - name: Compose + upload latest.json
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
+        run: |
+          TAG="${{ github.event.inputs.tag || github.ref_name }}"
+          REPO="Akshay-M-Singh/verdandi-app"
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::RELEASES_TOKEN is not set — create a fine-grained PAT (contents:write on $REPO) and add it as a repository secret"
+            exit 1
+          fi
+          gh release download "$TAG" -R "$REPO" -D dist --clobber
+          node desktop/scripts/make_latest_json.mjs dist "${TAG#v}" "$REPO" "$TAG"
+          gh release upload "$TAG" -R "$REPO" --clobber dist/latest.json

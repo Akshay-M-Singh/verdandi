@@ -1,0 +1,863 @@
+{
+  "selected_document": {
+    "name": "Richardson-Davis",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cINVOICE\u201d and shows invoice number 2970-559, buyer and vendor details, a charge table, and a final total. Richardson-Davis is printed as the vendor name.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "2970-559",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.027,
+          0.064,
+          0.258,
+          0.077
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='2970-559'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE Invoice number 2970-559 Invoice Date: 23-Jan-2002 Due'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0265,
+                0.06459999999999999,
+                0.2596,
+                0.07709999999999995
+              ],
+              "line_bbox": [
+                0.0265,
+                0.06459999999999999,
+                0.2596,
+                0.07709999999999995
+              ],
+              "text": "Invoice number 2970-559",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "23-Jan-2002",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.024,
+          0.085,
+          0.263,
+          0.098
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='23-Jan-2002'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number 2970-559 Invoice Date: 23-Jan-2002 Due Date:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0236,
+                0.08540000000000003,
+                0.2625,
+                0.09999999999999998
+              ],
+              "line_bbox": [
+                0.0236,
+                0.08540000000000003,
+                0.2625,
+                0.09999999999999998
+              ],
+              "text": "Invoice Date: 23-Jan-2002",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Richardson-Davis",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.062,
+          0.169,
+          0.241,
+          0.181
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Richardson-Davis'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Richardson-Davis Address:6479 Smith Causeway East Camerontown, AS 38212'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0619,
+                0.16869999999999996,
+                0.2389,
+                0.18120000000000003
+              ],
+              "line_bbox": [
+                0.0619,
+                0.16400000000000003,
+                0.7408,
+                0.18159999999999998
+              ],
+              "text": "Richardson-Davis 6479 Smith Causeway",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Alexander Williams",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.526,
+          0.148,
+          0.779,
+          0.161
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Alexander Williams'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Buyer: Alexander Williams 6479 Smith Causeway East Camerontown,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5251,
+                0.14790000000000003,
+                0.7817,
+                0.16249999999999998
+              ],
+              "line_bbox": [
+                0.5251,
+                0.14790000000000003,
+                0.7817,
+                0.16249999999999998
+              ],
+              "text": "Buyer: Alexander Williams",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.575,
+          0.631,
+          0.776,
+          0.644
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 828.69 EUR Total in words: eight hundred'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5723,
+                0.6292,
+                0.7729,
+                0.6478999999999999
+              ],
+              "line_bbox": [
+                0.5723,
+                0.6292,
+                0.7729,
+                0.6478999999999999
+              ],
+              "text": "TOTAL: 828.69 EUR",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "826.86",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.576,
+          0.482,
+          0.833,
+          0.495
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='826.86'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 826.86 EUR DISCOUNT(3.85%): (-) 31.83'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5723,
+                0.48119999999999996,
+                0.8319,
+                0.5042
+              ],
+              "line_bbox": [
+                0.5723,
+                0.48119999999999996,
+                0.8319,
+                0.5042
+              ],
+              "text": "SUB_TOTAL: 826.86 EUR",
+              "lineno": 16,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "26.72",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.576,
+          0.535,
+          0.847,
+          0.547
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='26.72'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 826.86 EUR DISCOUNT(3.85%): (-) 31.83 TAX:VAT (3.23%):'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5723,
+                0.5333,
+                0.8584,
+                0.5521
+              ],
+              "line_bbox": [
+                0.5723,
+                0.5333,
+                0.8584,
+                0.5521
+              ],
+              "text": "TAX:VAT (3.23%): 26.72 EUR",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "828.69",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.575,
+          0.631,
+          0.776,
+          0.644
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='828.69'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 828.69 EUR Total in words: eight hundred'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5723,
+                0.6292,
+                0.7729,
+                0.6478999999999999
+              ],
+              "line_bbox": [
+                0.5723,
+                0.6292,
+                0.7729,
+                0.6478999999999999
+              ],
+              "text": "TOTAL: 828.69 EUR",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Attention,",
+      "quantity": "3.00",
+      "unit_price": "69.15",
+      "amount": "207.45",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.354,
+          0.904,
+          0.376
+        ]
+      }
+    },
+    {
+      "description": "Analysis white.",
+      "quantity": "4.00",
+      "unit_price": "13.92",
+      "amount": "55.68",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.376,
+          0.904,
+          0.396
+        ]
+      }
+    },
+    {
+      "description": "Night find many.",
+      "quantity": "5.00",
+      "unit_price": "65.07",
+      "amount": "325.35",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.396,
+          0.904,
+          0.418
+        ]
+      }
+    },
+    {
+      "description": "Agency reduce push.",
+      "quantity": "3.00",
+      "unit_price": "79.46",
+      "amount": "238.38",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.036,
+          0.418,
+          0.904,
+          0.44
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1776,
+      "total_tokens": 9020,
+      "elapsed_s": 15.61
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "2970-559",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='2970-559'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE Invoice number 2970-559 Invoice Date: 23-Jan-2002 Due'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0265,
+                  0.06459999999999999,
+                  0.2596,
+                  0.07709999999999995
+                ],
+                "line_bbox": [
+                  0.0265,
+                  0.06459999999999999,
+                  0.2596,
+                  0.07709999999999995
+                ],
+                "text": "Invoice number 2970-559",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "23-Jan-2002",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='23-Jan-2002'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number 2970-559 Invoice Date: 23-Jan-2002 Due Date:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0236,
+                  0.08540000000000003,
+                  0.2625,
+                  0.09999999999999998
+                ],
+                "line_bbox": [
+                  0.0236,
+                  0.08540000000000003,
+                  0.2625,
+                  0.09999999999999998
+                ],
+                "text": "Invoice Date: 23-Jan-2002",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Richardson-Davis",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Richardson-Davis'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Richardson-Davis Address:6479 Smith Causeway East Camerontown, AS 38212'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0619,
+                  0.16869999999999996,
+                  0.2389,
+                  0.18120000000000003
+                ],
+                "line_bbox": [
+                  0.0619,
+                  0.16400000000000003,
+                  0.7408,
+                  0.18159999999999998
+                ],
+                "text": "Richardson-Davis 6479 Smith Causeway",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Alexander Williams",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Alexander Williams'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Buyer: Alexander Williams 6479 Smith Causeway East Camerontown,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5251,
+                  0.14790000000000003,
+                  0.7817,
+                  0.16249999999999998
+                ],
+                "line_bbox": [
+                  0.5251,
+                  0.14790000000000003,
+                  0.7817,
+                  0.16249999999999998
+                ],
+                "text": "Buyer: Alexander Williams",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 828.69 EUR Total in words: eight hundred'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5723,
+                  0.6292,
+                  0.7729,
+                  0.6478999999999999
+                ],
+                "line_bbox": [
+                  0.5723,
+                  0.6292,
+                  0.7729,
+                  0.6478999999999999
+                ],
+                "text": "TOTAL: 828.69 EUR",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "826.86",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='826.86'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 826.86 EUR DISCOUNT(3.85%): (-) 31.83'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5723,
+                  0.48119999999999996,
+                  0.8319,
+                  0.5042
+                ],
+                "line_bbox": [
+                  0.5723,
+                  0.48119999999999996,
+                  0.8319,
+                  0.5042
+                ],
+                "text": "SUB_TOTAL: 826.86 EUR",
+                "lineno": 16,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "26.72",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='26.72'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 826.86 EUR DISCOUNT(3.85%): (-) 31.83 TAX:VAT (3.23%):'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5723,
+                  0.5333,
+                  0.8584,
+                  0.5521
+                ],
+                "line_bbox": [
+                  0.5723,
+                  0.5333,
+                  0.8584,
+                  0.5521
+                ],
+                "text": "TAX:VAT (3.23%): 26.72 EUR",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "828.69",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='828.69'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 828.69 EUR Total in words: eight hundred'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5723,
+                  0.6292,
+                  0.7729,
+                  0.6478999999999999
+                ],
+                "line_bbox": [
+                  0.5723,
+                  0.6292,
+                  0.7729,
+                  0.6478999999999999
+                ],
+                "text": "TOTAL: 828.69 EUR",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

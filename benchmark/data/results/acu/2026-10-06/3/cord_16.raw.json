@@ -1,0 +1,1564 @@
+{
+  "id": "47809c85-8dbb-4c4f-b0b7-86e92074cc26",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-06T08:11:06Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "<table>\n<tr>\n<td>1</td>\n<td>BLACKCURRANT<br>32,000</td>\n</tr>\n<tr>\n<td>1</td>\n<td>SPRITE<br>32,000</td>\n</tr>\n<tr>\n<td></td>\n<td>BEVERAGE<br>64,000</td>\n</tr>\n<tr>\n<td>1</td>\n<td>GRILLED CALAMARI<br>85,000</td>\n</tr>\n<tr>\n<td>1</td>\n<td>DINE FOR 2<br>129,000</td>\n</tr>\n<tr>\n<td></td>\n<td>* DANISH FISH &amp; CHIPS DF<br>---</td>\n</tr>\n<tr>\n<td></td>\n<td>* NEW YORK FISH &amp; CHIPS<br>---</td>\n</tr>\n<tr>\n<td></td>\n<td>FOOD<br>214,000</td>\n</tr>\n<tr>\n<td></td>\n<td>SUBTTL<br>278,000</td>\n</tr>\n<tr>\n<td></td>\n<td>Service Charge<br>22,240</td>\n</tr>\n<tr>\n<td></td>\n<td>TAX<br>30,024</td>\n</tr>\n<tr>\n<td></td>\n<td>TOTAL<br>330,264</td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "valueString": "IDR",
+            "spans": [
+              {
+                "offset": 179,
+                "length": 7
+              }
+            ],
+            "confidence": 0.203,
+            "source": "D(1,2.6754,6.4342,3.3409,6.4298,3.3409,6.6126,2.6754,6.6169)"
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 278000,
+            "spans": [
+              {
+                "offset": 476,
+                "length": 7
+              }
+            ],
+            "confidence": 0.953,
+            "source": "D(1,5.2456,7.5831,5.9235,7.5831,5.9235,7.7872,5.2456,7.7843)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 30024,
+            "spans": [
+              {
+                "offset": 576,
+                "length": 6
+              }
+            ],
+            "confidence": 0.962,
+            "source": "D(1,5.3465,8.0636,5.9316,8.0687,5.9316,8.2695,5.3465,8.2699)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 330264,
+            "spans": [
+              {
+                "offset": 622,
+                "length": 7
+              }
+            ],
+            "confidence": 0.963,
+            "source": "D(1,4.5919,8.5296,5.9276,8.5453,5.9276,8.7509,4.5919,8.7352)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "BLACKCURRANT",
+                    "spans": [
+                      {
+                        "offset": 28,
+                        "length": 12
+                      }
+                    ],
+                    "confidence": 0.861,
+                    "source": "D(1,2.6658,5.7336,3.8071,5.7321,3.8071,5.9164,2.6658,5.9175)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 17,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.652,
+                    "source": "D(1,2.5098,5.7352,2.5628,5.7347,2.5628,5.9181,2.5098,5.9184)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 32000,
+                    "spans": [
+                      {
+                        "offset": 44,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.824,
+                    "source": "D(1,5.3183,5.7112,5.8913,5.7104,5.8913,5.9100,5.3183,5.9100)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "SPRITE",
+                    "spans": [
+                      {
+                        "offset": 82,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.845,
+                    "source": "D(1,2.6692,5.9716,3.2523,5.9671,3.2523,6.1498,2.6692,6.1544)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 71,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.636,
+                    "source": "D(1,2.5119,5.9733,2.5643,5.9727,2.5643,6.1555,2.5119,6.1560)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 32000,
+                    "spans": [
+                      {
+                        "offset": 92,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.824,
+                    "source": "D(1,5.3183,5.9478,5.8953,5.9372,5.8953,6.1278,5.3183,6.1367)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "GRILLED CALAMARI",
+                    "spans": [
+                      {
+                        "offset": 179,
+                        "length": 16
+                      }
+                    ],
+                    "confidence": 0.716,
+                    "source": "D(1,2.6754,6.4287,4.1846,6.4305,4.1844,6.6187,2.6752,6.6169)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 168,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.729,
+                    "source": "D(1,2.5159,6.4356,2.5680,6.4352,2.5680,6.6179,2.5159,6.6184)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 85000,
+                    "spans": [
+                      {
+                        "offset": 199,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.808,
+                    "source": "D(1,5.3263,6.4197,5.9034,6.4141,5.9034,6.6083,5.3263,6.6139)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "DINE FOR 2",
+                    "spans": [
+                      {
+                        "offset": 237,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.722,
+                    "source": "D(1,2.6721,6.6595,3.6342,6.6624,3.6336,6.8535,2.6716,6.8506)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 226,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.63,
+                    "source": "D(1,2.5139,6.6715,2.5686,6.6702,2.5686,6.8530,2.5139,6.8542)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 129000,
+                    "spans": [
+                      {
+                        "offset": 251,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.808,
+                    "source": "D(1,5.2577,6.6457,5.9114,6.6538,5.9114,6.8483,5.2577,6.8402)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "* DANISH FISH &amp; CHIPS DF",
+                    "spans": [
+                      {
+                        "offset": 289,
+                        "length": 28
+                      }
+                    ],
+                    "confidence": 0.662,
+                    "source": "D(1,2.7802,6.8979,5.0439,6.8729,5.0460,7.0609,2.7823,7.0858)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "spans": [
+                      {
+                        "offset": 321,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.836,
+                    "source": "D(1,5.6209,6.9622,5.9114,6.9612,5.9114,7.0060,5.6209,7.0068)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "* NEW YORK FISH &amp; CHIPS",
+                    "spans": [
+                      {
+                        "offset": 355,
+                        "length": 27
+                      }
+                    ],
+                    "confidence": 0.652,
+                    "source": "D(1,2.7808,7.1257,4.9591,7.1090,4.9605,7.2969,2.7822,7.3135)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "spans": [
+                      {
+                        "offset": 386,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.836,
+                    "source": "D(1,5.6249,7.1891,5.9155,7.1891,5.9155,7.2348,5.6249,7.2348)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -0.1157,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 650
+              }
+            ],
+            "words": [
+              {
+                "content": "1",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.5098,5.7352,2.5628,5.7347,2.5628,5.9181,2.5098,5.9184)"
+              },
+              {
+                "content": "BLACKCURRANT",
+                "span": {
+                  "offset": 28,
+                  "length": 12
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.6658,5.7336,3.8071,5.7321,3.8071,5.9164,2.6658,5.9175)"
+              },
+              {
+                "content": "32,000",
+                "span": {
+                  "offset": 44,
+                  "length": 6
+                },
+                "confidence": 0.825,
+                "source": "D(1,5.3183,5.7112,5.8913,5.7104,5.8913,5.91,5.3183,5.91)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 71,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.5119,5.9733,2.5643,5.9727,2.5643,6.1555,2.5119,6.156)"
+              },
+              {
+                "content": "SPRITE",
+                "span": {
+                  "offset": 82,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,2.6692,5.9716,3.2523,5.9671,3.2523,6.1498,2.6692,6.1544)"
+              },
+              {
+                "content": "32,000",
+                "span": {
+                  "offset": 92,
+                  "length": 6
+                },
+                "confidence": 0.89,
+                "source": "D(1,5.3183,5.9478,5.8953,5.9372,5.8953,6.1278,5.3183,6.1367)"
+              },
+              {
+                "content": "BEVERAGE",
+                "span": {
+                  "offset": 129,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.5804,6.2119,4.0876,6.1958,4.0876,6.3836,2.5804,6.3908)"
+              },
+              {
+                "content": "64,000",
+                "span": {
+                  "offset": 141,
+                  "length": 6
+                },
+                "confidence": 0.843,
+                "source": "D(1,5.0358,6.1853,5.6128,6.1841,5.6128,6.3783,5.0358,6.3794)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 168,
+                  "length": 1
+                },
+                "confidence": 0.988,
+                "source": "D(1,2.5159,6.4356,2.568,6.4352,2.568,6.6179,2.5159,6.6184)"
+              },
+              {
+                "content": "GRILLED",
+                "span": {
+                  "offset": 179,
+                  "length": 7
+                },
+                "confidence": 0.987,
+                "source": "D(1,2.6754,6.4342,3.3409,6.4298,3.3409,6.6126,2.6754,6.6169)"
+              },
+              {
+                "content": "CALAMARI",
+                "span": {
+                  "offset": 187,
+                  "length": 8
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.4329,6.4296,4.1844,6.4305,4.1844,6.6132,3.4329,6.6123)"
+              },
+              {
+                "content": "85,000",
+                "span": {
+                  "offset": 199,
+                  "length": 6
+                },
+                "confidence": 0.878,
+                "source": "D(1,5.3263,6.4197,5.9034,6.4141,5.9034,6.6083,5.3263,6.6139)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 226,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.5139,6.6715,2.5686,6.6702,2.5686,6.853,2.5139,6.8542)"
+              },
+              {
+                "content": "DINE",
+                "span": {
+                  "offset": 237,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.6721,6.6679,3.0554,6.6617,3.0554,6.8444,2.6721,6.8506)"
+              },
+              {
+                "content": "FOR",
+                "span": {
+                  "offset": 242,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.1559,6.661,3.4389,6.6618,3.4389,6.8446,3.1559,6.8437)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 246,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.5271,6.6626,3.6336,6.6635,3.6336,6.8463,3.5271,6.8453)"
+              },
+              {
+                "content": "129,000",
+                "span": {
+                  "offset": 251,
+                  "length": 7
+                },
+                "confidence": 0.709,
+                "source": "D(1,5.2577,6.6457,5.9114,6.6538,5.9114,6.8483,5.2577,6.8402)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 289,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.7822,6.8986,2.859,6.8981,2.859,7.0804,2.7822,7.0807)"
+              },
+              {
+                "content": "DANISH",
+                "span": {
+                  "offset": 291,
+                  "length": 6
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.9574,6.8975,3.529,6.8938,3.529,7.0772,2.9574,7.0799)"
+              },
+              {
+                "content": "FISH",
+                "span": {
+                  "offset": 298,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,3.6334,6.8927,4.0053,6.8885,4.0053,7.0722,3.6334,7.0762)"
+              },
+              {
+                "content": "&",
+                "span": {
+                  "offset": 303,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.0944,6.8875,4.1958,6.8863,4.1958,7.0702,4.0944,7.0713)"
+              },
+              {
+                "content": "CHIPS",
+                "span": {
+                  "offset": 309,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,4.2818,6.8853,4.7612,6.8775,4.7612,7.0614,4.2818,7.0693)"
+              },
+              {
+                "content": "DF",
+                "span": {
+                  "offset": 315,
+                  "length": 2
+                },
+                "confidence": 0.992,
+                "source": "D(1,4.8564,6.876,5.0439,6.8729,5.0439,7.0568,4.8564,7.0599)"
+              },
+              {
+                "content": "---",
+                "span": {
+                  "offset": 321,
+                  "length": 3
+                },
+                "confidence": 0.877,
+                "source": "D(1,5.6209,6.9622,5.9114,6.9612,5.9114,7.006,5.6209,7.0068)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 355,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.7822,7.129,2.8626,7.1281,2.8626,7.3091,2.7822,7.3092)"
+              },
+              {
+                "content": "NEW",
+                "span": {
+                  "offset": 357,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.9615,7.1269,3.2429,7.1237,3.243,7.3085,2.9616,7.3089)"
+              },
+              {
+                "content": "YORK",
+                "span": {
+                  "offset": 361,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,3.3357,7.1226,3.7284,7.1187,3.7285,7.3063,3.3357,7.3084)"
+              },
+              {
+                "content": "FISH",
+                "span": {
+                  "offset": 366,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,3.8274,7.1179,4.1892,7.1149,4.1892,7.3026,3.8274,7.3055)"
+              },
+              {
+                "content": "&",
+                "span": {
+                  "offset": 371,
+                  "length": 5
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.2819,7.1143,4.3809,7.1138,4.3809,7.3,4.282,7.3015)"
+              },
+              {
+                "content": "CHIPS",
+                "span": {
+                  "offset": 377,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,4.4675,7.1134,4.9591,7.111,4.9591,7.2915,4.4675,7.2987)"
+              },
+              {
+                "content": "---",
+                "span": {
+                  "offset": 386,
+                  "length": 3
+                },
+                "confidence": 0.878,
+                "source": "D(1,5.6249,7.1891,5.9155,7.1891,5.9155,7.2348,5.6249,7.2348)"
+              },
+              {
+                "content": "FOOD",
+                "span": {
+                  "offset": 420,
+                  "length": 4
+                },
+                "confidence": 0.983,
+                "source": "D(1,2.5885,7.3716,3.339,7.3651,3.339,7.5469,2.5926,7.5497)"
+              },
+              {
+                "content": "214,000",
+                "span": {
+                  "offset": 428,
+                  "length": 7
+                },
+                "confidence": 0.748,
+                "source": "D(1,4.9551,7.3489,5.633,7.3495,5.633,7.5437,4.9551,7.5431)"
+              },
+              {
+                "content": "SUBTTL",
+                "span": {
+                  "offset": 466,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.6773,7.606,3.2523,7.6006,3.2523,7.7792,2.6773,7.7889)"
+              },
+              {
+                "content": "278,000",
+                "span": {
+                  "offset": 476,
+                  "length": 7
+                },
+                "confidence": 0.75,
+                "source": "D(1,5.2456,7.5831,5.9235,7.5831,5.9235,7.7872,5.2456,7.7843)"
+              },
+              {
+                "content": "Service",
+                "span": {
+                  "offset": 514,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.6813,7.8392,3.3379,7.8402,3.3379,8.0226,2.6813,8.0235)"
+              },
+              {
+                "content": "Charge",
+                "span": {
+                  "offset": 522,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.4304,7.84,4.0129,7.8355,4.0129,8.0254,3.4303,8.0227)"
+              },
+              {
+                "content": "22,240",
+                "span": {
+                  "offset": 532,
+                  "length": 6
+                },
+                "confidence": 0.929,
+                "source": "D(1,5.3425,7.8287,5.9276,7.8287,5.9276,8.0228,5.3425,8.0228)"
+              },
+              {
+                "content": "TAX",
+                "span": {
+                  "offset": 569,
+                  "length": 3
+                },
+                "confidence": 0.917,
+                "source": "D(1,2.6874,8.0812,2.9739,8.0758,2.9739,8.2585,2.6874,8.2639)"
+              },
+              {
+                "content": "30,024",
+                "span": {
+                  "offset": 576,
+                  "length": 6
+                },
+                "confidence": 0.878,
+                "source": "D(1,5.3465,8.0636,5.9316,8.0687,5.9316,8.2695,5.3465,8.2699)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 613,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,2.6854,8.5424,3.6255,8.5424,3.6296,8.7309,2.6874,8.7309)"
+              },
+              {
+                "content": "330,264",
+                "span": {
+                  "offset": 622,
+                  "length": 7
+                },
+                "confidence": 0.665,
+                "source": "D(1,4.5919,8.5296,5.9276,8.5453,5.9276,8.7509,4.5919,8.7352)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "1 BLACKCURRANT",
+                "source": "D(1,2.5095,5.7311,3.8071,5.7291,3.8074,5.9164,2.5098,5.9184)",
+                "span": {
+                  "offset": 17,
+                  "length": 23
+                }
+              },
+              {
+                "content": "32,000",
+                "source": "D(1,5.3183,5.7104,5.8913,5.7104,5.8913,5.91,5.3183,5.91)",
+                "span": {
+                  "offset": 44,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1 SPRITE",
+                "source": "D(1,2.5103,5.9728,3.2523,5.9665,3.2538,6.1498,2.5119,6.156)",
+                "span": {
+                  "offset": 71,
+                  "length": 17
+                }
+              },
+              {
+                "content": "32,000",
+                "source": "D(1,5.317,5.9478,5.8953,5.9372,5.8989,6.1333,5.3184,6.144)",
+                "span": {
+                  "offset": 92,
+                  "length": 6
+                }
+              },
+              {
+                "content": "BEVERAGE",
+                "source": "D(1,2.5795,6.2023,4.0876,6.1955,4.0885,6.3836,2.5804,6.3908)",
+                "span": {
+                  "offset": 129,
+                  "length": 8
+                }
+              },
+              {
+                "content": "64,000",
+                "source": "D(1,5.0354,6.1807,5.6128,6.1795,5.6132,6.3783,5.0358,6.3794)",
+                "span": {
+                  "offset": 141,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1 GRILLED CALAMARI",
+                "source": "D(1,2.5153,6.4324,4.1844,6.4272,4.185,6.6132,2.5159,6.6184)",
+                "span": {
+                  "offset": 168,
+                  "length": 27
+                }
+              },
+              {
+                "content": "85,000",
+                "source": "D(1,5.3244,6.415,5.9033,6.4094,5.9052,6.6083,5.3263,6.6139)",
+                "span": {
+                  "offset": 199,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1 DINE FOR 2",
+                "source": "D(1,2.5129,6.6656,3.6336,6.6581,3.6349,6.8462,2.5139,6.8542)",
+                "span": {
+                  "offset": 226,
+                  "length": 21
+                }
+              },
+              {
+                "content": "129,000",
+                "source": "D(1,5.2577,6.6451,5.9138,6.6533,5.9114,6.8483,5.2553,6.8402)",
+                "span": {
+                  "offset": 251,
+                  "length": 7
+                }
+              },
+              {
+                "content": "* DANISH FISH & CHIPS DF",
+                "source": "D(1,2.7813,6.8986,5.0439,6.8729,5.046,7.0606,2.7823,7.0863)",
+                "span": {
+                  "offset": 289,
+                  "length": 28
+                }
+              },
+              {
+                "content": "---",
+                "source": "D(1,5.6208,6.9579,5.9114,6.9571,5.9116,7.006,5.6209,7.0068)",
+                "span": {
+                  "offset": 321,
+                  "length": 3
+                }
+              },
+              {
+                "content": "* NEW YORK FISH & CHIPS",
+                "source": "D(1,2.7813,7.1264,4.9591,7.1092,4.9607,7.2963,2.7822,7.314)",
+                "span": {
+                  "offset": 355,
+                  "length": 27
+                }
+              },
+              {
+                "content": "---",
+                "source": "D(1,5.6249,7.1891,5.9155,7.1891,5.9155,7.2348,5.6249,7.2348)",
+                "span": {
+                  "offset": 386,
+                  "length": 3
+                }
+              },
+              {
+                "content": "FOOD",
+                "source": "D(1,2.5885,7.3655,3.339,7.3626,3.3397,7.5469,2.5892,7.5497)",
+                "span": {
+                  "offset": 420,
+                  "length": 4
+                }
+              },
+              {
+                "content": "214,000",
+                "source": "D(1,4.9551,7.3481,5.6332,7.3487,5.633,7.5437,4.9549,7.5431)",
+                "span": {
+                  "offset": 428,
+                  "length": 7
+                }
+              },
+              {
+                "content": "SUBTTL",
+                "source": "D(1,2.6745,7.6061,3.2522,7.6002,3.2551,7.78,2.6773,7.7889)",
+                "span": {
+                  "offset": 466,
+                  "length": 6
+                }
+              },
+              {
+                "content": "278,000",
+                "source": "D(1,5.2456,7.5831,5.9235,7.5831,5.9235,7.7872,5.2456,7.7872)",
+                "span": {
+                  "offset": 476,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Service Charge",
+                "source": "D(1,2.6813,7.8355,4.0129,7.8355,4.0129,8.0254,2.6813,8.0254)",
+                "span": {
+                  "offset": 514,
+                  "length": 14
+                }
+              },
+              {
+                "content": "22,240",
+                "source": "D(1,5.3425,7.8287,5.9276,7.8287,5.9276,8.0228,5.3425,8.0228)",
+                "span": {
+                  "offset": 532,
+                  "length": 6
+                }
+              },
+              {
+                "content": "TAX",
+                "source": "D(1,2.6842,8.0766,2.9738,8.0711,2.9755,8.2584,2.6874,8.2639)",
+                "span": {
+                  "offset": 569,
+                  "length": 3
+                }
+              },
+              {
+                "content": "30,024",
+                "source": "D(1,5.3464,8.0622,5.9316,8.0618,5.9317,8.2695,5.3465,8.2699)",
+                "span": {
+                  "offset": 576,
+                  "length": 6
+                }
+              },
+              {
+                "content": "TOTAL",
+                "source": "D(1,2.6854,8.5424,3.6296,8.5424,3.6296,8.7309,2.6854,8.7309)",
+                "span": {
+                  "offset": 613,
+                  "length": 5
+                }
+              },
+              {
+                "content": "330,264",
+                "source": "D(1,4.592,8.5275,5.9281,8.5432,5.9276,8.7509,4.5917,8.7352)",
+                "span": {
+                  "offset": 622,
+                  "length": 7
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "1",
+            "source": "D(1,2.5084,5.7351,2.5628,5.7347,2.5643,5.9181,2.5098,5.9185)",
+            "span": {
+              "offset": 17,
+              "length": 1
+            }
+          },
+          {
+            "content": "BLACKCURRANT",
+            "source": "D(1,2.6655,5.7334,3.8071,5.7321,3.8073,5.9164,2.6658,5.9177)",
+            "span": {
+              "offset": 28,
+              "length": 12
+            }
+          },
+          {
+            "content": "32,000",
+            "source": "D(1,5.3181,5.7108,5.8913,5.7104,5.8914,5.91,5.3183,5.9105)",
+            "span": {
+              "offset": 44,
+              "length": 6
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,2.5099,5.9733,2.5643,5.9727,2.5663,6.1555,2.5119,6.156)",
+            "span": {
+              "offset": 71,
+              "length": 1
+            }
+          },
+          {
+            "content": "SPRITE",
+            "source": "D(1,2.6678,5.9716,3.2523,5.9671,3.2537,6.1498,2.6692,6.1544)",
+            "span": {
+              "offset": 82,
+              "length": 6
+            }
+          },
+          {
+            "content": "32,000",
+            "source": "D(1,5.3151,5.947,5.8953,5.9372,5.8985,6.1277,5.3183,6.1375)",
+            "span": {
+              "offset": 92,
+              "length": 6
+            }
+          },
+          {
+            "content": "BEVERAGE",
+            "source": "D(1,2.579,6.2074,4.0876,6.1958,4.089,6.3836,2.5805,6.3952)",
+            "span": {
+              "offset": 129,
+              "length": 8
+            }
+          },
+          {
+            "content": "64,000",
+            "source": "D(1,5.0354,6.1853,5.6128,6.1841,5.6132,6.3783,5.0358,6.3794)",
+            "span": {
+              "offset": 141,
+              "length": 6
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,2.5143,6.4356,2.568,6.4352,2.5697,6.6179,2.5159,6.6184)",
+            "span": {
+              "offset": 168,
+              "length": 1
+            }
+          },
+          {
+            "content": "GRILLED CALAMARI",
+            "source": "D(1,2.6754,6.4286,4.1846,6.4305,4.1844,6.6188,2.6751,6.6169)",
+            "span": {
+              "offset": 179,
+              "length": 16
+            }
+          },
+          {
+            "content": "85,000",
+            "source": "D(1,5.3245,6.4197,5.9034,6.4141,5.9052,6.6083,5.3263,6.6139)",
+            "span": {
+              "offset": 199,
+              "length": 6
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,2.5097,6.6716,2.5686,6.6702,2.5728,6.8529,2.5139,6.8542)",
+            "span": {
+              "offset": 226,
+              "length": 1
+            }
+          },
+          {
+            "content": "DINE FOR 2",
+            "source": "D(1,2.6721,6.6596,3.6341,6.6624,3.6336,6.8534,2.6715,6.8506)",
+            "span": {
+              "offset": 237,
+              "length": 10
+            }
+          },
+          {
+            "content": "129,000",
+            "source": "D(1,5.2577,6.6457,5.9138,6.6538,5.9114,6.8483,5.2553,6.8402)",
+            "span": {
+              "offset": 251,
+              "length": 7
+            }
+          },
+          {
+            "content": "* DANISH FISH & CHIPS DF",
+            "source": "D(1,2.7802,6.8977,5.0439,6.8729,5.0459,7.0609,2.7823,7.0857)",
+            "span": {
+              "offset": 289,
+              "length": 28
+            }
+          },
+          {
+            "content": "---",
+            "source": "D(1,5.6208,6.9621,5.9114,6.9612,5.9116,7.006,5.6209,7.007)",
+            "span": {
+              "offset": 321,
+              "length": 3
+            }
+          },
+          {
+            "content": "* NEW YORK FISH & CHIPS",
+            "source": "D(1,2.7808,7.1255,4.9591,7.1092,4.9605,7.2971,2.7822,7.3134)",
+            "span": {
+              "offset": 355,
+              "length": 27
+            }
+          },
+          {
+            "content": "---",
+            "source": "D(1,5.6249,7.1891,5.9155,7.1891,5.9155,7.2348,5.6249,7.2348)",
+            "span": {
+              "offset": 386,
+              "length": 3
+            }
+          },
+          {
+            "content": "FOOD",
+            "source": "D(1,2.5885,7.3698,3.339,7.3651,3.3402,7.5469,2.5896,7.5516)",
+            "span": {
+              "offset": 420,
+              "length": 4
+            }
+          },
+          {
+            "content": "214,000",
+            "source": "D(1,4.9551,7.3489,5.6332,7.3495,5.633,7.5437,4.9549,7.5431)",
+            "span": {
+              "offset": 428,
+              "length": 7
+            }
+          },
+          {
+            "content": "SUBTTL",
+            "source": "D(1,2.6749,7.6061,3.2523,7.5985,3.2547,7.7813,2.6773,7.7889)",
+            "span": {
+              "offset": 466,
+              "length": 6
+            }
+          },
+          {
+            "content": "278,000",
+            "source": "D(1,5.2456,7.5817,5.924,7.5831,5.9235,7.7872,5.2452,7.7857)",
+            "span": {
+              "offset": 476,
+              "length": 7
+            }
+          },
+          {
+            "content": "Service Charge",
+            "source": "D(1,2.6813,7.8353,4.0129,7.8355,4.0129,8.0254,2.6813,8.0252)",
+            "span": {
+              "offset": 514,
+              "length": 14
+            }
+          },
+          {
+            "content": "22,240",
+            "source": "D(1,5.3425,7.8287,5.9276,7.8287,5.9276,8.0228,5.3425,8.0228)",
+            "span": {
+              "offset": 532,
+              "length": 6
+            }
+          },
+          {
+            "content": "TAX",
+            "source": "D(1,2.6839,8.0813,2.9739,8.0758,2.9774,8.2584,2.6874,8.2639)",
+            "span": {
+              "offset": 569,
+              "length": 3
+            }
+          },
+          {
+            "content": "30,024",
+            "source": "D(1,5.3465,8.0636,5.9324,8.066,5.9316,8.2723,5.3457,8.2699)",
+            "span": {
+              "offset": 576,
+              "length": 6
+            }
+          },
+          {
+            "content": "TOTAL",
+            "source": "D(1,2.6854,8.5424,3.6296,8.5424,3.6296,8.7309,2.6854,8.7309)",
+            "span": {
+              "offset": 613,
+              "length": 5
+            }
+          },
+          {
+            "content": "330,264",
+            "source": "D(1,4.5919,8.5296,5.93,8.5454,5.9276,8.7509,4.5895,8.7352)",
+            "span": {
+              "offset": 622,
+              "length": 7
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 649
+            },
+            "elements": [
+              "/tables/0"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 12,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,2.212,5.705,2.5602,5.7033,2.5604,5.9268,2.2176,5.93)",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/0"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "BLACKCURRANT\n32,000",
+                "source": "D(1,2.5602,5.7033,6.0404,5.6837,6.0368,5.8995,2.5604,5.9268)",
+                "span": {
+                  "offset": 28,
+                  "length": 22
+                },
+                "elements": [
+                  "/paragraphs/1",
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,2.2176,5.93,2.5604,5.9268,2.5598,6.1767,2.2033,6.1793)",
+                "span": {
+                  "offset": 71,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SPRITE\n32,000",
+                "source": "D(1,2.5604,5.9268,6.0368,5.8995,6.0351,6.1527,2.5598,6.1767)",
+                "span": {
+                  "offset": 82,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/4",
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,2.2033,6.1793,2.5598,6.1767,2.5607,6.4122,2.2043,6.4149)",
+                "span": {
+                  "offset": 119,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "BEVERAGE\n64,000",
+                "source": "D(1,2.5598,6.1767,6.0351,6.1527,6.0363,6.3869,2.5607,6.4122)",
+                "span": {
+                  "offset": 129,
+                  "length": 18
+                },
+                "elements": [
+                  "/paragraphs/6",
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,2.2043,6.4149,2.5607,6.4122,2.5598,6.6454,2.2113,6.6481)",
+                "span": {
+                  "offset": 168,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "GRILLED CALAMARI\n85,000",
+                "source": "D(1,2.5607,6.4122,6.0363,6.3869,6.0342,6.6183,2.5598,6.6454)",
+                "span": {
+                  "offset": 179,
+                  "length": 26
+                },
+                "elements": [
+                  "/paragraphs/9",
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,2.2113,6.6481,2.5598,6.6454,2.5625,6.8695,2.2072,6.8711)",
+                "span": {
+                  "offset": 226,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DINE FOR 2\n129,000",
+                "source": "D(1,2.5598,6.6454,6.0342,6.6183,6.0346,6.8431,2.5625,6.8695)",
+                "span": {
+                  "offset": 237,
+                  "length": 21
+                },
+                "elements": [
+                  "/paragraphs/12",
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,2.2072,6.8711,2.5625,6.8695,2.5653,7.1055,2.2145,7.1078)",
+                "span": {
+                  "offset": 279,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "* DANISH FISH & CHIPS DF\n---",
+                "source": "D(1,2.5625,6.8695,6.0346,6.8431,6.0351,7.0823,2.5653,7.1055)",
+                "span": {
+                  "offset": 289,
+                  "length": 35
+                },
+                "elements": [
+                  "/paragraphs/14",
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,2.2145,7.1078,2.5653,7.1055,2.5636,7.3419,2.2085,7.3441)",
+                "span": {
+                  "offset": 345,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "* NEW YORK FISH & CHIPS\n---",
+                "source": "D(1,2.5653,7.1055,6.0351,7.0823,6.0344,7.3217,2.5636,7.3419)",
+                "span": {
+                  "offset": 355,
+                  "length": 34
+                },
+                "elements": [
+                  "/paragraphs/16",
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,2.2085,7.3441,2.5636,7.3419,2.5632,7.5701,2.2086,7.5723)",
+                "span": {
+                  "offset": 410,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "FOOD\n214,000",
+                "source": "D(1,2.5636,7.3419,6.0344,7.3217,6.0353,7.549,2.5632,7.5701)",
+                "span": {
+                  "offset": 420,
+                  "length": 15
+                },
+                "elements": [
+                  "/paragraphs/18",
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,2.2086,7.5723,2.5632,7.5701,2.5632,7.8192,2.2052,7.8202)",
+                "span": {
+                  "offset": 456,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SUBTTL\n278,000",
+                "source": "D(1,2.5632,7.5701,6.0353,7.549,6.0342,7.8011,2.5632,7.8192)",
+                "span": {
+                  "offset": 466,
+                  "length": 17
+                },
+                "elements": [
+                  "/paragraphs/20",
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 9,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,2.2052,7.8202,2.5632,7.8192,2.5628,8.0549,2.2011,8.0566)",
+                "span": {
+                  "offset": 504,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 9,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Service Charge\n22,240",
+                "source": "D(1,2.5632,7.8192,6.0342,7.8011,6.035,8.0383,2.5628,8.0549)",
+                "span": {
+                  "offset": 514,
+                  "length": 24
+                },
+                "elements": [
+                  "/paragraphs/22",
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 10,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,2.2011,8.0566,2.5628,8.0549,2.5611,8.4109,2.2119,8.4124)",
+                "span": {
+                  "offset": 559,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 10,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "TAX\n30,024",
+                "source": "D(1,2.5628,8.0549,6.035,8.0383,6.0375,8.3954,2.5611,8.4109)",
+                "span": {
+                  "offset": 569,
+                  "length": 13
+                },
+                "elements": [
+                  "/paragraphs/24",
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 11,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,2.2119,8.4124,2.5611,8.4109,2.5626,8.8953,2.1945,8.8949)",
+                "span": {
+                  "offset": 603,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 11,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "TOTAL\n330,264",
+                "source": "D(1,2.5611,8.4109,6.0375,8.3954,6.0437,8.8926,2.5626,8.8953)",
+                "span": {
+                  "offset": 613,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/26",
+                  "/paragraphs/27"
+                ]
+              }
+            ],
+            "source": "D(1,2.2536,5.5474,5.9841,5.5217,5.9841,8.7423,2.2597,8.7765)",
+            "span": {
+              "offset": 0,
+              "length": 649
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5.5-input": 4153,
+      "gpt-5.5-output": 420
+    }
+  }
+}

@@ -1,0 +1,46 @@
+# Starter templates — seeded into your workspace on first run.
+#
+# These are GENERIC examples: copy and edit them in the Templates tab to
+# match the documents you process. Nothing freight- or vendor-specific ships
+# with the app.
+documents:
+  - id: any_document
+    label: Any document
+    description: >-
+      A generic single document of any kind: the model reports its title,
+      date, reference number and main total amount, whichever are printed.
+      Use this when you want a page's contents without a tailored template,
+      or as a base for building your own.
+    signals:
+      # Selection bar: how confident the model must be that this is the
+      # target document. 0.3 is deliberately lenient for a starter.
+      min_score: 0.3
+    extraction:
+      schema: generic
+
+  - id: invoice_starter
+    label: Invoice (starter)
+    description: >-
+      A generic commercial invoice: number, date, issuing vendor and total
+      amount payable. Duplicate this template and adjust its fields to fit
+      the invoices you receive.
+    signals:
+      min_score: 0.3
+    extraction:
+      fields:
+        - name: invoice_number
+          type: str
+          description: the invoice number printed on the document
+          labels: [invoice no, invoice number, "invoice #", bill no]
+        - name: invoice_date
+          type: date
+          description: the invoice date printed on the document
+          labels: [invoice date, date]
+        - name: vendor_name
+          type: name
+          description: the name of the company that issued the invoice
+          labels: [vendor, supplier, seller, issued by]
+        - name: total_amount
+          type: amount
+          description: the invoice total amount payable, taxes included
+          labels: [total, amount due, grand total, total payable]

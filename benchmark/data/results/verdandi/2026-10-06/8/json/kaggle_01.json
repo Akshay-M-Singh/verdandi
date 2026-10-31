@@ -1,0 +1,681 @@
+{
+  "selected_document": {
+    "name": "B.A.T (U.K. AND EXPORT) LIMITED",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows the vendor letterhead 'B.A.T (U.K. AND EXPORT) LIMITED', an 'Invoice No.' (N 1816), a tax-point date, and vendor-billed amounts of US$13,600.00 and \u00a37,555.55.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "N 1816",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.679,
+          0.219,
+          0.758,
+          0.24
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'str' FAILED for invoice_number='N 1816'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Brown & Williamson International Tobacco, Telegraphic Addrese Export'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6755,
+                0.2188,
+                0.7375,
+                0.23119999999999996
+              ],
+              "line_bbox": [
+                0.6755,
+                0.2188,
+                0.7375,
+                0.23119999999999996
+              ],
+              "text": "N 1816",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "26-5-82",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.68,
+          0.238,
+          0.755,
+          0.258
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='26-5-82'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'VAT Reg. No. 239 1369 50 N 1816'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6785,
+                0.23540000000000005,
+                0.7493,
+                0.24580000000000002
+              ],
+              "line_bbox": [
+                0.6785,
+                0.23540000000000005,
+                0.7493,
+                0.24580000000000002
+              ],
+              "text": "26.5.82",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "B.A.T (U.K. AND EXPORT) LIMITED",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.129,
+          0.102,
+          0.627,
+          0.131
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='B.A.T (U.K. AND EXPORT) LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '( > ~ ale B:AT (UK. AND EXPORT)'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.2006,
+                0.10829999999999995,
+                0.6224,
+                0.1271
+              ],
+              "line_bbox": [
+                0.1386,
+                0.10829999999999995,
+                0.6224,
+                0.1271
+              ],
+              "text": "ale B:AT (UK. AND EXPORT) LIMITED",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Brown & Williamson International Tobacco",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.146,
+          0.179,
+          0.493,
+          0.195
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Brown & Williamson International Tobacco'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Export House Woking Surrey GU21 1YB England Brown'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1473,
+                0.1754,
+                0.7555,
+                0.19669999999999999
+              ],
+              "line_bbox": [
+                0.1473,
+                0.1754,
+                0.7555,
+                0.19669999999999999
+              ],
+              "text": "Brown & Williamson International Tobacco, Telegraphic Addrese Export Woking",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "GBP",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.633,
+          0.421,
+          0.73,
+          0.451
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='GBP'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'GBP' NOT found near region (page 1); nearest text '\u00a3 7,555.55' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "7555.55",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.632,
+          0.421,
+          0.731,
+          0.451
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='7555.55'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '\u00a3 7,555.55'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6313,
+                0.42290000000000005,
+                0.7286,
+                0.4333
+              ],
+              "line_bbox": [
+                0.4808,
+                0.41869999999999996,
+                0.7286,
+                0.4354
+              ],
+              "text": "\u20ac 1.80 \u00a3 7,555.55",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Half of Counter Deal charges in 1981 in excess of your earlier estimate. Geoff Harper's telex of 25/5/82 refers.",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "7555.55",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.239,
+          0.329,
+          0.897,
+          0.449
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The printed charge also shows the equivalent amount US$13,600.00 and an exchange rate of @ 1.80; the final underlined amount is \u00a37,555.55."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 1824,
+      "total_tokens": 8829,
+      "elapsed_s": 14.2
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "N 1816",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'str' FAILED for invoice_number='N 1816'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Brown & Williamson International Tobacco, Telegraphic Addrese Export'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6755,
+                  0.2188,
+                  0.7375,
+                  0.23119999999999996
+                ],
+                "line_bbox": [
+                  0.6755,
+                  0.2188,
+                  0.7375,
+                  0.23119999999999996
+                ],
+                "text": "N 1816",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "26-5-82",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='26-5-82'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'VAT Reg. No. 239 1369 50 N 1816'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6785,
+                  0.23540000000000005,
+                  0.7493,
+                  0.24580000000000002
+                ],
+                "line_bbox": [
+                  0.6785,
+                  0.23540000000000005,
+                  0.7493,
+                  0.24580000000000002
+                ],
+                "text": "26.5.82",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "B.A.T (U.K. AND EXPORT) LIMITED",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='B.A.T (U.K. AND EXPORT) LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '( > ~ ale B:AT (UK. AND EXPORT)'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.2006,
+                  0.10829999999999995,
+                  0.6224,
+                  0.1271
+                ],
+                "line_bbox": [
+                  0.1386,
+                  0.10829999999999995,
+                  0.6224,
+                  0.1271
+                ],
+                "text": "ale B:AT (UK. AND EXPORT) LIMITED",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Brown & Williamson International Tobacco",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Brown & Williamson International Tobacco'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Export House Woking Surrey GU21 1YB England Brown'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1473,
+                  0.1754,
+                  0.7555,
+                  0.19669999999999999
+                ],
+                "line_bbox": [
+                  0.1473,
+                  0.1754,
+                  0.7555,
+                  0.19669999999999999
+                ],
+                "text": "Brown & Williamson International Tobacco, Telegraphic Addrese Export Woking",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "GBP",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='GBP'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'GBP' NOT found near region (page 1); nearest text '\u00a3 7,555.55' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "7555.55",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='7555.55'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '\u00a3 7,555.55'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6313,
+                  0.42290000000000005,
+                  0.7286,
+                  0.4333
+                ],
+                "line_bbox": [
+                  0.4808,
+                  0.41869999999999996,
+                  0.7286,
+                  0.4354
+                ],
+                "text": "\u20ac 1.80 \u00a3 7,555.55",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 2,
+          "grounding": 1
+        },
+        "flag_rows": 6
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_number": {
+            "primary": "N 1816",
+            "secondary": "N 1816",
+            "agree": true
+          },
+          "invoice_date": {
+            "primary": "26-5-82",
+            "secondary": "26-5-82",
+            "agree": true
+          },
+          "currency": {
+            "primary": "GBP",
+            "secondary": "USD",
+            "agree": false
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "3ea3225a9c81a3a0f3201e5d3e43e6935aa022f8edd8cbe88ae71e4f7e987766"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5855,
+          "completion_tokens": 567,
+          "total_tokens": 6422,
+          "elapsed_s": 6.62
+        }
+      }
+    }
+  }
+}

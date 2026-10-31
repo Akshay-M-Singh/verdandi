@@ -1,0 +1,124 @@
+# Excel export profiles (D54) - data, not code (D10). Edit in the UI
+# (Export tab) or here. Column sources: {meta}, {template, field},
+# {line_item}, {cross_check: rule_id}; grain: file | line_item.
+exports:
+- id: broker_chain_export
+  label: Broker chain export
+  workflow: broker_chain
+  grain: line_item
+  options:
+    date_format: dd/mm/yyyy
+  columns:
+  - header: File
+    source:
+      meta: original
+  - header: Invoice Number
+    source:
+      template: broker_invoice
+      field: invoice_number
+  - header: Invoice Date
+    source:
+      template: broker_invoice
+      field: invoice_date
+  - header: Boe Number
+    source:
+      template: broker_invoice
+      field: boe_number
+  - header: Boe Date
+    source:
+      template: broker_invoice
+      field: boe_date
+  - header: Hawb Number
+    source:
+      template: broker_invoice
+      field: hawb_number
+  - header: Total Invoice Amount
+    source:
+      template: broker_invoice
+      field: total_invoice_amount
+  - header: Pan
+    source:
+      template: broker_invoice
+      field: pan
+  - header: Boe Number
+    source:
+      template: bill_of_entry
+      field: boe_number
+  - header: Boe Date
+    source:
+      template: bill_of_entry
+      field: boe_date
+  - header: Mot
+    source:
+      template: bill_of_entry
+      field: mot
+  - header: Hawb Number
+    source:
+      template: bill_of_entry
+      field: hawb_number
+  - header: Invoice Number
+    source:
+      template: bill_of_entry
+      field: invoice_number
+  - header: Hawb Number
+    source:
+      template: air_waybill
+      field: hawb_number
+  - header: Hawb Date
+    source:
+      template: air_waybill
+      field: hawb_date
+  - header: Origin
+    source:
+      template: air_waybill
+      field: origin
+  - header: Destination
+    source:
+      template: air_waybill
+      field: destination
+  - header: Pieces
+    source:
+      template: air_waybill
+      field: pieces
+  - header: Total Weight
+    source:
+      template: air_waybill
+      field: total_weight
+  - header: Invoice Number
+    source:
+      template: commercial_invoice
+      field: invoice_number
+  - header: Invoice Date
+    source:
+      template: commercial_invoice
+      field: invoice_date
+  - header: Supplier Gstin
+    source:
+      template: commercial_invoice
+      field: supplier_gstin
+  - header: Total Amount
+    source:
+      template: commercial_invoice
+      field: total_amount
+  - header: Description
+    source:
+      line_item: description
+  - header: Amount
+    source:
+      line_item: amount
+  - header: BE number on invoice = BE number on BOE
+    source:
+      cross_check: broker_invoice.boe_number__bill_of_entry.boe_number
+  - header: HAWB number on invoice = HAWB number on BOE
+    source:
+      cross_check: broker_invoice.hawb_number__bill_of_entry.hawb_number
+  - header: HAWB number on BOE = HAWB number on HAWB document
+    source:
+      cross_check: bill_of_entry.hawb_number__air_waybill.hawb_number
+  - header: Invoice number on BOE = Invoice number on commercial invoice
+    source:
+      cross_check: bill_of_entry.invoice_number__commercial_invoice.invoice_number
+  - header: Validation
+    source:
+      meta: validation_status
+  line_item_template: broker_invoice

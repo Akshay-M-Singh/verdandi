@@ -1,0 +1,880 @@
+{
+  "selected_document": {
+    "name": "BLUE HORIZON CARGO SERVICES",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the issuer name BLUE HORIZON CARGO SERVICES, the heading RECEIPT, a receipt number and date, a customer, and multiple vendor-billed charge amounts.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "RCPT-52985",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.153,
+          0.126,
+          0.257,
+          0.137
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='RCPT-52985'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-52985 Date: 08/07/2025 Customer: GREENFIELD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.12480000000000002,
+                0.2555,
+                0.13549999999999995
+              ],
+              "line_bbox": [
+                0.084,
+                0.12480000000000002,
+                0.2555,
+                0.13549999999999995
+              ],
+              "text": "Receipt No: RCPT-52985",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "08/07/2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.126,
+          0.141,
+          0.205,
+          0.151
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='08/07/2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-52985 Date: 08/07/2025 Customer: GREENFIELD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.1402,
+                0.2001,
+                0.15090000000000003
+              ],
+              "line_bbox": [
+                0.084,
+                0.1402,
+                0.2001,
+                0.15090000000000003
+              ],
+              "text": "Date: 08/07/2025",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "BLUE HORIZON CARGO SERVICES",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.043,
+          0.457,
+          0.057
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='BLUE HORIZON CARGO SERVICES'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BLUE HORIZON CARGO SERVICES 18 Harbor Road, Kochi'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.04390000000000005,
+                0.4543,
+                0.05940000000000001
+              ],
+              "line_bbox": [
+                0.084,
+                0.04390000000000005,
+                0.4543,
+                0.05940000000000001
+              ],
+              "text": "BLUE HORIZON CARGO SERVICES",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.152,
+          0.156,
+          0.509,
+          0.165
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='GREENFIELD ENERGY EQUIPMENT LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Receipt No: RCPT-52985 Date: 08/07/2025 Customer: GREENFIELD ENERGY'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.15569999999999995,
+                0.4807,
+                0.1664
+              ],
+              "line_bbox": [
+                0.084,
+                0.15569999999999995,
+                0.4807,
+                0.1664
+              ],
+              "text": "Customer: GREENFIELD ENERGY EQUIPMENT LIMITED",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.819,
+          0.209,
+          0.934,
+          0.219
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Agency commission USD 91,290.30 Local transportation USD 19,077.54'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.20840000000000003,
+                0.9328,
+                0.21860000000000002
+              ],
+              "line_bbox": [
+                0.084,
+                0.20840000000000003,
+                0.9328,
+                0.21860000000000002
+              ],
+              "text": "Agency commission USD 91,290.30",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "234224.16",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.805,
+          0.349,
+          0.934,
+          0.36
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='234224.16'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Freight forwarding charges USD 10,597.38 Subtotal USD 234,224.16'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6501,
+                0.3459,
+                0.9328,
+                0.35650000000000004
+              ],
+              "line_bbox": [
+                0.6501,
+                0.3459,
+                0.9328,
+                0.35650000000000004
+              ],
+              "text": "Subtotal USD 234,224.16",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "11711.21",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.811,
+          0.365,
+          0.934,
+          0.375
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='11711.21'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal USD 234,224.16 Tax 5% USD 11,711.21 Total'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6682,
+                0.36250000000000004,
+                0.9328,
+                0.3732
+              ],
+              "line_bbox": [
+                0.6682,
+                0.36250000000000004,
+                0.9328,
+                0.3732
+              ],
+              "text": "Tax 5% USD 11,711.21",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "245935.37",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.791,
+          0.383,
+          0.934,
+          0.394
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='245935.37'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal USD 234,224.16 Tax 5% USD 11,711.21 Total'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6807,
+                0.38039999999999996,
+                0.9328,
+                0.39249999999999996
+              ],
+              "line_bbox": [
+                0.6807,
+                0.38039999999999996,
+                0.9328,
+                0.39249999999999996
+              ],
+              "text": "Total USD 245,935.37",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Agency commission",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "91290.30",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.207,
+          0.934,
+          0.22
+        ]
+      }
+    },
+    {
+      "description": "Local transportation",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "19077.54",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.232,
+          0.934,
+          0.245
+        ]
+      }
+    },
+    {
+      "description": "Terminal handling charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "11104.64",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.258,
+          0.934,
+          0.271
+        ]
+      }
+    },
+    {
+      "description": "Warehouse storage charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "102154.30",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.283,
+          0.934,
+          0.296
+        ]
+      }
+    },
+    {
+      "description": "Freight forwarding charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "10597.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.308,
+          0.934,
+          0.321
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1747,
+      "total_tokens": 5402,
+      "elapsed_s": 10.62
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "RCPT-52985",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='RCPT-52985'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-52985 Date: 08/07/2025 Customer: GREENFIELD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.12480000000000002,
+                  0.2555,
+                  0.13549999999999995
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.12480000000000002,
+                  0.2555,
+                  0.13549999999999995
+                ],
+                "text": "Receipt No: RCPT-52985",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "08/07/2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='08/07/2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-52985 Date: 08/07/2025 Customer: GREENFIELD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.1402,
+                  0.2001,
+                  0.15090000000000003
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.1402,
+                  0.2001,
+                  0.15090000000000003
+                ],
+                "text": "Date: 08/07/2025",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "BLUE HORIZON CARGO SERVICES",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='BLUE HORIZON CARGO SERVICES'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BLUE HORIZON CARGO SERVICES 18 Harbor Road, Kochi'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.04390000000000005,
+                  0.4543,
+                  0.05940000000000001
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.04390000000000005,
+                  0.4543,
+                  0.05940000000000001
+                ],
+                "text": "BLUE HORIZON CARGO SERVICES",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "GREENFIELD ENERGY EQUIPMENT LIMITED",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='GREENFIELD ENERGY EQUIPMENT LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Receipt No: RCPT-52985 Date: 08/07/2025 Customer: GREENFIELD ENERGY'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.15569999999999995,
+                  0.4807,
+                  0.1664
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.15569999999999995,
+                  0.4807,
+                  0.1664
+                ],
+                "text": "Customer: GREENFIELD ENERGY EQUIPMENT LIMITED",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Agency commission USD 91,290.30 Local transportation USD 19,077.54'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.20840000000000003,
+                  0.9328,
+                  0.21860000000000002
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.20840000000000003,
+                  0.9328,
+                  0.21860000000000002
+                ],
+                "text": "Agency commission USD 91,290.30",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "234224.16",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='234224.16'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Freight forwarding charges USD 10,597.38 Subtotal USD 234,224.16'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6501,
+                  0.3459,
+                  0.9328,
+                  0.35650000000000004
+                ],
+                "line_bbox": [
+                  0.6501,
+                  0.3459,
+                  0.9328,
+                  0.35650000000000004
+                ],
+                "text": "Subtotal USD 234,224.16",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "11711.21",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='11711.21'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal USD 234,224.16 Tax 5% USD 11,711.21 Total'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6682,
+                  0.36250000000000004,
+                  0.9328,
+                  0.3732
+                ],
+                "line_bbox": [
+                  0.6682,
+                  0.36250000000000004,
+                  0.9328,
+                  0.3732
+                ],
+                "text": "Tax 5% USD 11,711.21",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "245935.37",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='245935.37'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal USD 234,224.16 Tax 5% USD 11,711.21 Total'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6807,
+                  0.38039999999999996,
+                  0.9328,
+                  0.39249999999999996
+                ],
+                "line_bbox": [
+                  0.6807,
+                  0.38039999999999996,
+                  0.9328,
+                  0.39249999999999996
+                ],
+                "text": "Total USD 245,935.37",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

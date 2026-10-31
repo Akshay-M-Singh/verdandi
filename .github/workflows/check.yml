@@ -1,0 +1,61 @@
+# Cross-platform check matrix (D63): the same unit suite on Windows, Linux and
+# macOS. macOS runs the Apple Vision engine (swiftc is preinstalled on the
+# runners); Windows/Linux run the cross-platform engine (pypdfium2 + RapidOCR,
+# models cached between runs). `make check` is macOS-oriented (shell
+# assertions), so CI invokes the underlying commands directly.
+#
+# ON DEMAND + PRs (open-source): pull requests and pushes to main run the
+# matrix; use the manual trigger for a one-off run:
+#   gh workflow run check -R Akshay-M-Singh/verdandi
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            engine: crossplatform
+          - os: windows-latest
+            engine: crossplatform
+          - os: macos-latest
+            engine: auto   # resolves to apple_vision (swiftc available)
+    runs-on: ${{ matrix.os }}
+    env:
+      VERDANDI_TEST_ENGINE: ${{ matrix.engine }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt -r requirements-crossplatform.txt
+
+      - name: Cache RapidOCR models
+        if: matrix.engine == 'crossplatform'
+        uses: actions/cache@v4
+        with:
+          path: out/cache/rapidocr
+          key: rapidocr-models-${{ runner.os }}-${{ hashFiles('requirements-crossplatform.txt') }}
+
+      - name: "Unit suite (engine: ${{ matrix.engine }})"
+        run: python -m unittest discover -s tests -v
+
+      - name: CLI smoke
+        run: python process.py --help

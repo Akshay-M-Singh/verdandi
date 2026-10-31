@@ -1,0 +1,793 @@
+{
+  "selected_document": {
+    "name": "MERIDIAN SUPPLY CHAIN PVT. LT",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows an INVOICE issued by MERIDIAN SUPPLY CHAIN PVT. LT, with invoice number and date, billed charge line items, subtotal, tax, and total amounts.",
+    "confidence": 0.96
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "NF-2025-9098",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.089,
+          0.25,
+          0.102
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='NF-2025-9098'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE MERIDIAN SUPPLY CHAIN PVT. LT Invoice #:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.08919999999999995,
+                0.2505,
+                0.0998
+              ],
+              "line_bbox": [
+                0.084,
+                0.08919999999999995,
+                0.2505,
+                0.0998
+              ],
+              "text": "Invoice #: NF-2025-9098",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "08.05.2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.105,
+          0.169,
+          0.116
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='08.05.2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice #: NF-2025-9098 Dated 08.05.2025 To: COASTAL POWER'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.10460000000000003,
+                0.2043,
+                0.11529999999999996
+              ],
+              "line_bbox": [
+                0.084,
+                0.10460000000000003,
+                0.2043,
+                0.11529999999999996
+              ],
+              "text": "Dated 08.05.2025",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "MERIDIAN SUPPLY CHAIN PVT. LT",
+      "confidence": 0.88,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.722,
+          0.041,
+          1.0,
+          0.054
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='MERIDIAN SUPPLY CHAIN PVT. LT'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE MERIDIAN SUPPLY CHAIN PVT. LT 7th Floor,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.03520000000000001,
+                1.0028,
+                0.054300000000000015
+              ],
+              "line_bbox": [
+                0.084,
+                0.03520000000000001,
+                1.0028,
+                0.054300000000000015
+              ],
+              "text": "INVOICE MERIDIAN SUPPLY CHAIN PVT. LT",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "COASTAL POWER PROJECTS LIMITED",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.11,
+          0.134,
+          0.369,
+          0.145
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='COASTAL POWER PROJECTS LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice #: NF-2025-9098 Dated 08.05.2025 To: COASTAL POWER'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.13429999999999997,
+                0.3908,
+                0.14500000000000002
+              ],
+              "line_bbox": [
+                0.084,
+                0.13429999999999997,
+                0.3908,
+                0.14500000000000002
+              ],
+              "text": "To: COASTAL POWER PROJECTS LIMITED",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "106768.84",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.832,
+          0.342,
+          0.934,
+          0.352
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='106768.84'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Cargo insurance 10 7,086.55 70,865.50 Subtotal 1,06,768.84 Tax'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6501,
+                0.34109999999999996,
+                0.9328,
+                0.3518
+              ],
+              "line_bbox": [
+                0.6501,
+                0.34109999999999996,
+                0.9328,
+                0.3518
+              ],
+              "text": "Subtotal 1,06,768.84",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "19218.39",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.852,
+          0.359,
+          0.934,
+          0.369
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='19218.39'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal 1,06,768.84 Tax 19,218.39 Total 1,25,987.23'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6955,
+                0.3577,
+                0.9328,
+                0.36839999999999995
+              ],
+              "line_bbox": [
+                0.6955,
+                0.3577,
+                0.9328,
+                0.36839999999999995
+              ],
+              "text": "Tax 19,218.39",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "125987.23",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.821,
+          0.384,
+          0.934,
+          0.395
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='125987.23'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal 1,06,768.84 Tax 19,218.39 Total 1,25,987.23'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6807,
+                0.38280000000000003,
+                0.9328,
+                0.39480000000000004
+              ],
+              "line_bbox": [
+                0.6807,
+                0.38280000000000003,
+                0.9328,
+                0.39480000000000004
+              ],
+              "text": "Total 1,25,987.23",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Bill of entry charges",
+      "quantity": "3",
+      "unit_price": "1427.87",
+      "amount": "4283.61",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.223,
+          0.934,
+          0.237
+        ]
+      }
+    },
+    {
+      "description": "Agency commission",
+      "quantity": "3",
+      "unit_price": "9533.30",
+      "amount": "28599.90",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.25,
+          0.934,
+          0.263
+        ]
+      }
+    },
+    {
+      "description": "Customs documentation fee",
+      "quantity": "3",
+      "unit_price": "1006.61",
+      "amount": "3019.83",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.276,
+          0.934,
+          0.289
+        ]
+      }
+    },
+    {
+      "description": "Cargo insurance",
+      "quantity": "10",
+      "unit_price": "7086.55",
+      "amount": "70865.50",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.302,
+          0.934,
+          0.315
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The vendor name is visibly clipped at the right edge of the page image and is transcribed only to the visible text."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1765,
+      "total_tokens": 5420,
+      "elapsed_s": 11.63
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "NF-2025-9098",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='NF-2025-9098'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE MERIDIAN SUPPLY CHAIN PVT. LT Invoice #:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.08919999999999995,
+                  0.2505,
+                  0.0998
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.08919999999999995,
+                  0.2505,
+                  0.0998
+                ],
+                "text": "Invoice #: NF-2025-9098",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "08.05.2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='08.05.2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice #: NF-2025-9098 Dated 08.05.2025 To: COASTAL POWER'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.10460000000000003,
+                  0.2043,
+                  0.11529999999999996
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.10460000000000003,
+                  0.2043,
+                  0.11529999999999996
+                ],
+                "text": "Dated 08.05.2025",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "MERIDIAN SUPPLY CHAIN PVT. LT",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='MERIDIAN SUPPLY CHAIN PVT. LT'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE MERIDIAN SUPPLY CHAIN PVT. LT 7th Floor,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.03520000000000001,
+                  1.0028,
+                  0.054300000000000015
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.03520000000000001,
+                  1.0028,
+                  0.054300000000000015
+                ],
+                "text": "INVOICE MERIDIAN SUPPLY CHAIN PVT. LT",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "COASTAL POWER PROJECTS LIMITED",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='COASTAL POWER PROJECTS LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice #: NF-2025-9098 Dated 08.05.2025 To: COASTAL POWER'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.13429999999999997,
+                  0.3908,
+                  0.14500000000000002
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.13429999999999997,
+                  0.3908,
+                  0.14500000000000002
+                ],
+                "text": "To: COASTAL POWER PROJECTS LIMITED",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "106768.84",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='106768.84'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Cargo insurance 10 7,086.55 70,865.50 Subtotal 1,06,768.84 Tax'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6501,
+                  0.34109999999999996,
+                  0.9328,
+                  0.3518
+                ],
+                "line_bbox": [
+                  0.6501,
+                  0.34109999999999996,
+                  0.9328,
+                  0.3518
+                ],
+                "text": "Subtotal 1,06,768.84",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "19218.39",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='19218.39'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal 1,06,768.84 Tax 19,218.39 Total 1,25,987.23'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6955,
+                  0.3577,
+                  0.9328,
+                  0.36839999999999995
+                ],
+                "line_bbox": [
+                  0.6955,
+                  0.3577,
+                  0.9328,
+                  0.36839999999999995
+                ],
+                "text": "Tax 19,218.39",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "125987.23",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='125987.23'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal 1,06,768.84 Tax 19,218.39 Total 1,25,987.23'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6807,
+                  0.38280000000000003,
+                  0.9328,
+                  0.39480000000000004
+                ],
+                "line_bbox": [
+                  0.6807,
+                  0.38280000000000003,
+                  0.9328,
+                  0.39480000000000004
+                ],
+                "text": "Total 1,25,987.23",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,1133 @@
+{
+  "id": "f820f0d9-5912-4d99-a754-18018838a98e",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T14:30:13Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "# BLUE HORIZON CARGO SERVICES TAX INVOICE\n\nInvoice No: INV/25-26/644\nDate: 16-06-2025\n\nBill TO: COASTAL POWER PROJECTS LIMITED\n\n\n<table>\n<tr>\n<td>Bill of entry charges</td>\n<td>9,987.92</td>\n</tr>\n<tr>\n<td>Agency commission</td>\n<td>10,281.69</td>\n</tr>\n<tr>\n<td>Freight forwarding charges</td>\n<td>96,985.70</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>Subtotal:</td>\n<td>1,17,255.31</td>\n</tr>\n<tr>\n<td>Tax:</td>\n<td>21,105.96</td>\n</tr>\n<tr>\n<td>Total:</td>\n<td>1,38,361.27</td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "valueString": "INV/25-26/644",
+            "spans": [
+              {
+                "offset": 55,
+                "length": 13
+              }
+            ],
+            "confidence": 0.609,
+            "source": "D(1,1.6977,1.9060,3.4238,1.9043,3.4240,2.1138,1.6979,2.1155)"
+          },
+          "invoice_date": {
+            "type": "date",
+            "valueDate": "2025-06-16",
+            "spans": [
+              {
+                "offset": 75,
+                "length": 10
+              }
+            ],
+            "confidence": 0.764,
+            "source": "D(1,1.1057,2.2915,2.4251,2.2888,2.4251,2.4720,1.1064,2.4741)"
+          },
+          "vendor_name": {
+            "type": "string",
+            "valueString": "BLUE HORIZON CARGO SERVICES",
+            "spans": [
+              {
+                "offset": 2,
+                "length": 27
+              }
+            ],
+            "confidence": 0.535,
+            "source": "D(1,0.5251,0.8157,6.1940,0.8178,6.1939,1.0942,0.5250,1.0921)"
+          },
+          "buyer_name": {
+            "type": "string",
+            "valueString": "COASTAL POWER PROJECTS LIMITED",
+            "spans": [
+              {
+                "offset": 96,
+                "length": 30
+              }
+            ],
+            "confidence": 0.562,
+            "source": "D(1,1.3208,2.6265,5.5934,2.6396,5.5927,2.8696,1.3201,2.8565)"
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 117255.31,
+            "spans": [
+              {
+                "offset": 367,
+                "length": 11
+              }
+            ],
+            "confidence": 0.669,
+            "source": "D(1,6.4118,4.8600,7.7353,4.8570,7.7353,5.0483,6.4118,5.0513)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 21105.96,
+            "spans": [
+              {
+                "offset": 413,
+                "length": 9
+              }
+            ],
+            "confidence": 0.67,
+            "source": "D(1,6.6337,5.2137,7.7353,5.2133,7.7353,5.4309,6.6337,5.4312)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 138361.27,
+            "spans": [
+              {
+                "offset": 459,
+                "length": 11
+              }
+            ],
+            "confidence": 0.681,
+            "source": "D(1,6.3997,5.6099,7.7434,5.6080,7.7434,5.8093,6.3997,5.8065)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Bill of entry charges",
+                    "spans": [
+                      {
+                        "offset": 146,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.721,
+                    "source": "D(1,0.5077,3.3460,2.6571,3.3620,2.6551,3.6268,0.5057,3.6109)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 9987.92,
+                    "spans": [
+                      {
+                        "offset": 177,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.71,
+                    "source": "D(1,6.6902,3.3618,7.7393,3.3605,7.7393,3.5985,6.6902,3.6051)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Agency commission",
+                    "spans": [
+                      {
+                        "offset": 206,
+                        "length": 17
+                      }
+                    ],
+                    "confidence": 0.725,
+                    "source": "D(1,0.5065,3.7442,2.6652,3.7324,2.6666,3.9938,0.5079,4.0057)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 10281.69,
+                    "spans": [
+                      {
+                        "offset": 233,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.682,
+                    "source": "D(1,6.6418,3.7875,7.7232,3.7920,7.7232,3.9989,6.6418,3.9964)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Freight forwarding charges",
+                    "spans": [
+                      {
+                        "offset": 263,
+                        "length": 26
+                      }
+                    ],
+                    "confidence": 0.699,
+                    "source": "D(1,0.5341,4.1231,3.3757,4.1259,3.3754,4.3883,0.5339,4.3856)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 96985.7,
+                    "spans": [
+                      {
+                        "offset": 299,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.787,
+                    "source": "D(1,6.5570,4.1554,7.7313,4.1533,7.7313,4.3790,6.5570,4.3877)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -0.0381,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 491
+              }
+            ],
+            "words": [
+              {
+                "content": "BLUE",
+                "span": {
+                  "offset": 2,
+                  "length": 4
+                },
+                "confidence": 0.941,
+                "source": "D(1,0.5251,0.8242,1.4252,0.8228,1.4269,1.0885,0.5256,1.0858)"
+              },
+              {
+                "content": "HORIZON",
+                "span": {
+                  "offset": 7,
+                  "length": 7
+                },
+                "confidence": 0.975,
+                "source": "D(1,1.5148,0.8226,3.1226,0.8204,3.1265,1.0922,1.5166,1.0888)"
+              },
+              {
+                "content": "CARGO",
+                "span": {
+                  "offset": 15,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,3.2211,0.8203,4.4034,0.819,4.4091,1.0935,3.2252,1.0923)"
+              },
+              {
+                "content": "SERVICES",
+                "span": {
+                  "offset": 21,
+                  "length": 8
+                },
+                "confidence": 0.99,
+                "source": "D(1,4.4795,0.8189,6.1858,0.8178,6.1939,1.0923,4.4853,1.0935)"
+              },
+              {
+                "content": "TAX",
+                "span": {
+                  "offset": 30,
+                  "length": 3
+                },
+                "confidence": 0.947,
+                "source": "D(1,0.5145,1.3325,1.1692,1.3322,1.1697,1.5753,0.5152,1.5759)"
+              },
+              {
+                "content": "INVOICE",
+                "span": {
+                  "offset": 34,
+                  "length": 7
+                },
+                "confidence": 0.909,
+                "source": "D(1,1.2668,1.332,2.5966,1.326,2.5966,1.569,1.2673,1.5751)"
+              },
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 43,
+                  "length": 7
+                },
+                "confidence": 0.174,
+                "source": "D(1,0.5195,1.9122,1.2387,1.9077,1.2395,2.1158,0.5205,2.119)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 51,
+                  "length": 2
+                },
+                "confidence": 0.954,
+                "source": "D(1,1.2935,1.9073,1.5675,1.9061,1.5682,2.1145,1.2943,2.1155)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 53,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.5709,1.9061,1.6257,1.906,1.6264,2.1144,1.5716,2.1145)"
+              },
+              {
+                "content": "INV",
+                "span": {
+                  "offset": 55,
+                  "length": 3
+                },
+                "confidence": 0.967,
+                "source": "D(1,1.6977,1.906,2.0984,1.9059,2.0988,2.1136,1.6983,2.1143)"
+              },
+              {
+                "content": "/",
+                "span": {
+                  "offset": 58,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.0812,1.9059,2.2011,1.9058,2.2015,2.1134,2.0817,2.1136)"
+              },
+              {
+                "content": "25-26/644",
+                "span": {
+                  "offset": 59,
+                  "length": 9
+                },
+                "confidence": 0.982,
+                "source": "D(1,2.1771,1.9058,3.4238,1.9112,3.4238,2.1138,2.1776,2.1134)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 69,
+                  "length": 4
+                },
+                "confidence": 0.971,
+                "source": "D(1,0.5281,2.2899,0.9932,2.2912,0.994,2.4739,0.5291,2.4734)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 73,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,0.9811,2.2911,1.0449,2.2913,1.0456,2.474,0.9818,2.4739)"
+              },
+              {
+                "content": "16-06-2025",
+                "span": {
+                  "offset": 75,
+                  "length": 10
+                },
+                "confidence": 0.984,
+                "source": "D(1,1.1057,2.2915,2.4251,2.2888,2.4251,2.472,1.1064,2.4741)"
+              },
+              {
+                "content": "Bill",
+                "span": {
+                  "offset": 87,
+                  "length": 4
+                },
+                "confidence": 0.103,
+                "source": "D(1,0.4857,2.6244,0.8977,2.6265,0.8977,2.848,0.4857,2.8444)"
+              },
+              {
+                "content": "TO",
+                "span": {
+                  "offset": 92,
+                  "length": 2
+                },
+                "confidence": 0.712,
+                "source": "D(1,0.9459,2.6268,1.202,2.6281,1.202,2.8506,0.9459,2.8484)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 94,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.1983,2.6281,1.2614,2.6284,1.2614,2.8511,1.1983,2.8505)"
+              },
+              {
+                "content": "COASTAL",
+                "span": {
+                  "offset": 96,
+                  "length": 7
+                },
+                "confidence": 0.976,
+                "source": "D(1,1.3208,2.6287,2.4453,2.634,2.4453,2.8598,1.3208,2.8516)"
+              },
+              {
+                "content": "POWER",
+                "span": {
+                  "offset": 104,
+                  "length": 5
+                },
+                "confidence": 0.978,
+                "source": "D(1,2.4936,2.6341,3.3769,2.6367,3.3769,2.8628,2.4936,2.86)"
+              },
+              {
+                "content": "PROJECTS",
+                "span": {
+                  "offset": 110,
+                  "length": 8
+                },
+                "confidence": 0.962,
+                "source": "D(1,3.414,2.6368,4.5831,2.6388,4.5831,2.8628,3.414,2.8629)"
+              },
+              {
+                "content": "LIMITED",
+                "span": {
+                  "offset": 119,
+                  "length": 7
+                },
+                "confidence": 0.979,
+                "source": "D(1,4.6537,2.6388,5.5927,2.6396,5.5927,2.8605,4.6536,2.8626)"
+              },
+              {
+                "content": "Bill",
+                "span": {
+                  "offset": 146,
+                  "length": 4
+                },
+                "confidence": 0.657,
+                "source": "D(1,0.5077,3.3479,0.9146,3.3499,0.9144,3.6133,0.5074,3.6098)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 151,
+                  "length": 2
+                },
+                "confidence": 0.994,
+                "source": "D(1,0.9579,3.3501,1.1961,3.3513,1.1959,3.6158,0.9577,3.6137)"
+              },
+              {
+                "content": "entry",
+                "span": {
+                  "offset": 154,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,1.2177,3.3514,1.8022,3.3556,1.8021,3.6205,1.2175,3.616)"
+              },
+              {
+                "content": "charges",
+                "span": {
+                  "offset": 160,
+                  "length": 7
+                },
+                "confidence": 0.989,
+                "source": "D(1,1.8498,3.356,2.6551,3.3636,2.6551,3.6262,1.8497,3.6208)"
+              },
+              {
+                "content": "9,987.92",
+                "span": {
+                  "offset": 177,
+                  "length": 8
+                },
+                "confidence": 0.733,
+                "source": "D(1,6.6902,3.3618,7.7393,3.3605,7.7393,3.5985,6.6902,3.6051)"
+              },
+              {
+                "content": "Agency",
+                "span": {
+                  "offset": 206,
+                  "length": 6
+                },
+                "confidence": 0.978,
+                "source": "D(1,0.5087,3.7534,1.3216,3.7462,1.3212,4.0012,0.5079,4.0029)"
+              },
+              {
+                "content": "commission",
+                "span": {
+                  "offset": 213,
+                  "length": 10
+                },
+                "confidence": 0.869,
+                "source": "D(1,1.3679,3.7457,2.6652,3.7324,2.6652,3.9837,1.3675,4.0007)"
+              },
+              {
+                "content": "10,281.69",
+                "span": {
+                  "offset": 233,
+                  "length": 9
+                },
+                "confidence": 0.94,
+                "source": "D(1,6.6418,3.7875,7.7232,3.792,7.7232,3.9989,6.6418,3.9964)"
+              },
+              {
+                "content": "Freight",
+                "span": {
+                  "offset": 263,
+                  "length": 7
+                },
+                "confidence": 0.926,
+                "source": "D(1,0.5341,4.1304,1.291,4.1242,1.291,4.3808,0.5341,4.3853)"
+              },
+              {
+                "content": "forwarding",
+                "span": {
+                  "offset": 271,
+                  "length": 10
+                },
+                "confidence": 0.891,
+                "source": "D(1,1.329,4.1239,2.5213,4.1254,2.5213,4.3814,1.329,4.3806)"
+              },
+              {
+                "content": "charges",
+                "span": {
+                  "offset": 282,
+                  "length": 7
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.5763,4.1261,3.3754,4.1355,3.3754,4.3883,2.5763,4.3819)"
+              },
+              {
+                "content": "96,985.70",
+                "span": {
+                  "offset": 299,
+                  "length": 9
+                },
+                "confidence": 0.88,
+                "source": "D(1,6.557,4.1554,7.7313,4.1533,7.7313,4.379,6.557,4.3877)"
+              },
+              {
+                "content": "Subtotal",
+                "span": {
+                  "offset": 348,
+                  "length": 8
+                },
+                "confidence": 0.944,
+                "source": "D(1,4.4669,4.8491,5.3904,4.8491,5.3904,5.0484,4.4669,5.0441)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 356,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,5.3839,4.8491,5.4555,4.85,5.4555,5.0492,5.3839,5.0484)"
+              },
+              {
+                "content": "1,17,255.31",
+                "span": {
+                  "offset": 367,
+                  "length": 11
+                },
+                "confidence": 0.833,
+                "source": "D(1,6.4118,4.86,7.7353,4.857,7.7353,5.0483,6.4118,5.0513)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 399,
+                  "length": 3
+                },
+                "confidence": 0.72,
+                "source": "D(1,4.4669,5.2238,4.8579,5.2254,4.8579,5.399,4.4669,5.3954)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 402,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.8492,5.2256,4.9269,5.2242,4.9269,5.3989,4.8492,5.399)"
+              },
+              {
+                "content": "21,105.96",
+                "span": {
+                  "offset": 413,
+                  "length": 9
+                },
+                "confidence": 0.893,
+                "source": "D(1,6.6337,5.2137,7.7353,5.2133,7.7353,5.4309,6.6337,5.4312)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 443,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,4.4669,5.5955,5.0095,5.5935,5.0095,5.7812,4.4669,5.7826)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 448,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5,5.5936,5.0762,5.5928,5.0762,5.7819,5,5.7811)"
+              },
+              {
+                "content": "1,38,361.27",
+                "span": {
+                  "offset": 459,
+                  "length": 11
+                },
+                "confidence": 0.941,
+                "source": "D(1,6.3997,5.6099,7.7434,5.608,7.7434,5.8093,6.3997,5.8065)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "BLUE HORIZON CARGO SERVICES",
+                "source": "D(1,0.5251,0.8216,6.1937,0.8178,6.1939,1.0923,0.5252,1.0961)",
+                "span": {
+                  "offset": 2,
+                  "length": 27
+                }
+              },
+              {
+                "content": "TAX INVOICE",
+                "source": "D(1,0.5145,1.3325,2.5966,1.326,2.5973,1.571,0.5152,1.576)",
+                "span": {
+                  "offset": 30,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Invoice No: INV/25-26/644",
+                "source": "D(1,0.5195,1.9078,3.4238,1.9026,3.4241,2.1138,0.5199,2.119)",
+                "span": {
+                  "offset": 43,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Date: 16-06-2025",
+                "source": "D(1,0.5281,2.2899,2.4251,2.2888,2.4252,2.4734,0.5282,2.4745)",
+                "span": {
+                  "offset": 69,
+                  "length": 16
+                }
+              },
+              {
+                "content": "Bill TO: COASTAL POWER PROJECTS LIMITED",
+                "source": "D(1,0.4857,2.6244,5.5933,2.6396,5.5926,2.8665,0.4854,2.8543)",
+                "span": {
+                  "offset": 87,
+                  "length": 39
+                }
+              },
+              {
+                "content": "Bill of entry charges",
+                "source": "D(1,0.5077,3.3462,2.6556,3.3619,2.6551,3.6268,0.5057,3.611)",
+                "span": {
+                  "offset": 146,
+                  "length": 21
+                }
+              },
+              {
+                "content": "9,987.92",
+                "source": "D(1,6.6899,3.3618,7.7393,3.3605,7.7396,3.6037,6.6902,3.6051)",
+                "span": {
+                  "offset": 177,
+                  "length": 8
+                }
+              },
+              {
+                "content": "Agency commission",
+                "source": "D(1,0.5055,3.7534,2.6652,3.7324,2.6671,3.9886,0.508,4.0085)",
+                "span": {
+                  "offset": 206,
+                  "length": 17
+                }
+              },
+              {
+                "content": "10,281.69",
+                "source": "D(1,6.6418,3.7875,7.7241,3.792,7.7232,4.0012,6.6409,3.9966)",
+                "span": {
+                  "offset": 233,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Freight forwarding charges",
+                "source": "D(1,0.5342,4.1216,3.3756,4.1246,3.3754,4.3883,0.5339,4.3853)",
+                "span": {
+                  "offset": 263,
+                  "length": 26
+                }
+              },
+              {
+                "content": "96,985.70",
+                "source": "D(1,6.5566,4.1554,7.7313,4.1533,7.7317,4.3855,6.557,4.3877)",
+                "span": {
+                  "offset": 299,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Subtotal:",
+                "source": "D(1,4.4669,4.8423,5.4565,4.8474,5.4555,5.0492,4.466,5.0441)",
+                "span": {
+                  "offset": 348,
+                  "length": 9
+                }
+              },
+              {
+                "content": "1,17,255.31",
+                "source": "D(1,6.4113,4.86,7.7353,4.857,7.7357,5.0492,6.4118,5.0522)",
+                "span": {
+                  "offset": 367,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Tax:",
+                "source": "D(1,4.4669,5.2238,4.927,5.2242,4.9269,5.3991,4.4667,5.3987)",
+                "span": {
+                  "offset": 399,
+                  "length": 4
+                }
+              },
+              {
+                "content": "21,105.96",
+                "source": "D(1,6.6336,5.2137,7.7353,5.2133,7.7354,5.431,6.6337,5.4314)",
+                "span": {
+                  "offset": 413,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Total:",
+                "source": "D(1,4.4666,5.5936,5.0762,5.5928,5.0764,5.7819,4.4669,5.7826)",
+                "span": {
+                  "offset": 443,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1,38,361.27",
+                "source": "D(1,6.3994,5.6099,7.7434,5.608,7.7437,5.8101,6.3997,5.812)",
+                "span": {
+                  "offset": 459,
+                  "length": 11
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "role": "title",
+            "content": "BLUE HORIZON CARGO SERVICES TAX INVOICE",
+            "source": "D(1,0.5141,0.8216,6.1937,0.8178,6.1942,1.5722,0.5146,1.576)",
+            "span": {
+              "offset": 0,
+              "length": 41
+            }
+          },
+          {
+            "content": "Invoice No: INV/25-26/644 Date: 16-06-2025",
+            "source": "D(1,0.5195,1.9078,3.4238,1.9026,3.4248,2.4717,0.5205,2.4769)",
+            "span": {
+              "offset": 43,
+              "length": 42
+            }
+          },
+          {
+            "content": "Bill TO: COASTAL POWER PROJECTS LIMITED",
+            "source": "D(1,0.4857,2.6244,5.5933,2.6396,5.5926,2.8694,0.485,2.8543)",
+            "span": {
+              "offset": 87,
+              "length": 39
+            }
+          },
+          {
+            "content": "Bill of entry charges",
+            "source": "D(1,0.5077,3.3459,2.6571,3.362,2.6551,3.6269,0.5057,3.6108)",
+            "span": {
+              "offset": 146,
+              "length": 21
+            }
+          },
+          {
+            "content": "9,987.92",
+            "source": "D(1,6.6893,3.3618,7.7393,3.3578,7.7402,3.6011,6.6902,3.6051)",
+            "span": {
+              "offset": 177,
+              "length": 8
+            }
+          },
+          {
+            "content": "Agency commission",
+            "source": "D(1,0.5065,3.7443,2.6652,3.7324,2.6666,3.9937,0.5079,4.0057)",
+            "span": {
+              "offset": 206,
+              "length": 17
+            }
+          },
+          {
+            "content": "10,281.69",
+            "source": "D(1,6.6418,3.7875,7.7239,3.7909,7.7232,3.9999,6.6411,3.9964)",
+            "span": {
+              "offset": 233,
+              "length": 9
+            }
+          },
+          {
+            "content": "Freight forwarding charges",
+            "source": "D(1,0.5342,4.1231,3.3756,4.1259,3.3754,4.3883,0.5339,4.3854)",
+            "span": {
+              "offset": 263,
+              "length": 26
+            }
+          },
+          {
+            "content": "96,985.70",
+            "source": "D(1,6.556,4.1554,7.7312,4.15,7.7323,4.3822,6.557,4.3877)",
+            "span": {
+              "offset": 299,
+              "length": 9
+            }
+          },
+          {
+            "content": "Subtotal:",
+            "source": "D(1,4.467,4.8377,5.4579,4.85,5.4554,5.0563,4.4645,5.0441)",
+            "span": {
+              "offset": 348,
+              "length": 9
+            }
+          },
+          {
+            "content": "1,17,255.31",
+            "source": "D(1,6.4113,4.86,7.7353,4.857,7.7357,5.0483,6.4118,5.0513)",
+            "span": {
+              "offset": 367,
+              "length": 11
+            }
+          },
+          {
+            "content": "Tax:",
+            "source": "D(1,4.4669,5.2212,4.928,5.2242,4.9269,5.3995,4.4657,5.3964)",
+            "span": {
+              "offset": 399,
+              "length": 4
+            }
+          },
+          {
+            "content": "21,105.96",
+            "source": "D(1,6.6336,5.2136,7.7353,5.2133,7.7354,5.4309,6.6337,5.4312)",
+            "span": {
+              "offset": 413,
+              "length": 9
+            }
+          },
+          {
+            "content": "Total:",
+            "source": "D(1,4.4668,5.5929,5.0762,5.5928,5.0762,5.7826,4.4669,5.7826)",
+            "span": {
+              "offset": 443,
+              "length": 6
+            }
+          },
+          {
+            "content": "1,38,361.27",
+            "source": "D(1,6.3997,5.6076,7.7434,5.608,7.7434,5.8093,6.3996,5.8089)",
+            "span": {
+              "offset": 459,
+              "length": 11
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 490
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/tables/0",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 3,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Bill of entry charges",
+                "source": "D(1,0.4511,3.1513,6.1666,3.1497,6.1683,3.6804,0.4516,3.6858)",
+                "span": {
+                  "offset": 146,
+                  "length": 21
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "9,987.92",
+                "source": "D(1,6.1666,3.1497,7.773,3.1499,7.7742,3.68,6.1683,3.6804)",
+                "span": {
+                  "offset": 177,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Agency commission",
+                "source": "D(1,0.4516,3.6858,6.1683,3.6804,6.1679,4.0745,0.4517,4.0758)",
+                "span": {
+                  "offset": 206,
+                  "length": 17
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10,281.69",
+                "source": "D(1,6.1683,3.6804,7.7742,3.68,7.7748,4.0755,6.1679,4.0745)",
+                "span": {
+                  "offset": 233,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Freight forwarding charges",
+                "source": "D(1,0.4517,4.0758,6.1679,4.0745,6.1684,4.6144,0.4533,4.6146)",
+                "span": {
+                  "offset": 263,
+                  "length": 26
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "96,985.70",
+                "source": "D(1,6.1679,4.0745,7.7748,4.0755,7.776,4.6155,6.1684,4.6144)",
+                "span": {
+                  "offset": 299,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              }
+            ],
+            "source": "D(1,0.4597,3.2919,7.7716,3.2919,7.7635,4.4425,0.4623,4.4511)",
+            "span": {
+              "offset": 129,
+              "length": 199
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Subtotal:",
+                "source": "D(1,4.4203,4.8286,6.3443,4.8287,6.3439,5.1584,4.4198,5.16)",
+                "span": {
+                  "offset": 348,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,17,255.31",
+                "source": "D(1,6.3443,4.8287,7.7693,4.8287,7.7696,5.1574,6.3439,5.1584)",
+                "span": {
+                  "offset": 367,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Tax:",
+                "source": "D(1,4.4198,5.16,6.3439,5.1584,6.3436,5.496,4.4191,5.4922)",
+                "span": {
+                  "offset": 399,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "21,105.96",
+                "source": "D(1,6.3439,5.1584,7.7696,5.1574,7.77,5.499,6.3436,5.496)",
+                "span": {
+                  "offset": 413,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total:",
+                "source": "D(1,4.4191,5.4922,6.3436,5.496,6.3425,5.8268,4.4192,5.828)",
+                "span": {
+                  "offset": 443,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,38,361.27",
+                "source": "D(1,6.3436,5.496,7.77,5.499,7.7713,5.8263,6.3425,5.8268)",
+                "span": {
+                  "offset": 459,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              }
+            ],
+            "source": "D(1,4.4144,4.8222,7.7716,4.8194,7.7756,5.8244,4.4225,5.8244)",
+            "span": {
+              "offset": 331,
+              "length": 159
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 4016,
+      "gpt-5-mini-cached-input": 3712,
+      "gpt-5-mini-output": 319
+    }
+  }
+}

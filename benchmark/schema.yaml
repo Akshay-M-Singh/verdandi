@@ -1,0 +1,59 @@
+# Canonical benchmark schema (v1) — the single source of truth both systems
+# are mapped to. Verdandi's profile (benchmark/rules_documents.yaml) and the
+# Azure Content Understanding custom analyzer emitted by azure_acu.py must
+# carry exactly these field names.
+#
+# Scope (owner decision, 2026-09-30): document-level fields + line items.
+# Truth lives in benchmark/data/truth/<stem>.json and is frozen (sha256) by
+# benchmark/score.py --freeze before ANY paid run.
+version: 1
+
+fields:
+  invoice_number:
+    type: str
+    description: the document's own number/reference as printed (invoice no., receipt no., bill no.)
+  invoice_date:
+    type: date
+    description: the document's own issue date as printed
+  vendor_name:
+    type: name
+    description: the issuing firm's name (seller / merchant / service provider)
+  buyer_name:
+    type: name
+    description: the party being billed (customer / consignee / bill-to)
+  currency:
+    type: currency
+    description: the ISO 4217 code of the currency the document's final total is printed in (e.g. INR, USD, IDR); infer from symbols/text when the code is not printed verbatim — never a secondary foreign-amount column's currency
+  subtotal:
+    type: amount
+    description: the net/taxable amount before tax when printed
+  tax_total:
+    type: amount
+    description: the total tax amount when printed (sum of components, e.g. CGST+SGST)
+  total_amount:
+    type: amount
+    description: the document's final total payable (plain number, taxes included) — never a computed value
+
+line_items:
+  columns:
+    description:
+      type: str
+      role: description
+      description: the row's full printed description
+    quantity:
+      type: amount
+      description: the row's printed quantity when present
+    unit_price:
+      type: amount
+      description: the row's printed unit price/rate when present
+    amount:
+      type: amount
+      role: amount
+      description: the row's own amount/total (plain number)
+
+# Scoring normalization (applied to BOTH truth and predictions before compare):
+# - dates: day-first formats via Verdandi compare.norm_date (D58); truth stores ISO
+# - amounts: decimal strings; currency symbols/grouping stripped, commas removed
+# - text: casefold + whitespace collapse; reference codes compared alnum-normalized
+# - line items: optimal row matching on amount (+description similarity) first,
+#   then per-cell accuracy on matched rows; row-count P/R/F1 reported separately

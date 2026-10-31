@@ -1,0 +1,846 @@
+{
+  "selected_document": {
+    "name": "Morton-Leach",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cTAX INVOICE,\u201d names Morton-Leach, and shows an invoice number, billed item rows, and subtotal, tax, and total amounts.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "3125-883",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.208,
+          0.124,
+          0.296,
+          0.137
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='3125-883'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number 3125-883'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.059,
+                0.12080000000000002,
+                0.2979,
+                0.14170000000000005
+              ],
+              "line_bbox": [
+                0.059,
+                0.12080000000000002,
+                0.9027,
+                0.14170000000000005
+              ],
+              "text": "Invoice number 3125-883 Date: 09-Jul-2005 Due Date: 11-Sep-2005",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "09-Jul-2005",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.37,
+          0.124,
+          0.535,
+          0.138
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='09-Jul-2005'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 09-Jul-2005'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3658,
+                0.12290000000000001,
+                0.5339,
+                0.14170000000000005
+              ],
+              "line_bbox": [
+                0.059,
+                0.12080000000000002,
+                0.9027,
+                0.14170000000000005
+              ],
+              "text": "Invoice number 3125-883 Date: 09-Jul-2005 Due Date: 11-Sep-2005",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Morton-Leach",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.728,
+          0.208,
+          0.865,
+          0.223
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Morton-Leach'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Morton-Leach Address: 98324 Espinoza View'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7286,
+                0.20830000000000004,
+                0.8643,
+                0.2208
+              ],
+              "line_bbox": [
+                0.0678,
+                0.20830000000000004,
+                0.8643,
+                0.2208
+              ],
+              "text": "Mrs. Yolanda Moses Morton-Leach",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Mrs. Yolanda Moses",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.066,
+          0.208,
+          0.203,
+          0.223
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Mrs. Yolanda Moses'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BILL_TO: Mrs. Yolanda Moses 86673 Gutierrez Orchard Shaffermouth,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0678,
+                0.20830000000000004,
+                0.2478,
+                0.2208
+              ],
+              "line_bbox": [
+                0.0678,
+                0.20830000000000004,
+                0.8643,
+                0.2208
+              ],
+              "text": "Mrs. Yolanda Moses Morton-Leach",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.792,
+          0.625,
+          0.836,
+          0.638
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 571.04 EUR TAX: VAT (6.41%): 36.63 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5752,
+                0.6229,
+                0.8378,
+                0.6457999999999999
+              ],
+              "line_bbox": [
+                0.5752,
+                0.6229,
+                0.8378,
+                0.6457999999999999
+              ],
+              "text": "SUB_TOTAL: 571.04 EUR",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "571.04",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.732,
+          0.625,
+          0.789,
+          0.638
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='571.04'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 571.04 EUR TAX: VAT (6.41%): 36.63 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5752,
+                0.6229,
+                0.8378,
+                0.6457999999999999
+              ],
+              "line_bbox": [
+                0.5752,
+                0.6229,
+                0.8378,
+                0.6457999999999999
+              ],
+              "text": "SUB_TOTAL: 571.04 EUR",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "36.63",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.763,
+          0.67,
+          0.816,
+          0.683
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='36.63'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 571.04 EUR TAX: VAT (6.41%): 36.63 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5749,
+                0.6641,
+                0.8765,
+                0.6894
+              ],
+              "line_bbox": [
+                0.5749,
+                0.6641,
+                0.8765,
+                0.6894
+              ],
+              "text": "TAX: VAT (6.41%): 36.63 EUR",
+              "lineno": 15,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "593.85",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.69,
+          0.766,
+          0.746,
+          0.779
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='593.85'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 593.85 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5745,
+                0.758,
+                0.7794,
+                0.7844
+              ],
+              "line_bbox": [
+                0.5745,
+                0.758,
+                0.7794,
+                0.7844
+              ],
+              "text": "TOTAL: 593.85 EUR",
+              "lineno": 16,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Institution..",
+      "quantity": "6.00",
+      "unit_price": "15.27",
+      "amount": "91.62",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.075,
+          0.486,
+          0.914,
+          0.501
+        ]
+      }
+    },
+    {
+      "description": "Like.",
+      "quantity": "1.00",
+      "unit_price": "89.97",
+      "amount": "89.97",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.075,
+          0.523,
+          0.914,
+          0.537
+        ]
+      }
+    },
+    {
+      "description": "Collection carry.",
+      "quantity": "5.00",
+      "unit_price": "77.89",
+      "amount": "389.45",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.075,
+          0.559,
+          0.914,
+          0.573
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1683,
+      "total_tokens": 5338,
+      "elapsed_s": 16.34
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "3125-883",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='3125-883'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number 3125-883'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.059,
+                  0.12080000000000002,
+                  0.2979,
+                  0.14170000000000005
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.12080000000000002,
+                  0.9027,
+                  0.14170000000000005
+                ],
+                "text": "Invoice number 3125-883 Date: 09-Jul-2005 Due Date: 11-Sep-2005",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "09-Jul-2005",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='09-Jul-2005'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 09-Jul-2005'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3658,
+                  0.12290000000000001,
+                  0.5339,
+                  0.14170000000000005
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.12080000000000002,
+                  0.9027,
+                  0.14170000000000005
+                ],
+                "text": "Invoice number 3125-883 Date: 09-Jul-2005 Due Date: 11-Sep-2005",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Morton-Leach",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Morton-Leach'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Morton-Leach Address: 98324 Espinoza View'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7286,
+                  0.20830000000000004,
+                  0.8643,
+                  0.2208
+                ],
+                "line_bbox": [
+                  0.0678,
+                  0.20830000000000004,
+                  0.8643,
+                  0.2208
+                ],
+                "text": "Mrs. Yolanda Moses Morton-Leach",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Mrs. Yolanda Moses",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Mrs. Yolanda Moses'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BILL_TO: Mrs. Yolanda Moses 86673 Gutierrez Orchard Shaffermouth,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0678,
+                  0.20830000000000004,
+                  0.2478,
+                  0.2208
+                ],
+                "line_bbox": [
+                  0.0678,
+                  0.20830000000000004,
+                  0.8643,
+                  0.2208
+                ],
+                "text": "Mrs. Yolanda Moses Morton-Leach",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 571.04 EUR TAX: VAT (6.41%): 36.63 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5752,
+                  0.6229,
+                  0.8378,
+                  0.6457999999999999
+                ],
+                "line_bbox": [
+                  0.5752,
+                  0.6229,
+                  0.8378,
+                  0.6457999999999999
+                ],
+                "text": "SUB_TOTAL: 571.04 EUR",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "571.04",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='571.04'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 571.04 EUR TAX: VAT (6.41%): 36.63 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5752,
+                  0.6229,
+                  0.8378,
+                  0.6457999999999999
+                ],
+                "line_bbox": [
+                  0.5752,
+                  0.6229,
+                  0.8378,
+                  0.6457999999999999
+                ],
+                "text": "SUB_TOTAL: 571.04 EUR",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "36.63",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='36.63'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 571.04 EUR TAX: VAT (6.41%): 36.63 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5749,
+                  0.6641,
+                  0.8765,
+                  0.6894
+                ],
+                "line_bbox": [
+                  0.5749,
+                  0.6641,
+                  0.8765,
+                  0.6894
+                ],
+                "text": "TAX: VAT (6.41%): 36.63 EUR",
+                "lineno": 15,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "593.85",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='593.85'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 593.85 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5745,
+                  0.758,
+                  0.7794,
+                  0.7844
+                ],
+                "line_bbox": [
+                  0.5745,
+                  0.758,
+                  0.7794,
+                  0.7844
+                ],
+                "text": "TOTAL: 593.85 EUR",
+                "lineno": 16,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

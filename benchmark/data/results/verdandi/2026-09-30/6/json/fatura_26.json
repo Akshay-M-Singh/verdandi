@@ -1,0 +1,821 @@
+{
+  "selected_document": {
+    "name": "Brooks LLC",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows an invoice number and date, Brooks LLC as the issuer, a Bill to section, a charge table, and billed totals including SUB_TOTAL, GST, and BALANCE DUE.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "8Y4M7d-568",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.502,
+          0.037,
+          0.767,
+          0.054
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='8Y4M7d-568'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number 8Y4M7d-568 Date: 28-Oct-2006 Due Date :'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4985,
+                0.03749999999999998,
+                0.764,
+                0.054200000000000026
+              ],
+              "line_bbox": [
+                0.4985,
+                0.03749999999999998,
+                0.764,
+                0.054200000000000026
+              ],
+              "text": "Invoice number 8Y4M7d-568",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "28-Oct-2006",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.502,
+          0.054,
+          0.684,
+          0.071
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='28-Oct-2006'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice number 8Y4M7d-568 Date: 28-Oct-2006 Due Date :'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.498,
+                0.052100000000000035,
+                0.673,
+                0.07389999999999997
+              ],
+              "line_bbox": [
+                0.059,
+                0.047900000000000054,
+                0.673,
+                0.07389999999999997
+              ],
+              "text": "CALLLENTY Date: 28-Oct-2006",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Brooks LLC",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.027,
+          0.122,
+          0.148,
+          0.139
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Brooks LLC'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Brooks LLC Address: 9950 Santos Squares Garzafurt, MH'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0265,
+                0.12050000000000005,
+                0.1446,
+                0.13780000000000003
+              ],
+              "line_bbox": [
+                0.0265,
+                0.12050000000000005,
+                0.1446,
+                0.13780000000000003
+              ],
+              "text": "Brooks LLC",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Jerry Wilson",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.024,
+          0.249,
+          0.201,
+          0.267
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Jerry Wilson'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Jerry Wilson' NOT found near region (page 1); nearest text 'www.BrooksLLC.com Bill to:Jerry Wilson 9950 Santos Squares Garzafurt,' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "currency",
+      "value": "EUR",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.816,
+          0.692,
+          0.866,
+          0.709
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='EUR'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 142.21 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6018,
+                0.6917,
+                0.8584,
+                0.7125
+              ],
+              "line_bbox": [
+                0.0265,
+                0.6917,
+                0.8584,
+                0.7125
+              ],
+              "text": "Bank Name State Bank of California SUB_TOTAL: 142.21 EUR",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "142.21",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.605,
+          0.691,
+          0.866,
+          0.709
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='142.21'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 142.21 EUR GST(9%) : 12.80'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6018,
+                0.6917,
+                0.8584,
+                0.7125
+              ],
+              "line_bbox": [
+                0.0265,
+                0.6917,
+                0.8584,
+                0.7125
+              ],
+              "text": "Bank Name State Bank of California SUB_TOTAL: 142.21 EUR",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "12.80",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.605,
+          0.732,
+          0.767,
+          0.749
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='12.80'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 142.21 EUR GST(9%) : 12.80 BALANCE DUE:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5988,
+                0.7312000000000001,
+                0.7581,
+                0.7479
+              ],
+              "line_bbox": [
+                0.0265,
+                0.7312000000000001,
+                0.7581,
+                0.7479
+              ],
+              "text": "Bank Account Number 10448528 GST(9%) : 12.80",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "148.28",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.605,
+          0.764,
+          0.87,
+          0.781
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='148.28'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'GST(9%) : 12.80 BALANCE DUE: 148.28 EUR'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6018,
+                0.7604,
+                0.9233,
+                0.7792
+              ],
+              "line_bbox": [
+                0.6018,
+                0.7604,
+                0.9233,
+                0.7792
+              ],
+              "text": "BALANCE DUE: 148.28 EUR",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Join card free bed.",
+      "quantity": "1.00",
+      "unit_price": "66.05",
+      "amount": "66.05",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.031,
+          0.607,
+          0.931,
+          0.631
+        ]
+      }
+    },
+    {
+      "description": "Could story.",
+      "quantity": "4.00",
+      "unit_price": "19.04",
+      "amount": "76.16",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.031,
+          0.632,
+          0.931,
+          0.651
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1315,
+      "total_tokens": 4970,
+      "elapsed_s": 14.18
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "8Y4M7d-568",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='8Y4M7d-568'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number 8Y4M7d-568 Date: 28-Oct-2006 Due Date :'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4985,
+                  0.03749999999999998,
+                  0.764,
+                  0.054200000000000026
+                ],
+                "line_bbox": [
+                  0.4985,
+                  0.03749999999999998,
+                  0.764,
+                  0.054200000000000026
+                ],
+                "text": "Invoice number 8Y4M7d-568",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "28-Oct-2006",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='28-Oct-2006'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice number 8Y4M7d-568 Date: 28-Oct-2006 Due Date :'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.498,
+                  0.052100000000000035,
+                  0.673,
+                  0.07389999999999997
+                ],
+                "line_bbox": [
+                  0.059,
+                  0.047900000000000054,
+                  0.673,
+                  0.07389999999999997
+                ],
+                "text": "CALLLENTY Date: 28-Oct-2006",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Brooks LLC",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Brooks LLC'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Brooks LLC Address: 9950 Santos Squares Garzafurt, MH'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0265,
+                  0.12050000000000005,
+                  0.1446,
+                  0.13780000000000003
+                ],
+                "line_bbox": [
+                  0.0265,
+                  0.12050000000000005,
+                  0.1446,
+                  0.13780000000000003
+                ],
+                "text": "Brooks LLC",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Jerry Wilson",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Jerry Wilson'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Jerry Wilson' NOT found near region (page 1); nearest text 'www.BrooksLLC.com Bill to:Jerry Wilson 9950 Santos Squares Garzafurt,' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "currency": {
+          "value": "EUR",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='EUR'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 142.21 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6018,
+                  0.6917,
+                  0.8584,
+                  0.7125
+                ],
+                "line_bbox": [
+                  0.0265,
+                  0.6917,
+                  0.8584,
+                  0.7125
+                ],
+                "text": "Bank Name State Bank of California SUB_TOTAL: 142.21 EUR",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "142.21",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='142.21'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 142.21 EUR GST(9%) : 12.80'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6018,
+                  0.6917,
+                  0.8584,
+                  0.7125
+                ],
+                "line_bbox": [
+                  0.0265,
+                  0.6917,
+                  0.8584,
+                  0.7125
+                ],
+                "text": "Bank Name State Bank of California SUB_TOTAL: 142.21 EUR",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "12.80",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='12.80'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 142.21 EUR GST(9%) : 12.80 BALANCE DUE:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5988,
+                  0.7312000000000001,
+                  0.7581,
+                  0.7479
+                ],
+                "line_bbox": [
+                  0.0265,
+                  0.7312000000000001,
+                  0.7581,
+                  0.7479
+                ],
+                "text": "Bank Account Number 10448528 GST(9%) : 12.80",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "148.28",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='148.28'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'GST(9%) : 12.80 BALANCE DUE: 148.28 EUR'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6018,
+                  0.7604,
+                  0.9233,
+                  0.7792
+                ],
+                "line_bbox": [
+                  0.6018,
+                  0.7604,
+                  0.9233,
+                  0.7792
+                ],
+                "text": "BALANCE DUE: 148.28 EUR",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "buyer_name": {
+            "primary": "Jerry Wilson",
+            "secondary": "Jerry Wilson",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "1ea7a80ea137e4477bd8f55de96366371c4dff75536a923d4c9d78c5d797de1e"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2436,
+          "completion_tokens": 276,
+          "total_tokens": 2712,
+          "elapsed_s": 7.5
+        }
+      }
+    }
+  }
+}

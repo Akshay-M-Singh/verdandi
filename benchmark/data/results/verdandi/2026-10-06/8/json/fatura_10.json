@@ -1,0 +1,800 @@
+{
+  "selected_document": {
+    "name": "Robinson-Carson",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows the issuer name Robinson-Carson, a printed invoice number and date, BILL_TO information, a charge table with item amounts, SUB_TOTAL, and BALANCE DUE.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/65-23/967",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.718,
+          0.047,
+          0.996,
+          0.063
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/65-23/967'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 27-Aug-2002 Invoice number INV/65-23/967 *080'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7168,
+                0.047900000000000054,
+                0.9971,
+                0.06040000000000001
+              ],
+              "line_bbox": [
+                0.7168,
+                0.047900000000000054,
+                0.9971,
+                0.06040000000000001
+              ],
+              "text": "Invoice number INV/65-23/967",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "27-Aug-2002",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.718,
+          0.027,
+          0.903,
+          0.043
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='27-Aug-2002'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 27-Aug-2002 Invoice number INV/65-23/967'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7168,
+                0.027100000000000013,
+                0.8938,
+                0.04169999999999996
+              ],
+              "line_bbox": [
+                0.7168,
+                0.027100000000000013,
+                0.8938,
+                0.04169999999999996
+              ],
+              "text": "Date: 27-Aug-2002",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Robinson-Carson",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.143,
+          0.009,
+          0.325,
+          0.025
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Robinson-Carson'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Robinson-Carson' NOT found near region (page 1); nearest text 'Robinson Carson GSTIN 37LTOQASACEIZS Address:28713 Hart Fort Suite' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Joseph Wagner",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.477,
+          0.145,
+          0.602,
+          0.161
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Joseph Wagner'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BILL_TO: Joseph Wagner 8712 Lopez Junction Mitchellberg, TN'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4749,
+                0.14790000000000003,
+                0.6165,
+                0.16249999999999998
+              ],
+              "line_bbox": [
+                0.0354,
+                0.14790000000000003,
+                0.6165,
+                0.16249999999999998
+              ],
+              "text": "28713 Hart Fort Suite 267 Joseph Wagner",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.943,
+          0.611,
+          0.981,
+          0.622
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BALANCE DUE : 1262.37 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.6562,
+                0.9528,
+                0.6771
+              ],
+              "line_bbox": [
+                0.6165,
+                0.6562,
+                0.9528,
+                0.6771
+              ],
+              "text": "BALANCE DUE : 1262.37 USD",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "1242.79",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.621,
+          0.604,
+          0.981,
+          0.622
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='1242.79'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 1242.79 USD BALANCE DUE : 1262.37'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.5979,
+                0.8879,
+                0.6229
+              ],
+              "line_bbox": [
+                0.6165,
+                0.5979,
+                0.8879,
+                0.6229
+              ],
+              "text": "SUB_TOTAL : 1242.79 USD",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1262.37",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.619,
+          0.665,
+          0.981,
+          0.683
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1262.37'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BALANCE DUE : 1262.37 USD Total in words:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.6562,
+                0.9528,
+                0.6771
+              ],
+              "line_bbox": [
+                0.6165,
+                0.6562,
+                0.9528,
+                0.6771
+              ],
+              "text": "BALANCE DUE : 1262.37 USD",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "National identify.",
+      "quantity": "3.00",
+      "unit_price": "63.12",
+      "amount": "189.36",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.049,
+          0.462,
+          0.849,
+          0.482
+        ]
+      }
+    },
+    {
+      "description": "Thought admit system.",
+      "quantity": "4.00",
+      "unit_price": "75.00",
+      "amount": "300.00",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.049,
+          0.484,
+          0.849,
+          0.503
+        ]
+      }
+    },
+    {
+      "description": "Impact factor put.",
+      "quantity": "4.00",
+      "unit_price": "71.92",
+      "amount": "287.68",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.049,
+          0.505,
+          0.849,
+          0.524
+        ]
+      }
+    },
+    {
+      "description": "Free throw.",
+      "quantity": "4.00",
+      "unit_price": "61.05",
+      "amount": "244.20",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.049,
+          0.527,
+          0.849,
+          0.546
+        ]
+      }
+    },
+    {
+      "description": "Including responsibility.",
+      "quantity": "5.00",
+      "unit_price": "44.31",
+      "amount": "221.55",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.049,
+          0.548,
+          0.849,
+          0.567
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 1657,
+      "total_tokens": 8662,
+      "elapsed_s": 13.61
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/65-23/967",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/65-23/967'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 27-Aug-2002 Invoice number INV/65-23/967 *080'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7168,
+                  0.047900000000000054,
+                  0.9971,
+                  0.06040000000000001
+                ],
+                "line_bbox": [
+                  0.7168,
+                  0.047900000000000054,
+                  0.9971,
+                  0.06040000000000001
+                ],
+                "text": "Invoice number INV/65-23/967",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "27-Aug-2002",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='27-Aug-2002'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 27-Aug-2002 Invoice number INV/65-23/967'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7168,
+                  0.027100000000000013,
+                  0.8938,
+                  0.04169999999999996
+                ],
+                "line_bbox": [
+                  0.7168,
+                  0.027100000000000013,
+                  0.8938,
+                  0.04169999999999996
+                ],
+                "text": "Date: 27-Aug-2002",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Robinson-Carson",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Robinson-Carson'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Robinson-Carson' NOT found near region (page 1); nearest text 'Robinson Carson GSTIN 37LTOQASACEIZS Address:28713 Hart Fort Suite' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Joseph Wagner",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Joseph Wagner'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BILL_TO: Joseph Wagner 8712 Lopez Junction Mitchellberg, TN'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4749,
+                  0.14790000000000003,
+                  0.6165,
+                  0.16249999999999998
+                ],
+                "line_bbox": [
+                  0.0354,
+                  0.14790000000000003,
+                  0.6165,
+                  0.16249999999999998
+                ],
+                "text": "28713 Hart Fort Suite 267 Joseph Wagner",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BALANCE DUE : 1262.37 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.6562,
+                  0.9528,
+                  0.6771
+                ],
+                "line_bbox": [
+                  0.6165,
+                  0.6562,
+                  0.9528,
+                  0.6771
+                ],
+                "text": "BALANCE DUE : 1262.37 USD",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "1242.79",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='1242.79'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 1242.79 USD BALANCE DUE : 1262.37'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.5979,
+                  0.8879,
+                  0.6229
+                ],
+                "line_bbox": [
+                  0.6165,
+                  0.5979,
+                  0.8879,
+                  0.6229
+                ],
+                "text": "SUB_TOTAL : 1242.79 USD",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "1262.37",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1262.37'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BALANCE DUE : 1262.37 USD Total in words:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.6562,
+                  0.9528,
+                  0.6771
+                ],
+                "line_bbox": [
+                  0.6165,
+                  0.6562,
+                  0.9528,
+                  0.6771
+                ],
+                "text": "BALANCE DUE : 1262.37 USD",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "vendor_name": {
+            "primary": "Robinson-Carson",
+            "secondary": "Robinson-Carson",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "4205db4500eb468c4896e48d48156d8971a330a33418105c03a0c67fbf5bf5fd"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5790,
+          "completion_tokens": 273,
+          "total_tokens": 6063,
+          "elapsed_s": 5.7
+        }
+      }
+    }
+  }
+}

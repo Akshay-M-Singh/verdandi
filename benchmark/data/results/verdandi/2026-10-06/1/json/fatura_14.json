@@ -1,0 +1,882 @@
+{
+  "selected_document": {
+    "name": "White and Sons",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a TAX INVOICE issued under the printed letterhead 'White and Sons', with invoice number, buyer, dated billing information, itemized charges, subtotal, GST, and total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "3Y5M9d-848",
+      "confidence": 0.93,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.692,
+          0.313,
+          0.925,
+          0.331
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='3Y5M9d-848'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # 3Y5M9d-848 Date: 19-Sep-2020'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6932,
+                0.3125,
+                0.9174,
+                0.32709999999999995
+              ],
+              "line_bbox": [
+                0.0206,
+                0.3104,
+                0.9174,
+                0.33540000000000003
+              ],
+              "text": "Buyer : Kimberly Kent INVOICE # 3Y5M9d-848",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "19-Sep-2020",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.692,
+          0.346,
+          0.863,
+          0.364
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='19-Sep-2020'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # 3Y5M9d-848 Date: 19-Sep-2020 Due Date: 26-Mar-2012'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6932,
+                0.3458,
+                0.8673,
+                0.36040000000000005
+              ],
+              "line_bbox": [
+                0.0177,
+                0.3458,
+                0.8673,
+                0.3687
+              ],
+              "text": "Lake Ryantown, MA 24638 US Date: 19-Sep-2020",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "White and Sons",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.041,
+          0.032,
+          0.207,
+          0.047
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='White and Sons'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'White and Sons'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0354,
+                0.031200000000000006,
+                0.1917,
+                0.050000000000000044
+              ],
+              "line_bbox": [
+                0.0354,
+                0.031200000000000006,
+                0.1917,
+                0.050000000000000044
+              ],
+              "text": "White and Sons",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Kimberly Kent",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.023,
+          0.316,
+          0.225,
+          0.334
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Kimberly Kent'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Buyer : Kimberly Kent 9509 Johnson Causeway Lake'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0206,
+                0.3104,
+                0.236,
+                0.33540000000000003
+              ],
+              "line_bbox": [
+                0.0206,
+                0.3104,
+                0.9174,
+                0.33540000000000003
+              ],
+              "text": "Buyer : Kimberly Kent INVOICE # 3Y5M9d-848",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.714,
+          0.736,
+          0.752,
+          0.751
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 1076.98 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4808,
+                0.7354,
+                0.7552,
+                0.7562
+              ],
+              "line_bbox": [
+                0.4808,
+                0.7354,
+                0.7552,
+                0.7562
+              ],
+              "text": "SUB_TOTAL : 1076.98 USD",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "1076.98",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.486,
+          0.735,
+          0.753,
+          0.752
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='1076.98'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 1076.98 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4808,
+                0.7354,
+                0.7552,
+                0.7562
+              ],
+              "line_bbox": [
+                0.4808,
+                0.7354,
+                0.7552,
+                0.7562
+              ],
+              "text": "SUB_TOTAL : 1076.98 USD",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "96.93",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.488,
+          0.838,
+          0.646,
+          0.853
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='96.93'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'GST(9%) : 96.93'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4838,
+                0.8354,
+                0.6431,
+                0.8542
+              ],
+              "line_bbox": [
+                0.4838,
+                0.8354,
+                0.6431,
+                0.8542
+              ],
+              "text": "GST(9%) : 96.93",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1115.31",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.488,
+          0.932,
+          0.695,
+          0.948
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1115.31'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 1115.31 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4838,
+                0.9292,
+                0.6962,
+                0.9479
+              ],
+              "line_bbox": [
+                0.4838,
+                0.9292,
+                0.6962,
+                0.9479
+              ],
+              "text": "TOTAL: 1115.31 USD",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "By former.",
+      "quantity": "6.00",
+      "unit_price": null,
+      "amount": "67.42",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.574,
+          0.93,
+          0.598
+        ]
+      }
+    },
+    {
+      "description": "Hit cold short.",
+      "quantity": "2.00",
+      "unit_price": null,
+      "amount": "96.64",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.598,
+          0.93,
+          0.619
+        ]
+      }
+    },
+    {
+      "description": "Life deal.",
+      "quantity": "2.00",
+      "unit_price": null,
+      "amount": "22.48",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.619,
+          0.93,
+          0.64
+        ]
+      }
+    },
+    {
+      "description": "Box course voice.",
+      "quantity": "5.00",
+      "unit_price": null,
+      "amount": "57.12",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.64,
+          0.93,
+          0.662
+        ]
+      }
+    },
+    {
+      "description": "Environment simple personal.",
+      "quantity": "3.00",
+      "unit_price": null,
+      "amount": "49.54",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.005,
+          0.662,
+          0.93,
+          0.684
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The charge table headings are ITEMS, QUANTITY, and PRICE; the printed PRICE values are transcribed as each row's amount."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1778,
+      "total_tokens": 5433,
+      "elapsed_s": 10.38
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "3Y5M9d-848",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='3Y5M9d-848'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # 3Y5M9d-848 Date: 19-Sep-2020'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6932,
+                  0.3125,
+                  0.9174,
+                  0.32709999999999995
+                ],
+                "line_bbox": [
+                  0.0206,
+                  0.3104,
+                  0.9174,
+                  0.33540000000000003
+                ],
+                "text": "Buyer : Kimberly Kent INVOICE # 3Y5M9d-848",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "19-Sep-2020",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='19-Sep-2020'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # 3Y5M9d-848 Date: 19-Sep-2020 Due Date: 26-Mar-2012'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6932,
+                  0.3458,
+                  0.8673,
+                  0.36040000000000005
+                ],
+                "line_bbox": [
+                  0.0177,
+                  0.3458,
+                  0.8673,
+                  0.3687
+                ],
+                "text": "Lake Ryantown, MA 24638 US Date: 19-Sep-2020",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "White and Sons",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='White and Sons'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'White and Sons'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0354,
+                  0.031200000000000006,
+                  0.1917,
+                  0.050000000000000044
+                ],
+                "line_bbox": [
+                  0.0354,
+                  0.031200000000000006,
+                  0.1917,
+                  0.050000000000000044
+                ],
+                "text": "White and Sons",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Kimberly Kent",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Kimberly Kent'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Buyer : Kimberly Kent 9509 Johnson Causeway Lake'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0206,
+                  0.3104,
+                  0.236,
+                  0.33540000000000003
+                ],
+                "line_bbox": [
+                  0.0206,
+                  0.3104,
+                  0.9174,
+                  0.33540000000000003
+                ],
+                "text": "Buyer : Kimberly Kent INVOICE # 3Y5M9d-848",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 1076.98 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4808,
+                  0.7354,
+                  0.7552,
+                  0.7562
+                ],
+                "line_bbox": [
+                  0.4808,
+                  0.7354,
+                  0.7552,
+                  0.7562
+                ],
+                "text": "SUB_TOTAL : 1076.98 USD",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "1076.98",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='1076.98'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 1076.98 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4808,
+                  0.7354,
+                  0.7552,
+                  0.7562
+                ],
+                "line_bbox": [
+                  0.4808,
+                  0.7354,
+                  0.7552,
+                  0.7562
+                ],
+                "text": "SUB_TOTAL : 1076.98 USD",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "96.93",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='96.93'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'GST(9%) : 96.93'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4838,
+                  0.8354,
+                  0.6431,
+                  0.8542
+                ],
+                "line_bbox": [
+                  0.4838,
+                  0.8354,
+                  0.6431,
+                  0.8542
+                ],
+                "text": "GST(9%) : 96.93",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "1115.31",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1115.31'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 1115.31 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4838,
+                  0.9292,
+                  0.6962,
+                  0.9479
+                ],
+                "line_bbox": [
+                  0.4838,
+                  0.9292,
+                  0.6962,
+                  0.9479
+                ],
+                "text": "TOTAL: 1115.31 USD",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

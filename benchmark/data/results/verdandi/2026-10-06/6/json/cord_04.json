@@ -1,0 +1,468 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued point-of-sale receipt with itemized food and beverage charges, discounts, a SUBTOTAL, TOTAL, and CARD payment amount. The issuer name and identifying header details are too blurred to read.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "24500",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.28,
+          0.742,
+          0.7,
+          0.765
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='24500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '5,00g 7.00 ITEMS SUBTOTAL 24,500 TOTAL 24,500 CARD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.7354,
+                0.6991,
+                0.7625
+              ],
+              "line_bbox": [
+                0.2714,
+                0.7333000000000001,
+                0.6991,
+                0.7625
+              ],
+              "text": "SUBTOTAL 24,500",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "24500",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.28,
+          0.765,
+          0.7,
+          0.789
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='24500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '7.00 ITEMS SUBTOTAL 24,500 TOTAL 24,500 CARD 24,50U'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.7354,
+                0.6991,
+                0.7625
+              ],
+              "line_bbox": [
+                0.2714,
+                0.7333000000000001,
+                0.6991,
+                0.7625
+              ],
+              "text": "SUBTOTAL 24,500",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "TALAM UNGU",
+      "quantity": "1",
+      "unit_price": "6500",
+      "amount": "6500",
+      "confidence": 0.78,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.334,
+          0.69,
+          0.416
+        ]
+      }
+    },
+    {
+      "description": "AREH - AREH",
+      "quantity": "1",
+      "unit_price": "8000",
+      "amount": "8000",
+      "confidence": 0.77,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.421,
+          0.69,
+          0.495
+        ]
+      }
+    },
+    {
+      "description": "LEMPER",
+      "quantity": "2",
+      "unit_price": "9000",
+      "amount": "18000",
+      "confidence": 0.68,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.501,
+          0.69,
+          0.58
+        ]
+      }
+    },
+    {
+      "description": "MIXA SEDANG",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "0",
+      "confidence": 0.87,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.583,
+          0.69,
+          0.63
+        ]
+      }
+    },
+    {
+      "description": "PLASTIK KECIL",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "0",
+      "confidence": 0.87,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.633,
+          0.69,
+          0.68
+        ]
+      }
+    },
+    {
+      "description": "TEH KOTAK",
+      "quantity": "1",
+      "unit_price": "5000",
+      "amount": "5000",
+      "confidence": 0.9,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.3,
+          0.684,
+          0.69,
+          0.735
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The receipt visibly prints item-level DISC ITEM lines, but these are discounts/modifier lines rather than separate charge items and were not included as line items.",
+    "The currency code or currency symbol is not legible in the image."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 7005,
+      "completion_tokens": 2671,
+      "total_tokens": 9676,
+      "elapsed_s": 23.0
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "24500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='24500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '5,00g 7.00 ITEMS SUBTOTAL 24,500 TOTAL 24,500 CARD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.7354,
+                  0.6991,
+                  0.7625
+                ],
+                "line_bbox": [
+                  0.2714,
+                  0.7333000000000001,
+                  0.6991,
+                  0.7625
+                ],
+                "text": "SUBTOTAL 24,500",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "24500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='24500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '7.00 ITEMS SUBTOTAL 24,500 TOTAL 24,500 CARD 24,50U'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.7354,
+                  0.6991,
+                  0.7625
+                ],
+                "line_bbox": [
+                  0.2714,
+                  0.7333000000000001,
+                  0.6991,
+                  0.7625
+                ],
+                "text": "SUBTOTAL 24,500",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 5
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

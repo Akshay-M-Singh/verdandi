@@ -1,0 +1,85 @@
+# Benchmark extraction profile (docs: benchmark/README.md) — a Verdandi
+# profile used ONLY by benchmark/run_verdandi.py, which points
+# config.DOCUMENTS_PATH here in its own process (benchmark isolation; the
+# shipped rules/documents.yaml is never touched). Field names match
+# benchmark/schema.yaml exactly; keep the two in sync (test-enforced).
+documents:
+- id: benchmark_document
+  label: Benchmark Billing Document
+  description: >-
+    a billing document issued by the vendor: a purchase/tax invoice, a
+    commercial invoice, a receipt, a credit note, or a similar vendor-issued
+    charge document. NOT a purchase order, a packing list, a customs form, a
+    bank statement, or any document without vendor-billed amounts.
+  signals:
+    keywords:
+    - INVOICE
+    - RECEIPT
+    - TAX INVOICE
+    - CREDIT NOTE
+    min_score: 0.3
+  extraction:
+    fields:
+    - name: invoice_number
+      type: str
+      description: the document's own number/reference as printed (invoice no., receipt no., bill no.)
+      threshold: 0.95
+      labels: ["Invoice No", "Invoice Number", "Receipt No", "Bill No", "No", "Number"]
+    - name: invoice_date
+      type: date
+      description: the document's own issue date as printed (not a due date, not a delivery date)
+      threshold: 0.9
+      labels: [Date, Invoice Date, Invoice Dt, Issue Date, Receipt Date, Dated]
+    - name: vendor_name
+      type: name
+      description: the issuing firm's name (seller / merchant / service provider) — the firm that billed the amounts
+      threshold: 0.9
+      labels: [Seller, Vendor, Supplier, From, Merchant, Issued By]
+    - name: buyer_name
+      type: name
+      description: the party being billed (customer / consignee / bill-to) when printed
+      threshold: 0.9
+      labels: [Bill To, Billed To, Buyer, Customer, Consignee, To]
+    - name: currency
+      type: currency
+      description: the ISO 4217 code of the currency the document's final total is printed in (e.g. INR, USD, IDR); infer from symbols/text when the code is not printed verbatim — never a secondary foreign-amount column's currency
+      threshold: 0.9
+      labels: [Currency]
+    - name: subtotal
+      type: amount
+      description: the net/taxable amount before tax when the document prints one
+      threshold: 0.95
+      labels: [Subtotal, Sub Total, Net Amount, Taxable Value, Amount Before Tax]
+    - name: tax_total
+      type: amount
+      description: the total tax amount when printed (sum of components, e.g. CGST + SGST); money only, never the rate
+      threshold: 0.95
+      labels: [Tax, VAT, GST, Service Tax, CGST + SGST]
+    - name: total_amount
+      type: amount
+      description: the document's final total payable (plain number, taxes included) — never a computed value
+      threshold: 0.95
+      labels: [Total, Grand Total, Amount Due, Total Amount, Net Payable]
+    line_items: true
+    line_items_note: >-
+      the document's charge/menu table (the rows below the table header); one
+      line item = one printed row, in printed order. Copy the row's full
+      description; the row's own amount goes in 'amount' (mandatory);
+      quantity and unit price only when printed in the row. Do not include
+      the table header, subtotal or total rows; do not merge or invent rows.
+    line_items_columns:
+    - name: description
+      description: the row's full printed description
+      type: str
+      role: description
+    - name: quantity
+      description: the row's printed quantity when present
+      type: amount
+    - name: unit_price
+      description: the row's printed unit price/rate when present
+      type: amount
+    - name: amount
+      description: the row's own amount/total (plain number)
+      type: amount
+      role: amount
+  allow_no_match: false

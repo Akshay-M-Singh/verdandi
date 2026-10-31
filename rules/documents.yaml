@@ -1,0 +1,384 @@
+# Document identification profiles (architecture.md D25/D28/D29) — data, not code (D10).
+# Each profile = identification + extraction contract for ONE document kind.
+# The pipeline extracts from the profile the user picks (extract.py --document,
+# UI picker; hot-loaded every run). Edit in the UI (Templates tab) or here.
+#
+# IDENTIFICATION (D29, vision-led): the vision model reads the document's OWN
+# name/heading; `keywords` are USER-DEFINED helper words; the pin is the ultimate
+# identification. EXTRACTION (D27/D28): fields = {name, type, description,
+# threshold?, labels?}; types str | date | amount | name | object.
+documents:
+- id: broker_invoice
+  label: Broker Tax Invoice
+  description: the freight forwarder/broker firm's OWN tax invoice for the shipment's logistics services
+    (brokerage/agency, freight handling, warehousing, demurrage — the firm's own charges), NOT supplier
+    bills, packing lists, bills of entry, commercial invoices, third-party terminal/port bills, or other
+    supporting documents
+  signals:
+    keywords:
+    - BROKERAGE
+    - AGENCY CHARGES
+    - FREIGHT & FORWARDING
+    min_score: 0.5
+  extraction:
+    fields:
+    - name: invoice_number
+      type: str
+      description: the broker invoice's OWN number as printed
+      threshold: 0.95
+      labels:
+      - Invoice No
+      - Invoice No.
+      - Invoice Number
+      - Inv No
+    - name: invoice_date
+      type: date
+      description: the broker invoice's OWN date as printed
+      threshold: 0.9
+      labels:
+      - Invoice Date
+      - Inv Date
+      - Invoice Dt
+    - name: boe_number
+      type: str
+      description: the Bill of Entry number on the broker invoice — BOE and BE are the same document (Bill
+        of Entry)
+      threshold: 0.8
+      labels:
+      - BOE
+      - BOE No
+      - BE
+      - BE No
+      - Bill of Entry
+    - name: boe_date
+      type: date
+      description: the Bill of Entry (BOE / BE) date as printed on the broker invoice
+      threshold: 0.8
+      labels:
+      - BOE Date
+      - BE Date
+      - Bill of Entry Date
+    - name: hawb_number
+      type: str
+      description: the HAWB / air waybill number as printed on the broker invoice
+      threshold: 0.8
+      labels:
+      - HAWB
+      - HAWB No
+      - HAWB No.
+      - AWB No
+      - Air Waybill No
+      - HWB
+      - HBL
+    - name: total_invoice_amount
+      type: amount
+      description: the broker invoice's TOTAL amount (plain number, taxes included)
+      threshold: 0.95
+      labels:
+      - Total
+      - Grand Total
+      - Total Invoice Amount
+      - Invoice Total
+    - name: pan
+      type: str
+      description: the pan number of the broker invoice as printed
+      threshold: 0.9
+      labels:
+      - pan
+      - PAN
+    line_items: true
+    line_items_columns:
+    - name: description
+      description: the charge's full printed description
+      type: str
+      role: description
+    - name: hsn_sac
+      description: the row's SAC/HSN code as printed
+      type: str
+    - name: taxable
+      description: the row's taxable value (plain number)
+      type: amount
+    - name: tax
+      description: the row's tax AMOUNT (plain number) — the money value only, never the rate/percentage
+        (CGST/SGST components stay in this cell)
+      type: amount
+    - name: total
+      description: the row's own TOTAL amount (taxes included)
+      type: amount
+      role: amount
+    row_arithmetic:
+    - rule: sum_equals
+      fields:
+      - taxable
+      - tax
+      target: total
+      tolerance: 0.02
+      missing: zero
+    line_items_note: the broker invoice's charge table (the rows of charges below the header); one line
+      item = one printed charge row, in printed order. Copy the row's full description; the row's own
+      TOTAL amount goes in 'total' (mandatory); taxable and tax as plain numbers from the row (split tax
+      cells like CGST/SGST stay as printed). Do not include the table header, subtotal or total rows;
+      do not merge or invent rows.
+    arithmetic:
+    - rule: line_items_sum_to
+      target: total_invoice_amount
+      tolerance: 0.02
+  allow_no_match: false
+- id: bill_of_entry
+  label: BOE
+  description: An indian bill of entry that is boxy in nature, NOT an invoice or movement document— The
+    bill of entry has it's BOE number on every page of the document.
+  signals:
+    keywords:
+    - INDIAN CUSTOMS
+    - BILL OF ENTRY
+    - IEC
+    - BE STATUS
+    min_score: 0.5
+  extraction:
+    fields:
+    - name: boe_number
+      type: str
+      description: The BOE number as printed on the document
+      threshold: 0.9
+      labels:
+      - BE No
+      - BE
+    - name: boe_date
+      type: date
+      description: The BOE date as printed on the document
+      threshold: 0.7
+      labels:
+      - BE Date
+    - name: mot
+      type: str
+      description: The mode of transport as printed on the document
+      threshold: 0.7
+      labels:
+      - MODE
+    - name: hawb_number
+      type: str
+      description: The HAWB number as printed on the document
+      threshold: 0.7
+      labels:
+      - HAWB
+      - HAWB NO
+    - name: invoice_number
+      type: str
+      description: the supplier/commercial invoice number referenced on the bill of entry
+      threshold: 0.7
+      labels:
+      - Invoice No
+      - Invoice No.
+      - Invoice Number
+      - Inv No
+      - Commercial Invoice No
+      - Supplier Invoice No
+      - Bill No
+    line_items: false
+  allow_no_match: true
+- id: vendor_invoice
+  label: Vendor invoice
+  description: a supplier's or vendor's own commercial invoice for goods or services — the seller's
+    bill to its customer, NOT the freight broker's invoice, NOT a bill of entry, packing list or
+    air waybill
+  signals:
+    keywords:
+    - INVOICE
+    min_score: 0.5
+  extraction:
+    fields:
+    - name: invoice_number
+      type: str
+      description: the invoice number printed on the document
+      threshold: 0.9
+      labels:
+      - Invoice No
+      - Invoice Number
+      - Inv No
+    - name: invoice_date
+      type: date
+      description: the invoice date printed on the document
+      threshold: 0.9
+      labels:
+      - Invoice Date
+      - Date
+    - name: vendor_name
+      type: name
+      description: the name of the company that issued the invoice
+      threshold: 0.8
+      labels:
+      - Vendor
+      - Supplier
+      - Seller
+      - Issued by
+    - name: total_amount
+      type: amount
+      description: the invoice total amount payable, taxes included
+      threshold: 0.95
+      labels:
+      - Total
+      - Amount Due
+      - Grand Total
+      - Total Payable
+    line_items: true
+  allow_no_match: true
+- id: air_waybill
+  label: HAWB (House Air Waybill)
+  description: the shipment's AIR WAYBILL — headed 'AIR WAYBILL' or 'HAWB' with carrier branding, showing
+    routing information (from/to, shipment date, piece/weight counts) — NOT the carrier's billing tax
+    invoice, NOT the broker invoice, NOT a packing list
+  signals:
+    keywords:
+    - AIR WAYBILL
+    - HAWB
+    - HOUSE AIR WAYBILL
+    min_score: 0.5
+  extraction:
+    fields:
+    - name: hawb_number
+      type: str
+      description: the house air waybill number as printed
+      threshold: 0.95
+      labels:
+      - HAWB No
+      - HAWB No.
+      - AWB No
+      - Air Waybill No
+      - AWBL No
+      - MAWB No
+    - name: hawb_date
+      type: date
+      description: the air waybill's issue/shipment date as printed
+      threshold: 0.9
+      labels:
+      - HAWB Date
+      - AWB Date
+      - Shipment Date
+      - Date
+    - name: origin
+      type: str
+      description: the shipment's origin city/place as printed
+      threshold: 0.8
+      labels:
+      - Origin
+      - From
+      - Place of Origin
+      - From -
+    - name: destination
+      type: str
+      description: the shipment's destination city/place as printed
+      threshold: 0.8
+      labels:
+      - Destination
+      - To
+      - Place of Destination
+      - To -
+    - name: pieces
+      type: amount
+      description: the number of pieces on the waybill
+      threshold: 0.8
+      labels:
+      - No of Pieces
+      - Pieces
+      - PCS
+      - No. of Pieces
+      - No of Pcs
+    - name: total_weight
+      type: amount
+      description: the total weight on the waybill (KGS)
+      threshold: 0.8
+      labels:
+      - Weight
+      - KGS
+      - Gross Weight
+      - Total Weight
+    line_items: false
+  allow_no_match: true
+- id: commercial_invoice
+  label: Supplier / Commercial Invoice
+  description: the SUPPLIER's own tax invoice for goods or services sold — a product-sale invoice with
+    item quantities, HSN/SAC codes and IGST/CGST/SGST — identified by its supplier letterhead, NOT a freight
+    broker's logistics-service invoice, NOT a bill of entry, NOT an airway bill
+  signals:
+    keywords:
+    - TAX INVOICE
+    - IGST
+    - SUPPLIER
+    min_score: 0.5
+  extraction:
+    fields:
+    - name: invoice_number
+      type: str
+      description: the supplier invoice's number as printed
+      threshold: 0.95
+      labels:
+      - Invoice No
+      - Invoice No.
+      - Invoice Number
+      - Inv No
+      - Bill No
+    - name: invoice_date
+      type: date
+      description: the supplier invoice's date as printed
+      threshold: 0.9
+      labels:
+      - Invoice Date
+      - Inv Date
+      - Invoice Dt
+    - name: supplier_gstin
+      type: str
+      description: the supplier's GSTIN as printed on the invoice
+      threshold: 0.9
+      labels:
+      - GSTIN
+      - GST No
+      - GSTIN No
+      - GST No.
+    - name: total_amount
+      type: amount
+      description: the supplier invoice's TOTAL amount (plain number, taxes included)
+      threshold: 0.95
+      labels:
+      - Total
+      - Grand Total
+      - Invoice Total
+      - Total Amount
+      - Net Payable
+    line_items: true
+    line_items_columns:
+    - name: description
+      description: the product/service row's full printed description
+      type: str
+      role: description
+    - name: hsn_sac
+      description: the row's HSN/SAC code as printed
+      type: str
+    - name: taxable
+      description: the row's taxable value (plain number)
+      type: amount
+    - name: tax
+      description: the row's tax AMOUNT (plain number) — the money value only, never the rate/percentage
+        (CGST/SGST components stay in this cell)
+      type: amount
+    - name: total
+      description: the row's own TOTAL amount (taxes included)
+      type: amount
+      role: amount
+    row_arithmetic:
+    - rule: sum_equals
+      fields:
+      - taxable
+      - tax
+      target: total
+      tolerance: 0.02
+      missing: zero
+    line_items_note: the supplier invoice's item table; one line item = one printed row, in printed order.
+      Copy the row's full description; the row's own TOTAL amount goes in 'total' (mandatory); taxable
+      and tax as printed in the row. Do not include the table header, subtotal or total rows; do not merge
+      or invent rows.
+    arithmetic:
+    - rule: line_items_sum_to
+      target: total_amount
+      tolerance: 0.02
+  allow_no_match: true

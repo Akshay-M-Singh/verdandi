@@ -1,0 +1,519 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows an itemized vendor receipt with product descriptions and amounts, followed by SUB TOTAL 24,500 and TOTAL 24,500. The merchant branding at the top is too blurred to read.",
+    "confidence": 0.94
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "24500",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.61,
+          0.733,
+          0.7,
+          0.757
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='24500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '5,00g 24,500 24,500 24,50U'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.7354,
+                0.6991,
+                0.7625
+              ],
+              "line_bbox": [
+                0.2714,
+                0.7333000000000001,
+                0.6991,
+                0.7625
+              ],
+              "text": "SUBTOTAL 24,500",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "24500",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.61,
+          0.758,
+          0.7,
+          0.781
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='24500'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '24,500 24,500 24,50U'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6165,
+                0.7354,
+                0.6991,
+                0.7625
+              ],
+              "line_bbox": [
+                0.2714,
+                0.7333000000000001,
+                0.6991,
+                0.7625
+              ],
+              "text": "SUBTOTAL 24,500",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "TALAH UNGU",
+      "quantity": "1",
+      "unit_price": "6500",
+      "amount": "6500",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.297,
+          0.33,
+          0.69,
+          0.381
+        ]
+      }
+    },
+    {
+      "description": "DISC ITEM",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "-2600",
+      "confidence": 0.7,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.297,
+          0.374,
+          0.69,
+          0.411
+        ]
+      }
+    },
+    {
+      "description": "AREH - AREH",
+      "quantity": "1",
+      "unit_price": "3000",
+      "amount": "8000",
+      "confidence": 0.61,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.297,
+          0.417,
+          0.69,
+          0.46
+        ]
+      }
+    },
+    {
+      "description": "DISC ITEM",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "-3200",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.297,
+          0.455,
+          0.69,
+          0.491
+        ]
+      }
+    },
+    {
+      "description": "LEMPER",
+      "quantity": "2",
+      "unit_price": "9000",
+      "amount": "18000",
+      "confidence": 0.76,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.494,
+          0.69,
+          0.546
+        ]
+      }
+    },
+    {
+      "description": "DISC ITEM",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "-7200",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.29,
+          0.54,
+          0.69,
+          0.577
+        ]
+      }
+    },
+    {
+      "description": "MIKA SEDANG",
+      "quantity": "1",
+      "unit_price": "0",
+      "amount": "0",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.285,
+          0.577,
+          0.69,
+          0.616
+        ]
+      }
+    },
+    {
+      "description": "PLASTIK KECIL",
+      "quantity": "1",
+      "unit_price": "0",
+      "amount": "0",
+      "confidence": 0.82,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.28,
+          0.619,
+          0.69,
+          0.659
+        ]
+      }
+    },
+    {
+      "description": "TEH KOTAK",
+      "quantity": "1",
+      "unit_price": "5000",
+      "amount": "5000",
+      "confidence": 0.83,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.28,
+          0.661,
+          0.69,
+          0.707
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The merchant name and receipt details near the top of the receipt are blurred and unreadable.",
+    "The receipt does not visibly print a currency symbol or currency code."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 3151,
+      "total_tokens": 10395,
+      "elapsed_s": 30.56
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "24500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='24500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '5,00g 24,500 24,500 24,50U'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.7354,
+                  0.6991,
+                  0.7625
+                ],
+                "line_bbox": [
+                  0.2714,
+                  0.7333000000000001,
+                  0.6991,
+                  0.7625
+                ],
+                "text": "SUBTOTAL 24,500",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "24500",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='24500'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '24,500 24,500 24,50U'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6165,
+                  0.7354,
+                  0.6991,
+                  0.7625
+                ],
+                "line_bbox": [
+                  0.2714,
+                  0.7333000000000001,
+                  0.6991,
+                  0.7625
+                ],
+                "text": "SUBTOTAL 24,500",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 6
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

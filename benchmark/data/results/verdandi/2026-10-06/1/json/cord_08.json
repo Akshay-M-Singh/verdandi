@@ -1,0 +1,574 @@
+{
+  "selected_document": {
+    "name": null,
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows a vendor-style receipt with an itemized food and beverage charge table, subtotal, service charge, tax, and final total. The issuer name at the top is too blurred to read.",
+    "confidence": 0.96
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "1343000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.264,
+          0.805,
+          0.66,
+          0.824
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='1343000'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BEVERAGES 60,000 OTHERS 70,000 SUBTOTAL 1,343,000 SERVICE CHARGE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4865,
+                0.7974,
+                0.6167,
+                0.8213
+              ],
+              "line_bbox": [
+                0.2594,
+                0.7974,
+                0.6167,
+                0.8213
+              ],
+              "text": "SUBTOTAL 1,343,000",
+              "lineno": 18,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "142358",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.264,
+          0.844,
+          0.66,
+          0.864
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='142358'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUBTOTAL 1,343,000 SERVICE CHARGE 80, 580\u015a\u0161 Tax 10%'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5131,
+                0.8432999999999999,
+                0.6167,
+                0.865
+              ],
+              "line_bbox": [
+                0.2595,
+                0.8414,
+                0.6167,
+                0.865
+              ],
+              "text": "Tax 10% 142,358",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1565938",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.263,
+          0.867,
+          0.67,
+          0.9
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1565938'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SERVICE CHARGE 80, 580\u015a\u0161 Tax 10% 142,358 DU'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.2596,
+                0.8646,
+                0.6018,
+                0.9083
+              ],
+              "line_bbox": [
+                0.2596,
+                0.8646,
+                0.6018,
+                0.9083
+              ],
+              "text": "DU 1,565,938",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "UDANG RE",
+      "quantity": "2",
+      "unit_price": "216000",
+      "amount": "432000",
+      "confidence": 0.7,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.224,
+          0.402,
+          0.66,
+          0.428
+        ]
+      }
+    },
+    {
+      "description": "AYM GR JIN NJAN",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "108000",
+      "confidence": 0.72,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.224,
+          0.448,
+          0.66,
+          0.475
+        ]
+      }
+    },
+    {
+      "description": "SAPO TH SEAFOOD",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "172000",
+      "confidence": 0.92,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.224,
+          0.494,
+          0.66,
+          0.522
+        ]
+      }
+    },
+    {
+      "description": "PCHAI 3",
+      "quantity": "2",
+      "unit_price": "111000",
+      "amount": "222000",
+      "confidence": 0.95,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.224,
+          0.538,
+          0.67,
+          0.565
+        ]
+      }
+    },
+    {
+      "description": "GURAME FILLET M ASAM MANIS",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "163000",
+      "confidence": 0.88,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.224,
+          0.581,
+          0.67,
+          0.623
+        ]
+      }
+    },
+    {
+      "description": "BIHUN GORENG JJ",
+      "quantity": "1",
+      "unit_price": null,
+      "amount": "116000",
+      "confidence": 0.93,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.224,
+          0.626,
+          0.67,
+          0.653
+        ]
+      }
+    },
+    {
+      "description": "ICED TEA",
+      "quantity": "5",
+      "unit_price": "12000",
+      "amount": "60000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.224,
+          0.671,
+          0.67,
+          0.699
+        ]
+      }
+    },
+    {
+      "description": "NASI PUTIH",
+      "quantity": "7",
+      "unit_price": "10000",
+      "amount": "70000",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.224,
+          0.699,
+          0.67,
+          0.726
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The receipt's top header, including the issuer name, invoice/reference number, and date, is heavily blurred and unreadable.",
+    "Currency is not printed visibly on the receipt."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2625,
+      "total_tokens": 6280,
+      "elapsed_s": 17.78
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "vendor_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "buyer_name": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "1343000",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='1343000'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BEVERAGES 60,000 OTHERS 70,000 SUBTOTAL 1,343,000 SERVICE CHARGE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4865,
+                  0.7974,
+                  0.6167,
+                  0.8213
+                ],
+                "line_bbox": [
+                  0.2594,
+                  0.7974,
+                  0.6167,
+                  0.8213
+                ],
+                "text": "SUBTOTAL 1,343,000",
+                "lineno": 18,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "142358",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='142358'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUBTOTAL 1,343,000 SERVICE CHARGE 80, 580\u015a\u0161 Tax 10%'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5131,
+                  0.8432999999999999,
+                  0.6167,
+                  0.865
+                ],
+                "line_bbox": [
+                  0.2595,
+                  0.8414,
+                  0.6167,
+                  0.865
+                ],
+                "text": "Tax 10% 142,358",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "1565938",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1565938'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SERVICE CHARGE 80, 580\u015a\u0161 Tax 10% 142,358 DU'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.2596,
+                  0.8646,
+                  0.6018,
+                  0.9083
+                ],
+                "line_bbox": [
+                  0.2596,
+                  0.8646,
+                  0.6018,
+                  0.9083
+                ],
+                "text": "DU 1,565,938",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 1
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

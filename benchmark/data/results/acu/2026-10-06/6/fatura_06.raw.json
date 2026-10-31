@@ -1,0 +1,2307 @@
+{
+  "id": "38e17815-b937-4ac6-bd34-b4b1f61709a4",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-06T10:07:00Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "# TAX INVOICE\n\nBerg, Ward and Wright\nAddress:5776 Whitney Meadow\nWest Adriennebury, ID 40049 US\n\n\n![](figures/1.1)\n\n\nBuyer :Joshua Jimenez\n5776 Whitney Meadow\n\nWest Adriennebury, ID 40049 US\n\nTel:+(621)125-7877\n\nEmail:daniel15@example.org\n\nSite:http://gonzales-lee.info/\n\nGSTIN O4AROPO98743125,\n\nDue Date : 27-Jul-1994\n\nGSTINO4ARCPD98743125\n\nDate: 02-Apr-1997\n\nINVOICE # INV18097255\n\n\n<table>\n<tr>\n<th>Description</th>\n<th>QUANTITY</th>\n<th>PRICE</th>\n</tr>\n<tr>\n<td>Cell guy church.</td>\n<td>2.00</td>\n<td>$97.38</td>\n</tr>\n<tr>\n<td>Consider loss TV.</td>\n<td>4.00</td>\n<td>$34.59</td>\n</tr>\n<tr>\n<td>Team lay could.</td>\n<td>2.00</td>\n<td>$12.41</td>\n</tr>\n<tr>\n<td>Usually.</td>\n<td>3.00</td>\n<td>$8.44</td>\n</tr>\n</table>\n\n\nSUB_TOTAL : 383.26 $\n\nTAX:VAT (6.25%): 23.95 $\n\nTOTAL : 392.61 $\n\nTotal in words: three hundred and nin-\nety-two point six one\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "valueString": "INV18097255",
+            "spans": [
+              {
+                "offset": 371,
+                "length": 11
+              }
+            ],
+            "confidence": 0.98,
+            "source": "D(1,4.3928,4.2769,5.4353,4.2760,5.4353,4.4702,4.3928,4.4710)"
+          },
+          "invoice_date": {
+            "type": "date",
+            "valueDate": "1997-04-02",
+            "spans": [
+              {
+                "offset": 348,
+                "length": 11
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,4.0016,3.6340,4.9390,3.6335,4.9391,3.8311,4.0017,3.8316)"
+          },
+          "vendor_name": {
+            "type": "string",
+            "valueString": "Berg, Ward and Wright",
+            "spans": [
+              {
+                "offset": 15,
+                "length": 21
+              }
+            ],
+            "confidence": 0.923,
+            "source": "D(1,0.0219,1.8558,1.8390,1.8509,1.8396,2.0729,0.0225,2.0778)"
+          },
+          "buyer_name": {
+            "type": "string",
+            "valueString": "Joshua Jimenez",
+            "spans": [
+              {
+                "offset": 124,
+                "length": 14
+              }
+            ],
+            "confidence": 0.968,
+            "source": "D(1,5.1608,1.8005,6.4804,1.8001,6.4805,1.9951,5.1609,1.9955)"
+          },
+          "currency": {
+            "type": "string",
+            "valueString": "USD",
+            "spans": [
+              {
+                "offset": 728,
+                "length": 9
+              }
+            ],
+            "confidence": 0.316,
+            "source": "D(1,5.6007,7.7588,6.6203,7.7637,6.6204,7.9588,5.6007,7.9533)"
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 383.26,
+            "spans": [
+              {
+                "offset": 740,
+                "length": 6
+              }
+            ],
+            "confidence": 0.979,
+            "source": "D(1,6.7679,7.7643,7.2826,7.7661,7.2826,7.9651,6.7679,7.9599)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 23.95,
+            "spans": [
+              {
+                "offset": 767,
+                "length": 5
+              }
+            ],
+            "confidence": 0.973,
+            "source": "D(1,7.1047,9.0124,7.5326,9.0131,7.5326,9.2162,7.1047,9.2162)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 392.61,
+            "spans": [
+              {
+                "offset": 784,
+                "length": 6
+              }
+            ],
+            "confidence": 0.973,
+            "source": "D(1,6.3208,9.6274,6.8248,9.6274,6.8248,9.8101,6.3208,9.8101)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Cell guy church.",
+                    "spans": [
+                      {
+                        "offset": 467,
+                        "length": 16
+                      }
+                    ],
+                    "confidence": 0.372,
+                    "source": "D(1,0.1588,6.1891,1.1843,6.1953,1.1833,6.3703,0.1578,6.3641)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 493,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.884,
+                    "source": "D(1,3.6235,6.2012,3.9342,6.2018,3.9342,6.3502,3.6235,6.3496)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 97.38,
+                    "spans": [
+                      {
+                        "offset": 507,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.782,
+                    "source": "D(1,5.7097,6.1936,6.1709,6.1970,6.1697,6.3585,5.7085,6.3551)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Consider loss TV.",
+                    "spans": [
+                      {
+                        "offset": 534,
+                        "length": 17
+                      }
+                    ],
+                    "confidence": 0.421,
+                    "source": "D(1,0.1606,6.4331,1.2747,6.4440,1.2730,6.6190,0.1589,6.6082)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 561,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.823,
+                    "source": "D(1,3.6255,6.4556,3.9262,6.4556,3.9262,6.6040,3.6255,6.6040)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 34.59,
+                    "spans": [
+                      {
+                        "offset": 575,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.778,
+                    "source": "D(1,5.7017,6.4427,6.1717,6.4486,6.1696,6.6147,5.6996,6.6088)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Team lay could.",
+                    "spans": [
+                      {
+                        "offset": 602,
+                        "length": 15
+                      }
+                    ],
+                    "confidence": 0.465,
+                    "source": "D(1,0.1612,6.6929,1.1604,6.6948,1.1601,6.8629,0.1609,6.8610)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 627,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.821,
+                    "source": "D(1,3.6276,6.6980,3.9262,6.6980,3.9262,6.8465,3.6276,6.8465)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 12.41,
+                    "spans": [
+                      {
+                        "offset": 641,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.777,
+                    "source": "D(1,5.6976,6.6931,6.1535,6.6930,6.1535,6.8522,5.6976,6.8523)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "Usually.",
+                    "spans": [
+                      {
+                        "offset": 668,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.537,
+                    "source": "D(1,0.1635,6.9401,0.6809,6.9563,0.6756,7.1257,0.1582,7.1095)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 686,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.821,
+                    "source": "D(1,3.6276,6.9552,3.9262,6.9501,3.9262,7.0986,3.6276,7.1037)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 8.44,
+                    "spans": [
+                      {
+                        "offset": 700,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.782,
+                    "source": "D(1,5.7015,6.9352,6.0890,6.9350,6.0891,7.1022,5.7016,7.1025)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0.0007972363,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 855
+              }
+            ],
+            "words": [
+              {
+                "content": "TAX",
+                "span": {
+                  "offset": 2,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,0.0083,0.6592,0.4987,0.6569,0.4987,0.9019,0.0083,0.9007)"
+              },
+              {
+                "content": "INVOICE",
+                "span": {
+                  "offset": 6,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,0.575,0.6566,1.6161,0.6565,1.6161,0.9044,0.5751,0.9021)"
+              },
+              {
+                "content": "Berg",
+                "span": {
+                  "offset": 15,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,0.0224,1.8597,0.4252,1.856,0.4253,2.0728,0.0225,2.0734)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 19,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,0.4179,1.8561,0.4655,1.8556,0.4656,2.0727,0.418,2.0728)"
+              },
+              {
+                "content": "Ward",
+                "span": {
+                  "offset": 21,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,0.4948,1.8554,0.9233,1.8534,0.9234,2.0724,0.4949,2.0727)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 26,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,0.9636,1.8533,1.2566,1.8527,1.2567,2.0723,0.9637,2.0724)"
+              },
+              {
+                "content": "Wright",
+                "span": {
+                  "offset": 30,
+                  "length": 6
+                },
+                "confidence": 0.998,
+                "source": "D(1,1.2859,1.8528,1.839,1.855,1.839,2.0729,1.286,2.0723)"
+              },
+              {
+                "content": "Address",
+                "span": {
+                  "offset": 37,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,0.0086,2.2319,0.6744,2.2291,0.6744,2.422,0.0088,2.4188)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 44,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,0.684,2.2291,0.7322,2.2289,0.7323,2.4223,0.6841,2.422)"
+              },
+              {
+                "content": "5776",
+                "span": {
+                  "offset": 45,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,0.7322,2.2289,1.1085,2.2281,1.1086,2.4233,0.7323,2.4223)"
+              },
+              {
+                "content": "Whitney",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,1.1439,2.2281,1.8096,2.2276,1.8097,2.4241,1.144,2.4233)"
+              },
+              {
+                "content": "Meadow",
+                "span": {
+                  "offset": 58,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.8546,2.2277,2.53,2.229,2.53,2.423,1.8547,2.424)"
+              },
+              {
+                "content": "West",
+                "span": {
+                  "offset": 65,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.008,2.4307,0.4226,2.429,0.4234,2.6244,0.0085,2.6223)"
+              },
+              {
+                "content": "Adriennebury",
+                "span": {
+                  "offset": 70,
+                  "length": 12
+                },
+                "confidence": 0.995,
+                "source": "D(1,0.4525,2.4289,1.5538,2.4252,1.5552,2.6271,0.4533,2.6246)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 82,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.5472,2.4252,1.587,2.4251,1.5884,2.6272,1.5486,2.6271)"
+              },
+              {
+                "content": "ID",
+                "span": {
+                  "offset": 84,
+                  "length": 2
+                },
+                "confidence": 0.985,
+                "source": "D(1,1.6467,2.425,1.8026,2.4246,1.8042,2.627,1.6482,2.6272)"
+              },
+              {
+                "content": "40049",
+                "span": {
+                  "offset": 87,
+                  "length": 5
+                },
+                "confidence": 0.926,
+                "source": "D(1,1.8424,2.4245,2.3168,2.4238,2.3186,2.6251,1.844,2.6269)"
+              },
+              {
+                "content": "US",
+                "span": {
+                  "offset": 93,
+                  "length": 2
+                },
+                "confidence": 0.98,
+                "source": "D(1,2.3632,2.4237,2.6087,2.4233,2.6107,2.624,2.3651,2.625)"
+              },
+              {
+                "content": "Buyer",
+                "span": {
+                  "offset": 117,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,4.5798,1.8036,5.0742,1.8017,5.0742,1.996,4.5798,1.9986)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 123,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,5.116,1.8015,5.1609,1.8014,5.1609,1.9955,5.116,1.9957)"
+              },
+              {
+                "content": "Joshua",
+                "span": {
+                  "offset": 124,
+                  "length": 6
+                },
+                "confidence": 0.985,
+                "source": "D(1,5.1609,1.8014,5.7484,1.8004,5.7484,1.9935,5.1609,1.9955)"
+              },
+              {
+                "content": "Jimenez",
+                "span": {
+                  "offset": 131,
+                  "length": 7
+                },
+                "confidence": 0.984,
+                "source": "D(1,5.803,1.8003,6.4804,1.8009,6.4804,1.9923,5.803,1.9933)"
+              },
+              {
+                "content": "5776",
+                "span": {
+                  "offset": 139,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,4.5839,2.0039,4.9663,2.0032,4.9663,2.1973,4.5839,2.1974)"
+              },
+              {
+                "content": "Whitney",
+                "span": {
+                  "offset": 144,
+                  "length": 7
+                },
+                "confidence": 0.989,
+                "source": "D(1,5.0017,2.0031,5.6572,2.0038,5.6572,2.1973,5.0017,2.1973)"
+              },
+              {
+                "content": "Meadow",
+                "span": {
+                  "offset": 152,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,5.7087,2.0039,6.3835,2.0078,6.3835,2.1976,5.7087,2.1973)"
+              },
+              {
+                "content": "West",
+                "span": {
+                  "offset": 160,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,4.5839,2.1975,4.9955,2.1976,4.9955,2.397,4.5839,2.3966)"
+              },
+              {
+                "content": "Adriennebury",
+                "span": {
+                  "offset": 165,
+                  "length": 12
+                },
+                "confidence": 0.995,
+                "source": "D(1,5.0287,2.1976,6.1309,2.1958,6.1309,2.3967,5.0287,2.397)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 177,
+                  "length": 1
+                },
+                "confidence": 0.987,
+                "source": "D(1,6.1242,2.1959,6.1607,2.1958,6.1607,2.3967,6.1242,2.3967)"
+              },
+              {
+                "content": "ID",
+                "span": {
+                  "offset": 179,
+                  "length": 2
+                },
+                "confidence": 0.971,
+                "source": "D(1,6.2238,2.1956,6.3798,2.195,6.3798,2.3964,6.2238,2.3966)"
+              },
+              {
+                "content": "40049",
+                "span": {
+                  "offset": 182,
+                  "length": 5
+                },
+                "confidence": 0.969,
+                "source": "D(1,6.423,2.1948,6.8977,2.1921,6.8977,2.3949,6.423,2.3962)"
+              },
+              {
+                "content": "US",
+                "span": {
+                  "offset": 188,
+                  "length": 2
+                },
+                "confidence": 0.993,
+                "source": "D(1,6.9475,2.1919,7.1865,2.1905,7.1865,2.394,6.9475,2.3947)"
+              },
+              {
+                "content": "Tel",
+                "span": {
+                  "offset": 192,
+                  "length": 3
+                },
+                "confidence": 0.989,
+                "source": "D(1,4.5839,2.398,4.8304,2.3988,4.8304,2.593,4.5839,2.5933)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 195,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,4.8399,2.3989,4.8778,2.399,4.8778,2.5929,4.8399,2.5929)"
+              },
+              {
+                "content": "+",
+                "span": {
+                  "offset": 196,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.8905,2.399,4.9758,2.3993,4.9758,2.5927,4.8905,2.5929)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 197,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.9821,2.3993,5.0359,2.3995,5.0359,2.5927,4.9821,2.5927)"
+              },
+              {
+                "content": "621",
+                "span": {
+                  "offset": 198,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,5.0422,2.3996,5.2982,2.4003,5.2982,2.5922,5.0422,2.5926)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 201,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,5.3172,2.4003,5.3709,2.4005,5.3709,2.5921,5.3172,2.5922)"
+              },
+              {
+                "content": "125-7877",
+                "span": {
+                  "offset": 202,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,5.3867,2.4005,6.1011,2.402,6.1011,2.5908,5.3867,2.5921)"
+              },
+              {
+                "content": "Email",
+                "span": {
+                  "offset": 212,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,4.5879,2.5936,5.0285,2.5971,5.0285,2.7928,4.5879,2.789)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 217,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,5.0385,2.5972,5.0782,2.5975,5.0782,2.7932,5.0385,2.7928)"
+              },
+              {
+                "content": "daniel15@example.org",
+                "span": {
+                  "offset": 218,
+                  "length": 20
+                },
+                "confidence": 0.995,
+                "source": "D(1,5.0815,2.5975,6.9202,2.608,6.9202,2.81,5.0815,2.7932)"
+              },
+              {
+                "content": "Site",
+                "span": {
+                  "offset": 240,
+                  "length": 4
+                },
+                "confidence": 0.878,
+                "source": "D(1,4.5839,2.801,4.8921,2.8012,4.8921,2.9999,4.5839,2.9998)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 244,
+                  "length": 1
+                },
+                "confidence": 0.957,
+                "source": "D(1,4.9052,2.8012,4.9445,2.8013,4.9445,2.9999,4.9052,2.9999)"
+              },
+              {
+                "content": "http://gonzales-lee.info/",
+                "span": {
+                  "offset": 245,
+                  "length": 25
+                },
+                "confidence": 0.716,
+                "source": "D(1,4.9609,2.8013,6.8395,2.8021,6.8395,2.9955,4.9609,2.9999)"
+              },
+              {
+                "content": "GSTIN",
+                "span": {
+                  "offset": 272,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,0.0084,3.3639,0.4993,3.3617,0.4996,3.5589,0.0088,3.5578)"
+              },
+              {
+                "content": "O4AROPO98743125",
+                "span": {
+                  "offset": 278,
+                  "length": 15
+                },
+                "confidence": 0.917,
+                "source": "D(1,0.5527,3.3614,2.1357,3.3629,2.1357,3.5621,0.5531,3.559)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 293,
+                  "length": 1
+                },
+                "confidence": 0.937,
+                "source": "D(1,2.1357,3.3629,2.1991,3.3632,2.1991,3.5622,2.1357,3.5621)"
+              },
+              {
+                "content": "Due",
+                "span": {
+                  "offset": 296,
+                  "length": 3
+                },
+                "confidence": 0.991,
+                "source": "D(1,3.5428,3.2119,3.871,3.2113,3.871,3.3967,3.5428,3.3958)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 300,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,3.9232,3.2112,4.2759,3.2105,4.2759,3.3974,3.9232,3.3968)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 305,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,4.325,3.2105,4.374,3.2104,4.374,3.3974,4.325,3.3974)"
+              },
+              {
+                "content": "27",
+                "span": {
+                  "offset": 307,
+                  "length": 2
+                },
+                "confidence": 0.989,
+                "source": "D(1,4.417,3.2103,4.6071,3.21,4.6071,3.3973,4.417,3.3974)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 309,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.6163,3.21,4.6838,3.2098,4.6838,3.3973,4.6163,3.3973)"
+              },
+              {
+                "content": "Jul",
+                "span": {
+                  "offset": 310,
+                  "length": 3
+                },
+                "confidence": 0.935,
+                "source": "D(1,4.6716,3.2099,4.9108,3.2095,4.9108,3.3967,4.6716,3.3973)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 313,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,4.9139,3.2095,4.9721,3.2094,4.9721,3.3965,4.9139,3.3967)"
+              },
+              {
+                "content": "1994",
+                "span": {
+                  "offset": 314,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,4.9691,3.2094,5.3586,3.2087,5.3586,3.3952,4.9691,3.3965)"
+              },
+              {
+                "content": "GSTINO4ARCPD98743125",
+                "span": {
+                  "offset": 320,
+                  "length": 20
+                },
+                "confidence": 0.531,
+                "source": "D(1,5.8267,3.3612,7.937,3.3573,7.937,3.5585,5.8267,3.5544)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 342,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.5428,3.6323,3.9112,3.6362,3.9112,3.83,3.5428,3.8263)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 346,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,3.9145,3.6362,3.9565,3.6367,3.9565,3.8305,3.9145,3.8301)"
+              },
+              {
+                "content": "02",
+                "span": {
+                  "offset": 348,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.0017,3.6372,4.1892,3.6374,4.1892,3.8312,4.0017,3.831)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 350,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.1924,3.6374,4.2506,3.6374,4.2506,3.8313,4.1924,3.8312)"
+              },
+              {
+                "content": "Apr",
+                "span": {
+                  "offset": 351,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,4.2344,3.6374,4.5156,3.6372,4.5156,3.8312,4.2344,3.8313)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 354,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.5091,3.6373,4.5641,3.6368,4.5641,3.8308,4.5091,3.8313)"
+              },
+              {
+                "content": "1997",
+                "span": {
+                  "offset": 355,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.5705,3.6368,4.939,3.6335,4.939,3.8279,4.5705,3.8308)"
+              },
+              {
+                "content": "INVOICE",
+                "span": {
+                  "offset": 361,
+                  "length": 7
+                },
+                "confidence": 0.988,
+                "source": "D(1,3.5186,4.2723,4.1985,4.2765,4.1985,4.4706,3.5186,4.4665)"
+              },
+              {
+                "content": "#",
+                "span": {
+                  "offset": 369,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.2471,4.2766,4.3442,4.2768,4.3442,4.4709,4.2471,4.4707)"
+              },
+              {
+                "content": "INV18097255",
+                "span": {
+                  "offset": 371,
+                  "length": 11
+                },
+                "confidence": 0.868,
+                "source": "D(1,4.3928,4.2769,5.4353,4.276,5.4353,4.4702,4.3928,4.471)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 402,
+                  "length": 11
+                },
+                "confidence": 0.984,
+                "source": "D(1,0.1612,5.9482,0.8817,5.9553,0.8817,6.1166,0.1615,6.1111)"
+              },
+              {
+                "content": "QUANTITY",
+                "span": {
+                  "offset": 423,
+                  "length": 8
+                },
+                "confidence": 0.97,
+                "source": "D(1,3.6276,5.9445,4.3619,5.9384,4.3619,6.0983,3.6276,6.1043)"
+              },
+              {
+                "content": "PRICE",
+                "span": {
+                  "offset": 441,
+                  "length": 5
+                },
+                "confidence": 0.961,
+                "source": "D(1,5.7016,5.9441,6.1616,5.9457,6.1616,6.1056,5.7016,6.1039)"
+              },
+              {
+                "content": "Cell",
+                "span": {
+                  "offset": 467,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,0.1588,6.1913,0.412,6.1943,0.4126,6.3656,0.1596,6.3626)"
+              },
+              {
+                "content": "guy",
+                "span": {
+                  "offset": 472,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,0.4353,6.1945,0.6827,6.196,0.6831,6.3673,0.4359,6.3658)"
+              },
+              {
+                "content": "church",
+                "span": {
+                  "offset": 476,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,0.703,6.1961,1.1251,6.1956,1.1251,6.3669,0.7034,6.3674)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 482,
+                  "length": 1
+                },
+                "confidence": 0.943,
+                "source": "D(1,1.1309,6.1955,1.1833,6.1953,1.1833,6.3666,1.1309,6.3668)"
+              },
+              {
+                "content": "2.00",
+                "span": {
+                  "offset": 493,
+                  "length": 4
+                },
+                "confidence": 0.96,
+                "source": "D(1,3.6235,6.2012,3.9342,6.2018,3.9342,6.3502,3.6235,6.3496)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 507,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.7097,6.1952,5.7907,6.1942,5.7907,6.3541,5.7097,6.3551)"
+              },
+              {
+                "content": "97.38",
+                "span": {
+                  "offset": 508,
+                  "length": 5
+                },
+                "confidence": 0.97,
+                "source": "D(1,5.7959,6.1942,6.1697,6.197,6.1697,6.3569,5.7959,6.3541)"
+              },
+              {
+                "content": "Consider",
+                "span": {
+                  "offset": 534,
+                  "length": 8
+                },
+                "confidence": 0.991,
+                "source": "D(1,0.1605,6.4483,0.7355,6.441,0.736,6.6009,0.1615,6.6082)"
+              },
+              {
+                "content": "loss",
+                "span": {
+                  "offset": 543,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,0.7596,6.4409,1.0163,6.4415,1.0166,6.6013,0.76,6.6008)"
+              },
+              {
+                "content": "TV",
+                "span": {
+                  "offset": 548,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,1.0511,6.4418,1.2356,6.4436,1.2357,6.6035,1.0513,6.6017)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 550,
+                  "length": 1
+                },
+                "confidence": 0.911,
+                "source": "D(1,1.2223,6.4435,1.2731,6.444,1.2731,6.6039,1.2223,6.6034)"
+              },
+              {
+                "content": "4.00",
+                "span": {
+                  "offset": 561,
+                  "length": 4
+                },
+                "confidence": 0.964,
+                "source": "D(1,3.6255,6.4556,3.9262,6.4556,3.9262,6.604,3.6255,6.604)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 575,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,5.7016,6.4489,5.792,6.4444,5.792,6.6042,5.7016,6.6088)"
+              },
+              {
+                "content": "34.59",
+                "span": {
+                  "offset": 576,
+                  "length": 5
+                },
+                "confidence": 0.976,
+                "source": "D(1,5.8,6.444,6.1697,6.4486,6.1697,6.6085,5.8,6.6038)"
+              },
+              {
+                "content": "Team",
+                "span": {
+                  "offset": 602,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.1612,6.6942,0.5191,6.699,0.52,6.8614,0.162,6.8564)"
+              },
+              {
+                "content": "lay",
+                "span": {
+                  "offset": 607,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.5625,6.699,0.7469,6.6991,0.7478,6.8621,0.5634,6.8615)"
+              },
+              {
+                "content": "could",
+                "span": {
+                  "offset": 611,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,0.7794,6.6991,1.1103,6.6954,1.1113,6.8597,0.7804,6.8621)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 616,
+                  "length": 1
+                },
+                "confidence": 0.876,
+                "source": "D(1,1.113,6.6954,1.1591,6.6948,1.1601,6.8592,1.114,6.8596)"
+              },
+              {
+                "content": "2.00",
+                "span": {
+                  "offset": 627,
+                  "length": 4
+                },
+                "confidence": 0.946,
+                "source": "D(1,3.6276,6.698,3.9262,6.698,3.9262,6.8465,3.6276,6.8465)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 641,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,5.6976,6.695,5.7908,6.6934,5.7908,6.8522,5.6976,6.8522)"
+              },
+              {
+                "content": "12.41",
+                "span": {
+                  "offset": 642,
+                  "length": 5
+                },
+                "confidence": 0.946,
+                "source": "D(1,5.8064,6.6932,6.1535,6.693,6.1535,6.8522,5.8064,6.8522)"
+              },
+              {
+                "content": "Usually",
+                "span": {
+                  "offset": 668,
+                  "length": 7
+                },
+                "confidence": 0.928,
+                "source": "D(1,0.1632,6.9498,0.6358,6.9549,0.6358,7.1148,0.1633,7.1097)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 675,
+                  "length": 1
+                },
+                "confidence": 0.943,
+                "source": "D(1,0.6278,6.9546,0.6759,6.9561,0.6759,7.116,0.6278,7.1145)"
+              },
+              {
+                "content": "3.00",
+                "span": {
+                  "offset": 686,
+                  "length": 4
+                },
+                "confidence": 0.979,
+                "source": "D(1,3.6276,6.9552,3.9262,6.9501,3.9262,7.0986,3.6276,7.1037)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 700,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,5.7016,6.9443,5.7931,6.9433,5.7931,7.1023,5.7016,7.1014)"
+              },
+              {
+                "content": "8.44",
+                "span": {
+                  "offset": 701,
+                  "length": 4
+                },
+                "confidence": 0.954,
+                "source": "D(1,5.7985,6.9433,6.089,6.935,6.089,7.0942,5.7985,7.1024)"
+              },
+              {
+                "content": "SUB_TOTAL",
+                "span": {
+                  "offset": 728,
+                  "length": 9
+                },
+                "confidence": 0.863,
+                "source": "D(1,5.6007,7.7588,6.6203,7.7637,6.6204,7.9588,5.6007,7.9533)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 738,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,6.6695,7.7639,6.722,7.7641,6.722,7.9595,6.6695,7.9591)"
+              },
+              {
+                "content": "383.26",
+                "span": {
+                  "offset": 740,
+                  "length": 6
+                },
+                "confidence": 0.981,
+                "source": "D(1,6.7679,7.7643,7.2826,7.7661,7.2826,7.9651,6.7679,7.9599)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 747,
+                  "length": 1
+                },
+                "confidence": 0.965,
+                "source": "D(1,7.3711,7.7664,7.4892,7.7668,7.4892,7.9673,7.3711,7.966)"
+              },
+              {
+                "content": "TAX",
+                "span": {
+                  "offset": 750,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,5.5886,9.0105,5.9356,9.0109,5.9356,9.2162,5.5886,9.2162)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 753,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,5.9424,9.0109,5.9828,9.0109,5.9828,9.2162,5.9424,9.2162)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 754,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,5.9862,9.0109,6.3298,9.0113,6.3298,9.2162,5.9862,9.2162)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 758,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,6.3736,9.0114,6.4275,9.0115,6.4275,9.2162,6.3736,9.2162)"
+              },
+              {
+                "content": "6.25",
+                "span": {
+                  "offset": 759,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,6.4275,9.0115,6.761,9.0119,6.761,9.2162,6.4275,9.2162)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 763,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,6.7678,9.0119,6.9059,9.0121,6.9059,9.2162,6.7678,9.2162)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 764,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,6.8992,9.0121,6.9531,9.0122,6.9531,9.2162,6.8992,9.2162)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 765,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,6.9666,9.0122,7.0104,9.0123,7.0104,9.2162,6.9666,9.2162)"
+              },
+              {
+                "content": "23.95",
+                "span": {
+                  "offset": 767,
+                  "length": 5
+                },
+                "confidence": 0.708,
+                "source": "D(1,7.1047,9.0124,7.5326,9.0131,7.5326,9.2162,7.1047,9.2162)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 773,
+                  "length": 1
+                },
+                "confidence": 0.988,
+                "source": "D(1,7.573,9.0132,7.6909,9.0133,7.6909,9.2162,7.573,9.2162)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 776,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,5.6007,9.6274,6.1738,9.6274,6.1738,9.8101,5.6007,9.8101)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 782,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,6.2218,9.6274,6.2698,9.6274,6.2698,9.8101,6.2218,9.8101)"
+              },
+              {
+                "content": "392.61",
+                "span": {
+                  "offset": 784,
+                  "length": 6
+                },
+                "confidence": 0.976,
+                "source": "D(1,6.3208,9.6274,6.8248,9.6274,6.8248,9.8101,6.3208,9.8101)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 791,
+                  "length": 1
+                },
+                "confidence": 0.983,
+                "source": "D(1,6.8818,9.6274,6.9928,9.6274,6.9928,9.8101,6.8818,9.8101)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 794,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,0.0076,10.221,0.3935,10.2211,0.3941,10.4039,0.0083,10.4037)"
+              },
+              {
+                "content": "in",
+                "span": {
+                  "offset": 800,
+                  "length": 2
+                },
+                "confidence": 0.978,
+                "source": "D(1,0.4482,10.2212,0.585,10.2212,0.5855,10.4039,0.4488,10.4039)"
+              },
+              {
+                "content": "words",
+                "span": {
+                  "offset": 803,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,0.6275,10.2212,1.1228,10.2215,1.1232,10.4043,0.628,10.404)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 808,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.1289,10.2215,1.1775,10.2216,1.1779,10.4043,1.1293,10.4043)"
+              },
+              {
+                "content": "three",
+                "span": {
+                  "offset": 810,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,1.2656,10.2217,1.6849,10.2223,1.6852,10.405,1.266,10.4045)"
+              },
+              {
+                "content": "hundred",
+                "span": {
+                  "offset": 816,
+                  "length": 7
+                },
+                "confidence": 0.954,
+                "source": "D(1,1.7305,10.2223,2.3929,10.2234,2.3931,10.4062,1.7308,10.4051)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 824,
+                  "length": 3
+                },
+                "confidence": 0.829,
+                "source": "D(1,2.4385,10.2235,2.7332,10.2241,2.7333,10.4069,2.4386,10.4063)"
+              },
+              {
+                "content": "nin",
+                "span": {
+                  "offset": 828,
+                  "length": 3
+                },
+                "confidence": 0.876,
+                "source": "D(1,2.7849,10.2243,3.0371,10.2248,3.0371,10.4075,2.785,10.407)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 831,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.0432,10.2248,3.1191,10.225,3.1191,10.4077,3.0432,10.4075)"
+              },
+              {
+                "content": "ety",
+                "span": {
+                  "offset": 833,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,0.0078,10.432,0.2491,10.4332,0.2496,10.6157,0.0083,10.6135)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 836,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,0.2491,10.4332,0.3028,10.4335,0.3032,10.6162,0.2496,10.6157)"
+              },
+              {
+                "content": "two",
+                "span": {
+                  "offset": 837,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,0.2968,10.4334,0.5829,10.4349,0.5833,10.6185,0.2973,10.6161)"
+              },
+              {
+                "content": "point",
+                "span": {
+                  "offset": 841,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,0.6365,10.4351,1.0508,10.4366,1.051,10.6178,0.6369,10.6184)"
+              },
+              {
+                "content": "six",
+                "span": {
+                  "offset": 847,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,1.0925,10.4367,1.3249,10.4372,1.3251,10.6153,1.0927,10.6178)"
+              },
+              {
+                "content": "one",
+                "span": {
+                  "offset": 851,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.3637,10.4373,1.6766,10.4379,1.6766,10.6112,1.3638,10.6149)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "TAX INVOICE",
+                "source": "D(1,0.0083,0.6542,1.6162,0.6565,1.6161,0.9044,0.008,0.9021)",
+                "span": {
+                  "offset": 2,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Berg, Ward and Wright",
+                "source": "D(1,0.0224,1.8529,1.839,1.8524,1.8391,2.0729,0.0224,2.0734)",
+                "span": {
+                  "offset": 15,
+                  "length": 21
+                }
+              },
+              {
+                "content": "Address:5776 Whitney Meadow",
+                "source": "D(1,0.0086,2.2274,2.53,2.2274,2.53,2.4242,0.0086,2.4242)",
+                "span": {
+                  "offset": 37,
+                  "length": 27
+                }
+              },
+              {
+                "content": "West Adriennebury, ID 40049 US",
+                "source": "D(1,0.008,2.4296,2.6101,2.4222,2.6107,2.6248,0.0086,2.6322)",
+                "span": {
+                  "offset": 65,
+                  "length": 30
+                }
+              },
+              {
+                "content": "Buyer :Joshua Jimenez",
+                "source": "D(1,4.5792,1.8033,6.4804,1.7987,6.481,1.9923,4.5798,1.9986)",
+                "span": {
+                  "offset": 117,
+                  "length": 21
+                }
+              },
+              {
+                "content": "5776 Whitney Meadow",
+                "source": "D(1,4.5839,2.0027,6.3835,2.0029,6.3835,2.1976,4.5839,2.1974)",
+                "span": {
+                  "offset": 139,
+                  "length": 19
+                }
+              },
+              {
+                "content": "West Adriennebury, ID 40049 US",
+                "source": "D(1,4.5833,2.1975,7.1865,2.1905,7.1871,2.3942,4.5839,2.3983)",
+                "span": {
+                  "offset": 160,
+                  "length": 30
+                }
+              },
+              {
+                "content": "Tel:+(621)125-7877",
+                "source": "D(1,4.5839,2.398,6.1011,2.398,6.1011,2.5933,4.5839,2.5933)",
+                "span": {
+                  "offset": 192,
+                  "length": 18
+                }
+              },
+              {
+                "content": "Email:daniel15@example.org",
+                "source": "D(1,4.5879,2.5936,6.9215,2.608,6.9202,2.81,4.5867,2.7955)",
+                "span": {
+                  "offset": 212,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Site:http://gonzales-lee.info/",
+                "source": "D(1,4.5839,2.801,6.8396,2.8017,6.8395,3.0005,4.5838,2.9998)",
+                "span": {
+                  "offset": 240,
+                  "length": 30
+                }
+              },
+              {
+                "content": "GSTIN O4AROPO98743125,",
+                "source": "D(1,0.0084,3.3578,2.1995,3.3616,2.1991,3.5622,0.008,3.5583)",
+                "span": {
+                  "offset": 272,
+                  "length": 22
+                }
+              },
+              {
+                "content": "Due Date : 27-Jul-1994",
+                "source": "D(1,3.5425,3.2117,5.3586,3.2087,5.3589,3.3963,3.5428,3.3976)",
+                "span": {
+                  "offset": 296,
+                  "length": 22
+                }
+              },
+              {
+                "content": "GSTINO4ARCPD98743125",
+                "source": "D(1,5.8264,3.3599,7.937,3.3573,7.9373,3.5585,5.8267,3.5611)",
+                "span": {
+                  "offset": 320,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date: 02-Apr-1997",
+                "source": "D(1,3.5428,3.6323,4.9391,3.6335,4.939,3.8319,3.5427,3.8308)",
+                "span": {
+                  "offset": 342,
+                  "length": 17
+                }
+              },
+              {
+                "content": "INVOICE # INV18097255",
+                "source": "D(1,3.5186,4.2723,5.4357,4.276,5.4353,4.473,3.5182,4.4693)",
+                "span": {
+                  "offset": 361,
+                  "length": 21
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,0.1612,5.9473,0.8829,5.9528,0.8817,6.1166,0.1599,6.1111)",
+                "span": {
+                  "offset": 402,
+                  "length": 11
+                }
+              },
+              {
+                "content": "QUANTITY",
+                "source": "D(1,3.6265,5.9445,4.3619,5.9384,4.3632,6.0986,3.6276,6.1046)",
+                "span": {
+                  "offset": 423,
+                  "length": 8
+                }
+              },
+              {
+                "content": "PRICE",
+                "source": "D(1,5.7016,5.9416,6.1622,5.9432,6.1616,6.1056,5.701,6.1039)",
+                "span": {
+                  "offset": 441,
+                  "length": 5
+                }
+              },
+              {
+                "content": "Cell guy church.",
+                "source": "D(1,0.1588,6.1913,1.184,6.1953,1.1833,6.3693,0.1581,6.3653)",
+                "span": {
+                  "offset": 467,
+                  "length": 16
+                }
+              },
+              {
+                "content": "2.00",
+                "source": "D(1,3.6235,6.2003,3.9345,6.2009,3.9342,6.3502,3.6232,6.3496)",
+                "span": {
+                  "offset": 493,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$97.38",
+                "source": "D(1,5.7097,6.1928,6.1703,6.1945,6.1697,6.3569,5.7091,6.3551)",
+                "span": {
+                  "offset": 507,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Consider loss TV.",
+                "source": "D(1,0.1605,6.4432,1.2731,6.4389,1.2736,6.6039,0.1611,6.6082)",
+                "span": {
+                  "offset": 534,
+                  "length": 17
+                }
+              },
+              {
+                "content": "4.00",
+                "source": "D(1,3.6255,6.4463,3.9262,6.4463,3.9262,6.604,3.6255,6.604)",
+                "span": {
+                  "offset": 561,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$34.59",
+                "source": "D(1,5.7015,6.4412,6.1697,6.4408,6.1698,6.6085,5.7016,6.6088)",
+                "span": {
+                  "offset": 575,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Team lay could.",
+                "source": "D(1,0.1612,6.6942,1.1602,6.6948,1.1601,6.8625,0.1611,6.8619)",
+                "span": {
+                  "offset": 602,
+                  "length": 15
+                }
+              },
+              {
+                "content": "2.00",
+                "source": "D(1,3.6276,6.698,3.9262,6.698,3.9262,6.8465,3.6276,6.8465)",
+                "span": {
+                  "offset": 627,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$12.41",
+                "source": "D(1,5.6976,6.6918,6.1535,6.6918,6.1535,6.8522,5.6976,6.8522)",
+                "span": {
+                  "offset": 641,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Usually.",
+                "source": "D(1,0.1632,6.9467,0.6779,6.953,0.6759,7.116,0.1612,7.1097)",
+                "span": {
+                  "offset": 668,
+                  "length": 8
+                }
+              },
+              {
+                "content": "3.00",
+                "source": "D(1,3.6265,6.952,3.9261,6.9469,3.9287,7.0985,3.6276,7.1037)",
+                "span": {
+                  "offset": 686,
+                  "length": 4
+                }
+              },
+              {
+                "content": "$8.44",
+                "source": "D(1,5.6996,6.9444,6.089,6.935,6.0929,7.0971,5.7017,7.1035)",
+                "span": {
+                  "offset": 700,
+                  "length": 5
+                }
+              },
+              {
+                "content": "SUB_TOTAL : 383.26 $",
+                "source": "D(1,5.6007,7.7588,7.49,7.7668,7.4892,7.9673,5.5999,7.9593)",
+                "span": {
+                  "offset": 728,
+                  "length": 20
+                }
+              },
+              {
+                "content": "TAX:VAT (6.25%): 23.95 $",
+                "source": "D(1,5.5886,9.0105,7.6909,9.0105,7.6909,9.2162,5.5886,9.2162)",
+                "span": {
+                  "offset": 750,
+                  "length": 24
+                }
+              },
+              {
+                "content": "TOTAL : 392.61 $",
+                "source": "D(1,5.6007,9.6274,6.9928,9.6274,6.9928,9.8101,5.6007,9.8101)",
+                "span": {
+                  "offset": 776,
+                  "length": 16
+                }
+              },
+              {
+                "content": "Total in words: three hundred and nin-",
+                "source": "D(1,0.0076,10.2201,3.1194,10.2241,3.1191,10.4077,0.0074,10.4037)",
+                "span": {
+                  "offset": 794,
+                  "length": 38
+                }
+              },
+              {
+                "content": "ety-two point six one",
+                "source": "D(1,0.0078,10.432,1.6772,10.4379,1.6765,10.6209,0.0071,10.6165)",
+                "span": {
+                  "offset": 833,
+                  "length": 21
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "role": "title",
+            "content": "TAX INVOICE",
+            "source": "D(1,0.0083,0.6542,1.6164,0.6565,1.6161,0.9044,0.008,0.9021)",
+            "span": {
+              "offset": 0,
+              "length": 13
+            }
+          },
+          {
+            "content": "Berg, Ward and Wright Address:5776 Whitney Meadow West Adriennebury, ID 40049 US",
+            "source": "D(1,0.0063,1.853,2.6085,1.8456,2.6107,2.6248,0.0086,2.6322)",
+            "span": {
+              "offset": 15,
+              "length": 80
+            }
+          },
+          {
+            "content": "Buyer :Joshua Jimenez 5776 Whitney Meadow",
+            "source": "D(1,4.5792,1.8033,6.4805,1.7987,6.4815,2.1973,4.5802,2.2019)",
+            "span": {
+              "offset": 117,
+              "length": 41
+            }
+          },
+          {
+            "content": "West Adriennebury, ID 40049 US",
+            "source": "D(1,4.5833,2.1975,7.1865,2.1905,7.1871,2.3942,4.5839,2.4012)",
+            "span": {
+              "offset": 160,
+              "length": 30
+            }
+          },
+          {
+            "content": "Tel:+(621)125-7877",
+            "source": "D(1,4.5839,2.398,6.1011,2.398,6.1011,2.5933,4.5839,2.5933)",
+            "span": {
+              "offset": 192,
+              "length": 18
+            }
+          },
+          {
+            "content": "Email:daniel15@example.org",
+            "source": "D(1,4.5879,2.5936,6.9215,2.608,6.9202,2.81,4.5867,2.7955)",
+            "span": {
+              "offset": 212,
+              "length": 26
+            }
+          },
+          {
+            "content": "Site:http://gonzales-lee.info/",
+            "source": "D(1,4.5839,2.801,6.8396,2.8017,6.8395,3.0005,4.5838,2.9998)",
+            "span": {
+              "offset": 240,
+              "length": 30
+            }
+          },
+          {
+            "content": "GSTIN O4AROPO98743125,",
+            "source": "D(1,0.0084,3.3578,2.1995,3.3616,2.1991,3.5622,0.008,3.5583)",
+            "span": {
+              "offset": 272,
+              "length": 22
+            }
+          },
+          {
+            "content": "Due Date : 27-Jul-1994",
+            "source": "D(1,3.5425,3.2117,5.3586,3.2087,5.3589,3.3963,3.5428,3.3992)",
+            "span": {
+              "offset": 296,
+              "length": 22
+            }
+          },
+          {
+            "content": "GSTINO4ARCPD98743125",
+            "source": "D(1,5.8264,3.3599,7.937,3.3573,7.9373,3.5585,5.8267,3.5611)",
+            "span": {
+              "offset": 320,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date: 02-Apr-1997",
+            "source": "D(1,3.5428,3.6323,4.9391,3.6335,4.939,3.8319,3.5427,3.8308)",
+            "span": {
+              "offset": 342,
+              "length": 17
+            }
+          },
+          {
+            "content": "INVOICE # INV18097255",
+            "source": "D(1,3.5186,4.2723,5.4357,4.276,5.4353,4.473,3.5182,4.4693)",
+            "span": {
+              "offset": 361,
+              "length": 21
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,0.1612,5.9482,0.8831,5.9545,0.8817,6.1174,0.1597,6.1111)",
+            "span": {
+              "offset": 402,
+              "length": 11
+            }
+          },
+          {
+            "content": "QUANTITY",
+            "source": "D(1,3.6262,5.9445,4.3619,5.9384,4.3633,6.0983,3.6276,6.1043)",
+            "span": {
+              "offset": 423,
+              "length": 8
+            }
+          },
+          {
+            "content": "PRICE",
+            "source": "D(1,5.7016,5.9441,6.1622,5.9457,6.1616,6.1056,5.701,6.1039)",
+            "span": {
+              "offset": 441,
+              "length": 5
+            }
+          },
+          {
+            "content": "Cell guy church.",
+            "source": "D(1,0.1588,6.1893,1.1843,6.1953,1.1833,6.3703,0.1577,6.3642)",
+            "span": {
+              "offset": 467,
+              "length": 16
+            }
+          },
+          {
+            "content": "2.00",
+            "source": "D(1,3.6235,6.2012,3.9345,6.2018,3.9342,6.3502,3.6232,6.3496)",
+            "span": {
+              "offset": 493,
+              "length": 4
+            }
+          },
+          {
+            "content": "$97.38",
+            "source": "D(1,5.7097,6.1935,6.1709,6.197,6.1697,6.3585,5.7085,6.3551)",
+            "span": {
+              "offset": 507,
+              "length": 6
+            }
+          },
+          {
+            "content": "Consider loss TV.",
+            "source": "D(1,0.1607,6.433,1.2747,6.444,1.2729,6.6192,0.1589,6.6081)",
+            "span": {
+              "offset": 534,
+              "length": 17
+            }
+          },
+          {
+            "content": "4.00",
+            "source": "D(1,3.6255,6.4556,3.9262,6.4556,3.9262,6.604,3.6255,6.604)",
+            "span": {
+              "offset": 561,
+              "length": 4
+            }
+          },
+          {
+            "content": "$34.59",
+            "source": "D(1,5.7017,6.4427,6.1717,6.4486,6.1696,6.6147,5.6996,6.6088)",
+            "span": {
+              "offset": 575,
+              "length": 6
+            }
+          },
+          {
+            "content": "Team lay could.",
+            "source": "D(1,0.1612,6.6931,1.1604,6.6948,1.1601,6.8628,0.1609,6.8611)",
+            "span": {
+              "offset": 602,
+              "length": 15
+            }
+          },
+          {
+            "content": "2.00",
+            "source": "D(1,3.6276,6.698,3.9262,6.698,3.9262,6.8465,3.6276,6.8465)",
+            "span": {
+              "offset": 627,
+              "length": 4
+            }
+          },
+          {
+            "content": "$12.41",
+            "source": "D(1,5.6975,6.6931,6.1535,6.693,6.1536,6.8522,5.6976,6.8523)",
+            "span": {
+              "offset": 641,
+              "length": 6
+            }
+          },
+          {
+            "content": "Usually.",
+            "source": "D(1,0.1635,6.9405,0.6807,6.9562,0.6756,7.1253,0.1583,7.1096)",
+            "span": {
+              "offset": 668,
+              "length": 8
+            }
+          },
+          {
+            "content": "3.00",
+            "source": "D(1,3.625,6.9552,3.9262,6.9501,3.9287,7.0985,3.6276,7.1037)",
+            "span": {
+              "offset": 686,
+              "length": 4
+            }
+          },
+          {
+            "content": "$8.44",
+            "source": "D(1,5.7015,6.9352,6.089,6.935,6.0891,7.1022,5.7016,7.1024)",
+            "span": {
+              "offset": 700,
+              "length": 5
+            }
+          },
+          {
+            "content": "SUB_TOTAL : 383.26 $",
+            "source": "D(1,5.6007,7.7588,7.49,7.7668,7.4892,7.9673,5.5999,7.9593)",
+            "span": {
+              "offset": 728,
+              "length": 20
+            }
+          },
+          {
+            "content": "TAX:VAT (6.25%): 23.95 $",
+            "source": "D(1,5.5886,9.0105,7.6909,9.0105,7.6909,9.2162,5.5886,9.2162)",
+            "span": {
+              "offset": 750,
+              "length": 24
+            }
+          },
+          {
+            "content": "TOTAL : 392.61 $",
+            "source": "D(1,5.6007,9.6274,6.9928,9.6274,6.9928,9.8101,5.6007,9.8101)",
+            "span": {
+              "offset": 776,
+              "length": 16
+            }
+          },
+          {
+            "content": "Total in words: three hundred and nin- ety-two point six one",
+            "source": "D(1,0.0076,10.2201,3.1194,10.2241,3.1189,10.6228,0.0071,10.6188)",
+            "span": {
+              "offset": 794,
+              "length": 60
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 854
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/figures/0",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7",
+              "/paragraphs/8",
+              "/paragraphs/9",
+              "/paragraphs/10",
+              "/paragraphs/11",
+              "/tables/0",
+              "/paragraphs/27",
+              "/paragraphs/28",
+              "/paragraphs/29",
+              "/paragraphs/30"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 5,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,0.0914,5.9003,3.5647,5.9003,3.5647,6.1503,0.0916,6.1504)",
+                "span": {
+                  "offset": 402,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "QUANTITY",
+                "source": "D(1,3.5647,5.9003,5.643,5.9002,5.6431,6.1506,3.5647,6.1503)",
+                "span": {
+                  "offset": 423,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "PRICE",
+                "source": "D(1,5.643,5.9002,7.7322,5.9003,7.7318,6.1514,5.6431,6.1506)",
+                "span": {
+                  "offset": 441,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Cell guy church.",
+                "source": "D(1,0.0916,6.1504,3.5647,6.1503,3.5645,6.4,0.0911,6.4005)",
+                "span": {
+                  "offset": 467,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.00",
+                "source": "D(1,3.5647,6.1503,5.6431,6.1506,5.6429,6.4,3.5645,6.4)",
+                "span": {
+                  "offset": 493,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$97.38",
+                "source": "D(1,5.6431,6.1506,7.7318,6.1514,7.7317,6.4005,5.6429,6.4)",
+                "span": {
+                  "offset": 507,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Consider loss TV.",
+                "source": "D(1,0.0911,6.4005,3.5645,6.4,3.5645,6.6503,0.0908,6.6508)",
+                "span": {
+                  "offset": 534,
+                  "length": 17
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.00",
+                "source": "D(1,3.5645,6.4,5.6429,6.4,5.6428,6.6502,3.5645,6.6503)",
+                "span": {
+                  "offset": 561,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$34.59",
+                "source": "D(1,5.6429,6.4,7.7317,6.4005,7.7316,6.6506,5.6428,6.6502)",
+                "span": {
+                  "offset": 575,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Team lay could.",
+                "source": "D(1,0.0908,6.6508,3.5645,6.6503,3.5645,6.9023,0.0906,6.9022)",
+                "span": {
+                  "offset": 602,
+                  "length": 15
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.00",
+                "source": "D(1,3.5645,6.6503,5.6428,6.6502,5.6428,6.9026,3.5645,6.9023)",
+                "span": {
+                  "offset": 627,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$12.41",
+                "source": "D(1,5.6428,6.6502,7.7316,6.6506,7.7317,6.9031,5.6428,6.9026)",
+                "span": {
+                  "offset": 641,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Usually.",
+                "source": "D(1,0.0906,6.9022,3.5645,6.9023,3.5646,7.1538,0.0901,7.1533)",
+                "span": {
+                  "offset": 668,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.00",
+                "source": "D(1,3.5645,6.9023,5.6428,6.9026,5.6427,7.154,3.5646,7.1538)",
+                "span": {
+                  "offset": 686,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$8.44",
+                "source": "D(1,5.6428,6.9026,7.7317,6.9031,7.7315,7.1548,5.6427,7.154)",
+                "span": {
+                  "offset": 700,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              }
+            ],
+            "source": "D(1,0.0811,5.8872,7.7272,5.8872,7.7313,7.1549,0.0815,7.1606)",
+            "span": {
+              "offset": 385,
+              "length": 340
+            }
+          }
+        ],
+        "figures": [
+          {
+            "source": "D(1,2.8952,1.6588,4.1521,1.6545,4.1602,2.9065,2.9093,2.915)",
+            "span": {
+              "offset": 98,
+              "length": 16
+            },
+            "id": "1.1"
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5.5-input": 4270,
+      "gpt-5.5-cached-input": 3328,
+      "gpt-5.5-output": 397
+    }
+  }
+}

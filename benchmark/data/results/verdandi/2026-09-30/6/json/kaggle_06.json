@@ -1,0 +1,819 @@
+{
+  "selected_document": {
+    "name": "Research Triangle Institute",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows Research Triangle Institute letterhead, the heading \"INVOICE,\" invoice number and date, billed cost categories, and a printed total due.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "31T 2552-14B",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.646,
+          0.333,
+          0.788,
+          0.35
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'str' FAILED for invoice_number='31T 2552-14B'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'DATE: March 8, 1984 TERMS: Net INV. NO.:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.646,
+                0.33540000000000003,
+                0.767,
+                0.3479
+              ],
+              "line_bbox": [
+                0.5398,
+                0.33540000000000003,
+                0.767,
+                0.35
+              ],
+              "text": "INV. NO.: 31T 2552-14B",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "March 8, 1984",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.647,
+          0.307,
+          0.778,
+          0.324
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='March 8, 1984'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'DATE: March 8, 1984 TERMS: Net INV. NO.:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5752,
+                0.3083,
+                0.7758,
+                0.32289999999999996
+              ],
+              "line_bbox": [
+                0.5752,
+                0.3083,
+                0.7758,
+                0.32289999999999996
+              ],
+              "text": "DATE: March 8, 1984",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Research Triangle Institute",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.103,
+          0.126,
+          0.588,
+          0.142
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Research Triangle Institute'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'RESEARCH TRIANGLE INSTITUTE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1031,
+                0.12360000000000004,
+                0.5871,
+                0.13959999999999995
+              ],
+              "line_bbox": [
+                0.1031,
+                0.12360000000000004,
+                0.5871,
+                0.13959999999999995
+              ],
+              "text": "RESEARCH TRIANGLE INSTITUTE",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Lorillard Research Center",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.314,
+          0.389,
+          0.557,
+          0.429
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Lorillard Research Center'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Lorillard Research Center Post Office Box 21688 Greensboro,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3127,
+                0.38959999999999995,
+                0.5634,
+                0.4021
+              ],
+              "line_bbox": [
+                0.1062,
+                0.38959999999999995,
+                0.5634,
+                0.4021
+              ],
+              "text": "TO: Lorillard Research Center",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.465,
+          0.648,
+          0.537,
+          0.778
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'CURRENT 990.04 110.00 56.70 $1,156.74 138.81 $1,295.55 194.33' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "1295.55",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.468,
+          0.724,
+          0.562,
+          0.739
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='1295.55'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '56.70 $1,156.74 138.81 $1,295.55 194.33 $1,489.88 $1,489.88'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4719,
+                0.7166,
+                0.5635,
+                0.7313000000000001
+              ],
+              "line_bbox": [
+                0.1681,
+                0.7146,
+                0.764,
+                0.7333000000000001
+              ],
+              "text": "ODC and OMASE SUBTOTAL $1,295.55 $14,286.37",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1489.88",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.467,
+          0.77,
+          0.56,
+          0.787
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1489.88'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '194.33 $1,489.88 $1,489.88 1) Details are provided on'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4715,
+                0.7466999999999999,
+                0.5636,
+                0.7632
+              ],
+              "line_bbox": [
+                0.1681,
+                0.7466999999999999,
+                0.7701,
+                0.7633
+              ],
+              "text": "TOTAL AMOUNT CLAIMED $1,489.88 $16,429.32\u0105",
+              "lineno": 24,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Materials",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "990.04",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.139,
+          0.647,
+          0.783,
+          0.663
+        ]
+      }
+    },
+    {
+      "description": "Services",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "110.00",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.139,
+          0.664,
+          0.783,
+          0.68
+        ]
+      }
+    },
+    {
+      "description": "Shipping & Communications",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "56.70",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.139,
+          0.68,
+          0.783,
+          0.697
+        ]
+      }
+    },
+    {
+      "description": "Omase OH - Prov 12.00%",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "138.81",
+      "confidence": 0.94,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.139,
+          0.708,
+          0.783,
+          0.724
+        ]
+      }
+    },
+    {
+      "description": "Fee 15.00%",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "194.33",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.139,
+          0.741,
+          0.783,
+          0.757
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2091,
+      "total_tokens": 5746,
+      "elapsed_s": 20.63
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "31T 2552-14B",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'str' FAILED for invoice_number='31T 2552-14B'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'DATE: March 8, 1984 TERMS: Net INV. NO.:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.646,
+                  0.33540000000000003,
+                  0.767,
+                  0.3479
+                ],
+                "line_bbox": [
+                  0.5398,
+                  0.33540000000000003,
+                  0.767,
+                  0.35
+                ],
+                "text": "INV. NO.: 31T 2552-14B",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "March 8, 1984",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='March 8, 1984'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'DATE: March 8, 1984 TERMS: Net INV. NO.:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5752,
+                  0.3083,
+                  0.7758,
+                  0.32289999999999996
+                ],
+                "line_bbox": [
+                  0.5752,
+                  0.3083,
+                  0.7758,
+                  0.32289999999999996
+                ],
+                "text": "DATE: March 8, 1984",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Research Triangle Institute",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Research Triangle Institute'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'RESEARCH TRIANGLE INSTITUTE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1031,
+                  0.12360000000000004,
+                  0.5871,
+                  0.13959999999999995
+                ],
+                "line_bbox": [
+                  0.1031,
+                  0.12360000000000004,
+                  0.5871,
+                  0.13959999999999995
+                ],
+                "text": "RESEARCH TRIANGLE INSTITUTE",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Lorillard Research Center",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Lorillard Research Center'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Lorillard Research Center Post Office Box 21688 Greensboro,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3127,
+                  0.38959999999999995,
+                  0.5634,
+                  0.4021
+                ],
+                "line_bbox": [
+                  0.1062,
+                  0.38959999999999995,
+                  0.5634,
+                  0.4021
+                ],
+                "text": "TO: Lorillard Research Center",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'CURRENT 990.04 110.00 56.70 $1,156.74 138.81 $1,295.55 194.33' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "1295.55",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='1295.55'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '56.70 $1,156.74 138.81 $1,295.55 194.33 $1,489.88 $1,489.88'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4719,
+                  0.7166,
+                  0.5635,
+                  0.7313000000000001
+                ],
+                "line_bbox": [
+                  0.1681,
+                  0.7146,
+                  0.764,
+                  0.7333000000000001
+                ],
+                "text": "ODC and OMASE SUBTOTAL $1,295.55 $14,286.37",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "1489.88",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1489.88'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '194.33 $1,489.88 $1,489.88 1) Details are provided on'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4715,
+                  0.7466999999999999,
+                  0.5636,
+                  0.7632
+                ],
+                "line_bbox": [
+                  0.1681,
+                  0.7466999999999999,
+                  0.7701,
+                  0.7633
+                ],
+                "text": "TOTAL AMOUNT CLAIMED $1,489.88 $16,429.32\u0105",
+                "lineno": 24,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 2,
+          "grounding": 1
+        },
+        "flag_rows": 4
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_number": {
+            "primary": "31T 2552-14B",
+            "secondary": "31T 2552-14B",
+            "agree": true
+          },
+          "invoice_date": {
+            "primary": "March 8, 1984",
+            "secondary": "March 8, 1984",
+            "agree": false
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "3ea3225a9c81a3a0f3201e5d3e43e6935aa022f8edd8cbe88ae71e4f7e987766"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2505,
+          "completion_tokens": 515,
+          "total_tokens": 3020,
+          "elapsed_s": 7.28
+        }
+      }
+    }
+  }
+}

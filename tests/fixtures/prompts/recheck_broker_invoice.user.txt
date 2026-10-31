@@ -1,0 +1,37 @@
+TARGET DOCUMENT PROFILE (rules/documents.yaml, hot-loaded — the identification reference):
+
+- id: broker_invoice — Broker Tax Invoice
+  description: the freight forwarder/broker firm's OWN tax invoice for the shipment's logistics services (brokerage/agency, freight handling, warehousing, demurrage — the firm's own charges), NOT supplier bills, packing lists, bills of entry, commercial invoices, third-party terminal/port bills, or other supporting documents
+  extraction schema: profile
+
+The images below are the pages of one PDF attachment, in order. Extract per the instructions and output ONLY a single JSON object matching this schema:
+
+{
+  "selected_document": {
+    "name": string|null,
+    "document_pages": [int],
+    "reason": string,
+    "confidence": number
+  },
+  "header_fields": [
+    {{
+      "name": "invoice_number" | "boe_date",
+      "value": string|object|null,
+      "confidence": number,
+      "source": "page N (render image)" | null,
+      "source_region": {{ "page": int, "bbox": [x0, y0, x1, y1] }} | null
+    }}
+  ],
+  "line_items": [],
+
+  "notes": [string],
+  "status": "extracted" | "flag_no_document_match" | "flagged"
+}
+
+Field notes:
+- invoice_number: the broker invoice's OWN number as printed
+- boe_date: the Bill of Entry (BOE / BE) date as printed on the broker invoice
+
+- If a field is not visible in the images, use value null, confidence 0, source null, source_region null — never fill from other documents or prior knowledge.
+
+INDEPENDENT RECONCILIATION PASS: you are double-checking an extraction that was already made from these pages. You have NOT seen the previous answer — read the pages freshly, report what YOU read (values + confidence + source_region), and ignore anything you might infer about the previous pass.

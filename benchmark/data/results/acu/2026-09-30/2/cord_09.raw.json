@@ -1,0 +1,1771 @@
+{
+  "id": "3afe56c2-9dea-4a4b-84cb-f9e31f824ad8",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T12:33:07Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "![SOLARIA](figures/1.1)\n\n\nNo\ntrair ,\nCustor\n\n\n<table>\n<tr>\n<td>(TA) NASI ORG TERI<br>MEDAN</td>\n<td>4</td>\n<td>165,460</td>\n</tr>\n<tr>\n<td>(TA) BIHUN GORENG</td>\n<td>1</td>\n<td>40,456</td>\n</tr>\n<tr>\n<td>SEAFOOD</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>(TA) KWETIAW SEAFOOD<br>SIRAM (TA) NASI GORENG</td>\n<td>1<br>2</td>\n<td>42,274<br>55,456</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>ITEMS:8</td>\n<td>303,646</td>\n</tr>\n<tr>\n<td>Ph1 10%</td>\n<td>30,365</td>\n</tr>\n<tr>\n<td>e Rounding</td>\n<td>334,011</td>\n</tr>\n<tr>\n<td>Rounding</td>\n<td>11</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>334,000</td>\n</tr>\n<tr>\n<td>DEBIT BCA</td>\n<td>334,000</td>\n</tr>\n</table>\n\n\n<!-- PageFooter: jungan -->\n<!-- PageNumber: A -->\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "valueString": "SOLARIA",
+            "spans": [
+              {
+                "offset": 2,
+                "length": 7
+              }
+            ],
+            "confidence": 0.678,
+            "source": "D(1,2.8730,3.3642,5.3505,3.3700,5.3425,4.7305,2.8710,4.6839)"
+          },
+          "buyer_name": {
+            "type": "string",
+            "valueString": "trair , Custor",
+            "spans": [
+              {
+                "offset": 29,
+                "length": 7
+              },
+              {
+                "offset": 37,
+                "length": 6
+              }
+            ],
+            "confidence": 0.369,
+            "source": "D(1,2.9782,5.8547,3.5856,5.8710,3.5808,6.0483,2.9734,6.0320);D(1,2.6147,6.0783,3.1514,6.0763,3.1514,6.2469,2.6147,6.2469)"
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 303646,
+            "spans": [
+              {
+                "offset": 397,
+                "length": 7
+              }
+            ],
+            "confidence": 0.495,
+            "source": "D(1,5.3263,8.0285,6.0123,8.0285,6.0123,8.2227,5.3263,8.2227)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 30365,
+            "spans": [
+              {
+                "offset": 442,
+                "length": 6
+              }
+            ],
+            "confidence": 0.487,
+            "source": "D(1,5.4434,8.2806,6.0204,8.2858,6.0204,8.4799,5.4434,8.4747)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 334000,
+            "spans": [
+              {
+                "offset": 573,
+                "length": 7
+              }
+            ],
+            "confidence": 0.822,
+            "source": "D(1,5.3748,9.0169,6.0567,9.0091,6.0567,9.2048,5.3748,9.2117)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "(TA) NASI ORG TERI MEDAN",
+                    "spans": [
+                      {
+                        "offset": 63,
+                        "length": 18
+                      },
+                      {
+                        "offset": 85,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.823,
+                    "source": "D(1,2.3484,6.3618,4.0052,6.3477,4.0069,6.5449,2.3501,6.5590);D(1,2.3605,6.5946,2.9456,6.5832,2.9456,6.7651,2.3605,6.7674)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 100,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.609,
+                    "source": "D(1,4.5556,6.3576,4.6525,6.3563,4.6525,6.5164,4.5556,6.5111)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 165460,
+                    "spans": [
+                      {
+                        "offset": 111,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.844,
+                    "source": "D(1,5.3223,6.3445,5.9921,6.3377,5.9921,6.5314,5.3223,6.5391)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "(TA) BIHUN GORENG",
+                    "spans": [
+                      {
+                        "offset": 139,
+                        "length": 17
+                      }
+                    ],
+                    "confidence": 0.665,
+                    "source": "D(1,2.3545,6.8160,4.0611,6.7977,4.0633,7.0032,2.3567,7.0215)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 166,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.643,
+                    "source": "D(1,4.5718,6.8185,4.6444,6.8124,4.6444,6.9723,4.5718,6.9783)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 40456,
+                    "spans": [
+                      {
+                        "offset": 177,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.845,
+                    "source": "D(1,5.4111,6.8057,6.0002,6.7947,6.0002,7.0005,5.4111,7.0099)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "SEAFOOD",
+                    "spans": [
+                      {
+                        "offset": 204,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.495,
+                    "source": "D(1,2.3545,7.0475,3.1373,7.0412,3.1413,7.2239,2.3585,7.2302)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "(TA) KWETIAW SEAFOOD SIRAM (TA) NASI GORENG",
+                    "spans": [
+                      {
+                        "offset": 252,
+                        "length": 20
+                      },
+                      {
+                        "offset": 276,
+                        "length": 5
+                      },
+                      {
+                        "offset": 282,
+                        "length": 16
+                      }
+                    ],
+                    "confidence": 0.727,
+                    "source": "D(1,2.3525,7.2802,4.4147,7.2437,4.4184,7.4513,2.3561,7.4878);D(1,2.3424,7.5210,2.8831,7.5089,2.8831,7.6919,2.3464,7.6965);D(1,2.3345,7.7521,3.9258,7.7063,3.9321,7.9250,2.3408,7.9708)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 308,
+                        "length": 1
+                      },
+                      {
+                        "offset": 313,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.129,
+                    "source": "D(1,4.5718,7.2805,4.6525,7.2791,4.6525,7.4276,4.5718,7.4290);D(1,4.5637,7.7395,4.6726,7.7380,4.6726,7.9027,4.5637,7.8980)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 55456,
+                    "spans": [
+                      {
+                        "offset": 324,
+                        "length": 6
+                      },
+                      {
+                        "offset": 334,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.417,
+                    "source": "D(1,5.4151,7.2753,5.9881,7.2684,5.9881,7.4512,5.4151,7.4580);D(1,5.4353,7.7145,6.0042,7.7145,6.0042,7.9086,5.4353,7.9086)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 701
+              }
+            ],
+            "words": [
+              {
+                "content": "SOLARIA",
+                "span": {
+                  "offset": 2,
+                  "length": 7
+                },
+                "confidence": 0.019,
+                "source": "D(1,2.873,3.3642,5.3505,3.37,5.3425,4.7305,2.871,4.6839)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 26,
+                  "length": 2
+                },
+                "confidence": 0.188,
+                "source": "D(1,3.3088,5.6217,3.4803,5.6217,3.4823,5.7816,3.3088,5.7816)"
+              },
+              {
+                "content": "trair",
+                "span": {
+                  "offset": 29,
+                  "length": 5
+                },
+                "confidence": 0.188,
+                "source": "D(1,2.9779,5.8656,3.2876,5.8666,3.2886,6.0265,2.9799,6.0322)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.4,
+                "source": "D(1,3.46,5.8688,3.5812,5.8709,3.5812,6.0342,3.4604,6.0298)"
+              },
+              {
+                "content": "Custor",
+                "span": {
+                  "offset": 37,
+                  "length": 6
+                },
+                "confidence": 0.922,
+                "source": "D(1,2.6147,6.0783,3.1514,6.0763,3.1514,6.2469,2.6147,6.2469)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 63,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.3484,6.3626,2.4131,6.3621,2.4171,6.5584,2.3525,6.559)"
+              },
+              {
+                "content": "TA",
+                "span": {
+                  "offset": 64,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.4131,6.3621,2.6296,6.3605,2.6336,6.5563,2.4171,6.5584)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 66,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.6328,6.3605,2.7006,6.36,2.7047,6.5557,2.6368,6.5563)"
+              },
+              {
+                "content": "NASI",
+                "span": {
+                  "offset": 68,
+                  "length": 4
+                },
+                "confidence": 0.892,
+                "source": "D(1,2.7588,6.3596,3.1272,6.3565,3.1312,6.5514,2.7628,6.5551)"
+              },
+              {
+                "content": "ORG",
+                "span": {
+                  "offset": 73,
+                  "length": 3
+                },
+                "confidence": 0.101,
+                "source": "D(1,3.1756,6.3561,3.5472,6.3526,3.5513,6.5469,3.1797,6.5509)"
+              },
+              {
+                "content": "TERI",
+                "span": {
+                  "offset": 77,
+                  "length": 4
+                },
+                "confidence": 0.951,
+                "source": "D(1,3.6086,6.3519,4.0028,6.3477,4.0069,6.5415,3.6127,6.5462)"
+              },
+              {
+                "content": "MEDAN",
+                "span": {
+                  "offset": 85,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.3605,6.5946,2.9456,6.5832,2.9456,6.7651,2.3605,6.7674)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 100,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,4.5556,6.3576,4.6525,6.3563,4.6525,6.5164,4.5556,6.5111)"
+              },
+              {
+                "content": "165,460",
+                "span": {
+                  "offset": 111,
+                  "length": 7
+                },
+                "confidence": 0.986,
+                "source": "D(1,5.3223,6.3445,5.9921,6.3377,5.9921,6.5314,5.3223,6.5391)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 139,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.3545,6.8186,2.4163,6.8176,2.4204,7.0187,2.3585,7.0192)"
+              },
+              {
+                "content": "TA",
+                "span": {
+                  "offset": 140,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.4163,6.8176,2.6363,6.8142,2.6404,7.0172,2.4204,7.0187)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 142,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.6432,6.8141,2.7085,6.8131,2.7126,7.0167,2.6472,7.0171)"
+              },
+              {
+                "content": "BIHUN",
+                "span": {
+                  "offset": 144,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,2.7738,6.8121,3.2687,6.8062,3.2728,7.0116,2.7779,7.0162)"
+              },
+              {
+                "content": "GORENG",
+                "span": {
+                  "offset": 150,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,3.3444,6.8054,4.0593,6.8006,4.0633,7.0017,3.3484,7.0109)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 166,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,4.5718,6.8185,4.6444,6.8124,4.6444,6.9723,4.5718,6.9783)"
+              },
+              {
+                "content": "40,456",
+                "span": {
+                  "offset": 177,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,5.4111,6.8057,6.0002,6.7947,6.0002,7.0005,5.4111,7.0099)"
+              },
+              {
+                "content": "SEAFOOD",
+                "span": {
+                  "offset": 204,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.3545,7.0475,3.1373,7.0412,3.1413,7.2239,2.3585,7.2302)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 252,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.3525,7.282,2.4235,7.2804,2.4277,7.4806,2.3565,7.4816)"
+              },
+              {
+                "content": "TA",
+                "span": {
+                  "offset": 253,
+                  "length": 2
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.4201,7.2805,2.6401,7.2757,2.6448,7.4777,2.4243,7.4807)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 255,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.6435,7.2756,2.7112,7.2741,2.716,7.4767,2.6482,7.4776)"
+              },
+              {
+                "content": "KWETIAW",
+                "span": {
+                  "offset": 257,
+                  "length": 7
+                },
+                "confidence": 0.979,
+                "source": "D(1,2.7653,7.2729,3.5607,7.2606,3.5672,7.4646,2.7702,7.476)"
+              },
+              {
+                "content": "SEAFOOD",
+                "span": {
+                  "offset": 265,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,3.625,7.2599,4.4104,7.2572,4.4184,7.4513,3.6317,7.4636)"
+              },
+              {
+                "content": "SIRAM",
+                "span": {
+                  "offset": 276,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.3424,7.521,2.8831,7.5089,2.8831,7.6919,2.3464,7.6965)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 282,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.3363,7.7521,2.4048,7.7501,2.4089,7.9557,2.3404,7.9577)"
+              },
+              {
+                "content": "TA",
+                "span": {
+                  "offset": 283,
+                  "length": 2
+                },
+                "confidence": 0.993,
+                "source": "D(1,2.398,7.7503,2.6241,7.7438,2.6281,7.9494,2.402,7.9559)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 285,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.6275,7.7437,2.696,7.7417,2.7001,7.9473,2.6315,7.9493)"
+              },
+              {
+                "content": "NASI",
+                "span": {
+                  "offset": 287,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.7611,7.7398,3.1414,7.7311,3.1455,7.9367,2.7651,7.9454)"
+              },
+              {
+                "content": "GORENG",
+                "span": {
+                  "offset": 292,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.21,7.7297,3.9262,7.7195,3.9302,7.9251,3.214,7.9353)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 308,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.5718,7.2805,4.6525,7.2791,4.6525,7.4276,4.5718,7.429)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 313,
+                  "length": 1
+                },
+                "confidence": 0.992,
+                "source": "D(1,4.5637,7.7395,4.6726,7.738,4.6726,7.9027,4.5637,7.898)"
+              },
+              {
+                "content": "42,274",
+                "span": {
+                  "offset": 324,
+                  "length": 6
+                },
+                "confidence": 0.969,
+                "source": "D(1,5.4151,7.2753,5.9881,7.2684,5.9881,7.4512,5.4151,7.458)"
+              },
+              {
+                "content": "55,456",
+                "span": {
+                  "offset": 334,
+                  "length": 6
+                },
+                "confidence": 0.961,
+                "source": "D(1,5.4353,7.7145,6.0042,7.7145,6.0042,7.9086,5.4353,7.9086)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 380,
+                  "length": 5
+                },
+                "confidence": 0.966,
+                "source": "D(1,2.3141,8.0659,2.8309,8.0567,2.8349,8.2509,2.3182,8.2581)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 385,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.8436,8.0567,2.888,8.057,2.892,8.2512,2.8476,8.251)"
+              },
+              {
+                "content": "8",
+                "span": {
+                  "offset": 386,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.9006,8.0571,3.0243,8.0578,3.0283,8.2517,2.9047,8.2512)"
+              },
+              {
+                "content": "303,646",
+                "span": {
+                  "offset": 397,
+                  "length": 7
+                },
+                "confidence": 0.99,
+                "source": "D(1,5.3263,8.0285,6.0123,8.0285,6.0123,8.2227,5.3263,8.2227)"
+              },
+              {
+                "content": "Ph1",
+                "span": {
+                  "offset": 425,
+                  "length": 3
+                },
+                "confidence": 0.672,
+                "source": "D(1,2.3101,8.314,2.6048,8.314,2.6064,8.5014,2.3101,8.4977)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 429,
+                  "length": 2
+                },
+                "confidence": 0.949,
+                "source": "D(1,2.6967,8.314,2.8901,8.314,2.8931,8.5025,2.6988,8.502)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 431,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.8837,8.314,3.0707,8.314,3.0747,8.502,2.8868,8.5025)"
+              },
+              {
+                "content": "30,365",
+                "span": {
+                  "offset": 442,
+                  "length": 6
+                },
+                "confidence": 0.967,
+                "source": "D(1,5.4434,8.2806,6.0204,8.2858,6.0204,8.4799,5.4434,8.4747)"
+              },
+              {
+                "content": "e",
+                "span": {
+                  "offset": 469,
+                  "length": 1
+                },
+                "confidence": 0.788,
+                "source": "D(1,2.6854,8.5596,2.8316,8.5596,2.8356,8.7651,2.6894,8.7651)"
+              },
+              {
+                "content": "Rounding",
+                "span": {
+                  "offset": 471,
+                  "length": 8
+                },
+                "confidence": 0.975,
+                "source": "D(1,2.8908,8.5596,3.6881,8.5596,3.6921,8.7651,2.8948,8.7651)"
+              },
+              {
+                "content": "334,011",
+                "span": {
+                  "offset": 489,
+                  "length": 7
+                },
+                "confidence": 0.952,
+                "source": "D(1,5.3667,8.5253,6.0163,8.5253,6.0163,8.7194,5.3667,8.7194)"
+              },
+              {
+                "content": "Rounding",
+                "span": {
+                  "offset": 517,
+                  "length": 8
+                },
+                "confidence": 0.975,
+                "source": "D(1,2.302,8.8328,3.099,8.8348,3.099,9.0286,2.302,9.0143)"
+              },
+              {
+                "content": "11",
+                "span": {
+                  "offset": 535,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,5.859,8.7708,6.0325,8.7708,6.0325,8.9536,5.859,8.9536)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 558,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.2919,9.0624,2.7318,9.0572,2.7318,9.2391,2.2919,9.2391)"
+              },
+              {
+                "content": "334,000",
+                "span": {
+                  "offset": 573,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,5.3748,9.0169,6.0567,9.0091,6.0567,9.2048,5.3748,9.2117)"
+              },
+              {
+                "content": "DEBIT",
+                "span": {
+                  "offset": 601,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.3,9.2898,2.8162,9.2881,2.8203,9.479,2.304,9.4729)"
+              },
+              {
+                "content": "BCA",
+                "span": {
+                  "offset": 607,
+                  "length": 3
+                },
+                "confidence": 0.965,
+                "source": "D(1,2.8869,9.2878,3.2341,9.2859,3.2382,9.4781,2.8909,9.4794)"
+              },
+              {
+                "content": "334,000",
+                "span": {
+                  "offset": 620,
+                  "length": 7
+                },
+                "confidence": 0.981,
+                "source": "D(1,5.3748,9.2557,6.0446,9.2494,6.0446,9.4371,5.3748,9.4411)"
+              },
+              {
+                "content": "jungan",
+                "span": {
+                  "offset": 667,
+                  "length": 6
+                },
+                "confidence": 0.104,
+                "source": "D(1,3.9423,9.8386,4.5718,9.8386,4.5718,10.0328,3.9463,10.0328)"
+              },
+              {
+                "content": "A",
+                "span": {
+                  "offset": 695,
+                  "length": 1
+                },
+                "confidence": 0.676,
+                "source": "D(1,3.2705,9.8443,3.3955,9.8443,3.3955,10.0042,3.2745,10.0042)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "SOLARIA",
+                "source": "D(1,2.8732,3.3576,5.3513,3.3701,5.3425,4.7305,2.8669,4.7058)",
+                "span": {
+                  "offset": 2,
+                  "length": 7
+                }
+              },
+              {
+                "content": "No",
+                "source": "D(1,3.3088,5.6217,3.4823,5.6217,3.4823,5.7816,3.3088,5.7816)",
+                "span": {
+                  "offset": 26,
+                  "length": 2
+                }
+              },
+              {
+                "content": "trair ,",
+                "source": "D(1,2.9779,5.865,3.5817,5.8671,3.5812,6.0342,2.9773,6.0322)",
+                "span": {
+                  "offset": 29,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Custor",
+                "source": "D(1,2.6147,6.0751,3.1514,6.0751,3.1514,6.2469,2.6147,6.2469)",
+                "span": {
+                  "offset": 37,
+                  "length": 6
+                }
+              },
+              {
+                "content": "(TA) NASI ORG TERI",
+                "source": "D(1,2.3484,6.3626,4.005,6.3472,4.0069,6.5436,2.3503,6.559)",
+                "span": {
+                  "offset": 63,
+                  "length": 18
+                }
+              },
+              {
+                "content": "MEDAN",
+                "source": "D(1,2.3587,6.5908,2.9456,6.5832,2.9469,6.766,2.3606,6.7723)",
+                "span": {
+                  "offset": 85,
+                  "length": 5
+                }
+              },
+              {
+                "content": "4",
+                "source": "D(1,4.5556,6.3528,4.6525,6.3528,4.6525,6.5164,4.5556,6.5164)",
+                "span": {
+                  "offset": 100,
+                  "length": 1
+                }
+              },
+              {
+                "content": "165,460",
+                "source": "D(1,5.3201,6.3441,5.9921,6.3364,5.9944,6.5313,5.3223,6.5391)",
+                "span": {
+                  "offset": 111,
+                  "length": 7
+                }
+              },
+              {
+                "content": "(TA) BIHUN GORENG",
+                "source": "D(1,2.3545,6.8158,4.0612,6.7978,4.0634,7.0034,2.3566,7.0214)",
+                "span": {
+                  "offset": 139,
+                  "length": 17
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,4.5718,6.8122,4.6444,6.8122,4.6444,6.9783,4.5718,6.9783)",
+                "span": {
+                  "offset": 166,
+                  "length": 1
+                }
+              },
+              {
+                "content": "40,456",
+                "source": "D(1,5.4084,6.804,6.0002,6.7947,6.0023,7.0005,5.4111,7.0099)",
+                "span": {
+                  "offset": 177,
+                  "length": 6
+                }
+              },
+              {
+                "content": "SEAFOOD",
+                "source": "D(1,2.3545,7.0444,3.1398,7.0381,3.1413,7.2239,2.3559,7.2302)",
+                "span": {
+                  "offset": 204,
+                  "length": 7
+                }
+              },
+              {
+                "content": "(TA) KWETIAW SEAFOOD",
+                "source": "D(1,2.3524,7.277,4.4154,7.2519,4.4184,7.4521,2.3554,7.4824)",
+                "span": {
+                  "offset": 252,
+                  "length": 20
+                }
+              },
+              {
+                "content": "SIRAM",
+                "source": "D(1,2.3423,7.5127,2.8831,7.5081,2.8841,7.6919,2.3439,7.6965)",
+                "span": {
+                  "offset": 276,
+                  "length": 5
+                }
+              },
+              {
+                "content": "(TA) NASI GORENG",
+                "source": "D(1,2.3361,7.7476,3.9261,7.715,3.9304,7.9251,2.3404,7.9577)",
+                "span": {
+                  "offset": 282,
+                  "length": 16
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,4.5718,7.2791,4.6525,7.2791,4.6525,7.429,4.5718,7.429)",
+                "span": {
+                  "offset": 308,
+                  "length": 1
+                }
+              },
+              {
+                "content": "2",
+                "source": "D(1,4.5637,7.733,4.6726,7.733,4.6726,7.9031,4.5637,7.9031)",
+                "span": {
+                  "offset": 313,
+                  "length": 1
+                }
+              },
+              {
+                "content": "42,274",
+                "source": "D(1,5.4141,7.2746,5.9881,7.2677,5.9903,7.4511,5.4151,7.458)",
+                "span": {
+                  "offset": 324,
+                  "length": 6
+                }
+              },
+              {
+                "content": "55,456",
+                "source": "D(1,5.4353,7.7145,6.0042,7.7145,6.0042,7.9086,5.4353,7.9086)",
+                "span": {
+                  "offset": 334,
+                  "length": 6
+                }
+              },
+              {
+                "content": "ITEMS:8",
+                "source": "D(1,2.3141,8.0606,3.0266,8.0543,3.0283,8.2517,2.3158,8.2581)",
+                "span": {
+                  "offset": 380,
+                  "length": 7
+                }
+              },
+              {
+                "content": "303,646",
+                "source": "D(1,5.3263,8.0285,6.0123,8.0285,6.0123,8.2227,5.3263,8.2227)",
+                "span": {
+                  "offset": 397,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Ph1 10%",
+                "source": "D(1,2.3101,8.314,3.0747,8.314,3.0747,8.5027,2.3101,8.5027)",
+                "span": {
+                  "offset": 425,
+                  "length": 7
+                }
+              },
+              {
+                "content": "30,365",
+                "source": "D(1,5.4434,8.2773,6.0221,8.2825,6.0204,8.4799,5.4426,8.4747)",
+                "span": {
+                  "offset": 442,
+                  "length": 6
+                }
+              },
+              {
+                "content": "e Rounding",
+                "source": "D(1,2.6854,8.5596,3.6921,8.5596,3.6921,8.7651,2.6854,8.7651)",
+                "span": {
+                  "offset": 469,
+                  "length": 10
+                }
+              },
+              {
+                "content": "334,011",
+                "source": "D(1,5.3667,8.5253,6.0163,8.5253,6.0163,8.7194,5.3667,8.7194)",
+                "span": {
+                  "offset": 489,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Rounding",
+                "source": "D(1,2.302,8.8328,3.0994,8.8348,3.099,9.0286,2.3016,9.0266)",
+                "span": {
+                  "offset": 517,
+                  "length": 8
+                }
+              },
+              {
+                "content": "11",
+                "source": "D(1,5.859,8.7708,6.0325,8.7708,6.0325,8.9536,5.859,8.9536)",
+                "span": {
+                  "offset": 535,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,2.2919,9.0556,2.7318,9.0556,2.7318,9.2391,2.2919,9.2391)",
+                "span": {
+                  "offset": 558,
+                  "length": 5
+                }
+              },
+              {
+                "content": "334,000",
+                "source": "D(1,5.3741,9.0169,6.0567,9.0091,6.0589,9.2055,5.3748,9.2133)",
+                "span": {
+                  "offset": 573,
+                  "length": 7
+                }
+              },
+              {
+                "content": "DEBIT BCA",
+                "source": "D(1,2.3,9.2898,3.2373,9.2859,3.2382,9.4783,2.3008,9.4823)",
+                "span": {
+                  "offset": 601,
+                  "length": 9
+                }
+              },
+              {
+                "content": "334,000",
+                "source": "D(1,5.3741,9.2557,6.0446,9.2494,6.0464,9.4372,5.3748,9.4435)",
+                "span": {
+                  "offset": 620,
+                  "length": 7
+                }
+              },
+              {
+                "content": "jungan",
+                "source": "D(1,3.9423,9.8386,4.5718,9.8386,4.5718,10.0328,3.9423,10.0328)",
+                "span": {
+                  "offset": 667,
+                  "length": 6
+                }
+              },
+              {
+                "content": "A",
+                "source": "D(1,3.2705,9.8443,3.3955,9.8443,3.3955,10.0042,3.2705,10.0042)",
+                "span": {
+                  "offset": 695,
+                  "length": 1
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "SOLARIA",
+            "source": "D(1,2.8732,3.3576,5.3513,3.3701,5.3444,4.7305,2.8663,4.718)",
+            "span": {
+              "offset": 2,
+              "length": 7
+            }
+          },
+          {
+            "content": "No trair , Custor",
+            "source": "D(1,3.4481,5.5527,3.6659,5.9923,2.7204,6.4602,2.5026,6.0207)",
+            "span": {
+              "offset": 26,
+              "length": 17
+            }
+          },
+          {
+            "content": "(TA) NASI ORG TERI",
+            "source": "D(1,2.3484,6.3616,4.0052,6.3477,4.0069,6.5451,2.3501,6.559)",
+            "span": {
+              "offset": 63,
+              "length": 18
+            }
+          },
+          {
+            "content": "MEDAN",
+            "source": "D(1,2.3585,6.5901,2.9456,6.5832,2.9477,6.7651,2.3606,6.7719)",
+            "span": {
+              "offset": 85,
+              "length": 5
+            }
+          },
+          {
+            "content": "4",
+            "source": "D(1,4.5557,6.3543,4.6558,6.3564,4.6525,6.5164,4.5523,6.5143)",
+            "span": {
+              "offset": 100,
+              "length": 1
+            }
+          },
+          {
+            "content": "165,460",
+            "source": "D(1,5.3202,6.3446,5.9921,6.3372,5.9942,6.5318,5.3223,6.5391)",
+            "span": {
+              "offset": 111,
+              "length": 7
+            }
+          },
+          {
+            "content": "(TA) BIHUN GORENG",
+            "source": "D(1,2.3545,6.8164,4.0611,6.7973,4.0634,7.0029,2.3568,7.0219)",
+            "span": {
+              "offset": 139,
+              "length": 17
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,4.5585,6.8196,4.6444,6.8124,4.6577,6.9711,4.5718,6.9783)",
+            "span": {
+              "offset": 166,
+              "length": 1
+            }
+          },
+          {
+            "content": "40,456",
+            "source": "D(1,5.4075,6.8049,6.0002,6.7947,6.0038,7.0005,5.4111,7.0107)",
+            "span": {
+              "offset": 177,
+              "length": 6
+            }
+          },
+          {
+            "content": "SEAFOOD",
+            "source": "D(1,2.3545,7.0475,3.1399,7.0412,3.1413,7.2239,2.3559,7.2302)",
+            "span": {
+              "offset": 204,
+              "length": 7
+            }
+          },
+          {
+            "content": "(TA) KWETIAW SEAFOOD",
+            "source": "D(1,2.3524,7.2803,4.4147,7.2436,4.4184,7.4513,2.3561,7.488)",
+            "span": {
+              "offset": 252,
+              "length": 20
+            }
+          },
+          {
+            "content": "SIRAM (TA) NASI GORENG",
+            "source": "D(1,2.3304,7.5213,3.9208,7.485,3.9309,7.9251,2.3404,7.9614)",
+            "span": {
+              "offset": 276,
+              "length": 22
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,4.5692,7.2806,4.6525,7.2791,4.6551,7.4276,4.5718,7.429)",
+            "span": {
+              "offset": 308,
+              "length": 1
+            }
+          },
+          {
+            "content": "2",
+            "source": "D(1,4.5637,7.7364,4.675,7.738,4.6726,7.9027,4.5614,7.9011)",
+            "span": {
+              "offset": 313,
+              "length": 1
+            }
+          },
+          {
+            "content": "42,274",
+            "source": "D(1,5.4129,7.2753,5.9881,7.2684,5.9903,7.4511,5.4151,7.458)",
+            "span": {
+              "offset": 324,
+              "length": 6
+            }
+          },
+          {
+            "content": "55,456",
+            "source": "D(1,5.4353,7.7145,6.0042,7.7145,6.0042,7.9086,5.4353,7.9086)",
+            "span": {
+              "offset": 334,
+              "length": 6
+            }
+          },
+          {
+            "content": "ITEMS:8",
+            "source": "D(1,2.3142,8.0541,3.0293,8.0576,3.0283,8.2616,2.3132,8.258)",
+            "span": {
+              "offset": 380,
+              "length": 7
+            }
+          },
+          {
+            "content": "303,646",
+            "source": "D(1,5.3263,8.0285,6.0123,8.0285,6.0123,8.2227,5.3263,8.2227)",
+            "span": {
+              "offset": 397,
+              "length": 7
+            }
+          },
+          {
+            "content": "Ph1 10%",
+            "source": "D(1,2.3101,8.313,3.075,8.314,3.0747,8.5027,2.3098,8.5017)",
+            "span": {
+              "offset": 425,
+              "length": 7
+            }
+          },
+          {
+            "content": "30,365",
+            "source": "D(1,5.4434,8.2806,6.0221,8.2858,6.0204,8.4799,5.4416,8.4747)",
+            "span": {
+              "offset": 442,
+              "length": 6
+            }
+          },
+          {
+            "content": "e Rounding",
+            "source": "D(1,2.6854,8.5596,3.6921,8.5596,3.6921,8.7651,2.6854,8.7651)",
+            "span": {
+              "offset": 469,
+              "length": 10
+            }
+          },
+          {
+            "content": "334,011",
+            "source": "D(1,5.3667,8.5253,6.0163,8.5253,6.0163,8.7194,5.3667,8.7194)",
+            "span": {
+              "offset": 489,
+              "length": 7
+            }
+          },
+          {
+            "content": "Rounding",
+            "source": "D(1,2.3021,8.8266,3.1009,8.8348,3.099,9.0286,2.3001,9.0204)",
+            "span": {
+              "offset": 517,
+              "length": 8
+            }
+          },
+          {
+            "content": "11",
+            "source": "D(1,5.859,8.7708,6.0325,8.7708,6.0325,8.9536,5.859,8.9536)",
+            "span": {
+              "offset": 535,
+              "length": 2
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,2.2909,9.0598,2.7318,9.0572,2.7328,9.2391,2.292,9.2417)",
+            "span": {
+              "offset": 558,
+              "length": 5
+            }
+          },
+          {
+            "content": "334,000",
+            "source": "D(1,5.3727,9.0164,6.0567,9.0091,6.0588,9.2048,5.3748,9.2121)",
+            "span": {
+              "offset": 573,
+              "length": 7
+            }
+          },
+          {
+            "content": "DEBIT BCA",
+            "source": "D(1,2.3,9.2819,3.239,9.2859,3.2382,9.4809,2.2992,9.4769)",
+            "span": {
+              "offset": 601,
+              "length": 9
+            }
+          },
+          {
+            "content": "334,000",
+            "source": "D(1,5.3733,9.2545,6.0446,9.2494,6.046,9.4371,5.3748,9.4422)",
+            "span": {
+              "offset": 620,
+              "length": 7
+            }
+          },
+          {
+            "role": "pageFooter",
+            "content": "jungan",
+            "source": "D(1,3.9423,9.8386,4.5718,9.8386,4.5718,10.0328,3.9423,10.0328)",
+            "span": {
+              "offset": 650,
+              "length": 27
+            }
+          },
+          {
+            "role": "pageNumber",
+            "content": "A",
+            "source": "D(1,3.2705,9.8443,3.3955,9.8443,3.3955,10.0042,3.2705,10.0042)",
+            "span": {
+              "offset": 678,
+              "length": 22
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 647
+            },
+            "elements": [
+              "/figures/0",
+              "/paragraphs/1",
+              "/tables/0",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 4,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "(TA) NASI ORG TERI\nMEDAN",
+                "source": "D(1,2.292,6.2946,4.4579,6.2783,4.4597,6.7835,2.2927,6.7964)",
+                "span": {
+                  "offset": 63,
+                  "length": 27
+                },
+                "elements": [
+                  "/paragraphs/2",
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4",
+                "source": "D(1,4.4579,6.2783,5.0342,6.2735,5.0306,6.7809,4.4597,6.7835)",
+                "span": {
+                  "offset": 100,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "165,460",
+                "source": "D(1,5.0342,6.2735,6.0609,6.2671,6.0622,6.7757,5.0306,6.7809)",
+                "span": {
+                  "offset": 111,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "(TA) BIHUN GORENG",
+                "source": "D(1,2.2927,6.7964,4.4597,6.7835,4.4649,7.1199,2.2916,7.14)",
+                "span": {
+                  "offset": 139,
+                  "length": 17
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,4.4597,6.7835,5.0306,6.7809,5.0346,7.1146,4.4649,7.1199)",
+                "span": {
+                  "offset": 166,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "40,456",
+                "source": "D(1,5.0306,6.7809,6.0622,6.7757,6.0637,7.1055,5.0346,7.1146)",
+                "span": {
+                  "offset": 177,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SEAFOOD",
+                "source": "D(1,2.2916,7.14,4.4649,7.1199,4.4619,7.2408,2.2923,7.2582)",
+                "span": {
+                  "offset": 204,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.4649,7.1199,5.0346,7.1146,5.0359,7.2363,4.4619,7.2408)",
+                "span": {
+                  "offset": 221,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,5.0346,7.1146,6.0637,7.1055,6.0636,7.2287,5.0359,7.2363)",
+                "span": {
+                  "offset": 231,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "(TA) KWETIAW SEAFOOD\nSIRAM (TA) NASI GORENG",
+                "source": "D(1,2.2923,7.2582,4.4619,7.2408,4.4751,7.9735,2.2925,7.9976)",
+                "span": {
+                  "offset": 252,
+                  "length": 46
+                },
+                "elements": [
+                  "/paragraphs/10",
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1\n2",
+                "source": "D(1,4.4619,7.2408,5.0359,7.2363,5.0403,7.9671,4.4751,7.9735)",
+                "span": {
+                  "offset": 308,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/12",
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "42,274\n55,456",
+                "source": "D(1,5.0359,7.2363,6.0636,7.2287,6.0684,7.956,5.0403,7.9671)",
+                "span": {
+                  "offset": 324,
+                  "length": 16
+                },
+                "elements": [
+                  "/paragraphs/14",
+                  "/paragraphs/15"
+                ]
+              }
+            ],
+            "source": "D(1,2.2899,6.2812,6.0405,6.2755,6.0446,7.9543,2.2919,7.9657)",
+            "span": {
+              "offset": 46,
+              "length": 314
+            }
+          },
+          {
+            "rowCount": 6,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "ITEMS:8",
+                "source": "D(1,2.2643,7.9884,5.274,7.9529,5.2823,8.2542,2.2633,8.2879)",
+                "span": {
+                  "offset": 380,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "303,646",
+                "source": "D(1,5.274,7.9529,6.0784,7.9435,6.0792,8.2455,5.2823,8.2542)",
+                "span": {
+                  "offset": 397,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Ph1 10%",
+                "source": "D(1,2.2633,8.2879,5.2823,8.2542,5.283,8.5076,2.2621,8.5516)",
+                "span": {
+                  "offset": 425,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "30,365",
+                "source": "D(1,5.2823,8.2542,6.0792,8.2455,6.0821,8.4961,5.283,8.5076)",
+                "span": {
+                  "offset": 442,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "e Rounding",
+                "source": "D(1,2.2621,8.5516,5.283,8.5076,5.2839,8.7696,2.2612,8.817)",
+                "span": {
+                  "offset": 469,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "334,011",
+                "source": "D(1,5.283,8.5076,6.0821,8.4961,6.0848,8.7565,5.2839,8.7696)",
+                "span": {
+                  "offset": 489,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Rounding",
+                "source": "D(1,2.2612,8.817,5.2839,8.7696,5.2855,8.9818,2.2603,9.0443)",
+                "span": {
+                  "offset": 517,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "11",
+                "source": "D(1,5.2839,8.7696,6.0848,8.7565,6.0862,8.965,5.2855,8.9818)",
+                "span": {
+                  "offset": 535,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,2.2603,9.0443,5.2855,8.9818,5.2926,9.2291,2.2594,9.2878)",
+                "span": {
+                  "offset": 558,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "334,000",
+                "source": "D(1,5.2855,8.9818,6.0862,8.965,6.0888,9.2132,5.2926,9.2291)",
+                "span": {
+                  "offset": 573,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DEBIT BCA",
+                "source": "D(1,2.2594,9.2878,5.2926,9.2291,5.2901,9.4977,2.26,9.5772)",
+                "span": {
+                  "offset": 601,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "334,000",
+                "source": "D(1,5.2926,9.2291,6.0888,9.2132,6.0923,9.4769,5.2901,9.4977)",
+                "span": {
+                  "offset": 620,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              }
+            ],
+            "source": "D(1,2.2516,8,6.0769,7.9885,6.089,9.496,2.2657,9.5074)",
+            "span": {
+              "offset": 363,
+              "length": 284
+            }
+          }
+        ],
+        "figures": [
+          {
+            "source": "D(1,2.8286,2.2141,5.4232,2.2113,5.4312,4.748,2.8508,4.7594)",
+            "span": {
+              "offset": 0,
+              "length": 23
+            },
+            "elements": [
+              "/paragraphs/0"
+            ],
+            "id": "1.1"
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 4198,
+      "gpt-5-mini-cached-input": 3712,
+      "gpt-5-mini-output": 342
+    }
+  }
+}

@@ -1,0 +1,880 @@
+{
+  "selected_document": {
+    "name": "BLUE HORIZON CARGO SERVICES",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued RECEIPT from BLUE HORIZON CARGO SERVICES, including a receipt number, customer, itemized charges, subtotal, tax, and total payable.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "RCPT-16075",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.126,
+          0.254,
+          0.135
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='RCPT-16075'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-16075 Date: 13/09/2025 Customer: STERLING'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.12480000000000002,
+                0.2555,
+                0.13549999999999995
+              ],
+              "line_bbox": [
+                0.084,
+                0.12480000000000002,
+                0.2555,
+                0.13549999999999995
+              ],
+              "text": "Receipt No: RCPT-16075",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "13/09/2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.142,
+          0.208,
+          0.151
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='13/09/2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-16075 Date: 13/09/2025 Customer: STERLING'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.1402,
+                0.2001,
+                0.15090000000000003
+              ],
+              "line_bbox": [
+                0.084,
+                0.1402,
+                0.2001,
+                0.15090000000000003
+              ],
+              "text": "Date: 13/09/2025",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "BLUE HORIZON CARGO SERVICES",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.044,
+          0.453,
+          0.057
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='BLUE HORIZON CARGO SERVICES'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BLUE HORIZON CARGO SERVICES 18 Harbor Road, Kochi'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.04390000000000005,
+                0.4543,
+                0.05940000000000001
+              ],
+              "line_bbox": [
+                0.084,
+                0.04390000000000005,
+                0.4543,
+                0.05940000000000001
+              ],
+              "text": "BLUE HORIZON CARGO SERVICES",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "STERLING MARKETING COMPANY",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.157,
+          0.414,
+          0.165
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='STERLING MARKETING COMPANY'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Receipt No: RCPT-16075 Date: 13/09/2025 Customer: STERLING MARKETING'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.15569999999999995,
+                0.4085,
+                0.1664
+              ],
+              "line_bbox": [
+                0.084,
+                0.15569999999999995,
+                0.4085,
+                0.1664
+              ],
+              "text": "Customer: STERLING MARKETING COMPANY",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.82,
+          0.209,
+          0.934,
+          0.219
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Bill of entry charges USD 18,355.54 Customs documentation'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.20840000000000003,
+                0.9328,
+                0.21860000000000002
+              ],
+              "line_bbox": [
+                0.084,
+                0.20840000000000003,
+                0.9328,
+                0.21860000000000002
+              ],
+              "text": "Bill of entry charges USD 18,355.54",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "113448.88",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.804,
+          0.348,
+          0.934,
+          0.358
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='113448.88'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Agency commission USD 8,335.38 Subtotal USD 113,448.88 Tax'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6501,
+                0.3459,
+                0.9328,
+                0.35650000000000004
+              ],
+              "line_bbox": [
+                0.6501,
+                0.3459,
+                0.9328,
+                0.35650000000000004
+              ],
+              "text": "Subtotal USD 113,448.88",
+              "lineno": 12,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "5672.44",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.824,
+          0.364,
+          0.934,
+          0.374
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='5672.44'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal USD 113,448.88 Tax 5% USD 5,672.44 Total'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6682,
+                0.36250000000000004,
+                0.9328,
+                0.3732
+              ],
+              "line_bbox": [
+                0.6682,
+                0.36250000000000004,
+                0.9328,
+                0.3732
+              ],
+              "text": "Tax 5% USD 5,672.44",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "119121.32",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.791,
+          0.381,
+          0.934,
+          0.391
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='119121.32'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Subtotal USD 113,448.88 Tax 5% USD 5,672.44 Total'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6807,
+                0.38039999999999996,
+                0.9328,
+                0.39249999999999996
+              ],
+              "line_bbox": [
+                0.6807,
+                0.38039999999999996,
+                0.9328,
+                0.39249999999999996
+              ],
+              "text": "Total USD 119,121.32",
+              "lineno": 14,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Bill of entry charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "18355.54",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.207,
+          0.934,
+          0.22
+        ]
+      }
+    },
+    {
+      "description": "Customs documentation fee",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "2646.44",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.234,
+          0.934,
+          0.245
+        ]
+      }
+    },
+    {
+      "description": "Cargo insurance",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "8697.32",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.261,
+          0.934,
+          0.272
+        ]
+      }
+    },
+    {
+      "description": "Local transportation",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "75414.20",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.287,
+          0.934,
+          0.299
+        ]
+      }
+    },
+    {
+      "description": "Agency commission",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "8335.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.314,
+          0.934,
+          0.326
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1530,
+      "total_tokens": 5185,
+      "elapsed_s": 10.01
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "RCPT-16075",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='RCPT-16075'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-16075 Date: 13/09/2025 Customer: STERLING'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.12480000000000002,
+                  0.2555,
+                  0.13549999999999995
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.12480000000000002,
+                  0.2555,
+                  0.13549999999999995
+                ],
+                "text": "Receipt No: RCPT-16075",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "13/09/2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='13/09/2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'RECEIPT Receipt No: RCPT-16075 Date: 13/09/2025 Customer: STERLING'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.1402,
+                  0.2001,
+                  0.15090000000000003
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.1402,
+                  0.2001,
+                  0.15090000000000003
+                ],
+                "text": "Date: 13/09/2025",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "BLUE HORIZON CARGO SERVICES",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='BLUE HORIZON CARGO SERVICES'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BLUE HORIZON CARGO SERVICES 18 Harbor Road, Kochi'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.04390000000000005,
+                  0.4543,
+                  0.05940000000000001
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.04390000000000005,
+                  0.4543,
+                  0.05940000000000001
+                ],
+                "text": "BLUE HORIZON CARGO SERVICES",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "STERLING MARKETING COMPANY",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='STERLING MARKETING COMPANY'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Receipt No: RCPT-16075 Date: 13/09/2025 Customer: STERLING MARKETING'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.15569999999999995,
+                  0.4085,
+                  0.1664
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.15569999999999995,
+                  0.4085,
+                  0.1664
+                ],
+                "text": "Customer: STERLING MARKETING COMPANY",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Bill of entry charges USD 18,355.54 Customs documentation'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.20840000000000003,
+                  0.9328,
+                  0.21860000000000002
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.20840000000000003,
+                  0.9328,
+                  0.21860000000000002
+                ],
+                "text": "Bill of entry charges USD 18,355.54",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "113448.88",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='113448.88'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Agency commission USD 8,335.38 Subtotal USD 113,448.88 Tax'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6501,
+                  0.3459,
+                  0.9328,
+                  0.35650000000000004
+                ],
+                "line_bbox": [
+                  0.6501,
+                  0.3459,
+                  0.9328,
+                  0.35650000000000004
+                ],
+                "text": "Subtotal USD 113,448.88",
+                "lineno": 12,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "5672.44",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='5672.44'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal USD 113,448.88 Tax 5% USD 5,672.44 Total'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6682,
+                  0.36250000000000004,
+                  0.9328,
+                  0.3732
+                ],
+                "line_bbox": [
+                  0.6682,
+                  0.36250000000000004,
+                  0.9328,
+                  0.3732
+                ],
+                "text": "Tax 5% USD 5,672.44",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "119121.32",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='119121.32'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Subtotal USD 113,448.88 Tax 5% USD 5,672.44 Total'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6807,
+                  0.38039999999999996,
+                  0.9328,
+                  0.39249999999999996
+                ],
+                "line_bbox": [
+                  0.6807,
+                  0.38039999999999996,
+                  0.9328,
+                  0.39249999999999996
+                ],
+                "text": "Total USD 119,121.32",
+                "lineno": 14,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 0
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

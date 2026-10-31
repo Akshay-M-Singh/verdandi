@@ -1,0 +1,792 @@
+{
+  "id": "d565cdd0-bdc2-4b55-b019-086a4b32a116",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-06T10:54:17Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "![](figures/1.1)\n\n\nB17\n\n1 CIRENG PANDAWA\n26,818\n\n\n<table>\n<tr>\n<td>Subtotal</td>\n<td>26,818</td>\n</tr>\n<tr>\n<td>Pb1</td>\n<td>2,681</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>29,500</td>\n</tr>\n<tr>\n<td>CASH</td>\n<td>29,500</td>\n</tr>\n<tr>\n<td>Total Item</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Total Qty</td>\n<td>1</td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "valueString": "IDR",
+            "spans": [
+              {
+                "offset": 33,
+                "length": 7
+              }
+            ],
+            "confidence": 0.15,
+            "source": "D(1,3.4013,5.5935,4.6121,5.5842,4.6121,5.8786,3.4014,5.8885)"
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 26818,
+            "spans": [
+              {
+                "offset": 85,
+                "length": 6
+              }
+            ],
+            "confidence": 0.967,
+            "source": "D(1,5.9437,6.2485,6.7790,6.2428,6.7790,6.5324,5.9437,6.5379)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 2681,
+            "spans": [
+              {
+                "offset": 125,
+                "length": 5
+              }
+            ],
+            "confidence": 0.796,
+            "source": "D(1,6.0930,6.5895,6.7628,6.5777,6.7628,6.8865,6.0930,6.8937)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 29500,
+            "spans": [
+              {
+                "offset": 166,
+                "length": 6
+              }
+            ],
+            "confidence": 0.796,
+            "source": "D(1,5.7379,6.9835,6.7790,6.9763,6.7790,7.2894,5.7379,7.2939)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "1 CIRENG PANDAWA",
+                    "spans": [
+                      {
+                        "offset": 24,
+                        "length": 16
+                      }
+                    ],
+                    "confidence": 0.794,
+                    "source": "D(1,2.1690,5.5999,4.6121,5.5842,4.6140,5.8808,2.1709,5.8965)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 26818,
+                    "spans": [
+                      {
+                        "offset": 41,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.901,
+                    "source": "D(1,5.9276,5.5809,6.7588,5.5769,6.7588,5.8644,5.9276,5.8644)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -0.3772,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 317
+              }
+            ],
+            "words": [
+              {
+                "content": "B17",
+                "span": {
+                  "offset": 19,
+                  "length": 3
+                },
+                "confidence": 0.817,
+                "source": "D(1,1.6029,5.2956,2.074,5.2918,2.074,5.5295,1.6029,5.5334)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 24,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.1709,5.6036,2.2742,5.6028,2.2742,5.8939,2.1709,5.8943)"
+              },
+              {
+                "content": "CIRENG",
+                "span": {
+                  "offset": 26,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.3924,5.6018,3.3078,5.5943,3.3078,5.8892,2.3924,5.8935)"
+              },
+              {
+                "content": "PANDAWA",
+                "span": {
+                  "offset": 33,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.4013,5.5935,4.6121,5.5842,4.6121,5.8786,3.4014,5.8885)"
+              },
+              {
+                "content": "26,818",
+                "span": {
+                  "offset": 41,
+                  "length": 6
+                },
+                "confidence": 0.989,
+                "source": "D(1,5.9276,5.5809,6.7588,5.5769,6.7588,5.8644,5.9276,5.8644)"
+              },
+              {
+                "content": "Subtotal",
+                "span": {
+                  "offset": 67,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,3.7264,6.264,4.6848,6.2568,4.6848,6.5309,3.7264,6.5381)"
+              },
+              {
+                "content": "26,818",
+                "span": {
+                  "offset": 85,
+                  "length": 6
+                },
+                "confidence": 0.986,
+                "source": "D(1,5.9437,6.2485,6.779,6.2428,6.779,6.5324,5.9437,6.5379)"
+              },
+              {
+                "content": "Pb1",
+                "span": {
+                  "offset": 112,
+                  "length": 3
+                },
+                "confidence": 0.878,
+                "source": "D(1,4.2328,6.601,4.6525,6.601,4.6525,6.8751,4.2328,6.8751)"
+              },
+              {
+                "content": "2,681",
+                "span": {
+                  "offset": 125,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,6.093,6.5895,6.7628,6.5777,6.7628,6.8865,6.093,6.8937)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 151,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,3.9181,7.0077,4.6928,6.9997,4.6928,7.2852,3.9201,7.2932)"
+              },
+              {
+                "content": "29,500",
+                "span": {
+                  "offset": 166,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,5.7379,6.9835,6.779,6.9763,6.779,7.2894,5.7379,7.2939)"
+              },
+              {
+                "content": "CASH",
+                "span": {
+                  "offset": 193,
+                  "length": 4
+                },
+                "confidence": 0.983,
+                "source": "D(1,3.8676,7.3447,4.6848,7.3366,4.6848,7.6221,3.8676,7.6302)"
+              },
+              {
+                "content": "29,500",
+                "span": {
+                  "offset": 207,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,5.746,7.3213,6.7911,7.3264,6.7911,7.6365,5.746,7.6351)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 234,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,3.4601,7.6642,4.0614,7.6702,4.0614,7.9479,3.4601,7.9418)"
+              },
+              {
+                "content": "Item",
+                "span": {
+                  "offset": 240,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,4.1467,7.6708,4.6807,7.6742,4.6807,7.948,4.1467,7.9484)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 254,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,6.6902,7.6688,6.8032,7.6688,6.8032,7.92,6.6902,7.92)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 276,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.5933,7.999,4.2034,8.0024,4.2035,8.3194,3.5933,8.3135)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 282,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,4.2777,8.0029,4.6969,8.0067,4.6969,8.3284,4.2777,8.3204)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 295,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,6.6983,8.0126,6.8153,8.0061,6.8153,8.2574,6.6983,8.2638)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "B17",
+                "source": "D(1,1.601,5.2957,2.074,5.2918,2.076,5.5303,1.603,5.5342)",
+                "span": {
+                  "offset": 19,
+                  "length": 3
+                }
+              },
+              {
+                "content": "1 CIRENG PANDAWA",
+                "source": "D(1,2.1702,5.6027,4.6121,5.5842,4.6144,5.8798,2.1709,5.8983)",
+                "span": {
+                  "offset": 24,
+                  "length": 16
+                }
+              },
+              {
+                "content": "26,818",
+                "source": "D(1,5.9276,5.5769,6.7588,5.5769,6.7588,5.8644,5.9276,5.8644)",
+                "span": {
+                  "offset": 41,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Subtotal",
+                "source": "D(1,3.7244,6.264,4.6848,6.2568,4.6868,6.5334,3.7264,6.5406)",
+                "span": {
+                  "offset": 67,
+                  "length": 8
+                }
+              },
+              {
+                "content": "26,818",
+                "source": "D(1,5.9418,6.2437,6.7789,6.2382,6.779,6.5324,5.9437,6.5379)",
+                "span": {
+                  "offset": 85,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Pb1",
+                "source": "D(1,4.2328,6.601,4.6525,6.601,4.6525,6.8751,4.2328,6.8751)",
+                "span": {
+                  "offset": 112,
+                  "length": 3
+                }
+              },
+              {
+                "content": "2,681",
+                "source": "D(1,6.0897,6.5841,6.7628,6.5769,6.7661,6.8865,6.093,6.8937)",
+                "span": {
+                  "offset": 125,
+                  "length": 5
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,3.9178,7.0072,4.6928,6.9992,4.6945,7.2852,3.9201,7.2932)",
+                "span": {
+                  "offset": 151,
+                  "length": 5
+                }
+              },
+              {
+                "content": "29,500",
+                "source": "D(1,5.7358,6.9835,6.779,6.9763,6.779,7.2894,5.7379,7.2966)",
+                "span": {
+                  "offset": 166,
+                  "length": 6
+                }
+              },
+              {
+                "content": "CASH",
+                "source": "D(1,3.8664,7.3441,4.6847,7.336,4.6876,7.6221,3.8676,7.6302)",
+                "span": {
+                  "offset": 193,
+                  "length": 4
+                }
+              },
+              {
+                "content": "29,500",
+                "source": "D(1,5.746,7.3193,6.7915,7.3207,6.7911,7.6365,5.7456,7.6351)",
+                "span": {
+                  "offset": 207,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Total Item",
+                "source": "D(1,3.4601,7.6642,4.683,7.6742,4.6807,7.9536,3.4578,7.9436)",
+                "span": {
+                  "offset": 234,
+                  "length": 10
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,6.6902,7.6688,6.8032,7.6688,6.8032,7.92,6.6902,7.92)",
+                "span": {
+                  "offset": 254,
+                  "length": 1
+                }
+              },
+              {
+                "content": "Total Qty",
+                "source": "D(1,3.5933,7.9962,4.6999,8.0068,4.6969,8.3284,3.5923,8.3178)",
+                "span": {
+                  "offset": 276,
+                  "length": 9
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,6.6983,8.0053,6.8153,8.0053,6.8153,8.2638,6.6983,8.2638)",
+                "span": {
+                  "offset": 295,
+                  "length": 1
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "B17",
+            "source": "D(1,1.601,5.2957,2.074,5.2918,2.076,5.5303,1.603,5.5342)",
+            "span": {
+              "offset": 19,
+              "length": 3
+            }
+          },
+          {
+            "content": "1 CIRENG PANDAWA 26,818",
+            "source": "D(1,2.1687,5.6023,6.7587,5.5683,6.7609,5.8643,2.1709,5.8983)",
+            "span": {
+              "offset": 24,
+              "length": 23
+            }
+          },
+          {
+            "content": "Subtotal",
+            "source": "D(1,3.7244,6.264,4.6848,6.2568,4.6868,6.5309,3.7264,6.5381)",
+            "span": {
+              "offset": 67,
+              "length": 8
+            }
+          },
+          {
+            "content": "26,818",
+            "source": "D(1,5.9418,6.2484,6.779,6.2428,6.7809,6.5324,5.9437,6.538)",
+            "span": {
+              "offset": 85,
+              "length": 6
+            }
+          },
+          {
+            "content": "Pb1",
+            "source": "D(1,4.2328,6.601,4.6525,6.601,4.6525,6.8751,4.2328,6.8751)",
+            "span": {
+              "offset": 112,
+              "length": 3
+            }
+          },
+          {
+            "content": "2,681",
+            "source": "D(1,6.0887,6.5873,6.7628,6.5777,6.7672,6.8865,6.093,6.896)",
+            "span": {
+              "offset": 125,
+              "length": 5
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,3.9172,7.0077,4.6928,6.9997,4.6958,7.2852,3.9201,7.2932)",
+            "span": {
+              "offset": 151,
+              "length": 5
+            }
+          },
+          {
+            "content": "29,500",
+            "source": "D(1,5.7362,6.9822,6.779,6.9763,6.7807,7.2893,5.7379,7.2952)",
+            "span": {
+              "offset": 166,
+              "length": 6
+            }
+          },
+          {
+            "content": "CASH",
+            "source": "D(1,3.8648,7.3447,4.6848,7.3366,4.6876,7.6221,3.8676,7.6302)",
+            "span": {
+              "offset": 193,
+              "length": 4
+            }
+          },
+          {
+            "content": "29,500",
+            "source": "D(1,5.746,7.3213,6.7921,7.3246,6.7911,7.6384,5.745,7.6351)",
+            "span": {
+              "offset": 207,
+              "length": 6
+            }
+          },
+          {
+            "content": "Total Item",
+            "source": "D(1,3.4601,7.6619,4.6835,7.6742,4.6807,7.9542,3.4573,7.9419)",
+            "span": {
+              "offset": 234,
+              "length": 10
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,6.6902,7.6688,6.8032,7.6688,6.8032,7.92,6.6902,7.92)",
+            "span": {
+              "offset": 254,
+              "length": 1
+            }
+          },
+          {
+            "content": "Total Qty",
+            "source": "D(1,3.5934,7.9912,4.7014,8.0068,4.6968,8.3291,3.5888,8.3135)",
+            "span": {
+              "offset": 276,
+              "length": 9
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,6.6844,8.0134,6.8153,8.0061,6.8292,8.2566,6.6983,8.2638)",
+            "span": {
+              "offset": 295,
+              "length": 1
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 316
+            },
+            "elements": [
+              "/figures/0",
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/tables/0"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 6,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Subtotal",
+                "source": "D(1,3.502,6.2466,5.5479,6.2454,5.5461,6.5586,3.5024,6.5597)",
+                "span": {
+                  "offset": 67,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "26,818",
+                "source": "D(1,5.5479,6.2454,6.9321,6.2446,6.929,6.5577,5.5461,6.5586)",
+                "span": {
+                  "offset": 85,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Pb1",
+                "source": "D(1,3.5024,6.5597,5.5461,6.5586,5.5476,6.9341,3.5002,6.9354)",
+                "span": {
+                  "offset": 112,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,681",
+                "source": "D(1,5.5461,6.5586,6.929,6.5577,6.9288,6.9331,5.5476,6.9341)",
+                "span": {
+                  "offset": 125,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,3.5002,6.9354,5.5476,6.9341,5.547,7.3124,3.5002,7.3169)",
+                "span": {
+                  "offset": 151,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "29,500",
+                "source": "D(1,5.5476,6.9341,6.9288,6.9331,6.9289,7.3083,5.547,7.3124)",
+                "span": {
+                  "offset": 166,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CASH",
+                "source": "D(1,3.5002,7.3169,5.547,7.3124,5.5496,7.6534,3.5003,7.6539)",
+                "span": {
+                  "offset": 193,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "29,500",
+                "source": "D(1,5.547,7.3124,6.9289,7.3083,6.9304,7.6517,5.5496,7.6534)",
+                "span": {
+                  "offset": 207,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total Item",
+                "source": "D(1,3.5003,7.6539,5.5496,7.6534,5.5513,7.9719,3.5,7.9732)",
+                "span": {
+                  "offset": 234,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,5.5496,7.6534,6.9304,7.6517,6.9303,7.9695,5.5513,7.9719)",
+                "span": {
+                  "offset": 254,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total Qty",
+                "source": "D(1,3.5,7.9732,5.5513,7.9719,5.5497,8.3248,3.5001,8.3259)",
+                "span": {
+                  "offset": 276,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,5.5513,7.9719,6.9303,7.9695,6.933,8.324,5.5497,8.3248)",
+                "span": {
+                  "offset": 295,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              }
+            ],
+            "source": "D(1,3.454,6.2013,6.8597,6.2013,6.8637,8.3254,3.4742,8.3312)",
+            "span": {
+              "offset": 50,
+              "length": 266
+            }
+          }
+        ],
+        "figures": [
+          {
+            "source": "D(1,1.5293,2.6424,6.7951,2.6267,6.7951,5.3419,1.5333,5.359)",
+            "span": {
+              "offset": 0,
+              "length": 16
+            },
+            "id": "1.1"
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5.5-input": 3983,
+      "gpt-5.5-cached-input": 3328,
+      "gpt-5.5-output": 172
+    }
+  }
+}

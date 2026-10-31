@@ -1,0 +1,783 @@
+{
+  "selected_document": {
+    "name": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the vendor letterhead 'NOVA FREIGHT SOLUTIONS PVT. LTD.', the heading 'TAX INVOICE', invoice details, billed line items, taxes, and a final total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/25-26/264",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.103,
+          0.294,
+          0.118
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/25-26/264'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '42 Transport Nagar, Chennai 600032, India Invoice No:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.10340000000000005,
+                0.2614,
+                0.11409999999999998
+              ],
+              "line_bbox": [
+                0.084,
+                0.10340000000000005,
+                0.2614,
+                0.11409999999999998
+              ],
+              "text": "Invoice No: INV/25-26/264",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "07-06-2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.12,
+          0.239,
+          0.135
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='07-06-2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: INV/25-26/264 Invoice Date: 07-06-2025 Bill To:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.11880000000000002,
+                0.2539,
+                0.12949999999999995
+              ],
+              "line_bbox": [
+                0.084,
+                0.11880000000000002,
+                0.2539,
+                0.12949999999999995
+              ],
+              "text": "Invoice Date: 07-06-2025",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.041,
+          0.557,
+          0.058
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='NOVA FREIGHT SOLUTIONS PVT. LTD.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'NOVA FREIGHT SOLUTIONS PVT. LTD. 42 Transport Nagar,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.084,
+                0.042100000000000026,
+                0.5547,
+                0.05989999999999995
+              ],
+              "line_bbox": [
+                0.084,
+                0.042100000000000026,
+                0.5547,
+                0.05989999999999995
+              ],
+              "text": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "ALPHA-CAPITAL POWER PROJECTS LIMITED",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.135,
+          0.418,
+          0.151
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='ALPHA-CAPITAL POWER PROJECTS LIMITED'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'ALPHA-CAPITAL POWER PROJECTS LIMITED' NOT found near region (page 1); nearest text 'Invoice No: INV/25-26/264 Invoice Date: 07-06-2025 Bill To:' (n-gram proximity 0.72)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "38087.89",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.64,
+          0.349,
+          0.933,
+          0.36
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='38087.89'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Local transportation 3 1,725.46 5,176.38 Subtotal: 38,087.89 CGST'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.641,
+                0.34940000000000004,
+                0.9328,
+                0.3601
+              ],
+              "line_bbox": [
+                0.641,
+                0.34940000000000004,
+                0.9328,
+                0.3601
+              ],
+              "text": "Subtotal: 38,087.89",
+              "lineno": 13,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "6855.82",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.632,
+          0.399,
+          0.933,
+          0.41
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='6855.82'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'CGST @9%: 3,427.91 SGST @9%: 3,427.91 Tax Total:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6319,
+                0.3993,
+                0.9328,
+                0.41000000000000003
+              ],
+              "line_bbox": [
+                0.6319,
+                0.3993,
+                0.9328,
+                0.41000000000000003
+              ],
+              "text": "Tax Total: 6,855.82",
+              "lineno": 16,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "44943.71",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.67,
+          0.426,
+          0.934,
+          0.439
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='44943.71'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SGST @9%: 3,427.91 Tax Total: 6,855.82 Total: 44,943.71'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6723,
+                0.42669999999999997,
+                0.9328,
+                0.43879999999999997
+              ],
+              "line_bbox": [
+                0.6723,
+                0.42669999999999997,
+                0.9328,
+                0.43879999999999997
+              ],
+              "text": "Total: 44,943.71",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Agency commission",
+      "quantity": "1",
+      "unit_price": "4899.30",
+      "amount": "4899.30",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.223,
+          0.937,
+          0.243
+        ]
+      }
+    },
+    {
+      "description": "Freight forwarding charges",
+      "quantity": "2",
+      "unit_price": "10430.90",
+      "amount": "20861.80",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.252,
+          0.937,
+          0.272
+        ]
+      }
+    },
+    {
+      "description": "Cargo insurance",
+      "quantity": "1",
+      "unit_price": "7150.41",
+      "amount": "7150.41",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.282,
+          0.937,
+          0.301
+        ]
+      }
+    },
+    {
+      "description": "Local transportation",
+      "quantity": "3",
+      "unit_price": "1725.46",
+      "amount": "5176.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.084,
+          0.311,
+          0.937,
+          0.329
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1433,
+      "total_tokens": 5088,
+      "elapsed_s": 20.34
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/25-26/264",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/25-26/264'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '42 Transport Nagar, Chennai 600032, India Invoice No:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.10340000000000005,
+                  0.2614,
+                  0.11409999999999998
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.10340000000000005,
+                  0.2614,
+                  0.11409999999999998
+                ],
+                "text": "Invoice No: INV/25-26/264",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "07-06-2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='07-06-2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: INV/25-26/264 Invoice Date: 07-06-2025 Bill To:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.11880000000000002,
+                  0.2539,
+                  0.12949999999999995
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.11880000000000002,
+                  0.2539,
+                  0.12949999999999995
+                ],
+                "text": "Invoice Date: 07-06-2025",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='NOVA FREIGHT SOLUTIONS PVT. LTD.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'NOVA FREIGHT SOLUTIONS PVT. LTD. 42 Transport Nagar,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.084,
+                  0.042100000000000026,
+                  0.5547,
+                  0.05989999999999995
+                ],
+                "line_bbox": [
+                  0.084,
+                  0.042100000000000026,
+                  0.5547,
+                  0.05989999999999995
+                ],
+                "text": "NOVA FREIGHT SOLUTIONS PVT. LTD.",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "ALPHA-CAPITAL POWER PROJECTS LIMITED",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='ALPHA-CAPITAL POWER PROJECTS LIMITED'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'ALPHA-CAPITAL POWER PROJECTS LIMITED' NOT found near region (page 1); nearest text 'Invoice No: INV/25-26/264 Invoice Date: 07-06-2025 Bill To:' (n-gram proximity 0.72)",
+              "match": null
+            }
+          ]
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "38087.89",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='38087.89'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Local transportation 3 1,725.46 5,176.38 Subtotal: 38,087.89 CGST'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.641,
+                  0.34940000000000004,
+                  0.9328,
+                  0.3601
+                ],
+                "line_bbox": [
+                  0.641,
+                  0.34940000000000004,
+                  0.9328,
+                  0.3601
+                ],
+                "text": "Subtotal: 38,087.89",
+                "lineno": 13,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "6855.82",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='6855.82'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'CGST @9%: 3,427.91 SGST @9%: 3,427.91 Tax Total:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6319,
+                  0.3993,
+                  0.9328,
+                  0.41000000000000003
+                ],
+                "line_bbox": [
+                  0.6319,
+                  0.3993,
+                  0.9328,
+                  0.41000000000000003
+                ],
+                "text": "Tax Total: 6,855.82",
+                "lineno": 16,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "44943.71",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='44943.71'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SGST @9%: 3,427.91 Tax Total: 6,855.82 Total: 44,943.71'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6723,
+                  0.42669999999999997,
+                  0.9328,
+                  0.43879999999999997
+                ],
+                "line_bbox": [
+                  0.6723,
+                  0.42669999999999997,
+                  0.9328,
+                  0.43879999999999997
+                ],
+                "text": "Total: 44,943.71",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "buyer_name": {
+            "primary": "ALPHA-CAPITAL POWER PROJECTS LIMITED",
+            "secondary": "BILL TO: CALTEX POWER PROJECTS LIMITED",
+            "agree": false
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "1ea7a80ea137e4477bd8f55de96366371c4dff75536a923d4c9d78c5d797de1e"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2436,
+          "completion_tokens": 320,
+          "total_tokens": 2756,
+          "elapsed_s": 5.82
+        }
+      }
+    }
+  }
+}

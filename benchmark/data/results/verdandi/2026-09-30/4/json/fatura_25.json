@@ -1,0 +1,776 @@
+{
+  "selected_document": {
+    "name": "Buchanan and Sons",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows Buchanan and Sons as the issuer, an 'INVOICE ID' and invoice date, a billed-items table with quantities and amounts, and printed subtotal and total amounts in USD.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "8020-685",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.616,
+          0.038,
+          0.746,
+          0.053
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='8020-685'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE ID 8020-685 Invoice Date: 23-Dec-1996'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5015,
+                0.03959999999999997,
+                0.7109,
+                0.052100000000000035
+              ],
+              "line_bbox": [
+                0.5015,
+                0.03959999999999997,
+                0.7109,
+                0.052100000000000035
+              ],
+              "text": "INVOICE ID 8020-685",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "23-Dec-1996",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.616,
+          0.056,
+          0.749,
+          0.069
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='23-Dec-1996'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE ID 8020-685 Invoice Date: 23-Dec-1996'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5044,
+                0.05620000000000003,
+                0.7493,
+                0.06879999999999997
+              ],
+              "line_bbox": [
+                0.5044,
+                0.05620000000000003,
+                0.7493,
+                0.06879999999999997
+              ],
+              "text": "Invoice Date: 23-Dec-1996",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Buchanan and Sons",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.025,
+          0.122,
+          0.222,
+          0.137
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Buchanan and Sons'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Buchanan and Sons Address:831 Harrison Manors Suite 420'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0236,
+                0.12290000000000001,
+                0.2183,
+                0.13539999999999996
+              ],
+              "line_bbox": [
+                0.0236,
+                0.12290000000000001,
+                0.2183,
+                0.13539999999999996
+              ],
+              "text": "Buchanan and Sons",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Leroy Mclain",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.028,
+          0.251,
+          0.164,
+          0.266
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Leroy Mclain'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Leroy Mclain' NOT found near region (page 1); nearest text 'GSTIN : 34AABCBSS76GIZX Bill to: Leroy Mcclain 831' (n-gram proximity 0.89)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.843,
+          0.674,
+          0.881,
+          0.687
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 599.88 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6018,
+                0.6708000000000001,
+                0.8584,
+                0.6896
+              ],
+              "line_bbox": [
+                0.6018,
+                0.6708000000000001,
+                0.8584,
+                0.6896
+              ],
+              "text": "SUB_TOTAL: 599.88 USD",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "599.88",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.762,
+          0.674,
+          0.881,
+          0.687
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='599.88'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL: 599.88 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6018,
+                0.6708000000000001,
+                0.8584,
+                0.6896
+              ],
+              "line_bbox": [
+                0.6018,
+                0.6708000000000001,
+                0.8584,
+                0.6896
+              ],
+              "text": "SUB_TOTAL: 599.88 USD",
+              "lineno": 19,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "612.31",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.762,
+          0.783,
+          0.881,
+          0.797
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='612.31'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL : 612.31 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6018,
+                0.7812,
+                0.7994,
+                0.7958000000000001
+              ],
+              "line_bbox": [
+                0.6018,
+                0.7812,
+                0.7994,
+                0.7958000000000001
+              ],
+              "text": "TOTAL : 612.31 USD",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "And.",
+      "quantity": "3.00",
+      "unit_price": "81.66",
+      "amount": "244.98",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.022,
+          0.563,
+          0.931,
+          0.584
+        ]
+      }
+    },
+    {
+      "description": "Treat low.",
+      "quantity": "5.00",
+      "unit_price": "20.75",
+      "amount": "103.75",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.022,
+          0.584,
+          0.931,
+          0.606
+        ]
+      }
+    },
+    {
+      "description": "People design floor quickly.",
+      "quantity": "5.00",
+      "unit_price": "50.23",
+      "amount": "251.15",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.022,
+          0.606,
+          0.931,
+          0.628
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1447,
+      "total_tokens": 5102,
+      "elapsed_s": 12.09
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "8020-685",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='8020-685'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE ID 8020-685 Invoice Date: 23-Dec-1996'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5015,
+                  0.03959999999999997,
+                  0.7109,
+                  0.052100000000000035
+                ],
+                "line_bbox": [
+                  0.5015,
+                  0.03959999999999997,
+                  0.7109,
+                  0.052100000000000035
+                ],
+                "text": "INVOICE ID 8020-685",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "23-Dec-1996",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='23-Dec-1996'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE ID 8020-685 Invoice Date: 23-Dec-1996'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5044,
+                  0.05620000000000003,
+                  0.7493,
+                  0.06879999999999997
+                ],
+                "line_bbox": [
+                  0.5044,
+                  0.05620000000000003,
+                  0.7493,
+                  0.06879999999999997
+                ],
+                "text": "Invoice Date: 23-Dec-1996",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Buchanan and Sons",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Buchanan and Sons'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Buchanan and Sons Address:831 Harrison Manors Suite 420'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0236,
+                  0.12290000000000001,
+                  0.2183,
+                  0.13539999999999996
+                ],
+                "line_bbox": [
+                  0.0236,
+                  0.12290000000000001,
+                  0.2183,
+                  0.13539999999999996
+                ],
+                "text": "Buchanan and Sons",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Leroy Mclain",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Leroy Mclain'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Leroy Mclain' NOT found near region (page 1); nearest text 'GSTIN : 34AABCBSS76GIZX Bill to: Leroy Mcclain 831' (n-gram proximity 0.89)",
+              "match": null
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 599.88 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6018,
+                  0.6708000000000001,
+                  0.8584,
+                  0.6896
+                ],
+                "line_bbox": [
+                  0.6018,
+                  0.6708000000000001,
+                  0.8584,
+                  0.6896
+                ],
+                "text": "SUB_TOTAL: 599.88 USD",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "599.88",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='599.88'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL: 599.88 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6018,
+                  0.6708000000000001,
+                  0.8584,
+                  0.6896
+                ],
+                "line_bbox": [
+                  0.6018,
+                  0.6708000000000001,
+                  0.8584,
+                  0.6896
+                ],
+                "text": "SUB_TOTAL: 599.88 USD",
+                "lineno": 19,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "612.31",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='612.31'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL : 612.31 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6018,
+                  0.7812,
+                  0.7994,
+                  0.7958000000000001
+                ],
+                "line_bbox": [
+                  0.6018,
+                  0.7812,
+                  0.7994,
+                  0.7958000000000001
+                ],
+                "text": "TOTAL : 612.31 USD",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 1
+        },
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "23-Dec-1996",
+            "secondary": "23-Dec-1996",
+            "agree": true
+          },
+          "buyer_name": {
+            "primary": "Leroy Mclain",
+            "secondary": "Leroy Mcclain",
+            "agree": false
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "6d15aeaa5dc35d5efa77f0d83435fc4ca15b49241dfd81b76b096ca129203331"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2464,
+          "completion_tokens": 384,
+          "total_tokens": 2848,
+          "elapsed_s": 5.82
+        }
+      }
+    }
+  }
+}

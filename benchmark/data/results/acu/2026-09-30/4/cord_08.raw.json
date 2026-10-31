@@ -1,0 +1,2863 @@
+{
+  "id": "94e33d0a-7ad4-4cb5-8f51-492bb1117516",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T14:01:54Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "<table>\n<tr>\n<td>2</td>\n<td>UDANG RE<br>216,000</td>\n<td>432,000</td>\n</tr>\n<tr>\n<td>2</td>\n<td>=*LARGE*==</td>\n<td></td>\n</tr>\n<tr>\n<td>1</td>\n<td>AYM GR JUN NJAN<br>=*MEDIUM*=</td>\n<td>108,000</td>\n</tr>\n<tr>\n<td>1</td>\n<td>SAPO TH SEAFOOD<br>=*LARGE*==</td>\n<td>172,000</td>\n</tr>\n<tr>\n<td>2</td>\n<td>POCAI 3<br>111,000</td>\n<td>222,000</td>\n</tr>\n<tr>\n<td>2</td>\n<td>=*MEDIUM*=</td>\n<td></td>\n</tr>\n<tr>\n<td>1</td>\n<td>GURAME FILLET M<br>ASAM MANIS</td>\n<td>163,000</td>\n</tr>\n<tr>\n<td>1</td>\n<td>BIHUN GORENG JJ<br>=*LARGE*==</td>\n<td>116,000</td>\n</tr>\n<tr>\n<td>5</td>\n<td>ICED TEA 12,000</td>\n<td>60,000</td>\n</tr>\n<tr>\n<td>7</td>\n<td>NASI PUTIH 10,000</td>\n<td>70,000</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>FOOD</td>\n<td>1,213,000</td>\n</tr>\n<tr>\n<td>BEVERAGES</td>\n<td>60,000</td>\n</tr>\n<tr>\n<td>OTHERS</td>\n<td>70,000</td>\n</tr>\n<tr>\n<td>SUBTOTAL</td>\n<td>1,343,000</td>\n</tr>\n<tr>\n<td>SERVICE CHARGE</td>\n<td>80,580</td>\n</tr>\n<tr>\n<td>Tax 10%</td>\n<td>142,358</td>\n</tr>\n<tr>\n<td>DU 1,565,938</td>\n<td></td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 1343000,
+            "spans": [
+              {
+                "offset": 866,
+                "length": 9
+              }
+            ],
+            "confidence": 0.796,
+            "source": "D(1,4.0432,9.3247,5.0842,9.3247,5.0842,9.5467,4.0432,9.5464)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 142358,
+            "spans": [
+              {
+                "offset": 964,
+                "length": 7
+              }
+            ],
+            "confidence": 0.808,
+            "source": "D(1,4.2691,9.8443,5.0802,9.8443,5.0802,10.0499,4.2691,10.0499)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 1565938,
+            "spans": [
+              {
+                "offset": 995,
+                "length": 9
+              }
+            ],
+            "confidence": 0.786,
+            "source": "D(1,2.8651,10.0996,4.9511,10.1042,4.9511,10.5019,2.8620,10.5002)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "UDANG RE",
+                    "spans": [
+                      {
+                        "offset": 28,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.708,
+                    "source": "D(1,2.2254,4.6806,3.1667,4.6864,3.1655,4.8860,2.2242,4.8801)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 17,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.708,
+                    "source": "D(1,1.8844,4.6947,2.0044,4.6939,2.0044,4.8709,1.8844,4.8717)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 216000,
+                    "spans": [
+                      {
+                        "offset": 40,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.861,
+                    "source": "D(1,3.3855,4.7094,4.1574,4.7052,4.1574,4.9115,3.3855,4.9089)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 432000,
+                    "spans": [
+                      {
+                        "offset": 57,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.802,
+                    "source": "D(1,4.2730,4.7045,5.0721,4.6990,5.0721,4.9072,4.2730,4.9113)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "=*LARGE*==",
+                    "spans": [
+                      {
+                        "offset": 96,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.479,
+                    "source": "D(1,2.3326,4.9447,3.4886,4.9464,3.4883,5.1295,2.3323,5.1278)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 85,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.42,
+                    "source": "D(1,1.8723,4.9393,2.0004,4.9393,2.0004,5.1135,1.8723,5.1135)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "AYM GR JUN NJAN",
+                    "spans": [
+                      {
+                        "offset": 148,
+                        "length": 15
+                      }
+                    ],
+                    "confidence": 0.637,
+                    "source": "D(1,2.2161,5.1956,3.9552,5.2028,3.9544,5.4007,2.2153,5.3935)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 137,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.668,
+                    "source": "D(1,1.8915,5.2038,1.9782,5.2049,1.9782,5.3727,1.8915,5.3732)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 167,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.497,
+                    "source": "D(1,2.3323,5.4571,3.4930,5.4609,3.4924,5.6474,2.3317,5.6436)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 108000,
+                    "spans": [
+                      {
+                        "offset": 187,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.802,
+                    "source": "D(1,4.2611,5.2119,5.0600,5.2105,5.0600,5.4189,4.2611,5.4120)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "SAPO TH SEAFOOD",
+                    "spans": [
+                      {
+                        "offset": 226,
+                        "length": 15
+                      }
+                    ],
+                    "confidence": 0.635,
+                    "source": "D(1,2.2133,5.7041,3.9443,5.7037,3.9443,5.8990,2.2133,5.8994)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 215,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.603,
+                    "source": "D(1,1.8854,5.7218,1.9661,5.7217,1.9661,5.8872,1.8854,5.8872)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "spans": [
+                      {
+                        "offset": 245,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.47,
+                    "source": "D(1,2.3242,5.9614,3.4883,5.9614,3.4883,6.1442,2.3242,6.1442)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 172000,
+                    "spans": [
+                      {
+                        "offset": 265,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.796,
+                    "source": "D(1,4.2893,5.7104,5.0600,5.7092,5.0600,5.9215,4.2893,5.9215)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "POCAI 3",
+                    "spans": [
+                      {
+                        "offset": 304,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.698,
+                    "source": "D(1,2.1941,6.2146,3.0203,6.2104,3.0213,6.4076,2.1951,6.4119)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 293,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.783,
+                    "source": "D(1,1.8602,6.2241,1.9822,6.2241,1.9822,6.4072,1.8602,6.4093)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 111000,
+                    "spans": [
+                      {
+                        "offset": 315,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.847,
+                    "source": "D(1,3.3955,6.2178,4.1549,6.2120,4.1550,6.4199,3.3955,6.4180)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 222000,
+                    "spans": [
+                      {
+                        "offset": 332,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.794,
+                    "source": "D(1,4.2694,6.2116,5.0600,6.2118,5.0600,6.4246,4.2694,6.4203)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "=*MEDIUM*=",
+                    "spans": [
+                      {
+                        "offset": 371,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.495,
+                    "source": "D(1,2.3161,6.4691,3.4827,6.4716,3.4823,6.6548,2.3157,6.6524)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 360,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.476,
+                    "source": "D(1,1.8602,6.4799,1.9722,6.4762,1.9722,6.6532,1.8602,6.6569)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "GURAME FILLET M ASAM MANIS",
+                    "spans": [
+                      {
+                        "offset": 423,
+                        "length": 15
+                      },
+                      {
+                        "offset": 442,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.725,
+                    "source": "D(1,2.2000,6.7258,3.9483,6.7159,3.9494,6.9155,2.2011,6.9254);D(1,2.3096,6.9770,3.4803,6.9738,3.4808,7.1703,2.3101,7.1735)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 412,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.721,
+                    "source": "D(1,1.8723,6.7404,1.9621,6.7436,1.9621,6.9146,1.8723,6.9090)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 163000,
+                    "spans": [
+                      {
+                        "offset": 462,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.797,
+                    "source": "D(1,4.2893,6.7215,5.0681,6.7146,5.0681,6.9322,4.2893,6.9322)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 163000,
+                    "spans": [
+                      {
+                        "offset": 462,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.797,
+                    "source": "D(1,4.2893,6.7215,5.0681,6.7146,5.0681,6.9322,4.2893,6.9322)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "BIHUN GORENG JJ",
+                    "spans": [
+                      {
+                        "offset": 501,
+                        "length": 15
+                      }
+                    ],
+                    "confidence": 0.704,
+                    "source": "D(1,2.1918,7.2318,3.9322,7.2200,3.9335,7.4209,2.1931,7.4327)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 490,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.679,
+                    "source": "D(1,1.8642,7.2576,1.9570,7.2576,1.9570,7.4289,1.8642,7.4289)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "spans": [
+                      {
+                        "offset": 520,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.419,
+                    "source": "D(1,2.3075,7.4947,3.4716,7.4907,3.4722,7.6769,2.3081,7.6810)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 116000,
+                    "spans": [
+                      {
+                        "offset": 540,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.788,
+                    "source": "D(1,4.2893,7.2260,5.0681,7.2240,5.0681,7.4352,4.2893,7.4283)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "ICED TEA 12,000",
+                    "spans": [
+                      {
+                        "offset": 579,
+                        "length": 15
+                      }
+                    ],
+                    "confidence": 0.608,
+                    "source": "D(1,2.1990,7.7567,4.0512,7.7556,4.0513,7.9600,2.1991,7.9611)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 568,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.769,
+                    "source": "D(1,1.8451,7.7773,1.9651,7.7773,1.9651,7.9614,1.8451,7.9533)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 12000,
+                    "spans": [
+                      {
+                        "offset": 588,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.824,
+                    "source": "D(1,3.3600,7.7582,4.0512,7.7556,4.0512,7.9593,3.3600,7.9604)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 60000,
+                    "spans": [
+                      {
+                        "offset": 604,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.792,
+                    "source": "D(1,4.3862,7.7487,5.0802,7.7487,5.0802,7.9600,4.3862,7.9600)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "NASI PUTIH 10,000",
+                    "spans": [
+                      {
+                        "offset": 642,
+                        "length": 17
+                      }
+                    ],
+                    "confidence": 0.656,
+                    "source": "D(1,2.1706,8.0194,4.2708,8.0168,4.2711,8.2344,2.1709,8.2370)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 7,
+                    "spans": [
+                      {
+                        "offset": 631,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.708,
+                    "source": "D(1,1.8390,8.0342,1.9530,8.0342,1.9530,8.2169,1.8390,8.2169)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 10000,
+                    "spans": [
+                      {
+                        "offset": 653,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.821,
+                    "source": "D(1,3.5857,8.0178,4.2708,8.0168,4.2702,8.2344,3.5847,8.2342)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 70000,
+                    "spans": [
+                      {
+                        "offset": 669,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.812,
+                    "source": "D(1,4.3814,8.0169,5.0842,8.0176,5.0842,8.2334,4.3809,8.2343)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1035
+              }
+            ],
+            "words": [
+              {
+                "content": "2",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                },
+                "confidence": 0.99,
+                "source": "D(1,1.8844,4.6947,2.0044,4.6939,2.0044,4.8709,1.8844,4.8717)"
+              },
+              {
+                "content": "UDANG",
+                "span": {
+                  "offset": 28,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.2254,4.6843,2.7966,4.6867,2.7966,4.8837,2.2254,4.879)"
+              },
+              {
+                "content": "RE",
+                "span": {
+                  "offset": 34,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.9174,4.6868,3.1655,4.6864,3.1655,4.8853,2.9174,4.8843)"
+              },
+              {
+                "content": "216,000",
+                "span": {
+                  "offset": 40,
+                  "length": 7
+                },
+                "confidence": 0.831,
+                "source": "D(1,3.3855,4.7094,4.1574,4.7052,4.1574,4.9115,3.3855,4.9089)"
+              },
+              {
+                "content": "432,000",
+                "span": {
+                  "offset": 57,
+                  "length": 7
+                },
+                "confidence": 0.885,
+                "source": "D(1,4.273,4.7045,5.0721,4.699,5.0721,4.9072,4.273,4.9113)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 85,
+                  "length": 1
+                },
+                "confidence": 0.986,
+                "source": "D(1,1.8723,4.9393,2.0004,4.9393,2.0004,5.1135,1.8723,5.1135)"
+              },
+              {
+                "content": "=",
+                "span": {
+                  "offset": 96,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.3363,4.9453,2.4383,4.9452,2.4346,5.1276,2.3323,5.1272)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 97,
+                  "length": 1
+                },
+                "confidence": 0.981,
+                "source": "D(1,2.4503,4.9451,2.5493,4.945,2.546,5.128,2.4467,5.1276)"
+              },
+              {
+                "content": "LARGE",
+                "span": {
+                  "offset": 98,
+                  "length": 5
+                },
+                "confidence": 0.978,
+                "source": "D(1,2.5643,4.945,3.1343,4.946,3.1331,5.1287,2.5611,5.1281)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 103,
+                  "length": 1
+                },
+                "confidence": 0.967,
+                "source": "D(1,3.1463,4.9461,3.2453,4.9468,3.2445,5.1283,3.1451,5.1286)"
+              },
+              {
+                "content": "==",
+                "span": {
+                  "offset": 104,
+                  "length": 2
+                },
+                "confidence": 0.716,
+                "source": "D(1,3.2603,4.9469,3.4883,4.9484,3.4883,5.1273,3.2595,5.1282)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 137,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.8915,5.2038,1.9782,5.2049,1.9782,5.3727,1.8915,5.3732)"
+              },
+              {
+                "content": "AYM",
+                "span": {
+                  "offset": 148,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,2.2173,5.1992,2.5717,5.201,2.5701,5.3945,2.2153,5.392)"
+              },
+              {
+                "content": "GR",
+                "span": {
+                  "offset": 152,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.6835,5.2015,2.9134,5.2023,2.9122,5.3964,2.682,5.3953)"
+              },
+              {
+                "content": "JUN",
+                "span": {
+                  "offset": 155,
+                  "length": 3
+                },
+                "confidence": 0.976,
+                "source": "D(1,3.0316,5.2025,3.37,5.2032,3.3694,5.3976,3.0305,5.3967)"
+              },
+              {
+                "content": "NJAN",
+                "span": {
+                  "offset": 159,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,3.4786,5.2032,3.9544,5.2028,3.9544,5.3966,3.4781,5.3975)"
+              },
+              {
+                "content": "=",
+                "span": {
+                  "offset": 167,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.3323,5.4588,2.4332,5.4583,2.4332,5.6438,2.3323,5.6436)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 168,
+                  "length": 1
+                },
+                "confidence": 0.936,
+                "source": "D(1,2.4458,5.4583,2.5372,5.4578,2.5372,5.6439,2.4458,5.6438)"
+              },
+              {
+                "content": "MEDIUM",
+                "span": {
+                  "offset": 169,
+                  "length": 6
+                },
+                "confidence": 0.532,
+                "source": "D(1,2.553,5.4578,3.2497,5.4607,3.2496,5.6456,2.553,5.6439)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 175,
+                  "length": 1
+                },
+                "confidence": 0.986,
+                "source": "D(1,3.2623,5.4608,3.3568,5.4621,3.3568,5.646,3.2623,5.6456)"
+              },
+              {
+                "content": "=",
+                "span": {
+                  "offset": 176,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,3.3757,5.4624,3.4924,5.4639,3.4924,5.6465,3.3757,5.646)"
+              },
+              {
+                "content": "108,000",
+                "span": {
+                  "offset": 187,
+                  "length": 7
+                },
+                "confidence": 0.937,
+                "source": "D(1,4.2611,5.2119,5.06,5.2105,5.06,5.4189,4.2611,5.412)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 215,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.8854,5.7218,1.9661,5.7217,1.9661,5.8872,1.8854,5.8872)"
+              },
+              {
+                "content": "SAPO",
+                "span": {
+                  "offset": 226,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,2.2133,5.7041,2.6788,5.7041,2.6788,5.8993,2.2133,5.8994)"
+              },
+              {
+                "content": "TH",
+                "span": {
+                  "offset": 231,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.8034,5.7042,3.023,5.7042,3.023,5.8991,2.8034,5.8992)"
+              },
+              {
+                "content": "SEAFOOD",
+                "span": {
+                  "offset": 234,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,3.1345,5.7043,3.9443,5.7046,3.9443,5.8983,3.1345,5.899)"
+              },
+              {
+                "content": "=",
+                "span": {
+                  "offset": 245,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.3242,5.9614,2.4273,5.9614,2.4273,6.1442,2.3242,6.1442)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 246,
+                  "length": 1
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.4394,5.9614,2.5304,5.9614,2.5304,6.1442,2.4394,6.1442)"
+              },
+              {
+                "content": "LARGE",
+                "span": {
+                  "offset": 247,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,2.5486,5.9614,3.1215,5.9614,3.1215,6.1442,2.5486,6.1442)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 252,
+                  "length": 1
+                },
+                "confidence": 0.979,
+                "source": "D(1,3.1397,5.9614,3.2398,5.9614,3.2398,6.1442,3.1397,6.1442)"
+              },
+              {
+                "content": "==",
+                "span": {
+                  "offset": 253,
+                  "length": 2
+                },
+                "confidence": 0.876,
+                "source": "D(1,3.2519,5.9614,3.4883,5.9614,3.4883,6.1442,3.2519,6.1442)"
+              },
+              {
+                "content": "172,000",
+                "span": {
+                  "offset": 265,
+                  "length": 7
+                },
+                "confidence": 0.981,
+                "source": "D(1,4.2893,5.7104,5.06,5.7092,5.06,5.9215,4.2893,5.9215)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 293,
+                  "length": 1
+                },
+                "confidence": 0.989,
+                "source": "D(1,1.8602,6.2241,1.9822,6.2241,1.9822,6.4072,1.8602,6.4093)"
+              },
+              {
+                "content": "POCAI",
+                "span": {
+                  "offset": 304,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,2.1951,6.2184,2.7785,6.2116,2.7785,6.4053,2.1951,6.4119)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 310,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.9042,6.2116,3.0203,6.2115,3.0203,6.4031,2.9042,6.4042)"
+              },
+              {
+                "content": "111,000",
+                "span": {
+                  "offset": 315,
+                  "length": 7
+                },
+                "confidence": 0.869,
+                "source": "D(1,3.3955,6.2178,4.1549,6.212,4.155,6.4199,3.3955,6.418)"
+              },
+              {
+                "content": "222,000",
+                "span": {
+                  "offset": 332,
+                  "length": 7
+                },
+                "confidence": 0.938,
+                "source": "D(1,4.2694,6.2116,5.06,6.2118,5.06,6.4246,4.2694,6.4203)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 360,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,1.8602,6.4799,1.9722,6.4762,1.9722,6.6532,1.8602,6.6569)"
+              },
+              {
+                "content": "=",
+                "span": {
+                  "offset": 371,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.3161,6.4705,2.4164,6.4701,2.4164,6.6524,2.3161,6.6524)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 372,
+                  "length": 1
+                },
+                "confidence": 0.888,
+                "source": "D(1,2.4285,6.47,2.5257,6.4696,2.5257,6.6524,2.4285,6.6524)"
+              },
+              {
+                "content": "MEDIUM",
+                "span": {
+                  "offset": 373,
+                  "length": 6
+                },
+                "confidence": 0.586,
+                "source": "D(1,2.5439,6.4696,3.2394,6.4725,3.2393,6.6524,2.5439,6.6524)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 379,
+                  "length": 1
+                },
+                "confidence": 0.971,
+                "source": "D(1,3.2515,6.4727,3.3487,6.4739,3.3487,6.6524,3.2515,6.6524)"
+              },
+              {
+                "content": "=",
+                "span": {
+                  "offset": 380,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,3.3639,6.4741,3.4823,6.4756,3.4823,6.6524,3.3639,6.6524)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 412,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.8723,6.7404,1.9621,6.7436,1.9621,6.9146,1.8723,6.909)"
+              },
+              {
+                "content": "GURAME",
+                "span": {
+                  "offset": 423,
+                  "length": 6
+                },
+                "confidence": 0.944,
+                "source": "D(1,2.2011,6.7258,2.8949,6.727,2.8949,6.9211,2.2011,6.9199)"
+              },
+              {
+                "content": "FILLET",
+                "span": {
+                  "offset": 430,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,3.0105,6.7266,3.7043,6.7227,3.7043,6.9168,3.0105,6.9208)"
+              },
+              {
+                "content": "M",
+                "span": {
+                  "offset": 437,
+                  "length": 1
+                },
+                "confidence": 0.992,
+                "source": "D(1,3.8102,6.7218,3.9483,6.7206,3.9483,6.9148,3.8102,6.9159)"
+              },
+              {
+                "content": "ASAM",
+                "span": {
+                  "offset": 442,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.3101,6.9783,2.7775,6.9763,2.7775,7.1681,2.3101,7.1735)"
+              },
+              {
+                "content": "MANIS",
+                "span": {
+                  "offset": 447,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.892,6.9759,3.4803,6.9738,3.4803,7.1663,2.892,7.1674)"
+              },
+              {
+                "content": "163,000",
+                "span": {
+                  "offset": 462,
+                  "length": 7
+                },
+                "confidence": 0.984,
+                "source": "D(1,4.2893,6.7215,5.0681,6.7146,5.0681,6.9322,4.2893,6.9322)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 490,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1.8642,7.2576,1.957,7.2576,1.957,7.4289,1.8642,7.4289)"
+              },
+              {
+                "content": "BIHUN",
+                "span": {
+                  "offset": 501,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,2.1931,7.2375,2.776,7.228,2.7761,7.4285,2.1931,7.4272)"
+              },
+              {
+                "content": "GORENG",
+                "span": {
+                  "offset": 507,
+                  "length": 6
+                },
+                "confidence": 0.975,
+                "source": "D(1,2.8979,7.227,3.5798,7.2226,3.5798,7.4231,2.898,7.4279)"
+              },
+              {
+                "content": "JJ",
+                "span": {
+                  "offset": 514,
+                  "length": 2
+                },
+                "confidence": 0.973,
+                "source": "D(1,3.7016,7.2224,3.9322,7.2221,3.9322,7.4189,3.7017,7.4216)"
+              },
+              {
+                "content": "=",
+                "span": {
+                  "offset": 520,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.3081,7.4969,2.4049,7.4972,2.4051,7.6799,2.3081,7.6797)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 521,
+                  "length": 1
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.4201,7.4972,2.5139,7.4975,2.5142,7.6802,2.4203,7.6799)"
+              },
+              {
+                "content": "LARGE",
+                "span": {
+                  "offset": 522,
+                  "length": 5
+                },
+                "confidence": 0.978,
+                "source": "D(1,2.532,7.4975,3.107,7.4955,3.1084,7.6782,2.5324,7.6802)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 527,
+                  "length": 1
+                },
+                "confidence": 0.979,
+                "source": "D(1,3.1222,7.4953,3.219,7.494,3.2206,7.6767,3.1236,7.678)"
+              },
+              {
+                "content": "==",
+                "span": {
+                  "offset": 528,
+                  "length": 2
+                },
+                "confidence": 0.878,
+                "source": "D(1,3.2341,7.4938,3.4702,7.4907,3.4722,7.6734,3.2358,7.6765)"
+              },
+              {
+                "content": "116,000",
+                "span": {
+                  "offset": 540,
+                  "length": 7
+                },
+                "confidence": 0.96,
+                "source": "D(1,4.2893,7.226,5.0681,7.224,5.0681,7.4352,4.2893,7.4283)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 568,
+                  "length": 1
+                },
+                "confidence": 0.564,
+                "source": "D(1,1.8451,7.7773,1.9651,7.7773,1.9651,7.9614,1.8451,7.9533)"
+              },
+              {
+                "content": "ICED",
+                "span": {
+                  "offset": 579,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,2.1991,7.7607,2.6489,7.76,2.6489,7.9591,2.1991,7.9573)"
+              },
+              {
+                "content": "TEA",
+                "span": {
+                  "offset": 584,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.768,7.7598,3.112,7.7589,3.112,7.9601,2.768,7.9596)"
+              },
+              {
+                "content": "12,000",
+                "span": {
+                  "offset": 588,
+                  "length": 6
+                },
+                "confidence": 0.947,
+                "source": "D(1,3.36,7.7582,4.0512,7.7556,4.0512,7.9593,3.36,7.9604)"
+              },
+              {
+                "content": "60,000",
+                "span": {
+                  "offset": 604,
+                  "length": 6
+                },
+                "confidence": 0.961,
+                "source": "D(1,4.3862,7.7487,5.0802,7.7487,5.0802,7.96,4.3862,7.96)"
+              },
+              {
+                "content": "7",
+                "span": {
+                  "offset": 631,
+                  "length": 1
+                },
+                "confidence": 0.994,
+                "source": "D(1,1.839,8.0342,1.953,8.0342,1.953,8.2169,1.839,8.2169)"
+              },
+              {
+                "content": "NASI",
+                "span": {
+                  "offset": 642,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,2.1729,8.0239,2.6224,8.0215,2.6207,8.2326,2.1709,8.2314)"
+              },
+              {
+                "content": "PUTIH",
+                "span": {
+                  "offset": 647,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.7616,8.0208,3.336,8.0183,3.3348,8.234,2.76,8.2329)"
+              },
+              {
+                "content": "10,000",
+                "span": {
+                  "offset": 653,
+                  "length": 6
+                },
+                "confidence": 0.829,
+                "source": "D(1,3.5857,8.0178,4.2708,8.0168,4.2702,8.2344,3.5847,8.2342)"
+              },
+              {
+                "content": "70,000",
+                "span": {
+                  "offset": 669,
+                  "length": 6
+                },
+                "confidence": 0.733,
+                "source": "D(1,4.3814,8.0169,5.0842,8.0176,5.0842,8.2334,4.3809,8.2343)"
+              },
+              {
+                "content": "FOOD",
+                "span": {
+                  "offset": 715,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,2.1749,8.5408,2.649,8.5486,2.649,8.7427,2.1749,8.735)"
+              },
+              {
+                "content": "1,213,000",
+                "span": {
+                  "offset": 729,
+                  "length": 9
+                },
+                "confidence": 0.961,
+                "source": "D(1,4.0553,8.5394,5.0842,8.5374,5.0842,8.7537,4.0553,8.7537)"
+              },
+              {
+                "content": "BEVERAGES",
+                "span": {
+                  "offset": 759,
+                  "length": 9
+                },
+                "confidence": 0.983,
+                "source": "D(1,2.179,8.806,3.2321,8.8054,3.2321,8.9996,2.179,9.0002)"
+              },
+              {
+                "content": "60,000",
+                "span": {
+                  "offset": 778,
+                  "length": 6
+                },
+                "confidence": 0.982,
+                "source": "D(1,4.3741,8.7994,5.0802,8.7994,5.0802,9.0164,4.3741,9.0164)"
+              },
+              {
+                "content": "OTHERS",
+                "span": {
+                  "offset": 805,
+                  "length": 6
+                },
+                "confidence": 0.988,
+                "source": "D(1,2.1689,9.0559,2.8831,9.0559,2.8831,9.2501,2.1689,9.2501)"
+              },
+              {
+                "content": "70,000",
+                "span": {
+                  "offset": 821,
+                  "length": 6
+                },
+                "confidence": 0.965,
+                "source": "D(1,4.3862,9.0564,5.0802,9.0635,5.0802,9.2733,4.3862,9.2733)"
+              },
+              {
+                "content": "SUBTOTAL",
+                "span": {
+                  "offset": 848,
+                  "length": 8
+                },
+                "confidence": 0.987,
+                "source": "D(1,2.1709,9.319,3.103,9.319,3.103,9.5132,2.1709,9.5132)"
+              },
+              {
+                "content": "1,343,000",
+                "span": {
+                  "offset": 866,
+                  "length": 9
+                },
+                "confidence": 0.979,
+                "source": "D(1,4.0432,9.3247,5.0842,9.3247,5.0842,9.5467,4.0432,9.5464)"
+              },
+              {
+                "content": "SERVICE",
+                "span": {
+                  "offset": 896,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,2.1709,9.5772,2.9745,9.5744,2.9745,9.7717,2.1709,9.7688)"
+              },
+              {
+                "content": "CHARGE",
+                "span": {
+                  "offset": 904,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,3.0935,9.5742,3.8112,9.5747,3.8112,9.7714,3.0935,9.7719)"
+              },
+              {
+                "content": "80,580",
+                "span": {
+                  "offset": 920,
+                  "length": 6
+                },
+                "confidence": 0.782,
+                "source": "D(1,4.3781,9.5882,5.0802,9.5885,5.0802,9.7987,4.3781,9.7992)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 947,
+                  "length": 3
+                },
+                "confidence": 0.97,
+                "source": "D(1,2.1729,9.8329,2.504,9.8329,2.504,10.0271,2.1729,10.0271)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 951,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,2.6346,9.8329,2.8543,9.8329,2.8543,10.0271,2.6346,10.0271)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 953,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.8638,9.8329,2.988,9.8329,2.988,10.0271,2.8638,10.0271)"
+              },
+              {
+                "content": "142,358",
+                "span": {
+                  "offset": 964,
+                  "length": 7
+                },
+                "confidence": 0.947,
+                "source": "D(1,4.2691,9.8443,5.0802,9.8443,5.0802,10.0499,4.2691,10.0499)"
+              },
+              {
+                "content": "DU",
+                "span": {
+                  "offset": 992,
+                  "length": 2
+                },
+                "confidence": 0.993,
+                "source": "D(1,2.1608,10.103,2.6169,10.1008,2.6135,10.4981,2.1568,10.4942)"
+              },
+              {
+                "content": "1,565,938",
+                "span": {
+                  "offset": 995,
+                  "length": 9
+                },
+                "confidence": 0.878,
+                "source": "D(1,2.8651,10.0996,4.9511,10.1042,4.9511,10.5019,2.862,10.5002)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "2",
+                "source": "D(1,1.8844,4.6937,2.0044,4.6937,2.0044,4.8717,1.8844,4.8717)",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                }
+              },
+              {
+                "content": "UDANG RE",
+                "source": "D(1,2.2254,4.6843,3.166,4.6864,3.1655,4.8853,2.2249,4.8831)",
+                "span": {
+                  "offset": 28,
+                  "length": 8
+                }
+              },
+              {
+                "content": "216,000 432,000",
+                "source": "D(1,3.3842,4.7094,5.0721,4.699,5.0734,4.9076,3.3855,4.9165)",
+                "span": {
+                  "offset": 40,
+                  "length": 24
+                }
+              },
+              {
+                "content": "2",
+                "source": "D(1,1.8723,4.9393,2.0004,4.9393,2.0004,5.1135,1.8723,5.1135)",
+                "span": {
+                  "offset": 85,
+                  "length": 1
+                }
+              },
+              {
+                "content": "=*LARGE*==",
+                "source": "D(1,2.3323,4.9447,3.4884,4.9449,3.4883,5.1289,2.3323,5.1287)",
+                "span": {
+                  "offset": 96,
+                  "length": 10
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,1.8915,5.2017,1.9782,5.2017,1.9782,5.374,1.8915,5.374)",
+                "span": {
+                  "offset": 137,
+                  "length": 1
+                }
+              },
+              {
+                "content": "AYM GR JUN NJAN",
+                "source": "D(1,2.2157,5.1992,3.9548,5.2028,3.9544,5.3988,2.2153,5.3953)",
+                "span": {
+                  "offset": 148,
+                  "length": 15
+                }
+              },
+              {
+                "content": "=*MEDIUM*=",
+                "source": "D(1,2.3323,5.4561,3.4928,5.4589,3.4924,5.6465,2.3318,5.6436)",
+                "span": {
+                  "offset": 167,
+                  "length": 10
+                }
+              },
+              {
+                "content": "108,000",
+                "source": "D(1,4.2611,5.2105,5.06,5.2105,5.06,5.4189,4.2611,5.4189)",
+                "span": {
+                  "offset": 187,
+                  "length": 7
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,1.8854,5.7212,1.9661,5.7212,1.9661,5.8872,1.8854,5.8872)",
+                "span": {
+                  "offset": 215,
+                  "length": 1
+                }
+              },
+              {
+                "content": "SAPO TH SEAFOOD",
+                "source": "D(1,2.2133,5.7041,3.9443,5.7041,3.9443,5.8994,2.2133,5.8994)",
+                "span": {
+                  "offset": 226,
+                  "length": 15
+                }
+              },
+              {
+                "content": "=*LARGE*==",
+                "source": "D(1,2.3242,5.9614,3.4883,5.9614,3.4883,6.1442,2.3242,6.1442)",
+                "span": {
+                  "offset": 245,
+                  "length": 10
+                }
+              },
+              {
+                "content": "172,000",
+                "source": "D(1,4.2893,5.7092,5.06,5.7092,5.06,5.9215,4.2893,5.9215)",
+                "span": {
+                  "offset": 265,
+                  "length": 7
+                }
+              },
+              {
+                "content": "2",
+                "source": "D(1,1.8602,6.2241,1.9822,6.2241,1.9822,6.4093,1.8602,6.4093)",
+                "span": {
+                  "offset": 293,
+                  "length": 1
+                }
+              },
+              {
+                "content": "POCAI 3",
+                "source": "D(1,2.193,6.2169,3.0202,6.208,3.0211,6.4031,2.1951,6.4119)",
+                "span": {
+                  "offset": 304,
+                  "length": 7
+                }
+              },
+              {
+                "content": "111,000 222,000",
+                "source": "D(1,3.3956,6.2086,5.0604,6.2118,5.06,6.4246,3.3951,6.4214)",
+                "span": {
+                  "offset": 315,
+                  "length": 24
+                }
+              },
+              {
+                "content": "2",
+                "source": "D(1,1.8602,6.4747,1.9722,6.4747,1.9722,6.6569,1.8602,6.6569)",
+                "span": {
+                  "offset": 360,
+                  "length": 1
+                }
+              },
+              {
+                "content": "=*MEDIUM*=",
+                "source": "D(1,2.3161,6.4689,3.4823,6.4689,3.4823,6.6524,2.3161,6.6524)",
+                "span": {
+                  "offset": 371,
+                  "length": 10
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,1.8723,6.7404,1.9621,6.7404,1.9621,6.9151,1.8723,6.9151)",
+                "span": {
+                  "offset": 412,
+                  "length": 1
+                }
+              },
+              {
+                "content": "GURAME FILLET M",
+                "source": "D(1,2.2006,6.7258,3.9483,6.7206,3.9489,6.918,2.2012,6.9231)",
+                "span": {
+                  "offset": 423,
+                  "length": 15
+                }
+              },
+              {
+                "content": "ASAM MANIS",
+                "source": "D(1,2.3092,6.9784,3.4803,6.9732,3.4811,7.1684,2.3101,7.1735)",
+                "span": {
+                  "offset": 442,
+                  "length": 10
+                }
+              },
+              {
+                "content": "163,000",
+                "source": "D(1,4.2893,6.7146,5.0681,6.7146,5.0681,6.9322,4.2893,6.9322)",
+                "span": {
+                  "offset": 462,
+                  "length": 7
+                }
+              },
+              {
+                "content": "1",
+                "source": "D(1,1.8642,7.2576,1.957,7.2576,1.957,7.4289,1.8642,7.4289)",
+                "span": {
+                  "offset": 490,
+                  "length": 1
+                }
+              },
+              {
+                "content": "BIHUN GORENG JJ",
+                "source": "D(1,2.193,7.2285,3.9322,7.2202,3.9332,7.423,2.1931,7.4289)",
+                "span": {
+                  "offset": 501,
+                  "length": 15
+                }
+              },
+              {
+                "content": "=*LARGE*==",
+                "source": "D(1,2.3073,7.4969,3.4712,7.4907,3.4722,7.6765,2.3081,7.6827)",
+                "span": {
+                  "offset": 520,
+                  "length": 10
+                }
+              },
+              {
+                "content": "116,000",
+                "source": "D(1,4.2893,7.2206,5.069,7.224,5.0681,7.4352,4.289,7.4317)",
+                "span": {
+                  "offset": 540,
+                  "length": 7
+                }
+              },
+              {
+                "content": "5",
+                "source": "D(1,1.8451,7.7773,1.9651,7.7773,1.9651,7.9614,1.8451,7.9614)",
+                "span": {
+                  "offset": 568,
+                  "length": 1
+                }
+              },
+              {
+                "content": "ICED TEA 12,000",
+                "source": "D(1,2.1988,7.7591,4.0512,7.7556,4.0516,7.9593,2.1991,7.9628)",
+                "span": {
+                  "offset": 579,
+                  "length": 15
+                }
+              },
+              {
+                "content": "60,000",
+                "source": "D(1,4.3862,7.7487,5.0802,7.7487,5.0802,7.96,4.3862,7.96)",
+                "span": {
+                  "offset": 604,
+                  "length": 6
+                }
+              },
+              {
+                "content": "7",
+                "source": "D(1,1.839,8.0342,1.953,8.0342,1.953,8.2169,1.839,8.2169)",
+                "span": {
+                  "offset": 631,
+                  "length": 1
+                }
+              },
+              {
+                "content": "NASI PUTIH 10,000 70,000",
+                "source": "D(1,2.1709,8.0166,5.0842,8.0166,5.0842,8.2346,2.1709,8.2346)",
+                "span": {
+                  "offset": 642,
+                  "length": 33
+                }
+              },
+              {
+                "content": "FOOD",
+                "source": "D(1,2.1749,8.5408,2.6499,8.5486,2.649,8.7444,2.1717,8.7366)",
+                "span": {
+                  "offset": 715,
+                  "length": 4
+                }
+              },
+              {
+                "content": "1,213,000",
+                "source": "D(1,4.0553,8.5362,5.0842,8.5362,5.0842,8.7537,4.0553,8.7537)",
+                "span": {
+                  "offset": 729,
+                  "length": 9
+                }
+              },
+              {
+                "content": "BEVERAGES",
+                "source": "D(1,2.1788,8.804,3.2321,8.8034,3.2322,8.9996,2.179,9.0002)",
+                "span": {
+                  "offset": 759,
+                  "length": 9
+                }
+              },
+              {
+                "content": "60,000",
+                "source": "D(1,4.3741,8.7994,5.0802,8.7994,5.0802,9.0164,4.3741,9.0164)",
+                "span": {
+                  "offset": 778,
+                  "length": 6
+                }
+              },
+              {
+                "content": "OTHERS",
+                "source": "D(1,2.1689,9.0559,2.8831,9.0559,2.8831,9.2512,2.1689,9.2512)",
+                "span": {
+                  "offset": 805,
+                  "length": 6
+                }
+              },
+              {
+                "content": "70,000",
+                "source": "D(1,4.3862,9.0563,5.0802,9.0563,5.0802,9.2733,4.3862,9.2733)",
+                "span": {
+                  "offset": 821,
+                  "length": 6
+                }
+              },
+              {
+                "content": "SUBTOTAL",
+                "source": "D(1,2.1709,9.319,3.103,9.319,3.103,9.5132,2.1709,9.5132)",
+                "span": {
+                  "offset": 848,
+                  "length": 8
+                }
+              },
+              {
+                "content": "1,343,000",
+                "source": "D(1,4.0432,9.3247,5.0842,9.3247,5.0842,9.5468,4.0432,9.5468)",
+                "span": {
+                  "offset": 866,
+                  "length": 9
+                }
+              },
+              {
+                "content": "SERVICE CHARGE",
+                "source": "D(1,2.1709,9.5739,3.8112,9.5739,3.8112,9.7722,2.1709,9.7722)",
+                "span": {
+                  "offset": 896,
+                  "length": 14
+                }
+              },
+              {
+                "content": "80,580",
+                "source": "D(1,4.3779,9.5849,5.0802,9.5844,5.0804,9.7987,4.3781,9.7992)",
+                "span": {
+                  "offset": 920,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Tax 10%",
+                "source": "D(1,2.1729,9.8329,2.988,9.8329,2.988,10.0271,2.1729,10.0271)",
+                "span": {
+                  "offset": 947,
+                  "length": 7
+                }
+              },
+              {
+                "content": "142,358",
+                "source": "D(1,4.2691,9.8443,5.0802,9.8443,5.0802,10.0499,4.2691,10.0499)",
+                "span": {
+                  "offset": 964,
+                  "length": 7
+                }
+              },
+              {
+                "content": "DU 1,565,938",
+                "source": "D(1,2.1569,10.0981,4.9512,10.0992,4.9511,10.5051,2.1568,10.5039)",
+                "span": {
+                  "offset": 992,
+                  "length": 12
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "2",
+            "source": "D(1,1.8832,4.6947,2.0044,4.6939,2.0056,4.8709,1.8844,4.8717)",
+            "span": {
+              "offset": 17,
+              "length": 1
+            }
+          },
+          {
+            "content": "UDANG RE",
+            "source": "D(1,2.2254,4.6805,3.1668,4.6864,3.1655,4.8861,2.2241,4.8801)",
+            "span": {
+              "offset": 28,
+              "length": 8
+            }
+          },
+          {
+            "content": "216,000",
+            "source": "D(1,3.3852,4.706,4.1574,4.7052,4.1576,4.9115,3.3855,4.9123)",
+            "span": {
+              "offset": 40,
+              "length": 7
+            }
+          },
+          {
+            "content": "432,000",
+            "source": "D(1,4.2717,4.7038,5.0721,4.699,5.0734,4.9072,4.273,4.912)",
+            "span": {
+              "offset": 57,
+              "length": 7
+            }
+          },
+          {
+            "content": "2",
+            "source": "D(1,1.8723,4.9393,2.0004,4.9393,2.0004,5.1135,1.8723,5.1135)",
+            "span": {
+              "offset": 85,
+              "length": 1
+            }
+          },
+          {
+            "content": "=*LARGE*==",
+            "source": "D(1,2.3325,4.9447,3.4886,4.9463,3.4883,5.1294,2.3323,5.1278)",
+            "span": {
+              "offset": 96,
+              "length": 10
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,1.8915,5.2038,1.9788,5.2042,1.9782,5.3735,1.8908,5.3732)",
+            "span": {
+              "offset": 137,
+              "length": 1
+            }
+          },
+          {
+            "content": "AYM GR JUN NJAN",
+            "source": "D(1,2.2161,5.1957,3.9552,5.2028,3.9544,5.4007,2.2153,5.3936)",
+            "span": {
+              "offset": 148,
+              "length": 15
+            }
+          },
+          {
+            "content": "=*MEDIUM*=",
+            "source": "D(1,2.3323,5.4571,3.493,5.4609,3.4924,5.6474,2.3317,5.6436)",
+            "span": {
+              "offset": 167,
+              "length": 10
+            }
+          },
+          {
+            "content": "108,000",
+            "source": "D(1,4.2611,5.2077,5.0607,5.2105,5.06,5.4189,4.2604,5.4161)",
+            "span": {
+              "offset": 187,
+              "length": 7
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,1.8853,5.7218,1.9661,5.7217,1.9662,5.8872,1.8854,5.8872)",
+            "span": {
+              "offset": 215,
+              "length": 1
+            }
+          },
+          {
+            "content": "SAPO TH SEAFOOD",
+            "source": "D(1,2.2132,5.7041,3.9443,5.7038,3.9443,5.8992,2.2133,5.8994)",
+            "span": {
+              "offset": 226,
+              "length": 15
+            }
+          },
+          {
+            "content": "=*LARGE*==",
+            "source": "D(1,2.3242,5.9614,3.4883,5.9614,3.4883,6.1442,2.3242,6.1442)",
+            "span": {
+              "offset": 245,
+              "length": 10
+            }
+          },
+          {
+            "content": "172,000",
+            "source": "D(1,4.2892,5.7098,5.06,5.7092,5.0602,5.9215,4.2893,5.922)",
+            "span": {
+              "offset": 265,
+              "length": 7
+            }
+          },
+          {
+            "content": "2",
+            "source": "D(1,1.8586,6.2241,1.9822,6.2231,1.9838,6.4083,1.8602,6.4093)",
+            "span": {
+              "offset": 293,
+              "length": 1
+            }
+          },
+          {
+            "content": "POCAI 3",
+            "source": "D(1,2.1941,6.2145,3.0203,6.2105,3.0212,6.4079,2.1951,6.4119)",
+            "span": {
+              "offset": 304,
+              "length": 7
+            }
+          },
+          {
+            "content": "111,000",
+            "source": "D(1,3.395,6.214,4.1549,6.212,4.1555,6.4199,3.3955,6.4219)",
+            "span": {
+              "offset": 315,
+              "length": 7
+            }
+          },
+          {
+            "content": "222,000",
+            "source": "D(1,4.2694,6.2096,5.0606,6.2118,5.06,6.4246,4.2688,6.4224)",
+            "span": {
+              "offset": 332,
+              "length": 7
+            }
+          },
+          {
+            "content": "2",
+            "source": "D(1,1.8542,6.4801,1.9722,6.4762,1.9781,6.653,1.8602,6.6569)",
+            "span": {
+              "offset": 360,
+              "length": 1
+            }
+          },
+          {
+            "content": "=*MEDIUM*=",
+            "source": "D(1,2.3162,6.4691,3.4827,6.4715,3.4823,6.6548,2.3158,6.6524)",
+            "span": {
+              "offset": 371,
+              "length": 10
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,1.8723,6.7392,1.9704,6.744,1.9621,6.9146,1.864,6.9098)",
+            "span": {
+              "offset": 412,
+              "length": 1
+            }
+          },
+          {
+            "content": "GURAME FILLET M",
+            "source": "D(1,2.2,6.7258,3.9483,6.7159,3.9495,6.9155,2.2012,6.9254)",
+            "span": {
+              "offset": 423,
+              "length": 15
+            }
+          },
+          {
+            "content": "ASAM MANIS",
+            "source": "D(1,2.3096,6.977,3.4803,6.9738,3.4808,7.1703,2.3101,7.1735)",
+            "span": {
+              "offset": 442,
+              "length": 10
+            }
+          },
+          {
+            "content": "163,000",
+            "source": "D(1,4.2884,6.7181,5.0681,6.7146,5.069,6.9322,4.2893,6.9356)",
+            "span": {
+              "offset": 462,
+              "length": 7
+            }
+          },
+          {
+            "content": "1",
+            "source": "D(1,1.8642,7.2576,1.957,7.2576,1.957,7.4289,1.8642,7.4289)",
+            "span": {
+              "offset": 490,
+              "length": 1
+            }
+          },
+          {
+            "content": "BIHUN GORENG JJ",
+            "source": "D(1,2.1918,7.2317,3.9322,7.22,3.9335,7.4209,2.1931,7.4327)",
+            "span": {
+              "offset": 501,
+              "length": 15
+            }
+          },
+          {
+            "content": "=*LARGE*==",
+            "source": "D(1,2.3074,7.4947,3.4716,7.4907,3.4722,7.677,2.3081,7.681)",
+            "span": {
+              "offset": 520,
+              "length": 10
+            }
+          },
+          {
+            "content": "116,000",
+            "source": "D(1,4.2893,7.2216,5.0688,7.224,5.0681,7.4352,4.2887,7.4328)",
+            "span": {
+              "offset": 540,
+              "length": 7
+            }
+          },
+          {
+            "content": "5",
+            "source": "D(1,1.8452,7.7732,1.9712,7.7775,1.9651,7.9614,1.839,7.9571)",
+            "span": {
+              "offset": 568,
+              "length": 1
+            }
+          },
+          {
+            "content": "ICED TEA 12,000",
+            "source": "D(1,2.199,7.7566,4.0512,7.7556,4.0514,7.96,2.1991,7.9611)",
+            "span": {
+              "offset": 579,
+              "length": 15
+            }
+          },
+          {
+            "content": "60,000",
+            "source": "D(1,4.3862,7.7487,5.0802,7.7487,5.0802,7.96,4.3862,7.96)",
+            "span": {
+              "offset": 604,
+              "length": 6
+            }
+          },
+          {
+            "content": "7",
+            "source": "D(1,1.839,8.0342,1.953,8.0342,1.953,8.2169,1.839,8.2169)",
+            "span": {
+              "offset": 631,
+              "length": 1
+            }
+          },
+          {
+            "content": "NASI PUTIH 10,000",
+            "source": "D(1,2.1706,8.0192,4.2708,8.0168,4.271,8.2344,2.1709,8.2368)",
+            "span": {
+              "offset": 642,
+              "length": 17
+            }
+          },
+          {
+            "content": "70,000",
+            "source": "D(1,4.3809,8.0169,5.0842,8.0168,5.0842,8.2342,4.3809,8.2343)",
+            "span": {
+              "offset": 669,
+              "length": 6
+            }
+          },
+          {
+            "content": "FOOD",
+            "source": "D(1,2.1749,8.5408,2.6522,8.5486,2.649,8.7427,2.1718,8.7349)",
+            "span": {
+              "offset": 715,
+              "length": 4
+            }
+          },
+          {
+            "content": "1,213,000",
+            "source": "D(1,4.0551,8.5384,5.0842,8.5374,5.0844,8.7537,4.0553,8.7547)",
+            "span": {
+              "offset": 729,
+              "length": 9
+            }
+          },
+          {
+            "content": "BEVERAGES",
+            "source": "D(1,2.1789,8.806,3.2321,8.8054,3.2322,8.9996,2.179,9.0002)",
+            "span": {
+              "offset": 759,
+              "length": 9
+            }
+          },
+          {
+            "content": "60,000",
+            "source": "D(1,4.3741,8.7994,5.0802,8.7994,5.0802,9.0164,4.3741,9.0164)",
+            "span": {
+              "offset": 778,
+              "length": 6
+            }
+          },
+          {
+            "content": "OTHERS",
+            "source": "D(1,2.1689,9.0559,2.8831,9.0559,2.8831,9.2501,2.1689,9.2501)",
+            "span": {
+              "offset": 805,
+              "length": 6
+            }
+          },
+          {
+            "content": "70,000",
+            "source": "D(1,4.3862,9.0564,5.0813,9.06,5.0802,9.2769,4.3851,9.2733)",
+            "span": {
+              "offset": 821,
+              "length": 6
+            }
+          },
+          {
+            "content": "SUBTOTAL",
+            "source": "D(1,2.1709,9.319,3.103,9.319,3.103,9.5132,2.1709,9.5132)",
+            "span": {
+              "offset": 848,
+              "length": 8
+            }
+          },
+          {
+            "content": "1,343,000",
+            "source": "D(1,4.0432,9.3246,5.0843,9.3247,5.0842,9.5467,4.0431,9.5465)",
+            "span": {
+              "offset": 866,
+              "length": 9
+            }
+          },
+          {
+            "content": "SERVICE CHARGE",
+            "source": "D(1,2.1709,9.5742,3.8112,9.5742,3.8112,9.7719,2.1709,9.7719)",
+            "span": {
+              "offset": 896,
+              "length": 14
+            }
+          },
+          {
+            "content": "80,580",
+            "source": "D(1,4.3781,9.5882,5.0802,9.5881,5.0802,9.7991,4.3781,9.7992)",
+            "span": {
+              "offset": 920,
+              "length": 6
+            }
+          },
+          {
+            "content": "Tax 10%",
+            "source": "D(1,2.1729,9.8329,2.988,9.8329,2.988,10.0271,2.1729,10.0271)",
+            "span": {
+              "offset": 947,
+              "length": 7
+            }
+          },
+          {
+            "content": "142,358",
+            "source": "D(1,4.2691,9.8443,5.0802,9.8443,5.0802,10.0499,4.2691,10.0499)",
+            "span": {
+              "offset": 964,
+              "length": 7
+            }
+          },
+          {
+            "content": "DU 1,565,938",
+            "source": "D(1,2.1575,10.0983,4.9518,10.1033,4.9511,10.5039,2.1568,10.4989)",
+            "span": {
+              "offset": 992,
+              "length": 12
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1034
+            },
+            "elements": [
+              "/tables/0",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 10,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2",
+                "source": "D(1,1.7454,4.5361,2.1308,4.5362,2.1293,4.91,1.7421,4.9119)",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/0"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UDANG RE\n216,000",
+                "source": "D(1,2.1308,4.5362,4.1781,4.5362,4.1854,4.9111,2.1293,4.91)",
+                "span": {
+                  "offset": 28,
+                  "length": 19
+                },
+                "elements": [
+                  "/paragraphs/1",
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "432,000",
+                "source": "D(1,4.1781,4.5362,5.2113,4.5363,5.2095,4.9117,4.1854,4.9111)",
+                "span": {
+                  "offset": 57,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2",
+                "source": "D(1,1.7421,4.9119,2.1293,4.91,2.1328,5.168,1.7434,5.1671)",
+                "span": {
+                  "offset": 85,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "=*LARGE*==",
+                "source": "D(1,2.1293,4.91,4.1854,4.9111,4.1942,5.1679,2.1328,5.168)",
+                "span": {
+                  "offset": 96,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.1854,4.9111,5.2095,4.9117,5.2114,5.1684,4.1942,5.1679)",
+                "span": {
+                  "offset": 116,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,1.7434,5.1671,2.1328,5.168,2.1317,5.6718,1.7443,5.6709)",
+                "span": {
+                  "offset": 137,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "AYM GR JUN NJAN\n=*MEDIUM*=",
+                "source": "D(1,2.1328,5.168,4.1942,5.1679,4.1896,5.6726,2.1317,5.6718)",
+                "span": {
+                  "offset": 148,
+                  "length": 29
+                },
+                "elements": [
+                  "/paragraphs/7",
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "108,000",
+                "source": "D(1,4.1942,5.1679,5.2114,5.1684,5.2107,5.6732,4.1896,5.6726)",
+                "span": {
+                  "offset": 187,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,1.7443,5.6709,2.1317,5.6718,2.1288,6.1721,1.7427,6.1702)",
+                "span": {
+                  "offset": 215,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SAPO TH SEAFOOD\n=*LARGE*==",
+                "source": "D(1,2.1317,5.6718,4.1896,5.6726,4.1981,6.1706,2.1288,6.1721)",
+                "span": {
+                  "offset": 226,
+                  "length": 29
+                },
+                "elements": [
+                  "/paragraphs/11",
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "172,000",
+                "source": "D(1,4.1896,5.6726,5.2107,5.6732,5.2118,6.1719,4.1981,6.1706)",
+                "span": {
+                  "offset": 265,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2",
+                "source": "D(1,1.7427,6.1702,2.1288,6.1721,2.1255,6.4491,1.7411,6.4494)",
+                "span": {
+                  "offset": 293,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "POCAI 3\n111,000",
+                "source": "D(1,2.1288,6.1721,4.1981,6.1706,4.196,6.4483,2.1255,6.4491)",
+                "span": {
+                  "offset": 304,
+                  "length": 18
+                },
+                "elements": [
+                  "/paragraphs/15",
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "222,000",
+                "source": "D(1,4.1981,6.1706,5.2118,6.1719,5.2102,6.4476,4.196,6.4483)",
+                "span": {
+                  "offset": 332,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2",
+                "source": "D(1,1.7411,6.4494,2.1255,6.4491,2.1288,6.6853,1.742,6.6861)",
+                "span": {
+                  "offset": 360,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "=*MEDIUM*=",
+                "source": "D(1,2.1255,6.4491,4.196,6.4483,4.1954,6.6799,2.1288,6.6853)",
+                "span": {
+                  "offset": 371,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.196,6.4483,5.2102,6.4476,5.2116,6.6775,4.1954,6.6799)",
+                "span": {
+                  "offset": 391,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,1.742,6.6861,2.1288,6.6853,2.1281,7.1866,1.7403,7.186)",
+                "span": {
+                  "offset": 412,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "GURAME FILLET M\nASAM MANIS",
+                "source": "D(1,2.1288,6.6853,4.1954,6.6799,4.2008,7.1843,2.1281,7.1866)",
+                "span": {
+                  "offset": 423,
+                  "length": 29
+                },
+                "elements": [
+                  "/paragraphs/21",
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "163,000",
+                "source": "D(1,4.1954,6.6799,5.2116,6.6775,5.2121,7.1836,4.2008,7.1843)",
+                "span": {
+                  "offset": 462,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,1.7403,7.186,2.1281,7.1866,2.1265,7.7117,1.7434,7.7108)",
+                "span": {
+                  "offset": 490,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "BIHUN GORENG JJ\n=*LARGE*==",
+                "source": "D(1,2.1281,7.1866,4.2008,7.1843,4.2042,7.7104,2.1265,7.7117)",
+                "span": {
+                  "offset": 501,
+                  "length": 29
+                },
+                "elements": [
+                  "/paragraphs/25",
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "116,000",
+                "source": "D(1,4.2008,7.1843,5.2121,7.1836,5.213,7.7096,4.2042,7.7104)",
+                "span": {
+                  "offset": 540,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5",
+                "source": "D(1,1.7434,7.7108,2.1265,7.7117,2.1247,7.9944,1.7398,7.9952)",
+                "span": {
+                  "offset": 568,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "ICED TEA 12,000",
+                "source": "D(1,2.1265,7.7117,4.2042,7.7104,4.1986,7.9912,2.1247,7.9944)",
+                "span": {
+                  "offset": 579,
+                  "length": 15
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "60,000",
+                "source": "D(1,4.2042,7.7104,5.213,7.7096,5.2137,7.9882,4.1986,7.9912)",
+                "span": {
+                  "offset": 604,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 9,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "7",
+                "source": "D(1,1.7398,7.9952,2.1247,7.9944,2.1223,8.3632,1.7432,8.3627)",
+                "span": {
+                  "offset": 631,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 9,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "NASI PUTIH 10,000",
+                "source": "D(1,2.1247,7.9944,4.1986,7.9912,4.2016,8.3632,2.1223,8.3632)",
+                "span": {
+                  "offset": 642,
+                  "length": 17
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 9,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "70,000",
+                "source": "D(1,4.1986,7.9912,5.2137,7.9882,5.2162,8.3637,4.2016,8.3632)",
+                "span": {
+                  "offset": 669,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              }
+            ],
+            "source": "D(1,1.7785,4.6281,5.1246,4.6252,5.1286,8.274,1.7744,8.2798)",
+            "span": {
+              "offset": 0,
+              "length": 695
+            }
+          },
+          {
+            "rowCount": 7,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "FOOD",
+                "source": "D(1,2.023,8.5051,3.9442,8.5048,3.9458,8.7724,2.0222,8.773)",
+                "span": {
+                  "offset": 715,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,213,000",
+                "source": "D(1,3.9442,8.5048,5.2194,8.5042,5.2179,8.7712,3.9458,8.7724)",
+                "span": {
+                  "offset": 729,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "BEVERAGES",
+                "source": "D(1,2.0222,8.773,3.9458,8.7724,3.9471,9.032,2.0205,9.032)",
+                "span": {
+                  "offset": 759,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "60,000",
+                "source": "D(1,3.9458,8.7724,5.2179,8.7712,5.2185,9.0314,3.9471,9.032)",
+                "span": {
+                  "offset": 778,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "OTHERS",
+                "source": "D(1,2.0205,9.032,3.9471,9.032,3.9474,9.2923,2.0195,9.2918)",
+                "span": {
+                  "offset": 805,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "70,000",
+                "source": "D(1,3.9471,9.032,5.2185,9.0314,5.2194,9.292,3.9474,9.2923)",
+                "span": {
+                  "offset": 821,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SUBTOTAL",
+                "source": "D(1,2.0195,9.2918,3.9474,9.2923,3.9478,9.5523,2.02,9.5505)",
+                "span": {
+                  "offset": 848,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,343,000",
+                "source": "D(1,3.9474,9.2923,5.2194,9.292,5.2193,9.5525,3.9478,9.5523)",
+                "span": {
+                  "offset": 866,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SERVICE CHARGE",
+                "source": "D(1,2.02,9.5505,3.9478,9.5523,3.952,9.8127,2.022,9.8121)",
+                "span": {
+                  "offset": 896,
+                  "length": 14
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "80,580",
+                "source": "D(1,3.9478,9.5523,5.2193,9.5525,5.2201,9.8121,3.952,9.8127)",
+                "span": {
+                  "offset": 920,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Tax 10%",
+                "source": "D(1,2.022,9.8121,3.952,9.8127,3.9512,10.0634,2.0223,10.0632)",
+                "span": {
+                  "offset": 947,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "142,358",
+                "source": "D(1,3.952,9.8127,5.2201,9.8121,5.219,10.0628,3.9512,10.0634)",
+                "span": {
+                  "offset": 964,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 6,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DU 1,565,938",
+                "source": "D(1,2.0223,10.0632,3.9512,10.0634,3.9532,10.6517,2.0218,10.6519)",
+                "span": {
+                  "offset": 992,
+                  "length": 12
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.9512,10.0634,5.219,10.0628,5.2226,10.6516,3.9532,10.6517)",
+                "span": {
+                  "offset": 1014,
+                  "length": 0
+                }
+              }
+            ],
+            "source": "D(1,2.0861,8.4967,5.1205,8.4967,5.1286,10.501,2.0942,10.5067)",
+            "span": {
+              "offset": 698,
+              "length": 336
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 4431,
+      "gpt-5-mini-cached-input": 4352,
+      "gpt-5-mini-output": 830
+    }
+  }
+}

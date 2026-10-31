@@ -1,0 +1,808 @@
+{
+  "selected_document": {
+    "name": "\u0913\u0930\u093e\u092f\u0928 \u0932\u0949\u091c\u093f\u0938\u094d\u091f\u093f\u0915\u094d\u0938 \u0915\u0902\u092a\u0928\u0940",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows a bilingual TAX INVOICE issued by \u0913\u0930\u093e\u092f\u0928 \u0932\u0949\u091c\u093f\u0938\u094d\u091f\u093f\u0915\u094d\u0938 \u0915\u0902\u092a\u0928\u0940, with an invoice number, billed charge rows, subtotal, tax, and total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "NF-2025-2728",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.501,
+          0.174,
+          0.754,
+          0.193
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='NF-2025-2728'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Invoice No: NF-2025-2728'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.4956,
+                0.17079999999999995,
+                0.7581,
+                0.19169999999999998
+              ],
+              "line_bbox": [
+                0.0553,
+                0.17079999999999995,
+                0.7581,
+                0.2016
+              ],
+              "text": "\u0430\u0442: 19.04.2025 Invoice No: NF-2025-2728",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "19.04.2025",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.172,
+          0.292,
+          0.196
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='19.04.2025'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '\u0430\u0442: 19.04.2025'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0553,
+                0.17200000000000004,
+                0.2958,
+                0.2016
+              ],
+              "line_bbox": [
+                0.0553,
+                0.17079999999999995,
+                0.7581,
+                0.2016
+              ],
+              "text": "\u0430\u0442: 19.04.2025 Invoice No: NF-2025-2728",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "\u0913\u0930\u093e\u092f\u0928 \u0932\u0949\u091c\u093f\u0938\u094d\u091f\u093f\u0915\u094d\u0938 \u0915\u0902\u092a\u0928\u0940",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.107,
+          0.526,
+          0.132
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='\u0913\u0930\u093e\u092f\u0928 \u0932\u0949\u091c\u093f\u0938\u094d\u091f\u093f\u0915\u094d\u0938 \u0915\u0902\u092a\u0928\u0940'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Ax aud / TAX INVOICE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0556,
+                0.0615,
+                0.4548,
+                0.09289999999999998
+              ],
+              "line_bbox": [
+                0.0556,
+                0.0615,
+                0.4548,
+                0.09289999999999998
+              ],
+              "text": "Ax aud / TAX INVOICE",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "\u0917\u094d\u0930\u0940\u0928\u092b\u0940\u0932\u094d\u0921 \u090f\u0928\u0930\u094d\u091c\u0940",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.139,
+          0.442,
+          0.163
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='\u0917\u094d\u0930\u0940\u0928\u092b\u0940\u0932\u094d\u0921 \u090f\u0928\u0930\u094d\u091c\u0940'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '\u0430\u0442: 19.04.2025'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0553,
+                0.17200000000000004,
+                0.2958,
+                0.2016
+              ],
+              "line_bbox": [
+                0.0553,
+                0.17079999999999995,
+                0.7581,
+                0.2016
+              ],
+              "text": "\u0430\u0442: 19.04.2025 Invoice No: NF-2025-2728",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "87304.86",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.816,
+          0.432,
+          0.945,
+          0.454
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='87304.86'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '7,641.82 87,304.86\u0142 15,714.87'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.811,
+                0.4266,
+                0.9501,
+                0.4588
+              ],
+              "line_bbox": [
+                0.5129,
+                0.4266,
+                0.9501,
+                0.4588
+              ],
+              "text": "715 / Subtotal 87,304.86\u0142",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "15714.87",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.817,
+          0.469,
+          0.946,
+          0.491
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='15714.87'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '87,304.86\u0142 15,714.87 1,03,019.73'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.8136,
+                0.46199999999999997,
+                0.9505,
+                0.49319999999999997
+              ],
+              "line_bbox": [
+                0.8136,
+                0.46199999999999997,
+                0.9505,
+                0.49319999999999997
+              ],
+              "text": "15,714.87",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "103019.73",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.795,
+          0.505,
+          0.945,
+          0.528
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='103019.73'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '15,714.87 1,03,019.73'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7904,
+                0.5025999999999999,
+                0.9444,
+                0.5272
+              ],
+              "line_bbox": [
+                0.5133,
+                0.5025999999999999,
+                0.9444,
+                0.5292
+              ],
+              "text": "\u01113rl / Total 1,03,019.73",
+              "lineno": 11,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Local transportation",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "16765.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.267,
+          0.945,
+          0.285
+        ]
+      }
+    },
+    {
+      "description": "Cargo insurance",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "16162.08",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.297,
+          0.945,
+          0.314
+        ]
+      }
+    },
+    {
+      "description": "Customs documentation fee",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "40863.20",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.326,
+          0.945,
+          0.344
+        ]
+      }
+    },
+    {
+      "description": "Warehouse storage charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "5872.38",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.355,
+          0.945,
+          0.373
+        ]
+      }
+    },
+    {
+      "description": "Bill of entry charges",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "7641.82",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.056,
+          0.384,
+          0.945,
+          0.402
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1670,
+      "total_tokens": 5325,
+      "elapsed_s": 9.12
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "NF-2025-2728",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='NF-2025-2728'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Invoice No: NF-2025-2728'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.4956,
+                  0.17079999999999995,
+                  0.7581,
+                  0.19169999999999998
+                ],
+                "line_bbox": [
+                  0.0553,
+                  0.17079999999999995,
+                  0.7581,
+                  0.2016
+                ],
+                "text": "\u0430\u0442: 19.04.2025 Invoice No: NF-2025-2728",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "19.04.2025",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='19.04.2025'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '\u0430\u0442: 19.04.2025'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0553,
+                  0.17200000000000004,
+                  0.2958,
+                  0.2016
+                ],
+                "line_bbox": [
+                  0.0553,
+                  0.17079999999999995,
+                  0.7581,
+                  0.2016
+                ],
+                "text": "\u0430\u0442: 19.04.2025 Invoice No: NF-2025-2728",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "\u0913\u0930\u093e\u092f\u0928 \u0932\u0949\u091c\u093f\u0938\u094d\u091f\u093f\u0915\u094d\u0938 \u0915\u0902\u092a\u0928\u0940",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='\u0913\u0930\u093e\u092f\u0928 \u0932\u0949\u091c\u093f\u0938\u094d\u091f\u093f\u0915\u094d\u0938 \u0915\u0902\u092a\u0928\u0940'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Ax aud / TAX INVOICE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0556,
+                  0.0615,
+                  0.4548,
+                  0.09289999999999998
+                ],
+                "line_bbox": [
+                  0.0556,
+                  0.0615,
+                  0.4548,
+                  0.09289999999999998
+                ],
+                "text": "Ax aud / TAX INVOICE",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "\u0917\u094d\u0930\u0940\u0928\u092b\u0940\u0932\u094d\u0921 \u090f\u0928\u0930\u094d\u091c\u0940",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='\u0917\u094d\u0930\u0940\u0928\u092b\u0940\u0932\u094d\u0921 \u090f\u0928\u0930\u094d\u091c\u0940'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '\u0430\u0442: 19.04.2025'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0553,
+                  0.17200000000000004,
+                  0.2958,
+                  0.2016
+                ],
+                "line_bbox": [
+                  0.0553,
+                  0.17079999999999995,
+                  0.7581,
+                  0.2016
+                ],
+                "text": "\u0430\u0442: 19.04.2025 Invoice No: NF-2025-2728",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "subtotal": {
+          "value": "87304.86",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='87304.86'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '7,641.82 87,304.86\u0142 15,714.87'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.811,
+                  0.4266,
+                  0.9501,
+                  0.4588
+                ],
+                "line_bbox": [
+                  0.5129,
+                  0.4266,
+                  0.9501,
+                  0.4588
+                ],
+                "text": "715 / Subtotal 87,304.86\u0142",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": "15714.87",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='15714.87'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '87,304.86\u0142 15,714.87 1,03,019.73'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.8136,
+                  0.46199999999999997,
+                  0.9505,
+                  0.49319999999999997
+                ],
+                "line_bbox": [
+                  0.8136,
+                  0.46199999999999997,
+                  0.9505,
+                  0.49319999999999997
+                ],
+                "text": "15,714.87",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "103019.73",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='103019.73'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '15,714.87 1,03,019.73'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7904,
+                  0.5025999999999999,
+                  0.9444,
+                  0.5272
+                ],
+                "line_bbox": [
+                  0.5133,
+                  0.5025999999999999,
+                  0.9444,
+                  0.5292
+                ],
+                "text": "\u01113rl / Total 1,03,019.73",
+                "lineno": 11,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

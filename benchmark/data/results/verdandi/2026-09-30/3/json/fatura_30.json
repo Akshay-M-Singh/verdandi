@@ -1,0 +1,738 @@
+{
+  "selected_document": {
+    "name": "Faulkner LLC",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the heading TAX INVOICE, issuer Faulkner LLC, an invoice number and date, a billed-items table, and a printed total of 998.28 USD.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV/57-22/068",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.567,
+          0.19,
+          0.812,
+          0.205
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV/57-22/068'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # INV/57-22/068 Invoice Date: 17-Jan-2010 Due Date:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5634,
+                0.1896,
+                0.8083,
+                0.20830000000000004
+              ],
+              "line_bbox": [
+                0.5634,
+                0.1896,
+                0.8083,
+                0.20830000000000004
+              ],
+              "text": "INVOICE # INV/57-22/068",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "17-Jan-2010",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.568,
+          0.22,
+          0.814,
+          0.233
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='17-Jan-2010'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE # INV/57-22/068 Invoice Date: 17-Jan-2010 Due Date:'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5664,
+                0.2188,
+                0.8112,
+                0.23750000000000004
+              ],
+              "line_bbox": [
+                0.5664,
+                0.2188,
+                0.8112,
+                0.23750000000000004
+              ],
+              "text": "Invoice Date: 17-Jan-2010",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Faulkner LLC",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.239,
+          0.124,
+          0.369,
+          0.138
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Faulkner LLC'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Faulkner LLC Address:841 Marshall Knolls Timothystad, SC 63653'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.236,
+                0.12290000000000001,
+                0.3717,
+                0.13959999999999995
+              ],
+              "line_bbox": [
+                0.236,
+                0.12290000000000001,
+                0.3717,
+                0.13959999999999995
+              ],
+              "text": "Faulkner LLC",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Michael Greene",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.569,
+          0.278,
+          0.79,
+          0.294
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Michael Greene'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Due Date: 19-Jun-2011 Bill to: Michael Greene 841'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.5693,
+                0.2771,
+                0.7876,
+                0.29579999999999995
+              ],
+              "line_bbox": [
+                0.5693,
+                0.2771,
+                0.7876,
+                0.29579999999999995
+              ],
+              "text": "Bill to: Michael Greene",
+              "lineno": 8,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.469,
+          0.712,
+          0.749,
+          0.727
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL : 998.28 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.469,
+                0.7082999999999999,
+                0.6696,
+                0.7292000000000001
+              ],
+              "line_bbox": [
+                0.469,
+                0.7082999999999999,
+                0.6696,
+                0.7292000000000001
+              ],
+              "text": "TOTAL : 998.28 USD",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "998.28",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.469,
+          0.712,
+          0.749,
+          0.727
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='998.28'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL : 998.28 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.469,
+                0.7082999999999999,
+                0.6696,
+                0.7292000000000001
+              ],
+              "line_bbox": [
+                0.469,
+                0.7082999999999999,
+                0.6696,
+                0.7292000000000001
+              ],
+              "text": "TOTAL : 998.28 USD",
+              "lineno": 21,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Camera thought board system.",
+      "quantity": "3.00",
+      "unit_price": "55.20",
+      "amount": "165.60",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.026,
+          0.481,
+          0.833,
+          0.501
+        ]
+      }
+    },
+    {
+      "description": "Cost painting.",
+      "quantity": "1.00",
+      "unit_price": "2.06",
+      "amount": "2.06",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.026,
+          0.502,
+          0.833,
+          0.519
+        ]
+      }
+    },
+    {
+      "description": "Between character east.",
+      "quantity": "3.00",
+      "unit_price": "64.60",
+      "amount": "193.80",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.026,
+          0.521,
+          0.833,
+          0.538
+        ]
+      }
+    },
+    {
+      "description": "Sure training program.",
+      "quantity": "5.00",
+      "unit_price": "55.08",
+      "amount": "275.40",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.026,
+          0.541,
+          0.833,
+          0.559
+        ]
+      }
+    },
+    {
+      "description": "Beyond police single.",
+      "quantity": "5.00",
+      "unit_price": "66.69",
+      "amount": "333.45",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.026,
+          0.561,
+          0.833,
+          0.58
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "A discount of 2.65% (-) 25.71 is visibly printed below the line-item table."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1563,
+      "total_tokens": 5218,
+      "elapsed_s": 14.81
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV/57-22/068",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV/57-22/068'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # INV/57-22/068 Invoice Date: 17-Jan-2010 Due Date:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5634,
+                  0.1896,
+                  0.8083,
+                  0.20830000000000004
+                ],
+                "line_bbox": [
+                  0.5634,
+                  0.1896,
+                  0.8083,
+                  0.20830000000000004
+                ],
+                "text": "INVOICE # INV/57-22/068",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "17-Jan-2010",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='17-Jan-2010'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE # INV/57-22/068 Invoice Date: 17-Jan-2010 Due Date:'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5664,
+                  0.2188,
+                  0.8112,
+                  0.23750000000000004
+                ],
+                "line_bbox": [
+                  0.5664,
+                  0.2188,
+                  0.8112,
+                  0.23750000000000004
+                ],
+                "text": "Invoice Date: 17-Jan-2010",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Faulkner LLC",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Faulkner LLC'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Faulkner LLC Address:841 Marshall Knolls Timothystad, SC 63653'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.236,
+                  0.12290000000000001,
+                  0.3717,
+                  0.13959999999999995
+                ],
+                "line_bbox": [
+                  0.236,
+                  0.12290000000000001,
+                  0.3717,
+                  0.13959999999999995
+                ],
+                "text": "Faulkner LLC",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Michael Greene",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Michael Greene'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Due Date: 19-Jun-2011 Bill to: Michael Greene 841'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.5693,
+                  0.2771,
+                  0.7876,
+                  0.29579999999999995
+                ],
+                "line_bbox": [
+                  0.5693,
+                  0.2771,
+                  0.7876,
+                  0.29579999999999995
+                ],
+                "text": "Bill to: Michael Greene",
+                "lineno": 8,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL : 998.28 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.469,
+                  0.7082999999999999,
+                  0.6696,
+                  0.7292000000000001
+                ],
+                "line_bbox": [
+                  0.469,
+                  0.7082999999999999,
+                  0.6696,
+                  0.7292000000000001
+                ],
+                "text": "TOTAL : 998.28 USD",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "998.28",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='998.28'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL : 998.28 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.469,
+                  0.7082999999999999,
+                  0.6696,
+                  0.7292000000000001
+                ],
+                "line_bbox": [
+                  0.469,
+                  0.7082999999999999,
+                  0.6696,
+                  0.7292000000000001
+                ],
+                "text": "TOTAL : 998.28 USD",
+                "lineno": 21,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {},
+        "flag_rows": 2
+      },
+      "recheck": {
+        "available": true,
+        "triggered": false,
+        "max_calls": 1
+      }
+    }
+  }
+}

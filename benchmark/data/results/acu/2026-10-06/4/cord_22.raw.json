@@ -1,0 +1,866 @@
+{
+  "id": "54459f2b-6706-493c-982d-10b897bb96a9",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-10-06T08:15:48Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "<table>\n<tr>\n<td>1</td>\n<td>PHO BO TAI</td>\n<td>55,000</td>\n</tr>\n<tr>\n<td></td>\n<td>CASH</td>\n<td>100,000</td>\n</tr>\n</table>\n\n\n<table>\n<tr>\n<td>Sub Total:</td>\n<td>55,000</td>\n</tr>\n<tr>\n<td>PB1</td>\n<td>5,500</td>\n</tr>\n<tr>\n<td>Total:<br>Pay:</td>\n<td>60,500<br>100,000</td>\n</tr>\n<tr>\n<td>Change Due:</td>\n<td>39,500</td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 55000,
+            "spans": [
+              {
+                "offset": 166,
+                "length": 6
+              }
+            ],
+            "confidence": 0.933,
+            "source": "D(1,5.0318,6.2975,5.5967,6.2867,5.5967,6.5028,5.0318,6.5099)"
+          },
+          "tax_total": {
+            "type": "number",
+            "valueNumber": 5500,
+            "spans": [
+              {
+                "offset": 206,
+                "length": 5
+              }
+            ],
+            "confidence": 0.665,
+            "source": "D(1,5.1246,6.5435,5.5927,6.5316,5.5927,6.7479,5.1246,6.7551)"
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 60500,
+            "spans": [
+              {
+                "offset": 256,
+                "length": 6
+              }
+            ],
+            "confidence": 0.927,
+            "source": "D(1,5.0358,6.7896,5.6048,6.7827,5.6048,6.9997,5.0358,7.0065)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "PHO BO TAI",
+                    "spans": [
+                      {
+                        "offset": 28,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,2.5215,5.5781,3.4980,5.5760,3.4984,5.7723,2.5219,5.7744)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 17,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.608,
+                    "source": "D(1,2.1447,5.6134,2.2294,5.6117,2.2294,5.7840,2.1447,5.7819)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 55000,
+                    "spans": [
+                      {
+                        "offset": 48,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.8,
+                    "source": "D(1,5.0156,5.5470,5.5927,5.5409,5.5927,5.7557,5.0156,5.7612)"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": -0.3771,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 342
+              }
+            ],
+            "words": [
+              {
+                "content": "1",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,2.1447,5.6134,2.2294,5.6117,2.2294,5.784,2.1447,5.7819)"
+              },
+              {
+                "content": "PHO",
+                "span": {
+                  "offset": 28,
+                  "length": 3
+                },
+                "confidence": 0.305,
+                "source": "D(1,2.5219,5.5781,2.8194,5.5794,2.8207,5.7736,2.5219,5.7729)"
+              },
+              {
+                "content": "BO",
+                "span": {
+                  "offset": 32,
+                  "length": 2
+                },
+                "confidence": 0.914,
+                "source": "D(1,2.9186,5.5794,3.1041,5.5791,3.1066,5.773,2.9202,5.7735)"
+              },
+              {
+                "content": "TAI",
+                "span": {
+                  "offset": 35,
+                  "length": 3
+                },
+                "confidence": 0.982,
+                "source": "D(1,3.2097,5.5787,3.4944,5.5765,3.4984,5.7705,3.2126,5.7726)"
+              },
+              {
+                "content": "55,000",
+                "span": {
+                  "offset": 48,
+                  "length": 6
+                },
+                "confidence": 0.97,
+                "source": "D(1,5.0156,5.547,5.5927,5.5409,5.5927,5.7557,5.0156,5.7612)"
+              },
+              {
+                "content": "CASH",
+                "span": {
+                  "offset": 85,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.53,5.8476,2.9376,5.8453,2.9376,6.0299,2.53,6.0299)"
+              },
+              {
+                "content": "100,000",
+                "span": {
+                  "offset": 99,
+                  "length": 7
+                },
+                "confidence": 0.962,
+                "source": "D(1,4.9309,5.8002,5.5927,5.793,5.5927,6.0072,4.9309,6.0143)"
+              },
+              {
+                "content": "Sub",
+                "span": {
+                  "offset": 146,
+                  "length": 3
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.4433,6.3508,2.7183,6.3463,2.7188,6.5405,2.4433,6.545)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 150,
+                  "length": 5
+                },
+                "confidence": 0.964,
+                "source": "D(1,2.8243,6.3452,3.3114,6.3443,3.3132,6.5384,2.8251,6.5394)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 155,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,3.328,6.3443,3.3976,6.3445,3.3996,6.5387,3.3298,6.5385)"
+              },
+              {
+                "content": "55,000",
+                "span": {
+                  "offset": 166,
+                  "length": 6
+                },
+                "confidence": 0.95,
+                "source": "D(1,5.0318,6.2975,5.5967,6.2867,5.5967,6.5028,5.0318,6.5099)"
+              },
+              {
+                "content": "PB1",
+                "span": {
+                  "offset": 193,
+                  "length": 3
+                },
+                "confidence": 0.884,
+                "source": "D(1,2.4453,6.6067,2.7358,6.6067,2.7358,6.7894,2.4453,6.7894)"
+              },
+              {
+                "content": "5,500",
+                "span": {
+                  "offset": 206,
+                  "length": 5
+                },
+                "confidence": 0.955,
+                "source": "D(1,5.1246,6.5435,5.5927,6.5316,5.5927,6.7479,5.1246,6.7551)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 232,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,2.4554,6.8574,2.94,6.8583,2.94,7.0464,2.4554,7.0464)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 237,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.9497,6.8582,3.0203,6.858,3.0203,7.0464,2.9497,7.0464)"
+              },
+              {
+                "content": "Pay",
+                "span": {
+                  "offset": 242,
+                  "length": 3
+                },
+                "confidence": 0.947,
+                "source": "D(1,2.4493,7.1209,2.7491,7.1224,2.7483,7.3322,2.4453,7.3348)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 245,
+                  "length": 1
+                },
+                "confidence": 0.99,
+                "source": "D(1,2.7592,7.1226,2.8266,7.1241,2.8266,7.3311,2.7585,7.3321)"
+              },
+              {
+                "content": "60,500",
+                "span": {
+                  "offset": 256,
+                  "length": 6
+                },
+                "confidence": 0.969,
+                "source": "D(1,5.0358,6.7896,5.6048,6.7827,5.6048,6.9997,5.0358,7.0065)"
+              },
+              {
+                "content": "100,000",
+                "span": {
+                  "offset": 266,
+                  "length": 7
+                },
+                "confidence": 0.943,
+                "source": "D(1,4.9672,7.0485,5.6128,7.0348,5.6128,7.2517,4.9672,7.2534)"
+              },
+              {
+                "content": "Change",
+                "span": {
+                  "offset": 294,
+                  "length": 6
+                },
+                "confidence": 0.973,
+                "source": "D(1,2.4554,7.3697,3.0372,7.36,3.0373,7.5758,2.4554,7.584)"
+              },
+              {
+                "content": "Due",
+                "span": {
+                  "offset": 301,
+                  "length": 3
+                },
+                "confidence": 0.978,
+                "source": "D(1,3.1348,7.3586,3.424,7.3554,3.424,7.5661,3.1349,7.5739)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 304,
+                  "length": 1
+                },
+                "confidence": 0.984,
+                "source": "D(1,3.4449,7.3551,3.5146,7.3544,3.5146,7.5635,3.4449,7.5655)"
+              },
+              {
+                "content": "39,500",
+                "span": {
+                  "offset": 315,
+                  "length": 6
+                },
+                "confidence": 0.716,
+                "source": "D(1,5.0479,7.2981,5.6169,7.2798,5.6169,7.4968,5.0479,7.515)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "1",
+                "source": "D(1,2.1447,5.6117,2.2294,5.6117,2.2294,5.7847,2.1447,5.7847)",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                }
+              },
+              {
+                "content": "PHO BO TAI",
+                "source": "D(1,2.5216,5.5781,3.4981,5.5765,3.4984,5.7726,2.5219,5.7742)",
+                "span": {
+                  "offset": 28,
+                  "length": 10
+                }
+              },
+              {
+                "content": "55,000",
+                "source": "D(1,5.0143,5.547,5.5927,5.5409,5.595,5.7575,5.0157,5.7616)",
+                "span": {
+                  "offset": 48,
+                  "length": 6
+                }
+              },
+              {
+                "content": "CASH",
+                "source": "D(1,2.53,5.8453,2.9376,5.8453,2.9376,6.0299,2.53,6.0299)",
+                "span": {
+                  "offset": 85,
+                  "length": 4
+                }
+              },
+              {
+                "content": "100,000",
+                "source": "D(1,4.9286,5.7977,5.5926,5.7906,5.595,6.0071,4.9309,6.0143)",
+                "span": {
+                  "offset": 99,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Sub Total:",
+                "source": "D(1,2.442,6.3477,3.3983,6.3414,3.3996,6.5387,2.4433,6.545)",
+                "span": {
+                  "offset": 146,
+                  "length": 10
+                }
+              },
+              {
+                "content": "55,000",
+                "source": "D(1,5.0314,6.2936,5.5967,6.2864,5.5968,6.5041,5.0318,6.5113)",
+                "span": {
+                  "offset": 166,
+                  "length": 6
+                }
+              },
+              {
+                "content": "PB1",
+                "source": "D(1,2.4453,6.6067,2.7358,6.6067,2.7358,6.7894,2.4453,6.7894)",
+                "span": {
+                  "offset": 193,
+                  "length": 3
+                }
+              },
+              {
+                "content": "5,500",
+                "source": "D(1,5.1228,6.543,5.5927,6.5316,5.5968,6.7489,5.1247,6.7603)",
+                "span": {
+                  "offset": 206,
+                  "length": 5
+                }
+              },
+              {
+                "content": "Total:",
+                "source": "D(1,2.4554,6.8574,3.0203,6.8574,3.0203,7.0464,2.4554,7.0464)",
+                "span": {
+                  "offset": 232,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Pay:",
+                "source": "D(1,2.4443,7.121,2.8266,7.1191,2.827,7.333,2.4453,7.3348)",
+                "span": {
+                  "offset": 242,
+                  "length": 4
+                }
+              },
+              {
+                "content": "60,500",
+                "source": "D(1,5.0332,6.7896,5.6048,6.7827,5.6074,7.0011,5.0358,7.008)",
+                "span": {
+                  "offset": 256,
+                  "length": 6
+                }
+              },
+              {
+                "content": "100,000",
+                "source": "D(1,4.9664,7.0371,5.6128,7.0348,5.6136,7.2517,4.9672,7.254)",
+                "span": {
+                  "offset": 266,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Change Due:",
+                "source": "D(1,2.4522,7.3685,3.5146,7.3531,3.5177,7.57,2.4554,7.5854)",
+                "span": {
+                  "offset": 294,
+                  "length": 11
+                }
+              },
+              {
+                "content": "39,500",
+                "source": "D(1,5.0429,7.2983,5.6169,7.2798,5.6197,7.4981,5.048,7.5166)",
+                "span": {
+                  "offset": 315,
+                  "length": 6
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "1",
+            "source": "D(1,2.1447,5.6115,2.2297,5.6117,2.2294,5.784,2.1443,5.7839)",
+            "span": {
+              "offset": 17,
+              "length": 1
+            }
+          },
+          {
+            "content": "PHO BO TAI",
+            "source": "D(1,2.5215,5.5781,3.498,5.5761,3.4984,5.7723,2.5219,5.7743)",
+            "span": {
+              "offset": 28,
+              "length": 10
+            }
+          },
+          {
+            "content": "55,000",
+            "source": "D(1,5.0135,5.5467,5.5927,5.5409,5.5948,5.7556,5.0156,5.7615)",
+            "span": {
+              "offset": 48,
+              "length": 6
+            }
+          },
+          {
+            "content": "CASH",
+            "source": "D(1,2.5295,5.8464,2.9376,5.8453,2.9381,6.0299,2.53,6.0311)",
+            "span": {
+              "offset": 85,
+              "length": 4
+            }
+          },
+          {
+            "content": "100,000",
+            "source": "D(1,4.9286,5.8002,5.5927,5.793,5.595,6.0071,4.9309,6.0143)",
+            "span": {
+              "offset": 99,
+              "length": 7
+            }
+          },
+          {
+            "content": "Sub Total:",
+            "source": "D(1,2.4429,6.346,3.3992,6.3441,3.3996,6.5431,2.4433,6.545)",
+            "span": {
+              "offset": 146,
+              "length": 10
+            }
+          },
+          {
+            "content": "55,000",
+            "source": "D(1,5.0284,6.2958,5.5967,6.2867,5.6001,6.5027,5.0318,6.5118)",
+            "span": {
+              "offset": 166,
+              "length": 6
+            }
+          },
+          {
+            "content": "PB1",
+            "source": "D(1,2.4453,6.6067,2.7358,6.6067,2.7358,6.7894,2.4453,6.7894)",
+            "span": {
+              "offset": 193,
+              "length": 3
+            }
+          },
+          {
+            "content": "5,500",
+            "source": "D(1,5.1202,6.5412,5.5927,6.5316,5.5971,6.7478,5.1246,6.7575)",
+            "span": {
+              "offset": 206,
+              "length": 5
+            }
+          },
+          {
+            "content": "Total:",
+            "source": "D(1,2.4554,6.8574,3.0204,6.8579,3.0203,7.0469,2.4552,7.0464)",
+            "span": {
+              "offset": 232,
+              "length": 6
+            }
+          },
+          {
+            "content": "Pay:",
+            "source": "D(1,2.446,7.1209,2.8273,7.1222,2.8266,7.3361,2.4453,7.3348)",
+            "span": {
+              "offset": 242,
+              "length": 4
+            }
+          },
+          {
+            "content": "60,500",
+            "source": "D(1,5.0332,6.7896,5.6048,6.7827,5.6074,6.9997,5.0358,7.0065)",
+            "span": {
+              "offset": 256,
+              "length": 6
+            }
+          },
+          {
+            "content": "100,000",
+            "source": "D(1,4.9647,7.0425,5.6128,7.0348,5.6154,7.2517,4.9673,7.2594)",
+            "span": {
+              "offset": 266,
+              "length": 7
+            }
+          },
+          {
+            "content": "Change Due:",
+            "source": "D(1,2.4512,7.3698,3.5145,7.3493,3.5187,7.5665,2.4554,7.5871)",
+            "span": {
+              "offset": 294,
+              "length": 11
+            }
+          },
+          {
+            "content": "39,500",
+            "source": "D(1,5.0409,7.2983,5.6169,7.2798,5.6238,7.4965,5.0479,7.515)",
+            "span": {
+              "offset": 315,
+              "length": 6
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 341
+            },
+            "elements": [
+              "/tables/0",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 2,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1",
+                "source": "D(1,1.9845,5.4031,2.4812,5.398,2.4856,5.7876,1.982,5.794)",
+                "span": {
+                  "offset": 17,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/0"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "PHO BO TAI",
+                "source": "D(1,2.4812,5.398,4.7439,5.3751,4.7473,5.7616,2.4856,5.7876)",
+                "span": {
+                  "offset": 28,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/1"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "55,000",
+                "source": "D(1,4.7439,5.3751,5.7028,5.3661,5.7034,5.7501,4.7473,5.7616)",
+                "span": {
+                  "offset": 48,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,1.982,5.794,2.4856,5.7876,2.4856,6.1829,1.9815,6.1834)",
+                "span": {
+                  "offset": 75,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CASH",
+                "source": "D(1,2.4856,5.7876,4.7473,5.7616,4.7514,6.1798,2.4856,6.1829)",
+                "span": {
+                  "offset": 85,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "100,000",
+                "source": "D(1,4.7473,5.7616,5.7034,5.7501,5.7066,6.1791,4.7514,6.1798)",
+                "span": {
+                  "offset": 99,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              }
+            ],
+            "source": "D(1,2.072,5.5246,5.6048,5.4903,5.637,6.0128,2.0922,6.0642)",
+            "span": {
+              "offset": 0,
+              "length": 126
+            }
+          },
+          {
+            "rowCount": 4,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "rowHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Sub Total:",
+                "source": "D(1,2.3977,6.272,4.8589,6.2693,4.8574,6.5271,2.3987,6.5435)",
+                "span": {
+                  "offset": 146,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "55,000",
+                "source": "D(1,4.8589,6.2693,5.6447,6.2671,5.6442,6.5204,4.8574,6.5271)",
+                "span": {
+                  "offset": 166,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "PB1",
+                "source": "D(1,2.3987,6.5435,4.8574,6.5271,4.8561,6.7509,2.3977,6.767)",
+                "span": {
+                  "offset": 193,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,500",
+                "source": "D(1,4.8574,6.5271,5.6442,6.5204,5.6454,6.7443,4.8561,6.7509)",
+                "span": {
+                  "offset": 206,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total:\nPay:",
+                "source": "D(1,2.3977,6.767,4.8561,6.7509,4.8572,7.2541,2.3977,7.2683)",
+                "span": {
+                  "offset": 232,
+                  "length": 14
+                },
+                "elements": [
+                  "/paragraphs/9",
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "60,500\n100,000",
+                "source": "D(1,4.8561,6.7509,5.6454,6.7443,5.6478,7.2481,4.8572,7.2541)",
+                "span": {
+                  "offset": 256,
+                  "length": 17
+                },
+                "elements": [
+                  "/paragraphs/11",
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "rowHeader",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Change Due:",
+                "source": "D(1,2.3977,7.2683,4.8572,7.2541,4.8601,7.5654,2.3977,7.5804)",
+                "span": {
+                  "offset": 294,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "39,500",
+                "source": "D(1,4.8572,7.2541,5.6478,7.2481,5.6495,7.5601,4.8601,7.5654)",
+                "span": {
+                  "offset": 315,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              }
+            ],
+            "source": "D(1,2.3767,6.2755,5.6451,6.2412,5.6653,7.5603,2.3948,7.6002)",
+            "span": {
+              "offset": 129,
+              "length": 212
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5.5-input": 3963,
+      "gpt-5.5-cached-input": 3328,
+      "gpt-5.5-output": 164
+    }
+  }
+}

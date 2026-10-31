@@ -1,0 +1,70 @@
+name: Bug report
+description: Something is broken or produces a wrong result
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Never attach a real customer document.**
+        Redact or synthesize a minimal example instead.
+  - type: input
+    id: version
+    attributes:
+      label: Verdandi version
+      description: Shown in About, or `cd desktop && node scripts/version.mjs show`.
+      placeholder: "1.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where does it happen?
+      options:
+        - Desktop app
+        - CLI / engine
+        - Capture (OCR, renders, orientation)
+        - Extraction (model output)
+        - Verification / review flags
+        - Export
+        - Benchmark
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the exact error text and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Steps, command, or a minimal synthetic PDF.
+      placeholder: |
+        1. Run `make ocr-corpus`
+        2. ...
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: About → Export diagnostics (never includes documents), or the relevant log lines.
+      render: text
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not attached a real invoice or customer document.
+          required: true

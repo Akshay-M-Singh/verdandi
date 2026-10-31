@@ -1,0 +1,657 @@
+{
+  "selected_document": {
+    "name": "Brand Precision Services, Inc.",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 visibly shows the Brand Precision Services, Inc. letterhead, the printed heading \"INVOICE,\" invoice number 11003631, and a vendor charge table with billed amounts and a total due.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "11003631",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.773,
+          0.108,
+          0.876,
+          0.123
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='11003631'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '11003631 DATE'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7729,
+                0.09999999999999998,
+                0.8555,
+                0.11040000000000005
+              ],
+              "line_bbox": [
+                0.7729,
+                0.09999999999999998,
+                0.8555,
+                0.11040000000000005
+              ],
+              "text": "11003631",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "12/31/93",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.71,
+          0.225,
+          0.798,
+          0.244
+        ]
+      },
+      "verification": {
+        "score": 0.0,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='12/31/93'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '12/31/93' NOT found near region (page 1); nearest text 'PO BOR' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Brand Precision Services, Inc.",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.057,
+          0.087,
+          0.276,
+          0.13
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Brand Precision Services, Inc.'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'Brand Precision Services, Inc.' NOT found near region (page 1); nearest text 'BRAND PHILIP MORRIS 0. BOX 26603- SOLD' (n-gram proximity 0.17)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "PHILIP MORRIS",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.145,
+          0.154,
+          0.276,
+          0.17
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='PHILIP MORRIS'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'PHILIP MORRIS 0. BOX 26603- SOLD RICHMOND, VA.'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1445,
+                0.14580000000000004,
+                0.2861,
+                0.1583
+              ],
+              "line_bbox": [
+                0.1445,
+                0.14580000000000004,
+                0.2861,
+                0.1583
+              ],
+              "text": "PHILIP MORRIS",
+              "lineno": 5,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.91,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.85,
+          0.599,
+          0.981,
+          0.727
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'no text found near the claimed region' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "3524.38",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.848,
+          0.698,
+          0.978,
+          0.729
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='3524.38'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '3524.38' NOT found near region (page 1); nearest text 'no text found near the claimed region' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "VACUUM UNIT",
+      "quantity": "16.00",
+      "unit_price": "70.00",
+      "amount": "1120.00",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.226,
+          0.604,
+          0.979,
+          0.625
+        ]
+      }
+    },
+    {
+      "description": "SUPERVISOR",
+      "quantity": "28.00",
+      "unit_price": "22.00",
+      "amount": "616.00",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.226,
+          0.624,
+          0.979,
+          0.645
+        ]
+      }
+    },
+    {
+      "description": "OPERATOR",
+      "quantity": "56.00",
+      "unit_price": "20.50",
+      "amount": "1148.00",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.226,
+          0.644,
+          0.979,
+          0.665
+        ]
+      }
+    },
+    {
+      "description": "PRESSURE WASHER COST + 20%",
+      "quantity": "1.00",
+      "unit_price": "546.00",
+      "amount": "546.00",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.226,
+          0.664,
+          0.979,
+          0.685
+        ]
+      }
+    },
+    {
+      "description": "SUPPLIES COST + 20%",
+      "quantity": "1.00",
+      "unit_price": "94.38",
+      "amount": "94.38",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.226,
+          0.684,
+          0.979,
+          0.705
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The printed lines \"VAC & STEAM CLEAN LINE #3 PACKIN\" and \"12-19 THRU 12-21-93\" appear to be a service description/section heading without a corresponding quantity, unit price, or amount, so they were not output as a separate line item.",
+    "The document also shows a received stamp dated JAN-6 1994; the invoice date field itself is printed as 12/31/93."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v10",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 2230,
+      "total_tokens": 5885,
+      "elapsed_s": 13.68
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "11003631",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='11003631'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '11003631 DATE'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7729,
+                  0.09999999999999998,
+                  0.8555,
+                  0.11040000000000005
+                ],
+                "line_bbox": [
+                  0.7729,
+                  0.09999999999999998,
+                  0.8555,
+                  0.11040000000000005
+                ],
+                "text": "11003631",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "12/31/93",
+          "score": 0.0,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='12/31/93'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '12/31/93' NOT found near region (page 1); nearest text 'PO BOR' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Brand Precision Services, Inc.",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Brand Precision Services, Inc.'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'Brand Precision Services, Inc.' NOT found near region (page 1); nearest text 'BRAND PHILIP MORRIS 0. BOX 26603- SOLD' (n-gram proximity 0.17)",
+              "match": null
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "PHILIP MORRIS",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='PHILIP MORRIS'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'PHILIP MORRIS 0. BOX 26603- SOLD RICHMOND, VA.'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1445,
+                  0.14580000000000004,
+                  0.2861,
+                  0.1583
+                ],
+                "line_bbox": [
+                  0.1445,
+                  0.14580000000000004,
+                  0.2861,
+                  0.1583
+                ],
+                "text": "PHILIP MORRIS",
+                "lineno": 5,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'no text found near the claimed region' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "3524.38",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='3524.38'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '3524.38' NOT found near region (page 1); nearest text 'no text found near the claimed region' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 4
+        },
+        "flag_rows": 7
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "12/31/93",
+            "secondary": "12/31/93",
+            "agree": false
+          },
+          "vendor_name": {
+            "primary": "Brand Precision Services, Inc.",
+            "secondary": "Brand Precision Services, Inc.",
+            "agree": true
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "3524.38",
+            "secondary": "$3,524.38",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v10",
+          "sha256": "da44c500e4c3f01def7839d4fb93ecca4ecc0b1754e784d4a607b7478d9ef680"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2535,
+          "completion_tokens": 731,
+          "total_tokens": 3266,
+          "elapsed_s": 6.51
+        }
+      }
+    }
+  }
+}

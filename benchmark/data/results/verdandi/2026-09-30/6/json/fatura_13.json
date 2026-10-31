@@ -1,0 +1,749 @@
+{
+  "selected_document": {
+    "name": "Huff-Bryan",
+    "document_pages": [
+      1
+    ],
+    "reason": "Page 1 shows a vendor-issued document headed \"TAX INVOICE,\" with Huff-Bryan printed as the issuer, billed line items, and a printed total of 995.15 USD.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "12-Oct-1994",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.789,
+          0.262,
+          0.902,
+          0.277
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='12-Oct-1994'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Due Date : 31-May-2022 Invoice Date: 12-Oct-1994'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6578,
+                0.26039999999999996,
+                0.9027,
+                0.2771
+              ],
+              "line_bbox": [
+                0.0173,
+                0.26039999999999996,
+                0.9027,
+                0.2835
+              ],
+              "text": "Email:amanda56@example.org Invoice Date: 12-Oct-1994",
+              "lineno": 10,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Huff-Bryan",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.264,
+          0.02,
+          0.38,
+          0.037
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Huff-Bryan'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Huff-Bryan Address: 2180 Michael Ridges Apt. 385 Port'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.2592,
+                0.020299999999999985,
+                0.3752,
+                0.03920000000000001
+              ],
+              "line_bbox": [
+                0.2592,
+                0.020299999999999985,
+                0.3752,
+                0.03920000000000001
+              ],
+              "text": "Huff-Bryan",
+              "lineno": 1,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Colleen Ellis",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.017,
+          0.205,
+          0.127,
+          0.221
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Colleen Ellis'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX INVOICE BILL_TO: Colleen Ellis 37379 Harris Spurs'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0145,
+                0.2047,
+                0.1301,
+                0.21989999999999998
+              ],
+              "line_bbox": [
+                0.0145,
+                0.2047,
+                0.1301,
+                0.21989999999999998
+              ],
+              "text": "Colleen Ellis",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.839,
+          0.16,
+          0.875,
+          0.172
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 995.15 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6667,
+                0.1604,
+                0.8643,
+                0.17500000000000004
+              ],
+              "line_bbox": [
+                0.0501,
+                0.1521,
+                0.8643,
+                0.17500000000000004
+              ],
+              "text": "TAX INVOICE TOTAL: 995.15 USD",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "992.04",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.63,
+          0.589,
+          0.884,
+          0.605
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='992.04'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'SUB_TOTAL : 992.04 USD DISCOUNT(2.39%): (-) 23.71'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6254,
+                0.5875,
+                0.885,
+                0.6104
+              ],
+              "line_bbox": [
+                0.6254,
+                0.5875,
+                0.885,
+                0.6104
+              ],
+              "text": "SUB_TOTAL : 992.04 USD",
+              "lineno": 17,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "995.15",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.756,
+          0.16,
+          0.873,
+          0.173
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='995.15'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TOTAL: 995.15 USD'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6667,
+                0.1604,
+                0.8643,
+                0.17500000000000004
+              ],
+              "line_bbox": [
+                0.0501,
+                0.1521,
+                0.8643,
+                0.17500000000000004
+              ],
+              "text": "TAX INVOICE TOTAL: 995.15 USD",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Fly.",
+      "quantity": "2.00",
+      "unit_price": "56.04",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.052,
+          0.452,
+          0.976,
+          0.475
+        ]
+      }
+    },
+    {
+      "description": "Generation focus toward.",
+      "quantity": "6.00",
+      "unit_price": "95.67",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.052,
+          0.475,
+          0.976,
+          0.497
+        ]
+      }
+    },
+    {
+      "description": "Finish brother knowledge.",
+      "quantity": "2.00",
+      "unit_price": "75.32",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.052,
+          0.497,
+          0.976,
+          0.519
+        ]
+      }
+    },
+    {
+      "description": "Friend.",
+      "quantity": "5.00",
+      "unit_price": "51.06",
+      "amount": null,
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.052,
+          0.519,
+          0.976,
+          0.541
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "No invoice number is visibly printed.",
+    "No separate tax amount is visibly printed.",
+    "The line-item table has columns Description, QUANTITY, and PRICE; no separate row amount column is printed."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-5.6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v9",
+      "sha256": "acf4c9766239be609349a30122ff214b11abe71672811288fe6c95ecbe80edc8"
+    },
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 1632,
+      "total_tokens": 5287,
+      "elapsed_s": 17.65
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "invoice_date": {
+          "value": "12-Oct-1994",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='12-Oct-1994'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Due Date : 31-May-2022 Invoice Date: 12-Oct-1994'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6578,
+                  0.26039999999999996,
+                  0.9027,
+                  0.2771
+                ],
+                "line_bbox": [
+                  0.0173,
+                  0.26039999999999996,
+                  0.9027,
+                  0.2835
+                ],
+                "text": "Email:amanda56@example.org Invoice Date: 12-Oct-1994",
+                "lineno": 10,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Huff-Bryan",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Huff-Bryan'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Huff-Bryan Address: 2180 Michael Ridges Apt. 385 Port'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.2592,
+                  0.020299999999999985,
+                  0.3752,
+                  0.03920000000000001
+                ],
+                "line_bbox": [
+                  0.2592,
+                  0.020299999999999985,
+                  0.3752,
+                  0.03920000000000001
+                ],
+                "text": "Huff-Bryan",
+                "lineno": 1,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Colleen Ellis",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Colleen Ellis'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX INVOICE BILL_TO: Colleen Ellis 37379 Harris Spurs'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0145,
+                  0.2047,
+                  0.1301,
+                  0.21989999999999998
+                ],
+                "line_bbox": [
+                  0.0145,
+                  0.2047,
+                  0.1301,
+                  0.21989999999999998
+                ],
+                "text": "Colleen Ellis",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 995.15 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6667,
+                  0.1604,
+                  0.8643,
+                  0.17500000000000004
+                ],
+                "line_bbox": [
+                  0.0501,
+                  0.1521,
+                  0.8643,
+                  0.17500000000000004
+                ],
+                "text": "TAX INVOICE TOTAL: 995.15 USD",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "992.04",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='992.04'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'SUB_TOTAL : 992.04 USD DISCOUNT(2.39%): (-) 23.71'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6254,
+                  0.5875,
+                  0.885,
+                  0.6104
+                ],
+                "line_bbox": [
+                  0.6254,
+                  0.5875,
+                  0.885,
+                  0.6104
+                ],
+                "text": "SUB_TOTAL : 992.04 USD",
+                "lineno": 17,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "995.15",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='995.15'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TOTAL: 995.15 USD'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6667,
+                  0.1604,
+                  0.8643,
+                  0.17500000000000004
+                ],
+                "line_bbox": [
+                  0.0501,
+                  0.1521,
+                  0.8643,
+                  0.17500000000000004
+                ],
+                "text": "TAX INVOICE TOTAL: 995.15 USD",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1
+        },
+        "flag_rows": 8
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "12-Oct-1994",
+            "secondary": "12-Oct-1994",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v9",
+          "sha256": "cd8c3f1e6368cdfa1155f4a50eeebabbaae9f41437424bc6b503916e268827e1"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2439,
+          "completion_tokens": 266,
+          "total_tokens": 2705,
+          "elapsed_s": 8.92
+        }
+      }
+    }
+  }
+}

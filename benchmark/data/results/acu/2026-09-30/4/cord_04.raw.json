@@ -1,0 +1,2815 @@
+{
+  "id": "4ac99ecd-bf91-47ee-976e-a02a6814a865",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "verdandi_benchmark",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-09-30T14:01:15Z",
+    "stringEncoding": "codePoint",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "<table>\n<tr>\n<td>1X</td>\n<td>5500</td>\n<td></td>\n</tr>\n<tr>\n<td>TALAM UNGU</td>\n<td></td>\n<td>6.500</td>\n</tr>\n<tr>\n<td>DISC ITEM</td>\n<td></td>\n<td>-40.000%</td>\n</tr>\n<tr>\n<td>AMOUNT</td>\n<td></td>\n<td>-2 600</td>\n</tr>\n<tr>\n<td>1X</td>\n<td>3000</td>\n<td></td>\n</tr>\n<tr>\n<td>AREM - AREM</td>\n<td></td>\n<td>8,000</td>\n</tr>\n<tr>\n<td>DISC ITEM</td>\n<td></td>\n<td>-40.000%</td>\n</tr>\n<tr>\n<td>AMOUNT</td>\n<td></td>\n<td>-3,200</td>\n</tr>\n<tr>\n<td>2X</td>\n<td>9000</td>\n<td></td>\n</tr>\n<tr>\n<td>LEMPER</td>\n<td></td>\n<td>18.000</td>\n</tr>\n<tr>\n<td>DISC ITEM<br>AMOUNT</td>\n<td></td>\n<td>-40.000:<br>-7.200</td>\n</tr>\n<tr>\n<td>1X</td>\n<td>D</td>\n<td></td>\n</tr>\n<tr>\n<td>MIKA SEDANG</td>\n<td></td>\n<td>0</td>\n</tr>\n<tr>\n<td>1X</td>\n<td>D</td>\n<td></td>\n</tr>\n<tr>\n<td>PLASTIK KECIL</td>\n<td></td>\n<td>U</td>\n</tr>\n<tr>\n<td>1X</td>\n<td>5000</td>\n<td></td>\n</tr>\n</table>\n\n\nTEH KOTAK\n\n5,000\n\n\n<table>\n<tr>\n<td colspan=\"2\">7.00 ITEMs</td>\n</tr>\n<tr>\n<td>SUBTOTAL</td>\n<td>24,500</td>\n</tr>\n<tr>\n<td>TOTAL</td>\n<td>24,500</td>\n</tr>\n<tr>\n<td>CARD</td>\n<td>24,500</td>\n</tr>\n</table>\n",
+        "fields": {
+          "invoice_number": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "invoice_date": {
+            "type": "date",
+            "confidence": 0.875
+          },
+          "vendor_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "buyer_name": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "currency": {
+            "type": "string",
+            "confidence": 0.836
+          },
+          "subtotal": {
+            "type": "number",
+            "valueNumber": 24500,
+            "spans": [
+              {
+                "offset": 966,
+                "length": 6
+              }
+            ],
+            "confidence": 0.813,
+            "source": "D(1,5.1044,8.5867,5.7621,8.5947,5.7621,8.8231,5.1044,8.8151)"
+          },
+          "tax_total": {
+            "type": "number",
+            "confidence": 0.974
+          },
+          "total_amount": {
+            "type": "number",
+            "valueNumber": 24500,
+            "spans": [
+              {
+                "offset": 1008,
+                "length": 6
+              }
+            ],
+            "confidence": 0.797,
+            "source": "D(1,5.1044,8.8606,5.7702,8.8678,5.7702,9.0962,5.1044,9.0890)"
+          },
+          "line_items": {
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "1X 5500 TALAM UNGU",
+                    "spans": [
+                      {
+                        "offset": 17,
+                        "length": 2
+                      },
+                      {
+                        "offset": 29,
+                        "length": 4
+                      },
+                      {
+                        "offset": 64,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.595,
+                    "source": "D(1,2.4957,3.8702,2.6874,3.8712,2.6854,4.0539,2.4957,4.0529);D(1,4.0452,3.9256,4.4305,3.9252,4.4305,4.1199,4.0452,4.1199);D(1,2.4839,4.0846,3.4692,4.1280,3.4600,4.3363,2.4747,4.2929)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 17,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.494,
+                    "source": "D(1,2.4957,3.8702,2.6874,3.8712,2.6854,4.0539,2.4957,4.0529)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 5500,
+                    "spans": [
+                      {
+                        "offset": 29,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.608,
+                    "source": "D(1,4.0452,3.9256,4.4305,3.9252,4.4305,4.1199,4.0452,4.1199)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 6500,
+                    "spans": [
+                      {
+                        "offset": 94,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.476,
+                    "source": "D(1,5.1004,4.1532,5.6007,4.1551,5.6007,4.3500,5.1004,4.3459)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "DISC ITEM",
+                    "spans": [
+                      {
+                        "offset": 120,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.699,
+                    "source": "D(1,2.4616,4.3204,3.3706,4.3639,3.3609,4.5668,2.4519,4.5233)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": -40000,
+                    "spans": [
+                      {
+                        "offset": 149,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.794,
+                    "source": "D(1,4.8098,4.3865,5.6103,4.3930,5.6088,4.5803,4.8083,4.5738)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "AMOUNT",
+                    "spans": [
+                      {
+                        "offset": 178,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.582,
+                    "source": "D(1,2.4574,4.5596,3.0566,4.5843,3.0485,4.7785,2.4493,4.7538)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": -2600,
+                    "spans": [
+                      {
+                        "offset": 204,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.727,
+                    "source": "D(1,5.0181,4.6287,5.6087,4.6234,5.6104,4.8117,5.0198,4.8170)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "1X 3000 AREM - AREM",
+                    "spans": [
+                      {
+                        "offset": 231,
+                        "length": 2
+                      },
+                      {
+                        "offset": 243,
+                        "length": 4
+                      },
+                      {
+                        "offset": 278,
+                        "length": 11
+                      }
+                    ],
+                    "confidence": 0.608,
+                    "source": "D(1,2.4634,4.7988,2.6652,4.8058,2.6632,4.9956,2.4634,4.9817);D(1,4.0452,4.8334,4.4346,4.8471,4.4346,5.0448,4.0452,5.0274);D(1,2.4393,5.0225,3.5569,5.0556,3.5509,5.2596,2.4332,5.2265)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 231,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.483,
+                    "source": "D(1,2.4634,4.7988,2.6652,4.8058,2.6632,4.9956,2.4634,4.9817)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 3000,
+                    "spans": [
+                      {
+                        "offset": 243,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.604,
+                    "source": "D(1,4.0452,4.8334,4.4346,4.8471,4.4346,5.0448,4.0452,5.0274)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 8000,
+                    "spans": [
+                      {
+                        "offset": 309,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.476,
+                    "source": "D(1,5.1044,5.0850,5.6209,5.0850,5.6209,5.2837,5.1044,5.2801)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "DISC ITEM",
+                    "spans": [
+                      {
+                        "offset": 335,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.706,
+                    "source": "D(1,2.4294,5.2574,3.3564,5.2907,3.3489,5.5000,2.4219,5.4667)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": -40000,
+                    "spans": [
+                      {
+                        "offset": 364,
+                        "length": 8
+                      }
+                    ],
+                    "confidence": 0.78,
+                    "source": "D(1,4.8179,5.3153,5.6171,5.3162,5.6169,5.5126,4.8177,5.5117)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "AMOUNT",
+                    "spans": [
+                      {
+                        "offset": 393,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.596,
+                    "source": "D(1,2.4150,5.5088,3.0425,5.5201,3.0384,5.7200,2.4110,5.7087)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": -3200,
+                    "spans": [
+                      {
+                        "offset": 419,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.699,
+                    "source": "D(1,5.0116,5.5609,5.6308,5.5663,5.6290,5.7731,5.0098,5.7677)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "2X 9000 LEMPER",
+                    "spans": [
+                      {
+                        "offset": 446,
+                        "length": 2
+                      },
+                      {
+                        "offset": 458,
+                        "length": 4
+                      },
+                      {
+                        "offset": 493,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.579,
+                    "source": "D(1,2.4049,5.7483,2.6329,5.7550,2.6329,5.9495,2.4049,5.9392);D(1,4.0311,5.7758,4.4346,5.7827,4.4346,5.9977,4.0311,5.9843);D(1,2.4009,5.9884,3.0304,5.9961,3.0283,6.1903,2.3969,6.1826)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 446,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.488,
+                    "source": "D(1,2.4049,5.7483,2.6329,5.7550,2.6329,5.9495,2.4049,5.9392)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 9000,
+                    "spans": [
+                      {
+                        "offset": 458,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.604,
+                    "source": "D(1,4.0311,5.7758,4.4346,5.7827,4.4346,5.9977,4.0311,5.9843)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 18000,
+                    "spans": [
+                      {
+                        "offset": 519,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.496,
+                    "source": "D(1,5.0479,6.0528,5.6411,6.0528,5.6411,6.2355,5.0479,6.2355)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "DISC ITEM AMOUNT",
+                    "spans": [
+                      {
+                        "offset": 546,
+                        "length": 9
+                      },
+                      {
+                        "offset": 559,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.635,
+                    "source": "D(1,2.3827,6.2219,3.3370,6.2312,3.3350,6.4380,2.3807,6.4287);D(1,2.3767,6.4751,3.0203,6.4769,3.0162,6.6710,2.3726,6.6692)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": -40000,
+                    "spans": [
+                      {
+                        "offset": 585,
+                        "length": 8
+                      },
+                      {
+                        "offset": 597,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.78,
+                    "source": "D(1,4.8381,6.2829,5.6430,6.2913,5.6411,6.4749,4.8362,6.4664);D(1,5.0600,6.5232,5.6714,6.5296,5.6693,6.7278,5.0579,6.7214)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "1X D MIKA SEDANG",
+                    "spans": [
+                      {
+                        "offset": 624,
+                        "length": 2
+                      },
+                      {
+                        "offset": 636,
+                        "length": 1
+                      },
+                      {
+                        "offset": 668,
+                        "length": 11
+                      }
+                    ],
+                    "confidence": 0.559,
+                    "source": "D(1,2.3827,6.7135,2.5905,6.7158,2.5905,6.9103,2.3827,6.9023);D(1,4.0351,6.7559,4.1440,6.7574,4.1440,6.9401,4.0351,6.9387);D(1,2.3399,6.9461,3.5287,6.9551,3.5270,7.1745,2.3382,7.1656)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 624,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.476,
+                    "source": "D(1,2.3827,6.7135,2.5905,6.7158,2.5905,6.9103,2.3827,6.9023)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "spans": [
+                      {
+                        "offset": 636,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.347,
+                    "source": "D(1,4.0351,6.7559,4.1440,6.7574,4.1440,6.9401,4.0351,6.9387)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "valueNumber": 0,
+                    "spans": [
+                      {
+                        "offset": 699,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.414,
+                    "source": "D(1,5.5805,7.0349,5.6935,7.0349,5.6935,7.2062,5.5805,7.2062)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "1X D PLASTIK KECIL",
+                    "spans": [
+                      {
+                        "offset": 721,
+                        "length": 2
+                      },
+                      {
+                        "offset": 733,
+                        "length": 1
+                      },
+                      {
+                        "offset": 765,
+                        "length": 13
+                      }
+                    ],
+                    "confidence": 0.571,
+                    "source": "D(1,2.3484,7.2175,2.5744,7.2171,2.5744,7.4243,2.3484,7.4234);D(1,4.0432,7.2518,4.1440,7.2524,4.1440,7.4466,4.0432,7.4459);D(1,2.3142,7.4513,3.7173,7.4697,3.7142,7.7033,2.3111,7.6849)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 721,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.476,
+                    "source": "D(1,2.3484,7.2175,2.5744,7.2171,2.5744,7.4243,2.3484,7.4234)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "spans": [
+                      {
+                        "offset": 733,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.355,
+                    "source": "D(1,4.0432,7.2518,4.1440,7.2524,4.1440,7.4466,4.0432,7.4459)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "spans": [
+                      {
+                        "offset": 798,
+                        "length": 1
+                      }
+                    ],
+                    "confidence": 0.345,
+                    "source": "D(1,5.6048,7.5660,5.7339,7.5660,5.7339,7.7320,5.6048,7.7266)"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "1X 5000",
+                    "spans": [
+                      {
+                        "offset": 820,
+                        "length": 2
+                      },
+                      {
+                        "offset": 832,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.512,
+                    "source": "D(1,2.3262,7.7487,2.5441,7.7487,2.5441,7.9572,2.3262,7.9560);D(1,4.0391,7.7544,4.4669,7.7544,4.4669,7.9828,4.0391,7.9828)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 820,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.476,
+                    "source": "D(1,2.3262,7.7487,2.5441,7.7487,2.5441,7.9572,2.3262,7.9560)"
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 5000,
+                    "spans": [
+                      {
+                        "offset": 832,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.62,
+                    "source": "D(1,4.0391,7.7544,4.4669,7.7544,4.4669,7.9828,4.0391,7.9828)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "description": {
+                    "type": "string",
+                    "valueString": "TEH KOTAK",
+                    "spans": [
+                      {
+                        "offset": 869,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.794,
+                    "source": "D(1,2.3020,8.0114,3.2785,8.0114,3.2785,8.2398,2.3020,8.2398)"
+                  },
+                  "quantity": {
+                    "type": "number",
+                    "confidence": 0.926
+                  },
+                  "unit_price": {
+                    "type": "number",
+                    "valueNumber": 5000,
+                    "spans": [
+                      {
+                        "offset": 880,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.881,
+                    "source": "D(1,5.2053,8.0627,5.7339,8.0603,5.7339,8.2889,5.2053,8.2872)"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "confidence": 0.926
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "unit": "inch",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0.4446037,
+            "width": 8.2639,
+            "height": 11.6944,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1076
+              }
+            ],
+            "words": [
+              {
+                "content": "1X",
+                "span": {
+                  "offset": 17,
+                  "length": 2
+                },
+                "confidence": 0.476,
+                "source": "D(1,2.4957,3.8702,2.6874,3.8712,2.6854,4.0539,2.4957,4.0529)"
+              },
+              {
+                "content": "5500",
+                "span": {
+                  "offset": 29,
+                  "length": 4
+                },
+                "confidence": 0.185,
+                "source": "D(1,4.0452,3.9256,4.4305,3.9252,4.4305,4.1199,4.0452,4.1199)"
+              },
+              {
+                "content": "TALAM",
+                "span": {
+                  "offset": 64,
+                  "length": 5
+                },
+                "confidence": 0.531,
+                "source": "D(1,2.4836,4.0917,2.9588,4.1089,2.9529,4.3101,2.4796,4.2931)"
+              },
+              {
+                "content": "UNGU",
+                "span": {
+                  "offset": 70,
+                  "length": 4
+                },
+                "confidence": 0.956,
+                "source": "D(1,3.0545,4.1125,3.4682,4.128,3.4601,4.335,3.0483,4.3141)"
+              },
+              {
+                "content": "6.500",
+                "span": {
+                  "offset": 94,
+                  "length": 5
+                },
+                "confidence": 0.868,
+                "source": "D(1,5.1004,4.1532,5.6007,4.1551,5.6007,4.35,5.1004,4.3459)"
+              },
+              {
+                "content": "DISC",
+                "span": {
+                  "offset": 120,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.4614,4.3251,2.8654,4.3408,2.8573,4.5374,2.4533,4.5234)"
+              },
+              {
+                "content": "ITEM",
+                "span": {
+                  "offset": 125,
+                  "length": 4
+                },
+                "confidence": 0.981,
+                "source": "D(1,2.9688,4.3452,3.3693,4.3638,3.3612,4.5614,2.9608,4.5417)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 149,
+                  "length": 1
+                },
+                "confidence": 0.99,
+                "source": "D(1,4.8098,4.3904,4.9003,4.3924,4.9003,4.5723,4.8098,4.5699)"
+              },
+              {
+                "content": "40.000",
+                "span": {
+                  "offset": 150,
+                  "length": 6
+                },
+                "confidence": 0.981,
+                "source": "D(1,4.8941,4.3922,5.4933,4.3948,5.4933,4.5794,4.8941,4.5722)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 156,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,5.4964,4.3947,5.6088,4.393,5.6088,4.5789,5.4964,4.5794)"
+              },
+              {
+                "content": "AMOUNT",
+                "span": {
+                  "offset": 178,
+                  "length": 6
+                },
+                "confidence": 0.977,
+                "source": "D(1,2.4574,4.5596,3.0566,4.5843,3.0485,4.7785,2.4493,4.7538)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 204,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,5.0197,4.6287,5.1056,4.6282,5.1056,4.806,5.0197,4.8071)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 205,
+                  "length": 1
+                },
+                "confidence": 0.976,
+                "source": "D(1,5.0933,4.6283,5.2038,4.6277,5.2038,4.8048,5.0933,4.8062)"
+              },
+              {
+                "content": "600",
+                "span": {
+                  "offset": 207,
+                  "length": 3
+                },
+                "confidence": 0.946,
+                "source": "D(1,5.2958,4.6279,5.6088,4.6308,5.6088,4.8117,5.2958,4.8053)"
+              },
+              {
+                "content": "1X",
+                "span": {
+                  "offset": 231,
+                  "length": 2
+                },
+                "confidence": 0.696,
+                "source": "D(1,2.4634,4.7988,2.6652,4.8058,2.6632,4.9956,2.4634,4.9817)"
+              },
+              {
+                "content": "3000",
+                "span": {
+                  "offset": 243,
+                  "length": 4
+                },
+                "confidence": 0.898,
+                "source": "D(1,4.0452,4.8334,4.4346,4.8471,4.4346,5.0448,4.0452,5.0274)"
+              },
+              {
+                "content": "AREM",
+                "span": {
+                  "offset": 278,
+                  "length": 4
+                },
+                "confidence": 0.725,
+                "source": "D(1,2.4392,5.0243,2.8409,5.0384,2.8369,5.2381,2.4352,5.2244)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 283,
+                  "length": 1
+                },
+                "confidence": 0.987,
+                "source": "D(1,2.9339,5.041,3.0335,5.0438,3.0295,5.2441,2.9299,5.241)"
+              },
+              {
+                "content": "AREM",
+                "span": {
+                  "offset": 285,
+                  "length": 4
+                },
+                "confidence": 0.976,
+                "source": "D(1,3.1331,5.0466,3.5549,5.0555,3.5509,5.2587,3.1291,5.2471)"
+              },
+              {
+                "content": "8,000",
+                "span": {
+                  "offset": 309,
+                  "length": 5
+                },
+                "confidence": 0.914,
+                "source": "D(1,5.1044,5.085,5.6209,5.085,5.6209,5.2837,5.1044,5.2801)"
+              },
+              {
+                "content": "DISC",
+                "span": {
+                  "offset": 335,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.4291,5.2652,2.8403,5.2729,2.8362,5.4773,2.4251,5.4668)"
+              },
+              {
+                "content": "ITEM",
+                "span": {
+                  "offset": 340,
+                  "length": 4
+                },
+                "confidence": 0.966,
+                "source": "D(1,2.9422,5.2758,3.3532,5.2917,3.3491,5.4939,2.9381,5.4803)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 364,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,4.8179,5.3162,4.9045,5.3162,4.9045,5.5105,4.8179,5.5108)"
+              },
+              {
+                "content": "40.000",
+                "span": {
+                  "offset": 365,
+                  "length": 6
+                },
+                "confidence": 0.986,
+                "source": "D(1,4.9045,5.3162,5.5137,5.3162,5.5137,5.5118,4.9045,5.5105)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 371,
+                  "length": 1
+                },
+                "confidence": 0.99,
+                "source": "D(1,5.5137,5.3162,5.6169,5.3162,5.6169,5.5126,5.5137,5.5118)"
+              },
+              {
+                "content": "AMOUNT",
+                "span": {
+                  "offset": 393,
+                  "length": 6
+                },
+                "confidence": 0.592,
+                "source": "D(1,2.415,5.5088,3.0425,5.5201,3.0384,5.72,2.411,5.7087)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 419,
+                  "length": 1
+                },
+                "confidence": 0.994,
+                "source": "D(1,5.0116,5.5627,5.0993,5.5619,5.0993,5.7674,5.0116,5.7677)"
+              },
+              {
+                "content": "3,200",
+                "span": {
+                  "offset": 420,
+                  "length": 5
+                },
+                "confidence": 0.877,
+                "source": "D(1,5.1098,5.5619,5.629,5.5663,5.629,5.7721,5.1098,5.7674)"
+              },
+              {
+                "content": "2X",
+                "span": {
+                  "offset": 446,
+                  "length": 2
+                },
+                "confidence": 0.712,
+                "source": "D(1,2.4049,5.7483,2.6329,5.755,2.6329,5.9495,2.4049,5.9392)"
+              },
+              {
+                "content": "9000",
+                "span": {
+                  "offset": 458,
+                  "length": 4
+                },
+                "confidence": 0.141,
+                "source": "D(1,4.0311,5.7758,4.4346,5.7827,4.4346,5.9977,4.0311,5.9843)"
+              },
+              {
+                "content": "LEMPER",
+                "span": {
+                  "offset": 493,
+                  "length": 6
+                },
+                "confidence": 0.951,
+                "source": "D(1,2.4009,5.9884,3.0304,5.9961,3.0283,6.1903,2.3969,6.1826)"
+              },
+              {
+                "content": "18.000",
+                "span": {
+                  "offset": 519,
+                  "length": 6
+                },
+                "confidence": 0.426,
+                "source": "D(1,5.0479,6.0528,5.6411,6.0528,5.6411,6.2355,5.0479,6.2355)"
+              },
+              {
+                "content": "DISC",
+                "span": {
+                  "offset": 546,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,2.3847,6.2231,2.8119,6.2262,2.8078,6.4318,2.3807,6.4287)"
+              },
+              {
+                "content": "ITEM",
+                "span": {
+                  "offset": 551,
+                  "length": 4
+                },
+                "confidence": 0.523,
+                "source": "D(1,2.9204,6.2271,3.337,6.2312,3.333,6.4367,2.9164,6.4327)"
+              },
+              {
+                "content": "AMOUNT",
+                "span": {
+                  "offset": 559,
+                  "length": 6
+                },
+                "confidence": 0.488,
+                "source": "D(1,2.3767,6.4751,3.0203,6.4769,3.0162,6.671,2.3726,6.6692)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 585,
+                  "length": 1
+                },
+                "confidence": 0.992,
+                "source": "D(1,4.8381,6.2831,4.9228,6.2846,4.9228,6.4673,4.8381,6.4659)"
+              },
+              {
+                "content": "40.000",
+                "span": {
+                  "offset": 586,
+                  "length": 6
+                },
+                "confidence": 0.486,
+                "source": "D(1,4.9165,6.2845,5.5313,6.2909,5.5313,6.4737,4.9165,6.4672)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 592,
+                  "length": 1
+                },
+                "confidence": 0.523,
+                "source": "D(1,5.5313,6.2909,5.6411,6.2913,5.6411,6.4741,5.5313,6.4737)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 597,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,5.06,6.5245,5.1394,6.5252,5.1394,6.721,5.06,6.7214)"
+              },
+              {
+                "content": "7.200",
+                "span": {
+                  "offset": 598,
+                  "length": 5
+                },
+                "confidence": 0.85,
+                "source": "D(1,5.133,6.5251,5.6693,6.5296,5.6693,6.7277,5.133,6.721)"
+              },
+              {
+                "content": "1X",
+                "span": {
+                  "offset": 624,
+                  "length": 2
+                },
+                "confidence": 0.693,
+                "source": "D(1,2.3827,6.7135,2.5905,6.7158,2.5905,6.9103,2.3827,6.9023)"
+              },
+              {
+                "content": "D",
+                "span": {
+                  "offset": 636,
+                  "length": 1
+                },
+                "confidence": 0.523,
+                "source": "D(1,4.0351,6.7559,4.144,6.7574,4.144,6.9401,4.0351,6.9387)"
+              },
+              {
+                "content": "MIKA",
+                "span": {
+                  "offset": 668,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,2.3424,6.9548,2.7731,6.955,2.7691,7.1634,2.3383,7.1588)"
+              },
+              {
+                "content": "SEDANG",
+                "span": {
+                  "offset": 673,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,2.879,6.955,3.5287,6.9551,3.5247,7.1745,2.875,7.1648)"
+              },
+              {
+                "content": "0",
+                "span": {
+                  "offset": 699,
+                  "length": 1
+                },
+                "confidence": 0.936,
+                "source": "D(1,5.5805,7.0349,5.6935,7.0349,5.6935,7.2062,5.5805,7.2062)"
+              },
+              {
+                "content": "1X",
+                "span": {
+                  "offset": 721,
+                  "length": 2
+                },
+                "confidence": 0.693,
+                "source": "D(1,2.3484,7.2175,2.5744,7.2171,2.5744,7.4243,2.3484,7.4234)"
+              },
+              {
+                "content": "D",
+                "span": {
+                  "offset": 733,
+                  "length": 1
+                },
+                "confidence": 0.715,
+                "source": "D(1,4.0432,7.2518,4.144,7.2524,4.144,7.4466,4.0432,7.4459)"
+              },
+              {
+                "content": "PLASTIK",
+                "span": {
+                  "offset": 765,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,2.3141,7.4586,3.0751,7.4671,3.0751,7.6949,2.3141,7.6834)"
+              },
+              {
+                "content": "KECIL",
+                "span": {
+                  "offset": 773,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,3.1778,7.4679,3.7143,7.4697,3.7143,7.6977,3.1778,7.6959)"
+              },
+              {
+                "content": "U",
+                "span": {
+                  "offset": 798,
+                  "length": 1
+                },
+                "confidence": 0.708,
+                "source": "D(1,5.6048,7.566,5.7339,7.566,5.7339,7.732,5.6048,7.7266)"
+              },
+              {
+                "content": "1X",
+                "span": {
+                  "offset": 820,
+                  "length": 2
+                },
+                "confidence": 0.816,
+                "source": "D(1,2.3262,7.7487,2.5441,7.7487,2.5441,7.9572,2.3262,7.956)"
+              },
+              {
+                "content": "5000",
+                "span": {
+                  "offset": 832,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,4.0391,7.7544,4.4669,7.7544,4.4669,7.9828,4.0391,7.9828)"
+              },
+              {
+                "content": "TEH",
+                "span": {
+                  "offset": 869,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,2.302,8.0114,2.6072,8.0114,2.6072,8.2398,2.302,8.2398)"
+              },
+              {
+                "content": "KOTAK",
+                "span": {
+                  "offset": 873,
+                  "length": 5
+                },
+                "confidence": 0.724,
+                "source": "D(1,2.7178,8.0114,3.2785,8.0114,3.2785,8.2398,2.7178,8.2398)"
+              },
+              {
+                "content": "5,000",
+                "span": {
+                  "offset": 880,
+                  "length": 5
+                },
+                "confidence": 0.841,
+                "source": "D(1,5.2053,8.0627,5.7339,8.0603,5.7339,8.2889,5.2053,8.2872)"
+              },
+              {
+                "content": "7.00",
+                "span": {
+                  "offset": 917,
+                  "length": 4
+                },
+                "confidence": 0.984,
+                "source": "D(1,3.4783,8.2977,3.9013,8.2957,3.9,8.5267,3.4762,8.5261)"
+              },
+              {
+                "content": "ITEMs",
+                "span": {
+                  "offset": 922,
+                  "length": 5
+                },
+                "confidence": 0.717,
+                "source": "D(1,4.0347,8.2964,4.5758,8.3033,4.5758,8.5307,4.0337,8.5272)"
+              },
+              {
+                "content": "SUBTOTAL",
+                "span": {
+                  "offset": 948,
+                  "length": 8
+                },
+                "confidence": 0.975,
+                "source": "D(1,2.2697,8.5393,3.1575,8.563,3.1575,8.7883,2.2697,8.78)"
+              },
+              {
+                "content": "24,500",
+                "span": {
+                  "offset": 966,
+                  "length": 6
+                },
+                "confidence": 0.94,
+                "source": "D(1,5.1044,8.5867,5.7621,8.5947,5.7621,8.8231,5.1044,8.8151)"
+              },
+              {
+                "content": "TOTAL",
+                "span": {
+                  "offset": 993,
+                  "length": 5
+                },
+                "confidence": 0.984,
+                "source": "D(1,2.2839,8.8252,3.3532,8.8412,3.3532,9.0701,2.2839,9.0606)"
+              },
+              {
+                "content": "24,500",
+                "span": {
+                  "offset": 1008,
+                  "length": 6
+                },
+                "confidence": 0.961,
+                "source": "D(1,5.1044,8.8606,5.7702,8.8678,5.7702,9.0962,5.1044,9.089)"
+              },
+              {
+                "content": "CARD",
+                "span": {
+                  "offset": 1035,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,2.2496,9.1098,3.1333,9.1203,3.1333,9.3404,2.2496,9.3359)"
+              },
+              {
+                "content": "24,500",
+                "span": {
+                  "offset": 1049,
+                  "length": 6
+                },
+                "confidence": 0.922,
+                "source": "D(1,5.1004,9.1406,5.7742,9.1487,5.7742,9.3771,5.1004,9.369)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "1X",
+                "source": "D(1,2.4957,3.8702,2.6874,3.8712,2.6864,4.0548,2.4947,4.0538)",
+                "span": {
+                  "offset": 17,
+                  "length": 2
+                }
+              },
+              {
+                "content": "5500",
+                "source": "D(1,4.0452,3.9252,4.4305,3.9252,4.4305,4.1199,4.0452,4.1199)",
+                "span": {
+                  "offset": 29,
+                  "length": 4
+                }
+              },
+              {
+                "content": "TALAM UNGU",
+                "source": "D(1,2.4837,4.0896,3.4682,4.128,3.4601,4.335,2.4786,4.2966)",
+                "span": {
+                  "offset": 64,
+                  "length": 10
+                }
+              },
+              {
+                "content": "6.500",
+                "source": "D(1,5.1004,4.1532,5.6015,4.1551,5.6007,4.35,5.1,4.348)",
+                "span": {
+                  "offset": 94,
+                  "length": 5
+                }
+              },
+              {
+                "content": "DISC ITEM",
+                "source": "D(1,2.4615,4.3237,3.3695,4.3618,3.3612,4.5614,2.4531,4.5233)",
+                "span": {
+                  "offset": 120,
+                  "length": 9
+                }
+              },
+              {
+                "content": "-40.000%",
+                "source": "D(1,4.8098,4.3904,5.6094,4.393,5.6088,4.5809,4.8092,4.5783)",
+                "span": {
+                  "offset": 149,
+                  "length": 8
+                }
+              },
+              {
+                "content": "AMOUNT",
+                "source": "D(1,2.4574,4.5567,3.0567,4.5813,3.0486,4.7785,2.4493,4.7538)",
+                "span": {
+                  "offset": 178,
+                  "length": 6
+                }
+              },
+              {
+                "content": "-2 600",
+                "source": "D(1,5.0197,4.6252,5.6102,4.6298,5.6088,4.8117,5.0183,4.8071)",
+                "span": {
+                  "offset": 204,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1X",
+                "source": "D(1,2.4634,4.7988,2.6671,4.803,2.6632,4.9956,2.4615,4.9914)",
+                "span": {
+                  "offset": 231,
+                  "length": 2
+                }
+              },
+              {
+                "content": "3000",
+                "source": "D(1,4.0452,4.8334,4.4375,4.8473,4.4344,5.0478,4.0434,5.0352)",
+                "span": {
+                  "offset": 243,
+                  "length": 4
+                }
+              },
+              {
+                "content": "AREM - AREM",
+                "source": "D(1,2.4392,5.0243,3.5566,5.0555,3.5509,5.2591,2.4335,5.2278)",
+                "span": {
+                  "offset": 278,
+                  "length": 11
+                }
+              },
+              {
+                "content": "8,000",
+                "source": "D(1,5.1044,5.085,5.6209,5.085,5.6209,5.2837,5.1044,5.2837)",
+                "span": {
+                  "offset": 309,
+                  "length": 5
+                }
+              },
+              {
+                "content": "DISC ITEM",
+                "source": "D(1,2.4293,5.2648,3.3552,5.2879,3.3491,5.4939,2.4232,5.4667)",
+                "span": {
+                  "offset": 335,
+                  "length": 9
+                }
+              },
+              {
+                "content": "-40.000%",
+                "source": "D(1,4.8179,5.3162,5.6169,5.3162,5.6169,5.5126,4.8179,5.5126)",
+                "span": {
+                  "offset": 364,
+                  "length": 8
+                }
+              },
+              {
+                "content": "AMOUNT",
+                "source": "D(1,2.4146,5.5056,3.0425,5.5169,3.0389,5.72,2.411,5.7087)",
+                "span": {
+                  "offset": 393,
+                  "length": 6
+                }
+              },
+              {
+                "content": "-3,200",
+                "source": "D(1,5.0116,5.5593,5.6305,5.5637,5.629,5.7721,5.0101,5.7677)",
+                "span": {
+                  "offset": 419,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2X",
+                "source": "D(1,2.4049,5.7483,2.6329,5.7483,2.6329,5.9499,2.4049,5.9499)",
+                "span": {
+                  "offset": 446,
+                  "length": 2
+                }
+              },
+              {
+                "content": "9000",
+                "source": "D(1,4.0311,5.7758,4.4375,5.7827,4.4346,5.9977,4.0274,5.9908)",
+                "span": {
+                  "offset": 458,
+                  "length": 4
+                }
+              },
+              {
+                "content": "LEMPER",
+                "source": "D(1,2.3992,5.9884,3.0307,5.9961,3.0283,6.1919,2.3968,6.1842)",
+                "span": {
+                  "offset": 493,
+                  "length": 6
+                }
+              },
+              {
+                "content": "18.000",
+                "source": "D(1,5.0479,6.0528,5.6411,6.0528,5.6411,6.2355,5.0479,6.2355)",
+                "span": {
+                  "offset": 519,
+                  "length": 6
+                }
+              },
+              {
+                "content": "DISC ITEM",
+                "source": "D(1,2.3824,6.2226,3.337,6.2306,3.3353,6.4367,2.3807,6.4287)",
+                "span": {
+                  "offset": 546,
+                  "length": 9
+                }
+              },
+              {
+                "content": "AMOUNT",
+                "source": "D(1,2.3732,6.4725,3.0203,6.4743,3.0197,6.671,2.3726,6.6692)",
+                "span": {
+                  "offset": 559,
+                  "length": 6
+                }
+              },
+              {
+                "content": "-40.000:",
+                "source": "D(1,4.8381,6.2831,5.6425,6.2914,5.6411,6.4753,4.8373,6.4676)",
+                "span": {
+                  "offset": 585,
+                  "length": 8
+                }
+              },
+              {
+                "content": "-7.200",
+                "source": "D(1,5.06,6.5245,5.671,6.5296,5.6693,6.7277,5.06,6.7226)",
+                "span": {
+                  "offset": 597,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1X",
+                "source": "D(1,2.3827,6.7135,2.5927,6.7158,2.5905,6.9103,2.3815,6.908)",
+                "span": {
+                  "offset": 624,
+                  "length": 2
+                }
+              },
+              {
+                "content": "D",
+                "source": "D(1,4.0351,6.7516,4.144,6.7516,4.144,6.9401,4.0351,6.9401)",
+                "span": {
+                  "offset": 636,
+                  "length": 1
+                }
+              },
+              {
+                "content": "MIKA SEDANG",
+                "source": "D(1,2.3412,6.9493,3.5287,6.9551,3.5258,7.1745,2.3383,7.1588)",
+                "span": {
+                  "offset": 668,
+                  "length": 11
+                }
+              },
+              {
+                "content": "0",
+                "source": "D(1,5.5805,7.0349,5.6935,7.0349,5.6935,7.2062,5.5805,7.2062)",
+                "span": {
+                  "offset": 699,
+                  "length": 1
+                }
+              },
+              {
+                "content": "1X",
+                "source": "D(1,2.3484,7.2171,2.5744,7.2171,2.5744,7.4243,2.3484,7.4243)",
+                "span": {
+                  "offset": 721,
+                  "length": 2
+                }
+              },
+              {
+                "content": "D",
+                "source": "D(1,4.0432,7.2512,4.144,7.2512,4.144,7.4466,4.0432,7.4466)",
+                "span": {
+                  "offset": 733,
+                  "length": 1
+                }
+              },
+              {
+                "content": "PLASTIK KECIL",
+                "source": "D(1,2.3141,7.4586,3.7161,7.4697,3.7143,7.7003,2.313,7.6892)",
+                "span": {
+                  "offset": 765,
+                  "length": 13
+                }
+              },
+              {
+                "content": "U",
+                "source": "D(1,5.6048,7.566,5.7339,7.566,5.7339,7.732,5.6048,7.732)",
+                "span": {
+                  "offset": 798,
+                  "length": 1
+                }
+              },
+              {
+                "content": "1X",
+                "source": "D(1,2.3262,7.7487,2.5441,7.7487,2.5441,7.9572,2.3262,7.9572)",
+                "span": {
+                  "offset": 820,
+                  "length": 2
+                }
+              },
+              {
+                "content": "5000",
+                "source": "D(1,4.0391,7.7544,4.4669,7.7544,4.4669,7.9828,4.0391,7.9828)",
+                "span": {
+                  "offset": 832,
+                  "length": 4
+                }
+              },
+              {
+                "content": "TEH KOTAK",
+                "source": "D(1,2.302,8.0114,3.2785,8.0114,3.2785,8.2398,2.302,8.2398)",
+                "span": {
+                  "offset": 869,
+                  "length": 9
+                }
+              },
+              {
+                "content": "5,000",
+                "source": "D(1,5.2053,8.0542,5.7339,8.0559,5.7339,8.2889,5.2046,8.2872)",
+                "span": {
+                  "offset": 880,
+                  "length": 5
+                }
+              },
+              {
+                "content": "7.00 ITEMs",
+                "source": "D(1,3.4772,8.2939,4.5768,8.2985,4.5758,8.5307,3.4762,8.5261)",
+                "span": {
+                  "offset": 917,
+                  "length": 10
+                }
+              },
+              {
+                "content": "SUBTOTAL",
+                "source": "D(1,2.2697,8.5393,3.1582,8.5559,3.1573,8.7937,2.2673,8.7799)",
+                "span": {
+                  "offset": 948,
+                  "length": 8
+                }
+              },
+              {
+                "content": "24,500",
+                "source": "D(1,5.1044,8.5867,5.7624,8.5948,5.7621,8.8237,5.1016,8.8157)",
+                "span": {
+                  "offset": 966,
+                  "length": 6
+                }
+              },
+              {
+                "content": "TOTAL",
+                "source": "D(1,2.2839,8.8252,3.3553,8.8351,3.3532,9.0705,2.2817,9.0606)",
+                "span": {
+                  "offset": 993,
+                  "length": 5
+                }
+              },
+              {
+                "content": "24,500",
+                "source": "D(1,5.1044,8.8606,5.7727,8.8678,5.7702,9.0988,5.1019,9.0915)",
+                "span": {
+                  "offset": 1008,
+                  "length": 6
+                }
+              },
+              {
+                "content": "CARD",
+                "source": "D(1,2.2496,9.1098,3.1344,9.1143,3.1333,9.3404,2.2484,9.3359)",
+                "span": {
+                  "offset": 1035,
+                  "length": 4
+                }
+              },
+              {
+                "content": "24,500",
+                "source": "D(1,5.1004,9.1406,5.777,9.1487,5.7742,9.3776,5.1,9.3696)",
+                "span": {
+                  "offset": 1049,
+                  "length": 6
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "1X",
+            "source": "D(1,2.4957,3.8701,2.6874,3.8712,2.6864,4.0539,2.4947,4.0529)",
+            "span": {
+              "offset": 17,
+              "length": 2
+            }
+          },
+          {
+            "content": "5500",
+            "source": "D(1,4.0451,3.9254,4.4305,3.9252,4.4306,4.1199,4.0452,4.1201)",
+            "span": {
+              "offset": 29,
+              "length": 4
+            }
+          },
+          {
+            "content": "TALAM UNGU",
+            "source": "D(1,2.4839,4.0846,3.4692,4.128,3.46,4.3362,2.4748,4.2929)",
+            "span": {
+              "offset": 64,
+              "length": 10
+            }
+          },
+          {
+            "content": "6.500",
+            "source": "D(1,5.1004,4.1521,5.6019,4.1551,5.6007,4.35,5.0992,4.3469)",
+            "span": {
+              "offset": 94,
+              "length": 5
+            }
+          },
+          {
+            "content": "DISC ITEM",
+            "source": "D(1,2.4616,4.3204,3.3707,4.3639,3.361,4.5668,2.4519,4.5233)",
+            "span": {
+              "offset": 120,
+              "length": 9
+            }
+          },
+          {
+            "content": "-40.000%",
+            "source": "D(1,4.8099,4.3865,5.6103,4.393,5.6088,4.5804,4.8083,4.5738)",
+            "span": {
+              "offset": 149,
+              "length": 8
+            }
+          },
+          {
+            "content": "AMOUNT",
+            "source": "D(1,2.4573,4.5596,3.0566,4.5843,3.0486,4.7785,2.4493,4.7538)",
+            "span": {
+              "offset": 178,
+              "length": 6
+            }
+          },
+          {
+            "content": "-2 600",
+            "source": "D(1,5.0181,4.6287,5.6087,4.6234,5.6104,4.8117,5.0198,4.817)",
+            "span": {
+              "offset": 204,
+              "length": 6
+            }
+          },
+          {
+            "content": "1X",
+            "source": "D(1,2.4636,4.7953,2.673,4.8062,2.6632,4.9956,2.4538,4.9847)",
+            "span": {
+              "offset": 231,
+              "length": 2
+            }
+          },
+          {
+            "content": "3000",
+            "source": "D(1,4.0453,4.8316,4.4425,4.8474,4.4346,5.0448,4.0374,5.029)",
+            "span": {
+              "offset": 243,
+              "length": 4
+            }
+          },
+          {
+            "content": "AREM - AREM",
+            "source": "D(1,2.4393,5.0228,3.5568,5.0556,3.5509,5.2595,2.4333,5.2267)",
+            "span": {
+              "offset": 278,
+              "length": 11
+            }
+          },
+          {
+            "content": "8,000",
+            "source": "D(1,5.1044,5.0832,5.6216,5.085,5.6209,5.2837,5.1037,5.2819)",
+            "span": {
+              "offset": 309,
+              "length": 5
+            }
+          },
+          {
+            "content": "DISC ITEM",
+            "source": "D(1,2.4294,5.2575,3.3564,5.2907,3.3489,5.4999,2.4219,5.4667)",
+            "span": {
+              "offset": 335,
+              "length": 9
+            }
+          },
+          {
+            "content": "-40.000%",
+            "source": "D(1,4.8179,5.3153,5.6171,5.3162,5.6169,5.5126,4.8177,5.5118)",
+            "span": {
+              "offset": 364,
+              "length": 8
+            }
+          },
+          {
+            "content": "AMOUNT",
+            "source": "D(1,2.4146,5.5088,3.0425,5.5201,3.0389,5.72,2.411,5.7087)",
+            "span": {
+              "offset": 393,
+              "length": 6
+            }
+          },
+          {
+            "content": "-3,200",
+            "source": "D(1,5.0116,5.5608,5.6308,5.5663,5.629,5.7732,5.0098,5.7677)",
+            "span": {
+              "offset": 419,
+              "length": 6
+            }
+          },
+          {
+            "content": "2X",
+            "source": "D(1,2.405,5.7465,2.6401,5.7552,2.6329,5.9495,2.3977,5.9407)",
+            "span": {
+              "offset": 446,
+              "length": 2
+            }
+          },
+          {
+            "content": "9000",
+            "source": "D(1,4.0311,5.7725,4.44,5.7828,4.4346,5.9977,4.0258,5.9874)",
+            "span": {
+              "offset": 458,
+              "length": 4
+            }
+          },
+          {
+            "content": "LEMPER",
+            "source": "D(1,2.3992,5.9884,3.0307,5.9961,3.0283,6.1903,2.3969,6.1826)",
+            "span": {
+              "offset": 493,
+              "length": 6
+            }
+          },
+          {
+            "content": "18.000",
+            "source": "D(1,5.0479,6.0528,5.6411,6.0528,5.6411,6.2355,5.0479,6.2355)",
+            "span": {
+              "offset": 519,
+              "length": 6
+            }
+          },
+          {
+            "content": "DISC ITEM",
+            "source": "D(1,2.3827,6.2219,3.337,6.2312,3.335,6.438,2.3807,6.4287)",
+            "span": {
+              "offset": 546,
+              "length": 9
+            }
+          },
+          {
+            "content": "AMOUNT",
+            "source": "D(1,2.3732,6.4751,3.0203,6.4769,3.0197,6.671,2.3726,6.6692)",
+            "span": {
+              "offset": 559,
+              "length": 6
+            }
+          },
+          {
+            "content": "-40.000:",
+            "source": "D(1,4.8381,6.2829,5.643,6.2914,5.6411,6.4749,4.8362,6.4664)",
+            "span": {
+              "offset": 585,
+              "length": 8
+            }
+          },
+          {
+            "content": "-7.200",
+            "source": "D(1,5.06,6.5233,5.6714,6.5297,5.6693,6.7278,5.058,6.7214)",
+            "span": {
+              "offset": 597,
+              "length": 6
+            }
+          },
+          {
+            "content": "1X",
+            "source": "D(1,2.3828,6.7107,2.5954,6.7159,2.5905,6.9103,2.378,6.905)",
+            "span": {
+              "offset": 624,
+              "length": 2
+            }
+          },
+          {
+            "content": "D",
+            "source": "D(1,4.0351,6.7559,4.1465,6.7574,4.144,6.9401,4.0327,6.9386)",
+            "span": {
+              "offset": 636,
+              "length": 1
+            }
+          },
+          {
+            "content": "MIKA SEDANG",
+            "source": "D(1,2.3399,6.9462,3.5287,6.9551,3.527,7.1745,2.3383,7.1656)",
+            "span": {
+              "offset": 668,
+              "length": 11
+            }
+          },
+          {
+            "content": "0",
+            "source": "D(1,5.5805,7.0349,5.6935,7.0349,5.6935,7.2062,5.5805,7.2062)",
+            "span": {
+              "offset": 699,
+              "length": 1
+            }
+          },
+          {
+            "content": "1X",
+            "source": "D(1,2.3484,7.2168,2.5747,7.2171,2.5744,7.4243,2.3482,7.424)",
+            "span": {
+              "offset": 721,
+              "length": 2
+            }
+          },
+          {
+            "content": "D",
+            "source": "D(1,4.0432,7.2518,4.1453,7.2524,4.144,7.4466,4.0419,7.4459)",
+            "span": {
+              "offset": 733,
+              "length": 1
+            }
+          },
+          {
+            "content": "PLASTIK KECIL",
+            "source": "D(1,2.3142,7.4513,3.7173,7.4697,3.7142,7.7033,2.3112,7.6848)",
+            "span": {
+              "offset": 765,
+              "length": 13
+            }
+          },
+          {
+            "content": "U",
+            "source": "D(1,5.6048,7.5633,5.7373,7.5661,5.7339,7.732,5.6014,7.7292)",
+            "span": {
+              "offset": 798,
+              "length": 1
+            }
+          },
+          {
+            "content": "1X",
+            "source": "D(1,2.3262,7.7481,2.5447,7.7487,2.5441,7.9572,2.3257,7.9566)",
+            "span": {
+              "offset": 820,
+              "length": 2
+            }
+          },
+          {
+            "content": "5000",
+            "source": "D(1,4.0391,7.7544,4.4669,7.7544,4.4669,7.9828,4.0391,7.9828)",
+            "span": {
+              "offset": 832,
+              "length": 4
+            }
+          },
+          {
+            "content": "TEH KOTAK",
+            "source": "D(1,2.302,8.0114,3.2785,8.0114,3.2785,8.2398,2.302,8.2398)",
+            "span": {
+              "offset": 869,
+              "length": 9
+            }
+          },
+          {
+            "content": "5,000",
+            "source": "D(1,5.2053,8.0542,5.7346,8.0559,5.7339,8.2889,5.2046,8.2872)",
+            "span": {
+              "offset": 880,
+              "length": 5
+            }
+          },
+          {
+            "content": "7.00 ITEMs",
+            "source": "D(1,3.4783,8.2911,4.578,8.3016,4.5757,8.5366,3.4761,8.5261)",
+            "span": {
+              "offset": 917,
+              "length": 10
+            }
+          },
+          {
+            "content": "SUBTOTAL",
+            "source": "D(1,2.2697,8.5393,3.1617,8.5554,3.1573,8.796,2.2654,8.7799)",
+            "span": {
+              "offset": 948,
+              "length": 8
+            }
+          },
+          {
+            "content": "24,500",
+            "source": "D(1,5.1044,8.5867,5.7649,8.5948,5.7621,8.8231,5.1016,8.8151)",
+            "span": {
+              "offset": 966,
+              "length": 6
+            }
+          },
+          {
+            "content": "TOTAL",
+            "source": "D(1,2.2839,8.8252,3.3559,8.838,3.3531,9.0734,2.2811,9.0606)",
+            "span": {
+              "offset": 993,
+              "length": 5
+            }
+          },
+          {
+            "content": "24,500",
+            "source": "D(1,5.1044,8.8606,5.7727,8.8678,5.7702,9.0962,5.1019,9.089)",
+            "span": {
+              "offset": 1008,
+              "length": 6
+            }
+          },
+          {
+            "content": "CARD",
+            "source": "D(1,2.2496,9.1098,3.1352,9.1173,3.1332,9.3434,2.2476,9.3359)",
+            "span": {
+              "offset": 1035,
+              "length": 4
+            }
+          },
+          {
+            "content": "24,500",
+            "source": "D(1,5.1004,9.1406,5.777,9.1487,5.7742,9.3771,5.0976,9.369)",
+            "span": {
+              "offset": 1049,
+              "length": 6
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1075
+            },
+            "elements": [
+              "/tables/0",
+              "/paragraphs/34",
+              "/paragraphs/35",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 16,
+            "columnCount": 3,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1X",
+                "source": "D(1,2.3724,3.8658,3.8582,3.8815,3.8701,4.0821,2.37,4.0717)",
+                "span": {
+                  "offset": 17,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/0"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5500",
+                "source": "D(1,3.8582,3.8815,4.7436,3.8914,4.7516,4.0888,3.8701,4.0821)",
+                "span": {
+                  "offset": 29,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/1"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7436,3.8914,5.7147,3.9011,5.7033,4.0955,4.7516,4.0888)",
+                "span": {
+                  "offset": 43,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "TALAM UNGU",
+                "source": "D(1,2.37,4.0717,3.8701,4.0821,3.8524,4.3471,2.3664,4.321)",
+                "span": {
+                  "offset": 64,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/2"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8701,4.0821,4.7516,4.0888,4.7317,4.3606,3.8524,4.3471)",
+                "span": {
+                  "offset": 84,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "6.500",
+                "source": "D(1,4.7516,4.0888,5.7033,4.0955,5.6995,4.3721,4.7317,4.3606)",
+                "span": {
+                  "offset": 94,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/3"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DISC ITEM",
+                "source": "D(1,2.3664,4.321,3.8524,4.3471,3.8506,4.5743,2.3644,4.5486)",
+                "span": {
+                  "offset": 120,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/4"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8524,4.3471,4.7317,4.3606,4.7331,4.5914,3.8506,4.5743)",
+                "span": {
+                  "offset": 139,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "-40.000%",
+                "source": "D(1,4.7317,4.3606,5.6995,4.3721,5.7057,4.6027,4.7331,4.5914)",
+                "span": {
+                  "offset": 149,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/5"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "AMOUNT",
+                "source": "D(1,2.3644,4.5486,3.8506,4.5743,3.8579,4.8084,2.3616,4.774)",
+                "span": {
+                  "offset": 178,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/6"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8506,4.5743,4.7331,4.5914,4.7273,4.8256,3.8579,4.8084)",
+                "span": {
+                  "offset": 194,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "-2 600",
+                "source": "D(1,4.7331,4.5914,5.7057,4.6027,5.7026,4.8394,4.7273,4.8256)",
+                "span": {
+                  "offset": 204,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/7"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1X",
+                "source": "D(1,2.3616,4.774,3.8579,4.8084,3.8589,5.0426,2.3595,5.0113)",
+                "span": {
+                  "offset": 231,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/8"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3000",
+                "source": "D(1,3.8579,4.8084,4.7273,4.8256,4.7314,5.0584,3.8589,5.0426)",
+                "span": {
+                  "offset": 243,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7273,4.8256,5.7026,4.8394,5.7061,5.0705,4.7314,5.0584)",
+                "span": {
+                  "offset": 257,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "AREM - AREM",
+                "source": "D(1,2.3595,5.0113,3.8589,5.0426,3.8519,5.264,2.3579,5.2331)",
+                "span": {
+                  "offset": 278,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8589,5.0426,4.7314,5.0584,4.7384,5.2798,3.8519,5.264)",
+                "span": {
+                  "offset": 299,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "8,000",
+                "source": "D(1,4.7314,5.0584,5.7061,5.0705,5.702,5.293,4.7384,5.2798)",
+                "span": {
+                  "offset": 309,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DISC ITEM",
+                "source": "D(1,2.3579,5.2331,3.8519,5.264,3.8512,5.5152,2.3547,5.4855)",
+                "span": {
+                  "offset": 335,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8519,5.264,4.7384,5.2798,4.7438,5.5324,3.8512,5.5152)",
+                "span": {
+                  "offset": 354,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "-40.000%",
+                "source": "D(1,4.7384,5.2798,5.702,5.293,5.7069,5.5408,4.7438,5.5324)",
+                "span": {
+                  "offset": 364,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "AMOUNT",
+                "source": "D(1,2.3547,5.4855,3.8512,5.5152,3.8593,5.7649,2.3512,5.7402)",
+                "span": {
+                  "offset": 393,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8512,5.5152,4.7438,5.5324,4.7344,5.7779,3.8593,5.7649)",
+                "span": {
+                  "offset": 409,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 7,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "-3,200",
+                "source": "D(1,4.7438,5.5324,5.7069,5.5408,5.7079,5.7848,4.7344,5.7779)",
+                "span": {
+                  "offset": 419,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2X",
+                "source": "D(1,2.3512,5.7402,3.8593,5.7649,3.8604,5.9858,2.35,5.9604)",
+                "span": {
+                  "offset": 446,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "9000",
+                "source": "D(1,3.8593,5.7649,4.7344,5.7779,4.7337,6.0001,3.8604,5.9858)",
+                "span": {
+                  "offset": 458,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 8,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7344,5.7779,5.7079,5.7848,5.7094,6.0065,4.7337,6.0001)",
+                "span": {
+                  "offset": 472,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 9,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "LEMPER",
+                "source": "D(1,2.35,5.9604,3.8604,5.9858,3.8538,6.2476,2.3474,6.2179)",
+                "span": {
+                  "offset": 493,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 9,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8604,5.9858,4.7337,6.0001,4.7367,6.2614,3.8538,6.2476)",
+                "span": {
+                  "offset": 509,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 9,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "18.000",
+                "source": "D(1,4.7337,6.0001,5.7094,6.0065,5.7116,6.2666,4.7367,6.2614)",
+                "span": {
+                  "offset": 519,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 10,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "DISC ITEM\nAMOUNT",
+                "source": "D(1,2.3474,6.2179,3.8538,6.2476,3.8589,6.7111,2.3379,6.6935)",
+                "span": {
+                  "offset": 546,
+                  "length": 19
+                },
+                "elements": [
+                  "/paragraphs/20",
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 10,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8538,6.2476,4.7367,6.2614,4.7387,6.7227,3.8589,6.7111)",
+                "span": {
+                  "offset": 575,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 10,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "-40.000:\n-7.200",
+                "source": "D(1,4.7367,6.2614,5.7116,6.2666,5.7193,6.7285,4.7387,6.7227)",
+                "span": {
+                  "offset": 585,
+                  "length": 18
+                },
+                "elements": [
+                  "/paragraphs/22",
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 11,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1X",
+                "source": "D(1,2.3379,6.6935,3.8589,6.7111,3.8606,6.9479,2.3383,6.9318)",
+                "span": {
+                  "offset": 624,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 11,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "D",
+                "source": "D(1,3.8589,6.7111,4.7387,6.7227,4.75,6.9542,3.8606,6.9479)",
+                "span": {
+                  "offset": 636,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 11,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7387,6.7227,5.7193,6.7285,5.7224,6.9491,4.75,6.9542)",
+                "span": {
+                  "offset": 647,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 12,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "MIKA SEDANG",
+                "source": "D(1,2.3383,6.9318,3.8606,6.9479,3.8623,7.2001,2.3371,7.1873)",
+                "span": {
+                  "offset": 668,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 12,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8606,6.9479,4.75,6.9542,4.7472,7.2042,3.8623,7.2001)",
+                "span": {
+                  "offset": 689,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 12,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "0",
+                "source": "D(1,4.75,6.9542,5.7224,6.9491,5.7134,7.2025,4.7472,7.2042)",
+                "span": {
+                  "offset": 699,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 13,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1X",
+                "source": "D(1,2.3371,7.1873,3.8623,7.2001,3.8605,7.4463,2.3347,7.4337)",
+                "span": {
+                  "offset": 721,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 13,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "D",
+                "source": "D(1,3.8623,7.2001,4.7472,7.2042,4.7536,7.4476,3.8605,7.4463)",
+                "span": {
+                  "offset": 733,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 13,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7472,7.2042,5.7134,7.2025,5.7194,7.4403,4.7536,7.4476)",
+                "span": {
+                  "offset": 744,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 14,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "PLASTIK KECIL",
+                "source": "D(1,2.3347,7.4337,3.8605,7.4463,3.8619,7.73,2.3322,7.7207)",
+                "span": {
+                  "offset": 765,
+                  "length": 13
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 14,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,3.8605,7.4463,4.7536,7.4476,4.7546,7.7351,3.8619,7.73)",
+                "span": {
+                  "offset": 788,
+                  "length": 0
+                }
+              },
+              {
+                "kind": "content",
+                "rowIndex": 14,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "U",
+                "source": "D(1,4.7536,7.4476,5.7194,7.4403,5.7217,7.7243,4.7546,7.7351)",
+                "span": {
+                  "offset": 798,
+                  "length": 1
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 15,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1X",
+                "source": "D(1,2.3322,7.7207,3.8619,7.73,3.8675,7.9888,2.3293,7.9849)",
+                "span": {
+                  "offset": 820,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 15,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5000",
+                "source": "D(1,3.8619,7.73,4.7546,7.7351,4.752,7.9949,3.8675,7.9888)",
+                "span": {
+                  "offset": 832,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 15,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "",
+                "source": "D(1,4.7546,7.7351,5.7217,7.7243,5.7157,7.9817,4.752,7.9949)",
+                "span": {
+                  "offset": 846,
+                  "length": 0
+                }
+              }
+            ],
+            "source": "D(1,2.294,3.8058,5.8146,3.9029,5.746,8.354,2.2415,8.2626)",
+            "span": {
+              "offset": 0,
+              "length": 866
+            }
+          },
+          {
+            "rowCount": 4,
+            "columnCount": 2,
+            "cells": [
+              {
+                "kind": "content",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 2,
+                "content": "7.00 ITEMs",
+                "source": "D(1,2.1638,8.3439,5.8259,8.3416,5.8258,8.548,2.1658,8.5462)",
+                "span": {
+                  "offset": 917,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SUBTOTAL",
+                "source": "D(1,2.1658,8.5462,4.9307,8.5475,4.9288,8.8421,2.1643,8.8375)",
+                "span": {
+                  "offset": 948,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24,500",
+                "source": "D(1,4.9307,8.5475,5.8258,8.548,5.825,8.8439,4.9288,8.8421)",
+                "span": {
+                  "offset": 966,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "TOTAL",
+                "source": "D(1,2.1643,8.8375,4.9288,8.8421,4.9287,9.1212,2.1626,9.1145)",
+                "span": {
+                  "offset": 993,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24,500",
+                "source": "D(1,4.9288,8.8421,5.825,8.8439,5.8262,9.1233,4.9287,9.1212)",
+                "span": {
+                  "offset": 1008,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CARD",
+                "source": "D(1,2.1626,9.1145,4.9287,9.1212,4.9311,9.5155,2.163,9.5157)",
+                "span": {
+                  "offset": 1035,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24,500",
+                "source": "D(1,4.9287,9.1212,5.8262,9.1233,5.8282,9.516,4.9311,9.5155)",
+                "span": {
+                  "offset": 1049,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              }
+            ],
+            "source": "D(1,2.1951,8.5025,5.7944,8.5653,5.8146,9.3932,2.2052,9.3533)",
+            "span": {
+              "offset": 888,
+              "length": 187
+            }
+          }
+        ],
+        "analyzerId": "verdandi_benchmark",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesStandard": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-5-mini-input": 4416,
+      "gpt-5-mini-cached-input": 4352,
+      "gpt-5-mini-output": 927
+    }
+  }
+}

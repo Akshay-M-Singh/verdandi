@@ -1,0 +1,782 @@
+{
+  "created_at": "2026-09-30T20:01:20",
+  "truth_documents": 100,
+  "verdandi": {
+    "run": "benchmark/data/results/verdandi/2026-09-30/5",
+    "scores": {
+      "documents": 100,
+      "missing": 0,
+      "missing_stems": [],
+      "found": 100,
+      "fields": {
+        "invoice_number": {
+          "n": 70,
+          "correct": 68,
+          "accuracy": 97.1
+        },
+        "invoice_date": {
+          "n": 73,
+          "correct": 72,
+          "accuracy": 98.6
+        },
+        "vendor_name": {
+          "n": 68,
+          "correct": 65,
+          "accuracy": 95.6
+        },
+        "buyer_name": {
+          "n": 46,
+          "correct": 45,
+          "accuracy": 97.8
+        },
+        "currency": {
+          "n": 51,
+          "correct": 46,
+          "accuracy": 90.2
+        },
+        "subtotal": {
+          "n": 77,
+          "correct": 75,
+          "accuracy": 97.4
+        },
+        "tax_total": {
+          "n": 59,
+          "correct": 55,
+          "accuracy": 93.2
+        },
+        "total_amount": {
+          "n": 98,
+          "correct": 95,
+          "accuracy": 96.9
+        }
+      },
+      "line_items": {
+        "tp": 232,
+        "fp": 13,
+        "fn": 13,
+        "cells": {
+          "description": {
+            "n": 232,
+            "correct": 210,
+            "accuracy": 90.5
+          },
+          "quantity": {
+            "n": 195,
+            "correct": 150,
+            "accuracy": 76.9
+          },
+          "unit_price": {
+            "n": 155,
+            "correct": 110,
+            "accuracy": 71.0
+          },
+          "amount": {
+            "n": 232,
+            "correct": 232,
+            "accuracy": 100.0
+          }
+        },
+        "precision": 94.7,
+        "recall": 94.7,
+        "f1": 0.9469
+      },
+      "strata": {
+        "invoice/clean": {
+          "invoice_number": {
+            "n": 48,
+            "correct": 47,
+            "accuracy": 97.9
+          },
+          "invoice_date": {
+            "n": 51,
+            "correct": 51,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 45,
+            "correct": 42,
+            "accuracy": 93.3
+          },
+          "buyer_name": {
+            "n": 23,
+            "correct": 22,
+            "accuracy": 95.7
+          },
+          "currency": {
+            "n": 35,
+            "correct": 35,
+            "accuracy": 100.0
+          },
+          "subtotal": {
+            "n": 45,
+            "correct": 45,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 34,
+            "correct": 33,
+            "accuracy": 97.1
+          },
+          "total_amount": {
+            "n": 51,
+            "correct": 51,
+            "accuracy": 100.0
+          }
+        },
+        "invoice/degraded": {
+          "invoice_number": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "subtotal": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          }
+        },
+        "invoice/handwriting": {
+          "invoice_number": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "subtotal": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          }
+        },
+        "invoice/scan": {
+          "invoice_number": {
+            "n": 9,
+            "correct": 8,
+            "accuracy": 88.9
+          },
+          "invoice_date": {
+            "n": 9,
+            "correct": 8,
+            "accuracy": 88.9
+          },
+          "vendor_name": {
+            "n": 10,
+            "correct": 10,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 10,
+            "correct": 10,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 10,
+            "correct": 8,
+            "accuracy": 80.0
+          },
+          "subtotal": {
+            "n": 1,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "tax_total": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "total_amount": {
+            "n": 9,
+            "correct": 8,
+            "accuracy": 88.9
+          }
+        },
+        "receipt/clean": {
+          "invoice_number": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "subtotal": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          }
+        },
+        "receipt/degraded": {
+          "invoice_number": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 3,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "subtotal": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          }
+        },
+        "receipt/messy": {
+          "invoice_number": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "invoice_date": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "vendor_name": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "buyer_name": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "currency": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "subtotal": {
+            "n": 18,
+            "correct": 17,
+            "accuracy": 94.4
+          },
+          "tax_total": {
+            "n": 12,
+            "correct": 9,
+            "accuracy": 75.0
+          },
+          "total_amount": {
+            "n": 25,
+            "correct": 23,
+            "accuracy": 92.0
+          }
+        }
+      },
+      "field_macro_accuracy": 96.1
+    },
+    "run_meta": {
+      "harness": "benchmark/run_verdandi.py",
+      "started_at": "2026-09-30T19:05:34",
+      "elapsed_s": 917.5,
+      "model": "gpt-5.6-luna",
+      "documents_profile": "benchmark/rules_documents.yaml",
+      "exit_code": 0,
+      "files": 100,
+      "pages": 103,
+      "usage": {
+        "prompt_tokens": 375070,
+        "completion_tokens": 169572,
+        "recheck_prompt_tokens": 133019,
+        "recheck_completion_tokens": 21279,
+        "rechecks": 54
+      },
+      "rate_card": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.2,
+        "source": "models.dev hint rates for gpt-5.6-luna (GO subscription quota proxy)"
+      }
+    }
+  },
+  "acu": {
+    "run": "benchmark/data/results/acu/2026-09-30/4",
+    "scores": {
+      "documents": 100,
+      "missing": 0,
+      "missing_stems": [],
+      "found": 100,
+      "fields": {
+        "invoice_number": {
+          "n": 70,
+          "correct": 68,
+          "accuracy": 97.1
+        },
+        "invoice_date": {
+          "n": 73,
+          "correct": 73,
+          "accuracy": 100.0
+        },
+        "vendor_name": {
+          "n": 68,
+          "correct": 67,
+          "accuracy": 98.5
+        },
+        "buyer_name": {
+          "n": 46,
+          "correct": 42,
+          "accuracy": 91.3
+        },
+        "currency": {
+          "n": 51,
+          "correct": 47,
+          "accuracy": 92.2
+        },
+        "subtotal": {
+          "n": 77,
+          "correct": 73,
+          "accuracy": 94.8
+        },
+        "tax_total": {
+          "n": 59,
+          "correct": 57,
+          "accuracy": 96.6
+        },
+        "total_amount": {
+          "n": 98,
+          "correct": 89,
+          "accuracy": 90.8
+        }
+      },
+      "line_items": {
+        "tp": 222,
+        "fp": 29,
+        "fn": 23,
+        "cells": {
+          "description": {
+            "n": 222,
+            "correct": 190,
+            "accuracy": 85.6
+          },
+          "quantity": {
+            "n": 184,
+            "correct": 136,
+            "accuracy": 73.9
+          },
+          "unit_price": {
+            "n": 149,
+            "correct": 103,
+            "accuracy": 69.1
+          },
+          "amount": {
+            "n": 222,
+            "correct": 222,
+            "accuracy": 100.0
+          }
+        },
+        "precision": 88.4,
+        "recall": 90.6,
+        "f1": 0.8952
+      },
+      "strata": {
+        "invoice/clean": {
+          "invoice_number": {
+            "n": 48,
+            "correct": 48,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 51,
+            "correct": 51,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 45,
+            "correct": 45,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 23,
+            "correct": 22,
+            "accuracy": 95.7
+          },
+          "currency": {
+            "n": 35,
+            "correct": 35,
+            "accuracy": 100.0
+          },
+          "subtotal": {
+            "n": 45,
+            "correct": 45,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 34,
+            "correct": 34,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 51,
+            "correct": 51,
+            "accuracy": 100.0
+          }
+        },
+        "invoice/degraded": {
+          "invoice_number": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "subtotal": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          }
+        },
+        "invoice/handwriting": {
+          "invoice_number": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "subtotal": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 100.0
+          }
+        },
+        "invoice/scan": {
+          "invoice_number": {
+            "n": 9,
+            "correct": 7,
+            "accuracy": 77.8
+          },
+          "invoice_date": {
+            "n": 9,
+            "correct": 9,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 10,
+            "correct": 9,
+            "accuracy": 90.0
+          },
+          "buyer_name": {
+            "n": 10,
+            "correct": 7,
+            "accuracy": 70.0
+          },
+          "currency": {
+            "n": 10,
+            "correct": 9,
+            "accuracy": 90.0
+          },
+          "subtotal": {
+            "n": 1,
+            "correct": 1,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "total_amount": {
+            "n": 9,
+            "correct": 8,
+            "accuracy": 88.9
+          }
+        },
+        "receipt/clean": {
+          "invoice_number": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "subtotal": {
+            "n": 3,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "tax_total": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 3,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "receipt/degraded": {
+          "invoice_number": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "invoice_date": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "vendor_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "buyer_name": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "currency": {
+            "n": 3,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "subtotal": {
+            "n": 3,
+            "correct": 2,
+            "accuracy": 66.7
+          },
+          "tax_total": {
+            "n": 3,
+            "correct": 3,
+            "accuracy": 100.0
+          },
+          "total_amount": {
+            "n": 3,
+            "correct": 2,
+            "accuracy": 66.7
+          }
+        },
+        "receipt/messy": {
+          "invoice_number": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "invoice_date": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "vendor_name": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "buyer_name": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "currency": {
+            "n": 0,
+            "correct": 0,
+            "accuracy": null
+          },
+          "subtotal": {
+            "n": 18,
+            "correct": 18,
+            "accuracy": 100.0
+          },
+          "tax_total": {
+            "n": 12,
+            "correct": 10,
+            "accuracy": 83.3
+          },
+          "total_amount": {
+            "n": 25,
+            "correct": 21,
+            "accuracy": 84.0
+          }
+        }
+      },
+      "field_macro_accuracy": 95.2
+    }
+  }
+}

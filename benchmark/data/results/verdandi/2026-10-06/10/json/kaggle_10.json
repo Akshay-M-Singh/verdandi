@@ -1,0 +1,907 @@
+{
+  "selected_document": {
+    "name": "Case Western Reserve University",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cINVOICE,\u201d identifies Case Western Reserve University as issuer, shows invoice number 51662, and lists billed expenditures and a final total.",
+    "confidence": 0.99
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "51662",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.843,
+          0.17,
+          0.931,
+          0.19
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='51662'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'INVOICE NUMBER 51662 IS NUME ALL REMITTANC'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.8407,
+                0.16459999999999997,
+                0.9322,
+                0.1854
+              ],
+              "line_bbox": [
+                0.8407,
+                0.16459999999999997,
+                0.9322,
+                0.1854
+              ],
+              "text": "51662",
+              "lineno": 6,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "April 5, 1995",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.878,
+          0.245,
+          0.969,
+          0.261
+        ]
+      },
+      "verification": {
+        "score": 0.625,
+        "level": "review_secondary",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": false,
+            "score": 0.0,
+            "detail": "format check 'date' FAILED for invoice_date='April 5, 1995' \u2014 format 'date'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'April 5. 1995'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.8791,
+                0.23540000000000005,
+                0.9705,
+                0.2479
+              ],
+              "line_bbox": [
+                0.0767,
+                0.23309999999999997,
+                0.9705,
+                0.2521
+              ],
+              "text": "TO Philip Morris -USA Research Center DATE April 5. 1995",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ],
+        "recheck": {
+          "agree": false,
+          "level": "review_human"
+        }
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Case Western Reserve University",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.334,
+          0.138,
+          0.702,
+          0.155
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Case Western Reserve University'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'CASE WESTERN RESERVE UNIVERSITY 10900 EUCLID AVENUE CLEVELAND,'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3243,
+                0.1311,
+                0.7023,
+                0.15159999999999996
+              ],
+              "line_bbox": [
+                0.3243,
+                0.1311,
+                0.7023,
+                0.15159999999999996
+              ],
+              "text": "CASE WESTERN RESERVE UNIVERSITY",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Philip Morris -USA Research Center",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.16,
+          0.244,
+          0.415,
+          0.261
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Philip Morris -USA Research Center'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Philip Morris -USA Research Center Atto: Richard Carchman'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.1591,
+                0.23309999999999997,
+                0.4132,
+                0.24870000000000003
+              ],
+              "line_bbox": [
+                0.0767,
+                0.23309999999999997,
+                0.9705,
+                0.2521
+              ],
+              "text": "TO Philip Morris -USA Research Center DATE April 5. 1995",
+              "lineno": 9,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.517,
+          0.706,
+          0.617,
+          0.718
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text '$27,930.69 $27,930.69 $83.792.02 $83.792.02' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": "55861.33",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.517,
+          0.676,
+          0.617,
+          0.689
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for subtotal='55861.33'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): '$0.00 $55,861.33 $55.861.33 $27,930.69 $27,930.69 $83.792.02 $83.792.02'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.531,
+                0.65,
+                0.6106,
+                0.6625
+              ],
+              "line_bbox": [
+                0.531,
+                0.6498999999999999,
+                0.7316,
+                0.6626000000000001
+              ],
+              "text": "$55,861.33 $55.861.33",
+              "lineno": 28,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "83792.02",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.517,
+          0.706,
+          0.617,
+          0.718
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='83792.02'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value '83792.02' NOT found near region (page 1); nearest text '$27,930.69 $27,930.69 $83.792.02 $83.792.02' (n-gram proximity 1.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Salaries",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "35878.51",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.512,
+          0.613,
+          0.525
+        ]
+      }
+    },
+    {
+      "description": "Fringe",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "8053.23",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.527,
+          0.613,
+          0.54
+        ]
+      }
+    },
+    {
+      "description": "Supplies",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "7636.51",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.542,
+          0.613,
+          0.555
+        ]
+      }
+    },
+    {
+      "description": "Internal Services",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "191.70",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.558,
+          0.613,
+          0.571
+        ]
+      }
+    },
+    {
+      "description": "Outside Services",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "230.00",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.573,
+          0.613,
+          0.586
+        ]
+      }
+    },
+    {
+      "description": "Travel",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "27.50",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.588,
+          0.613,
+          0.601
+        ]
+      }
+    },
+    {
+      "description": "Comm & Shipping",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "145.43",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.603,
+          0.613,
+          0.616
+        ]
+      }
+    },
+    {
+      "description": "Equipment",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "0.00",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.618,
+          0.613,
+          0.631
+        ]
+      }
+    },
+    {
+      "description": "Rentals",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "0.00",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.634,
+          0.613,
+          0.647
+        ]
+      }
+    },
+    {
+      "description": "Maint & Repairs",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "3698.45",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.649,
+          0.613,
+          0.662
+        ]
+      }
+    },
+    {
+      "description": "Fellowship",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "0.00",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.664,
+          0.613,
+          0.677
+        ]
+      }
+    },
+    {
+      "description": "Overhead",
+      "quantity": null,
+      "unit_price": null,
+      "amount": "27930.69",
+      "confidence": 0.97,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.385,
+          0.691,
+          0.613,
+          0.704
+        ]
+      }
+    }
+  ],
+  "notes": [
+    "The invoice table has Current and Cumulative columns; line-item amounts are taken from the Current column.",
+    "The printed 55861.33 is the expense subtotal; tax is not shown."
+  ],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 3894,
+      "completion_tokens": 2835,
+      "total_tokens": 6729,
+      "elapsed_s": 16.55
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "51662",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='51662'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'INVOICE NUMBER 51662 IS NUME ALL REMITTANC'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.8407,
+                  0.16459999999999997,
+                  0.9322,
+                  0.1854
+                ],
+                "line_bbox": [
+                  0.8407,
+                  0.16459999999999997,
+                  0.9322,
+                  0.1854
+                ],
+                "text": "51662",
+                "lineno": 6,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "April 5, 1995",
+          "score": 0.625,
+          "level": "review_secondary",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": false,
+              "score": 0.0,
+              "detail": "format check 'date' FAILED for invoice_date='April 5, 1995' \u2014 format 'date'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'April 5. 1995'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.8791,
+                  0.23540000000000005,
+                  0.9705,
+                  0.2479
+                ],
+                "line_bbox": [
+                  0.0767,
+                  0.23309999999999997,
+                  0.9705,
+                  0.2521
+                ],
+                "text": "TO Philip Morris -USA Research Center DATE April 5. 1995",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Case Western Reserve University",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Case Western Reserve University'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'CASE WESTERN RESERVE UNIVERSITY 10900 EUCLID AVENUE CLEVELAND,'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3243,
+                  0.1311,
+                  0.7023,
+                  0.15159999999999996
+                ],
+                "line_bbox": [
+                  0.3243,
+                  0.1311,
+                  0.7023,
+                  0.15159999999999996
+                ],
+                "text": "CASE WESTERN RESERVE UNIVERSITY",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Philip Morris -USA Research Center",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Philip Morris -USA Research Center'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Philip Morris -USA Research Center Atto: Richard Carchman'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.1591,
+                  0.23309999999999997,
+                  0.4132,
+                  0.24870000000000003
+                ],
+                "line_bbox": [
+                  0.0767,
+                  0.23309999999999997,
+                  0.9705,
+                  0.2521
+                ],
+                "text": "TO Philip Morris -USA Research Center DATE April 5. 1995",
+                "lineno": 9,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text '$27,930.69 $27,930.69 $83.792.02 $83.792.02' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": "55861.33",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for subtotal='55861.33'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): '$0.00 $55,861.33 $55.861.33 $27,930.69 $27,930.69 $83.792.02 $83.792.02'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.531,
+                  0.65,
+                  0.6106,
+                  0.6625
+                ],
+                "line_bbox": [
+                  0.531,
+                  0.6498999999999999,
+                  0.7316,
+                  0.6626000000000001
+                ],
+                "text": "$55,861.33 $55.861.33",
+                "lineno": 28,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "tax_total": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "total_amount": {
+          "value": "83792.02",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='83792.02'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value '83792.02' NOT found near region (page 1); nearest text '$27,930.69 $27,930.69 $83.792.02 $83.792.02' (n-gram proximity 1.00)",
+              "match": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "format": 1,
+          "grounding": 2
+        },
+        "flag_rows": 5
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "invoice_date": {
+            "primary": "April 5, 1995",
+            "secondary": "April 5, 1995",
+            "agree": false
+          },
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          },
+          "total_amount": {
+            "primary": "83792.02",
+            "secondary": "83792.02",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "cc8b673d9eef8f1f29357f190fbd3ed2986f23380cd14da789ac699702a8e1e2"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 2525,
+          "completion_tokens": 486,
+          "total_tokens": 3011,
+          "elapsed_s": 9.13
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,800 @@
+{
+  "selected_document": {
+    "name": "Kirk, Murphy and Daniels",
+    "document_pages": [
+      1
+    ],
+    "reason": "The page is headed \u201cINVOICE,\u201d names Kirk, Murphy and Daniels, and shows billed item rows with amounts plus a VAT charge and final total.",
+    "confidence": 0.98
+  },
+  "header_fields": [
+    {
+      "name": "invoice_number",
+      "value": "INV16291505",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.716,
+          0.168,
+          0.957,
+          0.182
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'str' passed for invoice_number='INV16291505'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 03-Mar-2002 INVOICE ID INV16291505 PO Number :82'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7168,
+                0.16869999999999996,
+                0.9587,
+                0.18120000000000003
+              ],
+              "line_bbox": [
+                0.7168,
+                0.16869999999999996,
+                0.9587,
+                0.18120000000000003
+              ],
+              "text": "INVOICE ID INV16291505",
+              "lineno": 4,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invoice_date",
+      "value": "03-Mar-2002",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.716,
+          0.14,
+          0.891,
+          0.154
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'date' passed for invoice_date='03-Mar-2002'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Date: 03-Mar-2002 INVOICE ID INV16291505'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.7168,
+                0.14170000000000005,
+                0.8879,
+                0.1542
+              ],
+              "line_bbox": [
+                0.7168,
+                0.14170000000000005,
+                0.8879,
+                0.1542
+              ],
+              "text": "Date: 03-Mar-2002",
+              "lineno": 3,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "vendor_name",
+      "value": "Kirk, Murphy and Daniels",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.01,
+          0.076,
+          0.256,
+          0.091
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for vendor_name='Kirk, Murphy and Daniels'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'Kirk, Murphy and Daniels'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.0088,
+                0.07709999999999995,
+                0.2537,
+                0.0938
+              ],
+              "line_bbox": [
+                0.0088,
+                0.07709999999999995,
+                0.2537,
+                0.0938
+              ],
+              "text": "Kirk, Murphy and Daniels",
+              "lineno": 2,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "buyer_name",
+      "value": "Sarah Ross",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.331,
+          0.28,
+          0.438,
+          0.294
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'name' passed for buyer_name='Sarah Ross'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'BILL_TO: Sarah Ross 073 Ayers Street Apt. 371'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.3272,
+                0.27990000000000004,
+                0.4368,
+                0.2933
+              ],
+              "line_bbox": [
+                0.3272,
+                0.27990000000000004,
+                0.4368,
+                0.2933
+              ],
+              "text": "Sarah Ross",
+              "lineno": 7,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "confidence": 0.81,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.663,
+          0.739,
+          0.913,
+          0.751
+        ]
+      },
+      "verification": {
+        "score": 0.375,
+        "level": "review_human",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'currency' passed for currency='USD'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": false,
+            "score": 0.0,
+            "detail": "value 'USD' NOT found near region (page 1); nearest text 'TAX:VAT (6.46%): 86.23 $ TOTAL: 1377.77 $' (n-gram proximity 0.00)",
+            "match": null
+          }
+        ],
+        "recheck": {
+          "agree": true,
+          "level": "review_secondary"
+        }
+      }
+    },
+    {
+      "name": "subtotal",
+      "value": null,
+      "confidence": 0,
+      "source": null,
+      "source_region": null,
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": []
+      }
+    },
+    {
+      "name": "tax_total",
+      "value": "86.23",
+      "confidence": 0.98,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.662,
+          0.71,
+          0.914,
+          0.726
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for tax_total='86.23'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX:VAT (6.46%): 86.23 $ TOTAL: 1377.77 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6578,
+                0.7062999999999999,
+                0.9174,
+                0.7271000000000001
+              ],
+              "line_bbox": [
+                0.6578,
+                0.7062999999999999,
+                0.9174,
+                0.7271000000000001
+              ],
+              "text": "TAX:VAT (6.46%): 86.23 $",
+              "lineno": 20,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "total_amount",
+      "value": "1377.77",
+      "confidence": 0.99,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.662,
+          0.739,
+          0.914,
+          0.752
+        ]
+      },
+      "verification": {
+        "score": 1.0,
+        "level": "accept",
+        "hard_fail": [],
+        "checks": [
+          {
+            "check": "format",
+            "passed": true,
+            "score": 1.0,
+            "detail": "format check 'amount' passed for total_amount='1377.77'",
+            "match": null
+          },
+          {
+            "check": "grounding",
+            "passed": true,
+            "score": 1.0,
+            "detail": "value found at region (page 1): 'TAX:VAT (6.46%): 86.23 $ TOTAL: 1377.77 $'",
+            "match": {
+              "page": 1,
+              "fragment_bbox": [
+                0.6578,
+                0.7375,
+                0.8407,
+                0.7521
+              ],
+              "line_bbox": [
+                0.0177,
+                0.7354,
+                0.8407,
+                0.7521
+              ],
+              "text": "Contact us for queries on these quotations. TOTAL: 1377.77 $",
+              "lineno": 22,
+              "band": "tight"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "line_items": [
+    {
+      "description": "Clearly four.",
+      "quantity": "6.00",
+      "unit_price": "32.75",
+      "amount": "196.50",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.515,
+          0.912,
+          0.536
+        ]
+      }
+    },
+    {
+      "description": "Drive money fill.",
+      "quantity": "5.00",
+      "unit_price": "28.30",
+      "amount": "141.50",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.536,
+          0.912,
+          0.557
+        ]
+      }
+    },
+    {
+      "description": "Baby city.",
+      "quantity": "5.00",
+      "unit_price": "72.98",
+      "amount": "364.90",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.557,
+          0.912,
+          0.578
+        ]
+      }
+    },
+    {
+      "description": "You usually partner.",
+      "quantity": "6.00",
+      "unit_price": "76.19",
+      "amount": "457.14",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.578,
+          0.912,
+          0.6
+        ]
+      }
+    },
+    {
+      "description": "Trial would.",
+      "quantity": "4.00",
+      "unit_price": "43.48",
+      "amount": "173.92",
+      "confidence": 0.96,
+      "source": "page 1 (render image)",
+      "source_region": {
+        "page": 1,
+        "bbox": [
+          0.004,
+          0.6,
+          0.912,
+          0.622
+        ]
+      }
+    }
+  ],
+  "notes": [],
+  "status": "extracted",
+  "_meta": {
+    "model": "gpt-6-luna",
+    "attempts": 1,
+    "mode": "vision",
+    "document": "benchmark_document",
+    "documents": [
+      "benchmark_document"
+    ],
+    "schema": "profile",
+    "fields": [
+      "buyer_name",
+      "currency",
+      "invoice_date",
+      "invoice_number",
+      "subtotal",
+      "tax_total",
+      "total_amount",
+      "vendor_name"
+    ],
+    "prompt": {
+      "version": "v11",
+      "sha256": "f68cb8642b925b24b0e43f0b184652dc52dfe31c189e23fa7f092391c3c2c391"
+    },
+    "usage": {
+      "prompt_tokens": 7244,
+      "completion_tokens": 1638,
+      "total_tokens": 8882,
+      "elapsed_s": 13.01
+    },
+    "verification": {
+      "fields": {
+        "invoice_number": {
+          "value": "INV16291505",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'str' passed for invoice_number='INV16291505'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 03-Mar-2002 INVOICE ID INV16291505 PO Number :82'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7168,
+                  0.16869999999999996,
+                  0.9587,
+                  0.18120000000000003
+                ],
+                "line_bbox": [
+                  0.7168,
+                  0.16869999999999996,
+                  0.9587,
+                  0.18120000000000003
+                ],
+                "text": "INVOICE ID INV16291505",
+                "lineno": 4,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "invoice_date": {
+          "value": "03-Mar-2002",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'date' passed for invoice_date='03-Mar-2002'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Date: 03-Mar-2002 INVOICE ID INV16291505'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.7168,
+                  0.14170000000000005,
+                  0.8879,
+                  0.1542
+                ],
+                "line_bbox": [
+                  0.7168,
+                  0.14170000000000005,
+                  0.8879,
+                  0.1542
+                ],
+                "text": "Date: 03-Mar-2002",
+                "lineno": 3,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "vendor_name": {
+          "value": "Kirk, Murphy and Daniels",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for vendor_name='Kirk, Murphy and Daniels'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'Kirk, Murphy and Daniels'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.0088,
+                  0.07709999999999995,
+                  0.2537,
+                  0.0938
+                ],
+                "line_bbox": [
+                  0.0088,
+                  0.07709999999999995,
+                  0.2537,
+                  0.0938
+                ],
+                "text": "Kirk, Murphy and Daniels",
+                "lineno": 2,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "buyer_name": {
+          "value": "Sarah Ross",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'name' passed for buyer_name='Sarah Ross'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'BILL_TO: Sarah Ross 073 Ayers Street Apt. 371'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.3272,
+                  0.27990000000000004,
+                  0.4368,
+                  0.2933
+                ],
+                "line_bbox": [
+                  0.3272,
+                  0.27990000000000004,
+                  0.4368,
+                  0.2933
+                ],
+                "text": "Sarah Ross",
+                "lineno": 7,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "currency": {
+          "value": "USD",
+          "score": 0.375,
+          "level": "review_human",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'currency' passed for currency='USD'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": false,
+              "score": 0.0,
+              "detail": "value 'USD' NOT found near region (page 1); nearest text 'TAX:VAT (6.46%): 86.23 $ TOTAL: 1377.77 $' (n-gram proximity 0.00)",
+              "match": null
+            }
+          ]
+        },
+        "subtotal": {
+          "value": null,
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": []
+        },
+        "tax_total": {
+          "value": "86.23",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for tax_total='86.23'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX:VAT (6.46%): 86.23 $ TOTAL: 1377.77 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6578,
+                  0.7062999999999999,
+                  0.9174,
+                  0.7271000000000001
+                ],
+                "line_bbox": [
+                  0.6578,
+                  0.7062999999999999,
+                  0.9174,
+                  0.7271000000000001
+                ],
+                "text": "TAX:VAT (6.46%): 86.23 $",
+                "lineno": 20,
+                "band": "tight"
+              }
+            }
+          ]
+        },
+        "total_amount": {
+          "value": "1377.77",
+          "score": 1.0,
+          "level": "accept",
+          "hard_fail": [],
+          "checks": [
+            {
+              "check": "format",
+              "passed": true,
+              "score": 1.0,
+              "detail": "format check 'amount' passed for total_amount='1377.77'",
+              "match": null
+            },
+            {
+              "check": "grounding",
+              "passed": true,
+              "score": 1.0,
+              "detail": "value found at region (page 1): 'TAX:VAT (6.46%): 86.23 $ TOTAL: 1377.77 $'",
+              "match": {
+                "page": 1,
+                "fragment_bbox": [
+                  0.6578,
+                  0.7375,
+                  0.8407,
+                  0.7521
+                ],
+                "line_bbox": [
+                  0.0177,
+                  0.7354,
+                  0.8407,
+                  0.7521
+                ],
+                "text": "Contact us for queries on these quotations. TOTAL: 1377.77 $",
+                "lineno": 22,
+                "band": "tight"
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "failed_by_check": {
+          "grounding": 1
+        },
+        "flag_rows": 3
+      },
+      "recheck": {
+        "available": true,
+        "triggered": true,
+        "max_calls": 1,
+        "fields": {
+          "currency": {
+            "primary": "USD",
+            "secondary": "USD",
+            "agree": true
+          }
+        },
+        "prompt": {
+          "version": "v11",
+          "sha256": "7c823d48ead7e01a6382062c57463a221ce9303a8df3fcadfbc5315e754af9c5"
+        },
+        "mode": "narrow",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "usage": {
+          "prompt_tokens": 5819,
+          "completion_tokens": 261,
+          "total_tokens": 6080,
+          "elapsed_s": 4.81
+        }
+      }
+    }
+  }
+}
