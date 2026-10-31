@@ -151,7 +151,9 @@ review write-through, export build/download, settings — 22 offline desktop tes
       Settings check, install & restart with progress); `scripts/version.mjs`
       keeps the four version carriers in sync; OS signing activates
       automatically when certificate secrets exist. Runbook:
-      `RELEASING.md`. Owner action: `RELEASES_TOKEN` secret (fine-grained PAT)
+      `RELEASING.md`. (Originally a separate download repo + `RELEASES_TOKEN`
+      PAT; since 2026-10-31 the release publishes to this repository with the
+      workflow's own token.)
 - [x] **Batch 4 — live paid E2E** (2026-10-02): one benchmark PDF through the
       real app path — capture (free) → catalog (paid, detected "invoice p1")
       → pin pages → extract → results (6 fields, 4 line items) → review

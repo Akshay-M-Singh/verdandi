@@ -2487,7 +2487,10 @@ updater-signed artifacts (`createUpdaterArtifacts`) and publishes
 installers + `latest.json` to the public Releases page (originally a
 separate download repo, `verdandi-app`; folded into this repository
 2026-10-31)
-repo via a fine-grained PAT (`RELEASES_TOKEN` — owner action); Tauri updater
+repo via a fine-grained PAT (`RELEASES_TOKEN` — owner action; both the PAT
+and the separate repo were superseded on 2026-10-31, see the amendment
+above);
+Tauri updater
 plugin wired (endpoint latest.json; quiet launch check, Settings check,
 install & restart via the process plugin); `scripts/version.mjs` syncs
 package.json / tauri.conf.json / Cargo.toml / engine `__version__`;
