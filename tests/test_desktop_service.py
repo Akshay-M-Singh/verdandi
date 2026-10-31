@@ -2171,7 +2171,8 @@ class TestParityCloseout(_TempRulesMixin):
             wf_mod.delete_workflow(wids[-1])
 
 
-@unittest.skipUnless(os.name == "nt", "Windows-only: parent-death watchdog")
+@unittest.skipUnless(os.name == "nt" and HAVE_FASTAPI,
+                     "Windows-only: parent-death watchdog (needs desktop deps)")
 class TestWatchParentWindows(unittest.TestCase):
     """watch_parent must exit the process when its parent dies (Windows).
 
