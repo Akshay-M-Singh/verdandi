@@ -76,7 +76,8 @@ are absent.
 ### Desktop app
 
 Prebuilt installers (macOS Apple Silicon + Windows x64) are on the
-[releases page](https://github.com/Akshay-M-Singh/verdandi-app/releases/latest).
+[releases page](https://github.com/Akshay-M-Singh/verdandi/releases/latest);
+install steps and troubleshooting are in [docs/INSTALL.md](docs/INSTALL.md).
 
 To run it from source:
 

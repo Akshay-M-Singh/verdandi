@@ -1,10 +1,11 @@
 # Releasing Verdandi (D66)
 
 Tag-driven: push a `vX.Y.Z` tag and `.github/workflows/release.yml` builds
-both platforms with updater-signed artifacts and publishes installers +
-`latest.json` to the **public** releases repo
-(`Akshay-M-Singh/verdandi-app`). The source repo is public
-(`Akshay-M-Singh/verdandi`).
+both platforms with updater-signed artifacts and publishes the installers,
+the updater archives and `latest.json` to **this repository's Releases**.
+The release page is the download page and the update feed at the same time —
+there is no separate distribution repository. Publishing uses the workflow's
+own `GITHUB_TOKEN` (`contents: write`), so no PAT is involved.
 
 ## One-time setup
 
@@ -15,11 +16,7 @@ both platforms with updater-signed artifacts and publishes installers +
    - Repo secrets set: `TAURI_SIGNING_PRIVATE_KEY`,
      `TAURI_SIGNING_PRIVATE_KEY_PASSWORD`.
    - Public key is in `desktop/src-tauri/tauri.conf.json` (`plugins.updater`).
-2. **`RELEASES_TOKEN` secret** (owner action): fine-grained PAT with
-   `contents: write` on `Akshay-M-Singh/verdandi-app`, added as a
-   repository secret on the source repo. Without it the publish job
-   fails with a clear message.
-3. **Certificates (later)**: add any of these secrets and the release
+2. **Certificates (later)**: add any of these secrets and the release
    workflow activates OS signing/notarization automatically —
    `APPLE_CERTIFICATE`, `APPLE_CERTIFICATE_PASSWORD`,
    `APPLE_SIGNING_IDENTITY`, `APPLE_ID`, `APPLE_PASSWORD`, `APPLE_TEAM_ID`,
@@ -38,7 +35,7 @@ git push && git push origin v0.2.0      # tag push triggers the release workflow
 ```
 
 Watch it: `gh run list -R Akshay-M-Singh/verdandi --workflow release`.
-Verify: `gh release view v0.2.0 -R Akshay-M-Singh/verdandi-app` — it must
+Verify: `gh release view v0.2.0 -R Akshay-M-Singh/verdandi` — it must
 contain the DMG + NSIS installers, the updater artifacts (`*.app.tar.gz`
 for macOS, the `-setup.exe` + `.sig` for Windows), and `latest.json`.
 
@@ -78,13 +75,11 @@ The version in the health reply must match the release.
 
 - **Ad-hoc signed (owner decision, 2026-10-09):** `bundle.macOS.signingIdentity: "-"`.
   No Apple Developer account; macOS still asks each user for a one-time
-  Privacy & Security approval. The public download page carries the exact
-  steps (`verdandi-app/README.md`; source copy
-  `legal/RELEASES-README.md`).
+  Privacy & Security approval. `docs/INSTALL.md` carries the exact steps and
+  is the user-facing install guide.
 - **Legal docs:** the Apache-2.0 LICENSE and the Privacy Policy live in the
   source repo (`LICENSE`, `legal/PRIVACY.md`) and are what the app's About
-  dialog links to. `legal/RELEASES-README.md` is a copy for the public
-  download page; it is not the source of truth.
+  dialog links to. `docs/INSTALL.md` is the user-facing install guide.
 - **Both platforms ship:** macOS (Apple Silicon) and Windows (x64) installers
   are built and smoke-tested by `release.yml`; `latest.json` carries both
   targets. Actions minutes are free on a public repository, so the normal
@@ -94,9 +89,9 @@ The version in the health reply must match the release.
   TAURI_SIGNING_PRIVATE_KEY_PASSWORD=$(cat ~/.verdandi/keys/updater.key.password)
   npx tauri build` (in `desktop/`), stage the DMG/updater artifacts,
   `node desktop/scripts/make_latest_json.mjs`, and `gh release
-  create/upload` into `verdandi-app`.
+  create/upload` in this repository.
 - The updater endpoint is
-  `https://github.com/Akshay-M-Singh/verdandi-app/releases/latest/download/latest.json`;
+  `https://github.com/Akshay-M-Singh/verdandi/releases/latest/download/latest.json`;
   `desktop/scripts/make_latest_json.mjs` composes the manifest from the
   build artifacts (darwin-aarch64 from `*.app.tar.gz`, windows-x86_64 from
   the `-setup.exe` installer + `.sig`; an older `*.nsis.zip` is also

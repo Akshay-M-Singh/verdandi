@@ -2414,7 +2414,8 @@ flow first (upload → run → review → export); partners bring their own
 gateway key for now, with a clean seam for a managed relay or other
 providers later; installers + auto-updates hosted on private GitHub
 Releases (signing/notarization in Phase 2) — amended 2026-10-30 by D68:
-the release feed is now public (`Akshay-M-Singh/verdandi-app`).
+the release feed is now public, and since 2026-10-31 it is this
+repository's own Releases rather than a separate download repo.
 **Decision:**
 - **Stack:** Tauri 2 window + React/TypeScript interface (`desktop/src/`,
   Vite) + the EXISTING Python engine as a PyInstaller sidecar
@@ -2483,7 +2484,9 @@ page renders → prune freed 150.7 MB, 11.4 MB metadata kept.
 **Phase 3 Batch 3 — releases + auto-update (2026-10-02):** tag-driven
 `.github/workflows/release.yml` builds both platforms with
 updater-signed artifacts (`createUpdaterArtifacts`) and publishes
-installers + `latest.json` to the PUBLIC `Akshay-M-Singh/verdandi-app`
+installers + `latest.json` to the public Releases page (originally a
+separate download repo, `verdandi-app`; folded into this repository
+2026-10-31)
 repo via a fine-grained PAT (`RELEASES_TOKEN` — owner action); Tauri updater
 plugin wired (endpoint latest.json; quiet launch check, Settings check,
 install & restart via the process plugin); `scripts/version.mjs` syncs

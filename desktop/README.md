@@ -146,8 +146,8 @@ review write-through, export build/download, settings — 22 offline desktop tes
       prune freed 150.7 MB keeping 11.4 MB of metadata
 - [x] **Batch 3 — releases + auto-update**: tag-driven `release.yml` builds
       both platforms with updater-signed artifacts and publishes installers +
-      `latest.json` to the public `verdandi-app` repo (source:
-      `Akshay-M-Singh/verdandi`); in-app updater (quiet check on launch,
+      `latest.json` to this repository's Releases; in-app updater (quiet
+      check on launch,
       Settings check, install & restart with progress); `scripts/version.mjs`
       keeps the four version carriers in sync; OS signing activates
       automatically when certificate secrets exist. Runbook:
@@ -224,7 +224,7 @@ TestClient. No paid calls, no network.
 Owner decisions and the full rationale live in `architecture.md` **D66**:
 Apple Silicon + Windows; operator flow first; partners bring their own
 gateway key for now (managed relay / other providers later); installers +
-auto-updates via public GitHub Releases (`verdandi-app`); signing/notarization
+auto-updates via this repository's GitHub Releases; signing/notarization
 and OS keychain storage are Phase 2. **The original invoices under
 `invoices/` are local-only and never committed or pushed** (owner rule,
 2026-09-30).

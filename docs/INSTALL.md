@@ -10,9 +10,9 @@ It is a native desktop app for macOS and Windows. Your documents stay on your
 machine; the only thing sent to the cloud is the page image of the document
 being read, through the AI provider **you** configure with **your own key**.
 
-[**Download the latest release →**](../../releases/latest)
+[**Download the latest release →**](https://github.com/Akshay-M-Singh/verdandi/releases/latest)
 
-![Running a capture and inspecting the pages](docs/screens/inspect.png)
+![Running a capture and inspecting the pages](screens/inspect.png)
 
 ## What it does
 
@@ -70,7 +70,7 @@ storage cleanup in the Console.
 ### macOS
 
 1. Download `Verdandi_<version>_aarch64.dmg` from the
-   [latest release](../../releases/latest).
+   [latest release](https://github.com/Akshay-M-Singh/verdandi/releases/latest).
 2. Open it and drag **Verdandi** to **Applications**.
 3. The app is ad-hoc signed (not notarized), so macOS asks for a one-time
    approval: open the app once, then go to **System Settings → Privacy &
@@ -82,7 +82,7 @@ storage cleanup in the Console.
 ### Windows
 
 1. Download `Verdandi_<version>_x64-setup.exe` from the
-   [latest release](../../releases/latest).
+   [latest release](https://github.com/Akshay-M-Singh/verdandi/releases/latest).
 2. Run it. The installer is unsigned, so SmartScreen shows *"Windows
    protected your PC"* — click **More info** → **Run anyway**.
 3. Microsoft Edge WebView2 is downloaded automatically if it is missing.
@@ -100,7 +100,7 @@ storage cleanup in the Console.
 
 1. **Run tab** — choose files or a folder, or drag PDFs onto the window.
 
-   ![Choosing files and a template](docs/screens/run.png)
+   ![Choosing files and a template](screens/run.png)
 
 2. Pick a **template** (one profile), **several profiles**, or a
    **workflow bundle** for files that contain multiple documents.
@@ -110,24 +110,24 @@ storage cleanup in the Console.
 4. **Results** — fields and line items with confidence; click any row to see
    where it sits on the page (the located box and the model's claim).
 
-   ![Results with the evidence overlay](docs/screens/results.png)
+   ![Results with the evidence overlay](screens/results.png)
 
 5. **Review** — work through the flags with the evidence pane; confirm or
    correct each one. "Apply all reviews to JSON" writes your decisions into
    the run.
 
-   ![Reviewing a flag with its evidence](docs/screens/review.png)
+   ![Reviewing a flag with its evidence](screens/review.png)
 
 6. **Exports** — build the workbook with a saved export profile (or create
    one in the same screen) and download it.
 
-   ![Building an export](docs/screens/export.png)
+   ![Building an export](screens/export.png)
 
 7. **Console** — every run with its files, flags, tokens, cost estimate and
    worker log. Free up space by pruning page renders; delete runs you no
    longer need.
 
-   ![Console with run history and metrics](docs/screens/console.png)
+   ![Console with run history and metrics](screens/console.png)
 
 ## What it costs
 
@@ -161,7 +161,7 @@ repository's `benchmark/` directory.
 - The app makes no telemetry, analytics or access-check requests. The only
   network calls are to your model provider and, in official builds, the
   GitHub update feed.
-- Full details: [Privacy Policy](PRIVACY.md) · [License](https://github.com/Akshay-M-Singh/verdandi/blob/main/LICENSE).
+- Full details: [Privacy Policy](../legal/PRIVACY.md) · [License](../LICENSE).
 
 ## Updates, data, uninstall
 

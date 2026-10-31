@@ -1,18 +1,18 @@
 name: release
 
 # Tag-driven release (D66): builds the app on both platforms WITH updater
-# signing artifacts, then publishes installers + latest.json to the PUBLIC
-# releases repo (Akshay-M-Singh/verdandi-app). Source: Akshay-M-Singh/verdandi
+# signing artifacts, then publishes installers + latest.json to THIS repo's
+# releases (the update feed and the download page live with the source).
 #
 # No Actions artifacts are used (2026-10-06): the account's artifact storage
 # quota blocked a release once, and the installers are large — each build job
 # publishes its own platform assets straight to the release, and the final
 # job composes latest.json from the release itself (gh release download).
 #
-# Secrets (source repo): TAURI_SIGNING_PRIVATE_KEY + _PASSWORD (updater
-# signing keypair) and RELEASES_TOKEN (fine-grained PAT with contents:write
-# on the releases repo). Certificate secrets for OS signing slot in here
-# later without rework (tauri-action / tauri build read them from env).
+# Secrets: TAURI_SIGNING_PRIVATE_KEY + _PASSWORD (updater signing keypair).
+# Publishing uses the workflow's own GITHUB_TOKEN — no PAT. Certificate
+# secrets for OS signing slot in here later without rework (tauri-action /
+# tauri build read them from env).
 
 on:
   push:
@@ -28,6 +28,8 @@ permissions:
 
 jobs:
   build:
+    permissions:
+      contents: write   # create the release + upload platform assets
     strategy:
       fail-fast: false
       matrix:
@@ -190,17 +192,13 @@ jobs:
             -exec cp {} release-assets/ \;
           ls -la release-assets
 
-      - name: Publish platform assets to the releases repo
+      - name: Publish platform assets to this release
         shell: bash
         env:
-          GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           TAG="${{ github.event.inputs.tag || github.ref_name }}"
-          REPO="Akshay-M-Singh/verdandi-app"
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::error::RELEASES_TOKEN is not set — create a fine-grained PAT (contents:write on $REPO) and add it as a repository secret"
-            exit 1
-          fi
+          REPO="${{ github.repository }}"
           gh release view "$TAG" -R "$REPO" >/dev/null 2>&1 \
             || gh release create "$TAG" -R "$REPO" \
                  --title "Verdandi ${TAG#v}" --notes "Verdandi ${TAG#v}" \
@@ -209,6 +207,8 @@ jobs:
 
   publish:
     needs: build
+    permissions:
+      contents: write   # upload latest.json to the same release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -218,14 +218,10 @@ jobs:
       - name: Compose + upload latest.json
         shell: bash
         env:
-          GH_TOKEN: ${{ secrets.RELEASES_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           TAG="${{ github.event.inputs.tag || github.ref_name }}"
-          REPO="Akshay-M-Singh/verdandi-app"
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::error::RELEASES_TOKEN is not set — create a fine-grained PAT (contents:write on $REPO) and add it as a repository secret"
-            exit 1
-          fi
+          REPO="${{ github.repository }}"
           gh release download "$TAG" -R "$REPO" -D dist --clobber
           node desktop/scripts/make_latest_json.mjs dist "${TAG#v}" "$REPO" "$TAG"
           gh release upload "$TAG" -R "$REPO" --clobber dist/latest.json
